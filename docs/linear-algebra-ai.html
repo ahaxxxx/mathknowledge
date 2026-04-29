@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>线性代数如何进入 AI | math.bozhanli.com</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="index.html">首页</a><a href="about.html">关于</a><a href="method.html">方法</a><a href="calculus.html">高数</a><a class="is-active" href="linear-algebra.html">线代</a><a href="probability.html">概率</a><a href="references.html">书目</a><a href="roadmap.html">路线</a><a href="live.html">答疑</a><a href="faq.html">FAQ</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="index.html">首页</a><span>/</span><a href="linear-algebra.html">线代</a><span>/</span><span>线代如何进入 AI</span></div>
+      <h1>线性代数如何进入 AI</h1>
+      <p>这页不按教材顺序讲线代，而按结构作用来重组：模型怎样被描述，优化怎样被塑形，稳定性怎样被决定。主线只有一条：机器学习系统首先是一个可组合的算子系统。</p>
+    </div>
+
+    <div class="subject-grid">
+      <section class="page-section">
+        <h2>第一部分：核心结构</h2>
+        <div class="outline-block">
+          <div class="node"><strong>算子结构</strong> 模型首先是从一个表示空间到另一个表示空间的 operator，矩阵只是它在某组基下的坐标表示。</div>
+          <div class="node"><strong>表示结构</strong> 表示学习不是单纯把对象写成向量，而是在寻找更合适的基、子空间和坐标系，让结构显形。</div>
+          <div class="node"><strong>投影结构</strong> 很多学习任务都可以读成“把目标投影到模型可表达的子空间”，最小二乘只是最经典的原型。</div>
+          <div class="node"><strong>谱结构</strong> 特征值和奇异值决定哪些方向被保留、放大、压缩或忽略，它们直接控制信息流。</div>
+          <div class="node"><strong>二次型结构</strong> 损失函数的局部几何由矩阵决定，曲率、耦合和尺度都写在 Hessian 或 Gram 结构里。</div>
+          <div class="node"><strong>条件结构</strong> 稳定性核心不是“会不会炸”，而是扰动会不会因病态谱和小奇异值而被放大。</div>
+        </div>
+      </section>
+
+      <aside class="rail">
+        <section class="page-section">
+          <h2>统一视角</h2>
+          <ul>
+            <li><strong>operator 视角：</strong>模型是可组合的变换族。</li>
+            <li><strong>representation 视角：</strong>学习是在寻找更好的坐标系和低维结构。</li>
+            <li><strong>optimization 视角：</strong>训练是在矩阵诱导的几何里找下降方向。</li>
+          </ul>
+        </section>
+        <section class="page-section">
+          <h2>一句话主线</h2>
+          <p>线性代数之所以是机器学习的底层语言，不是因为模型里出现了矩阵，而是因为 AI 始终在处理表示、变换、逼近和稳定性，而这四件事恰好分别落在基与子空间、线性算子、投影与优化、谱与条件数上。</p>
+        </section>
+      </aside>
+    </div>
+
+    <div class="grid-2">
+      <section class="page-section">
+        <h2>第二部分：统一解释</h2>
+        <h3>线性代数如何描述模型</h3>
+        <p>线性模型直接学习一个算子，深度网络学习一串可组合算子，卷积层学习受结构约束的稀疏算子。所谓建模，本质上是在规定：输入空间是什么、允许怎样的变换、哪些方向可以被保留或混合。</p>
+        <h3>线性代数如何影响优化</h3>
+        <p>在线性回归里，梯度是 <code>X^T(Xw-y)</code>，曲率是 <code>X^T X</code>；在更一般的网络里，Jacobian、Hessian、Gauss-Newton 和 Fisher 近似继续扮演同样角色。优化难度首先表现为谱几何：尺度差异大、相关性强、条件数差，训练就会慢且脆弱。</p>
+        <h3>线性代数如何决定稳定性</h3>
+        <p>稳定性看的是扰动放大规律。大奇异值会放大某些方向，小奇异值会让某些信息几乎不可恢复。于是正交初始化、归一化、残差连接、低秩约束和正则化，都可以统一理解成对谱、尺度和可逆性的控制。</p>
+      </section>
+
+      <section class="page-section">
+        <h2>第三部分：关键 insight</h2>
+        <ul>
+          <li>模型、优化、稳定性，本质上是同一个算子的三种读取方式。</li>
+          <li>表示学习的核心不是“向量化”，而是“找一个让结构显形的坐标系”。</li>
+          <li>很多训练困难首先是谱问题，不首先是非线性问题。</li>
+          <li>稳定性必须盯住最小奇异值，因为学习隐含着一个反问题。</li>
+          <li>正交与低秩，是现代机器学习中最常见也最深的两种结构偏置。</li>
+          <li>矩阵不是配角工具，而是模型结构、几何和病态性的暴露面。</li>
+        </ul>
+        <h3>参考支点</h3>
+        <p class="tiny">Strang, <em>Introduction to Linear Algebra</em>; Strang, <em>Linear Algebra and Learning from Data</em>; Axler, <em>Linear Algebra Done Right</em>; MIT 18.06SC; Stanford EE270; Stanford CS229.</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

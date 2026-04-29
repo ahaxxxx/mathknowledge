@@ -5,6 +5,7 @@
 - [线性代数到底在研究什么](./00_what_is_linear_algebra_zh.md)
 - [线性代数骨干内容框架](./01_linear_algebra_core_framework_zh.md)
 - [线性代数经典书目候选](./02_classic_texts_zh.md)
+- [线性代数在机器学习中的核心结构作用](./03_linear_algebra_in_machine_learning_zh.md)
 
 ## 后续准备补
 
