@@ -10,7 +10,8 @@
 
 1. 先在 `content/` 里写概念草稿
 2. 整理成人话解释、最小例子、易错点
-3. 再决定是否同步到 `docs/` 形成公开页面
+3. 运行 `python scripts/build_notes.py`
+4. 让 Markdown 自动发布到 `docs/notes/`
 
 ## 3. 每篇最小结构
 
@@ -32,3 +33,11 @@
 - 以后换静态站点工具时，不用重写全部源稿
 - 可以先写，再慢慢决定哪些值得公开
 - 整个 `mathKnowledge/` 目录可以独立复制走，不依赖当前研究站结构
+
+## 6. 现在怎么发布 Markdown
+
+- 源稿仍然写在 `content/`
+- 自动发布页由 `scripts/build_notes.py` 生成
+- 生成结果写到 `docs/notes/`
+- 以后新增 `content/**/*.md`，重新运行一次构建就会进入网页
+- 如果你想边写边自动重建，可以运行 `python scripts/build_notes.py --watch`

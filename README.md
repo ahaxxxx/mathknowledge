@@ -12,6 +12,7 @@ mathKnowledge/
   README.md
   site_plan.md
   workflow_zh.md
+  scripts/         -> build tools for auto-publishing notes
   content/         -> source notes and lesson drafts
   docs/            -> publishable static pages
   templates/       -> reusable writing templates
@@ -35,3 +36,21 @@ The first version is focused on:
 2. refine the published overview and core pages in `docs/`
 3. build the first stable FAQ and references pages
 4. add a live Q&A archive once the first sessions exist
+
+## Auto-published notes
+
+Markdown drafts under `content/` can now be published automatically into `docs/notes/`.
+
+Run:
+
+```text
+python scripts/build_notes.py
+```
+
+This scans `content/**/*.md`, renders note pages and directory indexes, and writes the generated site pages into `docs/notes/`.
+
+For continuous rebuilds while editing:
+
+```text
+python scripts/build_notes.py --watch
+```

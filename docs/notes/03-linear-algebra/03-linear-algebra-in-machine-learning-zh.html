@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>线性代数在机器学习中的核心结构作用 | math.bozhanli.com</title>
+  <meta name="description" content="这篇不按教材章节走，而按“结构作用”来整理。">
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../index.html">首页</a><a href="../../about.html">关于</a><a href="../../method.html">方法</a><a href="../../calculus.html">高数</a><a href="../../linear-algebra.html">线代</a><a href="../../probability.html">概率</a><a href="../../references.html">书目</a><a href="../../roadmap.html">路线</a><a href="../../live.html">答疑</a><a href="../../faq.html">FAQ</a><a class="is-active" href="../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../index.html">首页</a><span>/</span><a href="../index.html">笔记</a><span>/</span><a href="index.html">线代</a><span>/</span><span>线性代数在机器学习中的核心结构作用</span></div>
+      <h1>线性代数在机器学习中的核心结构作用</h1>
+      <p>这篇不按教材章节走，而按“结构作用”来整理。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><p>这篇不按教材章节走，而按“结构作用”来整理。</p>
+<p>如果把 Strang 和 Axler 的主线压成一句话，那就是：</p>
+<ul><li><code>Axler</code> 提醒我们，线性代数的主角不是矩阵计算，而是向量空间上的线性算子。</li><li><code>Strang</code> 提醒我们，投影、最小二乘、奇异值分解、正定矩阵这些结构，会直接变成数据分析、优化和学习系统里的工作部件。</li></ul>
+<p>所以，线性代数进入机器学习，不是“学完线代后顺便能做 AI”，而是：</p>
+<ol><li>它给出模型的语言。</li><li>它给出优化的几何。</li><li>它给出稳定性的判据。</li></ol>
+<hr>
+<h2>第一部分：核心结构（概念）</h2>
+<h3>1. 算子结构：模型首先是 operator，不首先是公式</h3>
+<p>线性代数最强的地方，不是会算矩阵，而是会把“一个系统如何把输入变成输出”写成算子。</p>
+<p>在机器学习里，最基础的模型就是</p>
+<pre><code class="language-text">f(x) = Ax + b</code></pre>
+<p>这看起来像一个公式，但在线性代数视角下，它其实是在说：</p>
+<ul><li>输入 <code>x</code> 属于某个向量空间</li><li>参数 <code>A</code> 定义了一个从输入空间到输出空间的线性算子</li><li>偏置 <code>b</code> 让这个算子变成仿射变换</li></ul>
+<p>深度网络只是把这件事重复很多次：</p>
+<pre><code class="language-text">x -&gt; A1 x + b1 -&gt; sigma(.) -&gt; A2 h + b2 -&gt; sigma(.) -&gt; ...</code></pre>
+<p>非线性激活很重要，但每一层内部真正承载“可学习结构”的，仍然是线性算子。</p>
+<p>所以第一条主线是：</p>
+<blockquote><p>机器学习模型的骨架，本质上是“可组合的算子族”。</p></blockquote>
+<p>矩阵只是这个算子在某组基下的坐标表示。</p>
+<h3>2. 表示结构：representation 不是“写成向量”，而是“找到好坐标”</h3>
+<p>机器学习里的表示学习，经常被说成“学特征”。 更严格地说，它是在寻找一种坐标系、子空间或低维结构，使任务相关信息更容易被线性分离、压缩或传递。</p>
+<p>这里有三层线性代数结构：</p>
+<ul><li><code>基</code>：决定你如何描述对象</li><li><code>子空间</code>：决定哪些方向被认为是“有效自由度”</li><li><code>坐标变换</code>：决定同一个对象在不同表示下是否更简单</li></ul>
+<p>这就是为什么 PCA、词向量、嵌入层、低秩分解都和线代直接相关。</p>
+<p>它们的共同点不是“都用了矩阵”，而是：</p>
+<blockquote><p>它们都在重写表示，使结构在某个坐标系里变得可见。</p></blockquote>
+<h3>3. 投影结构：学习常常是在逼近一个子空间</h3>
+<p>Strang 的主线之一是：最小二乘本质上是投影。</p>
+<p>这件事在机器学习里极其核心，因为很多训练问题都可以读成：</p>
+<ul><li>我们想解释数据</li><li>但模型类有限</li><li>所以只能在一个可表达的子空间里找“最近的解释”</li></ul>
+<p>在线性回归里，设计矩阵 <code>X</code> 的列空间就是模型可表达的方向集。 拟合 <code>y</code>，就是把 <code>y</code> 投影到 <code>col(X)</code> 上。</p>
+<p>于是训练不再只是“把误差调小”，而是：</p>
+<blockquote><p>在可表示空间里寻找最接近目标的点。</p></blockquote>
+<p>这一步把 <code>子空间</code>、<code>正交</code>、<code>投影</code>、<code>最小二乘</code> 直接接到了 AI。</p>
+<h3>4. 谱结构：eigenvalue / singular value 决定系统如何放大、压缩、筛选信息</h3>
+<p>如果说投影告诉你“模型能表达什么”，那谱结构告诉你“模型怎样作用这些信息”。</p>
+<p>特征值和特征向量揭示的是：</p>
+<ul><li>哪些方向在变换下保持方向不变</li><li>哪些方向被放大或缩小</li><li>哪些结构能被分解出来单独分析</li></ul>
+<p>奇异值分解进一步把这个观点推广到任意矩阵：</p>
+<pre><code class="language-text">A = U Sigma V^T</code></pre>
+<p>它说明任何线性变换都可以看成：</p>
+<ol><li>先旋转到一个合适坐标系</li><li>再沿正交方向分别缩放</li><li>再旋转回去</li></ol>
+<p>机器学习里很多现象都可以用这套语言读：</p>
+<ul><li>PCA：找方差最大的主方向</li><li>低秩近似：保留主要信号方向，丢掉次要方向</li><li>表示压缩：把高维数据投到主要奇异方向</li><li>梯度传播：某些方向被放大，某些方向被压扁</li></ul>
+<p>所以谱结构不是后面附加的高级技巧，而是：</p>
+<blockquote><p>它决定了一个学习系统对不同信息方向的态度。</p></blockquote>
+<h3>5. 二次型结构：优化的局部形状由矩阵决定</h3>
+<p>线性代数不仅描述模型，还描述损失函数的局部几何。</p>
+<p>最典型的形式是二次型：</p>
+<pre><code class="language-text">q(x) = x^T H x</code></pre>
+<p>其中矩阵 <code>H</code> 不只是系数表，它决定：</p>
+<ul><li>哪些方向曲率大</li><li>哪些方向曲率小</li><li>哪些方向几乎是平的</li></ul>
+<p>在线性回归中，</p>
+<pre><code class="language-text">L(w) = 1/2 ||Xw - y||^2</code></pre>
+<p>它的梯度和 Hessian 分别是：</p>
+<pre><code class="language-text">grad L(w) = X^T (Xw - y)
+H = X^T X</code></pre>
+<p>这说明优化问题的难度，不是抽象地“由损失函数决定”，而是非常具体地由 <code>X^T X</code> 的谱结构决定。</p>
+<h3>6. 条件结构：稳定性首先是条件数问题</h3>
+<p>很多人把稳定性理解成“代码会不会炸”，这太表面。</p>
+<p>更深的稳定性问题是：</p>
+<ul><li>数据稍微扰动一下，解会不会大幅变化？</li><li>参数稍微改一点，输出会不会被过度放大？</li><li>数值误差会不会在反复迭代里累积失控？</li></ul>
+<p>这背后的核心量，是奇异值和条件数：</p>
+<pre><code class="language-text">kappa(A) = sigma_max(A) / sigma_min(A)</code></pre>
+<p>如果最小奇异值很小，那么某些方向几乎不可辨识：</p>
+<ul><li>反问题会变脆弱</li><li>参数估计会变不稳定</li><li>梯度法会变慢</li><li>泛化也更容易受噪声污染</li></ul>
+<p>所以稳定性不是附属话题，它就在 <code>秩</code>、<code>零空间</code>、<code>奇异值</code>、<code>正交性</code> 这些线代概念里。</p>
+<hr>
+<h2>第二部分：统一解释（如何进入 AI）</h2>
+<h3>1. 线性代数如何描述“模型”</h3>
+<p>统一视角是：</p>
+<blockquote><p>模型 = 一个从表示空间到表示空间的算子族。</p></blockquote>
+<p>具体来说：</p>
+<ul><li>线性模型：直接学习一个算子 <code>A</code></li><li>仿射模型：学习 <code>A</code> 和偏置 <code>b</code></li><li>多层网络：学习一串可组合算子</li><li>卷积层：学习受结构约束的稀疏线性算子</li><li>注意力层：在固定注意力权重后，可读成对 value 的线性算子</li></ul>
+<p>所以“建模”在线代里并不是写下一个复杂公式，而是回答三个问题：</p>
+<ol><li>你的输入空间是什么？</li><li>你的可学习算子类是什么？</li><li>你允许哪些方向被保留、压缩、混合或消除？</li></ol>
+<p>这就是 <code>operator 视角</code>。</p>
+<h3>2. 线性代数如何影响“优化”</h3>
+<p>统一视角是：</p>
+<blockquote><p>优化 = 在某个由矩阵诱导的几何里找下降方向。</p></blockquote>
+<p>在线性模型里，这件事几乎是透明的：</p>
+<ul><li>梯度由 <code>X^T(Xw-y)</code> 给出</li><li>曲率由 <code>X^T X</code> 给出</li><li>收敛速度由谱分布和条件数决定</li></ul>
+<p>这三点意味着：</p>
+<ul><li>特征相关性强，<code>X^T X</code> 会病态</li><li>病态一出现，梯度法就会沿某些方向走得很慢</li><li>whitening、normalization、preconditioning 的作用，本质上都是在重塑这个几何</li></ul>
+<p>到了深度学习，这个故事没有消失，只是变成局部版本：</p>
+<ul><li>Jacobian 描述层与层之间如何传递扰动</li><li>Hessian、Gauss-Newton、Fisher 近似描述局部曲率</li><li>优化器的很多技巧，本质是在修正尺度、方向和耦合关系</li></ul>
+<p>所以 <code>optimization 视角</code> 不是“把线代拿来算梯度”，而是：</p>
+<blockquote><p>优化难度本身就是一个谱几何问题。</p></blockquote>
+<h3>3. 线性代数如何决定“稳定性”</h3>
+<p>统一视角是：</p>
+<blockquote><p>稳定性 = 算子对扰动的放大规律。</p></blockquote>
+<p>前向稳定性看的是：</p>
+<ul><li>输入扰动会不会被模型放大</li><li>中间层的信号会不会迅速衰减或爆炸</li></ul>
+<p>反向稳定性看的是：</p>
+<ul><li>梯度在链式传递时会不会消失或爆炸</li><li>参数估计会不会对样本噪声过度敏感</li></ul>
+<p>这两类稳定性都绕不开谱结构：</p>
+<ul><li>大奇异值会放大某些方向</li><li>很小的奇异值会让某些方向几乎不可识别</li><li>非正交表示会让误差在耦合方向上混杂传播</li></ul>
+<p>因此，正交初始化、残差连接、归一化、低秩约束、正则化这些工程技巧，不只是“经验上有效”，而是在线代上有统一解释：</p>
+<blockquote><p>它们都在控制算子的谱、尺度和可逆性。</p></blockquote>
+<h3>4. 三种视角怎样合成一个统一图景</h3>
+<p>把 <code>operator / representation / optimization</code> 三条线合在一起，可以得到一条更紧的主线：</p>
+<ol><li><code>operator</code> 说的是：模型到底是什么变换。</li><li><code>representation</code> 说的是：在哪个坐标系里，这个变换和数据结构更简单。</li><li><code>optimization</code> 说的是：怎样在这个变换族里找到一个好的参数。</li><li><code>stability</code> 说的是：找到之后，它对扰动是否可靠。</li></ol>
+<p>因此，线性代数在 AI 里不是零散工具箱，而是一个统一结构语言：</p>
+<blockquote><p>它让我们同时描述表示、计算、学习和鲁棒性。</p></blockquote>
+<hr>
+<h2>第三部分：关键 insight（必须）</h2>
+<h3>Insight 1：模型、优化、稳定性，本质上是在看同一个算子的三个侧面</h3>
+<ul><li>从建模看，它决定输入如何映到输出</li><li>从优化看，它决定损失地形的曲率</li><li>从稳定性看，它决定扰动如何被放大</li></ul>
+<p>这不是三套理论，而是一套算子结构的三种读取方式。</p>
+<h3>Insight 2：表示学习的核心，不是“把东西变成向量”，而是“找一个让结构显形的坐标系”</h3>
+<p>好表示不是更复杂，而是更可分、可压缩、可传递。</p>
+<p>PCA 找的是主方向。 嵌入层找的是任务相关坐标。 隐层表示找的是更适合后续算子处理的中间空间。</p>
+<p>所以 representation 的核心问题不是编码，而是坐标选择。</p>
+<h3>Insight 3：优化难不难，往往首先是谱问题，不首先是非线性问题</h3>
+<p>非线性当然重要，但在大量实际训练里，真正拖慢优化的，是：</p>
+<ul><li>方向尺度差异太大</li><li>特征高度相关</li><li>Jacobian 或 Hessian 的谱分布太差</li></ul>
+<p>也就是说，很多“训练难题”先表现为线代里的病态几何。</p>
+<h3>Insight 4：稳定性要盯住最小奇异值，而不只盯住大范数</h3>
+<p>很多人只关心爆炸，其实“接近不可逆”同样危险。</p>
+<p>因为学习经常隐含一个反问题：</p>
+<ul><li>从有限样本恢复参数</li><li>从噪声观测恢复结构</li><li>从中间表示恢复任务信息</li></ul>
+<p>一旦最小奇异值过小，这些恢复都会变脆弱。</p>
+<p>所以稳定性不是只防止发散，也是在防止“信息不可恢复”。</p>
+<h3>Insight 5：正交与低秩，是机器学习里最常见也最深的两种结构偏置</h3>
+<p><code>正交</code> 对应的是：</p>
+<ul><li>信息尽量不失真地传递</li><li>方向尽量解耦</li><li>误差和梯度尽量不被额外扭曲</li></ul>
+<p><code>低秩</code> 对应的是：</p>
+<ul><li>模型只保留主要自由度</li><li>表示被压缩到主结构</li><li>噪声方向被主动舍弃</li></ul>
+<p>现代机器学习里大量有效技巧，最后都会落回这两种偏置。</p>
+<h3>Insight 6：矩阵不是 AI 里的配角工具，而是结构暴露面</h3>
+<p>我们看到的是矩阵，真正该读的是：</p>
+<ul><li>它表示哪个算子</li><li>它相对于哪个基</li><li>它暴露了哪些子空间关系</li><li>它的谱说明了什么</li><li>它的条件数预示了什么</li></ul>
+<p>如果只把矩阵当表格，就会停留在“会算”； 如果把矩阵当结构暴露面，才真正进入“会解释”。</p>
+<hr>
+<h2>一个可以反复使用的总句</h2>
+<p>如果要把这篇内容压成一句最有解释力的话，我会写成：</p>
+<blockquote><p>线性代数之所以是机器学习的底层语言，不是因为模型里出现了矩阵，而是因为机器学习始终在处理四件事：表示什么、如何变换、怎样逼近、以及扰动会不会被放大；而这四件事恰好分别对应基与子空间、线性算子、投影与优化、谱与条件数。</p></blockquote>
+<hr>
+<h2>参考支点</h2>
+<h3>教材主线</h3>
+<ul><li>Gilbert Strang, <em>Introduction to Linear Algebra</em></li><li>Gilbert Strang, <em>Linear Algebra and Learning from Data</em></li><li>Sheldon Axler, <em>Linear Algebra Done Right</em></li></ul>
+<h3>在线资料</h3>
+<ul><li>MIT 18.06SC, Projection Matrices and Least Squares <a href="https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/least-squares-determinants-and-eigenvalues/projection-matrices-and-least-squares/">https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/least-squares-determinants-and-eigenvalues/projection-matrices-and-least-squares/</a></li><li>MIT 18.06SC, Positive Definite Matrices and Applications <a href="https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/positive-definite-matrices-and-applications/">https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/positive-definite-matrices-and-applications/</a></li><li>MIT, <em>A 2020 Vision of Linear Algebra</em> / <em>Singular Values and Singular Vectors</em> <a href="https://live.ocw.mit.edu/courses/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/resources/singular-values-and-singular-vectors/">https://live.ocw.mit.edu/courses/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/resources/singular-values-and-singular-vectors/</a></li><li>MIT, <em>The Functions of Deep Learning</em> <a href="https://math.mit.edu/~gs/learningfromdata/siam.pdf">https://math.mit.edu/~gs/learningfromdata/siam.pdf</a></li><li>Axler 官方站点 <a href="https://linear.axler.net/">https://linear.axler.net/</a></li><li>Stanford EE270 Lecture 13, <em>Condition Number and Gradient Descent</em> <a href="https://web.stanford.edu/class/ee270/scribes/lecture13.pdf">https://web.stanford.edu/class/ee270/scribes/lecture13.pdf</a></li><li>Stanford CS229 Notes, <em>Principal Components Analysis</em> <a href="https://cs229.stanford.edu/notes2022fall/pca.pdf">https://cs229.stanford.edu/notes2022fall/pca.pdf</a></li></ul></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">线代</a></li><li>源文件：<code>content/03_linear_algebra/03_linear_algebra_in_machine_learning_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="00-what-is-linear-algebra-zh.html">线性代数到底在研究什么</a></h3><p>线性代数研究的是：</p></div><div class="note-item"><h3><a href="01-linear-algebra-core-framework-zh.html">线性代数骨干内容框架</a></h3><p>线性代数真正研究的是：</p></div><div class="note-item"><h3><a href="02-classic-texts-zh.html">线性代数经典书目候选</a></h3><p>自动从 Markdown 源稿生成。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>
