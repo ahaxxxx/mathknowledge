@@ -37,7 +37,9 @@
     <div class="subject-grid"><section class="page-section article"><p>数列求和这一讲不要讲成“方法大全”。真正重要的是让学生形成一个习惯：先看通项结构，再决定求和方法。</p>
 <h2>这部分在解决什么问题</h2>
 <p>给出数列通项 $a_n$ 后，我们常常需要求前 n 项和</p>
-<p>$$ S_n=a_1+a_2+\cdots+a_n. $$</p>
+<div class="math-display">$$
+S_n=a_1+a_2+\cdots+a_n.
+$$</div>
 <p>数列求和的本质，是把一串局部项组织成整体表达。不同通项结构，对应不同整理方式。</p>
 <h2>方法选择地图</h2>
 <ul><li>公式法：通项是等差、等比、一次式、平方等熟悉结构。</li><li>分组求和：通项由几种简单结构相加，例如 $a_n=2n-1+2^n$。</li><li>裂项相消：通项可以拆成相邻两项之差，例如 $\frac1{n(n+1)}$。</li><li>错位相减：通项是“等差因子乘等比因子”，例如 $n2^n$ 或 $\frac n{3^n}$。</li><li>倒序相加：前后配对后有稳定结构，例如 $a_k+a_{n+1-k}$ 是常数。</li><li>由 $S_n$ 反推 $a_n$：必须单独处理 $a_1$。</li></ul>
@@ -45,42 +47,80 @@
 <ol><li>先用 10 到 15 分钟让学生讲上一讲通项公式作业。</li><li>再用 10 分钟建立“看结构选方法”的总入口。</li><li>公式法和分组求和讲快一点，让学生获得确定感。</li><li>裂项相消讲慢一点，要求写出前三项和最后两项。</li><li>错位相减讲慢一点，重点训练排版和边界项。</li><li>课堂练习时先只问“用什么方法”，不要急着算。</li></ol>
 <h2>公式法与分组求和</h2>
 <p>常用公式：</p>
-<p>$$ \sum_{k=1}^n k=\frac{n(n+1)}2, \quad \sum_{k=1}^n (2k-1)=n^2. $$</p>
-<p>$$ \sum_{k=1}^n k^2=\frac{n(n+1)(2n+1)}6, \quad \sum_{k=1}^n q^k=\frac{q(1-q^n)}{1-q}\ (q\ne1). $$</p>
+<div class="math-display">$$
+\sum_{k=1}^n k=\frac{n(n+1)}2,
+\quad
+\sum_{k=1}^n (2k-1)=n^2.
+$$</div>
+<div class="math-display">$$
+\sum_{k=1}^n k^2=\frac{n(n+1)(2n+1)}6,
+\quad
+\sum_{k=1}^n q^k=\frac{q(1-q^n)}{1-q}\ (q\ne1).
+$$</div>
 <p>例题：求</p>
-<p>$$ S_n=\sum_{k=1}^n(2k-1+2^k). $$</p>
+<div class="math-display">$$
+S_n=\sum_{k=1}^n(2k-1+2^k).
+$$</div>
 <p>拆开：</p>
-<p>$$ S_n=\sum_{k=1}^n(2k-1)+\sum_{k=1}^n2^k=n^2+2^{n+1}-2. $$</p>
+<div class="math-display">$$
+S_n=\sum_{k=1}^n(2k-1)+\sum_{k=1}^n2^k=n^2+2^{n+1}-2.
+$$</div>
 <h2>裂项相消</h2>
 <p>核心想法：把一项写成“前一项减后一项”。</p>
 <p>例题 1：求</p>
-<p>$$ S_n=\sum_{k=1}^n\frac1{k(k+1)}. $$</p>
+<div class="math-display">$$
+S_n=\sum_{k=1}^n\frac1{k(k+1)}.
+$$</div>
 <p>因为</p>
-<p>$$ \frac1{k(k+1)}=\frac1k-\frac1{k+1}, $$</p>
+<div class="math-display">$$
+\frac1{k(k+1)}=\frac1k-\frac1{k+1},
+$$</div>
 <p>所以</p>
-<p>$$ S_n=1-\frac1{n+1}=\frac n{n+1}. $$</p>
+<div class="math-display">$$
+S_n=1-\frac1{n+1}=\frac n{n+1}.
+$$</div>
 <p>例题 2：求</p>
-<p>$$ S_n=\sum_{k=1}^n\frac1{(2k-1)(2k+1)}. $$</p>
+<div class="math-display">$$
+S_n=\sum_{k=1}^n\frac1{(2k-1)(2k+1)}.
+$$</div>
 <p>因为</p>
-<p>$$ \frac1{(2k-1)(2k+1)}=\frac12\left(\frac1{2k-1}-\frac1{2k+1}\right), $$</p>
+<div class="math-display">$$
+\frac1{(2k-1)(2k+1)}=\frac12\left(\frac1{2k-1}-\frac1{2k+1}\right),
+$$</div>
 <p>所以</p>
-<p>$$ S_n=\frac12\left(1-\frac1{2n+1}\right)=\frac n{2n+1}. $$</p>
+<div class="math-display">$$
+S_n=\frac12\left(1-\frac1{2n+1}\right)=\frac n{2n+1}.
+$$</div>
 <p>例题 3：求</p>
-<p>$$ S_n=\sum_{k=1}^n\frac1{\sqrt{k+1}+\sqrt k}. $$</p>
+<div class="math-display">$$
+S_n=\sum_{k=1}^n\frac1{\sqrt{k+1}+\sqrt k}.
+$$</div>
 <p>有理化：</p>
-<p>$$ \frac1{\sqrt{k+1}+\sqrt k}=\sqrt{k+1}-\sqrt k. $$</p>
+<div class="math-display">$$
+\frac1{\sqrt{k+1}+\sqrt k}=\sqrt{k+1}-\sqrt k.
+$$</div>
 <p>所以</p>
-<p>$$ S_n=\sqrt{n+1}-1. $$</p>
+<div class="math-display">$$
+S_n=\sqrt{n+1}-1.
+$$</div>
 <h2>错位相减</h2>
 <p>看到“等差乘等比”，优先考虑错位相减。</p>
 <p>例题：求</p>
-<p>$$ S_n=\sum_{k=1}^n k2^{k-1}. $$</p>
+<div class="math-display">$$
+S_n=\sum_{k=1}^n k2^{k-1}.
+$$</div>
 <p>写成：</p>
-<p>$$ S_n=1+2\cdot2+3\cdot2^2+\cdots+n2^{n-1}. $$</p>
+<div class="math-display">$$
+S_n=1+2\cdot2+3\cdot2^2+\cdots+n2^{n-1}.
+$$</div>
 <p>两边乘以 2：</p>
-<p>$$ 2S_n=2+2\cdot2^2+3\cdot2^3+\cdots+n2^n. $$</p>
+<div class="math-display">$$
+2S_n=2+2\cdot2^2+3\cdot2^3+\cdots+n2^n.
+$$</div>
 <p>两式相减：</p>
-<p>$$ S_n=(n-1)2^n+1. $$</p>
+<div class="math-display">$$
+S_n=(n-1)2^n+1.
+$$</div>
 <p>这一题讲课时重点不是快速化简，而是让学生看清楚：为什么要乘公比，哪些项能对齐，最后剩下哪些边界项。</p>
 <h2>课堂练习</h2>
 <p>先判断方法，再计算。</p>

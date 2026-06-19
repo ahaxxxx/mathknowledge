@@ -4,7 +4,6 @@ import argparse
 import html
 import os
 import re
-import shutil
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -53,6 +52,7 @@ BLOCK_STARTERS = (
     "```",
     "---",
     ":::",
+    "$$",
 )
 
 
@@ -307,16 +307,44 @@ def render_list(items: Iterable[str], ordered: bool, source_path: Path, output_r
     return f"<{tag}>{rendered}</{tag}>"
 
 
+def render_text_paragraph(text: str, source_path: Path, output_rel: Path) -> str:
+    return f"<p>{render_inline(text, source_path, output_rel)}</p>"
+
+
 def render_paragraph(lines: list[str], source_path: Path, output_rel: Path) -> str:
-    chunks: list[str] = []
+    raw_chunks: list[str] = []
+    html_chunks: list[str] = []
     for index, raw_line in enumerate(lines):
         stripped = raw_line.rstrip()
-        chunks.append(render_inline(stripped.rstrip(), source_path, output_rel))
+        raw_chunks.append(stripped.rstrip())
+        html_chunks.append(render_inline(stripped.rstrip(), source_path, output_rel))
         if stripped.endswith("  "):
-            chunks.append("<br>")
+            raw_chunks.append("\n")
+            html_chunks.append("<br>")
         elif index < len(lines) - 1:
-            chunks.append(" ")
-    return f"<p>{''.join(chunks)}</p>"
+            raw_chunks.append(" ")
+            html_chunks.append(" ")
+
+    raw_text = "".join(raw_chunks)
+    if "$$" not in raw_text:
+        return f"<p>{''.join(html_chunks)}</p>"
+
+    blocks: list[str] = []
+    for part in re.split(r"(\$\$.*?\$\$)", raw_text, flags=re.S):
+        if not part:
+            continue
+        if part.startswith("$$") and part.endswith("$$"):
+            blocks.append(render_math_block([part]))
+            continue
+        text_part = part.strip()
+        if text_part:
+            blocks.append(render_text_paragraph(text_part, source_path, output_rel))
+    return "\n".join(blocks)
+
+
+def render_math_block(math_lines: list[str]) -> str:
+    content = "\n".join(html.escape(line.rstrip()) for line in math_lines)
+    return f'<div class="math-display">{content}</div>'
 
 
 def collect_list_items(lines: list[str], start_index: int, ordered: bool) -> tuple[list[str], int]:
@@ -349,6 +377,7 @@ def collect_list_items(lines: list[str], start_index: int, ordered: bool) -> tup
                 or re.fullmatch(r"-{3,}", current_stripped)
                 or current_stripped.startswith(":::solution")
                 or current_stripped == ":::"
+                or current_stripped.startswith("$$")
             ):
                 break
             if current.startswith("  ") or current.startswith("\t"):
@@ -370,6 +399,20 @@ def render_markdown(markdown_text: str, source_path: Path, output_rel: Path) -> 
         stripped = line.strip()
         if not stripped:
             i += 1
+            continue
+
+        if stripped.startswith("$$"):
+            math_lines = [line]
+            single_line = stripped.endswith("$$") and len(stripped) > 2
+            i += 1
+            if not single_line:
+                while i < len(lines):
+                    math_lines.append(lines[i])
+                    current_stripped = lines[i].strip()
+                    i += 1
+                    if current_stripped.endswith("$$"):
+                        break
+            blocks.append(render_math_block(math_lines))
             continue
 
         if stripped.startswith(":::solution"):
@@ -452,6 +495,7 @@ def render_markdown(markdown_text: str, source_path: Path, output_rel: Path) -> 
                 or re.fullmatch(r"-{3,}", current_stripped)
                 or current_stripped.startswith(":::solution")
                 or current_stripped == ":::"
+                or current_stripped.startswith("$$")
             ):
                 break
             paragraph_lines.append(current)
@@ -690,10 +734,21 @@ def write_output(output_rel: Path, content: str) -> None:
     output_path.write_text(content, encoding="utf-8")
 
 
-def build() -> None:
-    if NOTES_ROOT.exists():
-        shutil.rmtree(NOTES_ROOT)
+def reset_notes_root() -> None:
     NOTES_ROOT.mkdir(parents=True, exist_ok=True)
+    for html_path in NOTES_ROOT.rglob("*.html"):
+        html_path.unlink()
+    for path in sorted(NOTES_ROOT.rglob("*"), key=lambda item: len(item.parts), reverse=True):
+        if not path.is_dir():
+            continue
+        try:
+            path.rmdir()
+        except OSError:
+            pass
+
+
+def build() -> None:
+    reset_notes_root()
 
     notes = gather_notes()
     nodes = build_directory_nodes(notes)

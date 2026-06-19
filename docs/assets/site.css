@@ -538,6 +538,15 @@ a {
   margin-top: 6px;
 }
 
+.math-display {
+  margin: 14px 0;
+  overflow-x: auto;
+}
+
+.math-display mjx-container[jax="CHTML"][display="true"] {
+  margin: 0.65em 0;
+}
+
 .article pre {
   overflow-x: auto;
   padding: 18px;

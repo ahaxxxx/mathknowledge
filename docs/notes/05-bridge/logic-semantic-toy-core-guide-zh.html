@@ -74,76 +74,162 @@
 <p>在这个 toy 里，我们只关心下面三个对象：</p>
 <ul><li>输入 $x \in \mathbb{R}^2$</li><li>student 分布 $p_\theta(\cdot \mid x)$</li><li>规则集合 $\mathcal{R}$</li></ul>
 <p>整个问题的核心不是“模型结构有多复杂”，而是：</p>
-<p>$$ \mathcal{R} \longrightarrow q_{\mathcal{R}}(\cdot \mid x) \longrightarrow t_\theta(\cdot \mid x) \longrightarrow \mathcal{L}_{\mathrm{distill}}. $$</p>
+<div class="math-display">$$
+\mathcal{R}
+\longrightarrow
+q_{\mathcal{R}}(\cdot \mid x)
+\longrightarrow
+t_\theta(\cdot \mid x)
+\longrightarrow
+\mathcal{L}_{\mathrm{distill}}.
+$$</div>
 <blockquote><p>注释：你只要先抓住“rule distribution -&gt; teacher -&gt; distillation”这条链，后面的细节就有地方安放。</p></blockquote>
 <h3>3.2 <code>rules.py</code> 的严格角色</h3>
 <p><code>rules.py</code> 负责把自然语言式规则变成可参与训练的概率对象。</p>
 <p>更精确地说，它完成下面四步。</p>
 <h4>3.2.1 定义：单条规则</h4>
 <p>一条规则写成：</p>
-<p>$$ r = (a_r, b_r, c_r, \kappa_r, w_r, \alpha_r), $$</p>
+<div class="math-display">$$
+r = (a_r, b_r, c_r, \kappa_r, w_r, \alpha_r),
+$$</div>
 <p>其中：</p>
 <ul><li>$(a_r,b_r,c_r)$ 决定线性边界</li><li>$\kappa_r$ 决定正侧支持哪个类别</li><li>$w_r$ 决定规则聚合时的话语权</li><li>$\alpha_r$ 决定该规则相对全局温度的软硬程度</li></ul>
 <p>这正对应 <code>RuleSpec</code>。</p>
 <blockquote><p>注释：<code>RuleSpec</code> 是“规则的数学最小封装”。</p></blockquote>
 <h4>3.2.2 定义：margin 与边界</h4>
 <p>单条规则的 margin 定义为：</p>
-<p>$$ m_r(x) = a_r x_1 + b_r x_2 + c_r. $$</p>
+<div class="math-display">$$
+m_r(x) = a_r x_1 + b_r x_2 + c_r.
+$$</div>
 <p>于是边界由</p>
-<p>$$ m_r(x)=0 $$</p>
+<div class="math-display">$$
+m_r(x)=0
+$$</div>
 <p>给出。</p>
 <p>这一步对应 <code>rule_margin</code>。</p>
 <blockquote><p>注释：先把规则变成一条线，再问样本相对这条线在哪里。</p></blockquote>
 <h4>3.2.3 定义：单条规则的软概率</h4>
 <p>设有效温度为</p>
-<p>$$ \tau_r = T \alpha_r, $$</p>
+<div class="math-display">$$
+\tau_r = T \alpha_r,
+$$</div>
 <p>则规则正侧概率是：</p>
-<p>$$ \rho_r(x)=\sigma(\tau_r m_r(x)). $$</p>
+<div class="math-display">$$
+\rho_r(x)=\sigma(\tau_r m_r(x)).
+$$</div>
 <p>再由 <code>positive_class</code> 决定 class $1$ 概率：</p>
-<p>$$ q_r(y=1 \mid x) = \begin{cases} \rho_r(x), &amp; \kappa_r = 1, \\ 1-\rho_r(x), &amp; \kappa_r = 0. \end{cases} $$</p>
+<div class="math-display">$$
+q_r(y=1 \mid x)
+=
+\begin{cases}
+\rho_r(x), &amp; \kappa_r = 1, \\
+1-\rho_r(x), &amp; \kappa_r = 0.
+\end{cases}
+$$</div>
 <p>于是单条规则分布为：</p>
-<p>$$ q_r(\cdot \mid x) = \bigl(1-q_r(y=1 \mid x), q_r(y=1 \mid x)\bigr). $$</p>
+<div class="math-display">$$
+q_r(\cdot \mid x)
+=
+\bigl(1-q_r(y=1 \mid x), q_r(y=1 \mid x)\bigr).
+$$</div>
 <p>这一步对应 <code>soft_rule_probability_for_rule</code> 与 <code>rule_distribution</code>。</p>
 <blockquote><p>注释：这里最重要的是别把“在规则正侧”误认成“属于 class 1”。中间还隔着一个 <code>positive_class</code> 的语义翻译。</p></blockquote>
 <h4>3.2.4 命题：多规则聚合</h4>
 <p>对规则集合 $\mathcal{R}$，聚合 log-score 定义为：</p>
-<p>$$ \ell_{\mathcal{R}}(y \mid x) = \sum_{r \in \mathcal{R}} w_r \log q_r(y \mid x). $$</p>
+<div class="math-display">$$
+\ell_{\mathcal{R}}(y \mid x)
+=
+\sum_{r \in \mathcal{R}} w_r \log q_r(y \mid x).
+$$</div>
 <p>归一化后得到聚合规则分布：</p>
-<p>$$ q_{\mathcal{R}}(y \mid x) = \frac{\exp(\ell_{\mathcal{R}}(y \mid x))} {\sum_{k \in \{0,1\}} \exp(\ell_{\mathcal{R}}(k \mid x))}. $$</p>
+<div class="math-display">$$
+q_{\mathcal{R}}(y \mid x)
+=
+\frac{\exp(\ell_{\mathcal{R}}(y \mid x))}
+{\sum_{k \in \{0,1\}} \exp(\ell_{\mathcal{R}}(k \mid x))}.
+$$</div>
 <p>等价地：</p>
-<p>$$ q_{\mathcal{R}}(y \mid x) \propto \prod_{r \in \mathcal{R}} q_r(y \mid x)^{w_r}. $$</p>
+<div class="math-display">$$
+q_{\mathcal{R}}(y \mid x)
+\propto
+\prod_{r \in \mathcal{R}} q_r(y \mid x)^{w_r}.
+$$</div>
 <p>这一步对应 <code>aggregate_rule_distribution</code>。</p>
 <blockquote><p>注释：这不是“投票平均”，而是“加权乘法型证据融合”。</p></blockquote>
 <h4>3.2.5 定义：teacher</h4>
 <p>设 student 分布为 $p_\theta(\cdot \mid x)$，规则强度为 $\lambda$，则 teacher 定义为：</p>
-<p>$$ t_\theta(y \mid x) = \frac{p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda} {\sum_{k \in \{0,1\}} p_\theta(k \mid x)\, q_{\mathcal{R}}(k \mid x)^\lambda}. $$</p>
+<div class="math-display">$$
+t_\theta(y \mid x)
+=
+\frac{p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda}
+{\sum_{k \in \{0,1\}} p_\theta(k \mid x)\, q_{\mathcal{R}}(k \mid x)^\lambda}.
+$$</div>
 <p>这一步对应 <code>build_teacher_probs</code>。</p>
 <p>于是可以得到本节最核心的结论：</p>
-<p>$$ \text{teacher} = \text{student distribution} \times \text{rule reweighting}. $$</p>
+<div class="math-display">$$
+\text{teacher}
+=
+\text{student distribution}
+\times
+\text{rule reweighting}.
+$$</div>
 <blockquote><p>注释：teacher 不是外部老师，而是“当前 student 被规则改写后的老师”。</p></blockquote>
 <h3>3.3 <code>trainer.py</code> 的严格角色</h3>
 <p><code>trainer.py</code> 负责把 teacher 真正接到参数更新里。</p>
 <h4>3.3.1 定义：监督损失</h4>
 <p>对 labeled batch $B_l = \{(x_i,y_i)\}_{i=1}^{n_l}$，监督损失是：</p>
-<p>$$ \mathcal{L}_{\mathrm{sup}} = \frac{1}{n_l} \sum_{i=1}^{n_l} -\log p_\theta(y_i \mid x_i). $$</p>
+<div class="math-display">$$
+\mathcal{L}_{\mathrm{sup}}
+=
+\frac{1}{n_l}
+\sum_{i=1}^{n_l}
+-\log p_\theta(y_i \mid x_i).
+$$</div>
 <p>对应代码中的 <code>F.cross_entropy(...)</code>。</p>
 <h4>3.3.2 定义：蒸馏损失</h4>
 <p>把 labeled 与 unlabeled 输入拼接成：</p>
-<p>$$ X_r = \mathrm{concat}(X_l, X_u). $$</p>
+<div class="math-display">$$
+X_r = \mathrm{concat}(X_l, X_u).
+$$</div>
 <p>在这个 batch 上，蒸馏损失为：</p>
-<p>$$ \mathcal{L}_{\mathrm{distill}} = \frac{1}{|X_r|} \sum_{x \in X_r} \mathrm{KL}\!\bigl(t_\theta(\cdot \mid x)\,\|\,p_\theta(\cdot \mid x)\bigr). $$</p>
+<div class="math-display">$$
+\mathcal{L}_{\mathrm{distill}}
+=
+\frac{1}{|X_r|}
+\sum_{x \in X_r}
+\mathrm{KL}\!\bigl(t_\theta(\cdot \mid x)\,\|\,p_\theta(\cdot \mid x)\bigr).
+$$</div>
 <p>这一步对应 <code>F.kl_div(F.log_softmax(...), teacher_probs, ...)</code>。</p>
 <blockquote><p>注释：代码的 KL 方向是 teacher 到 student，不是反过来。</p></blockquote>
 <h4>3.3.3 定义：总损失</h4>
 <p>设蒸馏权重为 $\pi_t$，则总损失为：</p>
-<p>$$ \mathcal{L}_t = (1-\pi_t)\,\mathcal{L}_{\mathrm{sup}} + \pi_t\,\mathcal{L}_{\mathrm{distill}}. $$</p>
+<div class="math-display">$$
+\mathcal{L}_t
+=
+(1-\pi_t)\,\mathcal{L}_{\mathrm{sup}}
++ \pi_t\,\mathcal{L}_{\mathrm{distill}}.
+$$</div>
 <p>其中：</p>
-<p>$$ \pi_t = \texttt{max\_distill\_weight} \cdot \min\left(1,\frac{t}{\max(1,\texttt{ramp\_up\_epochs})}\right). $$</p>
+<div class="math-display">$$
+\pi_t
+=
+\texttt{max\_distill\_weight}
+\cdot
+\min\left(1,\frac{t}{\max(1,\texttt{ramp\_up\_epochs})}\right).
+$$</div>
 <p>这对应 <code>distill_weight_at</code>。</p>
 <blockquote><p>注释：训练早期先更信标签，后期再逐步增强规则 teacher 的牵引力。</p></blockquote>
 <h4>3.3.4 推论：无标签样本如何进入训练</h4>
 <p>因为无标签样本不在 $\mathcal{L}_{\mathrm{sup}}$ 中，但出现在 $X_r$ 中，所以它只通过下面这条路径进入训练：</p>
-<p>$$ x_u \longrightarrow q_{\mathcal{R}}(\cdot \mid x_u) \longrightarrow t_\theta(\cdot \mid x_u) \longrightarrow \mathcal{L}_{\mathrm{distill}}. $$</p>
+<div class="math-display">$$
+x_u
+\longrightarrow
+q_{\mathcal{R}}(\cdot \mid x_u)
+\longrightarrow
+t_\theta(\cdot \mid x_u)
+\longrightarrow
+\mathcal{L}_{\mathrm{distill}}.
+$$</div>
 <blockquote><p>注释：无标签样本没有真标签，但它们仍然可以“学习去模仿规则修正后的 teacher”。</p></blockquote>
 <h3>3.4 本节应得结论</h3>
 <p>读完第 3 节，你至少应该能严格说出下面四句话：</p>
@@ -157,74 +243,156 @@
 <p>本节只盯两个文件：</p>
 <ul><li><code>repro/03_semantic_loss_toy/constraints.py</code></li><li><code>repro/03_semantic_loss_toy/trainer.py</code></li></ul>
 <p>这里的输出不是普通 softmax 多分类，而是 $C$ 个相互独立的 Bernoulli 位。若类别数为 $C$，则单个输出赋值写成：</p>
-<p>$$ a = (a_1,\dots,a_C) \in \{0,1\}^C. $$</p>
+<div class="math-display">$$
+a = (a_1,\dots,a_C) \in \{0,1\}^C.
+$$</div>
 <p>模型输出 logits：</p>
-<p>$$ z_\theta(x) \in \mathbb{R}^C. $$</p>
+<div class="math-display">$$
+z_\theta(x) \in \mathbb{R}^C.
+$$</div>
 <p>每一位的激活概率是：</p>
-<p>$$ p_\theta(a_c=1 \mid x)=\sigma(z_\theta^{(c)}(x)). $$</p>
+<div class="math-display">$$
+p_\theta(a_c=1 \mid x)=\sigma(z_\theta^{(c)}(x)).
+$$</div>
 <blockquote><p>注释：这里每一位都独立做 sigmoid，所以语义上更像“多个开关位”，而不是 softmax 里“只能选一个格子”。</p></blockquote>
 <h3>4.2 <code>constraints.py</code> 的严格角色</h3>
 <p><code>constraints.py</code> 负责把逻辑约束变成一个“合法赋值集合”，再计算当前输出对这个集合分配了多少总概率质量。</p>
 <h4>4.2.1 定义：合法赋值集合</h4>
 <p>先枚举所有二值赋值：</p>
-<p>$$ \{0,1\}^C. $$</p>
+<div class="math-display">$$
+\{0,1\}^C.
+$$</div>
 <p>再根据约束 $\phi$ 选出合法子集：</p>
-<p>$$ \mathcal{V}_\phi \subseteq \{0,1\}^C. $$</p>
+<div class="math-display">$$
+\mathcal{V}_\phi \subseteq \{0,1\}^C.
+$$</div>
 <p>这一步对应 <code>get_constraint_spec</code>。</p>
 <p>例如：</p>
 <ul><li><code>exactly_one</code> 对应恰有一位为 $1$</li><li><code>at_least_one</code> 对应至少一位为 $1$</li><li><code>exactly_two_bad</code> 对应恰有两位为 $1$</li></ul>
 <blockquote><p>注释：这里的“逻辑”不是 teacher，而是一个合法世界集合。</p></blockquote>
 <h4>4.2.2 定义：单个赋值的概率</h4>
 <p>由于各位独立，某个具体赋值 $a \in \{0,1\}^C$ 的概率为：</p>
-<p>$$ P_\theta(a \mid x) = \prod_{c=1}^{C} \sigma(z_\theta^{(c)}(x))^{a_c} \cdot \bigl(1-\sigma(z_\theta^{(c)}(x))\bigr)^{1-a_c}. $$</p>
+<div class="math-display">$$
+P_\theta(a \mid x)
+=
+\prod_{c=1}^{C}
+\sigma(z_\theta^{(c)}(x))^{a_c}
+\cdot
+\bigl(1-\sigma(z_\theta^{(c)}(x))\bigr)^{1-a_c}.
+$$</div>
 <p>取对数后得到：</p>
-<p>$$ \log P_\theta(a \mid x) = \sum_{c=1}^{C} \left[ a_c \log \sigma(z_\theta^{(c)}(x)) + (1-a_c)\log \sigma(-z_\theta^{(c)}(x)) \right]. $$</p>
+<div class="math-display">$$
+\log P_\theta(a \mid x)
+=
+\sum_{c=1}^{C}
+\left[
+a_c \log \sigma(z_\theta^{(c)}(x))
++ (1-a_c)\log \sigma(-z_\theta^{(c)}(x))
+\right].
+$$</div>
 <p>这正对应 <code>log_satisfaction_mass</code> 里对 <code>log_prob_one</code> 与 <code>log_prob_zero</code> 的构造。</p>
 <blockquote><p>注释：先算“某一个具体世界”的概率，再谈“所有合法世界加起来”的总质量。</p></blockquote>
 <h4>4.2.3 定义：满足概率质量</h4>
 <p>约束 $\phi$ 的满足概率定义为：</p>
-<p>$$ P_\theta(\phi \mid x) = \sum_{a \in \mathcal{V}_\phi} P_\theta(a \mid x). $$</p>
+<div class="math-display">$$
+P_\theta(\phi \mid x)
+=
+\sum_{a \in \mathcal{V}_\phi} P_\theta(a \mid x).
+$$</div>
 <p>其对数形式为：</p>
-<p>$$ \log P_\theta(\phi \mid x) = \log \sum_{a \in \mathcal{V}_\phi} P_\theta(a \mid x). $$</p>
+<div class="math-display">$$
+\log P_\theta(\phi \mid x)
+=
+\log \sum_{a \in \mathcal{V}_\phi} P_\theta(a \mid x).
+$$</div>
 <p>这一步对应 <code>log_satisfaction_mass</code>，数值上用 <code>logsumexp</code> 实现。</p>
 <blockquote><p>注释：不在看某一条规则真假，而是在看“当前输出总共有多少概率落在合法世界里”。</p></blockquote>
 <h4>4.2.4 定义：semantic loss</h4>
 <p>对一个 batch，semantic loss 定义为：</p>
-<p>$$ \mathcal{L}_{\mathrm{sem}} = -\frac{1}{n} \sum_{i=1}^{n} \log P_\theta(\phi \mid x_i). $$</p>
+<div class="math-display">$$
+\mathcal{L}_{\mathrm{sem}}
+=
+-\frac{1}{n}
+\sum_{i=1}^{n}
+\log P_\theta(\phi \mid x_i).
+$$</div>
 <p>这对应：</p>
-<p>$$ \texttt{return -log\_satisfaction\_mass(logits, spec).mean()}. $$</p>
+<div class="math-display">$$
+\texttt{return -log\_satisfaction\_mass(logits, spec).mean()}.
+$$</div>
 <blockquote><p>注释：概率质量越多地落在合法世界里，loss 就越小。</p></blockquote>
 <h4>4.2.5 命题：为什么这里必须用独立 sigmoid</h4>
 <p>若直接使用 softmax，多类 one-hot 结构会先天地偏向“恰有一个类激活”，从而削弱 <code>exactly_one</code> 这类约束的辨识度。</p>
 <p>使用独立 sigmoid 时，模型可以产生很多“非法世界”，例如：</p>
 <ul><li>多位同时高</li><li>所有位都低</li></ul>
 <p>于是 semantic loss 才真的有事情可做：</p>
-<p>$$ \text{illegal outputs} \longrightarrow \text{semantic penalty} \longrightarrow \text{probability mass shift to } \mathcal{V}_\phi. $$</p>
+<div class="math-display">$$
+\text{illegal outputs}
+\longrightarrow
+\text{semantic penalty}
+\longrightarrow
+\text{probability mass shift to } \mathcal{V}_\phi.
+$$</div>
 <blockquote><p>注释：这个 toy 故意不让结构先天满足约束，否则你就看不到约束项到底在推什么。</p></blockquote>
 <h3>4.3 <code>trainer.py</code> 的严格角色</h3>
 <h4>4.3.1 定义：监督项</h4>
 <p>对 labeled batch $B_l$，先把标签变成 one-hot：</p>
-<p>$$ e(y_i) \in \{0,1\}^C. $$</p>
+<div class="math-display">$$
+e(y_i) \in \{0,1\}^C.
+$$</div>
 <p>监督损失写成：</p>
-<p>$$ \mathcal{L}_{\mathrm{sup}} = \frac{1}{|B_l|} \sum_{(x_i,y_i)\in B_l} \mathrm{BCEWithLogits}\bigl(z_\theta(x_i), e(y_i)\bigr). $$</p>
+<div class="math-display">$$
+\mathcal{L}_{\mathrm{sup}}
+=
+\frac{1}{|B_l|}
+\sum_{(x_i,y_i)\in B_l}
+\mathrm{BCEWithLogits}\bigl(z_\theta(x_i), e(y_i)\bigr).
+$$</div>
 <p>这对应 <code>_one_hot_targets</code> 与 <code>F.binary_cross_entropy_with_logits(...)</code>。</p>
 <blockquote><p>注释：这里仍然是“每一位单独受监督”，不是 softmax 交叉熵。</p></blockquote>
 <h4>4.3.2 定义：无标签语义项</h4>
 <p>对 unlabeled batch $B_u$，语义项定义为：</p>
-<p>$$ \mathcal{L}_{\mathrm{sem}}(\theta; B_u) = -\frac{1}{|B_u|} \sum_{x \in B_u} \log P_\theta(\phi \mid x). $$</p>
+<div class="math-display">$$
+\mathcal{L}_{\mathrm{sem}}(\theta; B_u)
+=
+-\frac{1}{|B_u|}
+\sum_{x \in B_u}
+\log P_\theta(\phi \mid x).
+$$</div>
 <p>这对应：</p>
-<p>$$ \texttt{semantic\_term = semantic\_loss(unlabeled\_logits, constraint\_spec)}. $$</p>
+<div class="math-display">$$
+\texttt{semantic\_term = semantic\_loss(unlabeled\_logits, constraint\_spec)}.
+$$</div>
 <blockquote><p>注释：无标签样本不需要 teacher，也不需要伪标签，只需要“约束本身”。</p></blockquote>
 <h4>4.3.3 定义：总损失</h4>
 <p>若语义权重为 $\lambda_t$，则总损失为：</p>
-<p>$$ \mathcal{L}_t = \mathcal{L}_{\mathrm{sup}} + \lambda_t \mathcal{L}_{\mathrm{sem}}. $$</p>
+<div class="math-display">$$
+\mathcal{L}_t
+=
+\mathcal{L}_{\mathrm{sup}}
++ \lambda_t \mathcal{L}_{\mathrm{sem}}.
+$$</div>
 <p>其中权重调度为：</p>
-<p>$$ \lambda_t = \texttt{lambda\_semantic} \cdot \min\left(1,\frac{t}{\max(1,\texttt{ramp\_up\_epochs})}\right). $$</p>
+<div class="math-display">$$
+\lambda_t
+=
+\texttt{lambda\_semantic}
+\cdot
+\min\left(1,\frac{t}{\max(1,\texttt{ramp\_up\_epochs})}\right).
+$$</div>
 <p>这对应 <code>semantic_weight_at</code>。</p>
 <blockquote><p>注释：训练早期先用标签把模型拉出最乱阶段，再逐步加强约束影响。</p></blockquote>
 <h4>4.3.4 推论：无标签样本的进入路径</h4>
 <p>无标签样本通过下面这条链进入训练：</p>
-<p>$$ x_u \longrightarrow z_\theta(x_u) \longrightarrow P_\theta(\phi \mid x_u) \longrightarrow \mathcal{L}_{\mathrm{sem}}. $$</p>
+<div class="math-display">$$
+x_u
+\longrightarrow
+z_\theta(x_u)
+\longrightarrow
+P_\theta(\phi \mid x_u)
+\longrightarrow
+\mathcal{L}_{\mathrm{sem}}.
+$$</div>
 <p>与 Logic-Net 不同，这里没有 teacher。</p>
 <blockquote><p>注释：Logic-Net 是“无标签样本先过 teacher”；Semantic Loss 是“无标签样本直接过约束满足质量”。</p></blockquote>
 <h3>4.4 本节应得结论</h3>
@@ -238,16 +406,46 @@
 <blockquote><p>注释：一个是“先改目标分布”，一个是“直接罚不满足约束的概率结构”。</p></blockquote>
 <h3>5.2 命题：两者的核心差别不在“有没有规则”，而在“规则进入模型的数学接口不同”</h3>
 <p>Logic-Net 的路径是：</p>
-<p>$$ \mathcal{R} \longrightarrow q_{\mathcal{R}} \longrightarrow t_\theta \longrightarrow \mathrm{KL}(t_\theta \,\|\, p_\theta). $$</p>
+<div class="math-display">$$
+\mathcal{R}
+\longrightarrow
+q_{\mathcal{R}}
+\longrightarrow
+t_\theta
+\longrightarrow
+\mathrm{KL}(t_\theta \,\|\, p_\theta).
+$$</div>
 <p>Semantic Loss 的路径是：</p>
-<p>$$ \phi \longrightarrow \mathcal{V}_\phi \longrightarrow P_\theta(\phi \mid x) \longrightarrow -\log P_\theta(\phi \mid x). $$</p>
+<div class="math-display">$$
+\phi
+\longrightarrow
+\mathcal{V}_\phi
+\longrightarrow
+P_\theta(\phi \mid x)
+\longrightarrow
+-\log P_\theta(\phi \mid x).
+$$</div>
 <p>因此两者的本质差别是：</p>
 <ul><li>Logic-Net 先构造分布型 teacher；</li><li>Semantic Loss 直接构造约束满足型目标函数。</li></ul>
 <h3>5.3 命题：两者对无标签样本的利用路径也不同</h3>
 <p>Logic-Net：</p>
-<p>$$ x_u \longrightarrow q_{\mathcal{R}}(\cdot \mid x_u) \longrightarrow t_\theta(\cdot \mid x_u) \longrightarrow \mathcal{L}_{\mathrm{distill}}. $$</p>
+<div class="math-display">$$
+x_u
+\longrightarrow
+q_{\mathcal{R}}(\cdot \mid x_u)
+\longrightarrow
+t_\theta(\cdot \mid x_u)
+\longrightarrow
+\mathcal{L}_{\mathrm{distill}}.
+$$</div>
 <p>Semantic Loss：</p>
-<p>$$ x_u \longrightarrow P_\theta(\phi \mid x_u) \longrightarrow \mathcal{L}_{\mathrm{sem}}. $$</p>
+<div class="math-display">$$
+x_u
+\longrightarrow
+P_\theta(\phi \mid x_u)
+\longrightarrow
+\mathcal{L}_{\mathrm{sem}}.
+$$</div>
 <p>所以两者都能利用无标签样本，但“利用机制”不是同一种。</p>
 <blockquote><p>注释：一个是“模仿规则教师”，一个是“直接提高合法世界概率”。</p></blockquote>
 <h3>5.4 本节应得结论</h3>
@@ -260,7 +458,19 @@
 <p>操作顺序：</p>
 <ol><li>读 <code>repro/01_logic_net_toy/README.md</code></li><li>读 <code>repro/01_logic_net_toy/rules.py</code></li><li>在 <code>repro/01_logic_net_toy/trainer.py</code> 中定位 <code>train_logic_guided</code></li></ol>
 <p>你必须先得到下面这条链：</p>
-<p>$$ r \longrightarrow m_r(x) \longrightarrow q_r(\cdot \mid x) \longrightarrow q_{\mathcal{R}}(\cdot \mid x) \longrightarrow t_\theta(\cdot \mid x) \longrightarrow \mathcal{L}_{\mathrm{distill}}. $$</p>
+<div class="math-display">$$
+r
+\longrightarrow
+m_r(x)
+\longrightarrow
+q_r(\cdot \mid x)
+\longrightarrow
+q_{\mathcal{R}}(\cdot \mid x)
+\longrightarrow
+t_\theta(\cdot \mid x)
+\longrightarrow
+\mathcal{L}_{\mathrm{distill}}.
+$$</div>
 <p>阶段完成标准：</p>
 <p>你能独立写出一句总结：</p>
 <p><code>Logic-Net toy 先把规则变成聚合规则分布，再与 student 分布融合成 teacher，最后用 teacher 作为 target 去蒸馏 student。</code></p>
@@ -268,7 +478,15 @@
 <p>操作顺序：</p>
 <ol><li>读 <code>repro/03_semantic_loss_toy/README.md</code></li><li>读 <code>repro/03_semantic_loss_toy/constraints.py</code></li><li>在 <code>repro/03_semantic_loss_toy/trainer.py</code> 中定位 <code>train_semantic_guided</code></li></ol>
 <p>你必须先得到下面这条链：</p>
-<p>$$ \phi \longrightarrow \mathcal{V}_\phi \longrightarrow P_\theta(\phi \mid x) \longrightarrow \mathcal{L}_{\mathrm{sem}}. $$</p>
+<div class="math-display">$$
+\phi
+\longrightarrow
+\mathcal{V}_\phi
+\longrightarrow
+P_\theta(\phi \mid x)
+\longrightarrow
+\mathcal{L}_{\mathrm{sem}}.
+$$</div>
 <p>阶段完成标准：</p>
 <p>你能独立写出一句总结：</p>
 <p><code>Semantic Loss toy 先定义合法赋值集合，再计算当前输出在合法赋值集合上的总概率质量，并把它的负对数直接作为约束损失。</code></p>
@@ -279,9 +497,19 @@
 <h3>6.4 最低完成标准</h3>
 <p>如果时间不够，你至少要能在纸上写出下面两条式子：</p>
 <p>Logic-Net：</p>
-<p>$$ t_\theta(y \mid x) \propto p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda. $$</p>
+<div class="math-display">$$
+t_\theta(y \mid x)
+\propto
+p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda.
+$$</div>
 <p>Semantic Loss：</p>
-<p>$$ \mathcal{L}_{\mathrm{sem}} = -\frac{1}{n} \sum_{i=1}^{n} \log P_\theta(\phi \mid x_i). $$</p>
+<div class="math-display">$$
+\mathcal{L}_{\mathrm{sem}}
+=
+-\frac{1}{n}
+\sum_{i=1}^{n}
+\log P_\theta(\phi \mid x_i).
+$$</div>
 <blockquote><p>注释：这两条式子一旦抓住，整份笔记的主骨架就抓住了。</p></blockquote>
 <hr>
 <h2>7. 今晚不要先陷进去的地方</h2>
@@ -314,60 +542,104 @@
 <h3>10.1 问题设定</h3>
 <p>我们先把这个 toy 的学习问题写清楚。</p>
 <p>输入空间是二维欧氏空间：</p>
-<p>$$ \mathcal{X} = \mathbb{R}^2. $$</p>
+<div class="math-display">$$
+\mathcal{X} = \mathbb{R}^2.
+$$</div>
 <p>标签空间是二分类空间：</p>
-<p>$$ \mathcal{Y} = \{0,1\}. $$</p>
+<div class="math-display">$$
+\mathcal{Y} = \{0,1\}.
+$$</div>
 <p>有标签数据集记为：</p>
-<p>$$ \mathcal{D}_l = \{(x_i, y_i)\}_{i=1}^{N_l}. $$</p>
+<div class="math-display">$$
+\mathcal{D}_l = \{(x_i, y_i)\}_{i=1}^{N_l}.
+$$</div>
 <p>无标签数据集记为：</p>
-<p>$$ \mathcal{D}_u = \{u_j\}_{j=1}^{N_u}. $$</p>
+<div class="math-display">$$
+\mathcal{D}_u = \{u_j\}_{j=1}^{N_u}.
+$$</div>
 <p>student 模型记为 $f_\theta$，它把输入映射到二分类 logits：</p>
-<p>$$ f_\theta : \mathbb{R}^2 \to \mathbb{R}^2, \qquad f_\theta(x) = z_\theta(x). $$</p>
+<div class="math-display">$$
+f_\theta : \mathbb{R}^2 \to \mathbb{R}^2,
+\qquad
+f_\theta(x) = z_\theta(x).
+$$</div>
 <p>其中</p>
-<p>$$ z_\theta(x) = \bigl(z_\theta^{(0)}(x), z_\theta^{(1)}(x)\bigr). $$</p>
+<div class="math-display">$$
+z_\theta(x) = \bigl(z_\theta^{(0)}(x), z_\theta^{(1)}(x)\bigr).
+$$</div>
 <p>对 logits 做 softmax，得到 student 的预测分布：</p>
-<p>$$ p_\theta(y=k \mid x) = \frac{\exp(z_\theta^{(k)}(x))} {\exp(z_\theta^{(0)}(x))+\exp(z_\theta^{(1)}(x))}, \qquad k \in \{0,1\}. $$</p>
+<div class="math-display">$$
+p_\theta(y=k \mid x)
+=
+\frac{\exp(z_\theta^{(k)}(x))}
+{\exp(z_\theta^{(0)}(x))+\exp(z_\theta^{(1)}(x))},
+\qquad k \in \{0,1\}.
+$$</div>
 <blockquote><p>注释：模型先给两个分数，再把它们归一化成“属于 0 类/1 类”的概率。</p></blockquote>
 <h3>10.2 <code>RuleSpec</code> 的数学角色</h3>
 <p>一条规则不是一句自然语言，而是一个可计算对象。</p>
 <p>在这个 toy 中，一条规则 $r$ 被抽象成：</p>
-<p>$$ r = (a_r, b_r, c_r, \kappa_r, w_r, \alpha_r), $$</p>
+<div class="math-display">$$
+r = (a_r, b_r, c_r, \kappa_r, w_r, \alpha_r),
+$$</div>
 <p>其中：</p>
 <ul><li>$(a_r, b_r)$ 是线性系数，对应 <code>coefficients</code></li><li>$c_r$ 是偏置，对应 <code>bias</code></li><li>$\kappa_r \in \{0,1\}$ 是正侧支持的类别，对应 <code>positive_class</code></li><li>$w_r &gt; 0$ 是规则权重，对应 <code>weight</code></li><li>$\alpha_r &gt; 0$ 是规则自己的温度缩放，对应 <code>temperature_scale</code></li></ul>
 <p>如果把工程字段也写进来，那么 <code>name</code> 与 <code>description</code> 只是标识和说明，不参与核心数学计算。</p>
 <blockquote><p>注释：<code>RuleSpec</code> 不是“零碎参数堆一起”，而是在说一条规则至少要回答 5 个问题：线在哪、哪边是正侧、正侧支持哪一类、这条规则有多重要、这条规则有多硬。</p></blockquote>
 <h3>10.3 定义 1：规则边界与 margin</h3>
 <p>对任意规则 $r$，定义它的 margin 函数为：</p>
-<p>$$ m_r(x) = a_r x_1 + b_r x_2 + c_r. $$</p>
+<div class="math-display">$$
+m_r(x) = a_r x_1 + b_r x_2 + c_r.
+$$</div>
 <p>于是规则边界定义为：</p>
-<p>$$ \partial r = \{x \in \mathbb{R}^2 : m_r(x)=0\}. $$</p>
+<div class="math-display">$$
+\partial r = \{x \in \mathbb{R}^2 : m_r(x)=0\}.
+$$</div>
 <p>规则正侧定义为：</p>
-<p>$$ H_r^+ = \{x \in \mathbb{R}^2 : m_r(x) &gt; 0\}. $$</p>
+<div class="math-display">$$
+H_r^+ = \{x \in \mathbb{R}^2 : m_r(x) &gt; 0\}.
+$$</div>
 <p>规则负侧定义为：</p>
-<p>$$ H_r^- = \{x \in \mathbb{R}^2 : m_r(x) &lt; 0\}. $$</p>
+<div class="math-display">$$
+H_r^- = \{x \in \mathbb{R}^2 : m_r(x) &lt; 0\}.
+$$</div>
 <p>这正对应 <code>rules.py</code> 里的 <code>rule_margin</code>。</p>
 <blockquote><p>注释：先画一条线，再问样本在线的哪一边，这就是 margin 的第一层意思。</p></blockquote>
 <h3>10.4 命题 1：为什么它叫 margin</h3>
 <p><code>margin</code> 这个名字不是随便起的，而是因为 $m_r(x)$ 同时提供了三种信息：</p>
 <ol><li>符号信息：$m_r(x)$ 的正负号告诉我们 $x$ 在边界哪一侧。</li><li>边界信息：$m_r(x)=0$ 恰好定义了规则边界。</li><li>远近信息：$|m_r(x)|$ 越大，$x$ 离边界越“远”。</li></ol>
 <p>严格地说，这里是未归一化的 signed margin，而不是欧氏距离。真正的有符号距离应当写成：</p>
-<p>$$ d_r(x) = \frac{a_r x_1 + b_r x_2 + c_r}{\sqrt{a_r^2+b_r^2}}. $$</p>
+<div class="math-display">$$
+d_r(x) = \frac{a_r x_1 + b_r x_2 + c_r}{\sqrt{a_r^2+b_r^2}}.
+$$</div>
 <p>代码没有做这一步归一化，因此 <code>rule_margin</code> 更准确地说是线性分数形式的 margin。</p>
 <blockquote><p>注释：它已经够表达“边界位置 + 左右方向 + 离边界多远”，所以在这个 toy 里完全够用。</p></blockquote>
 <h3>10.5 定义 2：规则温度</h3>
 <p>设全局基础温度为 $T &gt; 0$，单条规则自己的缩放为 $\alpha_r &gt; 0$，则规则 $r$ 的有效温度定义为：</p>
-<p>$$ \tau_r = T \alpha_r. $$</p>
+<div class="math-display">$$
+\tau_r = T \alpha_r.
+$$</div>
 <p>这正对应代码中的：</p>
-<p>$$ \texttt{temperature = base\_temperature * rule.temperature\_scale}. $$</p>
+<div class="math-display">$$
+\texttt{temperature = base\_temperature * rule.temperature\_scale}.
+$$</div>
 <blockquote><p>注释：全局温度是“总开关”，规则自己的缩放是“局部微调”。</p></blockquote>
 <h3>10.6 命题 2：温度不会改变边界，只会改变软硬程度</h3>
 <p>考虑函数：</p>
-<p>$$ s_r(x) = \sigma(\tau_r m_r(x)), $$</p>
+<div class="math-display">$$
+s_r(x) = \sigma(\tau_r m_r(x)),
+$$</div>
 <p>其中 $\sigma(t)=\frac{1}{1+e^{-t}}$ 是 sigmoid。</p>
 <p>因为 $\tau_r &gt; 0$，所以有：</p>
-<p>$$ \tau_r m_r(x)=0 \iff m_r(x)=0. $$</p>
+<div class="math-display">$$
+\tau_r m_r(x)=0
+\iff
+m_r(x)=0.
+$$</div>
 <p>因此，$s_r(x)=0.5$ 的位置恰好仍然是规则边界：</p>
-<p>$$ \{x : s_r(x)=0.5\} = \{x : m_r(x)=0\}. $$</p>
+<div class="math-display">$$
+\{x : s_r(x)=0.5\} = \{x : m_r(x)=0\}.
+$$</div>
 <p>这说明温度不改变边界位置。</p>
 <p>另一方面，$\tau_r$ 越大，sigmoid 在 $0$ 附近的斜率越大，于是从 $0$ 到 $1$ 的过渡越陡；$\tau_r$ 越小，过渡越平缓。</p>
 <p>因此可以推出：</p>
@@ -375,7 +647,9 @@
 <blockquote><p>注释：温度不负责“把线挪走”，只负责“过了线以后语气有多坚决”。</p></blockquote>
 <h3>10.7 定义 3：规则正侧概率</h3>
 <p>先只看几何，不看类别语义。定义规则正侧概率为：</p>
-<p>$$ \rho_r(x) = \sigma(\tau_r m_r(x)). $$</p>
+<div class="math-display">$$
+\rho_r(x) = \sigma(\tau_r m_r(x)).
+$$</div>
 <p>于是：</p>
 <ul><li>当 $m_r(x) \gg 0$ 时，$\rho_r(x) \approx 1$</li><li>当 $m_r(x) \ll 0$ 时，$\rho_r(x) \approx 0$</li><li>当 $m_r(x)=0$ 时，$\rho_r(x)=0.5$</li></ul>
 <p>这正是 <code>soft_rule_probability_for_rule</code> 中 <code>positive_prob</code> 的几何含义。</p>
@@ -384,92 +658,192 @@
 <p>规则还必须说明：正侧到底支持哪个类别。</p>
 <p>若 $\kappa_r = 1$，则正侧支持 class $1$；若 $\kappa_r = 0$，则正侧支持 class $0$。</p>
 <p>因此，规则对 class $1$ 的支持概率定义为：</p>
-<p>$$ q_r(y=1 \mid x) = \begin{cases} \rho_r(x), &amp; \kappa_r = 1, \\ 1-\rho_r(x), &amp; \kappa_r = 0. \end{cases} $$</p>
+<div class="math-display">$$
+q_r(y=1 \mid x)
+=
+\begin{cases}
+\rho_r(x), &amp; \kappa_r = 1, \\
+1-\rho_r(x), &amp; \kappa_r = 0.
+\end{cases}
+$$</div>
 <p>进一步，规则诱导出的完整二分类分布为：</p>
-<p>$$ q_r(\cdot \mid x) = \bigl(q_r(y=0 \mid x), q_r(y=1 \mid x)\bigr) = \bigl(1-q_r(y=1 \mid x), q_r(y=1 \mid x)\bigr). $$</p>
+<div class="math-display">$$
+q_r(\cdot \mid x)
+=
+\bigl(q_r(y=0 \mid x), q_r(y=1 \mid x)\bigr)
+=
+\bigl(1-q_r(y=1 \mid x), q_r(y=1 \mid x)\bigr).
+$$</div>
 <p>这正对应 <code>rule_distribution</code>。</p>
 <blockquote><p>注释：先由几何判断“在哪一侧”，再由 <code>positive_class</code> 解释“这一侧代表哪个类”。</p></blockquote>
 <h3>10.9 推论 1：同一条边界可以对应两条语义相反的规则</h3>
 <p>若两条规则 $r_1,r_2$ 满足</p>
-<p>$$ (a_{r_1}, b_{r_1}, c_{r_1}) = (a_{r_2}, b_{r_2}, c_{r_2}), $$</p>
+<div class="math-display">$$
+(a_{r_1}, b_{r_1}, c_{r_1}) = (a_{r_2}, b_{r_2}, c_{r_2}),
+$$</div>
 <p>但</p>
-<p>$$ \kappa_{r_1} \neq \kappa_{r_2}, $$</p>
+<div class="math-display">$$
+\kappa_{r_1} \neq \kappa_{r_2},
+$$</div>
 <p>则它们拥有同一条边界，却对应不同的类别偏向。</p>
 <p>这正是 <code>diag_positive</code> 与 <code>diag_wrong</code> 的关系。</p>
 <blockquote><p>注释：几何形状一样，不代表语义一样。线还是那条线，但“线的上面支持哪一类”可以反过来。</p></blockquote>
 <h3>10.10 定义 5：单条规则的硬预测</h3>
 <p>代码里的 <code>hard_rule_prediction_for_rule</code> 定义为：</p>
-<p>$$ \hat y_r(x) = \mathbf{1}\!\left[q_r(y=1 \mid x)\ge 0.5\right]. $$</p>
+<div class="math-display">$$
+\hat y_r(x)
+=
+\mathbf{1}\!\left[q_r(y=1 \mid x)\ge 0.5\right].
+$$</div>
 <p>结合前面的定义，可以推出：</p>
 <ul><li>当 $\kappa_r=1$ 时，$\hat y_r(x)=1 \iff m_r(x)\ge 0$</li><li>当 $\kappa_r=0$ 时，$\hat y_r(x)=1 \iff m_r(x)\le 0$</li></ul>
 <p>所以硬预测本质上是在用边界做二值判决。</p>
 <blockquote><p>注释：soft 版本是“有多像”，hard 版本就是“最终判成哪一类”。</p></blockquote>
 <h3>10.11 定义 6：多规则聚合的 log 形式</h3>
 <p>设规则集合为：</p>
-<p>$$ \mathcal{R} = \{r_1,\dots,r_M\}. $$</p>
+<div class="math-display">$$
+\mathcal{R} = \{r_1,\dots,r_M\}.
+$$</div>
 <p>对每一个类别 $y \in \{0,1\}$，定义聚合 log-score：</p>
-<p>$$ \ell_{\mathcal{R}}(y \mid x) = \sum_{j=1}^M w_{r_j}\,\log q_{r_j}(y \mid x). $$</p>
+<div class="math-display">$$
+\ell_{\mathcal{R}}(y \mid x)
+=
+\sum_{j=1}^M w_{r_j}\,\log q_{r_j}(y \mid x).
+$$</div>
 <p>于是聚合规则分布定义为：</p>
-<p>$$ q_{\mathcal{R}}(y \mid x) = \frac{\exp(\ell_{\mathcal{R}}(y \mid x))} {\sum_{k \in \{0,1\}} \exp(\ell_{\mathcal{R}}(k \mid x))}. $$</p>
+<div class="math-display">$$
+q_{\mathcal{R}}(y \mid x)
+=
+\frac{\exp(\ell_{\mathcal{R}}(y \mid x))}
+{\sum_{k \in \{0,1\}} \exp(\ell_{\mathcal{R}}(k \mid x))}.
+$$</div>
 <p>这正对应 <code>aggregate_rule_distribution</code>。</p>
 <blockquote><p>注释：代码不是把规则“平均一下”，而是先把每条规则的对数证据加起来，再统一归一化。</p></blockquote>
 <h3>10.12 命题 3：多规则聚合等价于加权乘法型证据融合</h3>
 <p>由上一节定义直接展开可得：</p>
-<p>$$ \exp(\ell_{\mathcal{R}}(y \mid x)) = \exp\left(\sum_{j=1}^M w_{r_j}\log q_{r_j}(y \mid x)\right) = \prod_{j=1}^M q_{r_j}(y \mid x)^{w_{r_j}}. $$</p>
+<div class="math-display">$$
+\exp(\ell_{\mathcal{R}}(y \mid x))
+=
+\exp\left(\sum_{j=1}^M w_{r_j}\log q_{r_j}(y \mid x)\right)
+=
+\prod_{j=1}^M q_{r_j}(y \mid x)^{w_{r_j}}.
+$$</div>
 <p>因此：</p>
-<p>$$ q_{\mathcal{R}}(y \mid x) = \frac{\prod_{j=1}^M q_{r_j}(y \mid x)^{w_{r_j}}} {\sum_{k \in \{0,1\}} \prod_{j=1}^M q_{r_j}(k \mid x)^{w_{r_j}}}. $$</p>
+<div class="math-display">$$
+q_{\mathcal{R}}(y \mid x)
+=
+\frac{\prod_{j=1}^M q_{r_j}(y \mid x)^{w_{r_j}}}
+{\sum_{k \in \{0,1\}} \prod_{j=1}^M q_{r_j}(k \mid x)^{w_{r_j}}}.
+$$</div>
 <p>这就是加权 product-of-experts 形式。</p>
 <p>所以可以推出：</p>
 <ul><li>如果多条规则同时支持同一类别，该类别概率会被乘法式放大；</li><li>如果某条高权重规则强烈反对某类别，该类别概率会被明显压低。</li></ul>
 <blockquote><p>注释：这就是为什么 <code>weight</code> 很重要。它不是“可有可无的系数”，而是在决定哪条规则更有发言权。</p></blockquote>
 <h3>10.13 定义 7：聚合规则的硬预测</h3>
 <p>由聚合分布定义整体规则系统的硬预测：</p>
-<p>$$ \hat y_{\mathcal{R}}(x) = \arg\max_{y \in \{0,1\}} q_{\mathcal{R}}(y \mid x). $$</p>
+<div class="math-display">$$
+\hat y_{\mathcal{R}}(x)
+=
+\arg\max_{y \in \{0,1\}} q_{\mathcal{R}}(y \mid x).
+$$</div>
 <p>这正对应 <code>aggregated_hard_rule_prediction</code>。</p>
 <blockquote><p>注释：单条规则可以错，多条规则融合后可能会变好，也可能因为坏规则太强而变差。</p></blockquote>
 <h3>10.14 定义 8：student 分布</h3>
 <p>重新记一下 student 分布。对任意样本 $x$，student 给出：</p>
-<p>$$ p_\theta(y \mid x) = \mathrm{softmax}(z_\theta(x))_y. $$</p>
+<div class="math-display">$$
+p_\theta(y \mid x)
+=
+\mathrm{softmax}(z_\theta(x))_y.
+$$</div>
 <p>这是代码里 <code>student_probs = F.softmax(student_logits, dim=1)</code> 的数学形式。</p>
 <blockquote><p>注释：teacher 还没出来之前，student 只是“模型当前自己的想法”。</p></blockquote>
 <h3>10.15 定义 9：teacher 的 log 形式</h3>
 <p>设规则强度参数为 $\lambda &gt; 0$，对应 <code>rule_strength</code>。</p>
 <p>teacher 的未归一化 log-score 定义为：</p>
-<p>$$ \tilde \ell_\theta(y \mid x) = \log p_\theta(y \mid x) + \lambda \log q_{\mathcal{R}}(y \mid x). $$</p>
+<div class="math-display">$$
+\tilde \ell_\theta(y \mid x)
+=
+\log p_\theta(y \mid x)
++ \lambda \log q_{\mathcal{R}}(y \mid x).
+$$</div>
 <p>于是 teacher 分布定义为：</p>
-<p>$$ t_\theta(y \mid x) = \frac{\exp(\tilde \ell_\theta(y \mid x))} {\sum_{k \in \{0,1\}} \exp(\tilde \ell_\theta(k \mid x))}. $$</p>
+<div class="math-display">$$
+t_\theta(y \mid x)
+=
+\frac{\exp(\tilde \ell_\theta(y \mid x))}
+{\sum_{k \in \{0,1\}} \exp(\tilde \ell_\theta(k \mid x))}.
+$$</div>
 <p>这正对应 <code>build_teacher_probs</code>。</p>
 <blockquote><p>注释：teacher 不是凭空来的，它是“student 当前分布”和“规则分布”合成出来的。</p></blockquote>
 <h3>10.16 命题 4：teacher 是 student 被规则重加权后的分布</h3>
 <p>由上一节直接展开：</p>
-<p>$$ \exp(\tilde \ell_\theta(y \mid x)) = \exp(\log p_\theta(y \mid x)) \cdot \exp(\lambda \log q_{\mathcal{R}}(y \mid x)) = p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda. $$</p>
+<div class="math-display">$$
+\exp(\tilde \ell_\theta(y \mid x))
+=
+\exp(\log p_\theta(y \mid x))
+\cdot
+\exp(\lambda \log q_{\mathcal{R}}(y \mid x))
+=
+p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda.
+$$</div>
 <p>因此：</p>
-<p>$$ t_\theta(y \mid x) = \frac{p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda} {\sum_{k \in \{0,1\}} p_\theta(k \mid x)\, q_{\mathcal{R}}(k \mid x)^\lambda}. $$</p>
+<div class="math-display">$$
+t_\theta(y \mid x)
+=
+\frac{p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda}
+{\sum_{k \in \{0,1\}} p_\theta(k \mid x)\, q_{\mathcal{R}}(k \mid x)^\lambda}.
+$$</div>
 <p>这条式子是整个 Logic-Net toy 的中心公式。</p>
 <p>它直接说明：</p>
 <ol><li>teacher 依赖 student；</li><li>teacher 也依赖规则；</li><li><code>rule_strength</code> 越大，规则分布对 teacher 的扭转越强。</li></ol>
 <blockquote><p>注释：teacher 不是外部老师，而是“当前 student 被规则校正后”的老师。</p></blockquote>
 <h3>10.17 推论 2：为什么这里不是“直接把规则加到 loss 上”</h3>
 <p>因为代码的逻辑不是直接构造某个规则罚项 $\mathcal{L}_{\mathrm{rule}}$ 与监督损失相加，而是先通过</p>
-<p>$$ p_\theta \quad\text{和}\quad q_{\mathcal{R}} $$</p>
+<div class="math-display">$$
+p_\theta \quad\text{和}\quad q_{\mathcal{R}}
+$$</div>
 <p>构造新的目标分布</p>
-<p>$$ t_\theta. $$</p>
+<div class="math-display">$$
+t_\theta.
+$$</div>
 <p>然后再让 student 去逼近这个 teacher。</p>
 <p>所以这份代码的逻辑是：</p>
-<p>$$ \text{rule} \rightarrow q_{\mathcal{R}} \rightarrow t_\theta \rightarrow \text{distillation}. $$</p>
+<div class="math-display">$$
+\text{rule}
+\rightarrow
+q_{\mathcal{R}}
+\rightarrow
+t_\theta
+\rightarrow
+\text{distillation}.
+$$</div>
 <p>而不是：</p>
-<p>$$ \text{rule} \rightarrow \text{direct scalar penalty}. $$</p>
+<div class="math-display">$$
+\text{rule}
+\rightarrow
+\text{direct scalar penalty}.
+$$</div>
 <blockquote><p>注释：规则先改“目标长什么样”，再间接改参数，而不是直接上来罚参数。</p></blockquote>
 <h3>10.18 定义 10：监督损失</h3>
 <p>在有标签 batch $B_l = \{(x_i,y_i)\}_{i=1}^{n_l}$ 上，监督损失定义为：</p>
-<p>$$ \mathcal{L}_{\mathrm{sup}}(\theta; B_l) = \frac{1}{n_l} \sum_{i=1}^{n_l} -\log p_\theta(y_i \mid x_i). $$</p>
+<div class="math-display">$$
+\mathcal{L}_{\mathrm{sup}}(\theta; B_l)
+=
+\frac{1}{n_l}
+\sum_{i=1}^{n_l}
+-\log p_\theta(y_i \mid x_i).
+$$</div>
 <p>这正对应 <code>F.cross_entropy(labeled_logits, yb_l)</code>。</p>
 <blockquote><p>注释：这一项就是最普通的“看真标签学分类”。</p></blockquote>
 <h3>10.19 定义 11：规则使用 batch</h3>
 <p>在每个 step 里，代码把 labeled 输入与 unlabeled 输入拼接：</p>
-<p>$$ X_r = \mathrm{concat}(X_l, X_u). $$</p>
+<div class="math-display">$$
+X_r = \mathrm{concat}(X_l, X_u).
+$$</div>
 <p>若对应样本集合记为 $B_r$，则</p>
-<p>$$ B_r = B_l^{(x)} \cup B_u, $$</p>
+<div class="math-display">$$
+B_r = B_l^{(x)} \cup B_u,
+$$</div>
 <p>其中 $B_l^{(x)}$ 表示只取有标签 batch 的输入，不带标签部分。</p>
 <blockquote><p>注释：规则系统不关心这里的真标签，它只需要看输入点在哪里。</p></blockquote>
 <h3>10.20 定义 12：蒸馏损失</h3>
@@ -477,38 +851,90 @@
 <p>代码调用的是：</p>
 <ul><li><code>input = F.log_softmax(student_logits, dim=1)</code></li><li><code>target = teacher_probs</code></li></ul>
 <p>因此 PyTorch 中 <code>F.kl_div(..., reduction=&quot;batchmean&quot;)</code> 对应的是：</p>
-<p>$$ \mathcal{L}_{\mathrm{distill}}(\theta; B_r) = \frac{1}{|B_r|} \sum_{x \in B_r} \sum_{y \in \{0,1\}} t_\theta(y \mid x) \left( \log t_\theta(y \mid x)</p>
-<ul><li>\log p_\theta(y \mid x)</li></ul>
-<p>\right). $$</p>
+<div class="math-display">$$
+\mathcal{L}_{\mathrm{distill}}(\theta; B_r)
+=
+\frac{1}{|B_r|}
+\sum_{x \in B_r}
+\sum_{y \in \{0,1\}}
+t_\theta(y \mid x)
+\left(
+\log t_\theta(y \mid x)
+- \log p_\theta(y \mid x)
+\right).
+$$</div>
 <p>也就是：</p>
-<p>$$ \mathcal{L}_{\mathrm{distill}}(\theta; B_r) = \frac{1}{|B_r|} \sum_{x \in B_r} \mathrm{KL}\!\bigl(t_\theta(\cdot \mid x)\,\|\,p_\theta(\cdot \mid x)\bigr). $$</p>
+<div class="math-display">$$
+\mathcal{L}_{\mathrm{distill}}(\theta; B_r)
+=
+\frac{1}{|B_r|}
+\sum_{x \in B_r}
+\mathrm{KL}\!\bigl(t_\theta(\cdot \mid x)\,\|\,p_\theta(\cdot \mid x)\bigr).
+$$</div>
 <p>这一步非常关键，因为它明确了 KL 的方向是：</p>
-<p>$$ \mathrm{KL}(\text{teacher} \,\|\, \text{student}), $$</p>
+<div class="math-display">$$
+\mathrm{KL}(\text{teacher} \,\|\, \text{student}),
+$$</div>
 <p>而不是相反。</p>
 <blockquote><p>注释：代码是在说“把 student 拉向 teacher”，所以 teacher 是 target，student 是被拟合对象。</p></blockquote>
 <h3>10.21 定义 13：蒸馏权重调度</h3>
 <p>epoch $t$ 时的蒸馏权重定义为：</p>
-<p>$$ \pi_t = \texttt{max\_distill\_weight} \cdot \min\left( 1, \frac{t}{\max(1,\texttt{ramp\_up\_epochs})} \right). $$</p>
+<div class="math-display">$$
+\pi_t
+=
+\texttt{max\_distill\_weight}
+\cdot
+\min\left(
+1,
+\frac{t}{\max(1,\texttt{ramp\_up\_epochs})}
+\right).
+$$</div>
 <p>这正对应 <code>distill_weight_at</code>。</p>
 <p>于是总损失定义为：</p>
-<p>$$ \mathcal{L}_t(\theta) = (1-\pi_t)\,\mathcal{L}_{\mathrm{sup}} + \pi_t\,\mathcal{L}_{\mathrm{distill}}. $$</p>
+<div class="math-display">$$
+\mathcal{L}_t(\theta)
+=
+(1-\pi_t)\,\mathcal{L}_{\mathrm{sup}}
++ \pi_t\,\mathcal{L}_{\mathrm{distill}}.
+$$</div>
 <blockquote><p>注释：训练早期先更信标签，后期再逐渐加大 teacher 的影响。</p></blockquote>
 <h3>10.22 命题 5：无标签样本只通过蒸馏项进入训练</h3>
 <p>监督损失 $\mathcal{L}_{\mathrm{sup}}$ 只定义在有标签 batch $B_l$ 上。</p>
 <p>蒸馏损失 $\mathcal{L}_{\mathrm{distill}}$ 定义在拼接后的 $B_r$ 上。</p>
 <p>因此，无标签样本 $u \in B_u$ 满足：</p>
-<p>$$ u \notin \mathcal{L}_{\mathrm{sup}}, \qquad u \in \mathcal{L}_{\mathrm{distill}}. $$</p>
+<div class="math-display">$$
+u \notin \mathcal{L}_{\mathrm{sup}},
+\qquad
+u \in \mathcal{L}_{\mathrm{distill}}.
+$$</div>
 <p>所以无标签样本参与训练的唯一渠道是：</p>
-<p>$$ u \rightarrow q_{\mathcal{R}}(\cdot \mid u) \rightarrow t_\theta(\cdot \mid u) \rightarrow \mathcal{L}_{\mathrm{distill}}. $$</p>
+<div class="math-display">$$
+u
+\rightarrow
+q_{\mathcal{R}}(\cdot \mid u)
+\rightarrow
+t_\theta(\cdot \mid u)
+\rightarrow
+\mathcal{L}_{\mathrm{distill}}.
+$$</div>
 <blockquote><p>注释：无标签样本没有真标签，但它们仍然可以“模仿规则修正后的 teacher”。</p></blockquote>
 <h3>10.23 命题 6：<code>detach</code> 与 <code>no_grad</code> 让 teacher 在当前 step 中被当作常数目标</h3>
 <p>代码中有两层处理：</p>
 <ul><li><code>student_logits.detach()</code></li><li><code>with torch.no_grad():</code></li></ul>
 <p>这意味着在当前 step 的反向传播中，teacher 构造路径不参与求导。</p>
 <p>实现意义上可以把它理解为：</p>
-<p>$$ \nabla_\theta t_\theta(\cdot \mid x) = 0 \quad \text{（在该 step 的实现图里视作常数 target）}. $$</p>
+<div class="math-display">$$
+\nabla_\theta t_\theta(\cdot \mid x) = 0
+\quad
+\text{（在该 step 的实现图里视作常数 target）}.
+$$</div>
 <p>因此总梯度是：</p>
-<p>$$ \nabla_\theta \mathcal{L}_t = (1-\pi_t)\,\nabla_\theta \mathcal{L}_{\mathrm{sup}} + \pi_t\,\nabla_\theta \mathcal{L}_{\mathrm{distill}}, $$</p>
+<div class="math-display">$$
+\nabla_\theta \mathcal{L}_t
+=
+(1-\pi_t)\,\nabla_\theta \mathcal{L}_{\mathrm{sup}}
++ \pi_t\,\nabla_\theta \mathcal{L}_{\mathrm{distill}},
+$$</div>
 <p>其中蒸馏项只通过 student 分布 $p_\theta$ 回传，而不再穿过 teacher 构造图。</p>
 <blockquote><p>注释：teacher 在这一小步里更像“临时定下来的答案纸”，而不是和 student 一起被联合优化的可微模块。</p></blockquote>
 <h3>10.24 <code>rules.py</code> 的逐函数解释</h3>
@@ -535,7 +961,9 @@
 <p>它不影响理论，只服务于结果记录。</p>
 <h4>10.24.6 <code>rule_margin</code></h4>
 <p>这一函数精确实现了第 10.3 节：</p>
-<p>$$ m_r(x) = a_r x_1 + b_r x_2 + c_r. $$</p>
+<div class="math-display">$$
+m_r(x) = a_r x_1 + b_r x_2 + c_r.
+$$</div>
 <p>这是所有后续规则概率计算的起点。</p>
 <h4>10.24.7 <code>soft_rule_probability_for_rule</code></h4>
 <p>这一函数分两步：</p>
@@ -543,20 +971,42 @@
 <p>它精确实现了第 10.5 节到第 10.8 节的推导。</p>
 <h4>10.24.8 <code>rule_distribution</code></h4>
 <p>这一函数把标量概率补成完整的二分类分布：</p>
-<p>$$ q_r(\cdot \mid x) = \bigl(1-q_r(y=1 \mid x), q_r(y=1 \mid x)\bigr). $$</p>
+<div class="math-display">$$
+q_r(\cdot \mid x)
+=
+\bigl(1-q_r(y=1 \mid x), q_r(y=1 \mid x)\bigr).
+$$</div>
 <h4>10.24.9 <code>hard_rule_prediction_for_rule</code></h4>
 <p>这一函数把单条规则从 soft 版本变成 hard 版本：</p>
-<p>$$ \hat y_r(x) = \mathbf{1}\!\left[q_r(y=1 \mid x)\ge 0.5\right]. $$</p>
+<div class="math-display">$$
+\hat y_r(x)
+=
+\mathbf{1}\!\left[q_r(y=1 \mid x)\ge 0.5\right].
+$$</div>
 <h4>10.24.10 <code>aggregate_rule_distribution</code></h4>
 <p>这一函数实现第 10.11 节与第 10.12 节：</p>
-<p>$$ q_{\mathcal{R}}(y \mid x) = \frac{\prod_{r \in \mathcal{R}} q_r(y \mid x)^{w_r}} {\sum_{k \in \{0,1\}} \prod_{r \in \mathcal{R}} q_r(k \mid x)^{w_r}}. $$</p>
+<div class="math-display">$$
+q_{\mathcal{R}}(y \mid x)
+=
+\frac{\prod_{r \in \mathcal{R}} q_r(y \mid x)^{w_r}}
+{\sum_{k \in \{0,1\}} \prod_{r \in \mathcal{R}} q_r(k \mid x)^{w_r}}.
+$$</div>
 <p>其中 <code>clamp_min(1e-6)</code> 是为了避免出现 $\log 0$。</p>
 <h4>10.24.11 <code>aggregated_hard_rule_prediction</code></h4>
 <p>这一函数实现：</p>
-<p>$$ \hat y_{\mathcal{R}}(x) = \arg\max_{y \in \{0,1\}} q_{\mathcal{R}}(y \mid x). $$</p>
+<div class="math-display">$$
+\hat y_{\mathcal{R}}(x)
+=
+\arg\max_{y \in \{0,1\}} q_{\mathcal{R}}(y \mid x).
+$$</div>
 <h4>10.24.12 <code>build_teacher_probs</code></h4>
 <p>这一函数实现第 10.15 节与第 10.16 节：</p>
-<p>$$ t_\theta(y \mid x) = \frac{p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda} {\sum_{k \in \{0,1\}} p_\theta(k \mid x)\, q_{\mathcal{R}}(k \mid x)^\lambda}. $$</p>
+<div class="math-display">$$
+t_\theta(y \mid x)
+=
+\frac{p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda}
+{\sum_{k \in \{0,1\}} p_\theta(k \mid x)\, q_{\mathcal{R}}(k \mid x)^\lambda}.
+$$</div>
 <p>它是整个 <code>rules.py</code> 的理论终点，也是整个 Logic-Net toy 的机制中心。</p>
 <h4>10.24.13 <code>short_rule_label</code></h4>
 <p>这是展示函数，只负责可视化标签。</p>
@@ -566,53 +1016,139 @@
 <h4>10.25.1 <code>ManualAdamW</code></h4>
 <p>这个类是优化器实现。它不属于 Logic-Net 特有思想，但它负责把总损失真正变成参数更新。</p>
 <p>其核心形式是：</p>
-<p>$$ m_t = \beta_1 m_{t-1} + (1-\beta_1)g_t, $$</p>
-<p>$$ v_t = \beta_2 v_{t-1} + (1-\beta_2)g_t \odot g_t, $$</p>
-<p>$$ \hat m_t = \frac{m_t}{1-\beta_1^t}, \qquad \hat v_t = \frac{v_t}{1-\beta_2^t}, $$</p>
-<p>$$ \theta \leftarrow \theta - \eta\cdot \mathrm{weight\_decay}\cdot \theta</p>
-<ul><li>\eta\frac{\hat m_t}{\sqrt{\hat v_t}+\epsilon}.</li></ul>
-<p>$$</p>
+<div class="math-display">$$
+m_t = \beta_1 m_{t-1} + (1-\beta_1)g_t,
+$$</div>
+<div class="math-display">$$
+v_t = \beta_2 v_{t-1} + (1-\beta_2)g_t \odot g_t,
+$$</div>
+<div class="math-display">$$
+\hat m_t = \frac{m_t}{1-\beta_1^t},
+\qquad
+\hat v_t = \frac{v_t}{1-\beta_2^t},
+$$</div>
+<div class="math-display">$$
+\theta
+\leftarrow
+\theta - \eta\cdot \mathrm{weight\_decay}\cdot \theta
+- \eta\frac{\hat m_t}{\sqrt{\hat v_t}+\epsilon}.
+$$</div>
 <blockquote><p>注释：它回答“loss 算完以后参数怎么真的动起来”。</p></blockquote>
 <h4>10.25.2 <code>_to_device</code></h4>
 <p>把 batch 中的张量移动到目标设备。</p>
 <p>它不改变任何数学定义。</p>
 <h4>10.25.3 <code>distill_weight_at</code></h4>
 <p>实现第 10.21 节的蒸馏权重调度：</p>
-<p>$$ \pi_t = \texttt{max\_distill\_weight} \cdot \min\left( 1, \frac{t}{\max(1,\texttt{ramp\_up\_epochs})} \right). $$</p>
+<div class="math-display">$$
+\pi_t
+=
+\texttt{max\_distill\_weight}
+\cdot
+\min\left(
+1,
+\frac{t}{\max(1,\texttt{ramp\_up\_epochs})}
+\right).
+$$</div>
 <h4>10.25.4 <code>evaluate</code></h4>
 <p>它同时评估：</p>
 <ol><li>student 模型自己在数据上的表现；</li><li>聚合规则系统自己在数据上的表现；</li><li>student 与规则系统预测的一致程度；</li><li>每一条单独规则的表现。</li></ol>
 <p>其中模型预测为：</p>
-<p>$$ \hat y_\theta(x) = \arg\max_{y \in \{0,1\}} p_\theta(y \mid x). $$</p>
+<div class="math-display">$$
+\hat y_\theta(x)
+=
+\arg\max_{y \in \{0,1\}} p_\theta(y \mid x).
+$$</div>
 <p>聚合规则预测为：</p>
-<p>$$ \hat y_{\mathcal{R}}(x) = \arg\max_{y \in \{0,1\}} q_{\mathcal{R}}(y \mid x). $$</p>
+<div class="math-display">$$
+\hat y_{\mathcal{R}}(x)
+=
+\arg\max_{y \in \{0,1\}} q_{\mathcal{R}}(y \mid x).
+$$</div>
 <p>规则准确率为：</p>
-<p>$$ \mathrm{Acc}_{\mathrm{rule}} = \frac{1}{N} \sum_{i=1}^N \mathbf{1}\!\left[\hat y_{\mathcal{R}}(x_i)=y_i\right]. $$</p>
+<div class="math-display">$$
+\mathrm{Acc}_{\mathrm{rule}}
+=
+\frac{1}{N}
+\sum_{i=1}^N
+\mathbf{1}\!\left[\hat y_{\mathcal{R}}(x_i)=y_i\right].
+$$</div>
 <p>模型与规则一致率为：</p>
-<p>$$ \mathrm{Agree}_{\mathrm{model,rule}} = \frac{1}{N} \sum_{i=1}^N \mathbf{1}\!\left[\hat y_\theta(x_i)=\hat y_{\mathcal{R}}(x_i)\right]. $$</p>
+<div class="math-display">$$
+\mathrm{Agree}_{\mathrm{model,rule}}
+=
+\frac{1}{N}
+\sum_{i=1}^N
+\mathbf{1}\!\left[\hat y_\theta(x_i)=\hat y_{\mathcal{R}}(x_i)\right].
+$$</div>
 <blockquote><p>注释：这一步不仅在看“模型准不准”，还在看“模型到底有没有朝规则那边靠过去”。</p></blockquote>
 <h4>10.25.5 <code>_make_optimizer</code></h4>
 <p>只是把配置参数打包成优化器，不引入新的理论。</p>
 <h4>10.25.6 <code>train_baseline</code></h4>
 <p>这个函数训练一个没有规则指导的普通监督模型。</p>
 <p>它优化的是：</p>
-<p>$$ \mathcal{L}_{\mathrm{baseline}} = \frac{1}{|B_l|} \sum_{(x,y)\in B_l} -\log p_\theta(y \mid x). $$</p>
+<div class="math-display">$$
+\mathcal{L}_{\mathrm{baseline}}
+=
+\frac{1}{|B_l|}
+\sum_{(x,y)\in B_l}
+-\log p_\theta(y \mid x).
+$$</div>
 <p>它存在的意义是提供比较基线。</p>
 <h4>10.25.7 <code>train_logic_guided</code></h4>
 <p>这是整个 <code>trainer.py</code> 的核心。</p>
 <p>每个训练 step 的逻辑可以完全写成下面这条链：</p>
-<p>$$ (X_l, Y_l), X_u \rightarrow \mathcal{L}_{\mathrm{sup}} \rightarrow X_r \rightarrow t_\theta \rightarrow \mathcal{L}_{\mathrm{distill}} \rightarrow \mathcal{L}_t \rightarrow \nabla_\theta \mathcal{L}_t \rightarrow \theta. $$</p>
+<div class="math-display">$$
+(X_l, Y_l), X_u
+\rightarrow
+\mathcal{L}_{\mathrm{sup}}
+\rightarrow
+X_r
+\rightarrow
+t_\theta
+\rightarrow
+\mathcal{L}_{\mathrm{distill}}
+\rightarrow
+\mathcal{L}_t
+\rightarrow
+\nabla_\theta \mathcal{L}_t
+\rightarrow
+\theta.
+$$</div>
 <p>分解来看：</p>
 <p>第一步，在 labeled batch 上计算监督损失：</p>
-<p>$$ \mathcal{L}_{\mathrm{sup}} = \frac{1}{|B_l|} \sum_{(x,y)\in B_l} -\log p_\theta(y \mid x). $$</p>
+<div class="math-display">$$
+\mathcal{L}_{\mathrm{sup}}
+=
+\frac{1}{|B_l|}
+\sum_{(x,y)\in B_l}
+-\log p_\theta(y \mid x).
+$$</div>
 <p>第二步，拼接出规则使用 batch：</p>
-<p>$$ X_r = \mathrm{concat}(X_l, X_u). $$</p>
+<div class="math-display">$$
+X_r = \mathrm{concat}(X_l, X_u).
+$$</div>
 <p>第三步，在 $X_r$ 上计算 student 分布，并构造 teacher：</p>
-<p>$$ t_\theta(y \mid x) = \frac{p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda} {\sum_{k \in \{0,1\}} p_\theta(k \mid x)\, q_{\mathcal{R}}(k \mid x)^\lambda}. $$</p>
+<div class="math-display">$$
+t_\theta(y \mid x)
+=
+\frac{p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda}
+{\sum_{k \in \{0,1\}} p_\theta(k \mid x)\, q_{\mathcal{R}}(k \mid x)^\lambda}.
+$$</div>
 <p>第四步，在 $X_r$ 上计算蒸馏损失：</p>
-<p>$$ \mathcal{L}_{\mathrm{distill}} = \frac{1}{|B_r|} \sum_{x \in B_r} \mathrm{KL}\!\bigl(t_\theta(\cdot \mid x)\,\|\,p_\theta(\cdot \mid x)\bigr). $$</p>
+<div class="math-display">$$
+\mathcal{L}_{\mathrm{distill}}
+=
+\frac{1}{|B_r|}
+\sum_{x \in B_r}
+\mathrm{KL}\!\bigl(t_\theta(\cdot \mid x)\,\|\,p_\theta(\cdot \mid x)\bigr).
+$$</div>
 <p>第五步，组合总损失：</p>
-<p>$$ \mathcal{L}_t = (1-\pi_t)\,\mathcal{L}_{\mathrm{sup}} + \pi_t\,\mathcal{L}_{\mathrm{distill}}. $$</p>
+<div class="math-display">$$
+\mathcal{L}_t
+=
+(1-\pi_t)\,\mathcal{L}_{\mathrm{sup}}
++ \pi_t\,\mathcal{L}_{\mathrm{distill}}.
+$$</div>
 <p>第六步，对 $\mathcal{L}_t$ 反向传播并更新参数。</p>
 <blockquote><p>注释：这一整段可以浓缩成一句话：有标签样本负责“别偏离真实标签”，规则 teacher 负责“再往规则偏好的方向推一把”。</p></blockquote>
 <h4>10.25.8 为什么这里的 <code>cycle</code> 与 <code>max(...)</code> 是合理的</h4>
@@ -632,37 +1168,75 @@
 <h4>10.25.11 <code>_plot_rule_boundaries</code></h4>
 <p>这一函数把第 10.3 节定义的边界真正画出来。</p>
 <p>边界方程是：</p>
-<p>$$ a_r x_1 + b_r x_2 + c_r = 0. $$</p>
+<div class="math-display">$$
+a_r x_1 + b_r x_2 + c_r = 0.
+$$</div>
 <p>若 $b_r \neq 0$，则改写成：</p>
-<p>$$ x_2 = -\frac{a_r x_1 + c_r}{b_r}. $$</p>
+<div class="math-display">$$
+x_2 = -\frac{a_r x_1 + c_r}{b_r}.
+$$</div>
 <p>若 $b_r = 0$ 且 $a_r \neq 0$，则得到竖线：</p>
-<p>$$ x_1 = -\frac{c_r}{a_r}. $$</p>
+<div class="math-display">$$
+x_1 = -\frac{c_r}{a_r}.
+$$</div>
 <blockquote><p>注释：这一步就是把抽象规则重新画回二维平面，让你看到“规则到底是哪条线”。</p></blockquote>
 <h4>10.25.12 <code>plot_decision_boundaries</code></h4>
 <p>这一函数画的是模型自己的概率场与决策边界。</p>
 <p>它在网格上计算：</p>
-<p>$$ p_\theta(y=1 \mid x), $$</p>
+<div class="math-display">$$
+p_\theta(y=1 \mid x),
+$$</div>
 <p>于是模型的 $0.5$ 决策边界就是：</p>
-<p>$$ \{x \in \mathbb{R}^2 : p_\theta(y=1 \mid x)=0.5\}. $$</p>
+<div class="math-display">$$
+\{x \in \mathbb{R}^2 : p_\theta(y=1 \mid x)=0.5\}.
+$$</div>
 <p>再叠加规则边界、测试点、有标签点，你就能同时看到：</p>
 <ol><li>数据分布；</li><li>模型学到的边界；</li><li>规则建议的边界。</li></ol>
 <h3>10.26 整个 Logic-Net toy 的端到端原理总结</h3>
 <p>现在把所有步骤重新压成一条严格链条：</p>
 <p>第一步，定义规则的几何结构：</p>
-<p>$$ m_r(x) = a_r x_1 + b_r x_2 + c_r. $$</p>
+<div class="math-display">$$
+m_r(x) = a_r x_1 + b_r x_2 + c_r.
+$$</div>
 <p>第二步，用 sigmoid 把几何边界变成软规则概率：</p>
-<p>$$ \rho_r(x)=\sigma(\tau_r m_r(x)). $$</p>
+<div class="math-display">$$
+\rho_r(x)=\sigma(\tau_r m_r(x)).
+$$</div>
 <p>第三步，引入 <code>positive_class</code>，得到单条规则的类别分布：</p>
-<p>$$ q_r(\cdot \mid x). $$</p>
+<div class="math-display">$$
+q_r(\cdot \mid x).
+$$</div>
 <p>第四步，用加权 log 聚合得到整体规则分布：</p>
-<p>$$ q_{\mathcal{R}}(\cdot \mid x). $$</p>
+<div class="math-display">$$
+q_{\mathcal{R}}(\cdot \mid x).
+$$</div>
 <p>第五步，把 student 分布与规则分布合成为 teacher：</p>
-<p>$$ t_\theta(y \mid x) = \frac{p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda} {\sum_{k} p_\theta(k \mid x)\, q_{\mathcal{R}}(k \mid x)^\lambda}. $$</p>
+<div class="math-display">$$
+t_\theta(y \mid x)
+=
+\frac{p_\theta(y \mid x)\, q_{\mathcal{R}}(y \mid x)^\lambda}
+{\sum_{k} p_\theta(k \mid x)\, q_{\mathcal{R}}(k \mid x)^\lambda}.
+$$</div>
 <p>第六步，在 labeled 数据上算监督损失，在 labeled 与 unlabeled 的拼接 batch 上算蒸馏损失：</p>
-<p>$$ \mathcal{L}_t = (1-\pi_t)\,\mathcal{L}_{\mathrm{sup}} + \pi_t\,\mathcal{L}_{\mathrm{distill}}. $$</p>
+<div class="math-display">$$
+\mathcal{L}_t
+=
+(1-\pi_t)\,\mathcal{L}_{\mathrm{sup}}
++ \pi_t\,\mathcal{L}_{\mathrm{distill}}.
+$$</div>
 <p>第七步，只通过 student 路径回传梯度，更新参数。</p>
 <p>所以整个 toy 的理论核心可以最后压成一句：</p>
-<p>$$ \text{rule} \rightarrow \text{rule distribution} \rightarrow \text{rule-aware teacher} \rightarrow \text{KL distillation} \rightarrow \text{student update}. $$</p>
+<div class="math-display">$$
+\text{rule}
+\rightarrow
+\text{rule distribution}
+\rightarrow
+\text{rule-aware teacher}
+\rightarrow
+\text{KL distillation}
+\rightarrow
+\text{student update}.
+$$</div>
 <blockquote><p>注释：这就是这份代码真正实现的 Logic-Net 思路。规则不是直接变成最终 loss，而是先变成 teacher，再通过 teacher 去塑造 student。</p></blockquote>
 <h3>10.27 读到这里你应该能严格回答的 10 个问题</h3>
 <ol><li><code>RuleSpec</code> 为什么必须同时包含几何、语义和强度信息？</li><li><code>rule_margin</code> 为什么能同时刻画边界、方向和远近？</li><li>为什么温度不会改变边界位置？</li><li>为什么 <code>positive_prob</code> 不是最终的 class $1$ 概率？</li><li>为什么同一条边界可以对应两条语义相反的规则？</li><li>多条规则聚合为什么是加权乘法型证据融合，而不是简单平均？</li><li><code>rule_strength</code> 和 <code>weight</code> 控制的到底是不是同一件事？</li><li><code>F.kl_div</code> 在这里对应的 KL 方向为什么是 $\mathrm{KL}(\text{teacher}\,\|\,\text{student})$？</li><li>无标签样本是通过哪条严格的数学路径进入训练的？</li><li>为什么 <code>detach</code> 与 <code>no_grad</code> 会让 teacher 在当前 step 中充当常数 target？</li></ol>

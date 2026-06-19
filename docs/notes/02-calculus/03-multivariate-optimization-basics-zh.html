@@ -56,176 +56,196 @@
 <h2>二、典型例题</h2>
 <h3>例题 1：梯度与驻点</h3>
 <p>已知</p>
-<p>$$f(x,y)=x^2+xy+y^2$$</p>
+<div class="math-display">$$f(x,y)=x^2+xy+y^2$$</div>
 <p>要求：</p>
 <ol><li>求梯度</li><li>求驻点</li></ol>
 <h4>Step 1：先求一阶偏导</h4>
 <p>为什么先做这一步：因为驻点的定义就是 $\nabla f=0$，所以必须先把梯度写出来。</p>
 <p>对 $x$ 求偏导：</p>
-<p>$$\frac{\partial f}{\partial x}=2x+y$$</p>
+<div class="math-display">$$\frac{\partial f}{\partial x}=2x+y$$</div>
 <p>对 $y$ 求偏导：</p>
-<p>$$\frac{\partial f}{\partial y}=x+2y$$</p>
+<div class="math-display">$$\frac{\partial f}{\partial y}=x+2y$$</div>
 <p>因此梯度为</p>
-<p>$$\nabla f(x,y)=\begin{pmatrix}2x+y\\ x+2y\end{pmatrix}$$</p>
+<div class="math-display">$$\nabla f(x,y)=\begin{pmatrix}2x+y\\ x+2y\end{pmatrix}$$</div>
 <h4>Step 2：令梯度为零，求驻点</h4>
 <p>为什么可以这样做：对无约束可微问题，内部极值点必须满足一阶必要条件 $\nabla f=0$，所以驻点通过解方程组得到。</p>
 <p>令</p>
-<p>$$\begin{pmatrix}2x+y\\ x+2y\end{pmatrix}=\begin{pmatrix}0\\0\end{pmatrix}$$</p>
+<div class="math-display">$$\begin{pmatrix}2x+y\\ x+2y\end{pmatrix}=\begin{pmatrix}0\\0\end{pmatrix}$$</div>
 <p>等价于解线性方程组</p>
-<p>$$ \begin{cases} 2x+y=0\\ x+2y=0 \end{cases} $$</p>
+<div class="math-display">$$
+\begin{cases}
+2x+y=0\\
+x+2y=0
+\end{cases}
+$$</div>
 <p>由第一式得 $y=-2x$。代入第二式：</p>
-<p>$$x+2(-2x)=0 \Rightarrow -3x=0 \Rightarrow x=0$$</p>
+<div class="math-display">$$x+2(-2x)=0 \Rightarrow -3x=0 \Rightarrow x=0$$</div>
 <p>进一步得到</p>
-<p>$$y=-2x=0$$</p>
+<div class="math-display">$$y=-2x=0$$</div>
 <h4>标准答案</h4>
 <ol><li>梯度是</li></ol>
-<p>$$\nabla f(x,y)=\begin{pmatrix}2x+y\\ x+2y\end{pmatrix}$$</p>
+<div class="math-display">$$\nabla f(x,y)=\begin{pmatrix}2x+y\\ x+2y\end{pmatrix}$$</div>
 <ol><li>驻点是</li></ol>
-<p>$$ (0,0) $$</p>
+<div class="math-display">$$ (0,0) $$</div>
 <p>这里先只得到“候选点”；它到底是最小值、最大值还是鞍点，要靠二阶信息继续判断。</p>
 <hr>
 <h3>例题 2：Hessian 判别</h3>
 <p>仍考虑</p>
-<p>$$f(x,y)=x^2+xy+y^2$$</p>
+<div class="math-display">$$f(x,y)=x^2+xy+y^2$$</div>
 <p>要求：</p>
 <ol><li>写出 Hessian</li><li>判断极值类型，并说明理由</li></ol>
 <h4>Step 1：计算二阶偏导</h4>
 <p>为什么这样做：Hessian 的每个元素都是二阶偏导，极值类型要看二阶曲率结构。</p>
 <p>由上一题的一阶偏导可知：</p>
-<p>$$f_x=2x+y,\quad f_y=x+2y$$</p>
+<div class="math-display">$$f_x=2x+y,\quad f_y=x+2y$$</div>
 <p>继续求二阶偏导：</p>
-<p>$$f_{xx}=2,\quad f_{xy}=1,\quad f_{yx}=1,\quad f_{yy}=2$$</p>
+<div class="math-display">$$f_{xx}=2,\quad f_{xy}=1,\quad f_{yx}=1,\quad f_{yy}=2$$</div>
 <p>所以 Hessian 为</p>
-<p>$$H_f(x,y)=\begin{pmatrix}2&amp;1\\1&amp;2\end{pmatrix}$$</p>
+<div class="math-display">$$H_f(x,y)=\begin{pmatrix}2&amp;1\\1&amp;2\end{pmatrix}$$</div>
 <p>注意这里 Hessian 与 $(x,y)$ 无关，说明这是一个标准二次函数，局部曲率在整个平面上都一样。</p>
 <h4>Step 2：判断 Hessian 的正定性</h4>
 <p>为什么先判正定：在驻点处，若 Hessian 正定，则二阶项对所有非零扰动都为正，这就意味着该点是严格局部极小点。</p>
 <p>方法一：看顺序主子式。</p>
 <p>第一个顺序主子式：</p>
-<p>$$2&gt;0$$</p>
+<div class="math-display">$$2&gt;0$$</div>
 <p>行列式：</p>
-<p>$$\det(H)=2\cdot 2-1\cdot 1=3&gt;0$$</p>
+<div class="math-display">$$\det(H)=2\cdot 2-1\cdot 1=3&gt;0$$</div>
 <p>因此 $H_f$ 正定。</p>
 <p>也可以用二元函数判别式：</p>
-<p>$$D=f_{xx}f_{yy}-f_{xy}^2=2\cdot 2-1^2=3&gt;0$$</p>
+<div class="math-display">$$D=f_{xx}f_{yy}-f_{xy}^2=2\cdot 2-1^2=3&gt;0$$</div>
 <p>且</p>
-<p>$$f_{xx}=2&gt;0$$</p>
+<div class="math-display">$$f_{xx}=2&gt;0$$</div>
 <p>所以驻点 $(0,0)$ 是局部极小点。</p>
 <h4>Step 3：进一步说明它其实还是全局最小点</h4>
 <p>为什么能多说这句：因为这是一个正定二次型，函数在整个空间上都向上开。</p>
 <p>直接写成二次型：</p>
-<p>$$f(x,y)=\begin{pmatrix}x&amp;y\end{pmatrix}\begin{pmatrix}1&amp;1/2\\1/2&amp;1\end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix}$$</p>
+<div class="math-display">$$f(x,y)=\begin{pmatrix}x&amp;y\end{pmatrix}\begin{pmatrix}1&amp;1/2\\1/2&amp;1\end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix}$$</div>
 <p>对任意非零向量 $(x,y)^T$，都有 $f(x,y)&gt;0$，并且在 $(0,0)$ 取到 $0$。所以它不仅是局部极小点，还是全局最小点。</p>
 <h4>标准答案</h4>
 <ol><li>Hessian 是</li></ol>
-<p>$$H_f(x,y)=\begin{pmatrix}2&amp;1\\1&amp;2\end{pmatrix}$$</p>
+<div class="math-display">$$H_f(x,y)=\begin{pmatrix}2&amp;1\\1&amp;2\end{pmatrix}$$</div>
 <ol><li>由于 Hessian 正定，驻点 $(0,0)$ 是严格局部极小点；进一步，由于函数是正定二次型，它还是全局最小点。</li></ol>
 <hr>
 <h3>例题 3：二次函数最小值</h3>
 <p>已知</p>
-<p>$$f(x,y)=x^2+y^2-4x-6y$$</p>
+<div class="math-display">$$f(x,y)=x^2+y^2-4x-6y$$</div>
 <p>要求：</p>
 <ol><li>求最小值点</li><li>说明为什么是全局最小</li></ol>
 <h4>Step 1：求梯度并找驻点</h4>
 <p>为什么先求梯度：对无约束平滑最优化，候选最优点先由一阶条件给出。</p>
 <p>计算偏导：</p>
-<p>$$\frac{\partial f}{\partial x}=2x-4,\quad \frac{\partial f}{\partial y}=2y-6$$</p>
+<div class="math-display">$$\frac{\partial f}{\partial x}=2x-4,\quad \frac{\partial f}{\partial y}=2y-6$$</div>
 <p>因此</p>
-<p>$$\nabla f(x,y)=\begin{pmatrix}2x-4\\2y-6\end{pmatrix}$$</p>
+<div class="math-display">$$\nabla f(x,y)=\begin{pmatrix}2x-4\\2y-6\end{pmatrix}$$</div>
 <p>令梯度为零：</p>
-<p>$$ \begin{cases} 2x-4=0\\ 2y-6=0 \end{cases} $$</p>
+<div class="math-display">$$
+\begin{cases}
+2x-4=0\\
+2y-6=0
+\end{cases}
+$$</div>
 <p>解得</p>
-<p>$$x=2,\quad y=3$$</p>
+<div class="math-display">$$x=2,\quad y=3$$</div>
 <p>所以候选最小值点是</p>
-<p>$$ (2,3) $$</p>
+<div class="math-display">$$ (2,3) $$</div>
 <h4>Step 2：判断为什么它是最小点</h4>
 <p>为什么要做这一步：一阶条件只说明“可能是极值点”，还没说明是最小还是别的类型。</p>
 <p>Hessian 为</p>
-<p>$$H_f(x,y)=\begin{pmatrix}2&amp;0\\0&amp;2\end{pmatrix}=2I$$</p>
+<div class="math-display">$$H_f(x,y)=\begin{pmatrix}2&amp;0\\0&amp;2\end{pmatrix}=2I$$</div>
 <p>这个矩阵显然正定，因为对任意非零向量 $z$ 都有</p>
-<p>$$z^T(2I)z=2\|z\|^2&gt;0$$</p>
+<div class="math-display">$$z^T(2I)z=2\|z\|^2&gt;0$$</div>
 <p>因此 $f$ 是严格凸函数。严格凸函数一旦存在驻点，该驻点就是唯一全局最小点。</p>
 <h4>Step 3：把最小值本身也写出来</h4>
 <p>为什么值得顺手写：在优化里，最小值点和最优目标值通常都要报告。</p>
 <p>配方可得</p>
-<p>$$f(x,y)=(x-2)^2+(y-3)^2-13$$</p>
+<div class="math-display">$$f(x,y)=(x-2)^2+(y-3)^2-13$$</div>
 <p>因此在 $(x,y)=(2,3)$ 处取到最小值</p>
-<p>$$f_{\min}=-13$$</p>
+<div class="math-display">$$f_{\min}=-13$$</div>
 <h4>标准答案</h4>
 <ol><li>最小值点是</li></ol>
-<p>$$ (2,3) $$</p>
+<div class="math-display">$$ (2,3) $$</div>
 <ol><li>最小值为</li></ol>
-<p>$$ -13 $$</p>
+<div class="math-display">$$ -13 $$</div>
 <ol><li>由于 Hessian 为 $2I \succ 0$，函数严格凸，因此该点是唯一全局最小点。</li></ol>
 <hr>
 <h3>例题 4：拉格朗日乘子</h3>
 <p>求解</p>
-<p>$$ \min f(x,y)=x^2+y^2 $$</p>
+<div class="math-display">$$
+\min f(x,y)=x^2+y^2
+$$</div>
 <p>约束为</p>
-<p>$$x+y=1$$</p>
+<div class="math-display">$$x+y=1$$</div>
 <p>要求：</p>
 <ol><li>写出 Lagrangian</li><li>求解</li><li>给出几何解释</li></ol>
 <h4>Step 1：构造拉格朗日函数</h4>
 <p>为什么这么做：约束优化里，目标函数和约束要被合并成一个统一对象，才能用驻点方程一起求。</p>
 <p>把约束写成</p>
-<p>$$g(x,y)=x+y-1=0$$</p>
+<div class="math-display">$$g(x,y)=x+y-1=0$$</div>
 <p>构造</p>
-<p>$$\mathcal{L}(x,y,\lambda)=x^2+y^2+\lambda(x+y-1)$$</p>
+<div class="math-display">$$\mathcal{L}(x,y,\lambda)=x^2+y^2+\lambda(x+y-1)$$</div>
 <h4>Step 2：对所有变量求偏导并令其为零</h4>
 <p>为什么这样做：最优点处不仅要满足可行性，还要满足目标梯度与约束法向方向平衡。</p>
 <p>对 $x,y,\lambda$ 求偏导：</p>
-<p>$$\frac{\partial \mathcal{L}}{\partial x}=2x+\lambda$$</p>
-<p>$$\frac{\partial \mathcal{L}}{\partial y}=2y+\lambda$$</p>
-<p>$$\frac{\partial \mathcal{L}}{\partial \lambda}=x+y-1$$</p>
+<div class="math-display">$$\frac{\partial \mathcal{L}}{\partial x}=2x+\lambda$$</div>
+<div class="math-display">$$\frac{\partial \mathcal{L}}{\partial y}=2y+\lambda$$</div>
+<div class="math-display">$$\frac{\partial \mathcal{L}}{\partial \lambda}=x+y-1$$</div>
 <p>令它们都为 0：</p>
-<p>$$ \begin{cases} 2x+\lambda=0\\ 2y+\lambda=0\\ x+y-1=0 \end{cases} $$</p>
+<div class="math-display">$$
+\begin{cases}
+2x+\lambda=0\\
+2y+\lambda=0\\
+x+y-1=0
+\end{cases}
+$$</div>
 <p>由前两式得</p>
-<p>$$2x+\lambda=2y+\lambda \Rightarrow x=y$$</p>
+<div class="math-display">$$2x+\lambda=2y+\lambda \Rightarrow x=y$$</div>
 <p>再代入约束</p>
-<p>$$x+y=1 \Rightarrow 2x=1 \Rightarrow x=\frac{1}{2}$$</p>
+<div class="math-display">$$x+y=1 \Rightarrow 2x=1 \Rightarrow x=\frac{1}{2}$$</div>
 <p>所以</p>
-<p>$$y=\frac{1}{2}$$</p>
+<div class="math-display">$$y=\frac{1}{2}$$</div>
 <p>再由 $2x+\lambda=0$ 得</p>
-<p>$$\lambda=-1$$</p>
+<div class="math-display">$$\lambda=-1$$</div>
 <h4>Step 3：写出最优值并解释几何意义</h4>
 <p>为什么要解释几何：拉格朗日乘子法真正重要的不是“会列式子”，而是明白它在说什么几何关系。</p>
 <p>最优值为</p>
-<p>$$f\left(\frac{1}{2},\frac{1}{2}\right)=\frac{1}{4}+\frac{1}{4}=\frac{1}{2}$$</p>
+<div class="math-display">$$f\left(\frac{1}{2},\frac{1}{2}\right)=\frac{1}{4}+\frac{1}{4}=\frac{1}{2}$$</div>
 <p>几何上，目标函数 $x^2+y^2$ 的等值线是以原点为中心的同心圆，约束 $x+y=1$ 是一条直线。 最优点就是“离原点最近的那一个可行点”，也就是原点到该直线的正交投影点。</p>
 <p>在最优点处，</p>
-<p>$$\nabla f(x,y)=(2x,2y)=(1,1)$$</p>
+<div class="math-display">$$\nabla f(x,y)=(2x,2y)=(1,1)$$</div>
 <p>而约束的法向量是</p>
-<p>$$\nabla g(x,y)=(1,1)$$</p>
+<div class="math-display">$$\nabla g(x,y)=(1,1)$$</div>
 <p>两者平行，这正是 $\nabla f=\mu \nabla g$ 的几何含义：目标函数的最陡变化方向已经和约束法向方向重合，因此沿可行切向方向再也降不下去了。</p>
 <h4>标准答案</h4>
 <ol><li>Lagrangian 是</li></ol>
-<p>$$\mathcal{L}(x,y,\lambda)=x^2+y^2+\lambda(x+y-1)$$</p>
+<div class="math-display">$$\mathcal{L}(x,y,\lambda)=x^2+y^2+\lambda(x+y-1)$$</div>
 <ol><li>最优解是</li></ol>
-<p>$$x^\star=y^\star=\frac{1}{2},\quad \lambda^\star=-1$$</p>
+<div class="math-display">$$x^\star=y^\star=\frac{1}{2},\quad \lambda^\star=-1$$</div>
 <ol><li>最优值是</li></ol>
-<p>$$f^\star=\frac{1}{2}$$</p>
+<div class="math-display">$$f^\star=\frac{1}{2}$$</div>
 <ol><li>几何解释：最优点是原点到直线 $x+y=1$ 的正交投影点，且在该点目标梯度与约束法向量平行。</li></ol>
 <hr>
 <h3>例题 5：<code>L1</code> 正则理解题</h3>
 <p>考虑问题</p>
-<p>$$ \min_x \|Ax-b\|^2+\lambda \|x\|_1 $$</p>
+<div class="math-display">$$
+\min_x \|Ax-b\|^2+\lambda \|x\|_1
+$$</div>
 <p>要求：</p>
 <ol><li>为什么不能直接用 $\nabla f=0$？</li><li><code>L1</code> 为什么会导致稀疏解？</li><li>常用求解方法有哪些？</li></ol>
 <h4>Step 1：解释为什么不能直接令梯度为零</h4>
 <p>为什么这题关键不在计算：因为这里真正的障碍不是线性代数运算，而是目标函数不再处处可导。</p>
 <p>平滑部分 $\|Ax-b\|^2$ 的梯度没有问题：</p>
-<p>$$\nabla \|Ax-b\|^2 = 2A^T(Ax-b)$$</p>
+<div class="math-display">$$\nabla \|Ax-b\|^2 = 2A^T(Ax-b)$$</div>
 <p>但 <code>L1</code> 项满足</p>
-<p>$$\|x\|_1=\sum_i |x_i|$$</p>
+<div class="math-display">$$\|x\|_1=\sum_i |x_i|$$</div>
 <p>只要某个坐标 $x_i=0$，对应的 $|x_i|$ 就不可导。 而稀疏解恰恰意味着很多坐标最终会变成 0，所以最优点经常正好落在不可导位置。</p>
 <p>因此这类问题的正确最优性条件应写成</p>
-<p>$$0 \in 2A^T(Ax-b)+\lambda \,\partial \|x\|_1$$</p>
+<div class="math-display">$$0 \in 2A^T(Ax-b)+\lambda \,\partial \|x\|_1$$</div>
 <p>而不是简单地写</p>
-<p>$$\nabla f(x)=0$$</p>
+<div class="math-display">$$\nabla f(x)=0$$</div>
 <h4>Step 2：解释为什么 <code>L1</code> 会产生稀疏性</h4>
 <p>为什么不是所有正则都会稀疏：关键区别在于 <code>L1</code> 的几何有“尖角”，而 <code>L2</code> 的几何是圆滑的。</p>
 <p>从代数上看，<code>L1</code> 惩罚对每个系数都收取线性代价：</p>
-<p>$$\lambda \|x\|_1=\lambda \sum_i |x_i|$$</p>
+<div class="math-display">$$\lambda \|x\|_1=\lambda \sum_i |x_i|$$</div>
 <p>当某个系数很小的时候，把它直接压到 0 往往能显著减少正则代价，而对拟合误差的影响未必很大，于是最优解会倾向于“宁可精简一批小系数”。</p>
 <p>从几何上看，<code>L1</code> 球在二维里是菱形、高维里是带尖角的多面体；二次误差项的等值面与它相切时，更容易在坐标轴或坐标平面上接触。 一旦接触点落在某个坐标轴上，就意味着某些分量精确为 0。</p>
 <p>这就是它和特征选择直接相连的原因： 若 $x_j=0$，就等于第 $j$ 个特征被模型主动丢掉了。</p>
