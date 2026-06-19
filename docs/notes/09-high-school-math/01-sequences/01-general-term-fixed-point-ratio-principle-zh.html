@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>两不动点距离比法：从定义到手动推导 | math.bozhanli.com</title>
+  <meta name="description" content="这一页只讲一个原理：">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">数列</a><span>/</span><span>两不动点距离比法：从定义到手动推导</span></div>
+      <h1>两不动点距离比法：从定义到手动推导</h1>
+      <p>这一页只讲一个原理：</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><p>这一页只讲一个原理：</p>
+<p>$$ \frac{a_{n+1}-\alpha}{a_{n+1}-\beta} =\lambda \frac{a_n-\alpha}{a_n-\beta}. $$</p>
+<p>它不是一个需要背下来的公式，而是一次分式递推的结构事实。理解它以后，学生可以自己从头推出，不必依赖“老师说令这个”的记忆。</p>
+<h2>本页研究什么对象</h2>
+<p>我们研究的对象是由递推关系定义的数列：</p>
+<p>$$ a_{n+1}=f(a_n), $$</p>
+<p>其中</p>
+<p>$$ f(x)=\frac{px+A}{Bx+C}. $$</p>
+<p>这叫一次分式变换。它首先有定义条件：</p>
+<p>$$ Bx+C\ne0. $$</p>
+<p>所以对数列来说，每一步都必须保证</p>
+<p>$$ Ba_n+C\ne0. $$</p>
+<p>如果某一步分母为 0，原递推式本身就没有意义，后面的讨论不能继续。</p>
+<h2>定义：不动点</h2>
+<p>若数 $\alpha$ 满足</p>
+<p>$$ f(\alpha)=\alpha, $$</p>
+<p>则称 $\alpha$ 是变换 $f$ 的不动点。</p>
+<p>这句话的含义是：如果某一项刚好等于 $\alpha$，那么下一项仍然等于 $\alpha$：</p>
+<p>$$ a_n=\alpha \quad\Longrightarrow\quad a_{n+1}=f(a_n)=f(\alpha)=\alpha. $$</p>
+<p>所以不动点是递推变换自己给出的稳定位置。它不是技巧的名字，而是这个变换的内在结构。</p>
+<h2>核心命题</h2>
+<p>设</p>
+<p>$$ f(x)=\frac{px+A}{Bx+C}. $$</p>
+<p>若 $\alpha,\beta$ 是两个不同的不动点，即</p>
+<p>$$ f(\alpha)=\alpha,\qquad f(\beta)=\beta,\qquad \alpha\ne\beta, $$</p>
+<p>并且相关分母都有意义，则存在常数 $\lambda$，使得</p>
+<p>$$ \frac{f(x)-\alpha}{f(x)-\beta} =\lambda \frac{x-\alpha}{x-\beta}. $$</p>
+<p>把 $x$ 换成 $a_n$，就得到</p>
+<p>$$ \frac{a_{n+1}-\alpha}{a_{n+1}-\beta} =\lambda \frac{a_n-\alpha}{a_n-\beta}. $$</p>
+<p>令</p>
+<p>$$ b_n=\frac{a_n-\alpha}{a_n-\beta}, $$</p>
+<p>则</p>
+<p>$$ b_{n+1}=\lambda b_n. $$</p>
+<p>于是 $\{b_n\}$ 是等比数列。</p>
+<h2>为什么这个命题成立</h2>
+<p>下面完整推导，不跳步。</p>
+<p>先从</p>
+<p>$$ f(x)-\alpha $$</p>
+<p>开始。由 $f(x)=\frac{px+A}{Bx+C}$，</p>
+<p>$$ f(x)-\alpha =\frac{px+A}{Bx+C}-\alpha. $$</p>
+<p>通分：</p>
+<p>$$ f(x)-\alpha =\frac{px+A-\alpha(Bx+C)}{Bx+C}. $$</p>
+<p>展开分子：</p>
+<p>$$ px+A-\alpha(Bx+C) =(p-\alpha B)x+(A-\alpha C). $$</p>
+<p>现在要利用“不动点”这个条件。因为 $\alpha$ 是不动点，</p>
+<p>$$ \alpha=\frac{p\alpha+A}{B\alpha+C}. $$</p>
+<p>在 $B\alpha+C\ne0$ 的条件下，两边同乘：</p>
+<p>$$ \alpha(B\alpha+C)=p\alpha+A. $$</p>
+<p>展开：</p>
+<p>$$ B\alpha^2+\alpha C=p\alpha+A. $$</p>
+<p>移项得到</p>
+<p>$$ A-\alpha C=B\alpha^2-p\alpha. $$</p>
+<p>右边可以提取 $-\alpha$：</p>
+<p>$$ B\alpha^2-p\alpha =-\alpha(p-\alpha B). $$</p>
+<p>所以</p>
+<p>$$ A-\alpha C=-\alpha(p-\alpha B). $$</p>
+<p>把它代回分子：</p>
+<p>$$ (p-\alpha B)x+(A-\alpha C) =(p-\alpha B)x-\alpha(p-\alpha B). $$</p>
+<p>提取公因式：</p>
+<p>$$ (p-\alpha B)x-\alpha(p-\alpha B) =(p-\alpha B)(x-\alpha). $$</p>
+<p>因此</p>
+<p>$$ f(x)-\alpha =\frac{(p-\alpha B)(x-\alpha)}{Bx+C}. $$</p>
+<p>同理，由 $\beta$ 是不动点可得</p>
+<p>$$ f(x)-\beta =\frac{(p-\beta B)(x-\beta)}{Bx+C}. $$</p>
+<p>两式相除：</p>
+<p>$$ \frac{f(x)-\alpha}{f(x)-\beta} = \frac{\frac{(p-\alpha B)(x-\alpha)}{Bx+C}} {\frac{(p-\beta B)(x-\beta)}{Bx+C}}. $$</p>
+<p>公共分母 $Bx+C$ 抵消：</p>
+<p>$$ \frac{f(x)-\alpha}{f(x)-\beta} = \frac{p-\alpha B}{p-\beta B} \cdot \frac{x-\alpha}{x-\beta}. $$</p>
+<p>所以</p>
+<p>$$ \lambda=\frac{p-\alpha B}{p-\beta B}. $$</p>
+<p>这就是两不动点距离比法的来源。</p>
+<h2>这个新变量到底在表示什么</h2>
+<p>新变量</p>
+<p>$$ b_n=\frac{a_n-\alpha}{a_n-\beta} $$</p>
+<p>不是为了凑公式。它表示的是：$a_n$ 到两个不动点 $\alpha,\beta$ 的有向距离之比。</p>
+<p>一次分式变换的特点是：它不会简单地把每个距离都变成常数倍，但它会把“到两个不动点的距离之比”变成常数倍。</p>
+<p>这就是为什么单看 $a_n-\alpha$ 往往不够，而要看</p>
+<p>$$ \frac{a_n-\alpha}{a_n-\beta}. $$</p>
+<h2>手动推导流程</h2>
+<p>遇到</p>
+<p>$$ a_{n+1}=\frac{pa_n+A}{Ba_n+C} $$</p>
+<p>时，按下面步骤手动推导。</p>
+<h3>第一步：写出变换和定义域</h3>
+<p>令</p>
+<p>$$ f(x)=\frac{px+A}{Bx+C}. $$</p>
+<p>先记下</p>
+<p>$$ Bx+C\ne0. $$</p>
+<p>对数列就是</p>
+<p>$$ Ba_n+C\ne0. $$</p>
+<h3>第二步：求不动点</h3>
+<p>解</p>
+<p>$$ x=f(x). $$</p>
+<p>也就是</p>
+<p>$$ x=\frac{px+A}{Bx+C}. $$</p>
+<p>在 $Bx+C\ne0$ 的条件下同乘：</p>
+<p>$$ x(Bx+C)=px+A. $$</p>
+<p>整理成二次方程。若得到两个不同根 $\alpha,\beta$，就可以考虑距离比法。</p>
+<h3>第三步：先讨论特殊初值</h3>
+<p>如果</p>
+<p>$$ a_1=\alpha, $$</p>
+<p>那么</p>
+<p>$$ a_n=\alpha. $$</p>
+<p>如果</p>
+<p>$$ a_1=\beta, $$</p>
+<p>那么</p>
+<p>$$ a_n=\beta. $$</p>
+<p>这些常值情形要先处理，否则后面构造分式时可能出现分母为 0。</p>
+<h3>第四步：构造距离比</h3>
+<p>在 $a_n\ne\beta$ 的情形下，令</p>
+<p>$$ b_n=\frac{a_n-\alpha}{a_n-\beta}. $$</p>
+<p>由核心命题可得</p>
+<p>$$ b_{n+1}=\lambda b_n. $$</p>
+<p>因此</p>
+<p>$$ b_n=b_1\lambda^{n-1}. $$</p>
+<h3>第五步：把 $b_n$ 解回 $a_n$</h3>
+<p>设</p>
+<p>$$ b_n=t_n. $$</p>
+<p>则</p>
+<p>$$ \frac{a_n-\alpha}{a_n-\beta}=t_n. $$</p>
+<p>两边同乘：</p>
+<p>$$ a_n-\alpha=t_n(a_n-\beta). $$</p>
+<p>展开：</p>
+<p>$$ a_n-\alpha=t_na_n-t_n\beta. $$</p>
+<p>把含 $a_n$ 的项放在一边：</p>
+<p>$$ a_n-t_na_n=\alpha-t_n\beta. $$</p>
+<p>提取 $a_n$：</p>
+<p>$$ (1-t_n)a_n=\alpha-t_n\beta. $$</p>
+<p>所以</p>
+<p>$$ a_n=\frac{\alpha-t_n\beta}{1-t_n}. $$</p>
+<p>最后检查初值和原递推分母。</p>
+<h2>完整例题</h2>
+<p>已知</p>
+<p>$$ a_1=4,\qquad a_{n+1}=\frac{5a_n-4}{2a_n-1}. $$</p>
+<p>求 $a_n$。</p>
+<h3>1. 写出变换</h3>
+<p>$$ f(x)=\frac{5x-4}{2x-1}. $$</p>
+<p>定义条件是</p>
+<p>$$ 2x-1\ne0. $$</p>
+<h3>2. 求不动点</h3>
+<p>解</p>
+<p>$$ x=\frac{5x-4}{2x-1}. $$</p>
+<p>同乘：</p>
+<p>$$ x(2x-1)=5x-4. $$</p>
+<p>展开：</p>
+<p>$$ 2x^2-x=5x-4. $$</p>
+<p>整理：</p>
+<p>$$ 2x^2-6x+4=0. $$</p>
+<p>两边除以 2：</p>
+<p>$$ x^2-3x+2=0. $$</p>
+<p>因式分解：</p>
+<p>$$ (x-1)(x-2)=0. $$</p>
+<p>所以两个不动点为</p>
+<p>$$ 1,\quad 2. $$</p>
+<p>这里 $a_1=4$，不是不动点，所以不是常值数列。</p>
+<h3>3. 构造距离比</h3>
+<p>取</p>
+<p>$$ \alpha=2,\qquad \beta=1. $$</p>
+<p>令</p>
+<p>$$ b_n=\frac{a_n-2}{a_n-1}. $$</p>
+<p>下面手动验证 $b_{n+1}$ 与 $b_n$ 的关系。</p>
+<p>先算分子：</p>
+<p>$$ a_{n+1}-2 =\frac{5a_n-4}{2a_n-1}-2. $$</p>
+<p>通分：</p>
+<p>$$ a_{n+1}-2 =\frac{5a_n-4-2(2a_n-1)}{2a_n-1}. $$</p>
+<p>展开：</p>
+<p>$$ a_{n+1}-2 =\frac{5a_n-4-4a_n+2}{2a_n-1} =\frac{a_n-2}{2a_n-1}. $$</p>
+<p>再算分母：</p>
+<p>$$ a_{n+1}-1 =\frac{5a_n-4}{2a_n-1}-1. $$</p>
+<p>通分：</p>
+<p>$$ a_{n+1}-1 =\frac{5a_n-4-(2a_n-1)}{2a_n-1}. $$</p>
+<p>展开：</p>
+<p>$$ a_{n+1}-1 =\frac{3a_n-3}{2a_n-1} =\frac{3(a_n-1)}{2a_n-1}. $$</p>
+<p>所以</p>
+<p>$$ b_{n+1} =\frac{a_{n+1}-2}{a_{n+1}-1} = \frac{\frac{a_n-2}{2a_n-1}} {\frac{3(a_n-1)}{2a_n-1}}. $$</p>
+<p>抵消公共分母：</p>
+<p>$$ b_{n+1} =\frac13\frac{a_n-2}{a_n-1} =\frac13b_n. $$</p>
+<h3>4. 求出 $b_n$</h3>
+<p>因为</p>
+<p>$$ b_1=\frac{4-2}{4-1}=\frac23, $$</p>
+<p>所以</p>
+<p>$$ b_n=\frac23\left(\frac13\right)^{n-1} =\frac2{3^n}. $$</p>
+<h3>5. 解回 $a_n$</h3>
+<p>由</p>
+<p>$$ \frac{a_n-2}{a_n-1}=\frac2{3^n}, $$</p>
+<p>两边同乘：</p>
+<p>$$ 3^n(a_n-2)=2(a_n-1). $$</p>
+<p>展开：</p>
+<p>$$ 3^na_n-2\cdot3^n=2a_n-2. $$</p>
+<p>移项：</p>
+<p>$$ (3^n-2)a_n=2\cdot3^n-2. $$</p>
+<p>所以</p>
+<p>$$ a_n=\frac{2\cdot3^n-2}{3^n-2}. $$</p>
+<h3>6. 检查</h3>
+<p>当 $n=1$ 时，</p>
+<p>$$ a_1=\frac{2\cdot3-2}{3-2}=4, $$</p>
+<p>符合初值。并且对这个结果，$2a_n-1$ 不为 0，原递推分母有意义。</p>
+<h2>和“平移后取倒数法”的关系</h2>
+<p>两不动点距离比法和平移后取倒数法不是两件互不相关的事。</p>
+<p>设 $\alpha,\beta$ 是两个不动点。令</p>
+<p>$$ B_n=a_n-\alpha. $$</p>
+<p>那么</p>
+<p>$$ a_n-\beta=B_n+\alpha-\beta. $$</p>
+<p>距离比法写成</p>
+<p>$$ \frac{B_{n+1}}{B_{n+1}+\alpha-\beta} =\lambda \frac{B_n}{B_n+\alpha-\beta}. $$</p>
+<p>设</p>
+<p>$$ d=\alpha-\beta. $$</p>
+<p>则</p>
+<p>$$ \frac{B_{n+1}}{B_{n+1}+d} =\lambda \frac{B_n}{B_n+d}. $$</p>
+<p>两边交叉相乘：</p>
+<p>$$ B_{n+1}(B_n+d)=\lambda B_n(B_{n+1}+d). $$</p>
+<p>展开：</p>
+<p>$$ B_nB_{n+1}+dB_{n+1} =\lambda B_nB_{n+1}+\lambda dB_n. $$</p>
+<p>移项：</p>
+<p>$$ (1-\lambda)B_nB_{n+1}+dB_{n+1}-\lambda dB_n=0. $$</p>
+<p>若 $B_nB_{n+1}\ne0$，两边除以 $B_nB_{n+1}$：</p>
+<p>$$ (1-\lambda)+\frac d{B_n}-\frac{\lambda d}{B_{n+1}}=0. $$</p>
+<p>令</p>
+<p>$$ C_n=\frac1{B_n}, $$</p>
+<p>就得到</p>
+<p>$$ C_{n+1} =\frac1\lambda C_n+\frac{1-\lambda}{\lambda d}. $$</p>
+<p>这就是一次线性递推。也就是说，平移后取倒数法可以看成两不动点距离比法的另一种书写方式。</p>
+<h2>边界条件</h2>
+<p>使用本方法时必须检查：</p>
+<ol><li>原递推分母是否可能为 0。</li><li>求不动点时同乘的分母是否为 0。</li><li>两个不动点是否真的不同。</li><li>初值是否正好等于某个不动点。</li><li>构造 $\frac{a_n-\alpha}{a_n-\beta}$ 时，是否出现 $a_n=\beta$。</li><li>解回 $a_n$ 后，是否满足初值和原递推。</li></ol>
+<h2>学生讲题问题</h2>
+<p>学生讲这一页时，不要求背公式，要求能回答：</p>
+<ol><li>什么是不动点？</li><li>为什么递推题里要找不动点？</li><li>为什么看一个距离不够，而要看两个距离的比？</li><li>核心等式 $$ f(x)-\alpha =\frac{(p-\alpha B)(x-\alpha)}{Bx+C} $$ 是怎么推出来的？</li><li>为什么 $\{b_n\}$ 会成为等比数列？</li><li>最后如何从 $b_n$ 解回 $a_n$？</li><li>哪些分母不能为 0？</li></ol>
+<p>如果这些问题能讲清楚，才说明她不是在照搬，而是在理解这个方法。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">数列</a></li><li>源文件：<code>content/09_high_school_math/01_sequences/01_general_term_fixed_point_ratio_principle_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-general-term-exercises-zh.html">数列求通项公式专项练习</a></h3><p>这份练习按“题型识别”编排。每个题型至少 5 道题，建议学生先判断方法，再动笔计算；点开解答前，先尝试把“为什么用这个方法”讲出来。</p></div><div class="note-item"><h3><a href="01-general-term-zh.html">数列求通项公式</a></h3><p>这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。</p></div><div class="note-item"><h3><a href="02-summation-zh.html">数列求和</a></h3><p>数列求和这一讲不要讲成“方法大全”。真正重要的是让学生形成一个习惯：先看通项结构，再决定求和方法。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

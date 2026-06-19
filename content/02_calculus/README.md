@@ -5,6 +5,7 @@
 - [高数到底在研究什么](./00_what_is_calculus_zh.md)
 - [高数骨干内容框架](./01_calculus_core_framework_zh.md)
 - [高数经典书目候选](./02_classic_texts_zh.md)
+- [多元函数最值与优化基础](./03_multivariate_optimization_basics_zh.md)
 
 ## 后续准备补
 

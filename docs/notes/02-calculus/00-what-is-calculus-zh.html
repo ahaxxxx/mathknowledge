@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>高数到底在研究什么 | math.bozhanli.com</title>
   <meta name="description" content="高数最核心的问题，不是“怎么求导”或“怎么积分”，而是：">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
@@ -13,7 +25,7 @@
       <div class="topbar-inner">
         <a class="brand" href="../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
         <nav class="nav">
-          <a href="../../index.html">首页</a><a href="../../about.html">关于</a><a href="../../method.html">方法</a><a href="../../calculus.html">高数</a><a href="../../linear-algebra.html">线代</a><a href="../../probability.html">概率</a><a href="../../references.html">书目</a><a href="../../roadmap.html">路线</a><a href="../../live.html">答疑</a><a href="../../faq.html">FAQ</a><a class="is-active" href="../../notes/index.html">笔记</a>
+          <a href="../../index.html">首页</a><a href="../../about.html">关于</a><a href="../../method.html">方法</a><a href="../../high-school-math.html">高中数学</a><a href="../../calculus.html">高数</a><a href="../../linear-algebra.html">线代</a><a href="../../probability.html">概率</a><a href="../../references.html">书目</a><a href="../../roadmap.html">路线</a><a href="../../live.html">答疑</a><a href="../../faq.html">FAQ</a><a class="is-active" href="../../notes/index.html">笔记</a>
         </nav>
       </div>
     </div>
@@ -34,7 +46,7 @@
 <ul><li>“函数值很接近”不等于“极限存在”</li><li>“会求导”不等于“理解导数”</li><li>“会积分公式”不等于“理解累积”</li></ul>
 <h2>5. 这部分和后续哪里相连</h2>
 <p>高数后面会自然通向：</p>
-<ul><li>数学分析</li><li>最优化</li><li>微分方程</li><li>概率与统计里的连续模型</li></ul></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高数</a></li><li>源文件：<code>content/02_calculus/00_what_is_calculus_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-calculus-core-framework-zh.html">高数骨干内容框架</a></h3><p>高数最底层的问题不是“求导和积分”，而是：</p></div><div class="note-item"><h3><a href="02-classic-texts-zh.html">高数经典书目候选</a></h3><p>自动从 Markdown 源稿生成。</p></div></div></section></aside></div>
+<ul><li>数学分析</li><li>最优化</li><li>微分方程</li><li>概率与统计里的连续模型</li></ul></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高数</a></li><li>源文件：<code>content/02_calculus/00_what_is_calculus_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-calculus-core-framework-zh.html">高数骨干内容框架</a></h3><p>高数最底层的问题不是“求导和积分”，而是：</p></div><div class="note-item"><h3><a href="02-classic-texts-zh.html">高数经典书目候选</a></h3><p>自动从 Markdown 源稿生成。</p></div><div class="note-item"><h3><a href="03-multivariate-optimization-basics-zh.html">多元函数最值与优化基础：从极值判别到稀疏优化</a></h3><p>这篇不按教材章节走，而按“读优化/特征选择论文时最常用的局部工具”来整理。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

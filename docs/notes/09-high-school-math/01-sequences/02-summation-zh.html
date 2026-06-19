@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>数列求和 | math.bozhanli.com</title>
+  <meta name="description" content="数列求和这一讲不要讲成“方法大全”。真正重要的是让学生形成一个习惯：先看通项结构，再决定求和方法。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">数列</a><span>/</span><span>数列求和</span></div>
+      <h1>数列求和</h1>
+      <p>数列求和这一讲不要讲成“方法大全”。真正重要的是让学生形成一个习惯：先看通项结构，再决定求和方法。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><p>数列求和这一讲不要讲成“方法大全”。真正重要的是让学生形成一个习惯：先看通项结构，再决定求和方法。</p>
+<h2>这部分在解决什么问题</h2>
+<p>给出数列通项 $a_n$ 后，我们常常需要求前 n 项和</p>
+<p>$$ S_n=a_1+a_2+\cdots+a_n. $$</p>
+<p>数列求和的本质，是把一串局部项组织成整体表达。不同通项结构，对应不同整理方式。</p>
+<h2>方法选择地图</h2>
+<ul><li>公式法：通项是等差、等比、一次式、平方等熟悉结构。</li><li>分组求和：通项由几种简单结构相加，例如 $a_n=2n-1+2^n$。</li><li>裂项相消：通项可以拆成相邻两项之差，例如 $\frac1{n(n+1)}$。</li><li>错位相减：通项是“等差因子乘等比因子”，例如 $n2^n$ 或 $\frac n{3^n}$。</li><li>倒序相加：前后配对后有稳定结构，例如 $a_k+a_{n+1-k}$ 是常数。</li><li>由 $S_n$ 反推 $a_n$：必须单独处理 $a_1$。</li></ul>
+<h2>课堂建议</h2>
+<ol><li>先用 10 到 15 分钟让学生讲上一讲通项公式作业。</li><li>再用 10 分钟建立“看结构选方法”的总入口。</li><li>公式法和分组求和讲快一点，让学生获得确定感。</li><li>裂项相消讲慢一点，要求写出前三项和最后两项。</li><li>错位相减讲慢一点，重点训练排版和边界项。</li><li>课堂练习时先只问“用什么方法”，不要急着算。</li></ol>
+<h2>公式法与分组求和</h2>
+<p>常用公式：</p>
+<p>$$ \sum_{k=1}^n k=\frac{n(n+1)}2, \quad \sum_{k=1}^n (2k-1)=n^2. $$</p>
+<p>$$ \sum_{k=1}^n k^2=\frac{n(n+1)(2n+1)}6, \quad \sum_{k=1}^n q^k=\frac{q(1-q^n)}{1-q}\ (q\ne1). $$</p>
+<p>例题：求</p>
+<p>$$ S_n=\sum_{k=1}^n(2k-1+2^k). $$</p>
+<p>拆开：</p>
+<p>$$ S_n=\sum_{k=1}^n(2k-1)+\sum_{k=1}^n2^k=n^2+2^{n+1}-2. $$</p>
+<h2>裂项相消</h2>
+<p>核心想法：把一项写成“前一项减后一项”。</p>
+<p>例题 1：求</p>
+<p>$$ S_n=\sum_{k=1}^n\frac1{k(k+1)}. $$</p>
+<p>因为</p>
+<p>$$ \frac1{k(k+1)}=\frac1k-\frac1{k+1}, $$</p>
+<p>所以</p>
+<p>$$ S_n=1-\frac1{n+1}=\frac n{n+1}. $$</p>
+<p>例题 2：求</p>
+<p>$$ S_n=\sum_{k=1}^n\frac1{(2k-1)(2k+1)}. $$</p>
+<p>因为</p>
+<p>$$ \frac1{(2k-1)(2k+1)}=\frac12\left(\frac1{2k-1}-\frac1{2k+1}\right), $$</p>
+<p>所以</p>
+<p>$$ S_n=\frac12\left(1-\frac1{2n+1}\right)=\frac n{2n+1}. $$</p>
+<p>例题 3：求</p>
+<p>$$ S_n=\sum_{k=1}^n\frac1{\sqrt{k+1}+\sqrt k}. $$</p>
+<p>有理化：</p>
+<p>$$ \frac1{\sqrt{k+1}+\sqrt k}=\sqrt{k+1}-\sqrt k. $$</p>
+<p>所以</p>
+<p>$$ S_n=\sqrt{n+1}-1. $$</p>
+<h2>错位相减</h2>
+<p>看到“等差乘等比”，优先考虑错位相减。</p>
+<p>例题：求</p>
+<p>$$ S_n=\sum_{k=1}^n k2^{k-1}. $$</p>
+<p>写成：</p>
+<p>$$ S_n=1+2\cdot2+3\cdot2^2+\cdots+n2^{n-1}. $$</p>
+<p>两边乘以 2：</p>
+<p>$$ 2S_n=2+2\cdot2^2+3\cdot2^3+\cdots+n2^n. $$</p>
+<p>两式相减：</p>
+<p>$$ S_n=(n-1)2^n+1. $$</p>
+<p>这一题讲课时重点不是快速化简，而是让学生看清楚：为什么要乘公比，哪些项能对齐，最后剩下哪些边界项。</p>
+<h2>课堂练习</h2>
+<p>先判断方法，再计算。</p>
+<ol><li>$\sum_{k=1}^n(4k-3)$。</li><li>$\sum_{k=1}^n(3^k+2k)$。</li><li>$\sum_{k=1}^n\frac1{k(k+2)}$。</li><li>$\sum_{k=1}^n\frac1{(k+1)(k+2)}$。</li><li>$\sum_{k=1}^n\frac1{\sqrt{k+2}+\sqrt{k+1}}$。</li><li>$\sum_{k=1}^n k3^{k-1}$。</li><li>$\sum_{k=1}^n\frac{2k-1}{3^k}$。</li><li>已知 $S_n=3n^2-n$，求 $a_n$。</li></ol>
+<h2>课后作业</h2>
+<p>A 组：必做。</p>
+<ol><li>求 $\sum_{k=1}^n(5k-2)$。</li><li>求 $\sum_{k=1}^n(2^k+3k-1)$。</li><li>求 $\sum_{k=1}^n\frac1{k(k+1)}$。</li><li>求 $\sum_{k=1}^n\frac1{(2k-1)(2k+1)}$。</li><li>求 $\sum_{k=1}^n\frac1{\sqrt{k+1}+\sqrt k}$。</li><li>求 $\sum_{k=1}^n k2^k$。</li><li>求 $\sum_{k=1}^n\frac{2k-1}{3^k}$。</li><li>已知 $S_n=2n^2+n$，求 $a_n$。</li></ol>
+<p>B 组：选做，并准备讲题。</p>
+<ol><li>求 $\sum_{k=1}^n\frac1{k(k+2)}$。</li><li>求 $\sum_{k=1}^n(k+1)2^k$。</li><li>已知 $a_n=3n-2$，求 $S_n$，并反过来验证 $a_n=S_n-S_{n-1}$。</li><li>自己设计一道裂项相消题，并解释你是怎么构造出来的。</li></ol>
+<h2>讲题任务</h2>
+<p>下次课选 2 题讲。每题控制在 3 分钟：方法判断 30 秒，关键步骤 1 分钟，易错点 1 分钟，最后总结 30 秒。</p>
+<h2>参考答案</h2>
+<p>课堂练习答案：</p>
+<ol><li>$2n^2-n$。</li><li>$\frac{3(3^n-1)}2+n(n+1)$。</li><li>$\frac34-\frac12\left(\frac1{n+1}+\frac1{n+2}\right)$。</li><li>$\frac12-\frac1{n+2}$。</li><li>$\sqrt{n+2}-\sqrt2$。</li><li>$\frac{(2n-1)3^n+1}{4}$。</li><li>$1-\frac{n+1}{3^n}$。</li><li>$a_n=6n-4$。</li></ol>
+<p>课后作业答案：</p>
+<ol><li>$\frac{n(5n+1)}2$。</li><li>$2^{n+1}-2+\frac{3n(n+1)}2-n$。</li><li>$\frac n{n+1}$。</li><li>$\frac n{2n+1}$。</li><li>$\sqrt{n+1}-1$。</li><li>$(n-1)2^{n+1}+2$。</li><li>$1-\frac{n+1}{3^n}$。</li><li>$a_n=4n-1$。</li><li>$\frac34-\frac12\left(\frac1{n+1}+\frac1{n+2}\right)$。</li><li>$n2^{n+1}$。</li><li>$S_n=\frac{n(3n-1)}2$。</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">数列</a></li><li>源文件：<code>content/09_high_school_math/01_sequences/02_summation_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-general-term-exercises-zh.html">数列求通项公式专项练习</a></h3><p>这份练习按“题型识别”编排。每个题型至少 5 道题，建议学生先判断方法，再动笔计算；点开解答前，先尝试把“为什么用这个方法”讲出来。</p></div><div class="note-item"><h3><a href="01-general-term-fixed-point-ratio-principle-zh.html">两不动点距离比法：从定义到手动推导</a></h3><p>这一页只讲一个原理：</p></div><div class="note-item"><h3><a href="01-general-term-zh.html">数列求通项公式</a></h3><p>这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

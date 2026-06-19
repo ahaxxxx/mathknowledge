@@ -20,6 +20,7 @@ NAV_ITEMS = [
     ("首页", "index.html", False),
     ("关于", "about.html", False),
     ("方法", "method.html", False),
+    ("高中数学", "high-school-math.html", False),
     ("高数", "calculus.html", False),
     ("线代", "linear-algebra.html", False),
     ("概率", "probability.html", False),
@@ -40,6 +41,8 @@ SECTION_LABELS = {
     "06_live": "答疑",
     "07_faq": "FAQ",
     "08_roadmap": "路线",
+    "09_high_school_math": "高中数学",
+    "01_sequences": "数列",
 }
 
 BLOCK_STARTERS = (
@@ -49,6 +52,7 @@ BLOCK_STARTERS = (
     "> ",
     "```",
     "---",
+    ":::",
 )
 
 
@@ -190,6 +194,18 @@ def page_shell(
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{html.escape(title)} | math.bozhanli.com</title>
   <meta name="description" content="{description_meta}">
+  <script>
+    window.MathJax = {{
+      tex: {{
+        inlineMath: [['$', '$'], ['\\\\(', '\\\\)']],
+        displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']]
+      }},
+      options: {{
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }}
+    }};
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <link rel="stylesheet" href="{root_prefix}assets/site.css">
 </head>
 <body>
@@ -331,6 +347,8 @@ def collect_list_items(lines: list[str], start_index: int, ordered: bool) -> tup
                 or (ordered and current_stripped.startswith("- "))
                 or (not ordered and re.match(r"^\d+\.\s+", current_stripped))
                 or re.fullmatch(r"-{3,}", current_stripped)
+                or current_stripped.startswith(":::solution")
+                or current_stripped == ":::"
             ):
                 break
             if current.startswith("  ") or current.startswith("\t"):
@@ -352,6 +370,24 @@ def render_markdown(markdown_text: str, source_path: Path, output_rel: Path) -> 
         stripped = line.strip()
         if not stripped:
             i += 1
+            continue
+
+        if stripped.startswith(":::solution"):
+            summary = stripped[len(":::solution"):].strip() or "查看解答"
+            solution_lines: list[str] = []
+            i += 1
+            while i < len(lines) and lines[i].strip() != ":::":
+                solution_lines.append(lines[i])
+                i += 1
+            if i < len(lines):
+                i += 1
+            inner_html = render_markdown("\n".join(solution_lines), source_path, output_rel)
+            blocks.append(
+                '<details class="solution-toggle">'
+                f'<summary>{render_inline(summary, source_path, output_rel)}</summary>'
+                f'<div class="solution-body">{inner_html}</div>'
+                '</details>'
+            )
             continue
 
         if stripped.startswith("```"):
@@ -414,6 +450,8 @@ def render_markdown(markdown_text: str, source_path: Path, output_rel: Path) -> 
                 or current_stripped.startswith("- ")
                 or re.match(r"^\d+\.\s+", current_stripped)
                 or re.fullmatch(r"-{3,}", current_stripped)
+                or current_stripped.startswith(":::solution")
+                or current_stripped == ":::"
             ):
                 break
             paragraph_lines.append(current)
@@ -705,3 +743,4 @@ if __name__ == "__main__":
         watch(max(args.interval, 0.5))
     else:
         build()
+

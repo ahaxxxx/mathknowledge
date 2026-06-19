@@ -390,6 +390,100 @@ a {
   color: var(--accent);
 }
 
+.learning-tree {
+  display: grid;
+  gap: 12px;
+}
+
+.tree-root,
+.tree-node {
+  display: block;
+  text-decoration: none;
+}
+
+.tree-root {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(15, 109, 105, 0.1);
+  border: 1px solid rgba(15, 109, 105, 0.16);
+  color: var(--accent-2);
+  font-weight: 800;
+}
+
+.tree-branch {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  margin-left: 10px;
+  padding-left: 18px;
+  border-left: 2px solid rgba(15, 109, 105, 0.18);
+}
+
+.tree-node {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--line);
+  font-weight: 750;
+}
+
+.tree-leaves {
+  display: grid;
+  gap: 8px;
+  margin-left: 10px;
+  padding-left: 16px;
+  border-left: 1px dashed rgba(90, 100, 116, 0.38);
+}
+
+.tree-leaf {
+  display: block;
+  padding: 9px 12px;
+  border-radius: 10px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.tree-leaf:hover,
+.tree-node:hover,
+.tree-root:hover {
+  background: rgba(200, 92, 43, 0.1);
+  color: var(--accent);
+}
+
+.tree-branch.is-muted .tree-node {
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.solution-toggle {
+  margin: 12px 0 18px;
+  border: 1px solid rgba(15, 109, 105, 0.18);
+  border-radius: 12px;
+  background: rgba(15, 109, 105, 0.06);
+  overflow: hidden;
+}
+
+.solution-toggle summary {
+  cursor: pointer;
+  padding: 11px 14px;
+  color: var(--accent-2);
+  font-weight: 800;
+  list-style-position: inside;
+}
+
+.solution-toggle summary:hover {
+  background: rgba(15, 109, 105, 0.08);
+}
+
+.solution-body {
+  padding: 2px 16px 14px;
+  border-top: 1px solid rgba(15, 109, 105, 0.12);
+}
+
+.solution-body > :first-child {
+  margin-top: 10px;
+}
+
 .footer {
   padding: 28px 0 56px;
   color: var(--muted);

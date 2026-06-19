@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>数列求通项公式 | math.bozhanli.com</title>
+  <meta name="description" content="这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">数列</a><span>/</span><span>数列求通项公式</span></div>
+      <h1>数列求通项公式</h1>
+      <p>这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><p>这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。</p>
+<h2>课堂目标</h2>
+<p>这一讲的目标不是让学生背很多方法名，而是让她看到一个数列题时，能先判断“题目给了什么关系”，再选择合适的通项求法。</p>
+<p>本讲主线：</p>
+<ol><li>数列的含义。</li><li>数列的表示方法：列表法、图像法、通项公式法、递推公式法。</li><li>等差数列的含义及性质。</li><li>等比数列的含义及性质。</li><li>数列求通项公式：累加法、累乘法、构造等差或等比、分式递推中的不动点与取倒数、因式分解法、数学归纳法、$S_n$ 与 $a_n$ 互换、带权和式递推。</li><li>数列求和：公式法、裂项相消法、错位相减法、分组求和法。这个部分单独放在下一页：<a href="02-summation-zh.html">数列求和</a>。</li></ol>
+<h2>这部分在解决什么问题</h2>
+<p>数列求通项公式的目标，是把递推关系、前 n 项和关系或局部规律，转成可以直接使用的 $a_n$。通项公式一旦清楚，后面的求和、单调性、最值、证明都会顺很多。</p>
+<p>学生最容易误解的是：数列求通项不是“看到题就套一个公式”，而是先判断题目给的是差、比、和、递推、分式、因式，还是带权求和。</p>
+<h2>数列的几种表示方法</h2>
+<ul><li>列表法：直接列出前几项，例如 $1,4,9,16,\cdots$。</li><li>图像法：把点 $(n,a_n)$ 画出来，看变化趋势。</li><li>通项公式法：直接给 $a_n=f(n)$，例如 $a_n=n^2$。</li><li>递推公式法：给初始项和相邻项关系，例如 $a_1=1,\ a_{n+1}=2a_n+1$。</li></ul>
+<p>通项公式适合直接计算任意一项；递推公式适合描述“后一项如何由前一项得到”。求通项公式，本质上就是把递推描述转成直接描述。</p>
+<h2>等差数列与等比数列</h2>
+<p>等差数列：</p>
+<p>$$ a_{n+1}-a_n=d, \qquad a_n=a_1+(n-1)d. $$</p>
+<p>常用性质：</p>
+<ul><li>若 $m+n=p+q$，则 $a_m+a_n=a_p+a_q$。</li><li>等差中项：若 $a,b,c$ 成等差，则 $2b=a+c$。</li><li>前 n 项和：$S_n=\frac{n(a_1+a_n)}2=\frac{n[2a_1+(n-1)d]}2$。</li></ul>
+<p>等比数列：</p>
+<p>$$ \frac{a_{n+1}}{a_n}=q, \qquad a_n=a_1q^{n-1}. $$</p>
+<p>常用性质：</p>
+<ul><li>若 $m+n=p+q$，则 $a_ma_n=a_pa_q$。</li><li>等比中项：若 $a,b,c$ 成等比，则 $b^2=ac$。</li><li>前 n 项和：$S_n=\frac{a_1(1-q^n)}{1-q}\ (q\ne1)$。</li></ul>
+<h2>求通项的方法地图</h2>
+<h3>1. 累加法</h3>
+<p>信号：题目给出</p>
+<p>$$ a_{n+1}-a_n=f(n). $$</p>
+<p>做法：把差从 $1$ 加到 $n-1$。</p>
+<p>$$ a_n=a_1+\sum_{k=1}^{n-1}[a_{k+1}-a_k] =a_1+\sum_{k=1}^{n-1}f(k). $$</p>
+<p>例：$a_1=1,\ a_{n+1}-a_n=2n+1$，则</p>
+<p>$$ a_n=1+\sum_{k=1}^{n-1}(2k+1)=n^2. $$</p>
+<h3>2. 累乘法</h3>
+<p>信号：题目给出</p>
+<p>$$ \frac{a_{n+1}}{a_n}=f(n) $$</p>
+<p>或</p>
+<p>$$ a_{n+1}=f(n)a_n. $$</p>
+<p>做法：把比值从 $1$ 乘到 $n-1$。</p>
+<p>$$ a_n=a_1\prod_{k=1}^{n-1}\frac{a_{k+1}}{a_k}. $$</p>
+<p>例：$a_1=2,\ a_{n+1}=\frac{n+1}{n}a_n$，则</p>
+<p>$$ a_n=2\cdot\frac21\cdot\frac32\cdots\frac n{n-1}=2n. $$</p>
+<h3>3. 由 $S_n$ 求 $a_n$</h3>
+<p>信号：题目给前 n 项和 $S_n$。</p>
+<p>必须分两步：</p>
+<p>$$ a_1=S_1, \qquad a_n=S_n-S_{n-1}\quad(n\ge2). $$</p>
+<p>最后要检查 $n=1$ 是否能统一进通项公式。</p>
+<p>例：$S_n=n^2+3n$。则 $a_1=4$；当 $n\ge2$ 时，</p>
+<p>$$ a_n=(n^2+3n)-[(n-1)^2+3(n-1)]=2n+2. $$</p>
+<p>因为 $n=1$ 时也成立，所以 $a_n=2n+2$。</p>
+<h3>4. 待定系数法：构造等差或等比</h3>
+<p>这是课堂里最重要的一类“构造新数列”。</p>
+<h4>一次线性递推</h4>
+<p>形如</p>
+<p>$$ a_{n+1}=pa_n+q. $$</p>
+<p>若 $p\ne1$，设 $a_{n+1}+c=p(a_n+c)$，解出 $c$，就把 $\{a_n+c\}$ 构造成等比数列。</p>
+<p>例：$a_1=1,\ a_{n+1}=2a_n+3$。</p>
+<p>$$ a_{n+1}+3=2(a_n+3), $$</p>
+<p>所以 $a_n+3=4\cdot2^{n-1}$，即</p>
+<p>$$ a_n=2^{n+1}-3. $$</p>
+<p>若 $p=1$，它退化为累加法：$a_{n+1}-a_n=q$。</p>
+<h4>多项式扰动</h4>
+<p>形如</p>
+<p>$$ a_{n+1}=pa_n+An^2+Bn+C. $$</p>
+<p>常用想法：设</p>
+<p>$$ a_n+x n^2+yn+z $$</p>
+<p>或设一个二次多项式作为修正项，把它构造成等比或等差结构。课堂上不必一开始讲得太抽象，可以先让学生知道：右边出现二次多项式，构造项也往往要带二次多项式。</p>
+<h4>指数扰动</h4>
+<p>形如</p>
+<p>$$ a_{n+1}=pa_n+A\cdot B^n+C. $$</p>
+<p>常见处理：把 $B^n$ 看成一个已知等比数列，尝试构造</p>
+<p>$$ a_n+xB^n+y $$</p>
+<p>使其转化为等比或更简单的递推。若 $p=B$，还可能出现 $nB^n$ 型修正项，这类题要特别小心。</p>
+<h3>5. 二阶线性递推与特征方程</h3>
+<p>信号：题目同时含有 $a_{n+1},a_n,a_{n-1}$，例如</p>
+<p>$$ a_{n+1}+pa_n+qa_{n-1}=0. $$</p>
+<p>如果是常系数齐次线性递推，可以考虑特征方程：</p>
+<p>$$ r^2+pr+q=0. $$</p>
+<p>若特征根为 $r_1,r_2$ 且 $r_1\ne r_2$，通项通常写成</p>
+<p>$$ a_n=A r_1^{n-1}+B r_2^{n-1}. $$</p>
+<p>若有重根 $r$，则通常出现</p>
+<p>$$ a_n=(A+Bn)r^{n-1}. $$</p>
+<p>这部分对高二升高三学生属于进阶内容。建议放在“会识别即可，遇到再讲”的位置，不要在第一轮复习里压太重。</p>
+<h3>6. 分式型递推：不动点、距离比与平移取倒数</h3>
+<p>如果需要把这个原理从头手推一遍，可以单独看：<a href="01-general-term-fixed-point-ratio-principle-zh.html">两不动点距离比法：从定义到手动推导</a>。</p>
+<p>这一类题的研究对象不是一个孤立公式，而是一个反复作用的变换：</p>
+<p>$$ a_{n+1}=f(a_n). $$</p>
+<p>当 $f(x)$ 是一次分式变换时，常见形式为</p>
+<p>$$ f(x)=\frac{px+A}{Bx+C}. $$</p>
+<p>这里首先要问三个问题：</p>
+<ol><li>这个变换在哪些 $x$ 上有意义？至少要有 $Bx+C\ne0$。</li><li>有没有某些数被这个变换保持不动？</li><li>能否找到一个新变量，让反复作用的分式变换变成等差、等比或一次线性递推？</li></ol>
+<h4>定义：什么是不动点</h4>
+<p>若数 $\alpha$ 满足</p>
+<p>$$ f(\alpha)=\alpha, $$</p>
+<p>则称 $\alpha$ 是变换 $f$ 的不动点。</p>
+<p>这个定义的含义很直接：如果某一步 $a_n=\alpha$，那么</p>
+<p>$$ a_{n+1}=f(a_n)=f(\alpha)=\alpha, $$</p>
+<p>后面的每一项都会继续等于 $\alpha$。所以不动点不是人为发明的技巧，而是递推系统自己给出的稳定位置。</p>
+<h4>命题 1：一次线性递推为什么要平移到不动点</h4>
+<p>若</p>
+<p>$$ a_{n+1}=pa_n+q, $$</p>
+<p>且 $\alpha$ 是不动点，即</p>
+<p>$$ \alpha=p\alpha+q, $$</p>
+<p>则两式相减：</p>
+<p>$$ a_{n+1}-\alpha=p(a_n-\alpha). $$</p>
+<p>这说明真正变成等比数列的不是 $a_n$ 本身，而是“$a_n$ 到不动点 $\alpha$ 的距离”。平时写的“令 $b_n=a_n+c$”，本质上就是把坐标原点平移到不动点。</p>
+<h4>命题 2：一次分式变换为什么要看两个不动点的距离比</h4>
+<p>设</p>
+<p>$$ f(x)=\frac{px+A}{Bx+C}, $$</p>
+<p>并且 $\alpha,\beta$ 是两个不同的不动点。也就是说</p>
+<p>$$ f(\alpha)=\alpha,\qquad f(\beta)=\beta. $$</p>
+<p>我们证明：在相关分母不为 0 的条件下，</p>
+<p>$$ \frac{f(x)-\alpha}{f(x)-\beta} =\lambda\frac{x-\alpha}{x-\beta}, $$</p>
+<p>其中 $\lambda$ 是常数。证明如下。</p>
+<p>先看分子：</p>
+<p>$$ f(x)-\alpha =\frac{px+A}{Bx+C}-\alpha =\frac{px+A-\alpha(Bx+C)}{Bx+C}. $$</p>
+<p>整理得</p>
+<p>$$ f(x)-\alpha =\frac{(p-\alpha B)x+(A-\alpha C)}{Bx+C}. $$</p>
+<p>因为 $\alpha$ 是不动点，</p>
+<p>$$ \alpha=\frac{p\alpha+A}{B\alpha+C}. $$</p>
+<p>在 $B\alpha+C\ne0$ 的条件下，两边同乘得</p>
+<p>$$ \alpha(B\alpha+C)=p\alpha+A. $$</p>
+<p>于是</p>
+<p>$$ A-\alpha C=\alpha^2B-p\alpha. $$</p>
+<p>代回去：</p>
+<p>$$ f(x)-\alpha =\frac{(p-\alpha B)x+\alpha^2B-p\alpha}{Bx+C} =\frac{(p-\alpha B)(x-\alpha)}{Bx+C}. $$</p>
+<p>同理，</p>
+<p>$$ f(x)-\beta =\frac{(p-\beta B)(x-\beta)}{Bx+C}. $$</p>
+<p>两式相除，公共分母 $Bx+C$ 消去：</p>
+<p>$$ \frac{f(x)-\alpha}{f(x)-\beta} =\frac{p-\alpha B}{p-\beta B}\cdot\frac{x-\alpha}{x-\beta}. $$</p>
+<p>所以对数列而言，若令</p>
+<p>$$ b_n=\frac{a_n-\alpha}{a_n-\beta}, $$</p>
+<p>就得到</p>
+<p>$$ b_{n+1}=\lambda b_n, \qquad \lambda=\frac{p-\alpha B}{p-\beta B}. $$</p>
+<p>这才是“构造距离比”的来源：它不是猜出来的，而是一次分式变换对两个不动点的距离比只产生常数倍改变。</p>
+<p>边界要说清楚：若 $a_1=\beta$，则数列可能直接成为常值数列；若某一步 $a_n=\beta$，则 $b_n$ 无定义，要单独讨论；若原递推分母为 0，则原数列本身在那一步无定义。</p>
+<h4>例题：两个不动点距离比法</h4>
+<p>已知</p>
+<p>$$ a_1=4,\qquad a_{n+1}=\frac{5a_n-4}{2a_n-1}. $$</p>
+<p>先找不动点：</p>
+<p>$$ x=\frac{5x-4}{2x-1}. $$</p>
+<p>在 $2x-1\ne0$ 的条件下，两边同乘：</p>
+<p>$$ x(2x-1)=5x-4, $$</p>
+<p>即</p>
+<p>$$ 2x^2-6x+4=0. $$</p>
+<p>解得</p>
+<p>$$ x=1\quad\text{或}\quad x=2. $$</p>
+<p>因此两个不动点是 $1,2$。令</p>
+<p>$$ b_n=\frac{a_n-2}{a_n-1}. $$</p>
+<p>下面不是跳步，而是直接验证这个新变量会变成等比：</p>
+<p>$$ a_{n+1}-2 =\frac{5a_n-4}{2a_n-1}-2 =\frac{5a_n-4-4a_n+2}{2a_n-1} =\frac{a_n-2}{2a_n-1}, $$</p>
+<p>$$ a_{n+1}-1 =\frac{5a_n-4}{2a_n-1}-1 =\frac{5a_n-4-2a_n+1}{2a_n-1} =\frac{3(a_n-1)}{2a_n-1}. $$</p>
+<p>所以</p>
+<p>$$ b_{n+1} =\frac{a_{n+1}-2}{a_{n+1}-1} =\frac{1}{3}\frac{a_n-2}{a_n-1} =\frac13 b_n. $$</p>
+<p>又</p>
+<p>$$ b_1=\frac{4-2}{4-1}=\frac23, $$</p>
+<p>所以</p>
+<p>$$ b_n=\frac23\left(\frac13\right)^{n-1}=\frac{2}{3^n}. $$</p>
+<p>由</p>
+<p>$$ \frac{a_n-2}{a_n-1}=\frac2{3^n} $$</p>
+<p>解得</p>
+<p>$$ a_n=\frac{2\cdot3^n-2}{3^n-2}. $$</p>
+<p>最后检查：当 $n=1$ 时，右边为 $4$，符合初值。</p>
+<h4>图中方法：平移参数消常数项，再取倒数</h4>
+<p>你图里的方法可以抽象成一个更一般的流程。</p>
+<p>先把递推式写成关于 $a_n,a_{n+1}$ 的方程</p>
+<p>$$ F(a_n,a_{n+1})=0. $$</p>
+<p>然后令</p>
+<p>$$ B_n=a_n+\alpha, \qquad a_n=B_n-\alpha. $$</p>
+<p>把 $a_n=B_n-\alpha,\ a_{n+1}=B_{n+1}-\alpha$ 代入。如果代入后的常数项为 0，方程就会只剩下</p>
+<p>$$ P B_nB_{n+1}+Q B_{n+1}+R B_n=0 $$</p>
+<p>这一类结构。此时在 $B_nB_{n+1}\ne0$ 的条件下，两边除以 $B_nB_{n+1}$：</p>
+<p>$$ P+\frac{Q}{B_n}+\frac{R}{B_{n+1}}=0. $$</p>
+<p>令</p>
+<p>$$ C_n=\frac1{B_n}, $$</p>
+<p>就得到一次线性递推</p>
+<p>$$ C_{n+1}=-\frac QR C_n-\frac PR. $$</p>
+<p>这一步解释了为什么图中会自然出现 $\frac1{B_n}$：不是为了取倒数而取倒数，而是因为平移后的方程含有 $B_nB_{n+1}$、$B_n$、$B_{n+1}$ 三种项，除以乘积后必然变成倒数的一次关系。</p>
+<p>还要解释为什么“让常数项为 0”等价于找不动点。代入后的常数项，就是把 $B_n=0,\ B_{n+1}=0$ 代入所得，也就是把 $a_n=-\alpha,\ a_{n+1}=-\alpha$ 代入原方程所得。因此常数项为 0，正是在说</p>
+<p>$$ F(-\alpha,-\alpha)=0, $$</p>
+<p>也就是 $-\alpha$ 是原递推变换的不动点。</p>
+<h4>例题：完整还原图中的做法</h4>
+<p>已知</p>
+<p>$$ a_1=2,\qquad a_{n+1}=\frac{2a_n+1}{3a_n+4}. $$</p>
+<p>先整理为方程：</p>
+<p>$$ (3a_n+4)a_{n+1}-2a_n-1=0. $$</p>
+<p>令</p>
+<p>$$ B_n=a_n+\alpha, \qquad a_n=B_n-\alpha. $$</p>
+<p>代入原方程：</p>
+<p>$$ <a href="B_{n+1}-/alpha">3(B_n-\alpha)+4</a>-2(B_n-\alpha)-1=0. $$</p>
+<p>展开：</p>
+<p>$$ 3B_nB_{n+1}+(4-3\alpha)B_{n+1}-(3\alpha+2)B_n +(3\alpha^2-2\alpha-1)=0. $$</p>
+<p>为了让它变成可以取倒数的一次关系，令常数项为 0：</p>
+<p>$$ 3\alpha^2-2\alpha-1=0. $$</p>
+<p>解得</p>
+<p>$$ \alpha=1\quad\text{或}\quad \alpha=-\frac13. $$</p>
+<p>这两个值对应原递推的两个不动点 $-1$ 和 $\frac13$。这里取 $\alpha=1$，即</p>
+<p>$$ B_n=a_n+1. $$</p>
+<p>于是方程化为</p>
+<p>$$ 3B_nB_{n+1}+B_{n+1}-5B_n=0. $$</p>
+<p>因为 $B_1=a_1+1=3\ne0$，且后面得到的表达式不会使 $B_n=0$，可以除以 $B_nB_{n+1}$：</p>
+<p>$$ 3+\frac1{B_n}-\frac5{B_{n+1}}=0. $$</p>
+<p>令</p>
+<p>$$ C_n=\frac1{B_n}, $$</p>
+<p>则</p>
+<p>$$ C_{n+1}=\frac15C_n+\frac35. $$</p>
+<p>这是一次线性递推。它的不动点满足</p>
+<p>$$ C=\frac15C+\frac35, $$</p>
+<p>所以</p>
+<p>$$ C=\frac34. $$</p>
+<p>令</p>
+<p>$$ D_n=C_n-\frac34, $$</p>
+<p>则</p>
+<p>$$ D_{n+1}=\frac15D_n. $$</p>
+<p>又</p>
+<p>$$ C_1=\frac1{B_1}=\frac13, \qquad D_1=\frac13-\frac34=-\frac5{12}. $$</p>
+<p>因此</p>
+<p>$$ D_n=-\frac5{12}\left(\frac15\right)^{n-1}, $$</p>
+<p>$$ C_n=\frac34-\frac5{12}\left(\frac15\right)^{n-1}. $$</p>
+<p>由 $C_n=\frac1{B_n}$，$B_n=a_n+1$，得到</p>
+<p>$$ a_n=\frac1{C_n}-1 =\frac{3\cdot5^{n-1}+5}{9\cdot5^{n-1}-5}. $$</p>
+<p>检查初值：当 $n=1$ 时，</p>
+<p>$$ \frac{3\cdot5^0+5}{9\cdot5^0-5}=\frac84=2, $$</p>
+<p>符合 $a_1=2$。</p>
+<h4>课堂判断顺序</h4>
+<p>遇到分式递推时，建议按以下顺序问：</p>
+<ol><li>原递推在哪些项上有定义？</li><li>不动点是什么？</li><li>两个不动点都能找到时，能否构造距离比？</li><li>如果选择一个不动点平移，代入后常数项能否消掉？</li><li>消掉常数项后，能否通过除以乘积转为倒数的一次线性递推？</li><li>最后得到的通项是否满足初值和原递推的定义条件？</li></ol>
+<h3>7. 因式分解型递推</h3>
+<p>信号：递推式不是直接给出 $a_{n+1}$，而是一个关于 $a_{n+1}$ 与 $a_n$ 的方程。常见做法是因式分解，分支后再结合初值、正负性或题设条件判断应该取哪一支。</p>
+<p>例型：</p>
+<p>$$ (a_{n+1}+2a_n)a_{n+1}-a_n^2=0. $$</p>
+<p>把它看成关于 $a_{n+1}$ 的方程，解出 $a_{n+1}$ 与 $a_n$ 的比例关系，再转为等比或累乘。</p>
+<p>再如：</p>
+<p>$$ a_{n+1}^2-a_na_{n+1}-2a_n^2=0. $$</p>
+<p>因式分解为</p>
+<p>$$ (a_{n+1}-2a_n)(a_{n+1}+a_n)=0. $$</p>
+<p>如果题目给出 $a_n&gt;0$ 或初值为正，就能排除不合适的分支。</p>
+<p>还有根式型：</p>
+<p>$$ a_{n+1}-\sqrt{a_{n+1}}=a_n+\sqrt{a_n}. $$</p>
+<p>这类题要考虑令 $b_n=\sqrt{a_n}$，把根式关系转成关于 $b_n$ 的关系。</p>
+<h3>8. 带权和式递推</h3>
+<p>信号：题目给的是带权求和关系，例如</p>
+<p>$$ a_1+2a_2+3a_3+\cdots+na_n=n^2. $$</p>
+<p>做法：把左边整体记作 $T_n$，再写出 $T_{n-1}$，两式相减。</p>
+<p>例：</p>
+<p>$$ T_n=a_1+2a_2+\cdots+na_n=n^2. $$</p>
+<p>则</p>
+<p>$$ T_{n-1}=a_1+2a_2+\cdots+(n-1)a_{n-1}=(n-1)^2. $$</p>
+<p>相减得</p>
+<p>$$ na_n=n^2-(n-1)^2=2n-1, $$</p>
+<p>所以</p>
+<p>$$ a_n=2-\frac1n. $$</p>
+<p>如果权重是 $2,2^2,2^3,\cdots,2^n$，同样先整体记作 $T_n$，再用 $T_n-T_{n-1}$ 提取最后一项。</p>
+<h3>9. 奇偶项或隔项递推</h3>
+<p>这是外部核对后建议补进来的一个常见遗漏点。</p>
+<p>信号：递推关系让 $a_{n+2}$ 和 $a_n$ 直接相连，例如</p>
+<p>$$ a_{n+2}=qa_n+r. $$</p>
+<p>此时不要强行把所有项揉在一起，而是把奇数项和偶数项分开看：</p>
+<ul><li>$a_1,a_3,a_5,\cdots$ 组成一个子数列。</li><li>$a_2,a_4,a_6,\cdots$ 组成另一个子数列。</li></ul>
+<p>分别求出两个子数列后，再写成分段通项或用 $(-1)^n$ 统一表达。</p>
+<h3>10. 数学归纳法：猜想后的证明工具</h3>
+<p>数学归纳法不是万能求法，它更像验证工具。</p>
+<p>使用顺序通常是：</p>
+<ol><li>先算前几项。</li><li>观察并猜想 $a_n$。</li><li>用数学归纳法证明猜想正确。</li></ol>
+<p>如果规律很难猜，就不要硬用归纳法。它适合检查“我猜出来的公式到底对不对”。</p>
+<h2>易错点</h2>
+<ul><li>累加时上下限错，尤其是从 $a_1$ 累到 $a_n$ 时，应该加到 $n-1$。</li><li>累乘时忽略某些项不能为 0，导致除法不合法。</li><li>由 $S_n$ 求 $a_n$ 时忘记单独检查 $n=1$。</li><li>看到 $a_{n+1}=pa_n+q$ 时，只会迭代，不会构造 $a_n+c$。</li><li>分式递推没有先观察取倒数或不动点。</li><li>因式分解型题目分支后，没有根据初值或正负条件排除错误分支。</li><li>二阶递推套特征方程时，忘记重根情形。</li><li>隔项递推没有把奇偶项分开。</li></ul>
+<h2>复习作业</h2>
+<p>A 组：基础识别，全部完成。</p>
+<ol><li>已知 $a_1=2,\ a_{n+1}-a_n=3$，求 $a_n$。</li><li>已知 $a_1=3,\ a_{n+1}=2a_n$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}-a_n=2n+1$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}=2a_n+3$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}=\frac{a_n}{a_n+1}$，求 $a_n$。</li><li>已知 $a_1=2,\ a_{n+1}=\frac{n+1}{n}a_n$，求 $a_n$。</li></ol>
+<p>B 组：方法转换，要求写出“为什么想到这个方法”。</p>
+<ol><li>已知 $a_1=1,\ a_{n+1}=a_n+3\cdot2^n$，求 $a_n$。</li><li>已知 $a_1=0,\ a_{n+1}=3a_n+2$，求 $a_n$。</li><li>已知 $a_1=2,\ a_{n+1}=\frac{n}{n+1}a_n$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}-a_n=\frac1{n(n+1)}$，求 $a_n$。</li><li>已知 $S_n=n^2+3n$，求 $a_n$。</li><li>已知 $S_n=2^n-1$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}=2a_n+2^n$，求 $a_n$。</li><li>已知 $a_1=2,\ a_{n+1}=\frac{n}{n+2}a_n$，求 $a_n$。</li><li>已知 $a_1=1,\ a_2=2,\ a_{n+2}=3a_n$，求 $a_n$。</li><li>已知 $a_1+2a_2+\cdots+na_n=n^2$，求 $a_n$。</li></ol>
+<p>C 组：讲题题，任选 2 题准备口头讲解。</p>
+<ol><li>对比 $a_{n+1}-a_n=3n+1$ 与 $a_{n+1}=3a_n+1$，说明为什么一个偏累加，一个偏构造等比。</li><li>为什么 $a_{n+1}=\frac{a_n}{a_n+1}$ 要考虑取倒数？</li><li>由 $S_n$ 求 $a_n$ 时，为什么必须单独看 $a_1$？</li><li>因式分解型递推为什么不能只解出两个分支就结束？还要检查什么？</li><li>遇到 $a_{n+2}=qa_n+r$，为什么要先分奇偶项？</li></ol>
+<h2>参考答案</h2>
+<ol><li>$a_n=3n-1$。</li><li>$a_n=3\cdot2^{n-1}$。</li><li>$a_n=n^2$。</li><li>$a_n=2^{n+1}-3$。</li><li>$a_n=\frac1n$。</li><li>$a_n=2n$。</li><li>$a_n=3\cdot2^n-5$。</li><li>$a_n=3^{n-1}-1$。</li><li>$a_n=\frac2n$。</li><li>$a_n=2-\frac1n$。</li><li>$a_n=2n+2$。</li><li>$a_n=2^{n-1}$。</li><li>$a_n=n2^{n-1}$。</li><li>$a_n=\frac{6}{n(n+1)}$。</li><li>$a_{2k-1}=3^{k-1},\ a_{2k}=2\cdot3^{k-1}$。</li><li>$a_n=2-\frac1n$。</li></ol>
+<h2>外部核对后的补充说明</h2>
+<p>我核对了公开资料中对“数列通项公式求解”的归纳，常见方法包括逐差全加、逐商全乘、从和式求通项、换元法、不动点法、数学归纳法和特征方程法。和课堂大纲相比，最值得补进高中复习体系的是：不动点视角、二阶线性递推的特征方程、奇偶项分组、以及“猜想后用归纳法证明”的定位。</p>
+<p>参考：</p>
+<ul><li><a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E5%88%97">数列：通项公式的求解</a></li><li><a href="https://zh.wikipedia.org/wiki/%E4%BA%8C%E9%98%B6%E7%BA%BF%E6%80%A7%E9%80%92%E6%8E%A8%E5%BC%8F">二阶线性递推式</a></li><li><a href="https://zh.wikipedia.org/wiki/%E7%AD%89%E5%B7%AE-%E7%AD%89%E6%AF%94%E6%95%B0%E5%88%97">等差-等比数列与错位相减</a></li></ul></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">数列</a></li><li>源文件：<code>content/09_high_school_math/01_sequences/01_general_term_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-general-term-exercises-zh.html">数列求通项公式专项练习</a></h3><p>这份练习按“题型识别”编排。每个题型至少 5 道题，建议学生先判断方法，再动笔计算；点开解答前，先尝试把“为什么用这个方法”讲出来。</p></div><div class="note-item"><h3><a href="01-general-term-fixed-point-ratio-principle-zh.html">两不动点距离比法：从定义到手动推导</a></h3><p>这一页只讲一个原理：</p></div><div class="note-item"><h3><a href="02-summation-zh.html">数列求和</a></h3><p>数列求和这一讲不要讲成“方法大全”。真正重要的是让学生形成一个习惯：先看通项结构，再决定求和方法。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

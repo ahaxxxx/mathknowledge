@@ -23,6 +23,7 @@ mathKnowledge/
 - Calculus
 - Linear Algebra
 - Probability
+- High School Math
 
 The first version is focused on:
 
@@ -54,3 +55,4 @@ For continuous rebuilds while editing:
 ```text
 python scripts/build_notes.py --watch
 ```
+
