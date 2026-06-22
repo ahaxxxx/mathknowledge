@@ -259,7 +259,7 @@ a {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 18px;
 }
 
@@ -484,6 +484,49 @@ a {
   margin-top: 10px;
 }
 
+.audio-card {
+  margin: 18px 0 22px;
+  padding: 16px;
+  border: 1px solid rgba(15, 109, 105, 0.16);
+  border-radius: 16px;
+  background: rgba(15, 109, 105, 0.06);
+}
+
+.audio-card audio {
+  display: block;
+  width: 100%;
+}
+
+.audio-card figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.ability-map {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.ability-map section {
+  padding: 18px;
+  border: 1px solid rgba(15, 109, 105, 0.12);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.ability-map h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.ability-map p {
+  margin: 0;
+}
+
 .footer {
   padding: 28px 0 56px;
   color: var(--muted);
@@ -624,6 +667,7 @@ a {
   .split,
   .grid-2,
   .grid-3,
+  .ability-map,
   .subject-grid {
     grid-template-columns: 1fr;
   }

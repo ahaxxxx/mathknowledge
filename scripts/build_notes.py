@@ -20,6 +20,7 @@ NAV_ITEMS = [
     ("关于", "about.html", False),
     ("方法", "method.html", False),
     ("高中数学", "high-school-math.html", False),
+    ("英语", "english.html", False),
     ("高数", "calculus.html", False),
     ("线代", "linear-algebra.html", False),
     ("概率", "probability.html", False),
@@ -41,6 +42,9 @@ SECTION_LABELS = {
     "07_faq": "FAQ",
     "08_roadmap": "路线",
     "09_high_school_math": "高中数学",
+    "10_english": "英语",
+    "01_grammar_reading": "语法与阅读",
+    "02_academic_listening": "学术听力",
     "01_sequences": "数列",
 }
 
@@ -52,6 +56,7 @@ BLOCK_STARTERS = (
     "```",
     "---",
     ":::",
+    "<audio",
     "$$",
 )
 
@@ -347,6 +352,22 @@ def render_math_block(math_lines: list[str]) -> str:
     return f'<div class="math-display">{content}</div>'
 
 
+def render_audio_block(line: str) -> str:
+    raw = line.strip()[len(":::audio"):].strip()
+    if not raw:
+        return ""
+    if "|" in raw:
+        src, caption = [part.strip() for part in raw.split("|", 1)]
+    else:
+        src, caption = raw, "音频材料"
+    return (
+        '<figure class="audio-card">'
+        f'<audio controls preload="metadata" src="{html.escape(src, quote=True)}"></audio>'
+        f'<figcaption>{html.escape(caption)}</figcaption>'
+        "</figure>"
+    )
+
+
 def collect_list_items(lines: list[str], start_index: int, ordered: bool) -> tuple[list[str], int]:
     items: list[str] = []
     index = start_index
@@ -376,7 +397,9 @@ def collect_list_items(lines: list[str], start_index: int, ordered: bool) -> tup
                 or (not ordered and re.match(r"^\d+\.\s+", current_stripped))
                 or re.fullmatch(r"-{3,}", current_stripped)
                 or current_stripped.startswith(":::solution")
+                or current_stripped.startswith(":::audio")
                 or current_stripped == ":::"
+                or current_stripped.startswith("<audio")
                 or current_stripped.startswith("$$")
             ):
                 break
@@ -431,6 +454,13 @@ def render_markdown(markdown_text: str, source_path: Path, output_rel: Path) -> 
                 f'<div class="solution-body">{inner_html}</div>'
                 '</details>'
             )
+            continue
+
+        if stripped.startswith(":::audio"):
+            audio_html = render_audio_block(line)
+            if audio_html:
+                blocks.append(audio_html)
+            i += 1
             continue
 
         if stripped.startswith("```"):
@@ -494,7 +524,9 @@ def render_markdown(markdown_text: str, source_path: Path, output_rel: Path) -> 
                 or re.match(r"^\d+\.\s+", current_stripped)
                 or re.fullmatch(r"-{3,}", current_stripped)
                 or current_stripped.startswith(":::solution")
+                or current_stripped.startswith(":::audio")
                 or current_stripped == ":::"
+                or current_stripped.startswith("<audio")
                 or current_stripped.startswith("$$")
             ):
                 break
