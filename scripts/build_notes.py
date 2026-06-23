@@ -168,6 +168,41 @@ def strip_leading_h1(markdown_text: str) -> str:
     return "\n".join(lines)
 
 
+def strip_leading_h1_and_excerpt(markdown_text: str, excerpt: str) -> str:
+    body = strip_leading_h1(markdown_text)
+    if not excerpt:
+        return body
+
+    lines = body.splitlines()
+    i = 0
+    while i < len(lines) and not lines[i].strip():
+        i += 1
+    if i >= len(lines):
+        return body
+
+    first = lines[i].strip()
+    if first.startswith(BLOCK_STARTERS) or re.match(r"^\d+\.\s+", first):
+        return body
+
+    paragraph: list[str] = [first]
+    j = i + 1
+    while j < len(lines):
+        current = lines[j].strip()
+        if not current:
+            break
+        if current.startswith(BLOCK_STARTERS) or re.match(r"^\d+\.\s+", current):
+            break
+        paragraph.append(current)
+        j += 1
+
+    if " ".join(paragraph) != excerpt:
+        return body
+
+    while j < len(lines) and not lines[j].strip():
+        j += 1
+    return "\n".join(lines[:i] + lines[j:])
+
+
 def nav_html(root_prefix: str) -> str:
     anchors: list[str] = []
     for label, href, is_notes in NAV_ITEMS:
@@ -662,7 +697,11 @@ def render_directory_page(node: DirectoryNode, nodes: dict[Path, DirectoryNode])
 
     sections: list[str] = []
     if node.readme:
-        article_html = render_markdown(strip_leading_h1(node.readme.content), node.readme.source_path, node.output_rel)
+        article_html = render_markdown(
+            strip_leading_h1_and_excerpt(node.readme.content, node.readme.excerpt),
+            node.readme.source_path,
+            node.output_rel,
+        )
         sections.append(f'<section class="page-section article">{article_html}</section>')
 
     if node.children:
@@ -723,7 +762,11 @@ def render_directory_page(node: DirectoryNode, nodes: dict[Path, DirectoryNode])
 def render_note_page(note: Note, nodes: dict[Path, DirectoryNode]) -> str:
     root_prefix = root_prefix_for(note.output_rel)
     directory_node = nodes[note.source_dir]
-    article_html = render_markdown(strip_leading_h1(note.content), note.source_path, note.output_rel)
+    article_html = render_markdown(
+        strip_leading_h1_and_excerpt(note.content, note.excerpt),
+        note.source_path,
+        note.output_rel,
+    )
     sibling_notes = [item for item in directory_node.notes if item.output_rel != note.output_rel]
     sibling_links = "".join(render_note_links(item, note.output_rel) for item in sibling_notes[:8])
     sibling_section = (

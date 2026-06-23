@@ -2,11 +2,13 @@ from __future__ import annotations
 
 import re
 import sys
+from html.parser import HTMLParser
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT_DIR = ROOT / "content" / "10_english" / "01_grammar_reading"
+OUTPUT_DIR = ROOT / "docs" / "notes" / "10-english" / "01-grammar-reading"
 
 MODULE_FILES = [
     "01_clause_skeletons_zh.md",
@@ -43,6 +45,38 @@ ACADEMIC_CONTEXT = "**训练语境：学术科研**"
 EVERYDAY_CONTEXT = "**训练语境：真实生活**"
 
 
+class ParagraphTextParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.in_paragraph = False
+        self.current: list[str] = []
+        self.paragraphs: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "p":
+            self.in_paragraph = True
+            self.current = []
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "p" and self.in_paragraph:
+            text = "".join(self.current)
+            self.paragraphs.append(normalize_space(text))
+            self.in_paragraph = False
+            self.current = []
+
+    def handle_data(self, data: str) -> None:
+        if self.in_paragraph:
+            self.current.append(data)
+
+
+def normalize_space(text: str) -> str:
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def canonical_visible_text(text: str) -> str:
+    return re.sub(r"\s+", "", text.replace("`", ""))
+
+
 def read_utf8(path: Path, errors: list[str]) -> str:
     try:
         text = path.read_text(encoding="utf-8")
@@ -75,6 +109,54 @@ def check_core_module(path: Path, text: str, errors: list[str]) -> None:
         errors.append(
             f"{path.name}: expected 6 academic and 4 everyday exercise contexts, "
             f"found {academic_count} and {everyday_count}"
+        )
+    check_generated_intro_not_duplicated(path, text, errors)
+
+
+def first_plain_paragraph(markdown_text: str) -> str:
+    lines = markdown_text.splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        if not line or line.startswith("#") or line.startswith("- ") or re.match(r"^\d+\.\s+", line):
+            i += 1
+            continue
+        if line.startswith(">") or line.startswith("```") or re.fullmatch(r"-{3,}", line):
+            i += 1
+            continue
+        paragraph = [line]
+        i += 1
+        while i < len(lines):
+            current = lines[i].strip()
+            if not current or current.startswith("#") or current.startswith(">"):
+                break
+            paragraph.append(current)
+            i += 1
+        return " ".join(paragraph)
+    return ""
+
+
+def output_html_path(source_path: Path) -> Path:
+    return OUTPUT_DIR / f"{source_path.stem.replace('_', '-')}.html"
+
+
+def check_generated_intro_not_duplicated(path: Path, text: str, errors: list[str]) -> None:
+    output_path = output_html_path(path)
+    if not output_path.exists():
+        return
+    intro = first_plain_paragraph(text)
+    if not intro:
+        return
+    html_text = output_path.read_text(encoding="utf-8")
+    parser = ParagraphTextParser()
+    parser.feed(html_text)
+    expected_intro = canonical_visible_text(intro)
+    occurrences = sum(
+        1 for paragraph in parser.paragraphs if canonical_visible_text(paragraph) == expected_intro
+    )
+    if occurrences != 1:
+        errors.append(
+            f"{output_path.name}: expected intro paragraph once in generated HTML, found {occurrences}"
         )
 
 

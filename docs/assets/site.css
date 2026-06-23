@@ -21,6 +21,12 @@ html {
   scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: var(--body-font);
@@ -296,6 +302,15 @@ a {
   gap: 18px;
 }
 
+.rail > * {
+  min-width: 0;
+}
+
+.page-section code {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .page {
   padding: 20px 0 44px;
 }
@@ -371,6 +386,13 @@ a {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 18px;
+}
+
+.subject-grid > *,
+.grid-2 > *,
+.grid-3 > *,
+.ability-map > * {
+  min-width: 0;
 }
 
 .outline-block {
