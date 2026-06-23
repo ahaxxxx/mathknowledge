@@ -1,75 +1,36 @@
-# 语法与阅读
+# 语法与阅读：一套可以反复返回的英文解释系统
 
-语法不是一套等待背诵的规则表，而是一套阅读时处理英文信息的工具。真正有用的语法知识，必须帮助读者回答三个问题：这句话的核心判断是什么，哪些成分在修饰或限制这个判断，作者如何通过这句话推进论证。
+这里不是按天推进的课程，也不是背完就丢的规则表。十四个模块分别解决一种稳定的阅读困难：找主干、确定时间视角、判断结论强度、恢复压缩信息、追踪跨句指代，以及识别论文正在完成的论证动作。
 
-## 能力链
+每个模块都包含核心原理、八个逐句精读、一篇完整材料、十道训练和点击展开的完整解析。全部材料可以长期放在这里；不要求一次学完，任何一次重读都应比上一次多看见一个结构层次。
 
-### 1. 词汇形态学
+## 第一层：建立句子骨架
 
-词根词缀要学，但它的位置不是“背单词之前的清单”，而是阅读时的快速判断工具。
+1. [句子主干与动词论元](./01_clause_skeletons_zh.md)：判断谁对谁做了什么，以及哪些成分是动词不可缺少的补语。
+2. [时态与体](./02_tense_aspect_zh.md)：区分事件时间、参照时间和作者观察事件的方式。
+3. [情态、假设与反事实](./03_modality_counterfactuals_zh.md)：读出可能性、必要性、推断强度和替代世界。
+4. [名词短语、限定与量化](./04_noun_phrases_reference_zh.md)：确定对象边界、数量范围和中心词。
+5. [补语从句与从属关系](./05_complement_subordinate_clauses_zh.md)：判断一个命题在另一个命题中占据什么位置。
 
-- 前缀帮助判断方向、否定、程度和关系，例如 `in-`, `de-`, `trans-`, `inter-`。
-- 词根帮助判断意义家族，例如 `struct`, `spect`, `fer`, `mit`, `form`。
-- 后缀帮助判断词性和抽象层级，例如 `-tion`, `-ity`, `-ive`, `-ize`, `-ly`。
-- 词族帮助把一个概念展开成表达系统，例如 `analyze`, `analysis`, `analytical`, `analytically`。
+## 第二层：拆开高密度结构
 
-阅读时遇到陌生词，不一定马上查词典。先判断它在句子里是名词、动词、形容词还是副词，再判断它大概属于什么意义场。这样即使词义不完全确定，也不会立刻失去句子结构。
+6. [关系从句、同位语与后置修饰](./06_relatives_apposition_zh.md)：区分筛选对象、补充旁注和说明内容。
+7. [非谓语与降级结构](./07_nonfinite_clauses_zh.md)：恢复被省去的主语、时间和主动被动关系。
+8. [否定、范围与歧义](./08_negation_scope_zh.md)：确认否定究竟覆盖量词、情态还是整个命题。
+9. [比较、平行与省略](./09_comparison_parallelism_ellipsis_zh.md)：补回缺失成分，检查比较双方是否真正同类。
+10. [倒装、强调与信息焦点](./10_information_structure_zh.md)：看懂异常语序把注意力放在了哪里。
 
-### 2. 句子骨架
+## 第三层：进入学术篇章
 
-长句阅读的第一步不是翻译每个词，而是找到主干。
+11. [名词化与信息压缩](./11_nominalization_compression_zh.md)：把抽象名词还原成有参与者和时间的动态命题。
+12. [衔接、指代与篇章连续](./12_cohesion_reference_zh.md)：跨句追踪对象、事件和逻辑关系。
+13. [立场、模糊限制与证据来源](./13_stance_evidentiality_zh.md)：保留作者对结论的真实承诺强度。
+14. [学术论证与论文动作](./14_academic_argument_zh.md)：识别背景、缺口、主张、证据、warrant、替代解释和限制。
 
-> The assumption that economic growth alone can solve social inequality has been increasingly questioned.
+## 词形工具
 
-主语核心是 `The assumption`，谓语是 `has been questioned`。中间的 `that economic growth alone can solve social inequality` 解释这个 assumption 的内容。先抓住“某个假设被越来越多地质疑”，再处理假设的具体内容。
+15. [词根词缀与词族](./15_morphology_reference_zh.md)：用词形提出受约束的意义候选，同时知道什么时候必须停止猜测并查词典。
 
-### 3. 修饰系统
+## 怎样反复使用
 
-英文喜欢把大量信息挂在名词周围。名词短语、介词短语和定语从句，常常不是主干的一部分，却决定了概念边界。
-
-> policies designed to reduce inequality in rapidly changing urban environments
-
-中心词是 `policies`。后面依次补充政策的目的、对象和环境。阅读时要先抓中心词，再把修饰一层层接回去。
-
-### 4. 压缩系统
-
-学术英语的密度来自压缩。非谓语、名词化、同位语和插入语，会把本来可以写成多个句子的内容压进一个句子。
-
-> The researchers, controlling for prior achievement, found a smaller but still significant effect.
-
-`controlling for prior achievement` 压缩了一个条件或处理过程。它不是主句谓语，而是告诉读者研究者在什么处理下得到结论。
-
-### 5. 逻辑系统
-
-理解英文论文，不只是理解每句话，还要听懂或看懂作者如何推进论证。
-
-- 因果：`because`, `therefore`, `as a result`
-- 转折：`however`, `nevertheless`, `yet`
-- 让步：`although`, `even though`, `despite`
-- 条件：`if`, `provided that`, `given that`
-- 范围限制：`insofar as`, `to the extent that`, `within this context`
-
-这些词不是装饰。它们告诉读者当前句子和前后句的关系。
-
-### 6. 学术语体
-
-PhD 级阅读真正难的地方，常常不是语法本身，而是学术语体。论文作者很少直接说“这就证明了”。他们更常说：
-
-- `This suggests that...`
-- `The results are consistent with...`
-- `One possible interpretation is...`
-- `The evidence does not rule out...`
-- `This finding should be interpreted with caution.`
-
-这些表达背后是学术共同体对证据边界的敏感。读懂它们，才是真正进入学术阅读。
-
-## 反复阅读方式
-
-每次读英文材料时，可以只问自己四个问题：
-
-1. 这句话的主干是什么。
-2. 哪些成分只是在修饰、限定、补充。
-3. 作者用了什么逻辑关系。
-4. 作者的语气是确定、谨慎、反驳，还是提出可能解释。
-
-能稳定回答这四个问题，语法就不再是规则，而会变成阅读直觉。
+第一次只读“核心原理”和八个句子，确保能指出主干与结构关系。第二次完成训练，不急着展开解析。第三次只复盘答错题，说明错误发生在对象识别、范围、指代、证据强度还是论证连接。最终目标不是记住术语，而是能解释：作者为什么选择这个结构，它保留了什么信息，又限制了什么解释。

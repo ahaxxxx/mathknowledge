@@ -443,6 +443,14 @@ a {
   text-decoration: none;
 }
 
+.tree-group-label {
+  display: block;
+  padding: 10px 12px 3px;
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
 .tree-leaf:hover,
 .tree-node:hover,
 .tree-root:hover {
