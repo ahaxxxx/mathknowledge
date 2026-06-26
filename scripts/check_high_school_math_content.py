@@ -127,6 +127,8 @@ def check_trigonometry_page(path: Path, html_path: Path, errors: list[str]) -> N
         html = html_path.read_text(encoding="utf-8")
         if "<details class=\"solution-toggle\">" not in html:
             errors.append(f"{html_path.name}: generated HTML has no solution toggles")
+        if re.search(r"<p>\s*\|", html):
+            errors.append(f"{html_path.name}: generated HTML leaked an unrendered Markdown table")
 
 
 def main() -> int:
