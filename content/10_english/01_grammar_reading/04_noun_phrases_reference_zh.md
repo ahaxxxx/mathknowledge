@@ -154,6 +154,55 @@
 中心词是单数 `box`，所以谓语用 `belongs`。`photographs` 只是说明盒中内容，不能因其复数形式改用 `belong`。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> The rapid expansion of platform-based labor has intensified a long-standing dispute over the classification of workers whose income depends on algorithmically mediated tasks. This dispute is not merely terminological. The category assigned to such workers determines which protections they can claim, which risks firms can externalize, and which forms of bargaining remain legally imaginable. For that reason, the seemingly technical phrase independent contractor often carries a theory of responsibility inside it.
+
+### 结构地图
+
+1. 第一句由一个超长名词短语作主语，核心名词是 `expansion`。
+2. 第二句用 `This dispute` 回指上一句的分类争议。
+3. 第三句展开 `classification/category` 的后果。
+4. 第四句说明术语背后的责任理论。
+
+### 句群拆解
+
+- `The rapid expansion of platform-based labor` 的中心是 `expansion`，不是 `labor`。
+- `workers whose income depends...` 是 `workers` 的关系从句，说明被分类对象。
+- 第三句主干是 `The category determines...`，后面三个 `which` 从句是并列宾语。
+- `the seemingly technical phrase independent contractor` 是名词短语，核心是 `phrase`，`independent contractor` 是短语内容。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+拆开第一句主语，写出它的中心词、前置修饰和后置修饰。
+
+:::solution 查看解析
+主语是 `The rapid expansion of platform-based labor`。中心词是 `expansion`；前置修饰是 `rapid`；后置修饰是 `of platform-based labor`。后面的 `whose income depends...` 不修饰 `expansion`，而是修饰 `workers`。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+第三句中三个 `which` 从句为什么可以并列？它们共同受哪个动词支配？
+
+:::solution 查看解析
+三个 `which` 从句都回答“这个类别决定什么”，共同受 `determines` 支配：决定劳动者可主张哪些保护、企业可外部化哪些风险、哪些谈判形式在法律上仍可想象。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+把 `the seemingly technical phrase independent contractor often carries a theory of responsibility inside it` 改写成中文解释。
+
+:::solution 查看解析
+可以解释为：“independent contractor 这个看起来只是技术分类的词，实际上暗含了谁该承担责任的判断。”重点不是翻译词面，而是看出名词短语背后的制度含义。
+:::
+
 ## 迁移与反思
 
 拆长名词短语时，先找中心词，再确定限定词是否让对象可识别，最后检查量词的覆盖范围。翻译之前先画清集合边界。

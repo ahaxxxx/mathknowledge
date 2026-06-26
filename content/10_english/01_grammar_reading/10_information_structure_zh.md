@@ -154,6 +154,55 @@
 应写 `Never have I seen...`。句首否定副词要求助动词位于主语之前；完成时助动词 `have` 直接参与倒装。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> Many studies report that students benefit from feedback. Less often discussed is the order in which that feedback becomes useful. In the first stage, students may need comments that identify errors; only later do they benefit from comments that challenge the assumptions behind their solutions. What matters, then, is not feedback in the abstract but the fit between a learner's current representation of the problem and the kind of response the teacher provides.
+
+### 结构地图
+
+1. 第一句给出读者熟悉的旧信息：反馈有用。
+2. 第二句倒装，把“较少讨论的点”放到句首突出。
+3. 第三句用时间推进展示反馈需求变化。
+4. 第四句用 `not... but...` 把主题从抽象反馈转向匹配关系。
+
+### 句群拆解
+
+- `Less often discussed is...` 是信息结构调整，正常语序可还原为 `The order... is less often discussed`。
+- `In the first stage` 与 `only later` 构成时间对比。
+- `comments that identify errors` 与 `comments that challenge...` 是两类反馈。
+- `What matters` 是主语从句，把真正重要的内容推迟到 `is` 后展开。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+第二句为什么采用倒装，而不写成 `The order... is less often discussed`？
+
+:::solution 查看解析
+倒装把 `Less often discussed` 放到句首，形成“从已有共识转向被忽视问题”的信息推进。它不仅改变语序，也改变读者注意力：重点不再是反馈有用，而是反馈何时有用。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+最后一句中 `not feedback in the abstract but the fit...` 的论证功能是什么？
+
+:::solution 查看解析
+它排除一个过宽的概念“抽象的反馈”，改为强调具体匹配关系。作者不是问反馈有没有用，而是问学生当前理解状态和教师回应类型是否匹配。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+用 `What matters is not... but...` 写一句关于学习方法的表达。
+
+:::solution 查看解析
+可以写：`What matters is not the number of hours you study but the quality of attention you bring to each problem.` 结构把表面指标排除，突出真正变量。
+:::
+
 ## 迁移与反思
 
 把异常语序还原为中性句，再问原句把哪个成分移到焦点位置、排除了什么替代项，以及这种突出如何服务段落论证。

@@ -154,6 +154,54 @@
 `Whatever you decide` 整体作主语，表示“你决定的任何事情”。`whatever` 同时引入从句并在内部作 decide 的宾语。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> The authors argue that the apparent stability of the measure should not be mistaken for conceptual clarity. They show that respondents who select the same option may be answering different questions, because some treat the scale as a measure of satisfaction while others treat it as a measure of obligation. What the study demonstrates, then, is that a survey item can be statistically reliable without being semantically stable.
+
+### 结构地图
+
+1. 第一句 `argue that...` 给出作者论点。
+2. 第二句 `show that...` 给出证据和解释。
+3. 第三句用 `What... is that...` 总结研究证明的内容。
+
+### 句群拆解
+
+- `that the apparent stability...` 是 `argue` 的宾语从句。
+- `respondents who select the same option` 中 `who...` 限定受访者。
+- `because...` 从句解释为什么同选项不等于同理解。
+- `What the study demonstrates` 是主语从句；`that a survey item...` 是表语从句。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+第三句的主句谓语是什么？两个从句分别占据什么句法位置？
+
+:::solution 查看解析
+主句谓语是 `is`。`What the study demonstrates` 是主语从句，整体充当主语；`that a survey item can be statistically reliable without being semantically stable` 是表语从句，说明被证明的内容。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+解释 `statistically reliable` 与 `semantically stable` 的对比在论证中起什么作用。
+
+:::solution 查看解析
+前者说数据在统计上可能重复一致，后者说受访者是否在理解同一个意义。作者要说明：数字稳定不必然等于概念清楚，因此测量质量不能只看统计指标。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+请用 `without being...` 写一句生活例句，表达“一个评价可能很一致，但意思并不一致”。
+
+:::solution 查看解析
+可以写：`A restaurant may receive consistently high ratings without being praised for the same reason by every customer.` 一致的是评分，不一致的是评分背后的含义。
+:::
+
 ## 迁移与反思
 
 看到从句先问它在上层句子中占什么位置，再问连接词规定什么逻辑。不要因为都出现 `that` 就把它们归为同一种结构。

@@ -154,6 +154,54 @@
 一般过去时只报告过去的遗忘事件；现在完成时强调当前仍想不起来。若随后补充“后来又想起来了”，一般过去时更自然。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> Researchers have long assumed that remote collaboration reduces informal learning, but the evidence has become less straightforward as teams have adopted persistent chat, shared documents, and recorded meetings. In one longitudinal study, junior employees reported that they had received fewer spontaneous explanations during their first months online, while managers argued that written exchanges had made some forms of feedback more visible than they had been in the office. The important question, therefore, is not simply whether remote work lowered learning, but which kinds of learning had already depended on physical proximity and which kinds were being redistributed across digital records.
+
+### 结构地图
+
+1. 第一句用现在完成时 `have long assumed / has become` 把过去延续到现在。
+2. 第二句用过去完成时 `had received / had made / had been` 表示相对于研究报告时间更早的经验。
+3. 第三句把问题从“是否降低学习”推进到“不同学习类型如何迁移”。
+
+### 句群拆解
+
+- `have long assumed` 表示这种假设不是一次性发生，而是长期存在到现在。
+- `has become less straightforward` 暗示证据状态发生了变化，并且这个变化影响当前判断。
+- `had received fewer...` 是员工回忆研究期早段经历；`had made... more visible` 是经理对已经发生变化的解释。
+- `were being redistributed` 用过去进行被动，强调研究观察期内正在发生的重组。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+解释为什么第一句不用简单过去时 `assumed`，而用 `have long assumed`。
+
+:::solution 查看解析
+`have long assumed` 把假设的起点放在过去，同时强调它一直影响到现在的研究讨论。若用 `assumed`，读者可能理解为过去某个阶段的观点；现在完成时则说明这个观点仍是当前争论的背景。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+第二句中两个过去完成时 `had received` 和 `had made` 分别服务于什么时间关系？
+
+:::solution 查看解析
+`had received` 表示员工在报告时回顾“刚上线前几个月已经经历过的事情”；`had made` 表示经理认为书面交流在评价时点之前已经产生了影响。两者都把事件放到“研究报告/访谈陈述”之前。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+用一句英语描述：你原来一直以为线上课效率低，但最近发现录屏和共享文档让复习更容易。要求使用现在完成时。
+
+:::solution 查看解析
+可以写：`I have long thought that online classes were less efficient, but recorded lessons and shared documents have made review easier recently.` 第一个现在完成时表示长期看法，第二个现在完成时表示最近变化对现在的影响。
+:::
+
 ## 迁移与反思
 
 不要先问“该用哪种时态”，而要问作者选了哪个参照点，并把事件看作整体、过程还是与后来状态相连的先行事件。

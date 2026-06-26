@@ -154,6 +154,55 @@
 `As a result` 建立因果合理，但 `returned tomorrow` 与过去叙事点冲突，应为 `returned the next day` 或把主句改为现在计划。衔接包括逻辑也包括时间参照。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> Early experiments suggested that the intervention increased trust, but later replications complicated that conclusion. They found smaller effects in communities where local institutions were already viewed as legitimate. This pattern does not necessarily contradict the original finding; rather, it suggests that the intervention may matter most where baseline trust is low. Such a possibility shifts the question from whether the program works to for whom and under what conditions it works.
+
+### 结构地图
+
+1. 第一句建立旧结论和新复制研究之间的关系。
+2. 第二句 `They` 回指 later replications。
+3. 第三句 `This pattern` 总结前面的结果，并给出重新解释。
+4. 第四句 `Such a possibility` 回指这种条件性解释，推进研究问题。
+
+### 句群拆解
+
+- `that conclusion` 指“干预提高信任”的早期结论。
+- `They found...` 中 `They` 不是 early experiments，而是 later replications。
+- `This pattern` 指“基线合法性高的社区效果较小”这一整体模式。
+- `Such a possibility` 指“干预在基线信任低处更重要”的可能性。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+说明第二句 `They` 的先行词，并给出判断理由。
+
+:::solution 查看解析
+`They` 指 `later replications`。理由是第二句说“发现较小效果”，这通常是复制研究的结果；若指 early experiments，就会与第一句中 early experiments 已经 suggested 的内容混淆。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+`This pattern` 和 `Such a possibility` 分别压缩了前文哪一层信息？
+
+:::solution 查看解析
+`This pattern` 压缩的是“合法性已高的社区效果较小”这一经验模式；`Such a possibility` 压缩的是作者对该模式的解释，即干预可能主要在基线信任低时起作用。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+读句子：`The new schedule helped beginners more than advanced students. This pattern suggests that the problem was not motivation but initial confusion.` 解释 `This pattern` 指什么。
+
+:::solution 查看解析
+`This pattern` 指“新时间表对初学者比对高阶学生帮助更大”这一结果模式。它不是指 schedule 本身，而是指前一句呈现出的差异。
+:::
+
 ## 迁移与反思
 
 给段落中的每个代词画箭头，给同一对象的不同称呼标同色，再圈出连接词。若箭头无法唯一落点，就记录真实歧义，而不是强行猜测。

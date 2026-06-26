@@ -40,6 +40,16 @@ REQUIRED_HEADINGS = [
 SENTENCE_PATTERN = re.compile(r"^### 句子\s+\d+", re.MULTILINE)
 EXERCISE_PATTERN = re.compile(r"^### 训练\s+\d+", re.MULTILINE)
 SOLUTION_PATTERN = re.compile(r"^:::solution\b", re.MULTILINE)
+ADVANCED_EXERCISE_PATTERN = re.compile(r"^### 高阶训练\s+\d+", re.MULTILINE)
+ADVANCED_BLOCK_MARKER = "<!-- advanced-reading-block -->"
+ADVANCED_ACADEMIC_CONTEXT = "**高阶语境：学术科研**"
+ADVANCED_EVERYDAY_CONTEXT = "**高阶语境：真实生活**"
+ADVANCED_REQUIRED_HEADINGS = [
+    "## 长段精读：论文级句群",
+    "### 结构地图",
+    "### 句群拆解",
+    "### GRE/PhD 级训练",
+]
 
 ACADEMIC_CONTEXT = "**训练语境：学术科研**"
 EVERYDAY_CONTEXT = "**训练语境：真实生活**"
@@ -96,19 +106,34 @@ def check_core_module(path: Path, text: str, errors: list[str]) -> None:
     sentence_count = len(SENTENCE_PATTERN.findall(text))
     exercise_count = len(EXERCISE_PATTERN.findall(text))
     solution_count = len(SOLUTION_PATTERN.findall(text))
+    advanced_exercise_count = len(ADVANCED_EXERCISE_PATTERN.findall(text))
     academic_count = text.count(ACADEMIC_CONTEXT)
     everyday_count = text.count(EVERYDAY_CONTEXT)
+    advanced_academic_count = text.count(ADVANCED_ACADEMIC_CONTEXT)
+    advanced_everyday_count = text.count(ADVANCED_EVERYDAY_CONTEXT)
 
     if sentence_count < 8:
         errors.append(f"{path.name}: expected at least 8 sentence analyses, found {sentence_count}")
     if exercise_count != 10:
         errors.append(f"{path.name}: expected 10 exercises, found {exercise_count}")
-    if solution_count != 10:
-        errors.append(f"{path.name}: expected 10 solution blocks, found {solution_count}")
+    if solution_count != 13:
+        errors.append(f"{path.name}: expected 13 solution blocks, found {solution_count}")
     if academic_count != 6 or everyday_count != 4:
         errors.append(
             f"{path.name}: expected 6 academic and 4 everyday exercise contexts, "
             f"found {academic_count} and {everyday_count}"
+        )
+    if text.count(ADVANCED_BLOCK_MARKER) != 1:
+        errors.append(f"{path.name}: expected one advanced reading block marker")
+    for heading in ADVANCED_REQUIRED_HEADINGS:
+        if heading not in text:
+            errors.append(f"{path.name}: missing advanced heading {heading}")
+    if advanced_exercise_count != 3:
+        errors.append(f"{path.name}: expected 3 advanced exercises, found {advanced_exercise_count}")
+    if advanced_academic_count != 2 or advanced_everyday_count != 1:
+        errors.append(
+            f"{path.name}: expected 2 academic and 1 everyday advanced contexts, "
+            f"found {advanced_academic_count} and {advanced_everyday_count}"
         )
     check_generated_intro_not_duplicated(path, text, errors)
 
@@ -191,6 +216,7 @@ def check_morphology(path: Path, text: str, errors: list[str]) -> None:
 def main() -> int:
     errors: list[str] = []
     total_exercises = 0
+    total_advanced_exercises = 0
     total_solutions = 0
     total_academic = 0
     total_everyday = 0
@@ -203,6 +229,7 @@ def main() -> int:
         text = read_utf8(path, errors)
         check_core_module(path, text, errors)
         total_exercises += len(EXERCISE_PATTERN.findall(text))
+        total_advanced_exercises += len(ADVANCED_EXERCISE_PATTERN.findall(text))
         total_solutions += len(SOLUTION_PATTERN.findall(text))
         total_academic += text.count(ACADEMIC_CONTEXT)
         total_everyday += text.count(EVERYDAY_CONTEXT)
@@ -219,9 +246,11 @@ def main() -> int:
         total_everyday += morphology_text.count(EVERYDAY_CONTEXT)
 
     if total_exercises != 150:
-        errors.append(f"curriculum: expected 150 exercises, found {total_exercises}")
-    if total_solutions != 150:
-        errors.append(f"curriculum: expected 150 solutions, found {total_solutions}")
+        errors.append(f"curriculum: expected 150 foundation exercises, found {total_exercises}")
+    if total_advanced_exercises != 42:
+        errors.append(f"curriculum: expected 42 advanced exercises, found {total_advanced_exercises}")
+    if total_solutions != 192:
+        errors.append(f"curriculum: expected 192 solutions, found {total_solutions}")
     if total_academic != 90 or total_everyday != 60:
         errors.append(
             "curriculum: expected exact 60/40 context balance "
@@ -234,7 +263,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print("PASS: 14 modules, 1 morphology reference, 150 exercises, 150 solutions.")
+    print("PASS: 14 modules, 1 morphology reference, 150 foundation exercises, 42 advanced exercises, 192 solutions.")
     print("PASS: exercise contexts are exactly 60% academic and 40% everyday.")
     return 0
 

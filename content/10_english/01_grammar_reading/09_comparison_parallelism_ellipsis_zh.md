@@ -154,6 +154,54 @@
 第二分句恢复为 `the train is not cheaper than the bus`。两个比较维度分别是速度和价格，转折表明优势不延伸到第二维度。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> The new curriculum improved students' performance more in tasks requiring explanation than in tasks requiring memorization. This pattern is less surprising than it first appears, because the intervention gave students more opportunities to compare strategies, revise claims, and justify conclusions. The gains were therefore not simply larger than those in the control group; they were larger in precisely the domain the curriculum was designed to affect.
+
+### 结构地图
+
+1. 第一句比较两个任务领域的提升幅度。
+2. 第二句用 `less... than...` 修正读者直觉。
+3. 第三句不是简单比较实验组与控制组，而是指出比较发生在预设目标领域。
+
+### 句群拆解
+
+- `more in A than in B` 比较的是同一课程对两类任务的影响。
+- `less surprising than it first appears` 中省略了比较基准：“比最初看起来的那样更不意外”。
+- `compare strategies, revise claims, and justify conclusions` 三个动词结构平行。
+- `those in the control group` 中 `those` 代替 `gains`。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+第一句比较的对象是什么？不要把它误读成哪一种比较？
+
+:::solution 查看解析
+它比较的是“同一新课程在解释型任务与记忆型任务中的提升幅度”。不要误读成“新课程和旧课程的总体比较”，因为句中比较结构是 `more in tasks... than in tasks...`。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+分析 `compare strategies, revise claims, and justify conclusions` 的平行性。
+
+:::solution 查看解析
+三个成分都是原形动词 + 名词宾语，且共同受 `gave students more opportunities to` 支配。平行结构让读者看出干预提供的是一组同类认知活动。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+写一句比较：某个 app 在“规划复杂行程”上比在“查附近餐厅”上更有用。
+
+:::solution 查看解析
+可以写：`The app is more useful for planning complex trips than for finding nearby restaurants.` 比较对象是两个用途，结构保持 `more useful for A than for B` 的平行。
+:::
+
 ## 迁移与反思
 
 遇到比较或省略，先把缺失成分补全，再检查比较双方是否同类、共享的结构是否真的适用于每一项。

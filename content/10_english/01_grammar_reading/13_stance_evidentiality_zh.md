@@ -154,6 +154,55 @@
 `definitely` 增强确定性，`might` 保留可能性，两者直接组合产生立场冲突。可说 `That might well happen` 表示较强可能，或 `That will definitely happen` 表确定。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> The results appear to support the hypothesis that deliberation reduces polarization, although the evidence is not decisive. The strongest effect is observed among participants who entered the discussion with moderate views, which suggests that the treatment may have helped those who were already open to revision. It would therefore be premature to claim that deliberation depolarizes groups in general. A more cautious interpretation is that structured discussion can create opportunities for movement under favorable initial conditions.
+
+### 结构地图
+
+1. 第一句用 `appear to` 和让步从句控制断言强度。
+2. 第二句从最强效应出现的位置推断机制。
+3. 第三句明确拒绝过度推广。
+4. 第四句给出更谨慎的解释。
+
+### 句群拆解
+
+- `appear to support` 表示证据倾向，不是最终证明。
+- `although the evidence is not decisive` 明确限制结论强度。
+- `which suggests...` 回指前面整个观察结果，而非单个名词。
+- `It would therefore be premature to claim...` 是评价性立场：现在下普遍结论还太早。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+列出本段至少三个降低断言强度的表达，并说明它们如何保护论证。
+
+:::solution 查看解析
+可以列出 `appear to`, `not decisive`, `may have helped`, `premature to claim`, `more cautious interpretation`, `can create opportunities`。这些表达防止把有限证据说成普遍定律，使结论与证据强度匹配。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+第二句的 `which suggests` 指向什么？为什么重要？
+
+:::solution 查看解析
+它指向“最强效应出现在原本观点较温和的参与者中”这一观察，而不是单独指 `moderate views`。这很重要，因为作者据此推断机制：讨论可能帮助的是本来就愿意修正观点的人。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+把“这个方法可能有帮助，但现在说它适合所有人还太早”写成英文，使用谨慎立场表达。
+
+:::solution 查看解析
+可以写：`The method may be helpful, but it would be premature to claim that it works for everyone.` `may` 和 `premature to claim` 都限制了断言范围。
+:::
+
 ## 迁移与反思
 
 给每个结论标注“观察、来源报告、推断、解释、评价”，再给承诺强度分级。任何复述都必须保留原文的证据来源和强度。

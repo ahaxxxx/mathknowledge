@@ -154,6 +154,54 @@ government 是 regulation 的施事，prices 是被调控对象。解压为 `the
 表示货物送达晚于预期。它没有说明承运人是否造成延误，也没有说明原因，因此不能仅凭名词化推定责任。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> The privatization of risk in contemporary labor markets has made insecurity appear to be a feature of individual planning rather than a consequence of institutional design. This reframing matters because the conversion of collective problems into personal responsibilities changes the kinds of remedies that seem available. If unemployment is described as a failure of adaptability, then training appears natural; if it is described as a failure of demand, then public investment becomes easier to justify.
+
+### 结构地图
+
+1. 第一句由名词化 `privatization` 承载复杂过程。
+2. 第二句继续用名词化 `conversion` 描述责任转移。
+3. 第三句通过两个 if 分支展示不同命名如何导向不同政策。
+
+### 句群拆解
+
+- `The privatization of risk` 可还原为 “institutions/firms shift risk onto individuals”。
+- `insecurity appear to be...` 是 `make + object + complement`。
+- `the conversion of collective problems into personal responsibilities` 把“把集体问题变成个人责任”压缩成名词短语。
+- 两个 `if it is described as...` 平行，比较两种解释框架。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+把 `the conversion of collective problems into personal responsibilities` 还原成带动词的句子。
+
+:::solution 查看解析
+可以还原为：`Institutions or public discourse convert collective problems into personal responsibilities.` 名词化隐藏了施动者；还原后可以追问“谁在转换、为什么转换、转换后谁受益”。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+解释第三句为什么要并列两个 `if` 分支。
+
+:::solution 查看解析
+两个分支展示同一现象被不同方式命名后，会让不同解决方案显得自然。`failure of adaptability` 导向 training；`failure of demand` 导向 public investment。并列结构服务于“语言框架影响政策想象”的论点。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+把“把拖延描述成性格问题，会让休息和任务设计的问题被忽视”写成英文，尽量使用名词化。
+
+:::solution 查看解析
+可以写：`The description of procrastination as a character problem can obscure questions of rest and task design.` `description` 和 `questions` 都是名词化，让句子更接近学术压缩风格。
+:::
+
 ## 迁移与反思
 
 圈出 `-tion`, `-ment`, `-ance`, `-ity`, `-al` 等抽象名词，逐个补回动词或形容词，再恢复参与者、时间、情态和因果证据。

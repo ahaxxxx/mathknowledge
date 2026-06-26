@@ -154,6 +154,57 @@
 主句有限动词是 `appears`，`to be damaged` 是它的补语。`arrived` 属于修饰 `package` 的关系从句，不能把昨天到达误作全句最终判断。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> In debates about automated diagnosis, the most consequential disagreement is not whether an algorithm can identify patterns that escape a clinician's immediate attention. It is whether the institution that deploys the algorithm can explain which kinds of uncertainty the system has been trained to ignore. A model that performs well on historical data may still fail when the clinical population changes, because the relationships it has learned are often relationships among recorded variables rather than among the underlying biological processes. For that reason, a responsible evaluation asks not only how accurate the model is, but also what has to remain true for that accuracy to mean what its advocates claim.
+
+本段是原创论文语域仿真材料，不复制论文正文；训练目标是让你读真实论文时能主动恢复主干、论元和附加信息。
+
+### 结构地图
+
+1. 第一句先否定一个表层争点：核心分歧不是算法能否识别模式。
+2. 第二句给出真正争点：部署机构能否解释系统忽略了哪些不确定性。
+3. 第三句说明原因：历史数据表现好，不等于临床环境变化后仍可靠。
+4. 第四句提出读者应追问的评价标准。
+
+### 句群拆解
+
+- `the most consequential disagreement is not whether...` 的主干是 `disagreement is not whether...`，`about automated diagnosis` 只是议题范围。
+- 第二句的主干是 `It is whether...`，`It` 回指上一句的 `the most consequential disagreement`。
+- 第三句主干是 `A model may fail`；`that performs well...` 是定语从句，`because...` 给出失败原因。
+- 第四句主干是 `a responsible evaluation asks...`，后面两个 `what/how` 从句是 `asks` 的内容论元。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+请写出第三句的最小主干，并说明哪些成分不能删、哪些成分只是解释条件。
+
+:::solution 查看解析
+第三句最小主干是 `A model may fail`。但若为了理解论文论证，不能只停在这三个词上，还要保留 `when the clinical population changes`，因为它限制失败发生的情形；`because...` 是原因从句，用来解释为什么历史数据表现好仍可能失败。`that performs well on historical data` 修饰 `model`，不是主句谓语。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+第二句中的 `which kinds of uncertainty the system has been trained to ignore` 在句法上充当什么成分？为什么这不是一个独立问句？
+
+:::solution 查看解析
+它是 `explain` 的宾语内容，是嵌入式疑问分句。独立问句会使用疑问语序，如 `which kinds ... has the system...`；这里保持陈述语序 `the system has been trained`，说明它被嵌入到 `can explain` 后面，作为“解释的内容”。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+把最后一句改写成生活场景：比如评价一个导航软件。要求保留 `not only..., but also...` 的双重追问结构。
+
+:::solution 查看解析
+可以写成：`A careful user asks not only how fast the navigation app finds a route, but also what has to remain true for that route to be reliable.` 这里 `not only` 后问速度，`but also` 后问可靠性的前提，结构与原句一致。
+:::
+
 ## 迁移与反思
 
 遇到长句时先圈出所有动词，再问哪些动词有独立时态。随后检查主句动词要求的位置是否填满。若删去某成分后动词意义改变，它更可能是补语而不是附加语。

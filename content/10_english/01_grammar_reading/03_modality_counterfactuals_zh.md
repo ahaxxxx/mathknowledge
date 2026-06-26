@@ -154,6 +154,55 @@
 不等价。前者表示“也许没有必要”；后者若作认识解释非常生硬，若作义务解释又接近“不得成为必要”。自然表达强推断“不可能有必要”通常用 `cannot be necessary`。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> The policy might appear successful if success is defined only as a short-term increase in enrollment. Yet a different conclusion would follow if the analysis asked whether the students who enrolled under the policy could have achieved the same outcomes without the subsidy. The counterfactual is difficult to observe directly, so the paper treats matched districts as a proxy rather than as proof. This distinction matters because a policy can be associated with an outcome without having caused it.
+
+### 结构地图
+
+1. 第一句用 `might` 降低断言强度，并把成功限定在一个定义里。
+2. 第二句用 `would follow if...` 建立反事实推理路径。
+3. 第三句说明反事实不可直接观察，所以只能用代理对象。
+4. 第四句区分相关和因果。
+
+### 句群拆解
+
+- `might appear successful` 不是说政策一定成功，而是“在某定义下看起来成功”。
+- `would follow if...` 表示结论依赖一个未实际采取的分析问题。
+- `could have achieved` 指向过去可能性：没有补贴时是否也能达到同样结果。
+- `rather than as proof` 把证据地位压低：matched districts 是 proxy，不是 proof。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+找出本段中最关键的反事实问题，并说明它为什么比“入学率是否提高”更深。
+
+:::solution 查看解析
+关键问题是 `whether the students who enrolled under the policy could have achieved the same outcomes without the subsidy`。它问的是没有补贴时结果是否仍会发生，直接对应因果判断；“入学率是否提高”只描述政策后发生了什么，不能排除其他原因。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+解释 `might appear`, `would follow`, `could have achieved` 三个情态结构的功能差异。
+
+:::solution 查看解析
+`might appear` 表示谨慎判断；`would follow` 表示在某条件成立时会推出某结论；`could have achieved` 表示过去未观测情形中的可能性。三者分别承担“弱断言、条件推论、反事实可能性”。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+朋友说“我喝了咖啡所以考试考好了”。请用英文写一句反事实追问。
+
+:::solution 查看解析
+可以写：`Would you have performed just as well if you had not drunk the coffee?` 这句话不是否定咖啡可能有用，而是要求比较“实际发生”和“没有咖啡时可能发生”的结果。
+:::
+
 ## 迁移与反思
 
 读到情态词时，依次问：它评估真假还是规定行动？强度多大？是否受条件限制？否定落在情态词还是命题上？

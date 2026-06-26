@@ -154,6 +154,54 @@
 句法让 `the rain` 成为 walking 的逻辑主语，形成悬垂修饰。应写 `While I was walking home, the rain started`。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> Seeking to reduce the noise in the dataset, the researchers excluded observations recorded during the first week of implementation. The decision, while defensible, makes the estimated effect harder to interpret, because the excluded cases may have captured the period in which users were still learning to navigate the interface. To treat the remaining data as fully representative is therefore to assume that adaptation itself is not part of the intervention's effect.
+
+### 结构地图
+
+1. 第一句用现在分词短语说明研究者排除数据的目的。
+2. 第二句用过去分词短语限定被排除的 observations，并解释后果。
+3. 第三句用两个不定式结构形成判断：把剩余数据当代表性样本，就是作出一个假设。
+
+### 句群拆解
+
+- `Seeking to reduce...` 的逻辑主语是 `the researchers`。
+- `recorded during...` 修饰 `observations`，表示这些观察值是在第一周记录的。
+- `while defensible` 是压缩让步结构，完整意思近似 `although the decision is defensible`。
+- `To treat... is therefore to assume...` 中两个不定式分别占据主语和表语位置。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+判断 `Seeking to reduce the noise in the dataset` 的逻辑主语，并说明如果主语不一致会产生什么问题。
+
+:::solution 查看解析
+逻辑主语是 `the researchers`，因为是研究者试图降低噪声。如果后面主句主语换成 `observations`，就会变成“观察值试图降低噪声”，造成悬垂修饰。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+第三句中 `To treat... is therefore to assume...` 为什么适合学术写作？
+
+:::solution 查看解析
+它把一个方法选择转化为一个可审查的前提：把剩余数据视为代表性样本，就等于假设适应过程不属于干预效果。这个结构能暴露推理条件，而不是只陈述操作。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+用 `while defensible` 写一句：某个决定可以理解，但会带来解释困难。
+
+:::solution 查看解析
+可以写：`The decision to skip the meeting, while defensible, made the later misunderstanding harder to resolve.` `while defensible` 压缩了让步关系，主干仍是 `The decision made... harder...`。
+:::
+
 ## 迁移与反思
 
 每遇到非谓语，尝试补回“谁、在什么时间、主动还是被动”。若补回的主语荒谬，原句很可能存在控制错误或悬垂修饰。

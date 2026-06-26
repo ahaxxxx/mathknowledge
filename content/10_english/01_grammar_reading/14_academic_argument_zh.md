@@ -154,6 +154,55 @@ claim 是餐厅好，evidence 是拥挤；隐含 warrant 是好餐厅会吸引�
 可改为 `For tasks requiring sustained individual concentration, working from home may increase productivity when workers have adequate space and equipment.` 新版本明确任务、人群条件和承诺强度。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> A common objection to universal basic income is that it would weaken incentives to work. The objection is serious, but it does not settle the question, because labor supply is only one dimension of economic participation. If a basic income allowed people to leave abusive jobs, invest in training, or care for family members without immediate destitution, then a narrow measure of hours worked might understate the policy's social value. The argument for the policy therefore depends not on denying incentive effects, but on asking which effects a society chooses to count.
+
+### 结构地图
+
+1. 第一句提出反方观点。
+2. 第二句承认其严肃性，但限制其结论力。
+3. 第三句构造条件推理，说明单一指标可能低估社会价值。
+4. 第四句给出作者的核心论证位置：不是否认激励效应，而是追问社会计量什么。
+
+### 句群拆解
+
+- `A common objection... is that...` 建立“反对意见的内容”。
+- `serious, but...` 是让步转折：承认对方问题，但不同意它终结争论。
+- `If... then...` 中三个动词 `leave, invest, care` 平行，列出可能收益。
+- `depends not on..., but on...` 明确论证依赖的不是否认，而是评价框架。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+本段如何处理反方观点？请说明它不是简单反驳，而是重新界定问题。
+
+:::solution 查看解析
+作者先承认反方观点严肃，然后指出它不能终结问题，因为工作时长只是经济参与的一个维度。随后作者把问题从“是否削弱工作激励”改成“社会选择计入哪些影响”。这是一种重构评价框架的论证。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+第三句为什么说 `a narrow measure of hours worked might understate the policy's social value`？
+
+:::solution 查看解析
+因为基本收入可能带来的价值不只体现在工作小时数上，还可能体现在离开有害工作、投资培训、照顾家人等方面。如果只计算工作小时，就会漏掉这些社会价值。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+模仿 `depends not on..., but on...` 写一句：评价一次休息不是看有没有少做事，而是看是否恢复了长期注意力。
+
+:::solution 查看解析
+可以写：`The value of a break depends not on whether it reduces the number of tasks completed that day, but on whether it restores attention over the longer term.` 结构明确排除短期数量指标，转向长期注意力。
+:::
+
 ## 迁移与反思
 
 读每段时在句旁标注背景、缺口、主张、证据、warrant、替代解释、限制或贡献。最后用一条链复述：作者凭什么，希望我相信什么，边界在哪里。

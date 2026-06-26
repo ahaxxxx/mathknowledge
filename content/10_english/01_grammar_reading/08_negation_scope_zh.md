@@ -154,6 +154,55 @@
 前者常弱化喜欢程度，接近“不太喜欢”；后者让 `really` 强化否定，接近“真的不喜欢”。副词相对否定的位置影响范围和语气。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> The study does not show that the treatment has no effect. It shows that the available evidence is not strong enough to distinguish a small effect from random variation. Nor does the failure to reach statistical significance imply that the theory is false; it may instead indicate that the study was not designed to detect the kind of effect the theory predicts. A careful reader therefore separates absence of evidence from evidence of absence.
+
+### 结构地图
+
+1. 第一句先限定否定范围：研究没有证明“无效”。
+2. 第二句说明真正结论：证据不足以区分小效应和随机波动。
+3. 第三句用倒装否定 `Nor does...` 阻止读者过度推论。
+4. 第四句提出经典区分：没有证据不等于证据表明没有。
+
+### 句群拆解
+
+- `does not show that... has no effect` 中外层否定落在 `show` 上，不是直接断言 treatment 无效。
+- `not strong enough to distinguish...` 的否定范围是证据强度。
+- `Nor does... imply...` 等于 `The failure... does not imply... either`。
+- `not designed to detect...` 否定的是研究设计能力，不是否定理论预测本身。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+说明第一句和“the treatment has no effect”在逻辑上有什么不同。
+
+:::solution 查看解析
+第一句是否定“研究证明了无效”这个说法，即证据没有达到证明无效的程度；`the treatment has no effect` 是直接断言治疗没有效果。前者是证据状态判断，后者是世界状态判断。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+解释 `absence of evidence` 与 `evidence of absence` 的差别。
+
+:::solution 查看解析
+`absence of evidence` 是没有足够证据支持某结论；`evidence of absence` 是有证据支持某对象或效应不存在。前者通常要求继续谨慎，后者才允许更强的否定结论。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+有人说“我没看到消息，所以你一定没发”。请用英文回应，体现否定范围。
+
+:::solution 查看解析
+可以写：`The fact that I did not see the message does not prove that you did not send it.` 这句话否定的是“没看到能证明没发”，而不是直接判断对方是否发送。
+:::
+
 ## 迁移与反思
 
 把否定当作一个带括号的逻辑算子：它覆盖哪个命题？量词和情态词在括号内还是括号外？先回答这些，再翻译。

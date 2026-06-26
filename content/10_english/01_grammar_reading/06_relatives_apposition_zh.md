@@ -154,6 +154,55 @@
 `that` 在 mentioned 后作宾语，因此是关系从句，意思是“你提到的消息”。`the news that the store closed` 才是说明消息内容。
 :::
 
+
+<!-- advanced-reading-block -->
+## 长段精读：论文级句群
+
+> The archive, which contains letters written over four decades, has often been treated as evidence of a single political conversion. That interpretation, however, overlooks a simpler possibility: that the writer used different vocabularies for different audiences. The letters that were sent to party officials emphasize loyalty, whereas those addressed to family members describe uncertainty and fatigue. The contrast suggests not hypocrisy, but audience-sensitive self-presentation.
+
+### 结构地图
+
+1. 第一句非限制性关系从句介绍 archive 的内容。
+2. 第二句冒号后用同位语内容说明 `a simpler possibility`。
+3. 第三句限制性关系从句区分不同信件。
+4. 第四句给出解释：不是虚伪，而是面向受众的自我呈现。
+
+### 句群拆解
+
+- `which contains...` 只是补充说明 archive，不限定是哪一个 archive。
+- `that the writer used...` 是 `possibility` 的同位内容。
+- `letters that were sent...` 中的 `that` 是限制性定语从句，区分写给官员的信。
+- `those addressed to family members` 中 `those` 代替 `letters`，后面的过去分词短语作后置修饰。
+
+### GRE/PhD 级训练
+
+### 高阶训练 1
+**高阶语境：学术科研**
+
+比较第一句 `which contains...` 与第三句 `that were sent...` 的功能差别。
+
+:::solution 查看解析
+`which contains...` 是非限制性补充信息，删去后仍指同一个 archive；`that were sent...` 是限制性信息，用来从所有 letters 中筛出写给 party officials 的那一类。前者补充，后者分类。
+:::
+
+### 高阶训练 2
+**高阶语境：学术科研**
+
+第二句冒号后的 `that` 从句为什么不是普通定语从句？
+
+:::solution 查看解析
+它解释 `a simpler possibility` 的具体内容，即“这个可能性是什么”。它不是修饰一个名词的属性，而是填充该名词的命题内容，因此是同位内容从句。
+:::
+
+### 高阶训练 3
+**高阶语境：真实生活**
+
+用 `those addressed to...` 模仿写一句，比较两类消息。
+
+:::solution 查看解析
+可以写：`The messages sent to colleagues sound formal, whereas those addressed to close friends are brief and playful.` `those` 代替 `messages`，`addressed to close friends` 后置修饰。
+:::
+
 ## 迁移与反思
 
 先确定名词是否已可识别，再问后置信息是否筛选集合。随后检查从句内部是否留下空位：有空位常是关系从句，成分完整则可能是内容从句。
