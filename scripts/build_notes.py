@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CONTENT_ROOT = ROOT / "content"
 DOCS_ROOT = ROOT / "docs"
 NOTES_ROOT = DOCS_ROOT / "notes"
+INTERNAL_MARKERS = {"<!-- advanced-reading-block -->"}
 
 NAV_ITEMS = [
     ("首页", "index.html", False),
@@ -455,6 +456,9 @@ def render_markdown(markdown_text: str, source_path: Path, output_rel: Path) -> 
     while i < len(lines):
         line = lines[i]
         stripped = line.strip()
+        if stripped in INTERNAL_MARKERS:
+            i += 1
+            continue
         if not stripped:
             i += 1
             continue
@@ -563,6 +567,7 @@ def render_markdown(markdown_text: str, source_path: Path, output_rel: Path) -> 
                 or current_stripped == ":::"
                 or current_stripped.startswith("<audio")
                 or current_stripped.startswith("$$")
+                or current_stripped in INTERNAL_MARKERS
             ):
                 break
             paragraph_lines.append(current)

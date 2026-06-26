@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import re
 import sys
 from html.parser import HTMLParser
@@ -173,6 +174,8 @@ def check_generated_intro_not_duplicated(path: Path, text: str, errors: list[str
     if not intro:
         return
     html_text = output_path.read_text(encoding="utf-8")
+    if ADVANCED_BLOCK_MARKER in html_text or html.escape(ADVANCED_BLOCK_MARKER) in html_text:
+        errors.append(f"{output_path.name}: advanced reading marker is visible in generated HTML")
     parser = ParagraphTextParser()
     parser.feed(html_text)
     expected_intro = canonical_visible_text(intro)
