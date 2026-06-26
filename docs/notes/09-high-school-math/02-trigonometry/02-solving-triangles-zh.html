@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>解三角形：正弦定理、余弦定理与面积 | math.bozhanli.com</title>
+  <meta name="description" content="解三角形研究的是：在一个三角形中，已知若干边角信息，如何确定其余边角，或者判断三角形是否存在、是否唯一。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">trigonometry</a><span>/</span><span>解三角形：正弦定理、余弦定理与面积</span></div>
+      <h1>解三角形：正弦定理、余弦定理与面积</h1>
+      <p>解三角形研究的是：在一个三角形中，已知若干边角信息，如何确定其余边角，或者判断三角形是否存在、是否唯一。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><p>这一部分不是孤立公式题。它把三角函数用于几何对象，因此每一步都要同时检查三角形条件、角的范围和边角对应关系。</p>
+<h2>研究对象</h2>
+<p>设 $\triangle ABC$ 中，角 $A,B,C$ 的对边分别为 $a,b,c$。</p>
+<p>基本条件：</p>
+<div class="math-display">$$
+A+B+C=\pi,\qquad a,b,c&gt;0.
+$$</div>
+<p>边角对应不能混乱：$a$ 对 $A$，$b$ 对 $B$，$c$ 对 $C$。很多解三角形错误不是公式不会，而是把对应关系写错。</p>
+<h2>核心知识结构</h2>
+<h3>1. 正弦定理</h3>
+<p>在任意三角形中，</p>
+<div class="math-display">$$
+\frac a{\sin A}=\frac b{\sin B}=\frac c{\sin C}=2R,
+$$</div>
+<p>其中 $R$ 是外接圆半径。</p>
+<p>它适合处理“边与对角”的比例关系，典型入口是：</p>
+<ol><li>已知两角一边；</li><li>已知两边和其中一边的对角；</li><li>需要比较边长与角的大小。</li></ol>
+<h3>2. 余弦定理</h3>
+<p>在任意三角形中，</p>
+<div class="math-display">$$
+a^2=b^2+c^2-2bc\cos A,
+$$</div>
+<p>以及循环形式：</p>
+<div class="math-display">$$
+b^2=a^2+c^2-2ac\cos B,\qquad
+c^2=a^2+b^2-2ab\cos C.
+$$</div>
+<p>它适合处理“夹角”和“三边”：</p>
+<ol><li>已知两边及夹角，求第三边；</li><li>已知三边，求角；</li><li>判断角的锐钝性，例如由 $\cos A$ 的符号判断 $A$。</li></ol>
+<h3>3. 面积公式</h3>
+<p>常用面积公式：</p>
+<div class="math-display">$$
+S=\frac12bc\sin A=\frac12ca\sin B=\frac12ab\sin C.
+$$</div>
+<p>若已知三边，也可使用海伦公式：</p>
+<div class="math-display">$$
+S=\sqrt{p(p-a)(p-b)(p-c)},\qquad p=\frac{a+b+c}{2}.
+$$</div>
+<p>高中主线里，$\frac12bc\sin A$ 更常用于和正余弦定理联动。</p>
+<h3>4. 三角形存在与唯一性</h3>
+<p>不是每组数据都能确定唯一三角形：</p>
+<ol><li><strong>ASA/AAS</strong>：两角一边，通常唯一。</li><li><strong>SAS</strong>：两边夹角，通常唯一。</li><li><strong>SSS</strong>：三边满足三角形不等式时唯一。</li><li><strong>SSA</strong>：两边和非夹角，可能无解、一解或两解。</li></ol>
+<p>SSA 歧义来自 $\sin B=\sin(\pi-B)$。当只知道正弦值时，角可能有两个候选，需要再用角和小于 $\pi$ 检查。</p>
+<h2>方法识别</h2>
+<p>看到解三角形题，先判断已知类型：</p>
+<ol><li><strong>有一对边角对应</strong>：优先考虑正弦定理。</li><li><strong>有夹角</strong>：优先考虑余弦定理或面积公式。</li><li><strong>有三边</strong>：先用余弦定理求角，再决定面积或其他量。</li><li><strong>求面积</strong>：找“两边夹角”或先通过定理补出夹角。</li><li><strong>问存在性或个数</strong>：重点检查三角形不等式、角和、SSA 歧义。</li></ol>
+<p>失败信号：</p>
+<ul><li>把 $a$ 对应到错误的角；</li><li>由 $\sin B$ 求 $B$ 时只写锐角，漏掉钝角可能；</li><li>用余弦定理求角后没有检查 $\cos$ 的值域；</li><li>已知两边一角就盲目认为唯一；</li><li>面积公式中选的角不是两边夹角。</li></ul>
+<h2>典型例题</h2>
+<h3>例 1：两角一边</h3>
+<p>在 $\triangle ABC$ 中，已知 $A=45^\circ$，$B=60^\circ$，$a=6$，求 $b$。</p>
+<p>解：由正弦定理</p>
+<div class="math-display">$$
+\frac a{\sin A}=\frac b{\sin B},
+$$</div>
+<p>得</p>
+<div class="math-display">$$
+b=a\frac{\sin B}{\sin A}
+=6\cdot\frac{\sin60^\circ}{\sin45^\circ}
+=6\cdot\frac{\sqrt3/2}{\sqrt2/2}
+=3\sqrt6.
+$$</div>
+<p>本题入口是已有一对边角对应 $(a,A)$，又要求另一条边。</p>
+<h3>例 2：两边夹角</h3>
+<p>在 $\triangle ABC$ 中，已知 $b=5$，$c=7$，$A=60^\circ$，求 $a$。</p>
+<p>解：已知两边及夹角，用余弦定理：</p>
+<div class="math-display">$$
+a^2=b^2+c^2-2bc\cos A
+=25+49-70\cdot\frac12=39.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+a=\sqrt{39}.
+$$</div>
+<p>不能用正弦定理直接求，因为没有已知的一对边角对应。</p>
+<h3>例 3：面积</h3>
+<p>在 $\triangle ABC$ 中，$a=8$，$b=6$，$C=30^\circ$，求面积。</p>
+<p>解：角 $C$ 是边 $a,b$ 的夹角，因此</p>
+<div class="math-display">$$
+S=\frac12ab\sin C
+=\frac12\cdot8\cdot6\cdot\frac12=12.
+$$</div>
+<p>若误用 $\frac12bc\sin A$，就需要先知道 $c$ 和 $A$，会把简单问题绕远。</p>
+<h3>例 4：SSA 的两解可能</h3>
+<p>在 $\triangle ABC$ 中，已知 $a=10$，$b=8$，$A=30^\circ$，求 $B$ 的可能值。</p>
+<p>由正弦定理</p>
+<div class="math-display">$$
+\frac{\sin B}{b}=\frac{\sin A}{a},
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\sin B=\frac{b\sin A}{a}
+=\frac{8\cdot1/2}{10}=\frac25.
+$$</div>
+<p>于是 $B$ 可能为</p>
+<div class="math-display">$$
+B=\arcsin\frac25
+$$</div>
+<p>或</p>
+<div class="math-display">$$
+B=\pi-\arcsin\frac25.
+$$</div>
+<p>但还要检查 $A+B&lt;\pi$。两种候选若都满足，就有两解；若只有一个满足，就只有一解。</p>
+<h2>自我训练</h2>
+<h3>训练 1</h3>
+<p>在 $\triangle ABC$ 中，$A=30^\circ$，$B=45^\circ$，$a=4$，求 $b$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>有一对边角对应 $(a,A)$，用正弦定理：</p>
+<div class="math-display">$$
+b=a\frac{\sin B}{\sin A}
+=4\cdot\frac{\sqrt2/2}{1/2}=4\sqrt2.
+$$</div></div></details>
+<h3>训练 2</h3>
+<p>在 $\triangle ABC$ 中，$b=3$，$c=4$，$A=60^\circ$，求 $a$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>已知两边及夹角，用余弦定理：</p>
+<div class="math-display">$$
+a^2=3^2+4^2-2\cdot3\cdot4\cdot\frac12=13.
+$$</div>
+<p>所以 $a=\sqrt{13}$。</p></div></details>
+<h3>训练 3</h3>
+<p>在 $\triangle ABC$ 中，$a=5$，$b=6$，$C=120^\circ$，求面积。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$C$ 是边 $a,b$ 的夹角，所以</p>
+<div class="math-display">$$
+S=\frac12ab\sin C
+=\frac12\cdot5\cdot6\cdot\frac{\sqrt3}{2}
+=\frac{15\sqrt3}{2}.
+$$</div></div></details>
+<h3>训练 4</h3>
+<p>三角形三边为 $5,6,7$，求最大角的余弦值。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>最大角对最大边 7。设最大角为 $C$，则</p>
+<div class="math-display">$$
+7^2=5^2+6^2-2\cdot5\cdot6\cos C.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+49=61-60\cos C,\qquad \cos C=\frac15.
+$$</div></div></details>
+<h3>训练 5</h3>
+<p>在 $\triangle ABC$ 中，$a=6$，$A=30^\circ$，$b=9$。判断求 $B$ 时为什么可能出现两种情况。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由正弦定理</p>
+<div class="math-display">$$
+\sin B=\frac{b\sin A}{a}=\frac{9\cdot1/2}{6}=\frac34.
+$$</div>
+<p>若 $\sin B=\frac34$，则 $B$ 可以是锐角 $\arcsin\frac34$，也可以是钝角 $\pi-\arcsin\frac34$。因为 $A=30^\circ$，两种候选还要检查 $A+B&lt;180^\circ$。</p></div></details>
+<h3>训练 6</h3>
+<p>在 $\triangle ABC$ 中，$a=7$，$b=8$，$c=20$。这样的三角形是否存在？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>不存在，因为三角形任意两边之和必须大于第三边，而 $7+8=15&lt;20$。这类题不能先套正弦定理或余弦定理，必须先检查存在性。</p></div></details>
+<h2>费曼讲题任务</h2>
+<p>让学生从训练 2、训练 4、训练 5 中任选一题讲解。你重点追问：</p>
+<ol><li>为什么这题用正弦定理或余弦定理？</li><li>已知量里有没有一对边角对应？有没有夹角？</li><li>是否需要检查三角形存在、角的范围或多解？</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">trigonometry</a></li><li>源文件：<code>content/09_high_school_math/02_trigonometry/02_solving_triangles_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-trig-functions-zh.html">三角函数：单位圆、图像与恒等变换</a></h3><p>三角函数的核心不是背 $\sin,\cos,\tan$ 的一堆公式，而是把“角”变成可以运算、比较、作图和变形的函数对象。真正学懂以后，诱导公式、同角关系、图像性质和三角恒等变换都会变成同一套语言。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

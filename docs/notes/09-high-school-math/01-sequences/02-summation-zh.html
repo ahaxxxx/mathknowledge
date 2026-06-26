@@ -301,7 +301,34 @@ $$</div>
 <ol><li>求和对象是什么，首项、末项和项数分别是什么？</li><li>通项的哪个结构提示了当前方法？</li><li>关键变形为什么合法？</li><li>哪些项被消掉，哪些边界项被保留？</li><li>若把 $n$ 取成 1 或 2，结果是否与原式一致？</li><li>哪个条件改变后，这个方法会失效？</li></ol>
 <h2>13. 查漏说明</h2>
 <p>本页在现有课堂大纲基础上，对照了公开教材入口和开放教材中的数列、有限等比和内容。2026 年 6 月 22 日检索时，人民教育出版社高中数学资源页返回系统维护公告，OpenStax 页面可以访问但章节路由发生变化。因此本页不把外部页面当作证明依据：所有核心结论都在正文内推导，并在构建前用代数与小规模数值代入核验。</p>
-<ul><li><a href="https://www.pep.com.cn/gzsx/">人民教育出版社高中数学资源入口</a></li><li><a href="https://openstax.org/subjects/math">OpenStax 开放教材</a></li><li><a href="https://mathworld.wolfram.com/">Wolfram MathWorld</a></li></ul></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">数列</a></li><li>源文件：<code>content/09_high_school_math/01_sequences/02_summation_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-general-term-exercises-zh.html">数列求通项公式专项练习</a></h3><p>这份练习按“题型识别”编排。每个题型至少 5 道题，建议学生先判断方法，再动笔计算；点开解答前，先尝试把“为什么用这个方法”讲出来。</p></div><div class="note-item"><h3><a href="01-general-term-fixed-point-ratio-principle-zh.html">两不动点距离比法：从定义到手动推导</a></h3><p>这一页只讲一个原理：</p></div><div class="note-item"><h3><a href="01-general-term-zh.html">数列求通项公式</a></h3><p>这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。</p></div><div class="note-item"><h3><a href="02-summation-exercises-zh.html">数列求和专项练习</a></h3><p>这份练习按“题型识别”编排，共 6 类，每类 5 题。做题前先口头回答：通项有什么结构？为什么选这个方法？点开解答前，先写出至少一行关键变形。</p></div></div></section></aside></div>
+<ul><li><a href="https://www.pep.com.cn/gzsx/">人民教育出版社高中数学资源入口</a></li><li><a href="https://openstax.org/subjects/math">OpenStax 开放教材</a></li><li><a href="https://mathworld.wolfram.com/">Wolfram MathWorld</a></li></ul>
+<h2>14. 今晚课堂讲法</h2>
+<p>今晚只有 1 小时，目标不是把所有变式讲完，而是让学生形成“看通项选方法”的主判断。建议节奏如下：</p>
+<ol><li><strong>5 分钟：回扣通项公式。</strong> 让学生说：已知 $a_n$ 才能直接求和；若题目先给 $S_n$ 或递推式，要先转成通项或可求和结构。</li><li><strong>10 分钟：建立方法选择地图。</strong> 只讲一句核心话：公式法看基本型，裂项看差，错位看“等差乘等比”，倒序看首尾配对，周期分段看下标规律。</li><li><strong>12 分钟：裂项相消。</strong> 讲一题跨距 1，再讲一题跨距 2。重点不是答案，而是让她亲手写出哪些中间项被消掉，哪些边界项留下。</li><li><strong>18 分钟：错位相减。</strong> 从 $T_n=1+2q+\cdots+nq^{n-1}$ 推到公式，强调 $q\ne1$ 和首尾项。今晚一定要让她看见公式是怎么来的，不要直接背。</li><li><strong>8 分钟：倒序相加。</strong> 用等差求和或一个首尾和固定的例子讲配对命题。</li><li><strong>5 分钟：当堂口述。</strong> 给她一个混合题，让她只说方法判断，不急着完整算完。</li><li><strong>2 分钟：布置作业。</strong> 作业少而稳，要求下节课挑 1 题讲给你听。</li></ol>
+<p>今晚推荐当堂题组：</p>
+<ol><li>裂项跨距 1：</li></ol>
+<div class="math-display">$$
+\sum_{k=1}^{n}\frac1{k(k+1)}.
+$$</div>
+<ol><li>裂项跨距 2：</li></ol>
+<div class="math-display">$$
+\sum_{k=1}^{n}\frac1{k(k+2)}.
+$$</div>
+<ol><li>错位相减：</li></ol>
+<div class="math-display">$$
+\sum_{k=1}^{n}k2^{k-1}.
+$$</div>
+<ol><li>倒序相加：</li></ol>
+<div class="math-display">$$
+\sum_{k=1}^{n}\frac{k}{n+1}.
+$$</div>
+<p>第 4 题可以让她发现第 $k$ 项和第 $n+1-k$ 项之和为 1，所以总和是 $\dfrac n2$。它的价值不是难度，而是训练她看“首尾配对”。</p>
+<h2>15. 课后作业建议</h2>
+<p>今晚之后不要布置过多。她前面作业没有完成，说明现在更需要稳定节奏，而不是题量压迫。</p>
+<p>建议布置 8 题：</p>
+<ol><li>公式法 2 题：等差、等比各 1 题。</li><li>裂项相消 2 题：跨距 1、跨距 2 各 1 题。</li><li>错位相减 2 题：一个 $q=2$，一个 $q=\dfrac12$。</li><li>倒序相加 1 题：首尾配对和固定。</li><li>奇偶或周期 1 题：要求写清楚 $n$ 的奇偶或余数分类。</li></ol>
+<p>下节课周日开头 20 分钟复盘：</p>
+<ul><li>让她选 1 道错位相减题讲完整过程。</li><li>你只追问三个点：为什么想到错位？边界项是什么？$n=1$ 是否能验算？</li><li>如果她能讲清楚，就正式进入三角函数；如果讲不清楚，也不必停整节课，只在周日课后保留 2 道数列滚动题。</li></ul></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">数列</a></li><li>源文件：<code>content/09_high_school_math/01_sequences/02_summation_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-general-term-exercises-zh.html">数列求通项公式专项练习</a></h3><p>这份练习按“题型识别”编排。每个题型至少 5 道题，建议学生先判断方法，再动笔计算；点开解答前，先尝试把“为什么用这个方法”讲出来。</p></div><div class="note-item"><h3><a href="01-general-term-fixed-point-ratio-principle-zh.html">两不动点距离比法：从定义到手动推导</a></h3><p>这一页只讲一个原理：</p></div><div class="note-item"><h3><a href="01-general-term-zh.html">数列求通项公式</a></h3><p>这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。</p></div><div class="note-item"><h3><a href="02-summation-exercises-zh.html">数列求和专项练习</a></h3><p>这份练习按“题型识别”编排，共 6 类，每类 5 题。做题前先口头回答：通项有什么结构？为什么选这个方法？点开解答前，先写出至少一行关键变形。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>
