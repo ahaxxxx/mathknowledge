@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>解三角形：正弦定理、余弦定理与面积 | math.bozhanli.com</title>
-  <meta name="description" content="解三角形研究的是：在一个三角形中，已知若干边角信息，如何确定其余边角，或者判断三角形是否存在、是否唯一。">
+  <title>解三角形：正弦定理、余弦定理与边角信息 | math.bozhanli.com</title>
+  <meta name="description" content="解三角形不是“正弦定理、余弦定理、面积公式”三条公式的堆叠。它研究的是：在一个三角形中，已知若干边角信息，怎样判断三角形是否存在、是否唯一，并进一步求出未知边角、面积、形状或取值范围。">
   <script>
     window.MathJax = {
       tex: {
@@ -30,129 +30,238 @@
       </div>
     </div>
     <div class="page-head">
-      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">trigonometry</a><span>/</span><span>解三角形：正弦定理、余弦定理与面积</span></div>
-      <h1>解三角形：正弦定理、余弦定理与面积</h1>
-      <p>解三角形研究的是：在一个三角形中，已知若干边角信息，如何确定其余边角，或者判断三角形是否存在、是否唯一。</p>
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">trigonometry</a><span>/</span><span>解三角形：正弦定理、余弦定理与边角信息</span></div>
+      <h1>解三角形：正弦定理、余弦定理与边角信息</h1>
+      <p>解三角形不是“正弦定理、余弦定理、面积公式”三条公式的堆叠。它研究的是：在一个三角形中，已知若干边角信息，怎样判断三角形是否存在、是否唯一，并进一步求出未知边角、面积、形状或取值范围。</p>
     </div>
-    <div class="subject-grid"><section class="page-section article"><p>这一部分不是孤立公式题。它把三角函数用于几何对象，因此每一步都要同时检查三角形条件、角的范围和边角对应关系。</p>
+    <div class="subject-grid"><section class="page-section article"><p>这一部分应当训练学生的判断力：先看已知量是什么结构，再选择定理，而不是见到三角形就随手套公式。</p>
 <h2>研究对象</h2>
-<p>设 $\triangle ABC$ 中，角 $A,B,C$ 的对边分别为 $a,b,c$。</p>
-<p>基本条件：</p>
+<p>设 $\triangle ABC$ 中，角 $A,B,C$ 的对边分别为 $a,b,c$。基本条件是</p>
 <div class="math-display">$$
 A+B+C=\pi,\qquad a,b,c&gt;0.
 $$</div>
-<p>边角对应不能混乱：$a$ 对 $A$，$b$ 对 $B$，$c$ 对 $C$。很多解三角形错误不是公式不会，而是把对应关系写错。</p>
+<p>任何一步计算都要同时检查三件事：</p>
+<ol><li>边角是否对应正确；</li><li>角的范围是否合理；</li><li>三角形是否存在或是否可能多解。</li></ol>
 <h2>核心知识结构</h2>
-<h3>1. 正弦定理</h3>
-<p>在任意三角形中，</p>
+<h3>1. 记号系统：先把边角对应钉死</h3>
+<p>标准记号是</p>
+<div class="math-display">$$
+a\leftrightarrow A,\qquad b\leftrightarrow B,\qquad c\leftrightarrow C.
+$$</div>
+<p>很多错误并不是不会公式，而是把 $a$ 当成 $B$ 的对边，或者把面积公式中的夹角拿错。课堂上可以要求学生每道题先写：</p>
+<div class="math-display">$$
+\text{已知量：}\quad \cdots,\qquad
+\text{要求量：}\quad \cdots
+$$</div>
+<p>再判断它属于哪种已知结构。</p>
+<h3>2. 正弦定理：有一对边角对应时建立比例</h3>
+<p>正弦定理为</p>
 <div class="math-display">$$
 \frac a{\sin A}=\frac b{\sin B}=\frac c{\sin C}=2R,
 $$</div>
-<p>其中 $R$ 是外接圆半径。</p>
-<p>它适合处理“边与对角”的比例关系，典型入口是：</p>
-<ol><li>已知两角一边；</li><li>已知两边和其中一边的对角；</li><li>需要比较边长与角的大小。</li></ol>
-<h3>2. 余弦定理</h3>
-<p>在任意三角形中，</p>
+<p>其中 $R$ 为外接圆半径。</p>
+<p>它可以从外接圆弦长理解：边 $a=BC$ 是外接圆中圆心角 $2A$ 所对的弦，因此</p>
 <div class="math-display">$$
-a^2=b^2+c^2-2bc\cos A,
+a=2R\sin A.
 $$</div>
-<p>以及循环形式：</p>
+<p>同理</p>
 <div class="math-display">$$
-b^2=a^2+c^2-2ac\cos B,\qquad
-c^2=a^2+b^2-2ab\cos C.
+b=2R\sin B,\qquad c=2R\sin C.
 $$</div>
-<p>它适合处理“夹角”和“三边”：</p>
-<ol><li>已知两边及夹角，求第三边；</li><li>已知三边，求角；</li><li>判断角的锐钝性，例如由 $\cos A$ 的符号判断 $A$。</li></ol>
-<h3>3. 面积公式</h3>
-<p>常用面积公式：</p>
+<p>所以得到正弦定理。它的常见入口是：</p>
+<ol><li>已知两角一边；</li><li>已知两边和其中一边的对角；</li><li>需要把边的比例转成角的正弦比例；</li><li>题目出现外接圆半径 $R$。</li></ol>
+<p>正弦定理的危险点是：由 $\sin B$ 求 $B$ 时，可能有锐角和钝角两个候选。</p>
+<h3>3. 余弦定理：夹角、三边和锐钝判断</h3>
+<p>余弦定理为</p>
 <div class="math-display">$$
-S=\frac12bc\sin A=\frac12ca\sin B=\frac12ab\sin C.
+a^2=b^2+c^2-2bc\cos A.
 $$</div>
-<p>若已知三边，也可使用海伦公式：</p>
+<p>它也可以从向量内积理解。因为</p>
 <div class="math-display">$$
-S=\sqrt{p(p-a)(p-b)(p-c)},\qquad p=\frac{a+b+c}{2}.
+\vec{BC}=\vec{BA}+\vec{AC},
 $$</div>
-<p>高中主线里，$\frac12bc\sin A$ 更常用于和正余弦定理联动。</p>
-<h3>4. 三角形存在与唯一性</h3>
-<p>不是每组数据都能确定唯一三角形：</p>
-<ol><li><strong>ASA/AAS</strong>：两角一边，通常唯一。</li><li><strong>SAS</strong>：两边夹角，通常唯一。</li><li><strong>SSS</strong>：三边满足三角形不等式时唯一。</li><li><strong>SSA</strong>：两边和非夹角，可能无解、一解或两解。</li></ol>
-<p>SSA 歧义来自 $\sin B=\sin(\pi-B)$。当只知道正弦值时，角可能有两个候选，需要再用角和小于 $\pi$ 检查。</p>
+<p>平方长度展开时会出现内积项，而内积项带来 $\cos A$。余弦定理本质上是勾股定理在非直角三角形中的推广。</p>
+<p>它的常见入口是：</p>
+<ol><li>已知两边及夹角，求第三边；</li><li>已知三边，求角；</li><li>判断角是锐角、直角还是钝角；</li><li>处理没有已知边角对应的一类题。</li></ol>
+<p>若由三边求角，可用</p>
+<div class="math-display">$$
+\cos A=\frac{b^2+c^2-a^2}{2bc}.
+$$</div>
+<p>若 $\cos A&gt;0$，则 $A$ 为锐角；若 $\cos A=0$，则 $A$ 为直角；若 $\cos A&lt;0$，则 $A$ 为钝角。</p>
+<h3>4. 面积公式：把“边边角”转成面积</h3>
+<p>三角形面积公式：</p>
+<div class="math-display">$$
+S=\frac12bc\sin A
+=\frac12ca\sin B
+=\frac12ab\sin C.
+$$</div>
+<p>它来自“底乘高除以二”。例如取 $b,c$ 为两边，夹角为 $A$，则高为 $c\sin A$ 或 $b\sin A$，所以</p>
+<div class="math-display">$$
+S=\frac12bc\sin A.
+$$</div>
+<p>常见联动：</p>
+<ol><li>已知两边夹角，直接求面积；</li><li>已知面积和两边，反求夹角正弦；</li><li>结合余弦定理求边，再求面积；</li><li>结合正弦定理把面积写成边或角的函数。</li></ol>
+<h3>5. 边角互换：把三角函数式翻译成边的语言</h3>
+<p>在三角形中，角和边不是孤立的。正弦定理给出</p>
+<div class="math-display">$$
+\frac a{\sin A}=\frac b{\sin B}=\frac c{\sin C}.
+$$</div>
+<p>所以在很多题里，可以把</p>
+<div class="math-display">$$
+\sin A:\sin B:\sin C
+$$</div>
+<p>直接换成</p>
+<div class="math-display">$$
+a:b:c.
+$$</div>
+<p>例如若题目给</p>
+<div class="math-display">$$
+\sin A=2\sin B,
+$$</div>
+<p>则可转为</p>
+<div class="math-display">$$
+a=2b.
+$$</div>
+<p>再结合余弦定理、面积公式或三角形不等式继续处理。这就是“边角互换”的核心。</p>
+<h3>6. SSA 多解：为什么会有 0、1、2 个三角形</h3>
+<p>SSA 指已知两边和其中一边的对角，例如已知 $A,a,b$。由正弦定理：</p>
+<div class="math-display">$$
+\sin B=\frac{b\sin A}{a}.
+$$</div>
+<p>如果 $0&lt;\sin B&lt;1$，则 $B$ 可能有两个候选：</p>
+<div class="math-display">$$
+B_1=\arcsin\left(\frac{b\sin A}{a}\right),
+\qquad
+B_2=\pi-B_1.
+$$</div>
+<p>但每个候选都必须检查</p>
+<div class="math-display">$$
+A+B&lt;\pi.
+$$</div>
+<p>也可以用高来判断。若 $A$ 为锐角，令</p>
+<div class="math-display">$$
+h=b\sin A.
+$$</div>
+<p>则：</p>
+<ol><li>$a&lt;h$：无解；</li><li>$a=h$：一解，且出现直角；</li><li>$h&lt;a&lt;b$：两解；</li><li>$a\ge b$：一解。</li></ol>
+<p>若 $A$ 为钝角，则只有当 $a&gt;b$ 时可能一解，否则无解。</p>
+<h3>7. 形状判断、取值范围与综合题</h3>
+<p>解三角形后半段常见综合目标有三类：</p>
+<ol><li><strong>形状判断</strong>：等腰、直角、等边、锐角、钝角。</li><li><strong>取值范围</strong>：面积、边长、比值、角度范围。</li><li><strong>几何综合</strong>：中线、角平分线、外接圆、实际测量、向量投影。</li></ol>
+<p>形状判断常用翻译：</p>
+<ol><li>$a=b$ 等价于 $A=B$；</li><li>$a^2+b^2=c^2$ 表示 $C=90^\circ$；</li><li>$a^2+b^2&lt;c^2$ 表示 $C$ 为钝角；</li><li>$\sin A=\sin B$ 在三角形中可推出 $A=B$，从而 $a=b$。</li></ol>
+<p>取值范围题的基本策略是：先用定理把目标化成一个变量，再利用角范围、三角形不等式或基本不等式求范围。</p>
 <h2>方法识别</h2>
-<p>看到解三角形题，先判断已知类型：</p>
-<ol><li><strong>有一对边角对应</strong>：优先考虑正弦定理。</li><li><strong>有夹角</strong>：优先考虑余弦定理或面积公式。</li><li><strong>有三边</strong>：先用余弦定理求角，再决定面积或其他量。</li><li><strong>求面积</strong>：找“两边夹角”或先通过定理补出夹角。</li><li><strong>问存在性或个数</strong>：重点检查三角形不等式、角和、SSA 歧义。</li></ol>
+<p>解三角形题的第一步不是计算，而是识别已知结构。下面的算法可以作为课堂板书，也可以作为学生讲题时的自查清单。</p>
+<h2>定理选择算法</h2>
+<p>看到题目后，先不要算，先分类：</p>
+<p>| 已知结构 | 优先方法 | 理由 | | --- | --- | --- | | 两角一边 | 正弦定理 | 角和能补第三角，有边角对应 | | 两边夹角 | 余弦定理或面积公式 | 夹角触发 $\cos$ 或 $\sin$ | | 三边 | 余弦定理 | 可直接求角或判断锐钝 | | 两边和非夹角 | 正弦定理，但要查 SSA 多解 | 由正弦值反求角可能不唯一 | | 出现面积 | 面积公式，再联动正余弦定理 | 面积需要两边夹角或等价信息 | | 出现 $\sin A,\sin B$ 比例 | 边角互换 | 正弦定理可把正弦比例换成边比例 | | 问形状或范围 | 先翻译，再判断 | 不要直接套单一公式 |</p>
 <p>失败信号：</p>
-<ul><li>把 $a$ 对应到错误的角；</li><li>由 $\sin B$ 求 $B$ 时只写锐角，漏掉钝角可能；</li><li>用余弦定理求角后没有检查 $\cos$ 的值域；</li><li>已知两边一角就盲目认为唯一；</li><li>面积公式中选的角不是两边夹角。</li></ul>
+<ul><li>不写边角对应，直接代公式；</li><li>已知两边一角就默认唯一；</li><li>由 $\sin B$ 反求 $B$ 时漏掉钝角；</li><li>面积公式选的角不是两边夹角；</li><li>余弦定理算出 $\cos A$ 后不检查范围；</li><li>取值范围题中忘记角必须在 $(0,\pi)$ 内。</li></ul>
 <h2>典型例题</h2>
 <h3>例 1：两角一边</h3>
-<p>在 $\triangle ABC$ 中，已知 $A=45^\circ$，$B=60^\circ$，$a=6$，求 $b$。</p>
-<p>解：由正弦定理</p>
+<p>在 $\triangle ABC$ 中，$A=45^\circ$，$B=60^\circ$，$a=6$，求 $b$。</p>
+<p>解：已有一对边角对应 $(a,A)$，用正弦定理：</p>
 <div class="math-display">$$
-\frac a{\sin A}=\frac b{\sin B},
+\frac a{\sin A}=\frac b{\sin B}.
 $$</div>
-<p>得</p>
+<p>所以</p>
 <div class="math-display">$$
-b=a\frac{\sin B}{\sin A}
-=6\cdot\frac{\sin60^\circ}{\sin45^\circ}
+b=6\cdot\frac{\sin60^\circ}{\sin45^\circ}
 =6\cdot\frac{\sqrt3/2}{\sqrt2/2}
 =3\sqrt6.
 $$</div>
-<p>本题入口是已有一对边角对应 $(a,A)$，又要求另一条边。</p>
 <h3>例 2：两边夹角</h3>
-<p>在 $\triangle ABC$ 中，已知 $b=5$，$c=7$，$A=60^\circ$，求 $a$。</p>
+<p>在 $\triangle ABC$ 中，$b=5$，$c=7$，$A=60^\circ$，求 $a$。</p>
 <p>解：已知两边及夹角，用余弦定理：</p>
 <div class="math-display">$$
 a^2=b^2+c^2-2bc\cos A
-=25+49-70\cdot\frac12=39.
+=25+49-70\cdot\frac12
+=39.
 $$</div>
 <p>所以</p>
 <div class="math-display">$$
 a=\sqrt{39}.
 $$</div>
-<p>不能用正弦定理直接求，因为没有已知的一对边角对应。</p>
-<h3>例 3：面积</h3>
+<h3>例 3：三边求角并判断形状</h3>
+<p>三角形三边为 $4,5,6$，求最大角的余弦值，并判断最大角的锐钝性。</p>
+<p>解：最大角对最大边 $6$。设最大角为 $C$，则</p>
+<div class="math-display">$$
+\cos C=\frac{4^2+5^2-6^2}{2\cdot4\cdot5}
+=\frac{16+25-36}{40}
+=\frac18.
+$$</div>
+<p>因为 $\cos C&gt;0$，所以最大角为锐角，此三角形为锐角三角形。</p>
+<h3>例 4：面积联动</h3>
 <p>在 $\triangle ABC$ 中，$a=8$，$b=6$，$C=30^\circ$，求面积。</p>
-<p>解：角 $C$ 是边 $a,b$ 的夹角，因此</p>
+<p>解：角 $C$ 是边 $a,b$ 的夹角，所以</p>
 <div class="math-display">$$
 S=\frac12ab\sin C
-=\frac12\cdot8\cdot6\cdot\frac12=12.
+=\frac12\cdot8\cdot6\cdot\frac12
+=12.
 $$</div>
-<p>若误用 $\frac12bc\sin A$，就需要先知道 $c$ 和 $A$，会把简单问题绕远。</p>
-<h3>例 4：SSA 的两解可能</h3>
-<p>在 $\triangle ABC$ 中，已知 $a=10$，$b=8$，$A=30^\circ$，求 $B$ 的可能值。</p>
-<p>由正弦定理</p>
+<h3>例 5：边角互换</h3>
+<p>在 $\triangle ABC$ 中，若</p>
 <div class="math-display">$$
-\frac{\sin B}{b}=\frac{\sin A}{a},
+\sin A=2\sin B,\qquad C=60^\circ,\qquad b=3,
 $$</div>
-<p>所以</p>
+<p>求 $a$。</p>
+<p>解：由正弦定理，$\sin A:\sin B=a:b$。所以</p>
+<div class="math-display">$$
+a=2b=6.
+$$</div>
+<p>这里不需要先求角 $A,B$，关键是把正弦比例翻译成边长比例。</p>
+<h3>例 6：SSA 多解</h3>
+<p>在 $\triangle ABC$ 中，$A=30^\circ$，$a=6$，$b=9$。判断可能有几个三角形。</p>
+<p>解：由正弦定理</p>
 <div class="math-display">$$
 \sin B=\frac{b\sin A}{a}
-=\frac{8\cdot1/2}{10}=\frac25.
+=\frac{9\cdot\frac12}{6}
+=\frac34.
 $$</div>
-<p>于是 $B$ 可能为</p>
+<p>因此 $B$ 可能为</p>
 <div class="math-display">$$
-B=\arcsin\frac25
+B_1=\arcsin\frac34,\qquad
+B_2=\pi-\arcsin\frac34.
 $$</div>
-<p>或</p>
-<div class="math-display">$$
-B=\pi-\arcsin\frac25.
-$$</div>
-<p>但还要检查 $A+B&lt;\pi$。两种候选若都满足，就有两解；若只有一个满足，就只有一解。</p>
+<p>因为 $A=30^\circ$，两个候选都需要检查 $A+B&lt;180^\circ$。这里两个候选都满足，所以有两个三角形。</p>
 <h2>自我训练</h2>
-<h3>训练 1</h3>
+<p>下面的训练按“定理选择、面积与边角互换、多解与范围”分层。每题解析都刻意写出为什么选这条路，方便学生用费曼讲题法复述。</p>
+<h2>分层题型训练</h2>
+<h3>A. 正余弦定理选择</h3>
+<h4>训练 1</h4>
 <p>在 $\triangle ABC$ 中，$A=30^\circ$，$B=45^\circ$，$a=4$，求 $b$。</p>
-<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>有一对边角对应 $(a,A)$，用正弦定理：</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>两角一边，有边角对应 $(a,A)$，用正弦定理：</p>
 <div class="math-display">$$
 b=a\frac{\sin B}{\sin A}
-=4\cdot\frac{\sqrt2/2}{1/2}=4\sqrt2.
+=4\cdot\frac{\sqrt2/2}{1/2}
+=4\sqrt2.
 $$</div></div></details>
-<h3>训练 2</h3>
+<h4>训练 2</h4>
 <p>在 $\triangle ABC$ 中，$b=3$，$c=4$，$A=60^\circ$，求 $a$。</p>
-<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>已知两边及夹角，用余弦定理：</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>两边夹角，用余弦定理：</p>
 <div class="math-display">$$
 a^2=3^2+4^2-2\cdot3\cdot4\cdot\frac12=13.
 $$</div>
 <p>所以 $a=\sqrt{13}$。</p></div></details>
-<h3>训练 3</h3>
+<h4>训练 3</h4>
+<p>三角形三边为 $5,6,7$，求最大角的余弦值。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>最大角对最大边 $7$。设最大角为 $C$，则</p>
+<div class="math-display">$$
+\cos C=\frac{5^2+6^2-7^2}{2\cdot5\cdot6}
+=\frac{25+36-49}{60}
+=\frac15.
+$$</div></div></details>
+<h4>训练 4</h4>
+<p>在 $\triangle ABC$ 中，$a=10$，$A=45^\circ$，$B=60^\circ$，求 $b$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>用正弦定理：</p>
+<div class="math-display">$$
+b=10\cdot\frac{\sin60^\circ}{\sin45^\circ}
+=10\cdot\frac{\sqrt3/2}{\sqrt2/2}
+=5\sqrt6.
+$$</div></div></details>
+<h3>B. 面积与边角互换</h3>
+<h4>训练 5</h4>
 <p>在 $\triangle ABC$ 中，$a=5$，$b=6$，$C=120^\circ$，求面积。</p>
 <details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$C$ 是边 $a,b$ 的夹角，所以</p>
 <div class="math-display">$$
@@ -160,29 +269,104 @@ S=\frac12ab\sin C
 =\frac12\cdot5\cdot6\cdot\frac{\sqrt3}{2}
 =\frac{15\sqrt3}{2}.
 $$</div></div></details>
-<h3>训练 4</h3>
-<p>三角形三边为 $5,6,7$，求最大角的余弦值。</p>
-<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>最大角对最大边 7。设最大角为 $C$，则</p>
+<h4>训练 6</h4>
+<p>在 $\triangle ABC$ 中，$b=4$，$c=5$，面积 $S=5\sqrt3$，求 $\sin A$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由</p>
 <div class="math-display">$$
-7^2=5^2+6^2-2\cdot5\cdot6\cos C.
+S=\frac12bc\sin A
+$$</div>
+<p>得</p>
+<div class="math-display">$$
+5\sqrt3=\frac12\cdot4\cdot5\sin A=10\sin A.
 $$</div>
 <p>所以</p>
 <div class="math-display">$$
-49=61-60\cos C,\qquad \cos C=\frac15.
-$$</div></div></details>
-<h3>训练 5</h3>
-<p>在 $\triangle ABC$ 中，$a=6$，$A=30^\circ$，$b=9$。判断求 $B$ 时为什么可能出现两种情况。</p>
-<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由正弦定理</p>
-<div class="math-display">$$
-\sin B=\frac{b\sin A}{a}=\frac{9\cdot1/2}{6}=\frac34.
+\sin A=\frac{\sqrt3}{2}.
 $$</div>
-<p>若 $\sin B=\frac34$，则 $B$ 可以是锐角 $\arcsin\frac34$，也可以是钝角 $\pi-\arcsin\frac34$。因为 $A=30^\circ$，两种候选还要检查 $A+B&lt;180^\circ$。</p></div></details>
-<h3>训练 6</h3>
-<p>在 $\triangle ABC$ 中，$a=7$，$b=8$，$c=20$。这样的三角形是否存在？</p>
-<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>不存在，因为三角形任意两边之和必须大于第三边，而 $7+8=15&lt;20$。这类题不能先套正弦定理或余弦定理，必须先检查存在性。</p></div></details>
+<p>注意这只确定了正弦值，若继续求 $A$，还要检查 $A=60^\circ$ 或 $120^\circ$ 的可能。</p></div></details>
+<h4>训练 7</h4>
+<p>在 $\triangle ABC$ 中，若 $\sin A:\sin B:\sin C=3:4:5$，判断三角形形状。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由正弦定理，</p>
+<div class="math-display">$$
+a:b:c=\sin A:\sin B:\sin C=3:4:5.
+$$</div>
+<p>因为</p>
+<div class="math-display">$$
+3^2+4^2=5^2,
+$$</div>
+<p>所以该三角形为直角三角形，且 $C=90^\circ$。</p></div></details>
+<h4>训练 8</h4>
+<p>在 $\triangle ABC$ 中，$\sin A=2\sin B$，$b=4$，求 $a$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由正弦定理，$\sin A:\sin B=a:b$，所以</p>
+<div class="math-display">$$
+a:b=2:1.
+$$</div>
+<p>又 $b=4$，故</p>
+<div class="math-display">$$
+a=8.
+$$</div></div></details>
+<h3>C. 多解、形状与范围</h3>
+<h4>训练 9</h4>
+<p>在 $\triangle ABC$ 中，$A=30^\circ$，$a=4$，$b=10$。这样的三角形是否存在？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由正弦定理，</p>
+<div class="math-display">$$
+\sin B=\frac{b\sin A}{a}
+=\frac{10\cdot\frac12}{4}
+=\frac54&gt;1.
+$$</div>
+<p>正弦值不能大于 1，所以不存在这样的三角形。</p></div></details>
+<h4>训练 10</h4>
+<p>在 $\triangle ABC$ 中，$A=30^\circ$，$a=5$，$b=6$。判断三角形个数。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>令</p>
+<div class="math-display">$$
+h=b\sin A=6\cdot\frac12=3.
+$$</div>
+<p>因为 $A$ 为锐角，且</p>
+<div class="math-display">$$
+h&lt;a&lt;b,\qquad 3&lt;5&lt;6,
+$$</div>
+<p>所以存在两个三角形。</p></div></details>
+<h4>训练 11</h4>
+<p>在 $\triangle ABC$ 中，若</p>
+<div class="math-display">$$
+a^2=b^2+c^2,
+$$</div>
+<p>判断三角形形状。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由余弦定理</p>
+<div class="math-display">$$
+a^2=b^2+c^2-2bc\cos A.
+$$</div>
+<p>与 $a^2=b^2+c^2$ 比较，得</p>
+<div class="math-display">$$
+-2bc\cos A=0.
+$$</div>
+<p>因为 $b,c&gt;0$，所以 $\cos A=0$，即 $A=90^\circ$。三角形为直角三角形。</p></div></details>
+<h4>训练 12</h4>
+<p>在锐角 $\triangle ABC$ 中，$a=2$，$b=3$，求 $c$ 的取值范围。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>锐角三角形中，最大边的平方小于另外两边平方和。</p>
+<p>首先由三角形不等式：</p>
+<div class="math-display">$$
+1&lt;c&lt;5.
+$$</div>
+<p>又因为 $b=3$ 是已知两边中较大者，要使角 $B$ 为锐角，需要</p>
+<div class="math-display">$$
+b^2&lt;a^2+c^2,
+$$</div>
+<p>即</p>
+<div class="math-display">$$
+9&lt;4+c^2,\qquad c&gt;\sqrt5.
+$$</div>
+<p>若 $c$ 成为最大边，还需</p>
+<div class="math-display">$$
+c^2&lt;a^2+b^2=13,\qquad c&lt;\sqrt{13}.
+$$</div>
+<p>综合得</p>
+<div class="math-display">$$
+\sqrt5&lt;c&lt;\sqrt{13}.
+$$</div></div></details>
 <h2>费曼讲题任务</h2>
-<p>让学生从训练 2、训练 4、训练 5 中任选一题讲解。你重点追问：</p>
-<ol><li>为什么这题用正弦定理或余弦定理？</li><li>已知量里有没有一对边角对应？有没有夹角？</li><li>是否需要检查三角形存在、角的范围或多解？</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">trigonometry</a></li><li>源文件：<code>content/09_high_school_math/02_trigonometry/02_solving_triangles_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-trig-functions-zh.html">三角函数：单位圆、图像与恒等变换</a></h3><p>三角函数的核心不是背 $\sin,\cos,\tan$ 的一堆公式，而是把“角”变成可以运算、比较、作图和变形的函数对象。真正学懂以后，诱导公式、同角关系、图像性质和三角恒等变换都会变成同一套语言。</p></div></div></section></aside></div>
+<p>让学生从训练 3、训练 6、训练 9、训练 12 中任选一题讲解。你重点追问：</p>
+<ol><li>这题的已知结构是什么？两角一边、两边夹角、三边，还是 SSA？</li><li>为什么这一步选正弦定理、余弦定理或面积公式？</li><li>有没有多解、无解或三角形不存在的可能？</li><li>如果把“锐角三角形”改成“一般三角形”，答案会不会变？</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">trigonometry</a></li><li>源文件：<code>content/09_high_school_math/02_trigonometry/02_solving_triangles_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-trig-functions-zh.html">三角函数：从单位圆到图像与恒等变换</a></h3><p>三角函数不是一组需要硬背的公式，而是一条很清楚的链：</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

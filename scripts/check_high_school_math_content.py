@@ -79,9 +79,50 @@ def check_trigonometry_page(path: Path, html_path: Path, errors: list[str]) -> N
         ],
         errors,
     )
+    if path == TRIG_FUNCTION_FILE:
+        require_contains(
+            path,
+            text,
+            [
+                "### 1. 任意角、终边相同角与弧度制",
+                "### 2. 单位圆定义：公式从坐标来",
+                "### 3. 三角函数线：把不等式和大小比较画出来",
+                "### 4. 同角关系与“弦的齐次”",
+                "### 5. 诱导公式：先看位置，再看名称",
+                "### 6. 两角和差公式：从坐标内积推出来",
+                "### 7. 二倍角、降幂与辅助角",
+                "### 8. 图像性质与图像变换",
+                "### 9. 三角方程、最值与参数",
+                "## 分层题型训练",
+                "单位圆与三角函数线",
+                "恒等变换与角的拼凑",
+                "图像性质与参数",
+            ],
+            errors,
+        )
+    if path == SOLVE_TRIANGLES_FILE:
+        require_contains(
+            path,
+            text,
+            [
+                "### 1. 记号系统：先把边角对应钉死",
+                "### 2. 正弦定理：有一对边角对应时建立比例",
+                "### 3. 余弦定理：夹角、三边和锐钝判断",
+                "### 4. 面积公式：把“边边角”转成面积",
+                "### 5. 边角互换：把三角函数式翻译成边的语言",
+                "### 6. SSA 多解：为什么会有 0、1、2 个三角形",
+                "### 7. 形状判断、取值范围与综合题",
+                "## 定理选择算法",
+                "## 分层题型训练",
+                "正余弦定理选择",
+                "面积与边角互换",
+                "多解、形状与范围",
+            ],
+            errors,
+        )
     solution_count = len(SOLUTION_PATTERN.findall(text))
-    if solution_count < 6:
-        errors.append(f"{path.name}: expected at least 6 solution blocks, found {solution_count}")
+    if solution_count < 12:
+        errors.append(f"{path.name}: expected at least 12 solution blocks, found {solution_count}")
     if html_path.exists():
         html = html_path.read_text(encoding="utf-8")
         if "<details class=\"solution-toggle\">" not in html:
