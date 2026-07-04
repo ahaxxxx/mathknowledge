@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import math
 from fractions import Fraction
 from pathlib import Path
 
@@ -51,44 +52,112 @@ def diagram(svg: str) -> str:
 
 
 def area_triangle_svg(a: int, b: int, C: int) -> str:
+    def fmt(value: float) -> str:
+        return f"{value:.1f}".rstrip("0").rstrip(".")
+
+    scale = min(32.0, 270.0 / max(a, 1), 145.0 / max(b, 1))
+    cx, cy = 180.0, 176.0
+    rad = math.radians(C)
+    bx, by = cx + a * scale, cy
+    ax, ay = cx + b * scale * math.cos(rad), cy - b * scale * math.sin(rad)
+
+    xs = [ax, bx, cx]
+    ys = [ay, by, cy]
+    dx = 0.0
+    if min(xs) < 42:
+        dx = 42 - min(xs)
+    if max(xs) + dx > 478:
+        dx -= max(xs) + dx - 478
+    dy = 0.0
+    if min(ys) < 34:
+        dy = 34 - min(ys)
+    if max(ys) + dy > 205:
+        dy -= max(ys) + dy - 205
+    ax, bx, cx = ax + dx, bx + dx, cx + dx
+    ay, by, cy = ay + dy, by + dy, cy + dy
+
+    arc_r = 34
+    arc_start_x, arc_start_y = cx + arc_r, cy
+    arc_end_x = cx + arc_r * math.cos(rad)
+    arc_end_y = cy - arc_r * math.sin(rad)
+    angle_label_x = cx + 46 * math.cos(rad / 2)
+    angle_label_y = cy - 46 * math.sin(rad / 2) + 5
+    side_b_label_x = (ax + cx) / 2 - 34
+    side_b_label_y = (ay + cy) / 2 - 4
     return f"""
 <svg viewBox="0 0 520 230" role="img" aria-label="三角形面积公式示意图">
-  <rect x="1" y="1" width="518" height="228" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
-  <polygon points="96,170 390,170 185,58" fill="rgba(15,109,105,0.08)" stroke="#263247" stroke-width="3"></polygon>
-  <path d="M132 170 A36 36 0 0 1 150 139" fill="none" stroke="#c85c2b" stroke-width="3"></path>
-  <text x="86" y="194" font-size="18" fill="#263247">C</text>
-  <text x="396" y="176" font-size="18" fill="#263247">B</text>
-  <text x="176" y="48" font-size="18" fill="#263247">A</text>
-  <text x="235" y="190" font-size="17" fill="#0f6d69">a = BC = {a}</text>
-  <text x="118" y="108" font-size="17" fill="#0f6d69">b = CA = {b}</text>
-  <text x="143" y="160" font-size="17" fill="#c85c2b">C = {C}°</text>
-  <text x="70" y="24" font-size="15" fill="#596579">面积：S = 1/2 ab sin C，关键是 C 必须是 a 与 b 的夹角</text>
+  <polygon points="{fmt(cx)},{fmt(cy)} {fmt(bx)},{fmt(by)} {fmt(ax)},{fmt(ay)}" fill="rgba(15,109,105,0.08)" stroke="#263247" stroke-width="3"></polygon>
+  <path d="M {fmt(arc_start_x)} {fmt(arc_start_y)} A {arc_r} {arc_r} 0 0 0 {fmt(arc_end_x)} {fmt(arc_end_y)}" fill="none" stroke="#c85c2b" stroke-width="3"></path>
+  <text x="{fmt(ax - 8)}" y="{fmt(ay - 12)}" font-size="18" fill="#263247">A</text>
+  <text x="{fmt(bx + 8)}" y="{fmt(by + 6)}" font-size="18" fill="#263247">B</text>
+  <text x="{fmt(cx - 18)}" y="{fmt(cy + 24)}" font-size="18" fill="#263247">C</text>
+  <text x="{fmt((bx + cx) / 2 - 28)}" y="{fmt(cy + 24)}" font-size="17" fill="#0f6d69">a = {a}</text>
+  <text x="{fmt(side_b_label_x)}" y="{fmt(side_b_label_y)}" font-size="17" fill="#0f6d69">b = {b}</text>
+  <text x="{fmt(angle_label_x)}" y="{fmt(angle_label_y)}" font-size="17" fill="#c85c2b">C = {C}°</text>
 </svg>
 """
 
 
 def ssa_triangle_svg(A: int, a: int, b: int) -> str:
+    def fmt(value: float) -> str:
+        return f"{value:.1f}".rstrip("0").rstrip(".")
+
+    scale = min(24.0, 180.0 / max(a, b, 1))
+    ax, ay = 96.0, 184.0
+    rad = math.radians(A)
+    cx = ax + b * scale * math.cos(rad)
+    cy = ay - b * scale * math.sin(rad)
+    radius = a * scale
+    vertical = abs(ay - cy)
+    candidates: list[tuple[float, str]] = []
+    if radius + 1e-6 >= vertical:
+        horizontal = math.sqrt(max(radius * radius - vertical * vertical, 0.0))
+        for x in sorted({round(cx - horizontal, 6), round(cx + horizontal, 6)}):
+            if x >= ax - 1e-6:
+                candidates.append((x, f"B{len(candidates) + 1}"))
+
+    xs = [ax, cx, ax + 390, cx - radius, cx + radius, *(x for x, _ in candidates)]
+    ys = [ay, cy, cy - radius, cy + radius]
+    dx = 0.0
+    if min(xs) < 36:
+        dx = 36 - min(xs)
+    if max(xs) + dx > 484:
+        dx -= max(xs) + dx - 484
+    dy = 0.0
+    if min(ys) < 36:
+        dy = 36 - min(ys)
+    if max(ys) + dy > 214:
+        dy -= max(ys) + dy - 214
+    ax, cx = ax + dx, cx + dx
+    ay, cy = ay + dy, cy + dy
+    candidates = [(x + dx, label) for x, label in candidates]
+    ray_end_x = min(484.0, ax + 390)
+    ray_end_y = ay
+    angle_end_x = ax + 38 * math.cos(rad)
+    angle_end_y = ay - 38 * math.sin(rad)
+    points_svg = "\n".join(
+        f'  <circle cx="{fmt(x)}" cy="{fmt(ay)}" r="4" fill="#c85c2b"></circle>\n'
+        f'  <text x="{fmt(x - 10)}" y="{fmt(ay + 24)}" font-size="16" fill="#c85c2b">{label}</text>'
+        for x, label in candidates
+    )
+    solution_hint = "无交点" if not candidates else ("一个交点" if len(candidates) == 1 else "两个交点")
     return f"""
 <svg viewBox="0 0 520 240" role="img" aria-label="SSA 多解判断示意图">
-  <rect x="1" y="1" width="518" height="238" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
-  <line x1="82" y1="184" x2="452" y2="184" stroke="#263247" stroke-width="3"></line>
-  <line x1="82" y1="184" x2="270" y2="72" stroke="#263247" stroke-width="3"></line>
-  <circle cx="270" cy="72" r="104" fill="none" stroke="#c85c2b" stroke-width="3" stroke-dasharray="7 7"></circle>
-  <line x1="270" y1="72" x2="270" y2="184" stroke="#0f6d69" stroke-width="2" stroke-dasharray="5 5"></line>
-  <circle cx="82" cy="184" r="4" fill="#263247"></circle>
-  <circle cx="270" cy="72" r="4" fill="#263247"></circle>
-  <circle cx="178" cy="184" r="4" fill="#c85c2b"></circle>
-  <circle cx="374" cy="184" r="4" fill="#c85c2b"></circle>
-  <path d="M120 184 A38 38 0 0 1 115 165" fill="none" stroke="#0f6d69" stroke-width="3"></path>
-  <text x="70" y="208" font-size="18" fill="#263247">A</text>
-  <text x="276" y="66" font-size="18" fill="#263247">C</text>
-  <text x="169" y="208" font-size="16" fill="#c85c2b">B1</text>
-  <text x="365" y="208" font-size="16" fill="#c85c2b">B2</text>
-  <text x="138" y="112" font-size="16" fill="#0f6d69">b = AC = {b}</text>
-  <text x="286" y="126" font-size="16" fill="#0f6d69">h = b sin A</text>
-  <text x="300" y="58" font-size="16" fill="#c85c2b">圆半径 a = BC = {a}</text>
-  <text x="112" y="174" font-size="16" fill="#0f6d69">A = {A}°</text>
-  <text x="58" y="28" font-size="15" fill="#596579">SSA：固定 A 和 b 后，让半径为 a 的圆去截射线 AB，交点数就是解的个数</text>
+  <line x1="{fmt(ax)}" y1="{fmt(ay)}" x2="{fmt(ray_end_x)}" y2="{fmt(ray_end_y)}" stroke="#263247" stroke-width="3"></line>
+  <line x1="{fmt(ax)}" y1="{fmt(ay)}" x2="{fmt(cx)}" y2="{fmt(cy)}" stroke="#263247" stroke-width="3"></line>
+  <circle cx="{fmt(cx)}" cy="{fmt(cy)}" r="{fmt(radius)}" fill="none" stroke="#c85c2b" stroke-width="3" stroke-dasharray="7 7"></circle>
+  <line x1="{fmt(cx)}" y1="{fmt(cy)}" x2="{fmt(cx)}" y2="{fmt(ay)}" stroke="#0f6d69" stroke-width="2" stroke-dasharray="5 5"></line>
+  <circle cx="{fmt(ax)}" cy="{fmt(ay)}" r="4" fill="#263247"></circle>
+  <circle cx="{fmt(cx)}" cy="{fmt(cy)}" r="4" fill="#263247"></circle>
+{points_svg}
+  <path d="M {fmt(ax + 38)} {fmt(ay)} A 38 38 0 0 0 {fmt(angle_end_x)} {fmt(angle_end_y)}" fill="none" stroke="#0f6d69" stroke-width="3"></path>
+  <text x="{fmt(ax - 14)}" y="{fmt(ay + 24)}" font-size="18" fill="#263247">A</text>
+  <text x="{fmt(cx + 8)}" y="{fmt(cy - 8)}" font-size="18" fill="#263247">C</text>
+  <text x="{fmt((ax + cx) / 2 - 28)}" y="{fmt((ay + cy) / 2 - 8)}" font-size="16" fill="#0f6d69">b = {b}</text>
+  <text x="{fmt(cx + 8)}" y="{fmt((cy + ay) / 2)}" font-size="16" fill="#0f6d69">h</text>
+  <text x="{fmt(cx + radius * 0.35)}" y="{fmt(cy - radius * 0.2)}" font-size="16" fill="#c85c2b">a = {a}</text>
+  <text x="{fmt(ax + 44 * math.cos(rad / 2))}" y="{fmt(ay - 44 * math.sin(rad / 2) + 4)}" font-size="16" fill="#0f6d69">A = {A}°</text>
+  <text x="50" y="28" font-size="15" fill="#596579">解析图：以 C 为圆心、a 为半径截射线 AB，得到{solution_hint}</text>
 </svg>
 """
 
@@ -884,9 +953,9 @@ $$""",
             item(
                 no,
                 "SSA 多解判断",
-                rf"在 $\triangle ABC$ 中，$A={A}^\circ,\ a={a},\ b={b}$，判断三角形个数。"
-                + diagram(ssa_triangle_svg(A, a, b)),
-                rf"这是 SSA 情形，要用高或正弦值检查。结论：{ans}。",
+                rf"在 $\triangle ABC$ 中，$A={A}^\circ,\ a={a},\ b={b}$，判断三角形个数。",
+                diagram(ssa_triangle_svg(A, a, b))
+                + rf"这是 SSA 情形，要用高或正弦值检查。结论：{ans}。",
             )
         )
         no += 1

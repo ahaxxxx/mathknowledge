@@ -1501,16 +1501,14 @@ $$
 
 :::diagram
 <svg viewBox="0 0 520 230" role="img" aria-label="三角形面积公式示意图">
-  <rect x="1" y="1" width="518" height="228" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
-  <polygon points="96,170 390,170 185,58" fill="rgba(15,109,105,0.08)" stroke="#263247" stroke-width="3"></polygon>
-  <path d="M132 170 A36 36 0 0 1 150 139" fill="none" stroke="#c85c2b" stroke-width="3"></path>
-  <text x="86" y="194" font-size="18" fill="#263247">C</text>
-  <text x="396" y="176" font-size="18" fill="#263247">B</text>
-  <text x="176" y="48" font-size="18" fill="#263247">A</text>
-  <text x="235" y="190" font-size="17" fill="#0f6d69">a = BC = 5</text>
-  <text x="118" y="108" font-size="17" fill="#0f6d69">b = CA = 6</text>
-  <text x="143" y="160" font-size="17" fill="#c85c2b">C = 120°</text>
-  <text x="70" y="24" font-size="15" fill="#596579">面积：S = 1/2 ab sin C，关键是 C 必须是 a 与 b 的夹角</text>
+  <polygon points="180,176 300.8,176 107.5,50.4" fill="rgba(15,109,105,0.08)" stroke="#263247" stroke-width="3"></polygon>
+  <path d="M 214 176 A 34 34 0 0 0 163 146.6" fill="none" stroke="#c85c2b" stroke-width="3"></path>
+  <text x="99.5" y="38.4" font-size="18" fill="#263247">A</text>
+  <text x="308.8" y="182" font-size="18" fill="#263247">B</text>
+  <text x="162" y="200" font-size="18" fill="#263247">C</text>
+  <text x="212.4" y="200" font-size="17" fill="#0f6d69">a = 5</text>
+  <text x="109.8" y="109.2" font-size="17" fill="#0f6d69">b = 6</text>
+  <text x="203" y="141.2" font-size="17" fill="#c85c2b">C = 120°</text>
 </svg>
 :::
 
@@ -1527,16 +1525,14 @@ $$
 
 :::diagram
 <svg viewBox="0 0 520 230" role="img" aria-label="三角形面积公式示意图">
-  <rect x="1" y="1" width="518" height="228" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
-  <polygon points="96,170 390,170 185,58" fill="rgba(15,109,105,0.08)" stroke="#263247" stroke-width="3"></polygon>
-  <path d="M132 170 A36 36 0 0 1 150 139" fill="none" stroke="#c85c2b" stroke-width="3"></path>
-  <text x="86" y="194" font-size="18" fill="#263247">C</text>
-  <text x="396" y="176" font-size="18" fill="#263247">B</text>
-  <text x="176" y="48" font-size="18" fill="#263247">A</text>
-  <text x="235" y="190" font-size="17" fill="#0f6d69">a = BC = 8</text>
-  <text x="118" y="108" font-size="17" fill="#0f6d69">b = CA = 6</text>
-  <text x="143" y="160" font-size="17" fill="#c85c2b">C = 30°</text>
-  <text x="70" y="24" font-size="15" fill="#596579">面积：S = 1/2 ab sin C，关键是 C 必须是 a 与 b 的夹角</text>
+  <polygon points="180,176 373.3,176 305.6,103.5" fill="rgba(15,109,105,0.08)" stroke="#263247" stroke-width="3"></polygon>
+  <path d="M 214 176 A 34 34 0 0 0 209.4 159" fill="none" stroke="#c85c2b" stroke-width="3"></path>
+  <text x="297.6" y="91.5" font-size="18" fill="#263247">A</text>
+  <text x="381.3" y="182" font-size="18" fill="#263247">B</text>
+  <text x="162" y="200" font-size="18" fill="#263247">C</text>
+  <text x="248.7" y="200" font-size="17" fill="#0f6d69">a = 8</text>
+  <text x="208.8" y="135.8" font-size="17" fill="#0f6d69">b = 6</text>
+  <text x="224.4" y="169.1" font-size="17" fill="#c85c2b">C = 30°</text>
 </svg>
 :::
 
@@ -1553,16 +1549,14 @@ $$
 
 :::diagram
 <svg viewBox="0 0 520 230" role="img" aria-label="三角形面积公式示意图">
-  <rect x="1" y="1" width="518" height="228" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
-  <polygon points="96,170 390,170 185,58" fill="rgba(15,109,105,0.08)" stroke="#263247" stroke-width="3"></polygon>
-  <path d="M132 170 A36 36 0 0 1 150 139" fill="none" stroke="#c85c2b" stroke-width="3"></path>
-  <text x="86" y="194" font-size="18" fill="#263247">C</text>
-  <text x="396" y="176" font-size="18" fill="#263247">B</text>
-  <text x="176" y="48" font-size="18" fill="#263247">A</text>
-  <text x="235" y="190" font-size="17" fill="#0f6d69">a = BC = 4</text>
-  <text x="118" y="108" font-size="17" fill="#0f6d69">b = CA = 5</text>
-  <text x="143" y="160" font-size="17" fill="#c85c2b">C = 60°</text>
-  <text x="70" y="24" font-size="15" fill="#596579">面积：S = 1/2 ab sin C，关键是 C 必须是 a 与 b 的夹角</text>
+  <polygon points="180,176 296,176 252.5,50.4" fill="rgba(15,109,105,0.08)" stroke="#263247" stroke-width="3"></polygon>
+  <path d="M 214 176 A 34 34 0 0 0 197 146.6" fill="none" stroke="#c85c2b" stroke-width="3"></path>
+  <text x="244.5" y="38.4" font-size="18" fill="#263247">A</text>
+  <text x="304" y="182" font-size="18" fill="#263247">B</text>
+  <text x="162" y="200" font-size="18" fill="#263247">C</text>
+  <text x="210" y="200" font-size="17" fill="#0f6d69">a = 4</text>
+  <text x="182.2" y="109.2" font-size="17" fill="#0f6d69">b = 5</text>
+  <text x="219.8" y="158" font-size="17" fill="#c85c2b">C = 60°</text>
 </svg>
 :::
 
@@ -1579,16 +1573,14 @@ $$
 
 :::diagram
 <svg viewBox="0 0 520 230" role="img" aria-label="三角形面积公式示意图">
-  <rect x="1" y="1" width="518" height="228" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
-  <polygon points="96,170 390,170 185,58" fill="rgba(15,109,105,0.08)" stroke="#263247" stroke-width="3"></polygon>
-  <path d="M132 170 A36 36 0 0 1 150 139" fill="none" stroke="#c85c2b" stroke-width="3"></path>
-  <text x="86" y="194" font-size="18" fill="#263247">C</text>
-  <text x="396" y="176" font-size="18" fill="#263247">B</text>
-  <text x="176" y="48" font-size="18" fill="#263247">A</text>
-  <text x="235" y="190" font-size="17" fill="#0f6d69">a = BC = 7</text>
-  <text x="118" y="108" font-size="17" fill="#0f6d69">b = CA = 10</text>
-  <text x="143" y="160" font-size="17" fill="#c85c2b">C = 45°</text>
-  <text x="70" y="24" font-size="15" fill="#596579">面积：S = 1/2 ab sin C，关键是 C 必须是 a 与 b 的夹角</text>
+  <polygon points="180,176 281.5,176 282.5,73.5" fill="rgba(15,109,105,0.08)" stroke="#263247" stroke-width="3"></polygon>
+  <path d="M 214 176 A 34 34 0 0 0 204 152" fill="none" stroke="#c85c2b" stroke-width="3"></path>
+  <text x="274.5" y="61.5" font-size="18" fill="#263247">A</text>
+  <text x="289.5" y="182" font-size="18" fill="#263247">B</text>
+  <text x="162" y="200" font-size="18" fill="#263247">C</text>
+  <text x="202.8" y="200" font-size="17" fill="#0f6d69">a = 7</text>
+  <text x="197.3" y="120.7" font-size="17" fill="#0f6d69">b = 10</text>
+  <text x="222.5" y="163.4" font-size="17" fill="#c85c2b">C = 45°</text>
 </svg>
 :::
 
@@ -1605,16 +1597,14 @@ $$
 
 :::diagram
 <svg viewBox="0 0 520 230" role="img" aria-label="三角形面积公式示意图">
-  <rect x="1" y="1" width="518" height="228" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
-  <polygon points="96,170 390,170 185,58" fill="rgba(15,109,105,0.08)" stroke="#263247" stroke-width="3"></polygon>
-  <path d="M132 170 A36 36 0 0 1 150 139" fill="none" stroke="#c85c2b" stroke-width="3"></path>
-  <text x="86" y="194" font-size="18" fill="#263247">C</text>
-  <text x="396" y="176" font-size="18" fill="#263247">B</text>
-  <text x="176" y="48" font-size="18" fill="#263247">A</text>
-  <text x="235" y="190" font-size="17" fill="#0f6d69">a = BC = 9</text>
-  <text x="118" y="108" font-size="17" fill="#0f6d69">b = CA = 4</text>
-  <text x="143" y="160" font-size="17" fill="#c85c2b">C = 30°</text>
-  <text x="70" y="24" font-size="15" fill="#596579">面积：S = 1/2 ab sin C，关键是 C 必须是 a 与 b 的夹角</text>
+  <polygon points="180,176 450,176 283.9,116" fill="rgba(15,109,105,0.08)" stroke="#263247" stroke-width="3"></polygon>
+  <path d="M 214 176 A 34 34 0 0 0 209.4 159" fill="none" stroke="#c85c2b" stroke-width="3"></path>
+  <text x="275.9" y="104" font-size="18" fill="#263247">A</text>
+  <text x="458" y="182" font-size="18" fill="#263247">B</text>
+  <text x="162" y="200" font-size="18" fill="#263247">C</text>
+  <text x="287" y="200" font-size="17" fill="#0f6d69">a = 9</text>
+  <text x="198" y="142" font-size="17" fill="#0f6d69">b = 4</text>
+  <text x="224.4" y="169.1" font-size="17" fill="#c85c2b">C = 30°</text>
 </svg>
 :::
 
@@ -1629,31 +1619,26 @@ $$
 
 在 $\triangle ABC$ 中，$A=30^\circ,\ a=4,\ b=10$，判断三角形个数。
 
+:::solution 查看解析
 :::diagram
 <svg viewBox="0 0 520 240" role="img" aria-label="SSA 多解判断示意图">
-  <rect x="1" y="1" width="518" height="238" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
-  <line x1="82" y1="184" x2="452" y2="184" stroke="#263247" stroke-width="3"></line>
-  <line x1="82" y1="184" x2="270" y2="72" stroke="#263247" stroke-width="3"></line>
-  <circle cx="270" cy="72" r="104" fill="none" stroke="#c85c2b" stroke-width="3" stroke-dasharray="7 7"></circle>
-  <line x1="270" y1="72" x2="270" y2="184" stroke="#0f6d69" stroke-width="2" stroke-dasharray="5 5"></line>
-  <circle cx="82" cy="184" r="4" fill="#263247"></circle>
-  <circle cx="270" cy="72" r="4" fill="#263247"></circle>
-  <circle cx="178" cy="184" r="4" fill="#c85c2b"></circle>
-  <circle cx="374" cy="184" r="4" fill="#c85c2b"></circle>
-  <path d="M120 184 A38 38 0 0 1 115 165" fill="none" stroke="#0f6d69" stroke-width="3"></path>
-  <text x="70" y="208" font-size="18" fill="#263247">A</text>
-  <text x="276" y="66" font-size="18" fill="#263247">C</text>
-  <text x="169" y="208" font-size="16" fill="#c85c2b">B1</text>
-  <text x="365" y="208" font-size="16" fill="#c85c2b">B2</text>
-  <text x="138" y="112" font-size="16" fill="#0f6d69">b = AC = 10</text>
-  <text x="286" y="126" font-size="16" fill="#0f6d69">h = b sin A</text>
-  <text x="300" y="58" font-size="16" fill="#c85c2b">圆半径 a = BC = 4</text>
-  <text x="112" y="174" font-size="16" fill="#0f6d69">A = 30°</text>
-  <text x="58" y="28" font-size="15" fill="#596579">SSA：固定 A 和 b 后，让半径为 a 的圆去截射线 AB，交点数就是解的个数</text>
+  <line x1="94" y1="198" x2="484" y2="198" stroke="#263247" stroke-width="3"></line>
+  <line x1="94" y1="198" x2="249.9" y2="108" stroke="#263247" stroke-width="3"></line>
+  <circle cx="249.9" cy="108" r="72" fill="none" stroke="#c85c2b" stroke-width="3" stroke-dasharray="7 7"></circle>
+  <line x1="249.9" y1="108" x2="249.9" y2="198" stroke="#0f6d69" stroke-width="2" stroke-dasharray="5 5"></line>
+  <circle cx="94" cy="198" r="4" fill="#263247"></circle>
+  <circle cx="249.9" cy="108" r="4" fill="#263247"></circle>
+
+  <path d="M 132 198 A 38 38 0 0 0 126.9 179" fill="none" stroke="#0f6d69" stroke-width="3"></path>
+  <text x="80" y="222" font-size="18" fill="#263247">A</text>
+  <text x="257.9" y="100" font-size="18" fill="#263247">C</text>
+  <text x="143.9" y="145" font-size="16" fill="#0f6d69">b = 10</text>
+  <text x="257.9" y="153" font-size="16" fill="#0f6d69">h</text>
+  <text x="275.1" y="93.6" font-size="16" fill="#c85c2b">a = 4</text>
+  <text x="136.5" y="190.6" font-size="16" fill="#0f6d69">A = 30°</text>
+  <text x="50" y="28" font-size="15" fill="#596579">解析图：以 C 为圆心、a 为半径截射线 AB，得到无交点</text>
 </svg>
 :::
-
-:::solution 查看解析
 这是 SSA 情形，要用高或正弦值检查。结论：无解，因为 $\sin B=\frac54>1$。
 :::
 
@@ -1661,31 +1646,29 @@ $$
 
 在 $\triangle ABC$ 中，$A=30^\circ,\ a=5,\ b=6$，判断三角形个数。
 
+:::solution 查看解析
 :::diagram
 <svg viewBox="0 0 520 240" role="img" aria-label="SSA 多解判断示意图">
-  <rect x="1" y="1" width="518" height="238" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
-  <line x1="82" y1="184" x2="452" y2="184" stroke="#263247" stroke-width="3"></line>
-  <line x1="82" y1="184" x2="270" y2="72" stroke="#263247" stroke-width="3"></line>
-  <circle cx="270" cy="72" r="104" fill="none" stroke="#c85c2b" stroke-width="3" stroke-dasharray="7 7"></circle>
-  <line x1="270" y1="72" x2="270" y2="184" stroke="#0f6d69" stroke-width="2" stroke-dasharray="5 5"></line>
-  <circle cx="82" cy="184" r="4" fill="#263247"></circle>
-  <circle cx="270" cy="72" r="4" fill="#263247"></circle>
-  <circle cx="178" cy="184" r="4" fill="#c85c2b"></circle>
-  <circle cx="374" cy="184" r="4" fill="#c85c2b"></circle>
-  <path d="M120 184 A38 38 0 0 1 115 165" fill="none" stroke="#0f6d69" stroke-width="3"></path>
-  <text x="70" y="208" font-size="18" fill="#263247">A</text>
-  <text x="276" y="66" font-size="18" fill="#263247">C</text>
-  <text x="169" y="208" font-size="16" fill="#c85c2b">B1</text>
-  <text x="365" y="208" font-size="16" fill="#c85c2b">B2</text>
-  <text x="138" y="112" font-size="16" fill="#0f6d69">b = AC = 6</text>
-  <text x="286" y="126" font-size="16" fill="#0f6d69">h = b sin A</text>
-  <text x="300" y="58" font-size="16" fill="#c85c2b">圆半径 a = BC = 5</text>
-  <text x="112" y="174" font-size="16" fill="#0f6d69">A = 30°</text>
-  <text x="58" y="28" font-size="15" fill="#596579">SSA：固定 A 和 b 后，让半径为 a 的圆去截射线 AB，交点数就是解的个数</text>
+  <line x1="94" y1="166" x2="484" y2="166" stroke="#263247" stroke-width="3"></line>
+  <line x1="94" y1="166" x2="218.7" y2="94" stroke="#263247" stroke-width="3"></line>
+  <circle cx="218.7" cy="94" r="120" fill="none" stroke="#c85c2b" stroke-width="3" stroke-dasharray="7 7"></circle>
+  <line x1="218.7" y1="94" x2="218.7" y2="166" stroke="#0f6d69" stroke-width="2" stroke-dasharray="5 5"></line>
+  <circle cx="94" cy="166" r="4" fill="#263247"></circle>
+  <circle cx="218.7" cy="94" r="4" fill="#263247"></circle>
+  <circle cx="122.7" cy="166" r="4" fill="#c85c2b"></circle>
+  <text x="112.7" y="190" font-size="16" fill="#c85c2b">B1</text>
+  <circle cx="314.7" cy="166" r="4" fill="#c85c2b"></circle>
+  <text x="304.7" y="190" font-size="16" fill="#c85c2b">B2</text>
+  <path d="M 132 166 A 38 38 0 0 0 126.9 147" fill="none" stroke="#0f6d69" stroke-width="3"></path>
+  <text x="80" y="190" font-size="18" fill="#263247">A</text>
+  <text x="226.7" y="86" font-size="18" fill="#263247">C</text>
+  <text x="128.4" y="122" font-size="16" fill="#0f6d69">b = 6</text>
+  <text x="226.7" y="130" font-size="16" fill="#0f6d69">h</text>
+  <text x="260.7" y="70" font-size="16" fill="#c85c2b">a = 5</text>
+  <text x="136.5" y="158.6" font-size="16" fill="#0f6d69">A = 30°</text>
+  <text x="50" y="28" font-size="15" fill="#596579">解析图：以 C 为圆心、a 为半径截射线 AB，得到两个交点</text>
 </svg>
 :::
-
-:::solution 查看解析
 这是 SSA 情形，要用高或正弦值检查。结论：两解，因为高 $h=3$，且 $h<a<b$。
 :::
 
@@ -1693,31 +1676,29 @@ $$
 
 在 $\triangle ABC$ 中，$A=30^\circ,\ a=3,\ b=6$，判断三角形个数。
 
+:::solution 查看解析
 :::diagram
 <svg viewBox="0 0 520 240" role="img" aria-label="SSA 多解判断示意图">
-  <rect x="1" y="1" width="518" height="238" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
-  <line x1="82" y1="184" x2="452" y2="184" stroke="#263247" stroke-width="3"></line>
-  <line x1="82" y1="184" x2="270" y2="72" stroke="#263247" stroke-width="3"></line>
-  <circle cx="270" cy="72" r="104" fill="none" stroke="#c85c2b" stroke-width="3" stroke-dasharray="7 7"></circle>
-  <line x1="270" y1="72" x2="270" y2="184" stroke="#0f6d69" stroke-width="2" stroke-dasharray="5 5"></line>
-  <circle cx="82" cy="184" r="4" fill="#263247"></circle>
-  <circle cx="270" cy="72" r="4" fill="#263247"></circle>
-  <circle cx="178" cy="184" r="4" fill="#c85c2b"></circle>
-  <circle cx="374" cy="184" r="4" fill="#c85c2b"></circle>
-  <path d="M120 184 A38 38 0 0 1 115 165" fill="none" stroke="#0f6d69" stroke-width="3"></path>
-  <text x="70" y="208" font-size="18" fill="#263247">A</text>
-  <text x="276" y="66" font-size="18" fill="#263247">C</text>
-  <text x="169" y="208" font-size="16" fill="#c85c2b">B1</text>
-  <text x="365" y="208" font-size="16" fill="#c85c2b">B2</text>
-  <text x="138" y="112" font-size="16" fill="#0f6d69">b = AC = 6</text>
-  <text x="286" y="126" font-size="16" fill="#0f6d69">h = b sin A</text>
-  <text x="300" y="58" font-size="16" fill="#c85c2b">圆半径 a = BC = 3</text>
-  <text x="112" y="174" font-size="16" fill="#0f6d69">A = 30°</text>
-  <text x="58" y="28" font-size="15" fill="#596579">SSA：固定 A 和 b 后，让半径为 a 的圆去截射线 AB，交点数就是解的个数</text>
+  <line x1="94" y1="184" x2="484" y2="184" stroke="#263247" stroke-width="3"></line>
+  <line x1="94" y1="184" x2="218.7" y2="112" stroke="#263247" stroke-width="3"></line>
+  <circle cx="218.7" cy="112" r="72" fill="none" stroke="#c85c2b" stroke-width="3" stroke-dasharray="7 7"></circle>
+  <line x1="218.7" y1="112" x2="218.7" y2="184" stroke="#0f6d69" stroke-width="2" stroke-dasharray="5 5"></line>
+  <circle cx="94" cy="184" r="4" fill="#263247"></circle>
+  <circle cx="218.7" cy="112" r="4" fill="#263247"></circle>
+  <circle cx="218.7" cy="184" r="4" fill="#c85c2b"></circle>
+  <text x="208.7" y="208" font-size="16" fill="#c85c2b">B1</text>
+  <circle cx="218.7" cy="184" r="4" fill="#c85c2b"></circle>
+  <text x="208.7" y="208" font-size="16" fill="#c85c2b">B2</text>
+  <path d="M 132 184 A 38 38 0 0 0 126.9 165" fill="none" stroke="#0f6d69" stroke-width="3"></path>
+  <text x="80" y="208" font-size="18" fill="#263247">A</text>
+  <text x="226.7" y="104" font-size="18" fill="#263247">C</text>
+  <text x="128.4" y="140" font-size="16" fill="#0f6d69">b = 6</text>
+  <text x="226.7" y="148" font-size="16" fill="#0f6d69">h</text>
+  <text x="243.9" y="97.6" font-size="16" fill="#c85c2b">a = 3</text>
+  <text x="136.5" y="176.6" font-size="16" fill="#0f6d69">A = 30°</text>
+  <text x="50" y="28" font-size="15" fill="#596579">解析图：以 C 为圆心、a 为半径截射线 AB，得到两个交点</text>
 </svg>
 :::
-
-:::solution 查看解析
 这是 SSA 情形，要用高或正弦值检查。结论：一解，因为 $a=h=3$。
 :::
 
@@ -1725,31 +1706,27 @@ $$
 
 在 $\triangle ABC$ 中，$A=120^\circ,\ a=5,\ b=4$，判断三角形个数。
 
+:::solution 查看解析
 :::diagram
 <svg viewBox="0 0 520 240" role="img" aria-label="SSA 多解判断示意图">
-  <rect x="1" y="1" width="518" height="238" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
-  <line x1="82" y1="184" x2="452" y2="184" stroke="#263247" stroke-width="3"></line>
-  <line x1="82" y1="184" x2="270" y2="72" stroke="#263247" stroke-width="3"></line>
-  <circle cx="270" cy="72" r="104" fill="none" stroke="#c85c2b" stroke-width="3" stroke-dasharray="7 7"></circle>
-  <line x1="270" y1="72" x2="270" y2="184" stroke="#0f6d69" stroke-width="2" stroke-dasharray="5 5"></line>
-  <circle cx="82" cy="184" r="4" fill="#263247"></circle>
-  <circle cx="270" cy="72" r="4" fill="#263247"></circle>
-  <circle cx="178" cy="184" r="4" fill="#c85c2b"></circle>
-  <circle cx="374" cy="184" r="4" fill="#c85c2b"></circle>
-  <path d="M120 184 A38 38 0 0 1 115 165" fill="none" stroke="#0f6d69" stroke-width="3"></path>
-  <text x="70" y="208" font-size="18" fill="#263247">A</text>
-  <text x="276" y="66" font-size="18" fill="#263247">C</text>
-  <text x="169" y="208" font-size="16" fill="#c85c2b">B1</text>
-  <text x="365" y="208" font-size="16" fill="#c85c2b">B2</text>
-  <text x="138" y="112" font-size="16" fill="#0f6d69">b = AC = 4</text>
-  <text x="286" y="126" font-size="16" fill="#0f6d69">h = b sin A</text>
-  <text x="300" y="58" font-size="16" fill="#c85c2b">圆半径 a = BC = 5</text>
-  <text x="112" y="174" font-size="16" fill="#0f6d69">A = 120°</text>
-  <text x="58" y="28" font-size="15" fill="#596579">SSA：固定 A 和 b 后，让半径为 a 的圆去截射线 AB，交点数就是解的个数</text>
+  <line x1="94" y1="177.1" x2="484" y2="177.1" stroke="#263247" stroke-width="3"></line>
+  <line x1="94" y1="177.1" x2="46" y2="94" stroke="#263247" stroke-width="3"></line>
+  <circle cx="46" cy="94" r="120" fill="none" stroke="#c85c2b" stroke-width="3" stroke-dasharray="7 7"></circle>
+  <line x1="46" y1="94" x2="46" y2="177.1" stroke="#0f6d69" stroke-width="2" stroke-dasharray="5 5"></line>
+  <circle cx="94" cy="177.1" r="4" fill="#263247"></circle>
+  <circle cx="46" cy="94" r="4" fill="#263247"></circle>
+  <circle cx="132.5" cy="177.1" r="4" fill="#c85c2b"></circle>
+  <text x="122.5" y="201.1" font-size="16" fill="#c85c2b">B1</text>
+  <path d="M 132 177.1 A 38 38 0 0 0 75 144.2" fill="none" stroke="#0f6d69" stroke-width="3"></path>
+  <text x="80" y="201.1" font-size="18" fill="#263247">A</text>
+  <text x="54" y="86" font-size="18" fill="#263247">C</text>
+  <text x="42" y="127.6" font-size="16" fill="#0f6d69">b = 4</text>
+  <text x="54" y="135.6" font-size="16" fill="#0f6d69">h</text>
+  <text x="88" y="70" font-size="16" fill="#c85c2b">a = 5</text>
+  <text x="116" y="143" font-size="16" fill="#0f6d69">A = 120°</text>
+  <text x="50" y="28" font-size="15" fill="#596579">解析图：以 C 为圆心、a 为半径截射线 AB，得到一个交点</text>
 </svg>
 :::
-
-:::solution 查看解析
 这是 SSA 情形，要用高或正弦值检查。结论：一解，因为钝角 $A$ 已知且 $a>b$。
 :::
 
@@ -1757,31 +1734,27 @@ $$
 
 在 $\triangle ABC$ 中，$A=30^\circ,\ a=8,\ b=4$，判断三角形个数。
 
+:::solution 查看解析
 :::diagram
 <svg viewBox="0 0 520 240" role="img" aria-label="SSA 多解判断示意图">
-  <rect x="1" y="1" width="518" height="238" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
-  <line x1="82" y1="184" x2="452" y2="184" stroke="#263247" stroke-width="3"></line>
-  <line x1="82" y1="184" x2="270" y2="72" stroke="#263247" stroke-width="3"></line>
-  <circle cx="270" cy="72" r="104" fill="none" stroke="#c85c2b" stroke-width="3" stroke-dasharray="7 7"></circle>
-  <line x1="270" y1="72" x2="270" y2="184" stroke="#0f6d69" stroke-width="2" stroke-dasharray="5 5"></line>
-  <circle cx="82" cy="184" r="4" fill="#263247"></circle>
-  <circle cx="270" cy="72" r="4" fill="#263247"></circle>
-  <circle cx="178" cy="184" r="4" fill="#c85c2b"></circle>
-  <circle cx="374" cy="184" r="4" fill="#c85c2b"></circle>
-  <path d="M120 184 A38 38 0 0 1 115 165" fill="none" stroke="#0f6d69" stroke-width="3"></path>
-  <text x="70" y="208" font-size="18" fill="#263247">A</text>
-  <text x="276" y="66" font-size="18" fill="#263247">C</text>
-  <text x="169" y="208" font-size="16" fill="#c85c2b">B1</text>
-  <text x="365" y="208" font-size="16" fill="#c85c2b">B2</text>
-  <text x="138" y="112" font-size="16" fill="#0f6d69">b = AC = 4</text>
-  <text x="286" y="126" font-size="16" fill="#0f6d69">h = b sin A</text>
-  <text x="300" y="58" font-size="16" fill="#c85c2b">圆半径 a = BC = 8</text>
-  <text x="112" y="174" font-size="16" fill="#0f6d69">A = 30°</text>
-  <text x="58" y="28" font-size="15" fill="#596579">SSA：固定 A 和 b 后，让半径为 a 的圆去截射线 AB，交点数就是解的个数</text>
+  <line x1="94" y1="79" x2="484" y2="79" stroke="#263247" stroke-width="3"></line>
+  <line x1="94" y1="79" x2="171.9" y2="34" stroke="#263247" stroke-width="3"></line>
+  <circle cx="171.9" cy="34" r="180" fill="none" stroke="#c85c2b" stroke-width="3" stroke-dasharray="7 7"></circle>
+  <line x1="171.9" y1="34" x2="171.9" y2="79" stroke="#0f6d69" stroke-width="2" stroke-dasharray="5 5"></line>
+  <circle cx="94" cy="79" r="4" fill="#263247"></circle>
+  <circle cx="171.9" cy="34" r="4" fill="#263247"></circle>
+  <circle cx="346.2" cy="79" r="4" fill="#c85c2b"></circle>
+  <text x="336.2" y="103" font-size="16" fill="#c85c2b">B1</text>
+  <path d="M 132 79 A 38 38 0 0 0 126.9 60" fill="none" stroke="#0f6d69" stroke-width="3"></path>
+  <text x="80" y="103" font-size="18" fill="#263247">A</text>
+  <text x="179.9" y="26" font-size="18" fill="#263247">C</text>
+  <text x="105" y="48.5" font-size="16" fill="#0f6d69">b = 4</text>
+  <text x="179.9" y="56.5" font-size="16" fill="#0f6d69">h</text>
+  <text x="234.9" y="-2" font-size="16" fill="#c85c2b">a = 8</text>
+  <text x="136.5" y="71.6" font-size="16" fill="#0f6d69">A = 30°</text>
+  <text x="50" y="28" font-size="15" fill="#596579">解析图：以 C 为圆心、a 为半径截射线 AB，得到一个交点</text>
 </svg>
 :::
-
-:::solution 查看解析
 这是 SSA 情形，要用高或正弦值检查。结论：一解，因为 $a>b$，对边更长，另一边不会再摆出第二个交点。
 :::
 
