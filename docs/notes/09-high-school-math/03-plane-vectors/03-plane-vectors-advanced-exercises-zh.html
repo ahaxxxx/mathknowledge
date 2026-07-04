@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>平面向量进阶题库：本地资料梳理与高考题型补充 | math.bozhanli.com</title>
+  <meta name="description" content="这一页把本地考点 56、57、58 的平面向量资料整理成一套进阶题库，并补充数量积、投影、轨迹与范围等高考常见题型。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">平面向量</a><span>/</span><span>平面向量进阶题库：本地资料梳理与高考题型补充</span></div>
+      <h1>平面向量进阶题库：本地资料梳理与高考题型补充</h1>
+      <p>这一页把本地考点 56、57、58 的平面向量资料整理成一套进阶题库，并补充数量积、投影、轨迹与范围等高考常见题型。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><p>返回专题首页：<a href="index.html">平面向量</a>。基础题入口：<a href="02-plane-vectors-exercises-zh.html">平面向量专项练习</a>。</p>
+<p>这一页不是把题目原样堆上来，而是先把本地资料中的题型结构抽出来，再重新写成适合课堂讲解和课后复述的题库。学生做题时不要只算答案，要能说出：这道题到底把哪个几何关系翻译成了向量关系。</p>
+<h2>本地资料梳理</h2>
+<p>当前文件夹中可用的平面向量资料主要来自 <code>考点讲解2021年高考数学复习一轮复习笔记（65个考点讲解全）</code>，对应三组资料：</p>
+<ol><li>考点 56：平面向量的线性运算及基本定理。重点是相等向量、共线向量、线性表示、基底分解、分点和参数。</li><li>考点 57：平面向量数量积。重点是数量积计算、夹角、投影、垂直、长度平方和参数。</li><li>考点 58：平面向量的应用。重点是判断三角形形状、向量与几何图形结合、最值范围和简单轨迹。</li></ol>
+<p>网上资料补充时，我主要校验了三个标准对象：线性组合、数量积、向量投影。可以把它们看成三条主线：</p>
+<ol><li>线性组合：把几何图形中的点和线段放进同一组基底里。</li><li>数量积：把夹角、垂直、投影、长度平方统一成一个代数运算。</li><li>投影：把“一个方向上的分量”从图形语言转成数量积公式。</li></ol>
+<p>参考入口：<a href="https://en.wikipedia.org/wiki/Linear_combination">linear combination</a>、<a href="https://en.wikipedia.org/wiki/Dot_product">dot product</a>、<a href="https://en.wikipedia.org/wiki/Vector_projection">vector projection</a>。</p>
+<h2>题型地图</h2>
+<ol><li>看到“向量相等、单位向量、命题真假”，先回到定义，不要拿长度代替方向。</li><li>看到“点在线段上、三点共线、分点”，优先设基底，把点写成 $\overrightarrow{AP}=x\overrightarrow{AB}+y\overrightarrow{AC}$。</li><li>看到“夹角、垂直、投影、长度”，优先想到数量积。</li><li>看到“最值、范围、轨迹”，把目标写成平方或坐标，再看二次函数、距离公式或圆。</li><li>看到“三角形形状”，把等腰、直角、钝角、等边翻译成长度平方和数量积。</li></ol>
+<h2>A. 线性运算、相等向量与命题辨析</h2>
+<h3>题 1：向量命题真假</h3>
+<p>判断下列命题的真假，并写出错误命题的序号。</p>
+<ol><li>两个有公共起点的非零向量一定共线。</li><li>若 $\vec a=\vec b$，则 $|\vec a|=|\vec b|$。</li><li>若 $|\vec a|=|\vec b|$，则 $\vec a=\vec b$。</li><li>若 $\lambda \vec a=\vec 0$ 且 $\vec a\ne \vec 0$，则 $\lambda=0$。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>命题 1 错。公共起点只说明两支箭头从同一点出发，不说明方向相同或相反。</p>
+<p>命题 2 对。相等向量要求长度相等、方向相同，所以模一定相等。</p>
+<p>命题 3 错。长度相等不代表方向相同。</p>
+<p>命题 4 对。非零向量乘一个实数得到零向量，只能是实数为 0。</p>
+<p>所以错误命题是 1 和 3。</p></div></details>
+<h3>题 2：单位向量与投影</h3>
+<p>已知 $\vec a,\vec b$ 都是单位向量，且夹角为 $120^\circ$。求 $|\vec a+\vec b|$，并求 $\vec a$ 在 $\vec b$ 方向上的投影。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>先算数量积：</p>
+<div class="math-display">$$
+\vec a\cdot\vec b=|\vec a||\vec b|\cos120^\circ=-\frac12.
+$$</div>
+<p>于是</p>
+<div class="math-display">$$
+|\vec a+\vec b|^2
+=|\vec a|^2+|\vec b|^2+2\vec a\cdot\vec b
+=1+1-1=1,
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+|\vec a+\vec b|=1.
+$$</div>
+<p>$\vec a$ 在 $\vec b$ 方向上的投影是有符号长度：</p>
+<div class="math-display">$$
+\frac{\vec a\cdot\vec b}{|\vec b|}=-\frac12.
+$$</div></div></details>
+<h3>题 3：首尾相接与反向</h3>
+<p>在四边形 $ABCD$ 中，化简</p>
+<div class="math-display">$$
+\overrightarrow{AB}+\overrightarrow{BC}-\overrightarrow{DC}.
+$$</div>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>先把减法变成加反向量：</p>
+<div class="math-display">$$
+-\overrightarrow{DC}=\overrightarrow{CD}.
+$$</div>
+<p>所以原式为</p>
+<div class="math-display">$$
+\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CD}.
+$$</div>
+<p>首尾相接：</p>
+<div class="math-display">$$
+\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC},
+$$</div>
+<p>再接上 $\overrightarrow{CD}$：</p>
+<div class="math-display">$$
+\overrightarrow{AC}+\overrightarrow{CD}=\overrightarrow{AD}.
+$$</div>
+<p>答案是 $\overrightarrow{AD}$。</p></div></details>
+<h3>题 4：由线性关系判断方向</h3>
+<p>已知 $\vec b\ne \vec 0$，且</p>
+<div class="math-display">$$
+2\vec a-3\vec b=\vec 0.
+$$</div>
+<p>判断 $\vec a,\vec b$ 是否共线，并说明方向关系。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由题意</p>
+<div class="math-display">$$
+2\vec a=3\vec b,
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\vec a=\frac32\vec b.
+$$</div>
+<p>一个向量是另一个非零向量的实数倍，所以二者共线。因为系数 $\frac32&gt;0$，所以方向相同。</p></div></details>
+<h3>题 5：平行四边形中的对角线</h3>
+<p>在平行四边形 $ABCD$ 中，设 $\overrightarrow{AB}=\vec a,\overrightarrow{AD}=\vec b$，$O$ 是对角线交点。用 $\vec a,\vec b$ 表示 $\overrightarrow{AO}$ 和 $\overrightarrow{BD}$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>平行四边形对角线互相平分，所以</p>
+<div class="math-display">$$
+\overrightarrow{AC}=\vec a+\vec b,\qquad
+\overrightarrow{AO}=\frac12\overrightarrow{AC}
+=\frac{\vec a+\vec b}{2}.
+$$</div>
+<p>从 $B$ 到 $D$ 可以走 $B\to A\to D$：</p>
+<div class="math-display">$$
+\overrightarrow{BD}
+=\overrightarrow{BA}+\overrightarrow{AD}
+=-\vec a+\vec b
+=\vec b-\vec a.
+$$</div></div></details>
+<h2>B. 基底分解、分点与参数表示</h2>
+<h3>题 6：内分点表示</h3>
+<p>在 $\triangle ABC$ 中，$D$ 在 $BC$ 上，且 $BD:DC=2:1$。设 $\overrightarrow{AB}=\vec b,\overrightarrow{AC}=\vec c$，用 $\vec b,\vec c$ 表示 $\overrightarrow{AD}$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$BD:DC=2:1$，说明 $D$ 更靠近 $C$，从 $B$ 到 $C$ 走了全程的 $\frac23$。</p>
+<div class="math-display">$$
+\overrightarrow{AD}
+=\overrightarrow{AB}+\overrightarrow{BD}
+=\vec b+\frac23\overrightarrow{BC}.
+$$</div>
+<p>而</p>
+<div class="math-display">$$
+\overrightarrow{BC}=\overrightarrow{AC}-\overrightarrow{AB}
+=\vec c-\vec b.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\overrightarrow{AD}
+=\vec b+\frac23(\vec c-\vec b)
+=\frac13\vec b+\frac23\vec c.
+$$</div></div></details>
+<h3>题 7：两边分点连线</h3>
+<p>在 $\triangle ABC$ 中，点 $E$ 在 $AB$ 上，$AE:EB=1:2$；点 $F$ 在 $AC$ 上，$AF:FC=2:1$。设 $\overrightarrow{AB}=\vec b,\overrightarrow{AC}=\vec c$，求 $\overrightarrow{EF}$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由 $AE:EB=1:2$ 得</p>
+<div class="math-display">$$
+\overrightarrow{AE}=\frac13\vec b.
+$$</div>
+<p>由 $AF:FC=2:1$ 得</p>
+<div class="math-display">$$
+\overrightarrow{AF}=\frac23\vec c.
+$$</div>
+<p>于是</p>
+<div class="math-display">$$
+\overrightarrow{EF}
+=\overrightarrow{AF}-\overrightarrow{AE}
+=-\frac13\vec b+\frac23\vec c.
+$$</div></div></details>
+<h3>题 8：重心向量</h3>
+<p>在 $\triangle ABC$ 中，$G$ 是重心。设 $\overrightarrow{AB}=\vec b,\overrightarrow{AC}=\vec c$，求 $\overrightarrow{AG}$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>以 $A$ 为原点理解，$B$ 的位置向量是 $\vec b$，$C$ 的位置向量是 $\vec c$，$A$ 的位置向量是 $\vec 0$。</p>
+<p>重心的位置向量是三个顶点位置向量的平均：</p>
+<div class="math-display">$$
+\overrightarrow{AG}
+=\frac{\vec 0+\vec b+\vec c}{3}
+=\frac{\vec b+\vec c}{3}.
+$$</div></div></details>
+<h3>题 9：平行四边形边上中点</h3>
+<p>在平行四边形 $ABCD$ 中，$\overrightarrow{AB}=\vec a,\overrightarrow{AD}=\vec b$。点 $E$ 是 $BC$ 的中点，求 $\overrightarrow{AE}$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为 $BC\parallel AD$ 且相等，所以</p>
+<div class="math-display">$$
+\overrightarrow{BC}=\vec b.
+$$</div>
+<p>点 $E$ 是 $BC$ 的中点：</p>
+<div class="math-display">$$
+\overrightarrow{BE}=\frac12\vec b.
+$$</div>
+<p>于是</p>
+<div class="math-display">$$
+\overrightarrow{AE}
+=\overrightarrow{AB}+\overrightarrow{BE}
+=\vec a+\frac12\vec b.
+$$</div></div></details>
+<h3>题 10：中线上的参数</h3>
+<p>在 $\triangle ABC$ 中，点 $P$ 在从 $A$ 到 $BC$ 中点 $M$ 的中线段上。设</p>
+<div class="math-display">$$
+\overrightarrow{AP}=x\overrightarrow{AB}+y\overrightarrow{AC}.
+$$</div>
+<p>说明 $x,y$ 满足什么关系。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>先写出中点 $M$：</p>
+<div class="math-display">$$
+\overrightarrow{AM}
+=\frac{\overrightarrow{AB}+\overrightarrow{AC}}2.
+$$</div>
+<p>因为 $P$ 在中线段 $AM$ 上，所以存在 $0\le t\le 1$，使</p>
+<div class="math-display">$$
+\overrightarrow{AP}=t\overrightarrow{AM}
+=\frac t2\overrightarrow{AB}+\frac t2\overrightarrow{AC}.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+x=y,\qquad 0\le x=y\le \frac12.
+$$</div></div></details>
+<h2>C. 共线、三点共线与取值范围</h2>
+<h3>题 11：非共线基底下的共线参数</h3>
+<p>已知 $\vec a,\vec b$ 不共线，</p>
+<div class="math-display">$$
+\vec u=\vec a+(t-1)\vec b,\qquad
+\vec v=2\vec a+(3t-1)\vec b.
+$$</div>
+<p>若 $\vec u\parallel \vec v$，求 $t$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>在基底 $\vec a,\vec b$ 下，两个向量共线等价于对应系数成比例，即</p>
+<div class="math-display">$$
+\begin{vmatrix}
+1 &amp; t-1\\
+2 &amp; 3t-1
+\end{vmatrix}=0.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+1(3t-1)-2(t-1)=0,
+$$</div>
+<p>即</p>
+<div class="math-display">$$
+3t-1-2t+2=0.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+t=-1.
+$$</div></div></details>
+<h3>题 12：点在边上的判定</h3>
+<p>在 $\triangle ABC$ 中，设</p>
+<div class="math-display">$$
+\overrightarrow{AP}=x\overrightarrow{AB}+y\overrightarrow{AC}.
+$$</div>
+<p>写出 $P$ 在直线 $BC$ 上、在线段 $BC$ 上分别对应的条件。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>点在直线 $BC$ 上时，可以写成</p>
+<div class="math-display">$$
+\overrightarrow{AP}=(1-s)\overrightarrow{AB}+s\overrightarrow{AC}
+$$</div>
+<p>其中 $s$ 为实数。</p>
+<p>所以直线 $BC$ 上的条件是</p>
+<div class="math-display">$$
+x+y=1.
+$$</div>
+<p>如果 $P$ 在线段 $BC$ 上，还要 $0\le s\le 1$，也就是两个权重都非负：</p>
+<div class="math-display">$$
+x+y=1,\qquad x\ge0,\qquad y\ge0.
+$$</div></div></details>
+<h3>题 13：平行线中的比例</h3>
+<p>在 $\triangle ABC$ 中，$P$ 在 $AB$ 上，$AP:PB=m:1$；$Q$ 在 $AC$ 上，$AQ:QC=2:3$。若 $PQ\parallel BC$，求 $m$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>设 $\overrightarrow{AB}=\vec b,\overrightarrow{AC}=\vec c$。</p>
+<p>由 $AP:PB=m:1$ 得</p>
+<div class="math-display">$$
+\overrightarrow{AP}=\frac{m}{m+1}\vec b.
+$$</div>
+<p>由 $AQ:QC=2:3$ 得</p>
+<div class="math-display">$$
+\overrightarrow{AQ}=\frac25\vec c.
+$$</div>
+<p>于是</p>
+<div class="math-display">$$
+\overrightarrow{PQ}
+=-\frac{m}{m+1}\vec b+\frac25\vec c.
+$$</div>
+<p>又</p>
+<div class="math-display">$$
+\overrightarrow{BC}=-\vec b+\vec c.
+$$</div>
+<p>若 $PQ\parallel BC$，两个系数要按同一比例对应：</p>
+<div class="math-display">$$
+\frac{m}{m+1}=\frac25.
+$$</div>
+<p>解得</p>
+<div class="math-display">$$
+5m=2m+2,\qquad m=\frac23.
+$$</div></div></details>
+<h3>题 14：延长线上的系数</h3>
+<p>在 $\triangle ABC$ 中，点 $P$ 在 $BC$ 的延长线上，且在 $C$ 的外侧。若</p>
+<div class="math-display">$$
+\overrightarrow{AP}=x\overrightarrow{AB}+y\overrightarrow{AC},
+$$</div>
+<p>写出 $x,y$ 应满足的条件。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>点在直线 $BC$ 上，先有</p>
+<div class="math-display">$$
+x+y=1.
+$$</div>
+<p>如果 $P$ 在 $C$ 的外侧，说明从 $B$ 到 $C$ 的参数超过 1：</p>
+<div class="math-display">$$
+\overrightarrow{AP}=(1-s)\overrightarrow{AB}+s\overrightarrow{AC},\qquad s&gt;1.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+y&gt;1,\qquad x=1-y&lt;0.
+$$</div>
+<p>条件可以写成</p>
+<div class="math-display">$$
+x+y=1,\qquad x&lt;0,\qquad y&gt;1.
+$$</div></div></details>
+<h3>题 15：三角形内部点的范围</h3>
+<p>在 $\triangle ABC$ 中，</p>
+<div class="math-display">$$
+\overrightarrow{AP}=m\overrightarrow{AB}+(2-3m)\overrightarrow{AC}.
+$$</div>
+<p>若 $P$ 在 $\triangle ABC$ 的内部，求 $m$ 的取值范围。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>若</p>
+<div class="math-display">$$
+\overrightarrow{AP}=x\overrightarrow{AB}+y\overrightarrow{AC},
+$$</div>
+<p>则 $P$ 在三角形内部的条件是</p>
+<div class="math-display">$$
+x&gt;0,\qquad y&gt;0,\qquad x+y&lt;1.
+$$</div>
+<p>本题中</p>
+<div class="math-display">$$
+x=m,\qquad y=2-3m.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+m&gt;0,\qquad 2-3m&gt;0,\qquad m+2-3m&lt;1.
+$$</div>
+<p>整理得</p>
+<div class="math-display">$$
+m&gt;0,\qquad m&lt;\frac23,\qquad m&gt;\frac12.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+\frac12&lt;m&lt;\frac23.
+$$</div></div></details>
+<h2>D. 坐标法、数量积与夹角</h2>
+<h3>题 16：坐标数量积</h3>
+<p>已知 $\vec a=(2,-1),\vec b=(1,3)$，求 $\vec a\cdot\vec b$ 以及两向量夹角的余弦值。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>数量积为</p>
+<div class="math-display">$$
+\vec a\cdot\vec b=2\cdot1+(-1)\cdot3=-1.
+$$</div>
+<p>模长为</p>
+<div class="math-display">$$
+|\vec a|=\sqrt5,\qquad |\vec b|=\sqrt{10}.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+\cos\theta
+=\frac{\vec a\cdot\vec b}{|\vec a||\vec b|}
+=-\frac{1}{\sqrt{50}}.
+$$</div></div></details>
+<h3>题 17：坐标判断直角</h3>
+<p>已知 $A(1,1),B(4,1),C(4,5)$。求 $\angle ABC$ 的大小。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>角 $ABC$ 的两条边对应向量是</p>
+<div class="math-display">$$
+\overrightarrow{BA}=A-B=(-3,0),
+$$</div>
+<div class="math-display">$$
+\overrightarrow{BC}=C-B=(0,4).
+$$</div>
+<p>数量积</p>
+<div class="math-display">$$
+\overrightarrow{BA}\cdot\overrightarrow{BC}=(-3)\cdot0+0\cdot4=0.
+$$</div>
+<p>所以两向量垂直，</p>
+<div class="math-display">$$
+\angle ABC=90^\circ.
+$$</div></div></details>
+<h3>题 18：参数垂直</h3>
+<p>已知 $\vec a=(1,2),\vec b=(t,-1)$。若 $\vec a\perp\vec b$，求 $t$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>垂直等价于数量积为 0：</p>
+<div class="math-display">$$
+\vec a\cdot\vec b=1\cdot t+2\cdot(-1)=t-2.
+$$</div>
+<p>令</p>
+<div class="math-display">$$
+t-2=0,
+$$</div>
+<p>得</p>
+<div class="math-display">$$
+t=2.
+$$</div></div></details>
+<h3>题 19：夹角为 $60^\circ$</h3>
+<p>已知 $\vec a=(2,0),\vec b=(1,t)$，若 $\vec a,\vec b$ 的夹角为 $60^\circ$，求 $t$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>先写余弦公式：</p>
+<div class="math-display">$$
+\cos60^\circ
+=\frac{\vec a\cdot\vec b}{|\vec a||\vec b|}.
+$$</div>
+<p>其中</p>
+<div class="math-display">$$
+\vec a\cdot\vec b=2,\qquad
+|\vec a|=2,\qquad
+|\vec b|=\sqrt{1+t^2}.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\frac12=\frac{2}{2\sqrt{1+t^2}}
+=\frac1{\sqrt{1+t^2}}.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+\sqrt{1+t^2}=2,\qquad t^2=3.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+t=\pm\sqrt3.
+$$</div></div></details>
+<h3>题 20：组合向量的数量积</h3>
+<p>已知 $\vec a=(1,2),\vec b=(2,-1)$，求</p>
+<div class="math-display">$$
+(2\vec a-\vec b)\cdot(\vec a+\vec b).
+$$</div>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>先观察：</p>
+<div class="math-display">$$
+\vec a\cdot\vec b=1\cdot2+2\cdot(-1)=0,
+$$</div>
+<p>并且</p>
+<div class="math-display">$$
+|\vec a|^2=5,\qquad |\vec b|^2=5.
+$$</div>
+<p>展开：</p>
+<div class="math-display">$$
+(2\vec a-\vec b)\cdot(\vec a+\vec b)
+=2|\vec a|^2+2\vec a\cdot\vec b-\vec b\cdot\vec a-|\vec b|^2.
+$$</div>
+<p>代入得</p>
+<div class="math-display">$$
+2\cdot5+0-0-5=5.
+$$</div></div></details>
+<h2>E. 投影、垂直与长度平方</h2>
+<h3>题 21：投影长度和投影向量</h3>
+<p>已知 $\vec a=(3,4),\vec b=(1,0)$。求 $\vec a$ 在 $\vec b$ 方向上的投影长度，并求 $\vec a$ 在 $\vec b$ 方向上的投影向量。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$\vec b$ 是 $x$ 轴正方向单位向量，所以可以直接看出投影长度是 3。</p>
+<p>用公式验证：</p>
+<div class="math-display">$$
+\frac{\vec a\cdot\vec b}{|\vec b|}
+=\frac{3}{1}=3.
+$$</div>
+<p>投影向量为</p>
+<div class="math-display">$$
+\frac{\vec a\cdot\vec b}{|\vec b|^2}\vec b
+=3(1,0)=(3,0).
+$$</div></div></details>
+<h3>题 22：加一个倍数使垂直</h3>
+<p>已知 $\vec a=(2,1),\vec b=(1,1)$。求实数 $k$，使</p>
+<div class="math-display">$$
+\vec a+k\vec b\perp \vec b.
+$$</div>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>垂直等价于数量积为 0：</p>
+<div class="math-display">$$
+(\vec a+k\vec b)\cdot\vec b=0.
+$$</div>
+<p>展开：</p>
+<div class="math-display">$$
+\vec a\cdot\vec b+k|\vec b|^2=0.
+$$</div>
+<p>计算</p>
+<div class="math-display">$$
+\vec a\cdot\vec b=3,\qquad |\vec b|^2=2.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+3+2k=0,\qquad k=-\frac32.
+$$</div></div></details>
+<h3>题 23：长度平方展开</h3>
+<p>已知 $|\vec a|=3,|\vec b|=2$，且 $\vec a,\vec b$ 的夹角为 $60^\circ$。求 $|2\vec a-\vec b|$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>先算</p>
+<div class="math-display">$$
+\vec a\cdot\vec b=|\vec a||\vec b|\cos60^\circ=3.
+$$</div>
+<p>然后展开长度平方：</p>
+<div class="math-display">$$
+|2\vec a-\vec b|^2
+=(2\vec a-\vec b)\cdot(2\vec a-\vec b).
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+|2\vec a-\vec b|^2
+=4|\vec a|^2-4\vec a\cdot\vec b+|\vec b|^2
+=36-12+4=28.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+|2\vec a-\vec b|=2\sqrt7.
+$$</div></div></details>
+<h3>题 24：距离平方和最小</h3>
+<p>已知 $A(-1,0),B(3,0)$，点 $P=(x,2)$ 在直线 $y=2$ 上。求</p>
+<div class="math-display">$$
+|PA|^2+|PB|^2
+$$</div>
+<p>的最小值。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>设 $AB$ 的中点为 $M(1,0)$。有恒等式</p>
+<div class="math-display">$$
+|PA|^2+|PB|^2
+=2|PM|^2+\frac12|AB|^2.
+$$</div>
+<p>这里</p>
+<div class="math-display">$$
+|AB|=4,\qquad |PM|^2=(x-1)^2+4.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+|PA|^2+|PB|^2
+=2[(x-1)^2+4]+8.
+$$</div>
+<p>当 $x=1$ 时最小，最小值为</p>
+<div class="math-display">$$
+2\cdot4+8=16.
+$$</div></div></details>
+<h3>题 25：中线长度</h3>
+<p>在 $\triangle ABC$ 中，$AB=5,AC=7,\angle BAC=60^\circ$。$M$ 是 $BC$ 的中点，求 $AM$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>令</p>
+<div class="math-display">$$
+\vec u=\overrightarrow{AB},\qquad \vec v=\overrightarrow{AC}.
+$$</div>
+<p>则</p>
+<div class="math-display">$$
+\overrightarrow{AM}=\frac{\vec u+\vec v}{2}.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+AM^2=\frac14|\vec u+\vec v|^2
+=\frac14(|\vec u|^2+|\vec v|^2+2\vec u\cdot\vec v).
+$$</div>
+<p>而</p>
+<div class="math-display">$$
+\vec u\cdot\vec v=5\cdot7\cos60^\circ=\frac{35}{2}.
+$$</div>
+<p>于是</p>
+<div class="math-display">$$
+AM^2=\frac14(25+49+35)=\frac{109}{4}.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+AM=\frac{\sqrt{109}}2.
+$$</div></div></details>
+<h2>F. 向量与三角形形状判断</h2>
+<h3>题 26：坐标判断三角形形状</h3>
+<p>已知 $A(0,0),B(4,0),C(1,\sqrt{15})$。判断 $\triangle ABC$ 的形状。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>计算三边平方：</p>
+<div class="math-display">$$
+AB^2=16.
+$$</div>
+<div class="math-display">$$
+AC^2=1^2+(\sqrt{15})^2=16.
+$$</div>
+<div class="math-display">$$
+BC^2=(1-4)^2+(\sqrt{15}-0)^2=9+15=24.
+$$</div>
+<p>所以 $AB=AC$，但不满足直角关系。因此 $\triangle ABC$ 是等腰三角形。</p></div></details>
+<h3>题 27：由数量积等式判断等腰</h3>
+<p>在 $\triangle ABC$ 中，若</p>
+<div class="math-display">$$
+(\overrightarrow{AB}+\overrightarrow{AC})\cdot
+(\overrightarrow{AB}-\overrightarrow{AC})=0,
+$$</div>
+<p>判断三角形形状。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>利用平方差结构：</p>
+<div class="math-display">$$
+(\vec u+\vec v)\cdot(\vec u-\vec v)
+=|\vec u|^2-|\vec v|^2.
+$$</div>
+<p>令 $\vec u=\overrightarrow{AB},\vec v=\overrightarrow{AC}$，题设变成</p>
+<div class="math-display">$$
+AB^2-AC^2=0.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+AB=AC.
+$$</div>
+<p>因此 $\triangle ABC$ 是以 $A$ 为顶点的等腰三角形。</p></div></details>
+<h3>题 28：等腰直角</h3>
+<p>在 $\triangle ABC$ 中，若</p>
+<div class="math-display">$$
+\overrightarrow{AB}\cdot\overrightarrow{AC}=0,
+\qquad
+|\overrightarrow{AB}|=|\overrightarrow{AC}|,
+$$</div>
+<p>判断 $\triangle ABC$ 的形状。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>数量积为 0 说明</p>
+<div class="math-display">$$
+AB\perp AC.
+$$</div>
+<p>又因为</p>
+<div class="math-display">$$
+AB=AC,
+$$</div>
+<p>所以 $\angle A=90^\circ$，且两条直角边相等。</p>
+<p>因此 $\triangle ABC$ 是以 $A$ 为直角顶点的等腰直角三角形。</p></div></details>
+<h3>题 29：由数量积判断等边</h3>
+<p>在 $\triangle ABC$ 中，已知</p>
+<div class="math-display">$$
+|\overrightarrow{AB}|=|\overrightarrow{AC}|=2,
+\qquad
+\overrightarrow{AB}\cdot\overrightarrow{AC}=2.
+$$</div>
+<p>判断 $\triangle ABC$ 的形状。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>设 $\angle BAC=\theta$，则</p>
+<div class="math-display">$$
+\overrightarrow{AB}\cdot\overrightarrow{AC}
+=|\overrightarrow{AB}||\overrightarrow{AC}|\cos\theta.
+$$</div>
+<p>代入：</p>
+<div class="math-display">$$
+2=2\cdot2\cos\theta,
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\cos\theta=\frac12,\qquad \theta=60^\circ.
+$$</div>
+<p>两边相等且夹角为 $60^\circ$，第三边也为 2，所以三角形为等边三角形。</p></div></details>
+<h3>题 30：钝角判断</h3>
+<p>在 $\triangle ABC$ 中，若</p>
+<div class="math-display">$$
+\overrightarrow{AB}\cdot\overrightarrow{AC}&lt;0,
+$$</div>
+<p>说明 $\angle A$ 的类型，并判断三角形形状。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>数量积公式为</p>
+<div class="math-display">$$
+\overrightarrow{AB}\cdot\overrightarrow{AC}
+=AB\cdot AC\cdot \cos A.
+$$</div>
+<p>因为 $AB,AC&gt;0$，所以数量积的符号由 $\cos A$ 决定。</p>
+<p>题设数量积小于 0，说明</p>
+<div class="math-display">$$
+\cos A&lt;0.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+90^\circ&lt;A&lt;180^\circ.
+$$</div>
+<p>$\triangle ABC$ 是钝角三角形，钝角为 $\angle A$。</p></div></details>
+<h2>G. 向量应用：最值、范围与轨迹</h2>
+<h3>题 31：带参数的长度范围</h3>
+<p>已知 $\vec a,\vec b$ 都是单位向量，夹角为 $120^\circ$。当 $0\le t\le2$ 时，求</p>
+<div class="math-display">$$
+|\vec a+t\vec b|
+$$</div>
+<p>的取值范围。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>先平方：</p>
+<div class="math-display">$$
+|\vec a+t\vec b|^2
+=|\vec a|^2+t^2|\vec b|^2+2t\vec a\cdot\vec b.
+$$</div>
+<p>因为</p>
+<div class="math-display">$$
+\vec a\cdot\vec b=\cos120^\circ=-\frac12,
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+|\vec a+t\vec b|^2
+=1+t^2-t
+=\left(t-\frac12\right)^2+\frac34.
+$$</div>
+<p>当 $0\le t\le2$ 时，平方的最小值在 $t=\frac12$ 处，为 $\frac34$。</p>
+<p>最大值比较端点：</p>
+<div class="math-display">$$
+t=0\Rightarrow 1,\qquad t=2\Rightarrow 3.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\frac{\sqrt3}{2}\le |\vec a+t\vec b|\le \sqrt3.
+$$</div></div></details>
+<h3>题 32：直径所对圆周角</h3>
+<p>已知 $A(0,0),B(4,0)$。动点 $P(x,y)$ 满足</p>
+<div class="math-display">$$
+\overrightarrow{PA}\cdot\overrightarrow{PB}=0.
+$$</div>
+<p>求点 $P$ 的轨迹方程。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>先写向量：</p>
+<div class="math-display">$$
+\overrightarrow{PA}=A-P=(-x,-y),
+$$</div>
+<div class="math-display">$$
+\overrightarrow{PB}=B-P=(4-x,-y).
+$$</div>
+<p>数量积为 0：</p>
+<div class="math-display">$$
+(-x)(4-x)+(-y)(-y)=0.
+$$</div>
+<p>整理：</p>
+<div class="math-display">$$
+x^2-4x+y^2=0.
+$$</div>
+<p>配方：</p>
+<div class="math-display">$$
+(x-2)^2+y^2=4.
+$$</div>
+<p>所以轨迹是以 $(2,0)$ 为圆心、半径为 2 的圆。几何意义是：以 $AB$ 为直径的圆上，$\angle APB=90^\circ$。</p></div></details>
+<h3>题 33：点到直线的最短距离</h3>
+<p>点 $P(x,y)$ 在直线 $x+y=4$ 上。求 $|\overrightarrow{OP}|^2=x^2+y^2$ 的最小值。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>要让 $x^2+y^2$ 最小，就是找直线 $x+y=4$ 上离原点最近的点。</p>
+<p>最近点在法向量方向上。直线 $x+y=4$ 的法向量是 $(1,1)$，所以最近点形如</p>
+<div class="math-display">$$
+P=(t,t).
+$$</div>
+<p>代入直线：</p>
+<div class="math-display">$$
+2t=4,\qquad t=2.
+$$</div>
+<p>所以最近点是 $(2,2)$，最小值为</p>
+<div class="math-display">$$
+2^2+2^2=8.
+$$</div></div></details>
+<h3>题 34：夹角变化时的长度范围</h3>
+<p>已知 $|\vec a|=2,|\vec b|=3$，$\vec a,\vec b$ 的夹角可以变化。求</p>
+<div class="math-display">$$
+|\vec a+\vec b|
+$$</div>
+<p>的取值范围。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>设夹角为 $\theta$，则</p>
+<div class="math-display">$$
+|\vec a+\vec b|^2
+=|\vec a|^2+|\vec b|^2+2|\vec a||\vec b|\cos\theta.
+$$</div>
+<p>代入：</p>
+<div class="math-display">$$
+|\vec a+\vec b|^2=4+9+12\cos\theta.
+$$</div>
+<p>因为</p>
+<div class="math-display">$$
+-1\le\cos\theta\le1,
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+1\le|\vec a+\vec b|^2\le25.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+1\le|\vec a+\vec b|\le5.
+$$</div></div></details>
+<h3>题 35：点在线段上时的最短距离</h3>
+<p>在 $\triangle ABC$ 中，$AB=6,AC=8,\angle BAC=60^\circ$。点 $P$ 在线段 $BC$ 上，求 $AP$ 的最小值。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>点 $P$ 在线段 $BC$ 上，$AP$ 的最小值就是 $A$ 到直线 $BC$ 的距离。先求面积：</p>
+<div class="math-display">$$
+S_{\triangle ABC}
+=\frac12\cdot AB\cdot AC\cdot\sin60^\circ
+=\frac12\cdot6\cdot8\cdot\frac{\sqrt3}{2}
+=12\sqrt3.
+$$</div>
+<p>再求 $BC$：</p>
+<div class="math-display">$$
+BC^2=6^2+8^2-2\cdot6\cdot8\cos60^\circ
+=36+64-48=52.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+BC=2\sqrt{13}.
+$$</div>
+<p>设高为 $h$，则</p>
+<div class="math-display">$$
+S=\frac12BC\cdot h.
+$$</div>
+<p>于是</p>
+<div class="math-display">$$
+h=\frac{2S}{BC}
+=\frac{24\sqrt3}{2\sqrt{13}}
+=12\sqrt{\frac3{13}}.
+$$</div>
+<p>所以 $AP$ 的最小值为</p>
+<div class="math-display">$$
+12\sqrt{\frac3{13}}.
+$$</div></div></details>
+<h2>H. 高考小题速度训练</h2>
+<h3>题 36：共线填空</h3>
+<p>已知 $\vec a=(m,2),\vec b=(3,6)$，若 $\vec a\parallel\vec b$，求 $m$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>共线等价于坐标行列式为 0：</p>
+<div class="math-display">$$
+6m-2\cdot3=0.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+6m-6=0,\qquad m=1.
+$$</div></div></details>
+<h3>题 37：单位向量差的长度</h3>
+<p>已知 $|\vec a|=|\vec b|=1$，且 $\vec a\cdot\vec b=\frac12$。求 $|\vec a-\vec b|$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>平方：</p>
+<div class="math-display">$$
+|\vec a-\vec b|^2
+=|\vec a|^2+|\vec b|^2-2\vec a\cdot\vec b.
+$$</div>
+<p>代入：</p>
+<div class="math-display">$$
+|\vec a-\vec b|^2
+=1+1-2\cdot\frac12=1.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+|\vec a-\vec b|=1.
+$$</div></div></details>
+<h3>题 38：中点位置向量</h3>
+<p>已知 $A(1,2),B(5,6)$，$M$ 是 $AB$ 的中点。求 $\overrightarrow{OM}$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>中点坐标为</p>
+<div class="math-display">$$
+M\left(\frac{1+5}{2},\frac{2+6}{2}\right)=(3,4).
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\overrightarrow{OM}=(3,4).
+$$</div></div></details>
+<h3>题 39：由系数读线段比</h3>
+<p>在 $\triangle ABC$ 中，</p>
+<div class="math-display">$$
+\overrightarrow{AP}
+=\frac14\overrightarrow{AB}
++\frac34\overrightarrow{AC}.
+$$</div>
+<p>判断 $P$ 在哪条边上，并求 $BP:PC$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>两个系数相加：</p>
+<div class="math-display">$$
+\frac14+\frac34=1.
+$$</div>
+<p>所以 $P$ 在直线 $BC$ 上；两个系数都非负，所以 $P$ 在线段 $BC$ 上。</p>
+<p>把式子写成</p>
+<div class="math-display">$$
+\overrightarrow{AP}
+=(1-s)\overrightarrow{AB}+s\overrightarrow{AC}.
+$$</div>
+<p>可见</p>
+<div class="math-display">$$
+s=\frac34.
+$$</div>
+<p>这表示从 $B$ 到 $C$ 走了全程的 $\frac34$，所以</p>
+<div class="math-display">$$
+BP:PC=3:1.
+$$</div></div></details>
+<h3>题 40：由数量积判断同向</h3>
+<p>已知 $|\vec a|=2,|\vec b|=1$，且</p>
+<div class="math-display">$$
+\vec a\cdot(\vec a-2\vec b)=0.
+$$</div>
+<p>求 $\vec a,\vec b$ 的夹角。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>展开题设：</p>
+<div class="math-display">$$
+\vec a\cdot\vec a-2\vec a\cdot\vec b=0.
+$$</div>
+<p>即</p>
+<div class="math-display">$$
+|\vec a|^2=2\vec a\cdot\vec b.
+$$</div>
+<p>因为 $|\vec a|=2$，所以</p>
+<div class="math-display">$$
+4=2\vec a\cdot\vec b,
+$$</div>
+<p>从而</p>
+<div class="math-display">$$
+\vec a\cdot\vec b=2.
+$$</div>
+<p>设夹角为 $\theta$：</p>
+<div class="math-display">$$
+\vec a\cdot\vec b=|\vec a||\vec b|\cos\theta
+=2\cdot1\cdot\cos\theta.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+2=2\cos\theta,\qquad \cos\theta=1.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+\theta=0^\circ.
+$$</div></div></details>
+<h2>使用建议</h2>
+<ol><li>A、B、C 三组适合在讲完“基底与共线”之后当天布置。</li><li>D、E 两组适合在讲完数量积之后布置，要求学生每题都说出“数量积翻译了什么”。</li><li>F、G 两组适合周日 2 小时课做综合讲评。</li><li>H 组适合作为上课前 10 分钟口算或小测，训练题型识别速度。</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">平面向量</a></li><li>源文件：<code>content/09_high_school_math/03_plane_vectors/03_plane_vectors_advanced_exercises_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-plane-vectors-zh.html">平面向量：从几何语言到代数工具</a></h3><p>平面向量研究的不是“箭头怎么画”，而是：怎样把平面上的长度、方向、平移、夹角、垂直和共线，用统一的代数对象表达出来。它连接三角函数、解三角形、解析几何和立体几何，是高中数学里很典型的工具型模块。</p></div><div class="note-item"><h3><a href="02-plane-vectors-exercises-zh.html">平面向量专项练习</a></h3><p>返回讲义：[平面向量：从几何语言到代数工具](./01_plane_vectors_zh.md)。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

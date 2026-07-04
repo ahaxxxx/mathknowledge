@@ -285,3 +285,5 @@ $$
 4. 如果把中点改成三等分点、把垂直改成夹角，方法怎样变化？
 
 专项练习入口：[平面向量专项练习](./02_plane_vectors_exercises_zh.md)。
+
+进阶题库入口：[平面向量进阶题库：本地资料梳理与高考题型补充](./03_plane_vectors_advanced_exercises_zh.md)。

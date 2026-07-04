@@ -17,6 +17,7 @@ TRIG_README_FILE = CONTENT_DIR / "02_trigonometry" / "README.md"
 VECTOR_README_FILE = CONTENT_DIR / "03_plane_vectors" / "README.md"
 VECTOR_LESSON_FILE = CONTENT_DIR / "03_plane_vectors" / "01_plane_vectors_zh.md"
 VECTOR_EXERCISES_FILE = CONTENT_DIR / "03_plane_vectors" / "02_plane_vectors_exercises_zh.md"
+VECTOR_ADVANCED_EXERCISES_FILE = CONTENT_DIR / "03_plane_vectors" / "03_plane_vectors_advanced_exercises_zh.md"
 
 SOLUTION_PATTERN = re.compile(r"^:::solution\b", re.MULTILINE)
 
@@ -187,6 +188,7 @@ def check_plane_vectors(errors: list[str]) -> None:
                 "# 平面向量",
                 "平面向量：从几何语言到代数工具",
                 "平面向量专项练习：每类至少 5 题",
+                "平面向量进阶题库：本地资料梳理与高考题型补充",
             ],
             errors,
         )
@@ -237,6 +239,41 @@ def check_plane_vectors(errors: list[str]) -> None:
         if html_solution_count < 30:
             errors.append(
                 f"{html_path.name}: expected at least 30 generated solution toggles, found {html_solution_count}"
+            )
+
+    advanced = read_utf8(VECTOR_ADVANCED_EXERCISES_FILE, errors)
+    if advanced:
+        require_contains(
+            VECTOR_ADVANCED_EXERCISES_FILE,
+            advanced,
+            [
+                "# 平面向量进阶题库：本地资料梳理与高考题型补充",
+                "## 本地资料梳理",
+                "## 题型地图",
+                "## A. 线性运算、相等向量与命题辨析",
+                "## B. 基底分解、分点与参数表示",
+                "## C. 共线、三点共线与取值范围",
+                "## D. 坐标法、数量积与夹角",
+                "## E. 投影、垂直与长度平方",
+                "## F. 向量与三角形形状判断",
+                "## G. 向量应用：最值、范围与轨迹",
+                "## H. 高考小题速度训练",
+            ],
+            errors,
+        )
+        solution_count = len(SOLUTION_PATTERN.findall(advanced))
+        if solution_count < 40:
+            errors.append(
+                f"{VECTOR_ADVANCED_EXERCISES_FILE.name}: expected at least 40 solution blocks, found {solution_count}"
+            )
+
+    advanced_html_path = OUTPUT_DIR / "03-plane-vectors" / "03-plane-vectors-advanced-exercises-zh.html"
+    if advanced_html_path.exists():
+        html = advanced_html_path.read_text(encoding="utf-8")
+        html_solution_count = html.count("<details class=\"solution-toggle\">")
+        if html_solution_count < 40:
+            errors.append(
+                f"{advanced_html_path.name}: expected at least 40 generated solution toggles, found {html_solution_count}"
             )
 
 

@@ -8,6 +8,7 @@
 
 1. [平面向量：从几何语言到代数工具](./01_plane_vectors_zh.md)
 2. [平面向量专项练习：每类至少 5 题](./02_plane_vectors_exercises_zh.md)
+3. [平面向量进阶题库：本地资料梳理与高考题型补充](./03_plane_vectors_advanced_exercises_zh.md)
 
 ## 课堂顺序建议
 
