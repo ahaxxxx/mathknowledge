@@ -12,6 +12,7 @@ OUTPUT_DIR = ROOT / "docs" / "notes" / "09-high-school-math"
 SUMMATION_FILE = CONTENT_DIR / "01_sequences" / "02_summation_zh.md"
 TRIG_FUNCTION_FILE = CONTENT_DIR / "02_trigonometry" / "01_trig_functions_zh.md"
 SOLVE_TRIANGLES_FILE = CONTENT_DIR / "02_trigonometry" / "02_solving_triangles_zh.md"
+TRIG_EXERCISE_BANK_FILE = CONTENT_DIR / "02_trigonometry" / "03_trig_exercise_bank_zh.md"
 TRIG_README_FILE = CONTENT_DIR / "02_trigonometry" / "README.md"
 
 SOLUTION_PATTERN = re.compile(r"^:::solution\b", re.MULTILINE)
@@ -131,6 +132,41 @@ def check_trigonometry_page(path: Path, html_path: Path, errors: list[str]) -> N
             errors.append(f"{html_path.name}: generated HTML leaked an unrendered Markdown table")
 
 
+def check_trigonometry_exercise_bank(errors: list[str]) -> None:
+    text = read_utf8(TRIG_EXERCISE_BANK_FILE, errors)
+    if not text:
+        return
+    require_contains(
+        TRIG_EXERCISE_BANK_FILE,
+        text,
+        [
+            "# 三角专题分层题库",
+            "## A. 三角函数定义与单位圆",
+            "## B. 同角关系与弦的齐次",
+            "## C. 诱导公式与恒等变换",
+            "## D. 三角函数图像性质",
+            "## E. 正余弦定理与解三角形",
+            "## 使用建议",
+        ],
+        errors,
+    )
+    solution_count = len(SOLUTION_PATTERN.findall(text))
+    if solution_count < 100:
+        errors.append(
+            f"{TRIG_EXERCISE_BANK_FILE.name}: expected at least 100 solution blocks, found {solution_count}"
+        )
+    html_path = OUTPUT_DIR / "02-trigonometry" / "03-trig-exercise-bank-zh.html"
+    if html_path.exists():
+        html = html_path.read_text(encoding="utf-8")
+        html_solution_count = html.count("<details class=\"solution-toggle\">")
+        if html_solution_count < 100:
+            errors.append(
+                f"{html_path.name}: expected at least 100 generated solution toggles, found {html_solution_count}"
+            )
+        if re.search(r"<p>\s*\|", html):
+            errors.append(f"{html_path.name}: generated HTML leaked an unrendered Markdown table")
+
+
 def main() -> int:
     errors: list[str] = []
     check_summation(errors)
@@ -145,6 +181,10 @@ def main() -> int:
         OUTPUT_DIR / "02-trigonometry" / "02-solving-triangles-zh.html",
         errors,
     )
+    check_trigonometry_exercise_bank(errors)
+    readme = read_utf8(TRIG_README_FILE, errors)
+    if readme and "03_trig_exercise_bank_zh.md" not in readme:
+        errors.append("README.md: missing trigonometry exercise bank link")
 
     if errors:
         print("High-school math content check failed:")

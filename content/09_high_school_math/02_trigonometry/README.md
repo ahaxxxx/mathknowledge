@@ -8,6 +8,7 @@
 
 1. [三角函数：单位圆、图像与恒等变换](./01_trig_functions_zh.md)
 2. [解三角形：正弦定理、余弦定理与面积](./02_solving_triangles_zh.md)
+3. [三角专题分层题库：104 道课堂精选题](./03_trig_exercise_bank_zh.md)
 
 ## 课堂顺序建议
 
