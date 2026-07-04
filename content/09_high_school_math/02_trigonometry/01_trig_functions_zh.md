@@ -296,6 +296,34 @@ $$
 
 它是向右平移 $\frac\pi6$，不是 $\frac\pi3$。
 
+单调区间不要直接背变形后的结论。核心做法是设
+
+$$
+u=\omega x+\varphi,
+$$
+
+先把 $u$ 放回母函数的单调区间，再解关于 $x$ 的不等式。常用母函数区间是：
+
+1. $\sin u$ 在 $\left[-\frac\pi2+2k\pi,\frac\pi2+2k\pi\right]$ 上递增，在 $\left[\frac\pi2+2k\pi,\frac{3\pi}2+2k\pi\right]$ 上递减；
+2. $\cos u$ 在 $\left[-\pi+2k\pi,2k\pi\right]$ 上递增，在 $\left[2k\pi,\pi+2k\pi\right]$ 上递减；
+3. $\tan u$ 在 $\left(-\frac\pi2+k\pi,\frac\pi2+k\pi\right)$ 上递增。
+
+如果前面有负号，例如 $-2\sin u+1$，递增和递减要互换；如果 $\omega<0$，解不等式时方向也要跟着改变。
+
+对称轴和对称中心也不是另一套新公式，而是把母函数的特殊位置搬到 $u=\omega x+\varphi$ 里：
+
+1. $y=A\sin u+b$：对称轴来自峰谷，$u=\frac\pi2+k\pi$；对称中心来自零点，$u=k\pi$，中心纵坐标是 $b$。
+2. $y=A\cos u+b$：对称轴来自峰谷，$u=k\pi$；对称中心来自零点，$u=\frac\pi2+k\pi$，中心纵坐标是 $b$。
+3. $y=A\tan u+b$：没有对称轴；对称中心来自 $u=k\pi$，中心纵坐标是 $b$。
+
+由图像反求解析式时，先从最高点和最低点读出
+
+$$
+|A|=\frac{y_{\max}-y_{\min}}2,\qquad b=\frac{y_{\max}+y_{\min}}2,
+$$
+
+再由周期读出 $|\omega|=\frac{2\pi}{T}$，最后用一个特殊点（最大点、最小点或过中线点）确定 $\varphi$。
+
 ### 9. 三角方程、最值与参数
 
 三角方程要写全体解。例如

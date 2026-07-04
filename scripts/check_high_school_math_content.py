@@ -93,6 +93,9 @@ def check_trigonometry_page(path: Path, html_path: Path, errors: list[str]) -> N
                 "### 6. 两角和差公式：从坐标内积推出来",
                 "### 7. 二倍角、降幂与辅助角",
                 "### 8. 图像性质与图像变换",
+                "单调区间不要直接背变形后的结论",
+                "对称轴和对称中心也不是另一套新公式",
+                "由图像反求解析式时",
                 "### 9. 三角方程、最值与参数",
                 "## 分层题型训练",
                 "单位圆与三角函数线",
@@ -145,23 +148,27 @@ def check_trigonometry_exercise_bank(errors: list[str]) -> None:
             "## B. 同角关系与弦的齐次",
             "## C. 诱导公式与恒等变换",
             "## D. 三角函数图像性质",
+            "单调区间",
+            "对称轴与对称中心",
+            "给定区间上的值域",
+            "由图像性质反求解析式",
             "## E. 正余弦定理与解三角形",
             "## 使用建议",
         ],
         errors,
     )
     solution_count = len(SOLUTION_PATTERN.findall(text))
-    if solution_count < 100:
+    if solution_count < 145:
         errors.append(
-            f"{TRIG_EXERCISE_BANK_FILE.name}: expected at least 100 solution blocks, found {solution_count}"
+            f"{TRIG_EXERCISE_BANK_FILE.name}: expected at least 145 solution blocks, found {solution_count}"
         )
     html_path = OUTPUT_DIR / "02-trigonometry" / "03-trig-exercise-bank-zh.html"
     if html_path.exists():
         html = html_path.read_text(encoding="utf-8")
         html_solution_count = html.count("<details class=\"solution-toggle\">")
-        if html_solution_count < 100:
+        if html_solution_count < 145:
             errors.append(
-                f"{html_path.name}: expected at least 100 generated solution toggles, found {html_solution_count}"
+                f"{html_path.name}: expected at least 145 generated solution toggles, found {html_solution_count}"
             )
         if re.search(r"<p>\s*\|", html):
             errors.append(f"{html_path.name}: generated HTML leaked an unrendered Markdown table")

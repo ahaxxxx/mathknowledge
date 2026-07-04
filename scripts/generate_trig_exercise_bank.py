@@ -38,6 +38,14 @@ def signed_int(n: int) -> str:
     return f"{n:+d}"
 
 
+def x_term(w: int) -> str:
+    if w == 1:
+        return "x"
+    if w == -1:
+        return "-x"
+    return f"{w}x"
+
+
 def term_tex(coef: int, var: str, *, first: bool = False) -> str:
     if coef == 0:
         return ""
@@ -68,7 +76,7 @@ def build() -> str:
 
 本页是三角专题的训练库，不替代讲义页。讲义页负责把概念讲透，题库页负责让学生反复练“识别题型、选择方法、检查条件”。
 
-题库按你本地资料中的五个主线重编：三角函数定义、同角三角函数、诱导公式及恒等变化、三角函数性质、正余弦定理。这里先上线 104 道课堂精选题，每道都配可展开解析；本地原题库剩余题目后续可以继续精修进来。
+题库按你本地资料中的五个主线重编：三角函数定义、同角三角函数、诱导公式及恒等变化、三角函数性质、正余弦定理。这里先上线 148 道课堂精选题，每道都配可展开解析；本地原题库剩余题目后续可以继续精修进来。
 
 ## 使用建议
 
@@ -107,6 +115,7 @@ $$
         (r"-\frac{2\pi}{3}", r"-\frac{2\pi}{3}+2k\pi"),
         (r"\frac{7\pi}{6}", r"\frac{7\pi}{6}+2k\pi"),
         (r"-\frac{5\pi}{4}", r"-\frac{5\pi}{4}+2k\pi"),
+        (r"\frac{11\pi}{3}", r"\frac{11\pi}{3}+2k\pi"),
     ]
     for angle, ans in same_terminal:
         add(
@@ -127,6 +136,7 @@ $$""",
         (r"\cos\alpha=-\frac{12}{13}", "第三象限", r"\sin\alpha=-\frac5{13}", r"\tan\alpha=\frac5{12}"),
         (r"\sin\alpha=-\frac{8}{17}", "第四象限", r"\cos\alpha=\frac{15}{17}", r"\tan\alpha=-\frac8{15}"),
         (r"\cos\alpha=\frac7{25}", "第四象限", r"\sin\alpha=-\frac{24}{25}", r"\tan\alpha=-\frac{24}{7}"),
+        (r"\sin\alpha=-\frac7{25}", "第三象限", r"\cos\alpha=-\frac{24}{25}", r"\tan\alpha=\frac7{24}"),
     ]
     for given, quad, first, tanv in quadrant_tasks:
         add(
@@ -147,6 +157,7 @@ $$""",
         (r"\cos x\le -\frac12", r"\left[\frac{2\pi}3,\frac{4\pi}3\right]"),
         (r"\sin x<0", r"(\pi,2\pi)"),
         (r"\tan x>0", r"\left(0,\frac\pi2\right)\cup\left(\pi,\frac{3\pi}2\right)"),
+        (r"\cos x>\frac{\sqrt2}{2}", r"\left[0,\frac\pi4\right)\cup\left(\frac{7\pi}4,2\pi\right)"),
     ]
     for cond, ans in intervals:
         add(
@@ -169,14 +180,74 @@ $$""",
             r"$150^\circ=150\cdot\frac{\pi}{180}=\frac{5\pi}{6}$；$\frac{7\pi}{6}=210^\circ$。",
         ),
         (
+            "弧度角互化",
+            r"把 $225^\circ$ 化为弧度，并把 $\frac{3\pi}{4}$ 化为角度。",
+            r"$225^\circ=225\cdot\frac{\pi}{180}=\frac{5\pi}{4}$；$\frac{3\pi}{4}=135^\circ$。",
+        ),
+        (
+            "弧度角互化",
+            r"把 $-60^\circ$ 化为弧度，并把 $-\frac{5\pi}{6}$ 化为角度。",
+            r"$-60^\circ=-\frac{\pi}{3}$；$-\frac{5\pi}{6}=-150^\circ$。",
+        ),
+        (
+            "弧度角互化",
+            r"把 $330^\circ$ 化为弧度，并把 $\frac{4\pi}{3}$ 化为角度。",
+            r"$330^\circ=\frac{11\pi}{6}$；$\frac{4\pi}{3}=240^\circ$。",
+        ),
+        (
+            "弧度角互化",
+            r"把 $72^\circ$ 化为弧度，并把 $\frac{5\pi}{3}$ 化为角度。",
+            r"$72^\circ=\frac{2\pi}{5}$；$\frac{5\pi}{3}=300^\circ$。",
+        ),
+        (
             "正切定义域",
             r"写出 $y=\tan x$ 的定义域。",
             r"正切为 $\frac{\sin x}{\cos x}$，所以 $\cos x\ne0$。定义域为 $x\ne\frac\pi2+k\pi,\ k\in\mathbb Z$。",
         ),
         (
+            "正切定义域",
+            r"写出 $y=\tan 2x$ 的定义域。",
+            r"令 $2x\ne\frac\pi2+k\pi$，得 $x\ne\frac\pi4+\frac{k\pi}{2},\ k\in\mathbb Z$。",
+        ),
+        (
+            "正切定义域",
+            r"写出 $y=\tan(x+\frac\pi3)$ 的定义域。",
+            r"令 $x+\frac\pi3\ne\frac\pi2+k\pi$，得 $x\ne\frac\pi6+k\pi,\ k\in\mathbb Z$。",
+        ),
+        (
+            "正切定义域",
+            r"写出 $y=\tan(3x-\frac\pi6)$ 的定义域。",
+            r"令 $3x-\frac\pi6\ne\frac\pi2+k\pi$，得 $x\ne\frac{2\pi}{9}+\frac{k\pi}{3},\ k\in\mathbb Z$。",
+        ),
+        (
+            "正切定义域",
+            r"写出 $y=\tan(\frac\pi4-x)$ 的定义域。",
+            r"令 $\frac\pi4-x\ne\frac\pi2+k\pi$，得 $x\ne-\frac\pi4+k\pi,\ k\in\mathbb Z$。",
+        ),
+        (
             "象限判断",
             r"若 $\sin\alpha<0,\ \cos\alpha>0$，判断 $\alpha$ 终边所在象限。",
             r"纵坐标为负、横坐标为正，终边在第四象限。",
+        ),
+        (
+            "象限判断",
+            r"若 $\sin\alpha>0,\ \cos\alpha<0$，判断 $\alpha$ 终边所在象限。",
+            r"纵坐标为正、横坐标为负，终边在第二象限。",
+        ),
+        (
+            "象限判断",
+            r"若 $\tan\alpha>0,\ \sin\alpha<0$，判断 $\alpha$ 终边所在象限。",
+            r"$\tan\alpha>0$ 说明正弦、余弦同号；又 $\sin\alpha<0$，所以二者都为负，终边在第三象限。",
+        ),
+        (
+            "象限判断",
+            r"若 $\cos\alpha<0,\ \tan\alpha<0$，判断 $\alpha$ 终边所在象限。",
+            r"$\tan\alpha<0$ 说明正弦、余弦异号；又 $\cos\alpha<0$，所以 $\sin\alpha>0$，终边在第二象限。",
+        ),
+        (
+            "象限判断",
+            r"若 $\sin\alpha\cos\alpha>0,\ \cos\alpha<0$，判断 $\alpha$ 终边所在象限。",
+            r"$\sin\alpha\cos\alpha>0$ 说明正弦、余弦同号；又 $\cos\alpha<0$，所以终边在第三象限。",
         ),
     ]
     for title, stem, answer in misc_a:
@@ -242,6 +313,12 @@ $$""",
             r"\sin\alpha=-\frac{12}{13}",
             r"\cos\alpha=-\frac5{13}",
         ),
+        (
+            r"\cos\alpha=\frac5{13}",
+            "第四象限",
+            r"\sin\alpha=-\frac{12}{13}",
+            r"\tan\alpha=-\frac{12}{5}",
+        ),
     ]
     for given, quad, s1, s2 in b_more:
         add(
@@ -262,6 +339,7 @@ $$""",
         (r"\sin\alpha-\cos\alpha=\frac13", r"\sin\alpha\cos\alpha", r"\frac49"),
         (r"\tan\alpha=2", r"\sin\alpha\cos\alpha", r"\frac25"),
         (r"\tan\alpha=-3", r"\frac{1+\tan^2\alpha}{1-\tan^2\alpha}", r"-\frac54"),
+        (r"\sin\alpha+\cos\alpha=\sqrt2", r"\sin\alpha\cos\alpha", r"\frac12"),
     ]
     for given, target, ans in sumdiff:
         add(
@@ -297,6 +375,11 @@ $$""",
             r"\cos^2\alpha",
             r"\sin\alpha=-\frac{9}{41}",
             r"1-\frac{81}{1681}=\frac{1600}{1681}",
+        ),
+        (
+            r"\frac{\sin^2\alpha}{\cos^2\alpha}",
+            r"\tan\alpha=-2",
+            r"\tan^2\alpha=4",
         ),
     ]
     for target, given, ans in b_last:
@@ -409,13 +492,210 @@ $$
     ]
     for A, w, phi, b, T, rng, shift in graphs:
         amp = "" if A == 1 else str(A)
-        graph_expr = rf"{amp}\sin({w}x{signed_tex(phi)}){signed_int(b)}"
+        graph_expr = rf"{amp}\sin({x_term(w)}{signed_tex(phi)}){signed_int(b)}"
         add(
             item(
                 no,
                 "周期、值域与平移",
                 rf"求函数 $y={graph_expr}$ 的周期、值域和水平平移量。",
                 rf"周期 $T={T}$。值域为 ${rng}$。水平平移量要先提出系数 ${w}$，所以是 ${shift}$。",
+            )
+        )
+        no += 1
+
+    monotonic_tasks = [
+        (
+            r"y=\sin(2x+\frac\pi3)",
+            "单调递增区间",
+            r"\left[-\frac{5\pi}{12}+k\pi,\frac\pi{12}+k\pi\right]",
+            r"$\sin u$ 在 $\left[-\frac\pi2+2k\pi,\frac\pi2+2k\pi\right]$ 上递增。令 $u=2x+\frac\pi3$ 后解不等式即可。",
+        ),
+        (
+            r"y=\cos(2x-\frac\pi3)",
+            "单调递减区间",
+            r"\left[\frac\pi6+k\pi,\frac{2\pi}3+k\pi\right]",
+            r"$\cos u$ 在 $[2k\pi,\pi+2k\pi]$ 上递减。令 $u=2x-\frac\pi3$。",
+        ),
+        (
+            r"y=\tan(2x+\frac\pi4)",
+            "单调递增区间",
+            r"\left(-\frac{3\pi}8+\frac{k\pi}2,\frac\pi8+\frac{k\pi}2\right)",
+            r"$\tan u$ 在每个定义区间 $\left(-\frac\pi2+k\pi,\frac\pi2+k\pi\right)$ 上递增。",
+        ),
+        (
+            r"y=-2\sin(x-\frac\pi6)+1",
+            "单调递增区间",
+            r"\left[\frac{2\pi}3+2k\pi,\frac{5\pi}3+2k\pi\right]",
+            r"前面的负号会把正弦的递减区间变成原函数的递增区间。令 $u=x-\frac\pi6$，取 $u\in\left[\frac\pi2+2k\pi,\frac{3\pi}2+2k\pi\right]$。",
+        ),
+        (
+            r"y=\sin(3x-\frac\pi2)",
+            "单调递增区间",
+            r"\left[\frac{2k\pi}{3},\frac\pi3+\frac{2k\pi}{3}\right]",
+            r"令 $u=3x-\frac\pi2$，把 $u$ 放进正弦的递增区间，再除以 3。",
+        ),
+        (
+            r"y=\cos(x+\frac\pi4)",
+            "单调递增区间",
+            r"\left[-\frac{5\pi}4+2k\pi,-\frac\pi4+2k\pi\right]",
+            r"$\cos u$ 在 $[-\pi+2k\pi,2k\pi]$ 上递增。令 $u=x+\frac\pi4$。",
+        ),
+    ]
+    for expr, target, ans, reason in monotonic_tasks:
+        add(
+            item(
+                no,
+                "单调区间",
+                rf"求函数 ${expr}$ 的{target}。",
+                rf"""核心不是背结论，而是令 $u=\omega x+\varphi$，回到母函数单调区间。
+{reason}
+所以{target}为
+$$
+{ans},\qquad k\in\mathbb Z.
+$$""",
+            )
+        )
+        no += 1
+
+    symmetry_tasks = [
+        (
+            r"y=\sin(2x+\frac\pi3)",
+            r"x=\frac\pi{12}+\frac{k\pi}{2}",
+            r"\left(-\frac\pi6+\frac{k\pi}{2},0\right)",
+            r"$\sin u$ 的对称轴来自 $u=\frac\pi2+k\pi$，对称中心来自 $u=k\pi$。",
+        ),
+        (
+            r"y=\cos(3x-\frac\pi2)",
+            r"x=\frac\pi6+\frac{k\pi}{3}",
+            r"\left(\frac\pi3+\frac{k\pi}{3},0\right)",
+            r"$\cos u$ 的对称轴来自 $u=k\pi$，对称中心来自 $u=\frac\pi2+k\pi$。",
+        ),
+        (
+            r"y=\tan(2x-\frac\pi6)+1",
+            r"\text{无对称轴}",
+            r"\left(\frac\pi{12}+\frac{k\pi}{2},1\right)",
+            r"$\tan u$ 没有对称轴；中心来自 $u=k\pi$，上下平移后中心纵坐标为 1。",
+        ),
+        (
+            r"y=2\sin(x-\frac\pi4)-3",
+            r"x=\frac{3\pi}4+k\pi",
+            r"\left(\frac\pi4+k\pi,-3\right)",
+            r"$\sin u$ 的轴是峰谷位置 $u=\frac\pi2+k\pi$，中心纵坐标随 $b=-3$ 下移。",
+        ),
+        (
+            r"y=-\cos(2x+\frac\pi6)+2",
+            r"x=-\frac\pi{12}+\frac{k\pi}{2}",
+            r"\left(\frac\pi6+\frac{k\pi}{2},2\right)",
+            r"$\cos u$ 的轴仍来自 $u=k\pi$；负号只交换峰谷，不改变轴和中心的位置。",
+        ),
+        (
+            r"y=\tan(3x+\frac\pi3)",
+            r"\text{无对称轴}",
+            r"\left(-\frac\pi9+\frac{k\pi}{3},0\right)",
+            r"$\tan u$ 的对称中心来自 $u=k\pi$。令 $u=3x+\frac\pi3$ 后解出 $x$。",
+        ),
+    ]
+    for expr, axis, center, reason in symmetry_tasks:
+        add(
+            item(
+                no,
+                "对称轴与对称中心",
+                rf"求函数 ${expr}$ 的对称轴和对称中心。",
+                rf"""{reason}
+所以对称轴为
+$$
+{axis},
+$$
+对称中心为
+$$
+{center},\qquad k\in\mathbb Z.
+$$""",
+            )
+        )
+        no += 1
+
+    interval_ranges = [
+        (
+            r"y=\sin x,\quad x\in\left[\frac\pi6,\frac{5\pi}6\right]",
+            r"\left[\frac12,1\right]",
+            r"这个区间经过 $\frac\pi2$，所以 $\sin x$ 能取到最大值 1，端点值都是 $\frac12$。",
+        ),
+        (
+            r"y=2\sin(2x-\frac\pi3)+1,\quad x\in\left[0,\frac\pi2\right]",
+            r"[1-\sqrt3,3]",
+            r"令 $u=2x-\frac\pi3$，则 $u\in\left[-\frac\pi3,\frac{2\pi}3\right]$，$\sin u\in\left[-\frac{\sqrt3}2,1\right]$。",
+        ),
+        (
+            r"y=\cos(x+\frac\pi4),\quad x\in\left[0,\frac\pi2\right]",
+            r"\left[-\frac{\sqrt2}{2},\frac{\sqrt2}{2}\right]",
+            r"令 $u=x+\frac\pi4$，则 $u\in\left[\frac\pi4,\frac{3\pi}4\right]$，余弦从正到负且经过 $\frac\pi2$。",
+        ),
+        (
+            r"y=\tan(x-\frac\pi4),\quad x\in\left[\frac\pi4,\frac\pi3\right]",
+            r"[0,2-\sqrt3]",
+            r"令 $u=x-\frac\pi4$，则 $u\in\left[0,\frac\pi{12}\right]$，正切在该区间递增，$\tan\frac\pi{12}=2-\sqrt3$。",
+        ),
+        (
+            r"y=\sin^2x,\quad x\in\left[\frac\pi6,\frac{2\pi}3\right]",
+            r"\left[\frac14,1\right]",
+            r"区间内包含 $\frac\pi2$，所以 $\sin^2x$ 最大为 1；端点平方分别是 $\frac14$ 与 $\frac34$，最小为 $\frac14$。",
+        ),
+    ]
+    for expr, ans, reason in interval_ranges:
+        add(
+            item(
+                no,
+                "给定区间上的值域",
+                rf"求函数 ${expr}$ 的值域。",
+                rf"""给定区间值域题必须先看内层角的实际范围，不能直接套全局值域。
+{reason}
+所以值域为
+$$
+{ans}.
+$$""",
+            )
+        )
+        no += 1
+
+    reconstruction_tasks = [
+        (
+            r"函数形如 $y=A\sin(\omega x)+b$，其中 $A>0,\omega>0$。已知最大值为 3，最小值为 -1，最小正周期为 $\pi$，求解析式。",
+            r"y=2\sin2x+1",
+            r"$A=\frac{3-(-1)}2=2$，$b=\frac{3+(-1)}2=1$，$T=\pi$ 给出 $\omega=2$。",
+        ),
+        (
+            r"函数形如 $y=A\cos(\omega x)+b$，其中 $A>0,\omega>0$。已知最大值为 4，最小值为 0，最小正周期为 $\frac{2\pi}{3}$，求解析式。",
+            r"y=2\cos3x+2",
+            r"$A=2,\ b=2$，且 $\omega=\frac{2\pi}{T}=3$。",
+        ),
+        (
+            r"函数形如 $y=A\sin(2x+\varphi)+b$，其中 $A>0$。已知最大值为 5，最小值为 -1，且 $x=\frac\pi{12}$ 时取得最大值，求一个解析式。",
+            r"y=3\sin(2x+\frac\pi3)+2",
+            r"$A=3,\ b=2$。最大值要求 $2\cdot\frac\pi{12}+\varphi=\frac\pi2$，所以 $\varphi=\frac\pi3$。",
+        ),
+        (
+            r"函数形如 $y=A\cos(2x+\varphi)+b$，其中 $A>0$。已知最大值为 1，最小值为 -5，且 $x=\frac\pi6$ 时取得最小值，求一个解析式。",
+            r"y=3\cos(2x+\frac{2\pi}3)-2",
+            r"$A=3,\ b=-2$。最小值要求 $2\cdot\frac\pi6+\varphi=\pi$，所以 $\varphi=\frac{2\pi}3$。",
+        ),
+        (
+            r"函数形如 $y=A\sin(\omega x+\varphi)$，其中 $A>0,\omega>0$。已知最大值为 2，相邻两个最大点的距离为 $\pi$，且 $x=\frac\pi6$ 时取得最大值，求一个解析式。",
+            r"y=2\sin(2x+\frac\pi6)",
+            r"$A=2$，相邻最大点距离就是周期，所以 $T=\pi,\omega=2$。最大值要求 $2\cdot\frac\pi6+\varphi=\frac\pi2$，得 $\varphi=\frac\pi6$。",
+        ),
+    ]
+    for stem, ans, reason in reconstruction_tasks:
+        add(
+            item(
+                no,
+                "由图像性质反求解析式",
+                stem,
+                rf"""先由最高点、最低点、周期和特殊点依次确定 $A,b,\omega,\varphi$。
+{reason}
+所以可取
+$$
+{ans}.
+$$""",
             )
         )
         no += 1
@@ -486,6 +766,7 @@ $$""",
         (45, 60, 6, r"3\sqrt6"),
         (30, 60, 5, r"5\sqrt3"),
         (60, 45, 8, r"\frac{8\sqrt6}{3}"),
+        (30, 90, 4, "8"),
     ]
     for A, B, a, bval in sine_law:
         add(
@@ -506,6 +787,7 @@ $$""",
         (5, 7, 60, r"\sqrt{39}"),
         (6, 8, 120, r"2\sqrt{37}"),
         (4, 6, 60, r"2\sqrt7"),
+        (7, 8, 60, r"\sqrt{57}"),
     ]
     for b, c, A, aval in cosine_law:
         add(
@@ -526,6 +808,7 @@ $$""",
         (8, 6, 30, "12"),
         (4, 5, 60, r"5\sqrt3"),
         (7, 10, 45, r"\frac{35\sqrt2}{2}"),
+        (9, 4, 30, "9"),
     ]
     for a, b, C, area in area_tasks:
         add(
@@ -546,6 +829,7 @@ $$""",
         (30, 5, 6, "两解，因为高 $h=3$，且 $h<a<b$"),
         (30, 3, 6, "一解，因为 $a=h=3$"),
         (120, 5, 4, "一解，因为钝角 $A$ 已知且 $a>b$"),
+        (30, 8, 4, "一解，因为 $a>b$，对边更长，另一边不会再摆出第二个交点"),
     ]
     for A, a, b, ans in ssa:
         add(
@@ -579,7 +863,7 @@ $$""",
         )
         no += 1
 
-    assert no == 105, no
+    assert no == 149, no
     return "\n".join(parts) + "\n"
 
 
