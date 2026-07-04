@@ -14,6 +14,9 @@ TRIG_FUNCTION_FILE = CONTENT_DIR / "02_trigonometry" / "01_trig_functions_zh.md"
 SOLVE_TRIANGLES_FILE = CONTENT_DIR / "02_trigonometry" / "02_solving_triangles_zh.md"
 TRIG_EXERCISE_BANK_FILE = CONTENT_DIR / "02_trigonometry" / "03_trig_exercise_bank_zh.md"
 TRIG_README_FILE = CONTENT_DIR / "02_trigonometry" / "README.md"
+VECTOR_README_FILE = CONTENT_DIR / "03_plane_vectors" / "README.md"
+VECTOR_LESSON_FILE = CONTENT_DIR / "03_plane_vectors" / "01_plane_vectors_zh.md"
+VECTOR_EXERCISES_FILE = CONTENT_DIR / "03_plane_vectors" / "02_plane_vectors_exercises_zh.md"
 
 SOLUTION_PATTERN = re.compile(r"^:::solution\b", re.MULTILINE)
 
@@ -174,6 +177,69 @@ def check_trigonometry_exercise_bank(errors: list[str]) -> None:
             errors.append(f"{html_path.name}: generated HTML leaked an unrendered Markdown table")
 
 
+def check_plane_vectors(errors: list[str]) -> None:
+    readme = read_utf8(VECTOR_README_FILE, errors)
+    if readme:
+        require_contains(
+            VECTOR_README_FILE,
+            readme,
+            [
+                "# 平面向量",
+                "平面向量：从几何语言到代数工具",
+                "平面向量专项练习：每类至少 5 题",
+            ],
+            errors,
+        )
+
+    lesson = read_utf8(VECTOR_LESSON_FILE, errors)
+    if lesson:
+        require_contains(
+            VECTOR_LESSON_FILE,
+            lesson,
+            [
+                "## 研究对象",
+                "## 核心知识结构",
+                "向量加法：首尾相接",
+                "数乘与共线",
+                "基底表示",
+                "数量积",
+                "## 费曼讲题任务",
+                ":::diagram",
+            ],
+            errors,
+        )
+        if len(SOLUTION_PATTERN.findall(lesson)) < 3:
+            errors.append(f"{VECTOR_LESSON_FILE.name}: expected at least 3 solution blocks")
+
+    exercises = read_utf8(VECTOR_EXERCISES_FILE, errors)
+    if exercises:
+        require_contains(
+            VECTOR_EXERCISES_FILE,
+            exercises,
+            [
+                "## A. 向量线性运算与几何意义",
+                "## B. 共线与基底分解",
+                "## C. 坐标运算与点的位置",
+                "## D. 数量积、夹角与投影",
+                "## E. 长度、垂直与最值",
+                "## F. 向量与三角形综合",
+            ],
+            errors,
+        )
+        solution_count = len(SOLUTION_PATTERN.findall(exercises))
+        if solution_count < 30:
+            errors.append(f"{VECTOR_EXERCISES_FILE.name}: expected at least 30 solution blocks, found {solution_count}")
+
+    html_path = OUTPUT_DIR / "03-plane-vectors" / "02-plane-vectors-exercises-zh.html"
+    if html_path.exists():
+        html = html_path.read_text(encoding="utf-8")
+        html_solution_count = html.count("<details class=\"solution-toggle\">")
+        if html_solution_count < 30:
+            errors.append(
+                f"{html_path.name}: expected at least 30 generated solution toggles, found {html_solution_count}"
+            )
+
+
 def main() -> int:
     errors: list[str] = []
     check_summation(errors)
@@ -189,6 +255,7 @@ def main() -> int:
         errors,
     )
     check_trigonometry_exercise_bank(errors)
+    check_plane_vectors(errors)
     readme = read_utf8(TRIG_README_FILE, errors)
     if readme and "03_trig_exercise_bank_zh.md" not in readme:
         errors.append("README.md: missing trigonometry exercise bank link")
@@ -199,7 +266,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print("PASS: summation, trigonometric functions, and solving triangles content are present.")
+    print("PASS: summation, trigonometric functions, solving triangles, and plane vectors content are present.")
     return 0
 
 

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>平面向量：从几何语言到代数工具 | math.bozhanli.com</title>
+  <meta name="description" content="平面向量研究的不是“箭头怎么画”，而是：怎样把平面上的长度、方向、平移、夹角、垂直和共线，用统一的代数对象表达出来。它连接三角函数、解三角形、解析几何和立体几何，是高中数学里很典型的工具型模块。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">平面向量</a><span>/</span><span>平面向量：从几何语言到代数工具</span></div>
+      <h1>平面向量：从几何语言到代数工具</h1>
+      <p>平面向量研究的不是“箭头怎么画”，而是：怎样把平面上的长度、方向、平移、夹角、垂直和共线，用统一的代数对象表达出来。它连接三角函数、解三角形、解析几何和立体几何，是高中数学里很典型的工具型模块。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>研究对象</h2>
+<p>向量是有大小、有方向的量。两个向量只要长度相等、方向相同，就相等；它们不依赖于画在平面上的具体位置。因此向量也叫自由向量。</p>
+<p>必须区分三种对象：</p>
+<ol><li>点：例如 $A,B,C$，表示位置。</li><li>有向线段：例如 $\overrightarrow{AB}$，从 $A$ 指向 $B$。</li><li>自由向量：例如 $\vec a,\vec b$，只看长度和方向，不看起点。</li></ol>
+<p>位置向量是把点放到原点坐标系里看：若 $A(x_1,y_1)$，则</p>
+<div class="math-display">$$
+\overrightarrow{OA}=(x_1,y_1).
+$$</div>
+<p>而</p>
+<div class="math-display">$$
+\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}.
+$$</div>
+<p>这句话非常重要：<strong>从 A 到 B 的位移，等于终点位置向量减起点位置向量。</strong></p>
+<h2>核心知识结构</h2>
+<h3>1. 向量加法：首尾相接</h3>
+<p>若先从 $A$ 到 $B$，再从 $B$ 到 $C$，总效果就是从 $A$ 到 $C$：</p>
+<div class="math-display">$$
+\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}.
+$$</div>
+<p>这不是公式技巧，而是位移的合成。</p>
+<figure class="math-diagram"><svg viewBox="0 0 520 210" role="img" aria-label="向量加法首尾相接示意图">
+  <defs>
+    <marker id="arrow-vector-add" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#0f6d69"></path>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="518" height="208" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
+  <circle cx="90" cy="150" r="4" fill="#263247"></circle>
+  <circle cx="235" cy="70" r="4" fill="#263247"></circle>
+  <circle cx="410" cy="135" r="4" fill="#263247"></circle>
+  <line x1="90" y1="150" x2="235" y2="70" stroke="#0f6d69" stroke-width="4" marker-end="url(#arrow-vector-add)"></line>
+  <line x1="235" y1="70" x2="410" y2="135" stroke="#0f6d69" stroke-width="4" marker-end="url(#arrow-vector-add)"></line>
+  <line x1="90" y1="150" x2="410" y2="135" stroke="#c85c2b" stroke-width="4" marker-end="url(#arrow-vector-add)"></line>
+  <text x="78" y="173" font-size="18" fill="#263247">A</text>
+  <text x="226" y="52" font-size="18" fill="#263247">B</text>
+  <text x="414" y="139" font-size="18" fill="#263247">C</text>
+  <text x="135" y="93" font-size="16" fill="#0f6d69">AB</text>
+  <text x="315" y="88" font-size="16" fill="#0f6d69">BC</text>
+  <text x="235" y="169" font-size="16" fill="#c85c2b">AC = AB + BC</text>
+</svg></figure>
+<h3>2. 向量减法：转成加相反向量</h3>
+<div class="math-display">$$
+\vec a-\vec b=\vec a+(-\vec b).
+$$</div>
+<p>在图形里，最常用的减法形式是：</p>
+<div class="math-display">$$
+\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}.
+$$</div>
+<p>如果题目里有很多点，先把所有点写成同一个原点下的位置向量，往往就清楚了。</p>
+<h3>3. 数乘与共线</h3>
+<p>数乘 $k\vec a$ 改变长度和方向：</p>
+<ol><li>$k&gt;0$：方向不变，长度变为 $|k|$ 倍。</li><li>$k&lt;0$：方向相反，长度变为 $|k|$ 倍。</li><li>$k=0$：变成零向量。</li></ol>
+<p>共线的核心判定是：</p>
+<div class="math-display">$$
+\vec a\parallel \vec b
+\quad\Longleftrightarrow\quad
+\vec a=\lambda\vec b
+$$</div>
+<p>其中 $\vec b\ne\vec 0$。坐标形式为：</p>
+<div class="math-display">$$
+(x_1,y_1)\parallel(x_2,y_2)
+\quad\Longleftrightarrow\quad
+x_1y_2-x_2y_1=0.
+$$</div>
+<h3>4. 基底表示：把图形拆成两个方向</h3>
+<p>若 $\vec e_1,\vec e_2$ 不共线，则平面内任意向量都能唯一写成</p>
+<div class="math-display">$$
+\vec v=x\vec e_1+y\vec e_2.
+$$</div>
+<p>这就是“基底”。在三角形中，经常取</p>
+<div class="math-display">$$
+\overrightarrow{AB}=\vec a,\qquad \overrightarrow{AC}=\vec b,
+$$</div>
+<p>然后把中点、重心、分点都表示成 $\vec a,\vec b$ 的组合。</p>
+<p>例如 $M$ 是 $BC$ 中点，则</p>
+<div class="math-display">$$
+\overrightarrow{AM}
+=\frac12(\overrightarrow{AB}+\overrightarrow{AC})
+=\frac12(\vec a+\vec b).
+$$</div>
+<h3>5. 坐标表示：把向量变成有序数对</h3>
+<p>若 $\vec a=(x_1,y_1),\vec b=(x_2,y_2)$，则</p>
+<div class="math-display">$$
+\vec a+\vec b=(x_1+x_2,y_1+y_2),
+$$</div>
+<div class="math-display">$$
+k\vec a=(kx_1,ky_1),
+$$</div>
+<div class="math-display">$$
+|\vec a|=\sqrt{x_1^2+y_1^2}.
+$$</div>
+<p>坐标法的优点是稳定：共线、垂直、长度、夹角都能转成方程。</p>
+<h3>6. 数量积：把夹角和长度变成乘法</h3>
+<p>数量积定义为</p>
+<div class="math-display">$$
+\vec a\cdot\vec b=|\vec a||\vec b|\cos\theta,
+$$</div>
+<p>其中 $\theta$ 是 $\vec a,\vec b$ 的夹角。</p>
+<p>坐标形式为</p>
+<div class="math-display">$$
+(x_1,y_1)\cdot(x_2,y_2)=x_1x_2+y_1y_2.
+$$</div>
+<p>数量积负责四类问题：</p>
+<ol><li>求夹角：</li></ol>
+<div class="math-display">$$
+\cos\theta=\frac{\vec a\cdot\vec b}{|\vec a||\vec b|}.
+$$</div>
+<ol><li>判垂直：</li></ol>
+<div class="math-display">$$
+\vec a\perp\vec b\quad\Longleftrightarrow\quad \vec a\cdot\vec b=0.
+$$</div>
+<ol><li>求长度平方：</li></ol>
+<div class="math-display">$$
+|\vec a+\vec b|^2=(\vec a+\vec b)^2.
+$$</div>
+<ol><li>求投影：</li></ol>
+<div class="math-display">$$
+\vec a\text{ 在 }\vec b\text{ 方向上的投影数量}
+=\frac{\vec a\cdot\vec b}{|\vec b|}.
+$$</div>
+<h3>7. 向量与三角形</h3>
+<p>向量进入三角形后，最常见的翻译是：</p>
+<ol><li>中点：$M$ 是 $AB$ 中点，则 $\overrightarrow{OM}=\dfrac{\overrightarrow{OA}+\overrightarrow{OB}}2$。</li><li>重心：$G$ 是 $\triangle ABC$ 重心，则 $\overrightarrow{OG}=\dfrac{\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}}3$。</li><li>共线：$A,B,C$ 共线等价于 $\overrightarrow{AB}=\lambda\overrightarrow{AC}$。</li><li>垂直：$AB\perp AC$ 等价于 $\overrightarrow{AB}\cdot\overrightarrow{AC}=0$。</li><li>角：$\angle BAC$ 由 $\overrightarrow{AB}$ 与 $\overrightarrow{AC}$ 的夹角决定。</li></ol>
+<h2>方法识别</h2>
+<p>| 题目信号 | 优先方法 | | --- | --- | | 出现中点、重心、分点 | 用位置向量平均或基底表示 | | 证明三点共线 | 写成 $\overrightarrow{AB}=\lambda\overrightarrow{AC}$ | | 出现垂直、夹角、投影 | 用数量积 | | 出现长度或最值 | 先平方，转成数量积或坐标二次式 | | 图形中点很多 | 选基底，统一表示 | | 坐标已给出 | 直接坐标化，不要硬画图 |</p>
+<h2>典型例题</h2>
+<h3>例 1：中点向量</h3>
+<p>在 $\triangle ABC$ 中，$M$ 是 $BC$ 的中点。设 $\overrightarrow{AB}=\vec a,\overrightarrow{AC}=\vec b$，求 $\overrightarrow{AM}$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>从 $A$ 看，$B$ 的位置是 $\vec a$，$C$ 的位置是 $\vec b$。中点的位置向量取平均：</p>
+<div class="math-display">$$
+\overrightarrow{AM}=\frac{\vec a+\vec b}{2}.
+$$</div>
+<p>这不是记忆公式，而是“中点坐标等于两个端点坐标平均”的向量版本。</p></div></details>
+<h3>例 2：共线参数</h3>
+<p>已知 $\vec a=(2,3),\vec b=(4,t)$，若 $\vec a\parallel\vec b$，求 $t$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>共线等价于坐标行列式为 0：</p>
+<div class="math-display">$$
+2t-3\cdot4=0.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+t=6.
+$$</div></div></details>
+<h3>例 3：数量积求夹角</h3>
+<p>已知 $\vec a=(1,2),\vec b=(2,1)$，求 $\vec a,\vec b$ 的夹角。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+\vec a\cdot\vec b=1\cdot2+2\cdot1=4,
+$$</div>
+<div class="math-display">$$
+|\vec a|=\sqrt5,\qquad |\vec b|=\sqrt5.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\cos\theta=\frac4{5}.
+$$</div>
+<p>因此夹角为</p>
+<div class="math-display">$$
+\theta=\arccos\frac45.
+$$</div></div></details>
+<h2>自我训练</h2>
+<p>学习平面向量时，学生每做一道题都要说出：</p>
+<ol><li>我现在处理的是点、线段还是自由向量？</li><li>我选的基底或坐标系是什么？</li><li>哪些条件被翻译成了共线、垂直、长度或夹角？</li><li>我的参数范围有没有漏？</li></ol>
+<h2>费曼讲题任务</h2>
+<p>每次课后让学生准备 1 道向量题讲解，讲解必须包含：</p>
+<ol><li>为什么想到用向量，而不是纯几何？</li><li>选择基底或坐标的理由是什么？</li><li>关键等式是哪一个？</li><li>如果把中点改成三等分点、把垂直改成夹角，方法怎样变化？</li></ol>
+<p>专项练习入口：<a href="02-plane-vectors-exercises-zh.html">平面向量专项练习</a>。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">平面向量</a></li><li>源文件：<code>content/09_high_school_math/03_plane_vectors/01_plane_vectors_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="02-plane-vectors-exercises-zh.html">平面向量专项练习</a></h3><p>返回讲义：[平面向量：从几何语言到代数工具](./01_plane_vectors_zh.md)。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

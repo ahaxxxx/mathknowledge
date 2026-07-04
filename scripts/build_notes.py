@@ -47,6 +47,8 @@ SECTION_LABELS = {
     "01_grammar_reading": "语法与阅读",
     "02_academic_listening": "学术听力",
     "01_sequences": "数列",
+    "02_trigonometry": "三角专题",
+    "03_plane_vectors": "平面向量",
 }
 
 BLOCK_STARTERS = (
@@ -502,6 +504,17 @@ def render_markdown(markdown_text: str, source_path: Path, output_rel: Path) -> 
             i += 1
             continue
 
+        if stripped.startswith(":::diagram"):
+            diagram_lines: list[str] = []
+            i += 1
+            while i < len(lines) and lines[i].strip() != ":::":
+                diagram_lines.append(lines[i])
+                i += 1
+            if i < len(lines):
+                i += 1
+            blocks.append('<figure class="math-diagram">' + "\n".join(diagram_lines) + "</figure>")
+            continue
+
         if stripped.startswith("```"):
             language = stripped[3:].strip()
             code_lines: list[str] = []
@@ -564,6 +577,7 @@ def render_markdown(markdown_text: str, source_path: Path, output_rel: Path) -> 
                 or re.fullmatch(r"-{3,}", current_stripped)
                 or current_stripped.startswith(":::solution")
                 or current_stripped.startswith(":::audio")
+                or current_stripped.startswith(":::diagram")
                 or current_stripped == ":::"
                 or current_stripped.startswith("<audio")
                 or current_stripped.startswith("$$")

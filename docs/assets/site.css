@@ -514,6 +514,22 @@ a {
   margin-top: 10px;
 }
 
+.math-diagram {
+  margin: 14px 0 18px;
+  padding: 12px;
+  border: 1px solid rgba(15, 109, 105, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow-x: auto;
+}
+
+.math-diagram svg {
+  display: block;
+  width: min(100%, 520px);
+  height: auto;
+  margin: 0 auto;
+}
+
 .audio-card {
   margin: 18px 0 22px;
   padding: 16px;

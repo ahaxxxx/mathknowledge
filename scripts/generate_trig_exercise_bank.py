@@ -46,6 +46,53 @@ def x_term(w: int) -> str:
     return f"{w}x"
 
 
+def diagram(svg: str) -> str:
+    return "\n\n:::diagram\n" + svg.strip() + "\n:::\n"
+
+
+def area_triangle_svg(a: int, b: int, C: int) -> str:
+    return f"""
+<svg viewBox="0 0 520 230" role="img" aria-label="三角形面积公式示意图">
+  <rect x="1" y="1" width="518" height="228" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
+  <polygon points="96,170 390,170 185,58" fill="rgba(15,109,105,0.08)" stroke="#263247" stroke-width="3"></polygon>
+  <path d="M132 170 A36 36 0 0 1 150 139" fill="none" stroke="#c85c2b" stroke-width="3"></path>
+  <text x="86" y="194" font-size="18" fill="#263247">C</text>
+  <text x="396" y="176" font-size="18" fill="#263247">B</text>
+  <text x="176" y="48" font-size="18" fill="#263247">A</text>
+  <text x="235" y="190" font-size="17" fill="#0f6d69">a = BC = {a}</text>
+  <text x="118" y="108" font-size="17" fill="#0f6d69">b = CA = {b}</text>
+  <text x="143" y="160" font-size="17" fill="#c85c2b">C = {C}°</text>
+  <text x="70" y="24" font-size="15" fill="#596579">面积：S = 1/2 ab sin C，关键是 C 必须是 a 与 b 的夹角</text>
+</svg>
+"""
+
+
+def ssa_triangle_svg(A: int, a: int, b: int) -> str:
+    return f"""
+<svg viewBox="0 0 520 240" role="img" aria-label="SSA 多解判断示意图">
+  <rect x="1" y="1" width="518" height="238" rx="8" fill="#fffaf0" stroke="#d8c7a5"></rect>
+  <line x1="82" y1="184" x2="452" y2="184" stroke="#263247" stroke-width="3"></line>
+  <line x1="82" y1="184" x2="270" y2="72" stroke="#263247" stroke-width="3"></line>
+  <circle cx="270" cy="72" r="104" fill="none" stroke="#c85c2b" stroke-width="3" stroke-dasharray="7 7"></circle>
+  <line x1="270" y1="72" x2="270" y2="184" stroke="#0f6d69" stroke-width="2" stroke-dasharray="5 5"></line>
+  <circle cx="82" cy="184" r="4" fill="#263247"></circle>
+  <circle cx="270" cy="72" r="4" fill="#263247"></circle>
+  <circle cx="178" cy="184" r="4" fill="#c85c2b"></circle>
+  <circle cx="374" cy="184" r="4" fill="#c85c2b"></circle>
+  <path d="M120 184 A38 38 0 0 1 115 165" fill="none" stroke="#0f6d69" stroke-width="3"></path>
+  <text x="70" y="208" font-size="18" fill="#263247">A</text>
+  <text x="276" y="66" font-size="18" fill="#263247">C</text>
+  <text x="169" y="208" font-size="16" fill="#c85c2b">B1</text>
+  <text x="365" y="208" font-size="16" fill="#c85c2b">B2</text>
+  <text x="138" y="112" font-size="16" fill="#0f6d69">b = AC = {b}</text>
+  <text x="286" y="126" font-size="16" fill="#0f6d69">h = b sin A</text>
+  <text x="300" y="58" font-size="16" fill="#c85c2b">圆半径 a = BC = {a}</text>
+  <text x="112" y="174" font-size="16" fill="#0f6d69">A = {A}°</text>
+  <text x="58" y="28" font-size="15" fill="#596579">SSA：固定 A 和 b 后，让半径为 a 的圆去截射线 AB，交点数就是解的个数</text>
+</svg>
+"""
+
+
 def term_tex(coef: int, var: str, *, first: bool = False) -> str:
     if coef == 0:
         return ""
@@ -815,7 +862,8 @@ $$""",
             item(
                 no,
                 "面积公式",
-                rf"在 $\triangle ABC$ 中，$a={a},\ b={b},\ C={C}^\circ$，求面积。",
+                rf"在 $\triangle ABC$ 中，$a={a},\ b={b},\ C={C}^\circ$，求面积。"
+                + diagram(area_triangle_svg(a, b, C)),
                 rf"""$C$ 是边 $a,b$ 的夹角，所以
 $$
 S=\frac12ab\sin C={area}.
@@ -836,7 +884,8 @@ $$""",
             item(
                 no,
                 "SSA 多解判断",
-                rf"在 $\triangle ABC$ 中，$A={A}^\circ,\ a={a},\ b={b}$，判断三角形个数。",
+                rf"在 $\triangle ABC$ 中，$A={A}^\circ,\ a={a},\ b={b}$，判断三角形个数。"
+                + diagram(ssa_triangle_svg(A, a, b)),
                 rf"这是 SSA 情形，要用高或正弦值检查。结论：{ans}。",
             )
         )
