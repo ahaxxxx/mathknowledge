@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>三角函数与解三角形：本地一轮复习补充 | math.bozhanli.com</title>
+  <meta name="description" content="这一页根据本地 2021 高考一轮复习资料中的考点 13 到考点 17 重写整理，补充三角函数定义、同角关系、诱导恒等变换、图像性质与解三角形的题型方法。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">三角专题</a><span>/</span><span>三角函数与解三角形：本地一轮复习补充</span></div>
+      <h1>三角函数与解三角形：本地一轮复习补充</h1>
+      <p>这一页根据本地 2021 高考一轮复习资料中的考点 13 到考点 17 重写整理，补充三角函数定义、同角关系、诱导恒等变换、图像性质与解三角形的题型方法。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><p>返回专题首页：<a href="index.html">三角专题</a>。基础题库入口：<a href="03-trig-exercise-bank-zh.html">三角专题分层题库</a>。</p>
+<h2>本地资料梳理</h2>
+<p>当前文件夹中和三角专题直接相关的资料有五组：</p>
+<ol><li>考点 13：三角函数定义。题组集中在终边相同角、角所在区域、终边点与三角函数值。</li><li>考点 14：同角三角函数。题组集中在公式直接运用、象限定符号、弦的齐次、参数范围。</li><li>考点 15：诱导公式及恒等变化。题组集中在诱导公式、终边直线、象限化简和恒等式化简。</li><li>考点 16：三角函数性质。题组集中在周期、定义域、单调性、对称性、图像变换、值域和参数。</li><li>考点 17：正余弦定理。题组集中在定理选择、边角互换、面积、外接圆、多解和取值范围。</li></ol>
+<p>这五组资料的共同特点是：小题不难，但很考“先识别对象”。三角函数题先判断是在处理角、函数图像、恒等式还是三角形；解三角形题先判断已知量结构，再决定正弦定理、余弦定理或面积公式。</p>
+<h2>方法补充</h2>
+<ol><li><strong>终边相同角</strong>：先在一个周期内描述，再加 $2k\pi$。如果区域跨过 $0$，要分两段写。</li><li><strong>终边点定义</strong>：设终边上一点 $P(x,y)$，先算 $r=\sqrt{x^2+y^2}$，再写 $\sin\alpha=\frac yr,\cos\alpha=\frac xr,\tan\alpha=\frac yx$。</li><li><strong>同角关系</strong>：先用 $\sin^2\alpha+\cos^2\alpha=1$，再用象限定符号。不要只开平方不判符号。</li><li><strong>弦的齐次</strong>：如果式子每一项都是同次，可以除以 $\cos^n\alpha$ 或 $\sin^n\alpha$，把问题转成 $\tan\alpha$。</li><li><strong>诱导公式</strong>：不要只背“奇变偶不变”，要能解释为终边位置变化；符号由化简后角所在象限决定。</li><li><strong>图像性质</strong>：令 $u=\omega x+\varphi$，先在 $u$ 上写标准函数的周期、单调、对称，再解回 $x$。</li><li><strong>解三角形定理选择</strong>：两角一边优先正弦定理；两边夹角或三边优先余弦定理；面积出现“两边夹角”优先 $S=\frac12bc\sin A$。</li><li><strong>边角互换</strong>：三角形中 $\frac a{\sin A}=\frac b{\sin B}=\frac c{\sin C}=2R$，所以正弦比可以转成边比。</li><li><strong>SSA 多解</strong>：已知 $A,a,b$ 时，由 $\sin B=\frac{b\sin A}{a}$ 得到的 $B$ 可能有两个候选，必须检查 $A+B&lt;180^\circ$。</li></ol>
+<h2>A. 终边相同角、象限与区域</h2>
+<h3>题 1：终边相同角</h3>
+<p>写出与 $-\frac{7\pi}{6}$ 终边相同的所有角，并指出它在 $[0,2\pi)$ 内的代表角。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>终边相同角相差 $2\pi$ 的整数倍：</p>
+<div class="math-display">$$
+\alpha=-\frac{7\pi}{6}+2k\pi,\qquad k\in\mathbb Z.
+$$</div>
+<p>把 $-\frac{7\pi}{6}$ 加上 $2\pi$：</p>
+<div class="math-display">$$
+-\frac{7\pi}{6}+2\pi=\frac{5\pi}{6}.
+$$</div>
+<p>所以在 $[0,2\pi)$ 内的代表角是</p>
+<div class="math-display">$$
+\frac{5\pi}{6}.
+$$</div></div></details>
+<h3>题 2：象限角范围</h3>
+<p>写出第二象限角 $\alpha$ 的一般形式。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>第二象限对应一个周期内</p>
+<div class="math-display">$$
+\frac{\pi}{2}&lt;\alpha&lt;\pi.
+$$</div>
+<p>加上周期 $2k\pi$，得到</p>
+<div class="math-display">$$
+\frac{\pi}{2}+2k\pi&lt;\alpha&lt;\pi+2k\pi,\qquad k\in\mathbb Z.
+$$</div></div></details>
+<h3>题 3：终边在直线上</h3>
+<p>角 $\alpha$ 的终边在直线 $y=x$ 上，且终边位于第三象限。写出 $\alpha$ 的一般形式。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>直线 $y=x$ 上有两条终边方向：第一象限方向为 $\frac{\pi}{4}$，第三象限方向为</p>
+<div class="math-display">$$
+\frac{\pi}{4}+\pi=\frac{5\pi}{4}.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\alpha=\frac{5\pi}{4}+2k\pi,\qquad k\in\mathbb Z.
+$$</div></div></details>
+<h3>题 4：区域描述</h3>
+<p>若角 $\alpha$ 的终边落在从 $30^\circ$ 到 $120^\circ$ 的区域内，包含边界，用弧度制写出 $\alpha$ 的范围。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>先把角度化成弧度：</p>
+<div class="math-display">$$
+30^\circ=\frac{\pi}{6},\qquad 120^\circ=\frac{2\pi}{3}.
+$$</div>
+<p>一个周期内的范围为</p>
+<div class="math-display">$$
+\frac{\pi}{6}\le \alpha\le \frac{2\pi}{3}.
+$$</div>
+<p>所有角为</p>
+<div class="math-display">$$
+\frac{\pi}{6}+2k\pi\le \alpha\le \frac{2\pi}{3}+2k\pi,\qquad k\in\mathbb Z.
+$$</div></div></details>
+<h2>B. 三角函数定义与终边点</h2>
+<h3>题 5：终边点直接求值</h3>
+<p>角 $\alpha$ 的终边经过点 $P(3,-4)$，求 $\sin\alpha,\cos\alpha,\tan\alpha$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>先算</p>
+<div class="math-display">$$
+r=\sqrt{3^2+(-4)^2}=5.
+$$</div>
+<p>由定义：</p>
+<div class="math-display">$$
+\sin\alpha=\frac yr=-\frac45,\qquad
+\cos\alpha=\frac xr=\frac35,\qquad
+\tan\alpha=\frac yx=-\frac43.
+$$</div></div></details>
+<h3>题 6：由正弦值反求坐标参数</h3>
+<p>角 $\alpha$ 的终边经过点 $P(-5,m)$，且 $\sin\alpha=\frac{12}{13}$。求 $m$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为</p>
+<div class="math-display">$$
+\sin\alpha=\frac{m}{\sqrt{25+m^2}}=\frac{12}{13}.
+$$</div>
+<p>正弦为正，且 $x=-5&lt;0$，终边在第二象限，所以 $m&gt;0$。</p>
+<p>平方：</p>
+<div class="math-display">$$
+\frac{m^2}{25+m^2}=\frac{144}{169}.
+$$</div>
+<p>整理：</p>
+<div class="math-display">$$
+169m^2=144(25+m^2),
+$$</div>
+<div class="math-display">$$
+25m^2=3600,
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+m=12.
+$$</div></div></details>
+<h3>题 7：由正切值补全正余弦</h3>
+<p>已知 $\tan\alpha=-\frac34$，且 $\alpha$ 是第二象限角，求 $\sin\alpha,\cos\alpha$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>第二象限中 $\sin\alpha&gt;0,\cos\alpha&lt;0$。由</p>
+<div class="math-display">$$
+\tan\alpha=\frac{\sin\alpha}{\cos\alpha}=-\frac34
+$$</div>
+<p>可设</p>
+<div class="math-display">$$
+\sin\alpha=3t,\qquad \cos\alpha=-4t,\qquad t&gt;0.
+$$</div>
+<p>代入平方关系：</p>
+<div class="math-display">$$
+9t^2+16t^2=1,
+$$</div>
+<p>所以 $t=\frac15$。因此</p>
+<div class="math-display">$$
+\sin\alpha=\frac35,\qquad \cos\alpha=-\frac45.
+$$</div></div></details>
+<h3>题 8：定义法求组合值</h3>
+<p>角 $\alpha$ 的终边经过点 $P(-2,1)$，求 $2\sin\alpha-\cos\alpha$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+r=\sqrt{(-2)^2+1^2}=\sqrt5.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\sin\alpha=\frac1{\sqrt5},\qquad
+\cos\alpha=-\frac2{\sqrt5}.
+$$</div>
+<p>代入：</p>
+<div class="math-display">$$
+2\sin\alpha-\cos\alpha
+=\frac2{\sqrt5}+\frac2{\sqrt5}
+=\frac4{\sqrt5}.
+$$</div></div></details>
+<h2>C. 同角关系与弦的齐次</h2>
+<h3>题 9：由余弦求正弦和正切</h3>
+<p>已知 $\cos\alpha=-\frac5{13}$，且 $\alpha$ 是第三象限角，求 $\sin\alpha,\tan\alpha$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>第三象限中正弦、余弦都为负，正切为正。</p>
+<div class="math-display">$$
+\sin^2\alpha=1-\cos^2\alpha
+=1-\frac{25}{169}
+=\frac{144}{169}.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+\sin\alpha=-\frac{12}{13}.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\tan\alpha=\frac{\sin\alpha}{\cos\alpha}
+=\frac{-12/13}{-5/13}
+=\frac{12}{5}.
+$$</div></div></details>
+<h3>题 10：齐次式求值</h3>
+<p>已知 $\tan\alpha=3$，求</p>
+<div class="math-display">$$
+\frac{\sin\alpha+\cos\alpha}{\sin\alpha-\cos\alpha}.
+$$</div>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>分子分母都是一次齐次式，除以 $\cos\alpha$：</p>
+<div class="math-display">$$
+\frac{\sin\alpha+\cos\alpha}{\sin\alpha-\cos\alpha}
+=\frac{\tan\alpha+1}{\tan\alpha-1}.
+$$</div>
+<p>代入 $\tan\alpha=3$：</p>
+<div class="math-display">$$
+\frac{3+1}{3-1}=2.
+$$</div></div></details>
+<h3>题 11：由和求积</h3>
+<p>已知 $\sin\alpha+\cos\alpha=\frac13$，求 $\sin\alpha\cos\alpha$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>两边平方：</p>
+<div class="math-display">$$
+(\sin\alpha+\cos\alpha)^2=\frac19.
+$$</div>
+<p>展开：</p>
+<div class="math-display">$$
+\sin^2\alpha+\cos^2\alpha+2\sin\alpha\cos\alpha=\frac19.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+1+2\sin\alpha\cos\alpha=\frac19.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+\sin\alpha\cos\alpha=-\frac49.
+$$</div></div></details>
+<h3>题 12：由差求二倍角</h3>
+<p>已知 $\sin\alpha-\cos\alpha=\frac{\sqrt2}{2}$，求 $\sin2\alpha$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>两边平方：</p>
+<div class="math-display">$$
+(\sin\alpha-\cos\alpha)^2=\frac12.
+$$</div>
+<p>展开：</p>
+<div class="math-display">$$
+\sin^2\alpha+\cos^2\alpha-2\sin\alpha\cos\alpha=\frac12.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+1-2\sin\alpha\cos\alpha=\frac12,
+$$</div>
+<p>得到</p>
+<div class="math-display">$$
+2\sin\alpha\cos\alpha=\frac12.
+$$</div>
+<p>而</p>
+<div class="math-display">$$
+\sin2\alpha=2\sin\alpha\cos\alpha,
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\sin2\alpha=\frac12.
+$$</div></div></details>
+<h2>D. 诱导公式与恒等化简</h2>
+<h3>题 13：诱导公式求值</h3>
+<p>已知 $\sin\alpha=\frac13$，求</p>
+<div class="math-display">$$
+\sin(\pi+\alpha)+\cos\left(\frac{3\pi}{2}-\alpha\right).
+$$</div>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>分别化简：</p>
+<div class="math-display">$$
+\sin(\pi+\alpha)=-\sin\alpha,
+$$</div>
+<div class="math-display">$$
+\cos\left(\frac{3\pi}{2}-\alpha\right)=-\sin\alpha.
+$$</div>
+<p>所以原式为</p>
+<div class="math-display">$$
+-2\sin\alpha=-\frac23.
+$$</div></div></details>
+<h3>题 14：终边直线与诱导</h3>
+<p>角 $\alpha$ 的终边在直线 $y=-x$ 上，且 $\alpha$ 在第四象限。求 $\tan(\pi-\alpha)$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>直线 $y=-x$ 在第四象限对应方向角为</p>
+<div class="math-display">$$
+\frac{7\pi}{4}.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\tan\alpha=-1.
+$$</div>
+<p>又</p>
+<div class="math-display">$$
+\tan(\pi-\alpha)=-\tan\alpha,
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+\tan(\pi-\alpha)=1.
+$$</div></div></details>
+<h3>题 15：带象限的根式化简</h3>
+<p>已知 $\alpha$ 是第四象限角，化简</p>
+<div class="math-display">$$
+\sqrt{(1-\sin\alpha)^2}+\sqrt{(1+\cos\alpha)^2}.
+$$</div>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>第四象限中</p>
+<div class="math-display">$$
+\sin\alpha&lt;0,\qquad \cos\alpha&gt;0.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+1-\sin\alpha&gt;0,\qquad 1+\cos\alpha&gt;0.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+\sqrt{(1-\sin\alpha)^2}=1-\sin\alpha,
+$$</div>
+<div class="math-display">$$
+\sqrt{(1+\cos\alpha)^2}=1+\cos\alpha.
+$$</div>
+<p>原式为</p>
+<div class="math-display">$$
+2-\sin\alpha+\cos\alpha.
+$$</div></div></details>
+<h3>题 16：恒等化简</h3>
+<p>化简</p>
+<div class="math-display">$$
+\frac{1-\cos2x}{\sin2x}.
+$$</div>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>使用二倍角：</p>
+<div class="math-display">$$
+1-\cos2x=2\sin^2x,
+$$</div>
+<div class="math-display">$$
+\sin2x=2\sin x\cos x.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\frac{1-\cos2x}{\sin2x}
+=\frac{2\sin^2x}{2\sin x\cos x}
+=\tan x.
+$$</div>
+<p>这里默认分母有意义，即 $\sin2x\ne0$。</p></div></details>
+<h2>E. 三角函数性质：周期、定义域、单调、对称</h2>
+<h3>题 17：正弦型周期</h3>
+<p>求函数</p>
+<div class="math-display">$$
+y=\sin\left(2x-\frac{\pi}{3}\right)
+$$</div>
+<p>的最小正周期。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>对 $y=\sin(\omega x+\varphi)$，周期为</p>
+<div class="math-display">$$
+T=\frac{2\pi}{|\omega|}.
+$$</div>
+<p>本题中 $\omega=2$，所以</p>
+<div class="math-display">$$
+T=\pi.
+$$</div></div></details>
+<h3>题 18：正切型周期</h3>
+<p>求函数</p>
+<div class="math-display">$$
+y=\tan\left(3x+\frac{\pi}{6}\right)
+$$</div>
+<p>的最小正周期。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>正切函数本身周期为 $\pi$。对 $y=\tan(\omega x+\varphi)$，</p>
+<div class="math-display">$$
+T=\frac{\pi}{|\omega|}.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+T=\frac{\pi}{3}.
+$$</div></div></details>
+<h3>题 19：定义域</h3>
+<p>求函数</p>
+<div class="math-display">$$
+y=\sqrt{2\sin x-1}
+$$</div>
+<p>在 $[0,2\pi]$ 上的定义域。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>根式要求</p>
+<div class="math-display">$$
+2\sin x-1\ge0,
+$$</div>
+<p>即</p>
+<div class="math-display">$$
+\sin x\ge\frac12.
+$$</div>
+<p>在 $[0,2\pi]$ 上，</p>
+<div class="math-display">$$
+\sin x\ge\frac12
+$$</div>
+<p>对应</p>
+<div class="math-display">$$
+x\in\left[\frac{\pi}{6},\frac{5\pi}{6}\right].
+$$</div></div></details>
+<h3>题 20：单调区间</h3>
+<p>求函数</p>
+<div class="math-display">$$
+y=\sin\left(2x-\frac{\pi}{3}\right)
+$$</div>
+<p>的单调递增区间。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>令</p>
+<div class="math-display">$$
+u=2x-\frac{\pi}{3}.
+$$</div>
+<p>$\sin u$ 的递增区间为</p>
+<div class="math-display">$$
+-\frac{\pi}{2}+2k\pi\le u\le \frac{\pi}{2}+2k\pi.
+$$</div>
+<p>代回：</p>
+<div class="math-display">$$
+-\frac{\pi}{2}+2k\pi
+\le 2x-\frac{\pi}{3}
+\le \frac{\pi}{2}+2k\pi.
+$$</div>
+<p>两边加 $\frac{\pi}{3}$ 后除以 2：</p>
+<div class="math-display">$$
+-\frac{\pi}{12}+k\pi
+\le x\le
+\frac{5\pi}{12}+k\pi.
+$$</div>
+<p>所以递增区间为</p>
+<div class="math-display">$$
+\left[-\frac{\pi}{12}+k\pi,\frac{5\pi}{12}+k\pi\right],\qquad k\in\mathbb Z.
+$$</div></div></details>
+<h2>F. 图像变换、值域与参数</h2>
+<h3>题 21：对称中心</h3>
+<p>求函数</p>
+<div class="math-display">$$
+y=\sin\left(2x-\frac{\pi}{3}\right)
+$$</div>
+<p>的对称中心。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$\sin u$ 的对称中心为</p>
+<div class="math-display">$$
+(u,y)=(k\pi,0).
+$$</div>
+<p>令</p>
+<div class="math-display">$$
+2x-\frac{\pi}{3}=k\pi,
+$$</div>
+<p>得到</p>
+<div class="math-display">$$
+x=\frac{\pi}{6}+\frac{k\pi}{2}.
+$$</div>
+<p>所以对称中心为</p>
+<div class="math-display">$$
+\left(\frac{\pi}{6}+\frac{k\pi}{2},0\right),\qquad k\in\mathbb Z.
+$$</div></div></details>
+<h3>题 22：对称轴</h3>
+<p>求函数</p>
+<div class="math-display">$$
+y=\cos\left(2x+\frac{\pi}{4}\right)
+$$</div>
+<p>的对称轴。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$\cos u$ 的对称轴为</p>
+<div class="math-display">$$
+u=k\pi.
+$$</div>
+<p>令</p>
+<div class="math-display">$$
+2x+\frac{\pi}{4}=k\pi,
+$$</div>
+<p>得到</p>
+<div class="math-display">$$
+x=-\frac{\pi}{8}+\frac{k\pi}{2}.
+$$</div>
+<p>所以对称轴为</p>
+<div class="math-display">$$
+x=-\frac{\pi}{8}+\frac{k\pi}{2},\qquad k\in\mathbb Z.
+$$</div></div></details>
+<h3>题 23：最值</h3>
+<p>求函数</p>
+<div class="math-display">$$
+y=2\sin\left(x-\frac{\pi}{6}\right)+1
+$$</div>
+<p>的最大值与最小值。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为</p>
+<div class="math-display">$$
+-1\le \sin\left(x-\frac{\pi}{6}\right)\le1,
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+-2\le2\sin\left(x-\frac{\pi}{6}\right)\le2.
+$$</div>
+<p>加 1 得</p>
+<div class="math-display">$$
+-1\le y\le3.
+$$</div>
+<p>最大值为 $3$，最小值为 $-1$。</p></div></details>
+<h3>题 24：换元值域</h3>
+<p>求函数</p>
+<div class="math-display">$$
+y=\sin^2x-2\sin x
+$$</div>
+<p>的值域。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>令</p>
+<div class="math-display">$$
+t=\sin x,\qquad -1\le t\le1.
+$$</div>
+<p>则</p>
+<div class="math-display">$$
+y=t^2-2t=(t-1)^2-1.
+$$</div>
+<p>在 $[-1,1]$ 上，最小值在 $t=1$ 处取得，为</p>
+<div class="math-display">$$
+-1.
+$$</div>
+<p>最大值比较端点：</p>
+<div class="math-display">$$
+t=-1\Rightarrow y=3,\qquad t=1\Rightarrow y=-1.
+$$</div>
+<p>所以值域为</p>
+<div class="math-display">$$
+[-1,3].
+$$</div></div></details>
+<h2>G. 正余弦定理选择、面积与外接圆</h2>
+<h3>题 25：两角一边</h3>
+<p>在 $\triangle ABC$ 中，$A=45^\circ,B=75^\circ,a=\sqrt2$，求 $b$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>两角一边，且有边角对应，优先正弦定理：</p>
+<div class="math-display">$$
+\frac a{\sin A}=\frac b{\sin B}.
+$$</div>
+<p>因为</p>
+<div class="math-display">$$
+\frac{\sqrt2}{\sin45^\circ}
+=\frac{\sqrt2}{\sqrt2/2}=2,
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+b=2\sin75^\circ.
+$$</div>
+<p>又</p>
+<div class="math-display">$$
+\sin75^\circ=\frac{\sqrt6+\sqrt2}{4},
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+b=\frac{\sqrt6+\sqrt2}{2}.
+$$</div></div></details>
+<h3>题 26：两边夹角</h3>
+<p>在 $\triangle ABC$ 中，$a=5,b=7,C=60^\circ$，求 $c$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>已知两边及夹角，优先余弦定理：</p>
+<div class="math-display">$$
+c^2=a^2+b^2-2ab\cos C.
+$$</div>
+<p>代入：</p>
+<div class="math-display">$$
+c^2=25+49-2\cdot5\cdot7\cdot\frac12=39.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+c=\sqrt{39}.
+$$</div></div></details>
+<h3>题 27：面积公式</h3>
+<p>在 $\triangle ABC$ 中，$a=4,b=6,C=30^\circ$，求面积。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>面积公式：</p>
+<div class="math-display">$$
+S=\frac12ab\sin C.
+$$</div>
+<p>代入：</p>
+<div class="math-display">$$
+S=\frac12\cdot4\cdot6\cdot\sin30^\circ
+=12\cdot\frac12=6.
+$$</div></div></details>
+<h3>题 28：外接圆半径</h3>
+<p>在 $\triangle ABC$ 中，$A=30^\circ,a=4$，求外接圆半径 $R$ 以及外接圆面积。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>正弦定理给出</p>
+<div class="math-display">$$
+\frac a{\sin A}=2R.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+2R=\frac4{\sin30^\circ}=\frac4{1/2}=8.
+$$</div>
+<p>因此</p>
+<div class="math-display">$$
+R=4.
+$$</div>
+<p>外接圆面积为</p>
+<div class="math-display">$$
+\pi R^2=16\pi.
+$$</div></div></details>
+<h2>H. 边角互换、多解与范围</h2>
+<h3>题 29：正弦比判断形状</h3>
+<p>在 $\triangle ABC$ 中，</p>
+<div class="math-display">$$
+\sin A:\sin B:\sin C=3:4:5.
+$$</div>
+<p>判断三角形形状。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由正弦定理，</p>
+<div class="math-display">$$
+a:b:c=\sin A:\sin B:\sin C=3:4:5.
+$$</div>
+<p>因为</p>
+<div class="math-display">$$
+3^2+4^2=5^2,
+$$</div>
+<p>所以三角形为直角三角形，且最大边 $c$ 对应的角 $C=90^\circ$。</p></div></details>
+<h3>题 30：SSA 两解</h3>
+<p>在 $\triangle ABC$ 中，$A=30^\circ,a=5,b=6$。判断三角形个数。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由正弦定理：</p>
+<div class="math-display">$$
+\frac{\sin B}{b}=\frac{\sin A}{a},
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+\sin B=\frac{b\sin A}{a}
+=\frac{6\cdot\frac12}{5}
+=\frac35.
+$$</div>
+<p>在 $0^\circ$ 到 $180^\circ$ 内，满足 $\sin B=\frac35$ 的角有两个：一个锐角 $B_1$，一个钝角 $B_2=180^\circ-B_1$。</p>
+<p>还要检查 $A+B&lt;180^\circ$。因为 $B_1&lt;90^\circ$，显然满足；$B_2&lt;180^\circ$ 且约为 $143^\circ$，所以</p>
+<div class="math-display">$$
+30^\circ+B_2&lt;180^\circ.
+$$</div>
+<p>两个候选都成立，因此有两个三角形。</p></div></details>
+<h3>题 31：SSA 无解</h3>
+<p>在 $\triangle ABC$ 中，$A=30^\circ,a=4,b=10$。判断三角形是否存在。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由正弦定理：</p>
+<div class="math-display">$$
+\sin B=\frac{b\sin A}{a}
+=\frac{10\cdot\frac12}{4}
+=\frac54.
+$$</div>
+<p>但正弦值不可能大于 1，所以不存在这样的三角形。</p></div></details>
+<h3>题 32：投影恒等式</h3>
+<p>在 $\triangle ABC$ 中，证明</p>
+<div class="math-display">$$
+b\cos C+c\cos B=a.
+$$</div>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>这道题可以理解为“两个投影相加等于底边”，也可以用余弦定理代数证明。</p>
+<p>由余弦定理：</p>
+<div class="math-display">$$
+\cos C=\frac{a^2+b^2-c^2}{2ab},
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+b\cos C=\frac{a^2+b^2-c^2}{2a}.
+$$</div>
+<p>同理</p>
+<div class="math-display">$$
+c\cos B=\frac{a^2+c^2-b^2}{2a}.
+$$</div>
+<p>相加：</p>
+<div class="math-display">$$
+b\cos C+c\cos B
+=\frac{a^2+b^2-c^2+a^2+c^2-b^2}{2a}
+=a.
+$$</div></div></details>
+<h2>使用建议</h2>
+<ol><li>A、B 两组适合作为三角函数第一讲后的口算复习。</li><li>C、D 两组适合训练“符号、象限、齐次”的严谨性。</li><li>E、F 两组适合讲三角函数性质后布置，要求学生每题先说 $u=\omega x+\varphi$ 的标准问题是什么。</li><li>G、H 两组适合解三角形课堂讲评，尤其要让学生口头判断定理选择和是否存在多解。</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">三角专题</a></li><li>源文件：<code>content/09_high_school_math/02_trigonometry/04_trig_local_review_supplement_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-trig-functions-zh.html">三角函数：从单位圆到图像与恒等变换</a></h3><p>三角函数不是一组需要硬背的公式，而是一条很清楚的链：</p></div><div class="note-item"><h3><a href="02-solving-triangles-zh.html">解三角形：正弦定理、余弦定理与边角信息</a></h3><p>解三角形不是“正弦定理、余弦定理、面积公式”三条公式的堆叠。它研究的是：在一个三角形中，已知若干边角信息，怎样判断三角形是否存在、是否唯一，并进一步求出未知边角、面积、形状或取值范围。</p></div><div class="note-item"><h3><a href="03-trig-exercise-bank-zh.html">三角专题分层题库</a></h3><p>本页是三角专题的训练库，不替代讲义页。讲义页负责把概念讲透，题库页负责让学生反复练“识别题型、选择方法、检查条件”。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

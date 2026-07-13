@@ -13,6 +13,7 @@ SUMMATION_FILE = CONTENT_DIR / "01_sequences" / "02_summation_zh.md"
 TRIG_FUNCTION_FILE = CONTENT_DIR / "02_trigonometry" / "01_trig_functions_zh.md"
 SOLVE_TRIANGLES_FILE = CONTENT_DIR / "02_trigonometry" / "02_solving_triangles_zh.md"
 TRIG_EXERCISE_BANK_FILE = CONTENT_DIR / "02_trigonometry" / "03_trig_exercise_bank_zh.md"
+TRIG_LOCAL_SUPPLEMENT_FILE = CONTENT_DIR / "02_trigonometry" / "04_trig_local_review_supplement_zh.md"
 TRIG_README_FILE = CONTENT_DIR / "02_trigonometry" / "README.md"
 VECTOR_README_FILE = CONTENT_DIR / "03_plane_vectors" / "README.md"
 VECTOR_LESSON_FILE = CONTENT_DIR / "03_plane_vectors" / "01_plane_vectors_zh.md"
@@ -178,6 +179,44 @@ def check_trigonometry_exercise_bank(errors: list[str]) -> None:
             errors.append(f"{html_path.name}: generated HTML leaked an unrendered Markdown table")
 
 
+def check_trigonometry_local_supplement(errors: list[str]) -> None:
+    text = read_utf8(TRIG_LOCAL_SUPPLEMENT_FILE, errors)
+    if not text:
+        return
+    require_contains(
+        TRIG_LOCAL_SUPPLEMENT_FILE,
+        text,
+        [
+            "# 三角函数与解三角形：本地一轮复习补充",
+            "## 本地资料梳理",
+            "## 方法补充",
+            "## A. 终边相同角、象限与区域",
+            "## B. 三角函数定义与终边点",
+            "## C. 同角关系与弦的齐次",
+            "## D. 诱导公式与恒等化简",
+            "## E. 三角函数性质：周期、定义域、单调、对称",
+            "## F. 图像变换、值域与参数",
+            "## G. 正余弦定理选择、面积与外接圆",
+            "## H. 边角互换、多解与范围",
+        ],
+        errors,
+    )
+    solution_count = len(SOLUTION_PATTERN.findall(text))
+    if solution_count < 32:
+        errors.append(
+            f"{TRIG_LOCAL_SUPPLEMENT_FILE.name}: expected at least 32 solution blocks, found {solution_count}"
+        )
+
+    html_path = OUTPUT_DIR / "02-trigonometry" / "04-trig-local-review-supplement-zh.html"
+    if html_path.exists():
+        html = html_path.read_text(encoding="utf-8")
+        html_solution_count = html.count("<details class=\"solution-toggle\">")
+        if html_solution_count < 32:
+            errors.append(
+                f"{html_path.name}: expected at least 32 generated solution toggles, found {html_solution_count}"
+            )
+
+
 def check_plane_vectors(errors: list[str]) -> None:
     readme = read_utf8(VECTOR_README_FILE, errors)
     if readme:
@@ -258,6 +297,7 @@ def check_plane_vectors(errors: list[str]) -> None:
                 "## F. 向量与三角形形状判断",
                 "## G. 向量应用：最值、范围与轨迹",
                 "## H. 高考小题速度训练",
+                "## 本地考法对照表",
             ],
             errors,
         )
@@ -292,10 +332,13 @@ def main() -> int:
         errors,
     )
     check_trigonometry_exercise_bank(errors)
+    check_trigonometry_local_supplement(errors)
     check_plane_vectors(errors)
     readme = read_utf8(TRIG_README_FILE, errors)
     if readme and "03_trig_exercise_bank_zh.md" not in readme:
         errors.append("README.md: missing trigonometry exercise bank link")
+    if readme and "04_trig_local_review_supplement_zh.md" not in readme:
+        errors.append("README.md: missing local trigonometry supplement link")
 
     if errors:
         print("High-school math content check failed:")
