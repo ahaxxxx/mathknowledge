@@ -530,6 +530,13 @@ a {
   margin: 0 auto;
 }
 
+.math-diagram img.local-docx-image {
+  display: block;
+  max-width: min(100%, 760px);
+  height: auto;
+  margin: 8px auto;
+}
+
 .audio-card {
   margin: 18px 0 22px;
   padding: 16px;

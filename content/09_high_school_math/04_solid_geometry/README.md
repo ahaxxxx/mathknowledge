@@ -8,6 +8,7 @@
 
 1. [立体几何与空间向量：讲义](./01_solid_geometry_spatial_vectors_zh.md)
 2. [立体几何与空间向量：图形题库](./02_solid_geometry_exercises_zh.md)
+3. [立体几何与空间向量：考点 22-28 全量本地题库](./03_solid_geometry_local_full_exercises_zh.md)
 
 ## 本地资料来源
 

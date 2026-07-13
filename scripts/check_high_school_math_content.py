@@ -22,6 +22,7 @@ VECTOR_ADVANCED_EXERCISES_FILE = CONTENT_DIR / "03_plane_vectors" / "03_plane_ve
 SOLID_README_FILE = CONTENT_DIR / "04_solid_geometry" / "README.md"
 SOLID_LESSON_FILE = CONTENT_DIR / "04_solid_geometry" / "01_solid_geometry_spatial_vectors_zh.md"
 SOLID_EXERCISES_FILE = CONTENT_DIR / "04_solid_geometry" / "02_solid_geometry_exercises_zh.md"
+SOLID_FULL_EXERCISES_FILE = CONTENT_DIR / "04_solid_geometry" / "03_solid_geometry_local_full_exercises_zh.md"
 
 SOLUTION_PATTERN = re.compile(r"^:::solution\b", re.MULTILINE)
 
@@ -330,6 +331,7 @@ def check_solid_geometry(errors: list[str]) -> None:
                 "# 立体几何与空间向量",
                 "立体几何与空间向量：讲义",
                 "立体几何与空间向量：图形题库",
+                "立体几何与空间向量：考点 22-28 全量本地题库",
             ],
             errors,
         )
@@ -389,6 +391,49 @@ def check_solid_geometry(errors: list[str]) -> None:
             errors.append(
                 f"{html_path.name}: expected at least 21 generated diagrams, found {html_diagram_count}"
             )
+
+    full_exercises = read_utf8(SOLID_FULL_EXERCISES_FILE, errors)
+    if full_exercises:
+        require_contains(
+            SOLID_FULL_EXERCISES_FILE,
+            full_exercises,
+            [
+                "# 立体几何与空间向量：考点 22-28 全量本地题库",
+                "## 考点 22：空间几何平行问题",
+                "## 考点 23：空间几何垂直问题",
+                "## 考点 24：空间几何体体积及表面积",
+                "## 考点 25：几何法解空间角",
+                "## 考点 26：空间向量求空间角",
+                "## 考点 27：空间向量求空间距离",
+                "## 考点 28：空间几何体外接球",
+                "全量原卷题目：132 道",
+            ],
+            errors,
+        )
+        question_count = len(re.findall(r"^### 题\s+\d+", full_exercises, re.MULTILINE))
+        solution_count = len(SOLUTION_PATTERN.findall(full_exercises))
+        image_count = full_exercises.count("local-docx-image")
+        if question_count < 132:
+            errors.append(f"{SOLID_FULL_EXERCISES_FILE.name}: expected at least 132 questions, found {question_count}")
+        if solution_count < 132:
+            errors.append(f"{SOLID_FULL_EXERCISES_FILE.name}: expected at least 132 solution blocks, found {solution_count}")
+        if image_count < 300:
+            errors.append(f"{SOLID_FULL_EXERCISES_FILE.name}: expected at least 300 embedded images, found {image_count}")
+
+    full_html_path = OUTPUT_DIR / "04-solid-geometry" / "03-solid-geometry-local-full-exercises-zh.html"
+    if full_html_path.exists():
+        html = full_html_path.read_text(encoding="utf-8")
+        question_count = html.count("<h3>题 ")
+        html_solution_count = html.count("<details class=\"solution-toggle\">")
+        html_image_count = html.count("local-docx-image")
+        if question_count < 132:
+            errors.append(f"{full_html_path.name}: expected at least 132 generated questions, found {question_count}")
+        if html_solution_count < 132:
+            errors.append(
+                f"{full_html_path.name}: expected at least 132 generated solution toggles, found {html_solution_count}"
+            )
+        if html_image_count < 300:
+            errors.append(f"{full_html_path.name}: expected at least 300 generated images, found {html_image_count}")
 
 
 def main() -> int:
