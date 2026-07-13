@@ -19,6 +19,9 @@ VECTOR_README_FILE = CONTENT_DIR / "03_plane_vectors" / "README.md"
 VECTOR_LESSON_FILE = CONTENT_DIR / "03_plane_vectors" / "01_plane_vectors_zh.md"
 VECTOR_EXERCISES_FILE = CONTENT_DIR / "03_plane_vectors" / "02_plane_vectors_exercises_zh.md"
 VECTOR_ADVANCED_EXERCISES_FILE = CONTENT_DIR / "03_plane_vectors" / "03_plane_vectors_advanced_exercises_zh.md"
+SOLID_README_FILE = CONTENT_DIR / "04_solid_geometry" / "README.md"
+SOLID_LESSON_FILE = CONTENT_DIR / "04_solid_geometry" / "01_solid_geometry_spatial_vectors_zh.md"
+SOLID_EXERCISES_FILE = CONTENT_DIR / "04_solid_geometry" / "02_solid_geometry_exercises_zh.md"
 
 SOLUTION_PATTERN = re.compile(r"^:::solution\b", re.MULTILINE)
 
@@ -317,6 +320,77 @@ def check_plane_vectors(errors: list[str]) -> None:
             )
 
 
+def check_solid_geometry(errors: list[str]) -> None:
+    readme = read_utf8(SOLID_README_FILE, errors)
+    if readme:
+        require_contains(
+            SOLID_README_FILE,
+            readme,
+            [
+                "# 立体几何与空间向量",
+                "立体几何与空间向量：讲义",
+                "立体几何与空间向量：图形题库",
+            ],
+            errors,
+        )
+
+    lesson = read_utf8(SOLID_LESSON_FILE, errors)
+    if lesson:
+        require_contains(
+            SOLID_LESSON_FILE,
+            lesson,
+            [
+                "# 立体几何与空间向量：从图形到坐标",
+                "## 本地资料梳理",
+                "## 方法地图",
+                "## 图形语言",
+                "## 空间向量语言",
+                "## 费曼讲题任务",
+                ":::diagram",
+            ],
+            errors,
+        )
+
+    exercises = read_utf8(SOLID_EXERCISES_FILE, errors)
+    if exercises:
+        require_contains(
+            SOLID_EXERCISES_FILE,
+            exercises,
+            [
+                "# 立体几何与空间向量：图形题库",
+                "## 本地资料题型地图",
+                "## A. 空间平行",
+                "## B. 空间垂直",
+                "## C. 体积、表面积与等体积",
+                "## D. 几何法求空间角",
+                "## E. 空间向量求角",
+                "## F. 空间向量求距离",
+                "## G. 外接球模型",
+            ],
+            errors,
+        )
+        solution_count = len(SOLUTION_PATTERN.findall(exercises))
+        diagram_count = exercises.count(":::diagram")
+        if solution_count < 21:
+            errors.append(f"{SOLID_EXERCISES_FILE.name}: expected at least 21 solution blocks, found {solution_count}")
+        if diagram_count < 21:
+            errors.append(f"{SOLID_EXERCISES_FILE.name}: expected at least 21 diagrams, found {diagram_count}")
+
+    html_path = OUTPUT_DIR / "04-solid-geometry" / "02-solid-geometry-exercises-zh.html"
+    if html_path.exists():
+        html = html_path.read_text(encoding="utf-8")
+        html_solution_count = html.count("<details class=\"solution-toggle\">")
+        html_diagram_count = html.count("math-diagram")
+        if html_solution_count < 21:
+            errors.append(
+                f"{html_path.name}: expected at least 21 generated solution toggles, found {html_solution_count}"
+            )
+        if html_diagram_count < 21:
+            errors.append(
+                f"{html_path.name}: expected at least 21 generated diagrams, found {html_diagram_count}"
+            )
+
+
 def main() -> int:
     errors: list[str] = []
     check_summation(errors)
@@ -334,6 +408,7 @@ def main() -> int:
     check_trigonometry_exercise_bank(errors)
     check_trigonometry_local_supplement(errors)
     check_plane_vectors(errors)
+    check_solid_geometry(errors)
     readme = read_utf8(TRIG_README_FILE, errors)
     if readme and "03_trig_exercise_bank_zh.md" not in readme:
         errors.append("README.md: missing trigonometry exercise bank link")
@@ -346,7 +421,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print("PASS: summation, trigonometric functions, solving triangles, and plane vectors content are present.")
+    print("PASS: summation, trigonometry, plane vectors, and solid geometry content are present.")
     return 0
 
 
