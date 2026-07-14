@@ -484,10 +484,23 @@ def render_markdown(markdown_text: str, source_path: Path, output_rel: Path) -> 
             summary = stripped[len(":::solution"):].strip() or "查看解答"
             solution_lines: list[str] = []
             i += 1
-            while i < len(lines) and lines[i].strip() != ":::":
+            nested_depth = 0
+            while i < len(lines):
+                current = lines[i].strip()
+                if current.startswith(":::") and current != ":::":
+                    nested_depth += 1
+                    solution_lines.append(lines[i])
+                    i += 1
+                    continue
+                if current == ":::":
+                    if nested_depth == 0:
+                        i += 1
+                        break
+                    nested_depth -= 1
+                    solution_lines.append(lines[i])
+                    i += 1
+                    continue
                 solution_lines.append(lines[i])
-                i += 1
-            if i < len(lines):
                 i += 1
             inner_html = render_markdown("\n".join(solution_lines), source_path, output_rel)
             blocks.append(

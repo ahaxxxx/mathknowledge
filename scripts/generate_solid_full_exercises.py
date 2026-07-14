@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import html
 import posixpath
 import re
 import zipfile
@@ -48,6 +49,8 @@ POINTS = [
 class Unit:
     kind: str
     value: str
+    width: int | None = None
+    height: int | None = None
 
 
 @dataclass
@@ -75,7 +78,33 @@ def rel_targets(archive: zipfile.ZipFile) -> dict[str, str]:
     return result
 
 
-def copy_image(archive: zipfile.ZipFile, target: str, prefix: str, index: int) -> str:
+def image_dimensions(data: bytes) -> tuple[int | None, int | None]:
+    if data.startswith(b"\x89PNG\r\n\x1a\n") and len(data) >= 24:
+        return int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big")
+    if data.startswith(b"\xff\xd8"):
+        offset = 2
+        while offset + 9 < len(data):
+            if data[offset] != 0xFF:
+                offset += 1
+                continue
+            marker = data[offset + 1]
+            offset += 2
+            if marker in {0xD8, 0xD9}:
+                continue
+            if offset + 2 > len(data):
+                break
+            length = int.from_bytes(data[offset : offset + 2], "big")
+            if marker in {0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF}:
+                if offset + 7 <= len(data):
+                    height = int.from_bytes(data[offset + 3 : offset + 5], "big")
+                    width = int.from_bytes(data[offset + 5 : offset + 7], "big")
+                    return width, height
+                break
+            offset += length
+    return None, None
+
+
+def copy_image(archive: zipfile.ZipFile, target: str, prefix: str, index: int) -> tuple[str, int | None, int | None]:
     suffix = Path(target).suffix.lower() or ".png"
     data = archive.read(target)
     digest = hashlib.sha1(data).hexdigest()[:10]
@@ -83,7 +112,8 @@ def copy_image(archive: zipfile.ZipFile, target: str, prefix: str, index: int) -
     destination = ASSET_DIR / filename
     if not destination.exists():
         destination.write_bytes(data)
-    return f"{ASSET_HREF_PREFIX}/{filename}"
+    width, height = image_dimensions(data)
+    return f"{ASSET_HREF_PREFIX}/{filename}", width, height
 
 
 def paragraph_units(para: ET.Element, rels: dict[str, str], archive: zipfile.ZipFile, prefix: str, counter: list[int]) -> Block:
@@ -98,8 +128,8 @@ def paragraph_units(para: ET.Element, rels: dict[str, str], archive: zipfile.Zip
             target = rels.get(embed or "")
             if target and target in archive.namelist():
                 counter[0] += 1
-                href = copy_image(archive, target, prefix, counter[0])
-                units.append(Unit("image", href))
+                href, width, height = copy_image(archive, target, prefix, counter[0])
+                units.append(Unit("image", href, width, height))
     return Block("".join(text_parts).strip(), units)
 
 
@@ -156,52 +186,84 @@ def find_docx(point: str, *, source: str, version: str) -> Path:
     return sorted(candidates, key=lambda path: len(str(path)))[0]
 
 
-def block_to_markdown(block: Block) -> str:
-    parts: list[str] = []
-    text_buffer: list[str] = []
+def is_block_image(unit: Unit) -> bool:
+    if unit.width is None or unit.height is None:
+        return True
+    return unit.width >= 260 or unit.height >= 120
 
-    def flush_text() -> None:
-        if text_buffer:
-            text = "".join(text_buffer).strip()
-            if text:
-                parts.append(text)
-            text_buffer.clear()
+
+def image_tag(unit: Unit, *, block: bool) -> str:
+    class_name = "local-docx-image local-docx-block-image" if block else "local-docx-image local-docx-inline-image"
+    attrs = [
+        f'class="{class_name}"',
+        f'src="{html.escape(unit.value, quote=True)}"',
+        'alt="本地资料图片"',
+    ]
+    if unit.width is not None:
+        attrs.append(f'width="{unit.width}"')
+    if unit.height is not None:
+        attrs.append(f'height="{unit.height}"')
+    return "<img " + " ".join(attrs) + ">"
+
+
+def block_to_html(block: Block) -> str:
+    parts: list[str] = []
+    inline_parts: list[str] = []
+
+    def flush_inline() -> None:
+        content = "".join(inline_parts).strip()
+        if content:
+            parts.append(f'<p class="local-docx-line">{content}</p>')
+        inline_parts.clear()
 
     for unit in block.units:
         if unit.kind == "text":
-            text_buffer.append(unit.value)
-        elif unit.kind == "image":
-            flush_text()
-            parts.append(f'<img class="local-docx-image" src="{unit.value}" alt="本地资料图片">')
-    flush_text()
+            inline_parts.append(html.escape(unit.value))
+            continue
+        if unit.kind != "image":
+            continue
+        block_image = is_block_image(unit)
+        if block_image:
+            flush_inline()
+            parts.append(f'<div class="local-docx-figure">{image_tag(unit, block=True)}</div>')
+        else:
+            inline_parts.append(image_tag(unit, block=False))
+    flush_inline()
     return "\n".join(parts)
 
 
 def question_to_markdown(question: Question, global_index: int) -> str:
+    body = "\n".join(rendered for block in question.blocks if (rendered := block_to_html(block)))
     lines = [f"### 题 {global_index}｜原题 {question.number}", ""]
-    for block in question.blocks:
-        rendered = block_to_markdown(block)
-        if not rendered:
-            continue
-        if "<img " in rendered:
-            lines.extend([":::diagram", rendered, ":::", ""])
-        else:
-            lines.extend([rendered, ""])
+    if body:
+        lines.extend(
+            [
+                ":::diagram",
+                '<div class="local-docx-card local-docx-question">',
+                body,
+                "</div>",
+                ":::",
+            ]
+        )
     return "\n".join(lines).rstrip()
 
 
 def solution_to_markdown(question: Question | None) -> str:
     if question is None:
         return ""
+    body = "\n".join(rendered for block in question.blocks if (rendered := block_to_html(block)))
     lines = [":::solution 查看解析版原文", ""]
-    for block in question.blocks:
-        rendered = block_to_markdown(block)
-        if not rendered:
-            continue
-        if "<img " in rendered:
-            lines.extend([":::diagram", rendered, ":::", ""])
-        else:
-            lines.extend([rendered, ""])
+    if body:
+        lines.extend(
+            [
+                ":::diagram",
+                '<div class="local-docx-card local-docx-answer">',
+                body,
+                "</div>",
+                ":::",
+                "",
+            ]
+        )
     lines.append(":::")
     return "\n".join(lines).rstrip()
 
