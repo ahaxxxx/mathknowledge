@@ -4,6 +4,8 @@ import hashlib
 import html
 import posixpath
 import re
+import shutil
+import subprocess
 import zipfile
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
@@ -30,9 +32,11 @@ ASSET_HREF_PREFIX = "../../../assets/solid-geometry-local"
 NS = {
     "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
     "a": "http://schemas.openxmlformats.org/drawingml/2006/main",
+    "v": "urn:schemas-microsoft-com:vml",
     "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
     "rel": "http://schemas.openxmlformats.org/package/2006/relationships",
 }
+MAGICK_EXE = shutil.which("magick") or r"C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe"
 
 POINTS = [
     ("22", "空间几何平行问题"),
@@ -51,6 +55,7 @@ class Unit:
     value: str
     width: int | None = None
     height: int | None = None
+    inline_hint: bool = False
 
 
 @dataclass
@@ -104,15 +109,42 @@ def image_dimensions(data: bytes) -> tuple[int | None, int | None]:
     return None, None
 
 
+def convert_vector_image(data: bytes, suffix: str, destination: Path) -> None:
+    if not MAGICK_EXE or not Path(MAGICK_EXE).exists():
+        destination.write_bytes(data)
+        return
+    temp_source = destination.with_suffix(suffix)
+    temp_source.write_bytes(data)
+    try:
+        result = subprocess.run(
+            [MAGICK_EXE, str(temp_source), str(destination)],
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode != 0 or not destination.exists():
+            destination.write_bytes(data)
+    finally:
+        try:
+            temp_source.unlink()
+        except FileNotFoundError:
+            pass
+
+
 def copy_image(archive: zipfile.ZipFile, target: str, prefix: str, index: int) -> tuple[str, int | None, int | None]:
-    suffix = Path(target).suffix.lower() or ".png"
+    original_suffix = Path(target).suffix.lower() or ".png"
+    suffix = ".png" if original_suffix in {".wmf", ".emf"} else original_suffix
     data = archive.read(target)
     digest = hashlib.sha1(data).hexdigest()[:10]
     filename = f"{prefix}-{index:03d}-{digest}{suffix}"
     destination = ASSET_DIR / filename
     if not destination.exists():
-        destination.write_bytes(data)
-    width, height = image_dimensions(data)
+        if original_suffix in {".wmf", ".emf"}:
+            convert_vector_image(data, original_suffix, destination)
+        else:
+            destination.write_bytes(data)
+    converted_data = destination.read_bytes()
+    width, height = image_dimensions(converted_data)
     return f"{ASSET_HREF_PREFIX}/{filename}", width, height
 
 
@@ -130,6 +162,13 @@ def paragraph_units(para: ET.Element, rels: dict[str, str], archive: zipfile.Zip
                 counter[0] += 1
                 href, width, height = copy_image(archive, target, prefix, counter[0])
                 units.append(Unit("image", href, width, height))
+        elif node.tag == f"{{{NS['v']}}}imagedata":
+            embed = node.attrib.get(f"{{{NS['r']}}}id") or node.attrib.get(f"{{{NS['r']}}}embed")
+            target = rels.get(embed or "")
+            if target and target in archive.namelist():
+                counter[0] += 1
+                href, width, height = copy_image(archive, target, prefix, counter[0])
+                units.append(Unit("image", href, width, height, True))
     return Block("".join(text_parts).strip(), units)
 
 
@@ -187,9 +226,11 @@ def find_docx(point: str, *, source: str, version: str) -> Path:
 
 
 def is_block_image(unit: Unit) -> bool:
+    if unit.inline_hint:
+        return False
     if unit.width is None or unit.height is None:
         return True
-    return unit.width >= 260 or unit.height >= 120
+    return unit.height >= 120 or (unit.width >= 420 and unit.height >= 80)
 
 
 def image_tag(unit: Unit, *, block: bool) -> str:
@@ -269,12 +310,7 @@ def solution_to_markdown(question: Question | None) -> str:
 
 
 def main() -> int:
-    if ASSET_DIR.exists():
-        for child in ASSET_DIR.iterdir():
-            if child.is_file():
-                child.unlink()
-    else:
-        ASSET_DIR.mkdir(parents=True, exist_ok=True)
+    ASSET_DIR.mkdir(parents=True, exist_ok=True)
 
     lines: list[str] = [
         "# 立体几何与空间向量：考点 22-28 全量本地题库",

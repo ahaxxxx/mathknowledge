@@ -562,12 +562,12 @@ a {
 
 .math-diagram img.local-docx-inline-image {
   display: inline-block;
-  max-width: min(100%, 220px);
-  max-height: 2.6em;
+  max-width: min(100%, 520px);
+  max-height: 1.7em;
   width: auto;
   height: auto;
   margin: 0 3px;
-  vertical-align: -0.35em;
+  vertical-align: -0.42em;
 }
 
 .solution-body .math-diagram {
