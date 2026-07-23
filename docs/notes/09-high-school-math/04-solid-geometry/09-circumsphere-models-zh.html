@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>外接球模型 | math.bozhanli.com</title>
+  <meta name="description" content="外接球问题的核心定义只有一句话：球心到几何体所有顶点的距离相等。所有模型、公式和技巧都要回到这句话。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">立体几何/空间向量</a><span>/</span><span>外接球模型</span></div>
+      <h1>外接球模型</h1>
+      <p>外接球问题的核心定义只有一句话：球心到几何体所有顶点的距离相等。所有模型、公式和技巧都要回到这句话。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>基本思想</h2>
+<p>若一个球经过多面体的所有顶点，这个球叫该多面体的外接球。球心 $O$ 满足</p>
+<div class="math-display">$$
+OA=OB=OC=\cdots=R.
+$$</div>
+<p>所以外接球题不是先背半径公式，而是先找“等距中心”。</p>
+<h2>常见模型</h2>
+<p>长方体或正方体：</p>
+<div class="math-display">$$
+R=\frac12\sqrt{a^2+b^2+c^2}.
+$$</div>
+<p>因为外接球球心是体对角线中点，半径是体对角线的一半。</p>
+<p>直棱柱：</p>
+<p>如果底面外接圆半径为 $r$，高为 $h$，则</p>
+<div class="math-display">$$
+R^2=r^2+\left(\frac h2\right)^2.
+$$</div>
+<p>这是因为球心在上下底面外接圆圆心连线的中点。</p>
+<p>正棱锥：</p>
+<p>球心在高所在直线上。若底面外接圆半径为 $r$，高为 $h$，设球心到底面的距离为 $x$，则</p>
+<div class="math-display">$$
+R^2=r^2+x^2=(h-x)^2.
+$$</div>
+<p>由此可解出 $x$ 和 $R$。</p>
+<p>直角三角形模型：</p>
+<p>直角三角形的外接圆圆心是斜边中点。若某个截面或底面是直角三角形，这个性质常常能快速定位圆心。</p>
+<figure class="math-diagram"><svg viewBox="0 0 640 320" role="img" aria-label="正棱锥外接球截面模型">
+  <circle cx="320" cy="165" r="110" fill="none" stroke="#d7c7aa" stroke-width="3"/>
+  <line x1="320" y1="55" x2="210" y2="230" stroke="#1f2937" stroke-width="3"/>
+  <line x1="320" y1="55" x2="430" y2="230" stroke="#1f2937" stroke-width="3"/>
+  <line x1="210" y1="230" x2="430" y2="230" stroke="#1f2937" stroke-width="3"/>
+  <line x1="320" y1="55" x2="320" y2="230" stroke="#dc2626" stroke-width="3" stroke-dasharray="6 6"/>
+  <circle cx="320" cy="165" r="5" fill="#0f766e"/>
+  <text x="310" y="45" font-size="18">P</text>
+  <text x="198" y="252" font-size="18">A</text>
+  <text x="435" y="252" font-size="18">B</text>
+  <text x="330" y="170" font-size="18" fill="#0f766e">O</text>
+  <text x="330" y="120" font-size="18" fill="#dc2626">球心在高上</text>
+</svg></figure>
+<h2>解题流程</h2>
+<ol><li>判断几何体是否能放进长方体、直棱柱、正棱锥或直角模型。</li><li>找底面外接圆圆心或体对角线中点。</li><li>判断球心所在直线。</li><li>利用到各顶点距离相等列方程。</li><li>求半径后再求表面积或体积。</li></ol>
+<h2>常见错误</h2>
+<ol><li>把底面外接圆半径当成外接球半径。</li><li>正棱锥外接球球心不一定在底面上，而是在高上。</li><li>只让球经过了部分顶点，没有验证所有顶点等距。</li><li>忽略“补成长方体”的可能性。</li></ol>
+<h2>训练题</h2>
+<ol><li>长方体三条棱长为 $3,4,12$，求外接球半径。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>体对角线长为 $13$，外接球半径为体对角线一半，所以 $R=\frac{13}{2}$。</p></div></details>
+<ol><li>正方体棱长为 $2$，求外接球表面积。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>外接球半径</p>
+<div class="math-display">$$
+R=\frac12\sqrt{2^2+2^2+2^2}=\sqrt3.
+$$</div>
+<p>所以表面积</p>
+<div class="math-display">$$
+S=4\pi R^2=12\pi.
+$$</div></div></details>
+<ol><li>直三棱柱高为 $6$，底面外接圆半径为 $4$，求外接球半径。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+R^2=4^2+3^2=25,
+$$</div>
+<p>所以 $R=5$。</p></div></details>
+<ol><li>正四棱锥底面边长为 $2$，高为 $2$，求外接球半径。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>底面外接圆半径 $r=\sqrt2$。设球心到底面距离为 $x$，则</p>
+<div class="math-display">$$
+R^2=x^2+2=(2-x)^2.
+$$</div>
+<p>解得 $x=\frac12$，所以</p>
+<div class="math-display">$$
+R^2=\frac14+2=\frac94,\quad R=\frac32.
+$$</div></div></details>
+<ol><li>一个三棱锥的四个顶点都在同一个长方体的顶点上，求外接球时应优先考虑什么？</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>优先考虑把三棱锥补成长方体。若四个顶点属于同一个长方体的顶点，则该三棱锥的外接球通常就是长方体的外接球。</p></div></details>
+<h2>讲题追问</h2>
+<p>每道外接球题都让学生回答：球心为什么在这里？它到哪些顶点的距离相等？这比直接背模型更重要。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">立体几何/空间向量</a></li><li>源文件：<code>content/09_high_school_math/04_solid_geometry/09_circumsphere_models_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-solid-geometry-spatial-vectors-zh.html">立体几何与空间向量：从图形到坐标</a></h3><p>这一页是立体几何专题的总览。它不直接追求“背完所有公式”，而是建立一条上课主线：先把空间图形的语言说清楚，再用平行、垂直、角、距离、体积这些关系组织题目；当几何法不够稳定时，再把空间关系翻译成向量和坐标。</p></div><div class="note-item"><h3><a href="01-space-language-axioms-zh.html">空间图形语言与基本公理</a></h3><p>学立体几何的第一步不是套公式，而是把图读成数学语言。图上看到的是棱、面、顶点；题目真正使用的是点、线、面之间的位置关系。</p></div><div class="note-item"><h3><a href="02-parallel-relations-zh.html">空间平行：线线、线面、面面</a></h3><p>空间平行题的核心是“把高维关系降到低维关系”。线面平行通常转化为线线平行，面面平行通常转化为两组相交直线分别平行。</p></div><div class="note-item"><h3><a href="02-solid-geometry-exercises-zh.html">立体几何与空间向量：图形题库</a></h3><p>这一页按本地考点 22 到考点 28 重写整理。每道题先给题干图形；解析中的辅助线、坐标系和计算过程放在“查看解析”里。</p></div><div class="note-item"><h3><a href="03-perpendicular-relations-zh.html">空间垂直：线线、线面、面面</a></h3><p>空间垂直比空间平行更容易出错，因为“看起来垂直”不可靠。垂直证明必须说明垂直发生在哪里，是线线垂直、线面垂直，还是面面垂直。</p></div><div class="note-item"><h3><a href="03-solid-geometry-local-full-exercises-zh.html">立体几何与空间向量：考点 22-28 全量本地题库</a></h3><p>这一页把本地一轮复习资料中考点 22 到考点 28 的练习题按原考点完整整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后补充训练和查漏补缺。</p></div><div class="note-item"><h3><a href="04-volume-surface-equivolume-zh.html">体积、表面积与等体积法</a></h3><p>体积和表面积题表面上是计算，实质上仍然是读图。体积题的关键是找底面和高；表面积题的关键是确认哪些面暴露在外，哪些面被拼接或遮挡。</p></div><div class="note-item"><h3><a href="05-space-angles-geometric-zh.html">空间角的几何法</a></h3><p>空间角有三类：异面直线所成角、直线与平面所成角、二面角。它们的共同思想是把空间中的角还原成某个平面内的角。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

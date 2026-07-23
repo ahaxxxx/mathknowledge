@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>空间图形语言与基本公理 | math.bozhanli.com</title>
+  <meta name="description" content="学立体几何的第一步不是套公式，而是把图读成数学语言。图上看到的是棱、面、顶点；题目真正使用的是点、线、面之间的位置关系。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">立体几何/空间向量</a><span>/</span><span>空间图形语言与基本公理</span></div>
+      <h1>空间图形语言与基本公理</h1>
+      <p>学立体几何的第一步不是套公式，而是把图读成数学语言。图上看到的是棱、面、顶点；题目真正使用的是点、线、面之间的位置关系。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>基本对象</h2>
+<p>点没有大小，只表示位置。直线由两个不同点确定。平面可以想象成无限延展的平整面，不是图中画出来的那一小块平行四边形。</p>
+<p>空间中最常见的关系有：</p>
+<ol><li>点在直线上，记作 $A\in l$。</li><li>点在平面内，记作 $A\in \alpha$。</li><li>直线在平面内，记作 $l\subset \alpha$。</li><li>直线与平面相交，记作 $l\cap \alpha=A$。</li><li>两平面相交，交线是一条直线，记作 $\alpha\cap\beta=l$。</li></ol>
+<h2>三个基本公理</h2>
+<ol><li>不共线的三点确定一个平面。</li><li>如果一条直线上的两个点在一个平面内，那么这条直线在这个平面内。</li><li>如果两个平面有公共点，那么它们的公共点组成一条过该点的直线。</li></ol>
+<p>这些公理不是用来背的，而是用来解释“为什么某些点共面”“为什么某条线在某个面内”“为什么两个面的交线可以被确定”。</p>
+<h2>位置关系总表</h2>
+<p>两条直线的位置关系有三种：</p>
+<ol><li>相交：在同一平面内，有一个公共点。</li><li>平行：在同一平面内，没有公共点。</li><li>异面：不在任何同一平面内，没有公共点。</li></ol>
+<p>直线与平面的位置关系有三种：</p>
+<ol><li>直线在平面内。</li><li>直线与平面相交。</li><li>直线与平面平行。</li></ol>
+<p>两个平面的位置关系有两种：</p>
+<ol><li>相交。</li><li>平行。</li></ol>
+<p>注意：两条直线“不相交”不一定平行，因为它们可能异面。很多学生立体几何出错，就是把平面几何中的直觉直接搬到了空间里。</p>
+<figure class="math-diagram"><svg viewBox="0 0 640 300" role="img" aria-label="空间中相交、平行、异面直线示意图">
+  <rect x="40" y="150" width="260" height="90" fill="#f8f3ea" stroke="#d7c7aa"/>
+  <path d="M40 150 L115 105 L375 105 L300 150 Z" fill="#f8f3ea" stroke="#d7c7aa"/>
+  <path d="M300 150 L375 105 L375 195 L300 240 Z" fill="#f8f3ea" stroke="#d7c7aa"/>
+  <line x1="75" y1="205" x2="250" y2="165" stroke="#1f2937" stroke-width="4"/>
+  <line x1="95" y1="165" x2="270" y2="205" stroke="#0f766e" stroke-width="4"/>
+  <line x1="435" y1="230" x2="585" y2="145" stroke="#dc2626" stroke-width="4"/>
+  <text x="120" y="255" font-size="18" fill="#1f2937">同一平面内相交</text>
+  <text x="430" y="260" font-size="18" fill="#dc2626">空间中另一条线：可能异面</text>
+</svg></figure>
+<h2>读图的四个动作</h2>
+<ol><li>标面：先看题目真正涉及哪些平面，例如平面 $ABC$、平面 $PAB$。</li><li>标线：找交线、棱、中线、高、对角线。</li><li>标点：中点、垂足、交点、投影点通常是解题入口。</li><li>标目标：证明关系题先找“要证的关系”，计算题先找“要计算的量”。</li></ol>
+<h2>常见错误</h2>
+<ol><li>把图上看起来平行当成已知平行。</li><li>把两个没有交点的直线直接当成平行。</li><li>没有说明某条辅助线为什么在某个平面内。</li><li>证明线面关系时，只证明了线和面内一条线的关系，却忘了判定条件。</li></ol>
+<h2>训练题</h2>
+<ol><li>在正方体 $ABCD-A_1B_1C_1D_1$ 中，判断 $AB$ 与 $CC_1$ 的位置关系。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>二者不相交，也不在同一个平面内，所以是异面直线。不能因为图上看起来“不交”就说平行。</p></div></details>
+<ol><li>在三棱锥 $P-ABC$ 中，若 $D,E$ 分别是 $PA,PB$ 的中点，说明 $DE$ 在哪个平面内。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$D,E$ 都在平面 $PAB$ 内，由“两点确定直线”以及“直线上两点在平面内则直线在平面内”，得 $DE\subset$ 平面 $PAB$。</p></div></details>
+<ol><li>两个平面 $\alpha,\beta$ 交于直线 $l$，点 $A\in \alpha$ 且 $A\in\beta$，说明 $A$ 与 $l$ 的关系。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>两个平面的公共点都在它们的交线上，所以 $A\in l$。</p></div></details>
+<ol><li>已知 $A,B,C$ 不共线，点 $D$ 满足 $D\in$ 平面 $ABC$。能否说 $A,B,D$ 一定不共线？</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>不能。$D$ 可能在直线 $AB$ 上。只能确定 $A,B,C,D$ 共面，不能推出 $A,B,D$ 不共线。</p></div></details>
+<ol><li>在空间中，两条直线 $m,n$ 没有公共点。它们一定平行吗？</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>不一定。若 $m,n$ 共面且没有公共点，则平行；若不共面，则异面。</p></div></details>
+<h2>讲题追问</h2>
+<p>让学生解释：为什么“异面直线”这个概念在平面几何里不存在？这能帮助她意识到立体几何不是平面几何的简单延伸。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">立体几何/空间向量</a></li><li>源文件：<code>content/09_high_school_math/04_solid_geometry/01_space_language_axioms_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-solid-geometry-spatial-vectors-zh.html">立体几何与空间向量：从图形到坐标</a></h3><p>这一页是立体几何专题的总览。它不直接追求“背完所有公式”，而是建立一条上课主线：先把空间图形的语言说清楚，再用平行、垂直、角、距离、体积这些关系组织题目；当几何法不够稳定时，再把空间关系翻译成向量和坐标。</p></div><div class="note-item"><h3><a href="02-parallel-relations-zh.html">空间平行：线线、线面、面面</a></h3><p>空间平行题的核心是“把高维关系降到低维关系”。线面平行通常转化为线线平行，面面平行通常转化为两组相交直线分别平行。</p></div><div class="note-item"><h3><a href="02-solid-geometry-exercises-zh.html">立体几何与空间向量：图形题库</a></h3><p>这一页按本地考点 22 到考点 28 重写整理。每道题先给题干图形；解析中的辅助线、坐标系和计算过程放在“查看解析”里。</p></div><div class="note-item"><h3><a href="03-perpendicular-relations-zh.html">空间垂直：线线、线面、面面</a></h3><p>空间垂直比空间平行更容易出错，因为“看起来垂直”不可靠。垂直证明必须说明垂直发生在哪里，是线线垂直、线面垂直，还是面面垂直。</p></div><div class="note-item"><h3><a href="03-solid-geometry-local-full-exercises-zh.html">立体几何与空间向量：考点 22-28 全量本地题库</a></h3><p>这一页把本地一轮复习资料中考点 22 到考点 28 的练习题按原考点完整整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后补充训练和查漏补缺。</p></div><div class="note-item"><h3><a href="04-volume-surface-equivolume-zh.html">体积、表面积与等体积法</a></h3><p>体积和表面积题表面上是计算，实质上仍然是读图。体积题的关键是找底面和高；表面积题的关键是确认哪些面暴露在外，哪些面被拼接或遮挡。</p></div><div class="note-item"><h3><a href="05-space-angles-geometric-zh.html">空间角的几何法</a></h3><p>空间角有三类：异面直线所成角、直线与平面所成角、二面角。它们的共同思想是把空间中的角还原成某个平面内的角。</p></div><div class="note-item"><h3><a href="06-spatial-vectors-coordinates-normals-zh.html">空间向量：建系、坐标与法向量</a></h3><p>空间向量的意义不是逃避图形，而是把图形关系变成稳定计算。平行变成向量共线，垂直变成内积为 0，平面变成法向量，角和距离变成公式。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

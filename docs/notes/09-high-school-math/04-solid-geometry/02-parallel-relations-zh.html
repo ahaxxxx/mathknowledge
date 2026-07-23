@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>空间平行：线线、线面、面面 | math.bozhanli.com</title>
+  <meta name="description" content="空间平行题的核心是“把高维关系降到低维关系”。线面平行通常转化为线线平行，面面平行通常转化为两组相交直线分别平行。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">立体几何/空间向量</a><span>/</span><span>空间平行：线线、线面、面面</span></div>
+      <h1>空间平行：线线、线面、面面</h1>
+      <p>空间平行题的核心是“把高维关系降到低维关系”。线面平行通常转化为线线平行，面面平行通常转化为两组相交直线分别平行。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>线线平行</h2>
+<p>线线平行要求两件事同时成立：</p>
+<ol><li>两条直线共面。</li><li>两条直线没有公共点。</li></ol>
+<p>在证明中，最常用的来源是中位线、平行四边形、矩形、正方形、相似三角形。</p>
+<h2>线面平行</h2>
+<p>定义：直线 $l$ 与平面 $\alpha$ 没有公共点，则 $l\parallel \alpha$。</p>
+<p>判定定理：如果 $l\not\subset\alpha$，且平面 $\alpha$ 内存在直线 $m$ 使 $l\parallel m$，那么 $l\parallel\alpha$。</p>
+<p>性质定理：如果 $l\parallel\alpha$，过 $l$ 的平面 $\beta$ 与 $\alpha$ 相交于 $m$，那么 $l\parallel m$。</p>
+<p>判定定理用于“证明线面平行”。性质定理用于“已知线面平行，推出线线平行”。</p>
+<figure class="math-diagram"><svg viewBox="0 0 640 300" role="img" aria-label="线面平行的判定">
+  <polygon points="90,210 420,210 520,125 190,125" fill="#f8f3ea" stroke="#d7c7aa" stroke-width="2"/>
+  <line x1="155" y1="178" x2="390" y2="178" stroke="#0f766e" stroke-width="4"/>
+  <line x1="130" y1="86" x2="365" y2="86" stroke="#dc2626" stroke-width="4"/>
+  <text x="245" y="200" font-size="18" fill="#0f766e">m 在平面 α 内</text>
+  <text x="220" y="70" font-size="18" fill="#dc2626">l ∥ m</text>
+  <text x="430" y="230" font-size="18" fill="#1f2937">所以 l ∥ α</text>
+</svg></figure>
+<h2>面面平行</h2>
+<p>定义：两个平面没有公共点，则它们平行。</p>
+<p>判定定理：如果一个平面内两条相交直线分别平行于另一个平面内的两条直线，那么这两个平面平行。</p>
+<p>常用形式：在平面 $\alpha$ 内找两条相交直线 $a,b$，证明 $a\parallel\beta$ 且 $b\parallel\beta$，即可推出 $\alpha\parallel\beta$。</p>
+<p>性质定理：如果两个平行平面被第三个平面所截，那么所得交线平行。</p>
+<h2>证明链模板</h2>
+<p>证明线面平行：</p>
+<ol><li>先说明目标直线不在目标平面内。</li><li>在目标平面内找一条直线。</li><li>证明这两条直线平行。</li><li>用线面平行判定。</li></ol>
+<p>证明面面平行：</p>
+<ol><li>在第一个平面内找两条相交直线。</li><li>分别证明它们平行于第二个平面。</li><li>用面面平行判定。</li></ol>
+<h2>常见入口</h2>
+<ol><li>中点给中位线。</li><li>平行四边形给对边平行。</li><li>正方体和长方体给对应棱平行。</li><li>截面题常用“第三平面截平行平面，交线平行”。</li></ol>
+<h2>训练题</h2>
+<ol><li>在三棱锥 $P-ABC$ 中，$D,E$ 分别为 $PA,PB$ 的中点，证明 $DE\parallel$ 平面 $ABC$。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>在三角形 $PAB$ 中，$D,E$ 为两边中点，所以 $DE\parallel AB$。又 $AB\subset$ 平面 $ABC$，且 $DE\not\subset$ 平面 $ABC$，因此 $DE\parallel$ 平面 $ABC$。</p></div></details>
+<ol><li>在正方体 $ABCD-A_1B_1C_1D_1$ 中，证明 $A_1B_1\parallel$ 平面 $ABCD$。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$A_1B_1\parallel AB$，且 $AB\subset$ 平面 $ABCD$，$A_1B_1$ 不在平面 $ABCD$ 内，所以 $A_1B_1\parallel$ 平面 $ABCD$。</p></div></details>
+<ol><li>在四棱锥 $P-ABCD$ 中，底面 $ABCD$ 为平行四边形。证明 $AB\parallel$ 平面 $PCD$。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为 $ABCD$ 是平行四边形，所以 $AB\parallel CD$。又 $CD\subset$ 平面 $PCD$，$AB\not\subset$ 平面 $PCD$，所以 $AB\parallel$ 平面 $PCD$。</p></div></details>
+<ol><li>在三棱柱 $ABC-A_1B_1C_1$ 中，证明平面 $ABC\parallel$ 平面 $A_1B_1C_1$。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>棱柱对应棱平行，有 $AB\parallel A_1B_1$，$AC\parallel A_1C_1$。又 $AB,AC$ 相交于 $A$，所以平面 $ABC\parallel$ 平面 $A_1B_1C_1$。</p></div></details>
+<ol><li>已知平面 $\alpha\parallel\beta$，平面 $\gamma$ 与它们分别交于 $a,b$，证明 $a\parallel b$。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>这是平行平面的性质定理：两个平行平面被第三个平面所截，所得交线平行。</p></div></details>
+<h2>讲题追问</h2>
+<p>让学生每次证明线面平行时都补一句：我在目标平面内找到了哪一条“替身直线”？如果说不出来，说明证明链还没有闭合。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">立体几何/空间向量</a></li><li>源文件：<code>content/09_high_school_math/04_solid_geometry/02_parallel_relations_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-solid-geometry-spatial-vectors-zh.html">立体几何与空间向量：从图形到坐标</a></h3><p>这一页是立体几何专题的总览。它不直接追求“背完所有公式”，而是建立一条上课主线：先把空间图形的语言说清楚，再用平行、垂直、角、距离、体积这些关系组织题目；当几何法不够稳定时，再把空间关系翻译成向量和坐标。</p></div><div class="note-item"><h3><a href="01-space-language-axioms-zh.html">空间图形语言与基本公理</a></h3><p>学立体几何的第一步不是套公式，而是把图读成数学语言。图上看到的是棱、面、顶点；题目真正使用的是点、线、面之间的位置关系。</p></div><div class="note-item"><h3><a href="02-solid-geometry-exercises-zh.html">立体几何与空间向量：图形题库</a></h3><p>这一页按本地考点 22 到考点 28 重写整理。每道题先给题干图形；解析中的辅助线、坐标系和计算过程放在“查看解析”里。</p></div><div class="note-item"><h3><a href="03-perpendicular-relations-zh.html">空间垂直：线线、线面、面面</a></h3><p>空间垂直比空间平行更容易出错，因为“看起来垂直”不可靠。垂直证明必须说明垂直发生在哪里，是线线垂直、线面垂直，还是面面垂直。</p></div><div class="note-item"><h3><a href="03-solid-geometry-local-full-exercises-zh.html">立体几何与空间向量：考点 22-28 全量本地题库</a></h3><p>这一页把本地一轮复习资料中考点 22 到考点 28 的练习题按原考点完整整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后补充训练和查漏补缺。</p></div><div class="note-item"><h3><a href="04-volume-surface-equivolume-zh.html">体积、表面积与等体积法</a></h3><p>体积和表面积题表面上是计算，实质上仍然是读图。体积题的关键是找底面和高；表面积题的关键是确认哪些面暴露在外，哪些面被拼接或遮挡。</p></div><div class="note-item"><h3><a href="05-space-angles-geometric-zh.html">空间角的几何法</a></h3><p>空间角有三类：异面直线所成角、直线与平面所成角、二面角。它们的共同思想是把空间中的角还原成某个平面内的角。</p></div><div class="note-item"><h3><a href="06-spatial-vectors-coordinates-normals-zh.html">空间向量：建系、坐标与法向量</a></h3><p>空间向量的意义不是逃避图形，而是把图形关系变成稳定计算。平行变成向量共线，垂直变成内积为 0，平面变成法向量，角和距离变成公式。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

@@ -2,6 +2,21 @@
 
 这一页按本地考点 22 到考点 28 重写整理。每道题先给题干图形；解析中的辅助线、坐标系和计算过程放在“查看解析”里。
 
+## 使用方式
+
+这页不是原题堆叠，而是精选训练页。建议先学完对应模块，再做同类题。
+
+1. 学 [空间图形语言与基本公理](./01_space_language_axioms_zh.md) 后，先做读图、共面、异面判断。
+2. 学 [空间平行](./02_parallel_relations_zh.md) 后，做 A 组空间平行。
+3. 学 [空间垂直](./03_perpendicular_relations_zh.md) 后，做 B 组空间垂直。
+4. 学 [体积、表面积与等体积法](./04_volume_surface_equivolume_zh.md) 后，做 C 组体积表面积。
+5. 学 [空间角的几何法](./05_space_angles_geometric_zh.md) 后，做 D 组空间角。
+6. 学 [空间向量求角](./07_spatial_vectors_angles_zh.md) 后，做 E 组向量求角。
+7. 学 [空间向量求距离](./08_spatial_vectors_distances_zh.md) 后，做 F 组向量求距离。
+8. 学 [外接球模型](./09_circumsphere_models_zh.md) 后，做 G 组外接球。
+
+如果需要刷量，再进入 [考点 22-28 全量本地题库](./03_solid_geometry_local_full_exercises_zh.md)。全量题库保留原资料图像，适合课后抽题，不适合第一次建立体系时直接通刷。
+
 返回讲义：[立体几何与空间向量：从图形到坐标](./01_solid_geometry_spatial_vectors_zh.md)。
 
 ## 本地资料题型地图
