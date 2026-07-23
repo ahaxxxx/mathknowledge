@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>解析几何与圆锥曲线：模块分层训练题库 | math.bozhanli.com</title>
+  <meta name="description" content="这一页是解析几何的配套训练。每组题都对应一个模块，题目不追求花哨，而是训练高考解析几何最重要的稳定动作：设、联立、韦达、转化、消参、检查。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">解析几何/圆锥曲线</a><span>/</span><span>解析几何与圆锥曲线：模块分层训练题库</span></div>
+      <h1>解析几何与圆锥曲线：模块分层训练题库</h1>
+      <p>这一页是解析几何的配套训练。每组题都对应一个模块，题目不追求花哨，而是训练高考解析几何最重要的稳定动作：设、联立、韦达、转化、消参、检查。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>A. 坐标与直线</h2>
+<h3>A1 基础</h3>
+<p>求过点 $(1,2)$，斜率为 $-2$ 的直线方程。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+y-2=-2(x-1),
+$$</div>
+<p>即 $y=-2x+4$。</p></div></details>
+<h3>A2 基础</h3>
+<p>求点 $(2,-1)$ 到直线 $3x-4y+5=0$ 的距离。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+d=\frac{|6+4+5|}{5}=3.
+$$</div></div></details>
+<h3>A3 方法</h3>
+<p>判断直线 $2x+ay+1=0$ 与 $x-y+3=0$ 垂直时，$a$ 的值。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>第一条直线法向量为 $(2,a)$，第二条法向量为 $(1,-1)$。两直线垂直等价于法向量垂直对应方向不直接方便。化成斜率：第一条斜率 $-\frac2a$，第二条斜率 $1$，垂直需 $-\frac2a\cdot1=-1$，得 $a=2$。</p></div></details>
+<h3>A4 方法</h3>
+<p>求过两点 $(1,3)$、$(4,-3)$ 的直线方程。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>斜率 $k=\frac{-6}{3}=-2$，所以</p>
+<div class="math-display">$$
+y-3=-2(x-1),
+$$</div>
+<p>即 $2x+y-5=0$。</p></div></details>
+<h3>A5 综合</h3>
+<p>直线 $l$ 过点 $(1,1)$，且到原点距离为 $1$，求 $l$ 的方程。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>设直线为 $y-1=k(x-1)$，即 $kx-y+1-k=0$。原点到直线距离为</p>
+<div class="math-display">$$
+\frac{|1-k|}{\sqrt{k^2+1}}=1.
+$$</div>
+<p>平方得 $(1-k)^2=k^2+1$，所以 $k=0$，得 $y=1$。还要考虑斜率不存在的直线 $x=1$，它到原点距离也为 $1$。故 $x=1$ 或 $y=1$。</p></div></details>
+<h2>B. 圆</h2>
+<h3>B1 基础</h3>
+<p>求圆 $x^2+y^2+2x-4y-4=0$ 的圆心和半径。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>配方：</p>
+<div class="math-display">$$
+(x+1)^2+(y-2)^2=9.
+$$</div>
+<p>圆心 $(-1,2)$，半径 $3$。</p></div></details>
+<h3>B2 基础</h3>
+<p>判断直线 $x+y=3$ 与圆 $x^2+y^2=2$ 的位置关系。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>圆心到直线距离</p>
+<div class="math-display">$$
+d=\frac3{\sqrt2}&gt; \sqrt2.
+$$</div>
+<p>所以相离。</p></div></details>
+<h3>B3 方法</h3>
+<p>求圆 $x^2+y^2=25$ 被直线 $y=3$ 截得的弦长。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>圆心到直线距离 $d=3$，半径 $5$，弦长</p>
+<div class="math-display">$$
+2\sqrt{25-9}=8.
+$$</div></div></details>
+<h3>B4 方法</h3>
+<p>求圆 $x^2+y^2=10$ 在点 $(1,3)$ 处的切线方程。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>切线方程为</p>
+<div class="math-display">$$
+x+3y=10.
+$$</div></div></details>
+<h3>B5 综合</h3>
+<p>过点 $(0,3)$ 作圆 $x^2+y^2=1$ 的切线，求切线方程。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>设切线为 $y=kx+3$，即 $kx-y+3=0$。圆心到直线距离等于半径：</p>
+<div class="math-display">$$
+\frac3{\sqrt{k^2+1}}=1.
+$$</div>
+<p>得 $k^2=8$，所以切线为 $y=\pm2\sqrt2x+3$。</p></div></details>
+<h2>C. 圆锥曲线定义</h2>
+<h3>C1 基础</h3>
+<p>动点到两定点距离和为 $8$，两定点距离为 $6$，轨迹是什么？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为 $8&gt;6$，轨迹是椭圆。</p></div></details>
+<h3>C2 基础</h3>
+<p>动点到两定点距离差的绝对值为 $4$，两定点距离为 $10$，轨迹是什么？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为 $0&lt;4&lt;10$，轨迹是双曲线。</p></div></details>
+<h3>C3 方法</h3>
+<p>椭圆中 $a=6,e=\frac23$，求 $c,b$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$c=ae=4$，$b^2=a^2-c^2=36-16=20$，所以 $b=2\sqrt5$。</p></div></details>
+<h3>C4 方法</h3>
+<p>双曲线中 $a=4,e=\frac54$，求 $c,b$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$c=ae=5$，$b^2=c^2-a^2=25-16=9$，所以 $b=3$。</p></div></details>
+<h3>C5 综合</h3>
+<p>已知曲线上的点到点 $(2,0)$ 的距离等于到直线 $x=-2$ 的距离，求曲线类型和方程。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>这是抛物线，焦点 $(2,0)$，准线 $x=-2$，顶点原点，方程为</p>
+<div class="math-display">$$
+y^2=8x.
+$$</div></div></details>
+<h2>D. 椭圆</h2>
+<h3>D1 基础</h3>
+<p>椭圆 $\frac{x^2}{16}+\frac{y^2}{9}=1$ 的焦点和离心率。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$a=4,b=3,c=\sqrt7$，焦点 $(\pm\sqrt7,0)$，离心率 $e=\frac{\sqrt7}{4}$。</p></div></details>
+<h3>D2 基础</h3>
+<p>焦点在 $y$ 轴，$a=5,b=3$，写出椭圆方程。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>焦点在 $y$ 轴，较大分母在 $y^2$ 下：</p>
+<div class="math-display">$$
+\frac{x^2}{9}+\frac{y^2}{25}=1.
+$$</div></div></details>
+<h3>D3 方法</h3>
+<p>椭圆焦点为 $(\pm4,0)$，短轴长为 $6$，求方程。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$c=4,b=3$，$a^2=b^2+c^2=25$，方程为</p>
+<div class="math-display">$$
+\frac{x^2}{25}+\frac{y^2}{9}=1.
+$$</div></div></details>
+<h3>D4 方法</h3>
+<p>椭圆 $\frac{x^2}{25}+\frac{y^2}{16}=1$ 上点 $P$ 的横坐标为 $3$，求 $PF_1,PF_2$ 的和。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由定义，$PF_1+PF_2=2a=10$。</p></div></details>
+<h3>D5 综合</h3>
+<p>直线 $y=mx$ 过椭圆 $\frac{x^2}{4}+y^2=1$ 的中心，求它截椭圆所得弦的中点。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>椭圆中心为原点，过中心的直线截得的弦关于原点对称，所以中点为 $(0,0)$。</p></div></details>
+<h2>E. 双曲线</h2>
+<h3>E1 基础</h3>
+<p>双曲线 $\frac{x^2}{16}-\frac{y^2}{9}=1$ 的焦点和渐近线。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$a=4,b=3,c=5$，焦点 $(\pm5,0)$，渐近线 $y=\pm\frac34x$。</p></div></details>
+<h3>E2 基础</h3>
+<p>焦点在 $y$ 轴，$a=2,b=5$，写出双曲线方程。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+\frac{y^2}{4}-\frac{x^2}{25}=1.
+$$</div></div></details>
+<h3>E3 方法</h3>
+<p>双曲线渐近线为 $y=\pm2x$，且 $a=3$，焦点在 $x$ 轴，求方程。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>焦点在 $x$ 轴时渐近线 $y=\pm\frac ba x$，所以 $b=6$。方程为</p>
+<div class="math-display">$$
+\frac{x^2}{9}-\frac{y^2}{36}=1.
+$$</div></div></details>
+<h3>E4 方法</h3>
+<p>双曲线 $\frac{x^2}{9}-\frac{y^2}{16}=1$ 的离心率。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$a=3,b=4,c=5$，所以 $e=\frac53$。</p></div></details>
+<h3>E5 综合</h3>
+<p>为什么双曲线 $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ 不可能与 $y$ 轴相交？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>令 $x=0$，得 $-\frac{y^2}{b^2}=1$，无实数解。所以它不与 $y$ 轴相交。</p></div></details>
+<h2>F. 抛物线</h2>
+<h3>F1 基础</h3>
+<p>求抛物线 $y^2=12x$ 的焦点和准线。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$4a=12$，$a=3$，焦点 $(3,0)$，准线 $x=-3$。</p></div></details>
+<h3>F2 基础</h3>
+<p>焦点为 $(0,2)$，准线为 $y=-2$，求抛物线方程。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>顶点原点，向上开口，$a=2$，方程为</p>
+<div class="math-display">$$
+x^2=8y.
+$$</div></div></details>
+<h3>F3 方法</h3>
+<p>点 $P(x_0,y_0)$ 在 $y^2=12x$ 上，求焦半径。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$a=3$，所以 $PF=x_0+3$。</p></div></details>
+<h3>F4 方法</h3>
+<p>抛物线 $y^2=4x$ 被直线 $x=4$ 截得弦长。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>令 $x=4$，得 $y^2=16$，$y=\pm4$，弦长 $8$。</p></div></details>
+<h3>F5 综合</h3>
+<p>抛物线 $y^2=8x$ 的焦点弦过焦点且垂直于 $x$ 轴，求弦长。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>焦点为 $(2,0)$，直线为 $x=2$。代入 $y^2=16$，得 $y=\pm4$，弦长 $8$。</p></div></details>
+<h2>G. 联立与韦达</h2>
+<h3>G1 基础</h3>
+<p>若 $x_1+x_2=5$，$x_1x_2=6$，求 $(x_1-x_2)^2$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+(x_1-x_2)^2=25-24=1.
+$$</div></div></details>
+<h3>G2 基础</h3>
+<p>直线 $y=3x+1$ 上两点横坐标差为 $2$，求两点距离。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+d=\sqrt{1+3^2}\cdot2=2\sqrt{10}.
+$$</div></div></details>
+<h3>G3 方法</h3>
+<p>直线 $y=kx+m$ 与曲线交于 $P,Q$，写出弦长公式中最常用的横坐标形式。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+PQ=\sqrt{1+k^2}\sqrt{(x_1+x_2)^2-4x_1x_2}.
+$$</div></div></details>
+<h3>G4 方法</h3>
+<p>为什么联立后需要判别式条件？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>判别式保证交点存在。若要求两个不同交点，需要 $\Delta&gt;0$；若只要求有公共点，可以用 $\Delta\ge0$。</p></div></details>
+<h3>G5 综合</h3>
+<p>直线 $y=kx+1$ 与椭圆 $\frac{x^2}{4}+y^2=1$ 有两个交点，写出联立后关于 $x$ 的二次方程。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>代入得</p>
+<div class="math-display">$$
+\frac{x^2}{4}+(kx+1)^2=1.
+$$</div>
+<p>整理：</p>
+<div class="math-display">$$
+\left(k^2+\frac14\right)x^2+2kx=0.
+$$</div></div></details>
+<h2>H. 定点、定值、定直线</h2>
+<h3>H1 基础</h3>
+<p>直线族 $y+1=k(x-2)$ 恒过哪个点？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>恒过 $(2,-1)$。</p></div></details>
+<h3>H2 基础</h3>
+<p>动点 $P(t,3t-2)$ 在哪条定直线上？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>消去 $t$，得 $y=3x-2$。</p></div></details>
+<h3>H3 方法</h3>
+<p>方程 $(x-1)k+(y+2)=0$ 对任意 $k$ 成立，求定点。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>要对任意 $k$ 成立，需 $x-1=0$，$y+2=0$，所以定点 $(1,-2)$。</p></div></details>
+<h3>H4 方法</h3>
+<p>若 $k_1=\frac{t+2}{t-1}$，$k_2=\frac{t-1}{t+2}$，求 $k_1k_2$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>在 $t\ne1,-2$ 时，$k_1k_2=1$。</p></div></details>
+<h3>H5 综合</h3>
+<p>说明“代特殊值猜定点”和“证明定点”的区别。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>代特殊值只能猜出可能的点；证明定点必须说明对任意允许参数，相关直线或曲线都经过该点。</p></div></details>
+<h2>I. 最值与范围</h2>
+<h3>I1 基础</h3>
+<p>点 $P$ 在圆 $x^2+y^2=4$ 上，求 $x$ 的范围。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由 $x^2\le4$，得 $-2\le x\le2$。</p></div></details>
+<h3>I2 基础</h3>
+<p>点 $P$ 在椭圆 $\frac{x^2}{16}+\frac{y^2}{9}=1$ 上，求 $y$ 的范围。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由 $\frac{y^2}{9}\le1$，得 $-3\le y\le3$。</p></div></details>
+<h3>I3 方法</h3>
+<p>若 $t&gt;0$，求 $2t+\frac8t$ 的最小值。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+2t+\frac8t\ge2\sqrt{16}=8,
+$$</div>
+<p>当 $2t=\frac8t$，即 $t=2$ 时取等号。</p></div></details>
+<h3>I4 方法</h3>
+<p>直线 $y=kx+2$ 与圆 $x^2+y^2=1$ 是否可能相交？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>圆心到直线距离为 $\frac2{\sqrt{k^2+1}}$。当 $|k|\ge\sqrt3$ 时距离不超过 $1$，可以相交。</p></div></details>
+<h3>I5 综合</h3>
+<p>为什么圆锥曲线范围题经常用 $\Delta\ge0$？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>当某个参数对应的点或直线存在时，联立后的一元二次方程必须有实根，因此判别式非负会给出参数范围。</p></div></details>
+<h2>J. 大题策略</h2>
+<h3>J1 基础</h3>
+<p>圆锥曲线大题第一步最常见的两个动作是什么？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>明确曲线方程；设直线或设点。</p></div></details>
+<h3>J2 基础</h3>
+<p>为什么“斜率不存在”常常要单独讨论？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为 $y=kx+b$ 不能表示竖直线，若题目允许竖直线，直接设斜率会漏情况。</p></div></details>
+<h3>J3 方法</h3>
+<p>面积题中，若一边是弦 $PQ$，另一个顶点为定点 $A$，面积怎么表达？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+S=\frac12|PQ|\cdot d(A,PQ),
+$$</div>
+<p>其中 $d(A,PQ)$ 是点 $A$ 到弦所在直线的距离。</p></div></details>
+<h3>J4 方法</h3>
+<p>中点弦题为什么适合点差法？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>两点代入曲线方程后相减，可以直接出现 $x_1+x_2$、$y_1+y_2$，而中点正好给这两个量。</p></div></details>
+<h3>J5 综合</h3>
+<p>一个圆锥曲线大题做完后，最后必须检查什么？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>检查判别式条件、参数范围、斜率不存在情况、是否有退化直线或重根，以及所得结论是否对所有允许情况成立。</p></div></details>
+<h2>作业建议</h2>
+<p>每次课后不要整页通刷。建议每讲布置：基础 3 道、方法 3 道、综合 1 道，再让学生选 1 道准备讲题。目标是稳定流程，而不是把计算堆到失控。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">解析几何/圆锥曲线</a></li><li>源文件：<code>content/09_high_school_math/05_analytic_geometry/12_analytic_geometry_module_drills_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-analytic-geometry-overview-zh.html">解析几何：从坐标到曲线</a></h3><p>解析几何研究的是“图形与方程之间的翻译”。几何里看见点、线、圆和圆锥曲线；代数里写成坐标、方程、参数和不等式。高考解析几何大题的本质，就是在这两种语言之间来回切换。</p></div><div class="note-item"><h3><a href="02-coordinates-lines-zh.html">坐标、距离、斜率与直线基础</a></h3><p>解析几何的地基是坐标和直线。直线不是一条“画出来的线”，而是一组满足一次方程的点。掌握直线方程，就是掌握方向、位置、距离和交点。</p></div><div class="note-item"><h3><a href="03-circle-equations-zh.html">圆的方程与直线圆问题</a></h3><p>圆是解析几何中最重要的过渡对象。它比直线多了平方项，又比圆锥曲线简单。直线与圆的相交、相切、弦长，正好训练后面圆锥曲线大题需要的联立思想。</p></div><div class="note-item"><h3><a href="04-conic-unified-zh.html">圆锥曲线统一入口</a></h3><p>椭圆、双曲线、抛物线不是三堆孤立公式。它们都是“动点满足某种距离关系形成的轨迹”。先理解定义，后面的标准方程、焦点、离心率、弦长和大题才有根。</p></div><div class="note-item"><h3><a href="05-ellipse-zh.html">椭圆</a></h3><p>椭圆是到两个定点距离和为常数的点的轨迹。高考中椭圆常作为圆锥曲线大题的主角，因为它既有清晰几何定义，又适合与直线联立产生韦达结构。</p></div><div class="note-item"><h3><a href="06-hyperbola-zh.html">双曲线</a></h3><p>双曲线是到两个定点距离差的绝对值为常数的点的轨迹。它和椭圆最容易混淆，所以学习时要始终抓住两件事：定义中的“差”和图形中的“渐近线”。</p></div><div class="note-item"><h3><a href="07-parabola-zh.html">抛物线</a></h3><p>抛物线是到焦点和准线距离相等的点的轨迹。它没有中心，只有一个焦点和一条准线。很多学生抛物线题不稳，是因为只记了方程，没有真正使用焦点准线定义。</p></div><div class="note-item"><h3><a href="08-line-conic-engine-zh.html">直线与圆锥曲线的代数引擎</a></h3><p>解析几何大题的核心引擎是：设直线、联立曲线、得到一元二次方程、使用判别式和韦达。很多题看起来问弦长、面积、斜率、定值、最值，本质都是把目标转成两根的和与积。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

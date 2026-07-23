@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>解析几何：从坐标到曲线 | math.bozhanli.com</title>
+  <meta name="description" content="解析几何研究的是“图形与方程之间的翻译”。几何里看见点、线、圆和圆锥曲线；代数里写成坐标、方程、参数和不等式。高考解析几何大题的本质，就是在这两种语言之间来回切换。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">解析几何/圆锥曲线</a><span>/</span><span>解析几何：从坐标到曲线</span></div>
+      <h1>解析几何：从坐标到曲线</h1>
+      <p>解析几何研究的是“图形与方程之间的翻译”。几何里看见点、线、圆和圆锥曲线；代数里写成坐标、方程、参数和不等式。高考解析几何大题的本质，就是在这两种语言之间来回切换。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>一句话主线</h2>
+<p>解析几何不是背曲线公式，而是用方程控制图形。</p>
+<ol><li>点：用坐标表示位置。</li><li>直线：用一次方程表示方向和位置。</li><li>圆：用到定点距离相等表示。</li><li>圆锥曲线：用动点满足的距离关系表示轨迹。</li><li>交点：用联立方程表示。</li><li>弦长、面积、角度、最值：用代数式表达后化简。</li></ol>
+<h2>知识树</h2>
+<ol><li>坐标基础：距离、中点、斜率、向量。</li><li>直线：方程形式、平行垂直、交点、距离。</li><li>圆：标准方程、一般方程、切线、弦长、圆与圆。</li><li>椭圆：到两定点距离和为常数。</li><li>双曲线：到两定点距离差的绝对值为常数。</li><li>抛物线：到焦点距离等于到准线距离。</li><li>直线与曲线联立：判别式、韦达、弦长、中点弦。</li><li>三定问题：定点、定值、定直线。</li><li>最值范围：判别式、函数法、参数法、几何法。</li></ol>
+<figure class="math-diagram"><svg viewBox="0 0 820 260" role="img" aria-label="解析几何知识路线图">
+  <rect x="35" y="95" width="120" height="70" rx="8" fill="#f8f3ea" stroke="#d7c7aa"/>
+  <rect x="205" y="45" width="120" height="70" rx="8" fill="#eef7f4" stroke="#8ab7ad"/>
+  <rect x="205" y="145" width="120" height="70" rx="8" fill="#eef7f4" stroke="#8ab7ad"/>
+  <rect x="375" y="45" width="140" height="70" rx="8" fill="#fff7ed" stroke="#e0b36a"/>
+  <rect x="375" y="145" width="140" height="70" rx="8" fill="#fff7ed" stroke="#e0b36a"/>
+  <rect x="565" y="45" width="120" height="70" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+  <rect x="565" y="145" width="120" height="70" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="75" y="136" font-size="18">坐标语言</text>
+  <text x="240" y="86" font-size="18">直线</text>
+  <text x="252" y="186" font-size="18">圆</text>
+  <text x="410" y="86" font-size="18">圆锥曲线</text>
+  <text x="400" y="186" font-size="18">联立与韦达</text>
+  <text x="593" y="86" font-size="18">三定</text>
+  <text x="592" y="186" font-size="18">最值</text>
+  <line x1="155" y1="130" x2="205" y2="80" stroke="#64748b" stroke-width="3"/>
+  <line x1="155" y1="130" x2="205" y2="180" stroke="#64748b" stroke-width="3"/>
+  <line x1="325" y1="80" x2="375" y2="80" stroke="#64748b" stroke-width="3"/>
+  <line x1="325" y1="180" x2="375" y2="180" stroke="#64748b" stroke-width="3"/>
+  <line x1="515" y1="80" x2="565" y2="80" stroke="#64748b" stroke-width="3"/>
+  <line x1="515" y1="180" x2="565" y2="180" stroke="#64748b" stroke-width="3"/>
+</svg></figure>
+<h2>高考大题的稳定流程</h2>
+<ol><li>明确曲线方程和参数范围。</li><li>设直线，注意斜率不存在是否需要单独处理。</li><li>联立直线和曲线，得到一元二次方程。</li><li>写出判别式 $\Delta&gt;0$、根和、根积。</li><li>把题目目标转成 $x_1+x_2$、$x_1x_2$ 或 $y_1+y_2$、$y_1y_2$。</li><li>化简，观察是否出现定值、定点、范围或最值。</li><li>回到几何意义，检查特殊情况。</li></ol>
+<h2>常见失分点</h2>
+<ol><li>设直线时漏掉斜率不存在的情况。</li><li>联立后忘记判别式条件。</li><li>用了韦达，却没有说明两个交点确实存在。</li><li>弦长公式中把 $x$ 差和 $y$ 差混乱。</li><li>定点定值题没有完成“任意参数都成立”的证明。</li><li>最值题只求出代数最值，没有检查参数范围。</li></ol>
+<h2>费曼讲题任务</h2>
+<p>学生讲解析几何题时，必须先讲“我为什么这样设”。如果她只会说“答案这么做”，说明还没有控制题目。建议每题用下面模板：</p>
+<ol><li>这题的曲线是：</li><li>我设直线为：</li><li>联立后保留的核心量是：</li><li>题目目标可以转成：</li><li>最后需要检查：</li></ol>
+<h2>模块入口</h2>
+<ol><li><a href="02-coordinates-lines-zh.html">坐标、距离、斜率与直线基础</a></li><li><a href="03-circle-equations-zh.html">圆的方程与直线圆问题</a></li><li><a href="04-conic-unified-zh.html">圆锥曲线统一入口</a></li><li><a href="05-ellipse-zh.html">椭圆</a></li><li><a href="06-hyperbola-zh.html">双曲线</a></li><li><a href="07-parabola-zh.html">抛物线</a></li><li><a href="08-line-conic-engine-zh.html">直线与圆锥曲线的代数引擎</a></li><li><a href="09-three-constants-zh.html">定点、定值、定直线</a></li><li><a href="10-extreme-range-zh.html">最值与范围</a></li><li><a href="11-conic-big-problem-strategies-zh.html">圆锥曲线大题十个大招</a></li></ol>
+<h2>题库入口</h2>
+<ol><li><a href="12-analytic-geometry-module-drills-zh.html">模块分层训练题库</a></li><li><a href="13-analytic-geometry-local-full-exercises-zh.html">考点 40-46 全量本地题库</a></li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">解析几何/圆锥曲线</a></li><li>源文件：<code>content/09_high_school_math/05_analytic_geometry/01_analytic_geometry_overview_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="02-coordinates-lines-zh.html">坐标、距离、斜率与直线基础</a></h3><p>解析几何的地基是坐标和直线。直线不是一条“画出来的线”，而是一组满足一次方程的点。掌握直线方程，就是掌握方向、位置、距离和交点。</p></div><div class="note-item"><h3><a href="03-circle-equations-zh.html">圆的方程与直线圆问题</a></h3><p>圆是解析几何中最重要的过渡对象。它比直线多了平方项，又比圆锥曲线简单。直线与圆的相交、相切、弦长，正好训练后面圆锥曲线大题需要的联立思想。</p></div><div class="note-item"><h3><a href="04-conic-unified-zh.html">圆锥曲线统一入口</a></h3><p>椭圆、双曲线、抛物线不是三堆孤立公式。它们都是“动点满足某种距离关系形成的轨迹”。先理解定义，后面的标准方程、焦点、离心率、弦长和大题才有根。</p></div><div class="note-item"><h3><a href="05-ellipse-zh.html">椭圆</a></h3><p>椭圆是到两个定点距离和为常数的点的轨迹。高考中椭圆常作为圆锥曲线大题的主角，因为它既有清晰几何定义，又适合与直线联立产生韦达结构。</p></div><div class="note-item"><h3><a href="06-hyperbola-zh.html">双曲线</a></h3><p>双曲线是到两个定点距离差的绝对值为常数的点的轨迹。它和椭圆最容易混淆，所以学习时要始终抓住两件事：定义中的“差”和图形中的“渐近线”。</p></div><div class="note-item"><h3><a href="07-parabola-zh.html">抛物线</a></h3><p>抛物线是到焦点和准线距离相等的点的轨迹。它没有中心，只有一个焦点和一条准线。很多学生抛物线题不稳，是因为只记了方程，没有真正使用焦点准线定义。</p></div><div class="note-item"><h3><a href="08-line-conic-engine-zh.html">直线与圆锥曲线的代数引擎</a></h3><p>解析几何大题的核心引擎是：设直线、联立曲线、得到一元二次方程、使用判别式和韦达。很多题看起来问弦长、面积、斜率、定值、最值，本质都是把目标转成两根的和与积。</p></div><div class="note-item"><h3><a href="09-three-constants-zh.html">定点、定值、定直线</a></h3><p>定点、定值、定直线是圆锥曲线大题的高分分水岭。它们的共同本质是：虽然题中有变量，但某个对象不随变量改变。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

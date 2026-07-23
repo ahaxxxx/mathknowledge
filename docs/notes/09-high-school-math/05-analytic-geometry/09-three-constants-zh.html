@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>定点、定值、定直线 | math.bozhanli.com</title>
+  <meta name="description" content="定点、定值、定直线是圆锥曲线大题的高分分水岭。它们的共同本质是：虽然题中有变量，但某个对象不随变量改变。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">解析几何/圆锥曲线</a><span>/</span><span>定点、定值、定直线</span></div>
+      <h1>定点、定值、定直线</h1>
+      <p>定点、定值、定直线是圆锥曲线大题的高分分水岭。它们的共同本质是：虽然题中有变量，但某个对象不随变量改变。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>核心思想</h2>
+<p>定点：一族直线或曲线都经过同一个固定点。</p>
+<p>定值：某个长度、面积、斜率乘积、比值或表达式恒定。</p>
+<p>定直线：某个动点轨迹、交点轨迹或极线关系最终落在固定直线上。</p>
+<p>做这类题不要靠猜。稳定方法是：设参数，写表达式，消去参数，观察不变量。</p>
+<h2>定点题</h2>
+<p>常见形式：</p>
+<div class="math-display">$$
+y=kx+b(k).
+$$</div>
+<p>如果可以化为</p>
+<div class="math-display">$$
+y-y_0=k(x-x_0),
+$$</div>
+<p>则这族直线恒过定点 $(x_0,y_0)$。</p>
+<p>另一种方式：把方程整理成</p>
+<div class="math-display">$$
+A(x,y)k+B(x,y)=0.
+$$</div>
+<p>若对任意 $k$ 都成立，则必须</p>
+<div class="math-display">$$
+A(x,y)=0,\qquad B(x,y)=0.
+$$</div>
+<p>解出的点就是定点。</p>
+<h2>定值题</h2>
+<p>常见定值对象：</p>
+<ol><li>斜率乘积。</li><li>弦长与距离的组合。</li><li>面积。</li><li>比值。</li><li>向量数量积。</li></ol>
+<p>做法是把目标表达成参数，再化简。若参数消失，就得到定值。</p>
+<h2>定直线题</h2>
+<p>定直线通常来自动点坐标满足一次关系：</p>
+<div class="math-display">$$
+Ax+By+C=0.
+$$</div>
+<p>如果动点坐标含参数 $t$，就要消去 $t$，看是否得到固定直线方程。</p>
+<h2>方法流程</h2>
+<ol><li>先确定变量：斜率 $k$、截距 $m$、点坐标，还是曲线参数？</li><li>用联立和韦达表达交点关系。</li><li>写出目标对象：直线方程、点坐标、长度、面积或斜率。</li><li>化简并消参。</li><li>检查是否对所有允许参数成立。</li></ol>
+<h2>训练题</h2>
+<ol><li>直线族 $y-2=k(x+1)$ 恒过哪个定点？</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>点斜式显示它恒过 $(-1,2)$。</p></div></details>
+<ol><li>直线族 $(x-1)t+(y+2)=0$ 若对任意 $t$ 都过某点，求该点。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>要对任意 $t$ 成立，需 $x-1=0$ 且 $y+2=0$，所以定点为 $(1,-2)$。</p></div></details>
+<ol><li>若动点 $P(t,2t+1)$，求它所在的定直线。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>消去 $t$，得 $y=2x+1$。</p></div></details>
+<ol><li>若 $k_1=\frac{t-1}{t+1}$，$k_2=\frac{t+1}{t-1}$，求 $k_1k_2$。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>只要 $t\ne\pm1$，</p>
+<div class="math-display">$$
+k_1k_2=1.
+$$</div>
+<p>这是定值。</p></div></details>
+<ol><li>为什么定值题不能只代一个特殊值验证？</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>特殊值只能帮助猜测，不能证明。定值必须通过一般参数化简，说明对所有允许参数都成立。</p></div></details>
+<h2>讲题追问</h2>
+<p>三定题要让学生说清楚：变量是谁？不变量是谁？如果变量没有被明确命名，后面的消参就会变成瞎算。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">解析几何/圆锥曲线</a></li><li>源文件：<code>content/09_high_school_math/05_analytic_geometry/09_three_constants_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-analytic-geometry-overview-zh.html">解析几何：从坐标到曲线</a></h3><p>解析几何研究的是“图形与方程之间的翻译”。几何里看见点、线、圆和圆锥曲线；代数里写成坐标、方程、参数和不等式。高考解析几何大题的本质，就是在这两种语言之间来回切换。</p></div><div class="note-item"><h3><a href="02-coordinates-lines-zh.html">坐标、距离、斜率与直线基础</a></h3><p>解析几何的地基是坐标和直线。直线不是一条“画出来的线”，而是一组满足一次方程的点。掌握直线方程，就是掌握方向、位置、距离和交点。</p></div><div class="note-item"><h3><a href="03-circle-equations-zh.html">圆的方程与直线圆问题</a></h3><p>圆是解析几何中最重要的过渡对象。它比直线多了平方项，又比圆锥曲线简单。直线与圆的相交、相切、弦长，正好训练后面圆锥曲线大题需要的联立思想。</p></div><div class="note-item"><h3><a href="04-conic-unified-zh.html">圆锥曲线统一入口</a></h3><p>椭圆、双曲线、抛物线不是三堆孤立公式。它们都是“动点满足某种距离关系形成的轨迹”。先理解定义，后面的标准方程、焦点、离心率、弦长和大题才有根。</p></div><div class="note-item"><h3><a href="05-ellipse-zh.html">椭圆</a></h3><p>椭圆是到两个定点距离和为常数的点的轨迹。高考中椭圆常作为圆锥曲线大题的主角，因为它既有清晰几何定义，又适合与直线联立产生韦达结构。</p></div><div class="note-item"><h3><a href="06-hyperbola-zh.html">双曲线</a></h3><p>双曲线是到两个定点距离差的绝对值为常数的点的轨迹。它和椭圆最容易混淆，所以学习时要始终抓住两件事：定义中的“差”和图形中的“渐近线”。</p></div><div class="note-item"><h3><a href="07-parabola-zh.html">抛物线</a></h3><p>抛物线是到焦点和准线距离相等的点的轨迹。它没有中心，只有一个焦点和一条准线。很多学生抛物线题不稳，是因为只记了方程，没有真正使用焦点准线定义。</p></div><div class="note-item"><h3><a href="08-line-conic-engine-zh.html">直线与圆锥曲线的代数引擎</a></h3><p>解析几何大题的核心引擎是：设直线、联立曲线、得到一元二次方程、使用判别式和韦达。很多题看起来问弦长、面积、斜率、定值、最值，本质都是把目标转成两根的和与积。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

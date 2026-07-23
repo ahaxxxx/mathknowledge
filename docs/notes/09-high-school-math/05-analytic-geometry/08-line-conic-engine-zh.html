@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>直线与圆锥曲线的代数引擎 | math.bozhanli.com</title>
+  <meta name="description" content="解析几何大题的核心引擎是：设直线、联立曲线、得到一元二次方程、使用判别式和韦达。很多题看起来问弦长、面积、斜率、定值、最值，本质都是把目标转成两根的和与积。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">解析几何/圆锥曲线</a><span>/</span><span>直线与圆锥曲线的代数引擎</span></div>
+      <h1>直线与圆锥曲线的代数引擎</h1>
+      <p>解析几何大题的核心引擎是：设直线、联立曲线、得到一元二次方程、使用判别式和韦达。很多题看起来问弦长、面积、斜率、定值、最值，本质都是把目标转成两根的和与积。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>标准流程</h2>
+<p>设直线：</p>
+<div class="math-display">$$
+y=kx+m
+$$</div>
+<p>与曲线联立，通常得到</p>
+<div class="math-display">$$
+Ax^2+Bx+C=0.
+$$</div>
+<p>若交点为 $P(x_1,y_1)$，$Q(x_2,y_2)$，则</p>
+<div class="math-display">$$
+x_1+x_2=-\frac BA,\qquad x_1x_2=\frac CA.
+$$</div>
+<p>同时要有</p>
+<div class="math-display">$$
+\Delta=B^2-4AC&gt;0
+$$</div>
+<p>来保证两个不同交点。</p>
+<h2>弦长公式</h2>
+<p>若直线为 $y=kx+m$，则</p>
+<div class="math-display">$$
+PQ=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}.
+$$</div>
+<p>因为</p>
+<div class="math-display">$$
+y_1-y_2=k(x_1-x_2),
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+PQ=\sqrt{1+k^2}\,|x_1-x_2|.
+$$</div>
+<p>又</p>
+<div class="math-display">$$
+(x_1-x_2)^2=(x_1+x_2)^2-4x_1x_2.
+$$</div>
+<p>所以</p>
+<div class="math-display">$$
+PQ=\sqrt{1+k^2}\sqrt{(x_1+x_2)^2-4x_1x_2}.
+$$</div>
+<p>如果直线斜率不存在，要改用 $x=t$ 或用参数式。</p>
+<h2>中点弦</h2>
+<p>若弦 $PQ$ 的中点为 $M(x_0,y_0)$，则</p>
+<div class="math-display">$$
+x_1+x_2=2x_0,\qquad y_1+y_2=2y_0.
+$$</div>
+<p>中点弦题常用“点差法”：把两点代入曲线方程后相减，得到斜率关系。</p>
+<h2>面积表达</h2>
+<p>三角形面积常见写法：</p>
+<ol><li>以弦长为底，高为点到直线距离。</li><li>用坐标行列式：</li></ol>
+<div class="math-display">$$
+S_{\triangle OPQ}=\frac12|x_1y_2-x_2y_1|.
+$$</div>
+<ol><li>若 $y=kx+m$，则</li></ol>
+<div class="math-display">$$
+x_1y_2-x_2y_1=m(x_1-x_2).
+$$</div>
+<p>这个式子在过定点直线与圆锥曲线围成面积题中很常用。</p>
+<h2>设直线的选择</h2>
+<ol><li>过定点 $(x_0,y_0)$：设 $y-y_0=k(x-x_0)$。</li><li>截距相关：设 $\frac xa+\frac yb=1$。</li><li>斜率可能不存在：用一般式或单独讨论。</li><li>过焦点：根据焦点坐标设点斜式。</li><li>与曲线对称轴有关：考虑水平线或竖直线特殊情况。</li></ol>
+<h2>常见错误</h2>
+<ol><li>忘记 $\Delta&gt;0$。</li><li>把 $x_1-x_2$ 当成弦长。</li><li>用 $y=kx+m$ 漏掉竖直线。</li><li>韦达式写对了，但目标表达错了。</li><li>化简时没有利用曲线本身的参数关系，例如 $a^2=b^2+c^2$。</li></ol>
+<h2>训练题</h2>
+<ol><li>直线 $y=kx+m$ 与椭圆联立后得到 $Ax^2+Bx+C=0$，写出两交点横坐标的和与积。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>若两交点横坐标为 $x_1,x_2$，则</p>
+<div class="math-display">$$
+x_1+x_2=-\frac BA,\qquad x_1x_2=\frac CA.
+$$</div></div></details>
+<ol><li>已知 $x_1+x_2=3$，$x_1x_2=2$，求 $(x_1-x_2)^2$。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+(x_1-x_2)^2=(x_1+x_2)^2-4x_1x_2=9-8=1.
+$$</div></div></details>
+<ol><li>直线 $y=2x+1$ 与曲线交于 $P,Q$，若 $|x_1-x_2|=3$，求 $PQ$。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+PQ=\sqrt{1+2^2}\cdot3=3\sqrt5.
+$$</div></div></details>
+<ol><li>若 $P,Q$ 在直线 $y=kx+m$ 上，说明 $y_1-y_2$ 与 $x_1-x_2$ 的关系。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为 $y_i=kx_i+m$，所以</p>
+<div class="math-display">$$
+y_1-y_2=k(x_1-x_2).
+$$</div></div></details>
+<ol><li>为什么大题中设 $y=kx+m$ 前要考虑斜率不存在？</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$y=kx+m$ 只能表示非竖直直线。若题目中的直线可能是竖直线，直接这样设会漏解或漏特殊情况。</p></div></details>
+<h2>讲题追问</h2>
+<p>联立以后不要急着算根。先问：这题到底需要 $x_1+x_2$、$x_1x_2$、$x_1-x_2$，还是点到直线距离？目标决定保留哪些代数结构。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">解析几何/圆锥曲线</a></li><li>源文件：<code>content/09_high_school_math/05_analytic_geometry/08_line_conic_engine_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-analytic-geometry-overview-zh.html">解析几何：从坐标到曲线</a></h3><p>解析几何研究的是“图形与方程之间的翻译”。几何里看见点、线、圆和圆锥曲线；代数里写成坐标、方程、参数和不等式。高考解析几何大题的本质，就是在这两种语言之间来回切换。</p></div><div class="note-item"><h3><a href="02-coordinates-lines-zh.html">坐标、距离、斜率与直线基础</a></h3><p>解析几何的地基是坐标和直线。直线不是一条“画出来的线”，而是一组满足一次方程的点。掌握直线方程，就是掌握方向、位置、距离和交点。</p></div><div class="note-item"><h3><a href="03-circle-equations-zh.html">圆的方程与直线圆问题</a></h3><p>圆是解析几何中最重要的过渡对象。它比直线多了平方项，又比圆锥曲线简单。直线与圆的相交、相切、弦长，正好训练后面圆锥曲线大题需要的联立思想。</p></div><div class="note-item"><h3><a href="04-conic-unified-zh.html">圆锥曲线统一入口</a></h3><p>椭圆、双曲线、抛物线不是三堆孤立公式。它们都是“动点满足某种距离关系形成的轨迹”。先理解定义，后面的标准方程、焦点、离心率、弦长和大题才有根。</p></div><div class="note-item"><h3><a href="05-ellipse-zh.html">椭圆</a></h3><p>椭圆是到两个定点距离和为常数的点的轨迹。高考中椭圆常作为圆锥曲线大题的主角，因为它既有清晰几何定义，又适合与直线联立产生韦达结构。</p></div><div class="note-item"><h3><a href="06-hyperbola-zh.html">双曲线</a></h3><p>双曲线是到两个定点距离差的绝对值为常数的点的轨迹。它和椭圆最容易混淆，所以学习时要始终抓住两件事：定义中的“差”和图形中的“渐近线”。</p></div><div class="note-item"><h3><a href="07-parabola-zh.html">抛物线</a></h3><p>抛物线是到焦点和准线距离相等的点的轨迹。它没有中心，只有一个焦点和一条准线。很多学生抛物线题不稳，是因为只记了方程，没有真正使用焦点准线定义。</p></div><div class="note-item"><h3><a href="09-three-constants-zh.html">定点、定值、定直线</a></h3><p>定点、定值、定直线是圆锥曲线大题的高分分水岭。它们的共同本质是：虽然题中有变量，但某个对象不随变量改变。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

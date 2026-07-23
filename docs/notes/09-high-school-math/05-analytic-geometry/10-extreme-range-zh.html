@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>最值与范围 | math.bozhanli.com</title>
+  <meta name="description" content="解析几何中的最值与范围题，表面是在求一个数，实质是在研究参数受到哪些约束。约束常来自曲线方程、判别式、点的位置、几何距离和不等式。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">解析几何/圆锥曲线</a><span>/</span><span>最值与范围</span></div>
+      <h1>最值与范围</h1>
+      <p>解析几何中的最值与范围题，表面是在求一个数，实质是在研究参数受到哪些约束。约束常来自曲线方程、判别式、点的位置、几何距离和不等式。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>常见方法</h2>
+<p>判别式法：把存在性转化为</p>
+<div class="math-display">$$
+\Delta\ge0.
+$$</div>
+<p>函数法：把目标表示成一个变量的函数，再求最值。</p>
+<p>基本不等式法：当表达式形如正数和、积固定或平方和时使用。</p>
+<p>参数法：用斜率、角参数或曲线参数表示点。</p>
+<p>几何法：用距离、圆、投影、对称或切线理解最值。</p>
+<h2>范围题的基本流程</h2>
+<ol><li>设变量。</li><li>写目标表达式。</li><li>找变量约束。</li><li>求目标范围。</li><li>检查端点是否能取到。</li></ol>
+<h2>直线与曲线最值</h2>
+<p>常见目标：</p>
+<ol><li>点到直线距离的最值。</li><li>弦长最大最小。</li><li>三角形面积最值。</li><li>斜率或斜率乘积范围。</li><li>参数 $m,k,e$ 的范围。</li></ol>
+<p>很多最值题最终会变成一元二次函数、分式函数或判别式条件。</p>
+<h2>判别式视角</h2>
+<p>如果某个量 $t$ 存在对应的点或直线，可以把条件整理成关于某个变量的一元二次方程。为了有实数解，需要</p>
+<div class="math-display">$$
+\Delta\ge0.
+$$</div>
+<p>这会给出 $t$ 的范围。</p>
+<h2>训练题</h2>
+<ol><li>点 $P$ 在圆 $x^2+y^2=1$ 上，求 $x+y$ 的范围。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由柯西不等式：</p>
+<div class="math-display">$$
+(x+y)^2\le 2(x^2+y^2)=2.
+$$</div>
+<p>所以 $x+y\in[-\sqrt2,\sqrt2]$。</p></div></details>
+<ol><li>点 $P$ 在椭圆 $\frac{x^2}{9}+\frac{y^2}{4}=1$ 上，求 $x$ 的范围。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由方程得 $\frac{x^2}{9}\le1$，所以 $-3\le x\le3$。</p></div></details>
+<ol><li>直线 $y=kx+1$ 与圆 $x^2+y^2=1$ 有公共点，求 $k$ 的条件。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>圆心到直线 $kx-y+1=0$ 的距离不超过半径：</p>
+<div class="math-display">$$
+\frac{1}{\sqrt{k^2+1}}\le1.
+$$</div>
+<p>对任意实数 $k$ 成立。且当距离等于半径时相切。</p></div></details>
+<ol><li>若 $t&gt;0$，求 $t+\frac1t$ 的最小值。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由基本不等式，</p>
+<div class="math-display">$$
+t+\frac1t\ge2,
+$$</div>
+<p>当 $t=1$ 时取等号。</p></div></details>
+<ol><li>为什么范围题要检查端点？</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>代数推导可能得到闭区间或开区间，但端点是否能取到取决于原题是否允许，例如是否要求两交点不同、是否要求直线不与坐标轴平行等。</p></div></details>
+<h2>讲题追问</h2>
+<p>最值题不要只问“怎么算”，要先问“变量的范围是什么”。没有约束的最值是不存在的。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">解析几何/圆锥曲线</a></li><li>源文件：<code>content/09_high_school_math/05_analytic_geometry/10_extreme_range_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-analytic-geometry-overview-zh.html">解析几何：从坐标到曲线</a></h3><p>解析几何研究的是“图形与方程之间的翻译”。几何里看见点、线、圆和圆锥曲线；代数里写成坐标、方程、参数和不等式。高考解析几何大题的本质，就是在这两种语言之间来回切换。</p></div><div class="note-item"><h3><a href="02-coordinates-lines-zh.html">坐标、距离、斜率与直线基础</a></h3><p>解析几何的地基是坐标和直线。直线不是一条“画出来的线”，而是一组满足一次方程的点。掌握直线方程，就是掌握方向、位置、距离和交点。</p></div><div class="note-item"><h3><a href="03-circle-equations-zh.html">圆的方程与直线圆问题</a></h3><p>圆是解析几何中最重要的过渡对象。它比直线多了平方项，又比圆锥曲线简单。直线与圆的相交、相切、弦长，正好训练后面圆锥曲线大题需要的联立思想。</p></div><div class="note-item"><h3><a href="04-conic-unified-zh.html">圆锥曲线统一入口</a></h3><p>椭圆、双曲线、抛物线不是三堆孤立公式。它们都是“动点满足某种距离关系形成的轨迹”。先理解定义，后面的标准方程、焦点、离心率、弦长和大题才有根。</p></div><div class="note-item"><h3><a href="05-ellipse-zh.html">椭圆</a></h3><p>椭圆是到两个定点距离和为常数的点的轨迹。高考中椭圆常作为圆锥曲线大题的主角，因为它既有清晰几何定义，又适合与直线联立产生韦达结构。</p></div><div class="note-item"><h3><a href="06-hyperbola-zh.html">双曲线</a></h3><p>双曲线是到两个定点距离差的绝对值为常数的点的轨迹。它和椭圆最容易混淆，所以学习时要始终抓住两件事：定义中的“差”和图形中的“渐近线”。</p></div><div class="note-item"><h3><a href="07-parabola-zh.html">抛物线</a></h3><p>抛物线是到焦点和准线距离相等的点的轨迹。它没有中心，只有一个焦点和一条准线。很多学生抛物线题不稳，是因为只记了方程，没有真正使用焦点准线定义。</p></div><div class="note-item"><h3><a href="08-line-conic-engine-zh.html">直线与圆锥曲线的代数引擎</a></h3><p>解析几何大题的核心引擎是：设直线、联立曲线、得到一元二次方程、使用判别式和韦达。很多题看起来问弦长、面积、斜率、定值、最值，本质都是把目标转成两根的和与积。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

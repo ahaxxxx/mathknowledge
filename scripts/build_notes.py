@@ -50,6 +50,7 @@ SECTION_LABELS = {
     "02_trigonometry": "三角专题",
     "03_plane_vectors": "平面向量",
     "04_solid_geometry": "立体几何/空间向量",
+    "05_analytic_geometry": "解析几何/圆锥曲线",
 }
 
 BLOCK_STARTERS = (

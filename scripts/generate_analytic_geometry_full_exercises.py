@@ -1,0 +1,365 @@
+from __future__ import annotations
+
+import hashlib
+import html
+import posixpath
+import re
+import shutil
+import subprocess
+import zipfile
+import xml.etree.ElementTree as ET
+from dataclasses import dataclass
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[2]
+SITE_ROOT = Path(__file__).resolve().parents[1]
+LOCAL_ROOT = ROOT / "考点讲解2021年高考数学复习一轮复习笔记（65个考点讲解全）"
+CONTENT_FILE = (
+    SITE_ROOT
+    / "content"
+    / "09_high_school_math"
+    / "05_analytic_geometry"
+    / "13_analytic_geometry_local_full_exercises_zh.md"
+)
+ASSET_DIR = SITE_ROOT / "docs" / "assets" / "analytic-geometry-local"
+ASSET_HREF_PREFIX = "../../../assets/analytic-geometry-local"
+
+NS = {
+    "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+    "a": "http://schemas.openxmlformats.org/drawingml/2006/main",
+    "v": "urn:schemas-microsoft-com:vml",
+    "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+    "rel": "http://schemas.openxmlformats.org/package/2006/relationships",
+}
+MAGICK_EXE = shutil.which("magick") or r"C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe"
+
+POINTS = [
+    ("40", "直线方程"),
+    ("41", "圆的方程"),
+    ("42", "椭圆"),
+    ("43", "双曲线"),
+    ("44", "抛物线"),
+    ("45", "三定问题（定点、定值、定直线）"),
+    ("46", "直线与曲线的最值问题"),
+]
+
+
+@dataclass
+class Unit:
+    kind: str
+    value: str
+    width: int | None = None
+    height: int | None = None
+    inline_hint: bool = False
+
+
+@dataclass
+class Block:
+    text: str
+    units: list[Unit]
+
+
+@dataclass
+class Question:
+    number: int
+    blocks: list[Block]
+
+
+def rel_targets(archive: zipfile.ZipFile) -> dict[str, str]:
+    tree = ET.fromstring(archive.read("word/_rels/document.xml.rels"))
+    result: dict[str, str] = {}
+    for rel in tree.findall("rel:Relationship", NS):
+        rel_id = rel.attrib.get("Id")
+        target = rel.attrib.get("Target")
+        if rel_id and target:
+            result[rel_id] = posixpath.normpath(posixpath.join("word", target))
+    return result
+
+
+def image_dimensions(data: bytes) -> tuple[int | None, int | None]:
+    if data.startswith(b"\x89PNG\r\n\x1a\n") and len(data) >= 24:
+        return int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big")
+    if data.startswith(b"\xff\xd8"):
+        offset = 2
+        while offset + 9 < len(data):
+            if data[offset] != 0xFF:
+                offset += 1
+                continue
+            marker = data[offset + 1]
+            offset += 2
+            if marker in {0xD8, 0xD9}:
+                continue
+            if offset + 2 > len(data):
+                break
+            length = int.from_bytes(data[offset : offset + 2], "big")
+            if marker in {0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF}:
+                if offset + 7 <= len(data):
+                    height = int.from_bytes(data[offset + 3 : offset + 5], "big")
+                    width = int.from_bytes(data[offset + 5 : offset + 7], "big")
+                    return width, height
+                break
+            offset += length
+    return None, None
+
+
+def convert_vector_image(data: bytes, suffix: str, destination: Path) -> None:
+    if not MAGICK_EXE or not Path(MAGICK_EXE).exists():
+        destination.write_bytes(data)
+        return
+    temp_source = destination.with_suffix(suffix)
+    temp_source.write_bytes(data)
+    try:
+        result = subprocess.run(
+            [MAGICK_EXE, str(temp_source), str(destination)],
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=8,
+        )
+        if result.returncode != 0 or not destination.exists():
+            destination.write_bytes(data)
+    except subprocess.TimeoutExpired:
+        destination.write_bytes(data)
+    finally:
+        try:
+            temp_source.unlink()
+        except FileNotFoundError:
+            pass
+
+
+def copy_image(archive: zipfile.ZipFile, target: str, prefix: str, index: int) -> tuple[str, int | None, int | None]:
+    original_suffix = Path(target).suffix.lower() or ".png"
+    suffix = ".png" if original_suffix in {".wmf", ".emf"} else original_suffix
+    data = archive.read(target)
+    digest = hashlib.sha1(data).hexdigest()[:10]
+    filename = f"{prefix}-{index:03d}-{digest}{suffix}"
+    destination = ASSET_DIR / filename
+    if not destination.exists():
+        if original_suffix in {".wmf", ".emf"}:
+            convert_vector_image(data, original_suffix, destination)
+        else:
+            destination.write_bytes(data)
+    converted_data = destination.read_bytes()
+    width, height = image_dimensions(converted_data)
+    return f"{ASSET_HREF_PREFIX}/{filename}", width, height
+
+
+def paragraph_units(para: ET.Element, rels: dict[str, str], archive: zipfile.ZipFile, prefix: str, counter: list[int]) -> Block:
+    units: list[Unit] = []
+    text_parts: list[str] = []
+    for node in para.iter():
+        if node.tag == f"{{{NS['w']}}}t" and node.text:
+            units.append(Unit("text", node.text))
+            text_parts.append(node.text)
+        elif node.tag == f"{{{NS['a']}}}blip":
+            embed = node.attrib.get(f"{{{NS['r']}}}embed")
+            target = rels.get(embed or "")
+            if target and target in archive.namelist():
+                counter[0] += 1
+                href, width, height = copy_image(archive, target, prefix, counter[0])
+                units.append(Unit("image", href, width, height))
+        elif node.tag == f"{{{NS['v']}}}imagedata":
+            embed = node.attrib.get(f"{{{NS['r']}}}id") or node.attrib.get(f"{{{NS['r']}}}embed")
+            target = rels.get(embed or "")
+            if target and target in archive.namelist():
+                counter[0] += 1
+                href, width, height = copy_image(archive, target, prefix, counter[0])
+                units.append(Unit("image", href, width, height, True))
+    return Block("".join(text_parts).strip(), units)
+
+
+def docx_blocks(path: Path, prefix: str) -> list[Block]:
+    with zipfile.ZipFile(path) as archive:
+        rels = rel_targets(archive)
+        tree = ET.fromstring(archive.read("word/document.xml"))
+        counter = [0]
+        blocks: list[Block] = []
+        for para in tree.findall(".//w:p", NS):
+            block = paragraph_units(para, rels, archive, prefix, counter)
+            if block.text or any(unit.kind == "image" for unit in block.units):
+                blocks.append(block)
+        return blocks
+
+
+def split_questions(blocks: list[Block]) -> tuple[list[Block], list[Question]]:
+    intro: list[Block] = []
+    questions: list[Question] = []
+    current: Question | None = None
+    for block in blocks:
+        match = re.match(r"^\s*(\d+)[\.．、]\s*", block.text)
+        if match:
+            current = Question(number=int(match.group(1)), blocks=[block])
+            questions.append(current)
+            continue
+        if current is None:
+            intro.append(block)
+        else:
+            current.blocks.append(block)
+    return intro, questions
+
+
+def find_docx(point: str, *, source: str, version: str) -> Path:
+    candidates = [
+        path
+        for path in LOCAL_ROOT.rglob("*.docx")
+        if f"考点{point}" in str(path) and source in path.name and version in path.name
+    ]
+    if not candidates:
+        raise FileNotFoundError(f"missing 考点{point} {source} {version}")
+    return sorted(candidates, key=lambda path: len(str(path)))[0]
+
+
+def is_block_image(unit: Unit) -> bool:
+    if unit.inline_hint:
+        return False
+    if unit.width is None or unit.height is None:
+        return True
+    return unit.height >= 120 or (unit.width >= 420 and unit.height >= 80)
+
+
+def image_tag(unit: Unit, *, block: bool) -> str:
+    class_name = "local-docx-image local-docx-block-image" if block else "local-docx-image local-docx-inline-image"
+    attrs = [
+        f'class="{class_name}"',
+        f'src="{html.escape(unit.value, quote=True)}"',
+        'alt="本地解析几何资料图片"',
+    ]
+    if unit.width is not None:
+        attrs.append(f'width="{unit.width}"')
+    if unit.height is not None:
+        attrs.append(f'height="{unit.height}"')
+    return "<img " + " ".join(attrs) + ">"
+
+
+def block_to_html(block: Block) -> str:
+    parts: list[str] = []
+    inline_parts: list[str] = []
+
+    def flush_inline() -> None:
+        content = "".join(inline_parts).strip()
+        if content:
+            parts.append(f'<p class="local-docx-line">{content}</p>')
+        inline_parts.clear()
+
+    for unit in block.units:
+        if unit.kind == "text":
+            inline_parts.append(html.escape(unit.value))
+            continue
+        if unit.kind != "image":
+            continue
+        block_image = is_block_image(unit)
+        if block_image:
+            flush_inline()
+            parts.append(f'<div class="local-docx-figure">{image_tag(unit, block=True)}</div>')
+        else:
+            inline_parts.append(image_tag(unit, block=False))
+    flush_inline()
+    return "\n".join(parts)
+
+
+def question_to_markdown(question: Question, global_index: int) -> str:
+    body = "\n".join(rendered for block in question.blocks if (rendered := block_to_html(block)))
+    lines = [f"### 题 {global_index}（原题 {question.number}）", ""]
+    if body:
+        lines.extend(
+            [
+                ":::diagram",
+                '<div class="local-docx-card local-docx-question">',
+                body,
+                "</div>",
+                ":::",
+            ]
+        )
+    return "\n".join(lines).rstrip()
+
+
+def solution_to_markdown(question: Question | None) -> str:
+    if question is None:
+        return ""
+    body = "\n".join(rendered for block in question.blocks if (rendered := block_to_html(block)))
+    lines = [":::solution 查看解析版原文", ""]
+    if body:
+        lines.extend(
+            [
+                ":::diagram",
+                '<div class="local-docx-card local-docx-answer">',
+                body,
+                "</div>",
+                ":::",
+                "",
+            ]
+        )
+    lines.append(":::")
+    return "\n".join(lines).rstrip()
+
+
+def main() -> int:
+    ASSET_DIR.mkdir(parents=True, exist_ok=True)
+    CONTENT_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+    lines: list[str] = [
+        "# 解析几何与圆锥曲线：考点 40-46 全量本地题库",
+        "",
+        "这一页把本地一轮复习资料中考点 40 到考点 46 的练习题按原考点整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后抽题、限时训练和查漏补缺。",
+        "",
+        "返回专题首页：[解析几何与圆锥曲线](./README.md)。配套训练：[解析几何与圆锥曲线：模块分层训练题库](./12_analytic_geometry_module_drills_zh.md)。",
+        "",
+        "## 使用说明",
+        "",
+        "1. 这页是资料池，不建议第一次学习时直接通刷。",
+        "2. 课堂上先用讲义建立定义、方程和代数引擎，再按考点从这里抽题。",
+        "3. Word 中不少公式和图形本身就是图片，所以本页保留原图，避免抽文字时丢失关键信息。",
+        "",
+    ]
+
+    global_index = 1
+    summary: list[tuple[str, str, int, int, int]] = []
+    for point, title in POINTS:
+        print(f"processing 考点 {point} {title}", flush=True)
+        original = find_docx(point, source="练习", version="原卷版")
+        solved = find_docx(point, source="练习", version="解析版")
+        _, questions = split_questions(docx_blocks(original, f"ag{point}-q"))
+        _, solutions = split_questions(docx_blocks(solved, f"ag{point}-a"))
+        print(f"  extracted questions={len(questions)} solutions={len(solutions)}", flush=True)
+        aligned_solutions = min(len(questions), len(solutions))
+        summary.append((point, title, len(questions), len(solutions), aligned_solutions))
+
+        lines.extend([f"## 考点 {point}：{title}", ""])
+        lines.extend(
+            [
+                f"本组来自 `{original.name}`；原卷共抽取 {len(questions)} 道题，解析版原始抽取 {len(solutions)} 道，可对齐显示 {aligned_solutions} 道。",
+                "",
+            ]
+        )
+        for index, question in enumerate(questions):
+            lines.append(question_to_markdown(question, global_index))
+            lines.append("")
+            solution = solutions[index] if index < len(solutions) else None
+            if solution:
+                lines.append(solution_to_markdown(solution))
+                lines.append("")
+            global_index += 1
+
+    total_questions = sum(item[2] for item in summary)
+    total_solutions = sum(item[4] for item in summary)
+    lines.extend(
+        [
+            "## 抽取统计",
+            "",
+            f"- 全量原卷题目：{total_questions} 道。",
+            f"- 可折叠解析版题块：{total_solutions} 道。",
+            "",
+        ]
+    )
+    for point, title, q_count, raw_a_count, aligned_count in summary:
+        lines.append(f"- 考点 {point} {title}：原卷 {q_count} 道，解析版原始抽取 {raw_a_count} 道，可对齐显示 {aligned_count} 道。")
+
+    CONTENT_FILE.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    print(f"wrote {CONTENT_FILE}")
+    print(f"questions={total_questions} solutions={total_solutions} assets={sum(1 for _ in ASSET_DIR.iterdir())}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

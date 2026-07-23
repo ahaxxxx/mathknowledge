@@ -23,6 +23,11 @@ SOLID_README_FILE = CONTENT_DIR / "04_solid_geometry" / "README.md"
 SOLID_LESSON_FILE = CONTENT_DIR / "04_solid_geometry" / "01_solid_geometry_spatial_vectors_zh.md"
 SOLID_EXERCISES_FILE = CONTENT_DIR / "04_solid_geometry" / "02_solid_geometry_exercises_zh.md"
 SOLID_FULL_EXERCISES_FILE = CONTENT_DIR / "04_solid_geometry" / "03_solid_geometry_local_full_exercises_zh.md"
+ANALYTIC_README_FILE = CONTENT_DIR / "05_analytic_geometry" / "README.md"
+ANALYTIC_OVERVIEW_FILE = CONTENT_DIR / "05_analytic_geometry" / "01_analytic_geometry_overview_zh.md"
+ANALYTIC_ENGINE_FILE = CONTENT_DIR / "05_analytic_geometry" / "08_line_conic_engine_zh.md"
+ANALYTIC_DRILLS_FILE = CONTENT_DIR / "05_analytic_geometry" / "12_analytic_geometry_module_drills_zh.md"
+ANALYTIC_FULL_EXERCISES_FILE = CONTENT_DIR / "05_analytic_geometry" / "13_analytic_geometry_local_full_exercises_zh.md"
 
 SOLUTION_PATTERN = re.compile(r"^:::solution\b", re.MULTILINE)
 
@@ -436,6 +441,121 @@ def check_solid_geometry(errors: list[str]) -> None:
             errors.append(f"{full_html_path.name}: expected at least 300 generated images, found {html_image_count}")
 
 
+def check_analytic_geometry(errors: list[str]) -> None:
+    readme = read_utf8(ANALYTIC_README_FILE, errors)
+    if readme:
+        require_contains(
+            ANALYTIC_README_FILE,
+            readme,
+            [
+                "# 解析几何与圆锥曲线",
+                "总览：从坐标到曲线",
+                "直线与圆锥曲线的代数引擎",
+                "定点、定值、定直线",
+                "考点 40-46 全量本地题库",
+            ],
+            errors,
+        )
+
+    overview = read_utf8(ANALYTIC_OVERVIEW_FILE, errors)
+    if overview:
+        require_contains(
+            ANALYTIC_OVERVIEW_FILE,
+            overview,
+            [
+                "# 解析几何：从坐标到曲线",
+                "## 高考大题的稳定流程",
+                "## 费曼讲题任务",
+                ":::diagram",
+            ],
+            errors,
+        )
+
+    engine = read_utf8(ANALYTIC_ENGINE_FILE, errors)
+    if engine:
+        require_contains(
+            ANALYTIC_ENGINE_FILE,
+            engine,
+            [
+                "# 直线与圆锥曲线的代数引擎",
+                "## 标准流程",
+                "## 弦长公式",
+                "## 中点弦",
+                "## 面积表达",
+            ],
+            errors,
+        )
+
+    drills = read_utf8(ANALYTIC_DRILLS_FILE, errors)
+    if drills:
+        require_contains(
+            ANALYTIC_DRILLS_FILE,
+            drills,
+            [
+                "# 解析几何与圆锥曲线：模块分层训练题库",
+                "## A. 坐标与直线",
+                "## B. 圆",
+                "## C. 圆锥曲线定义",
+                "## D. 椭圆",
+                "## E. 双曲线",
+                "## F. 抛物线",
+                "## G. 联立与韦达",
+                "## H. 定点、定值、定直线",
+                "## I. 最值与范围",
+                "## J. 大题策略",
+            ],
+            errors,
+        )
+        solution_count = len(SOLUTION_PATTERN.findall(drills))
+        if solution_count < 50:
+            errors.append(f"{ANALYTIC_DRILLS_FILE.name}: expected at least 50 solution blocks, found {solution_count}")
+
+    full_exercises = read_utf8(ANALYTIC_FULL_EXERCISES_FILE, errors)
+    if full_exercises:
+        require_contains(
+            ANALYTIC_FULL_EXERCISES_FILE,
+            full_exercises,
+            [
+                "# 解析几何与圆锥曲线：考点 40-46 全量本地题库",
+                "## 考点 40：直线方程",
+                "## 考点 41：圆的方程",
+                "## 考点 42：椭圆",
+                "## 考点 43：双曲线",
+                "## 考点 44：抛物线",
+                "## 考点 45：三定问题（定点、定值、定直线）",
+                "## 考点 46：直线与曲线的最值问题",
+                "全量原卷题目：134 道",
+            ],
+            errors,
+        )
+        question_count = len(re.findall(r"^### 题\s+\d+", full_exercises, re.MULTILINE))
+        solution_count = len(SOLUTION_PATTERN.findall(full_exercises))
+        image_count = full_exercises.count("local-docx-image")
+        if question_count < 134:
+            errors.append(f"{ANALYTIC_FULL_EXERCISES_FILE.name}: expected at least 134 questions, found {question_count}")
+        if solution_count < 130:
+            errors.append(
+                f"{ANALYTIC_FULL_EXERCISES_FILE.name}: expected at least 130 solution blocks, found {solution_count}"
+            )
+        if image_count < 300:
+            errors.append(f"{ANALYTIC_FULL_EXERCISES_FILE.name}: expected at least 300 embedded images, found {image_count}")
+
+    full_html_path = OUTPUT_DIR / "05-analytic-geometry" / "13-analytic-geometry-local-full-exercises-zh.html"
+    if full_html_path.exists():
+        html = full_html_path.read_text(encoding="utf-8")
+        question_count = html.count("<h3>题 ")
+        html_solution_count = html.count("<details class=\"solution-toggle\">")
+        html_image_count = html.count("local-docx-image")
+        if question_count < 134:
+            errors.append(f"{full_html_path.name}: expected at least 134 generated questions, found {question_count}")
+        if html_solution_count < 130:
+            errors.append(
+                f"{full_html_path.name}: expected at least 130 generated solution toggles, found {html_solution_count}"
+            )
+        if html_image_count < 300:
+            errors.append(f"{full_html_path.name}: expected at least 300 generated images, found {html_image_count}")
+
+
 def main() -> int:
     errors: list[str] = []
     check_summation(errors)
@@ -454,6 +574,7 @@ def main() -> int:
     check_trigonometry_local_supplement(errors)
     check_plane_vectors(errors)
     check_solid_geometry(errors)
+    check_analytic_geometry(errors)
     readme = read_utf8(TRIG_README_FILE, errors)
     if readme and "03_trig_exercise_bank_zh.md" not in readme:
         errors.append("README.md: missing trigonometry exercise bank link")
@@ -466,7 +587,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print("PASS: summation, trigonometry, plane vectors, and solid geometry content are present.")
+    print("PASS: summation, trigonometry, plane vectors, solid geometry, and analytic geometry content are present.")
     return 0
 
 

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>双曲线 | math.bozhanli.com</title>
+  <meta name="description" content="双曲线是到两个定点距离差的绝对值为常数的点的轨迹。它和椭圆最容易混淆，所以学习时要始终抓住两件事：定义中的“差”和图形中的“渐近线”。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">解析几何/圆锥曲线</a><span>/</span><span>双曲线</span></div>
+      <h1>双曲线</h1>
+      <p>双曲线是到两个定点距离差的绝对值为常数的点的轨迹。它和椭圆最容易混淆，所以学习时要始终抓住两件事：定义中的“差”和图形中的“渐近线”。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>定义</h2>
+<p>平面内到两个定点 $F_1,F_2$ 的距离差的绝对值等于常数 $2a$ 的点的轨迹叫双曲线：</p>
+<div class="math-display">$$
+|PF_1-PF_2|=2a.
+$$</div>
+<p>要求 $0&lt;2a&lt;F_1F_2$。</p>
+<h2>标准方程</h2>
+<p>焦点在 $x$ 轴：</p>
+<div class="math-display">$$
+\frac{x^2}{a^2}-\frac{y^2}{b^2}=1.
+$$</div>
+<p>焦点为 $F_1(-c,0)$，$F_2(c,0)$，且</p>
+<div class="math-display">$$
+c^2=a^2+b^2.
+$$</div>
+<p>焦点在 $y$ 轴：</p>
+<div class="math-display">$$
+\frac{y^2}{a^2}-\frac{x^2}{b^2}=1.
+$$</div>
+<h2>渐近线</h2>
+<p>对</p>
+<div class="math-display">$$
+\frac{x^2}{a^2}-\frac{y^2}{b^2}=1,
+$$</div>
+<p>渐近线为</p>
+<div class="math-display">$$
+y=\pm\frac ba x.
+$$</div>
+<p>对</p>
+<div class="math-display">$$
+\frac{y^2}{a^2}-\frac{x^2}{b^2}=1,
+$$</div>
+<p>渐近线为</p>
+<div class="math-display">$$
+y=\pm\frac ab x.
+$$</div>
+<p>渐近线是双曲线图形理解的核心。</p>
+<h2>离心率</h2>
+<div class="math-display">$$
+e=\frac ca,\qquad e&gt;1.
+$$</div>
+<p>双曲线的离心率越大，两支开口越“宽”。</p>
+<figure class="math-diagram"><svg viewBox="0 0 620 300" role="img" aria-label="双曲线和渐近线">
+  <line x1="60" y1="150" x2="560" y2="150" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="310" y1="35" x2="310" y2="265" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="105" y1="260" x2="515" y2="40" stroke="#d7c7aa" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="105" y1="40" x2="515" y2="260" stroke="#d7c7aa" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M385 85 C455 95 500 115 540 150 C500 185 455 205 385 215" fill="none" stroke="#1f2937" stroke-width="3"/>
+  <path d="M235 85 C165 95 120 115 80 150 C120 185 165 205 235 215" fill="none" stroke="#1f2937" stroke-width="3"/>
+  <circle cx="210" cy="150" r="5" fill="#dc2626"/><circle cx="410" cy="150" r="5" fill="#dc2626"/>
+  <text x="195" y="135" font-size="17">F1</text><text x="418" y="135" font-size="17">F2</text>
+</svg></figure>
+<h2>常见题型</h2>
+<ol><li>由 $a,b,c,e$ 求方程。</li><li>由渐近线和焦点求方程。</li><li>焦点三角形。</li><li>离心率范围。</li><li>直线与双曲线交点和弦长。</li><li>与渐近线、切线、定值问题结合。</li></ol>
+<h2>训练题</h2>
+<ol><li>双曲线 $\frac{x^2}{9}-\frac{y^2}{16}=1$ 的焦点和渐近线是什么？</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$a=3,b=4,c=5$，焦点为 $(\pm5,0)$，渐近线为 $y=\pm\frac43x$。</p></div></details>
+<ol><li>焦点在 $x$ 轴，$a=2,b=3$，求双曲线方程。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+\frac{x^2}{4}-\frac{y^2}{9}=1.
+$$</div></div></details>
+<ol><li>双曲线焦点为 $(\pm5,0)$，实轴长为 $6$，求方程。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$a=3,c=5$，$b^2=c^2-a^2=16$，所以</p>
+<div class="math-display">$$
+\frac{x^2}{9}-\frac{y^2}{16}=1.
+$$</div></div></details>
+<ol><li>双曲线 $\frac{y^2}{4}-\frac{x^2}{5}=1$ 的焦点在哪条轴？</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>正项是 $y^2$，所以焦点在 $y$ 轴。</p></div></details>
+<ol><li>双曲线 $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$ 的离心率是否可能小于 $1$？</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>不可能。双曲线中 $c^2=a^2+b^2$，所以 $c&gt;a$，故 $e=\frac ca&gt;1$。</p></div></details>
+<h2>讲题追问</h2>
+<p>双曲线题先问：正项是谁？焦点在哪条轴？渐近线是什么？这三个问题说清楚，图形才不会乱。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">解析几何/圆锥曲线</a></li><li>源文件：<code>content/09_high_school_math/05_analytic_geometry/06_hyperbola_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-analytic-geometry-overview-zh.html">解析几何：从坐标到曲线</a></h3><p>解析几何研究的是“图形与方程之间的翻译”。几何里看见点、线、圆和圆锥曲线；代数里写成坐标、方程、参数和不等式。高考解析几何大题的本质，就是在这两种语言之间来回切换。</p></div><div class="note-item"><h3><a href="02-coordinates-lines-zh.html">坐标、距离、斜率与直线基础</a></h3><p>解析几何的地基是坐标和直线。直线不是一条“画出来的线”，而是一组满足一次方程的点。掌握直线方程，就是掌握方向、位置、距离和交点。</p></div><div class="note-item"><h3><a href="03-circle-equations-zh.html">圆的方程与直线圆问题</a></h3><p>圆是解析几何中最重要的过渡对象。它比直线多了平方项，又比圆锥曲线简单。直线与圆的相交、相切、弦长，正好训练后面圆锥曲线大题需要的联立思想。</p></div><div class="note-item"><h3><a href="04-conic-unified-zh.html">圆锥曲线统一入口</a></h3><p>椭圆、双曲线、抛物线不是三堆孤立公式。它们都是“动点满足某种距离关系形成的轨迹”。先理解定义，后面的标准方程、焦点、离心率、弦长和大题才有根。</p></div><div class="note-item"><h3><a href="05-ellipse-zh.html">椭圆</a></h3><p>椭圆是到两个定点距离和为常数的点的轨迹。高考中椭圆常作为圆锥曲线大题的主角，因为它既有清晰几何定义，又适合与直线联立产生韦达结构。</p></div><div class="note-item"><h3><a href="07-parabola-zh.html">抛物线</a></h3><p>抛物线是到焦点和准线距离相等的点的轨迹。它没有中心，只有一个焦点和一条准线。很多学生抛物线题不稳，是因为只记了方程，没有真正使用焦点准线定义。</p></div><div class="note-item"><h3><a href="08-line-conic-engine-zh.html">直线与圆锥曲线的代数引擎</a></h3><p>解析几何大题的核心引擎是：设直线、联立曲线、得到一元二次方程、使用判别式和韦达。很多题看起来问弦长、面积、斜率、定值、最值，本质都是把目标转成两根的和与积。</p></div><div class="note-item"><h3><a href="09-three-constants-zh.html">定点、定值、定直线</a></h3><p>定点、定值、定直线是圆锥曲线大题的高分分水岭。它们的共同本质是：虽然题中有变量，但某个对象不随变量改变。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>
