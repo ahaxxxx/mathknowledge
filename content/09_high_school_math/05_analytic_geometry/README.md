@@ -19,6 +19,7 @@
 11. [圆锥曲线大题十个大招](./11_conic_big_problem_strategies_zh.md)
 12. [模块分层训练题库](./12_analytic_geometry_module_drills_zh.md)
 13. [考点 40-46 全量本地题库](./13_analytic_geometry_local_full_exercises_zh.md)
+14. [高分表达与开放题专项](./14_high_score_expression_open_tasks_zh.md)
 
 ## 本地资料来源
 
@@ -43,6 +44,7 @@
 6. 第六讲：直线与圆锥曲线联立、判别式、韦达和弦长。
 7. 第七讲：定点、定值、定直线。
 8. 第八讲：最值与范围、综合大题策略。
+9. 穿插课：表达训练与开放题。每次抽 1 道题，让学生说明“变量、条件、目标、完整性检查”，不是只报答案。
 
 ## 高分训练原则
 

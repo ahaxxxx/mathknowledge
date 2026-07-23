@@ -51,6 +51,7 @@ SECTION_LABELS = {
     "03_plane_vectors": "平面向量",
     "04_solid_geometry": "立体几何/空间向量",
     "05_analytic_geometry": "解析几何/圆锥曲线",
+    "06_counting_combinatorics": "计数原理/排列组合",
 }
 
 BLOCK_STARTERS = (

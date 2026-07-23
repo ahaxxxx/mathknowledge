@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>两个计数原理：加法与乘法 | math.bozhanli.com</title>
+  <meta name="description" content="计数的第一原则是先描述对象。没有对象，就没有“多少种”。很多排列组合错误不是公式错，而是学生没有说清楚自己正在数什么。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">计数原理/排列组合</a><span>/</span><span>两个计数原理：加法与乘法</span></div>
+      <h1>两个计数原理：加法与乘法</h1>
+      <p>计数的第一原则是先描述对象。没有对象，就没有“多少种”。很多排列组合错误不是公式错，而是学生没有说清楚自己正在数什么。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>加法原理</h2>
+<p>如果完成一件事可以分成若干类，并且每一种完成方式只属于其中一类，那么总数等于各类数量相加：</p>
+<div class="math-display">$$
+N=N_1+N_2+\cdots+N_k.
+$$</div>
+<p>关键词是“分类”。分类必须互斥，不能重叠。比如从广州到北京，可以坐飞机或高铁，如果一趟行程不能同时算作飞机和高铁，那么可以相加。</p>
+<h2>乘法原理</h2>
+<p>如果完成一件事要连续做若干步，每一步都有若干选择，并且前后步骤共同确定一个完整对象，那么总数等于各步数量相乘：</p>
+<div class="math-display">$$
+N=N_1N_2\cdots N_k.
+$$</div>
+<p>关键词是“分步”。每一步都必须完成，缺一步就不是完整对象。</p>
+<h2>加法和乘法的根本区别</h2>
+<p>加法回答：“这件事有几种互斥路线？”</p>
+<p>乘法回答：“这件事要经过几个连续部件？”</p>
+<p>比如要组成一个三位数：</p>
+<ol><li>先选百位。</li><li>再选十位。</li><li>再选个位。</li></ol>
+<p>这是分步，所以乘。若题目问“组成三位偶数或三位奇数”，这是分类，所以加。</p>
+<h2>最小例子</h2>
+<p>用数字 $1,2,3,4$ 组成无重复数字的两位数，有多少个？</p>
+<details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p>对象是两位数，所以十位和个位都要确定。</p>
+<p>第一步选十位，有 $4$ 种；第二步选个位，因为不能重复，只剩 $3$ 种。</p>
+<p>由乘法原理，共有</p>
+<div class="math-display">$$
+4\cdot3=12
+$$</div>
+<p>个。</p></div></details>
+<h2>容易错的地方</h2>
+<ol><li>分类重叠：同一种情况被两个类别同时包含。</li><li>分步不完整：只数了前两步，忘了最后一步。</li><li>顺序改变：本来是组合对象，却按排列数了。</li><li>限制条件后处理太晚：导致先数了很多非法对象再忘记扣。</li></ol>
+<h2>费曼讲题任务</h2>
+<p>让学生不要直接说公式，而要说：</p>
+<ol><li>“我现在是在分类还是分步？”</li><li>“每一类是否互斥？”</li><li>“每一步是否都必须完成？”</li><li>“这个乘法结果是否唯一对应一个对象？”</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">计数原理/排列组合</a></li><li>源文件：<code>content/09_high_school_math/06_counting_combinatorics/01_counting_principles_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="02-permutations-combinations-zh.html">排列与组合：有序、无序和先选后排</a></h3><p>排列组合的分界线只有一句话：如果交换位置后算不同结果，就是排列；如果只关心选了哪些对象，不关心顺序，就是组合。</p></div><div class="note-item"><h3><a href="03-common-models-zh.html">常见模型：特殊优先、捆绑、插空、分组分配</a></h3><p>模型不是口诀，而是限制条件的处理顺序。限制越强，越应该优先处理。</p></div><div class="note-item"><h3><a href="04-binomial-theorem-zh.html">二项式定理：通项、系数和与赋值法</a></h3><p>二项式定理不是纯代数公式，它本质上也是计数：展开 $(a+b)^n$ 时，每一项都来自 $n$ 个括号中分别选择 $a$ 或 $b$。</p></div><div class="note-item"><h3><a href="05-counting-probability-bridge-zh.html">计数与概率接口：从样本点到古典概型</a></h3><p>排列组合之后很自然会进入概率。古典概型的核心公式很简单：</p></div><div class="note-item"><h3><a href="06-counting-expression-drills-zh.html">计数原理与排列组合：分层训练题库</a></h3><p>这页不是为了刷题量，而是为了训练学生把计数过程讲清楚。每道题讲解时都要回答四件事：数的对象是什么，分类还是分步，有序还是无序，为什么不重不漏。</p></div><div class="note-item"><h3><a href="07-counting-local-full-exercises-zh.html">计数原理与排列组合：考点 33-35 全量本地题库</a></h3><p>这一页把本地一轮复习资料中考点 33 到考点 35 的练习题按原考点整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后抽题、限时训练和查漏补缺。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

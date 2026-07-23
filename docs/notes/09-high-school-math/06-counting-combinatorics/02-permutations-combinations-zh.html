@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>排列与组合：有序、无序和先选后排 | math.bozhanli.com</title>
+  <meta name="description" content="排列组合的分界线只有一句话：如果交换位置后算不同结果，就是排列；如果只关心选了哪些对象，不关心顺序，就是组合。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">计数原理/排列组合</a><span>/</span><span>排列与组合：有序、无序和先选后排</span></div>
+      <h1>排列与组合：有序、无序和先选后排</h1>
+      <p>排列组合的分界线只有一句话：如果交换位置后算不同结果，就是排列；如果只关心选了哪些对象，不关心顺序，就是组合。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>排列</h2>
+<p>从 $n$ 个不同元素中取出 $m$ 个，按一定顺序排成一列，叫排列。排列数为</p>
+<div class="math-display">$$
+A_n^m=n(n-1)\cdots(n-m+1)=\frac{n!}{(n-m)!}.
+$$</div>
+<p>排列的本质是连续占位：第一个位置有 $n$ 种，第二个位置有 $n-1$ 种，直到第 $m$ 个位置。</p>
+<h2>组合</h2>
+<p>从 $n$ 个不同元素中取出 $m$ 个，只看取出的集合，不看顺序，叫组合。组合数为</p>
+<div class="math-display">$$
+C_n^m=\frac{A_n^m}{m!}=\frac{n!}{m!(n-m)!}.
+$$</div>
+<p>组合可以理解为“先按顺序取，再除去内部 $m!$ 种排列重复”。</p>
+<h2>先选后排</h2>
+<p>很多题不是纯排列或纯组合，而是两步：</p>
+<ol><li>先选对象：用组合。</li><li>再安排位置：用排列。</li></ol>
+<p>例如从 8 人中选 3 人站成一排：</p>
+<div class="math-display">$$
+C_8^3A_3^3=A_8^3.
+$$</div>
+<p>两种写法等价，但“先选后排”更容易解释过程。</p>
+<h2>组合数性质</h2>
+<div class="math-display">$$
+C_n^m=C_n^{n-m}.
+$$</div>
+<p>这表示“选出 $m$ 个”和“留下 $n-m$ 个”是一回事。</p>
+<div class="math-display">$$
+C_n^m+C_n^{m-1}=C_{n+1}^m.
+$$</div>
+<p>这表示从 $n+1$ 个元素中选 $m$ 个时，按某个特殊元素是否被选中分类。</p>
+<h2>最小例子</h2>
+<p>班里 10 人中选 3 人参加活动，有多少种选法？</p>
+<details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p>只关心哪 3 人被选中，不关心三人顺序，所以是组合：</p>
+<div class="math-display">$$
+C_{10}^{3}=\frac{10\cdot9\cdot8}{3\cdot2\cdot1}=120.
+$$</div></div></details>
+<h2>表达检查</h2>
+<p>学生讲题时必须明确：</p>
+<ol><li>位置是否不同。</li><li>被选对象内部是否有顺序。</li><li>先选后排是否比直接套公式更清楚。</li><li>有没有把同一个选择重复计算。</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">计数原理/排列组合</a></li><li>源文件：<code>content/09_high_school_math/06_counting_combinatorics/02_permutations_combinations_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-counting-principles-zh.html">两个计数原理：加法与乘法</a></h3><p>计数的第一原则是先描述对象。没有对象，就没有“多少种”。很多排列组合错误不是公式错，而是学生没有说清楚自己正在数什么。</p></div><div class="note-item"><h3><a href="03-common-models-zh.html">常见模型：特殊优先、捆绑、插空、分组分配</a></h3><p>模型不是口诀，而是限制条件的处理顺序。限制越强，越应该优先处理。</p></div><div class="note-item"><h3><a href="04-binomial-theorem-zh.html">二项式定理：通项、系数和与赋值法</a></h3><p>二项式定理不是纯代数公式，它本质上也是计数：展开 $(a+b)^n$ 时，每一项都来自 $n$ 个括号中分别选择 $a$ 或 $b$。</p></div><div class="note-item"><h3><a href="05-counting-probability-bridge-zh.html">计数与概率接口：从样本点到古典概型</a></h3><p>排列组合之后很自然会进入概率。古典概型的核心公式很简单：</p></div><div class="note-item"><h3><a href="06-counting-expression-drills-zh.html">计数原理与排列组合：分层训练题库</a></h3><p>这页不是为了刷题量，而是为了训练学生把计数过程讲清楚。每道题讲解时都要回答四件事：数的对象是什么，分类还是分步，有序还是无序，为什么不重不漏。</p></div><div class="note-item"><h3><a href="07-counting-local-full-exercises-zh.html">计数原理与排列组合：考点 33-35 全量本地题库</a></h3><p>这一页把本地一轮复习资料中考点 33 到考点 35 的练习题按原考点整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后抽题、限时训练和查漏补缺。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

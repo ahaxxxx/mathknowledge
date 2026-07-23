@@ -28,6 +28,15 @@ ANALYTIC_OVERVIEW_FILE = CONTENT_DIR / "05_analytic_geometry" / "01_analytic_geo
 ANALYTIC_ENGINE_FILE = CONTENT_DIR / "05_analytic_geometry" / "08_line_conic_engine_zh.md"
 ANALYTIC_DRILLS_FILE = CONTENT_DIR / "05_analytic_geometry" / "12_analytic_geometry_module_drills_zh.md"
 ANALYTIC_FULL_EXERCISES_FILE = CONTENT_DIR / "05_analytic_geometry" / "13_analytic_geometry_local_full_exercises_zh.md"
+ANALYTIC_EXPRESSION_FILE = CONTENT_DIR / "05_analytic_geometry" / "14_high_score_expression_open_tasks_zh.md"
+COUNTING_README_FILE = CONTENT_DIR / "06_counting_combinatorics" / "README.md"
+COUNTING_PRINCIPLES_FILE = CONTENT_DIR / "06_counting_combinatorics" / "01_counting_principles_zh.md"
+COUNTING_PERM_COMB_FILE = CONTENT_DIR / "06_counting_combinatorics" / "02_permutations_combinations_zh.md"
+COUNTING_MODELS_FILE = CONTENT_DIR / "06_counting_combinatorics" / "03_common_models_zh.md"
+COUNTING_BINOMIAL_FILE = CONTENT_DIR / "06_counting_combinatorics" / "04_binomial_theorem_zh.md"
+COUNTING_PROB_BRIDGE_FILE = CONTENT_DIR / "06_counting_combinatorics" / "05_counting_probability_bridge_zh.md"
+COUNTING_DRILLS_FILE = CONTENT_DIR / "06_counting_combinatorics" / "06_counting_expression_drills_zh.md"
+COUNTING_FULL_EXERCISES_FILE = CONTENT_DIR / "06_counting_combinatorics" / "07_counting_local_full_exercises_zh.md"
 
 SOLUTION_PATTERN = re.compile(r"^:::solution\b", re.MULTILINE)
 
@@ -555,6 +564,142 @@ def check_analytic_geometry(errors: list[str]) -> None:
         if html_image_count < 300:
             errors.append(f"{full_html_path.name}: expected at least 300 generated images, found {html_image_count}")
 
+    expression = read_utf8(ANALYTIC_EXPRESSION_FILE, errors)
+    if expression:
+        require_contains(
+            ANALYTIC_EXPRESSION_FILE,
+            expression,
+            [
+                "# 解析几何高分表达与开放题专项",
+                "## 标准表达模板",
+                "## 开放题常见问法",
+                "## A. 变量与设元",
+                "## B. 定点、定值、范围",
+                "## C. 开放存在题",
+                "## D. 课堂口头训练",
+            ],
+            errors,
+        )
+        solution_count = len(SOLUTION_PATTERN.findall(expression))
+        if solution_count < 12:
+            errors.append(f"{ANALYTIC_EXPRESSION_FILE.name}: expected at least 12 solution blocks, found {solution_count}")
+
+
+def check_counting_combinatorics(errors: list[str]) -> None:
+    readme = read_utf8(COUNTING_README_FILE, errors)
+    if readme:
+        require_contains(
+            COUNTING_README_FILE,
+            readme,
+            [
+                "# 计数原理与排列组合",
+                "两个计数原理：加法与乘法",
+                "排列与组合：有序、无序和先选后排",
+                "常见模型：特殊优先、捆绑、插空、分组分配",
+                "二项式定理：通项、系数和与赋值法",
+                "计数与概率接口：从样本点到古典概型",
+                "考点 33-35 全量本地题库",
+            ],
+            errors,
+        )
+
+    for path, required in [
+        (
+            COUNTING_PRINCIPLES_FILE,
+            ["# 两个计数原理：加法与乘法", "## 加法原理", "## 乘法原理", "## 费曼讲题任务"],
+        ),
+        (
+            COUNTING_PERM_COMB_FILE,
+            ["# 排列与组合：有序、无序和先选后排", "## 排列", "## 组合", "## 先选后排"],
+        ),
+        (
+            COUNTING_MODELS_FILE,
+            ["# 常见模型：特殊优先、捆绑、插空、分组分配", "## 相邻问题：捆绑法", "## 不相邻问题：插空法", "## 分组与分配", "## 隔板法"],
+        ),
+        (
+            COUNTING_BINOMIAL_FILE,
+            ["# 二项式定理：通项、系数和与赋值法", "## 定理", "## 指定项和常数项", "## 系数和"],
+        ),
+        (
+            COUNTING_PROB_BRIDGE_FILE,
+            ["# 计数与概率接口：从样本点到古典概型", "## 样本点必须等可能", "## 分母和分子的口径一致"],
+        ),
+    ]:
+        text = read_utf8(path, errors)
+        if text:
+            require_contains(path, text, required, errors)
+
+    drills = read_utf8(COUNTING_DRILLS_FILE, errors)
+    if drills:
+        require_contains(
+            COUNTING_DRILLS_FILE,
+            drills,
+            [
+                "# 计数原理与排列组合：分层训练题库",
+                "## A. 两个计数原理",
+                "## B. 排列与组合",
+                "## C. 特殊位置与数字排列",
+                "## D. 相邻与不相邻",
+                "## E. 分组分配与隔板法",
+                "## F. 正难则反与容斥",
+                "## G. 二项式定理",
+                "## H. 计数与古典概型",
+                "## I. 表达与完整性训练",
+            ],
+            errors,
+        )
+        solution_count = len(SOLUTION_PATTERN.findall(drills))
+        if solution_count < 50:
+            errors.append(f"{COUNTING_DRILLS_FILE.name}: expected at least 50 solution blocks, found {solution_count}")
+
+    full_exercises = read_utf8(COUNTING_FULL_EXERCISES_FILE, errors)
+    if full_exercises:
+        require_contains(
+            COUNTING_FULL_EXERCISES_FILE,
+            full_exercises,
+            [
+                "# 计数原理与排列组合：考点 33-35 全量本地题库",
+                "## 考点 33：两个计数原理",
+                "## 考点 34：排列、组合",
+                "## 考点 35：二项式定理",
+                "全量原卷题目：54 道",
+            ],
+            errors,
+        )
+        question_count = len(re.findall(r"^### 题\s+\d+", full_exercises, re.MULTILINE))
+        solution_count = len(SOLUTION_PATTERN.findall(full_exercises))
+        image_count = full_exercises.count("local-docx-image")
+        if question_count < 54:
+            errors.append(f"{COUNTING_FULL_EXERCISES_FILE.name}: expected at least 54 questions, found {question_count}")
+        if solution_count < 54:
+            errors.append(f"{COUNTING_FULL_EXERCISES_FILE.name}: expected at least 54 solution blocks, found {solution_count}")
+        if image_count < 100:
+            errors.append(f"{COUNTING_FULL_EXERCISES_FILE.name}: expected at least 100 embedded images, found {image_count}")
+
+    drills_html_path = OUTPUT_DIR / "06-counting-combinatorics" / "06-counting-expression-drills-zh.html"
+    if drills_html_path.exists():
+        html = drills_html_path.read_text(encoding="utf-8")
+        html_solution_count = html.count("<details class=\"solution-toggle\">")
+        if html_solution_count < 50:
+            errors.append(
+                f"{drills_html_path.name}: expected at least 50 generated solution toggles, found {html_solution_count}"
+            )
+
+    full_html_path = OUTPUT_DIR / "06-counting-combinatorics" / "07-counting-local-full-exercises-zh.html"
+    if full_html_path.exists():
+        html = full_html_path.read_text(encoding="utf-8")
+        question_count = html.count("<h3>题 ")
+        html_solution_count = html.count("<details class=\"solution-toggle\">")
+        html_image_count = html.count("local-docx-image")
+        if question_count < 54:
+            errors.append(f"{full_html_path.name}: expected at least 54 generated questions, found {question_count}")
+        if html_solution_count < 54:
+            errors.append(
+                f"{full_html_path.name}: expected at least 54 generated solution toggles, found {html_solution_count}"
+            )
+        if html_image_count < 100:
+            errors.append(f"{full_html_path.name}: expected at least 100 generated images, found {html_image_count}")
+
 
 def main() -> int:
     errors: list[str] = []
@@ -575,6 +720,7 @@ def main() -> int:
     check_plane_vectors(errors)
     check_solid_geometry(errors)
     check_analytic_geometry(errors)
+    check_counting_combinatorics(errors)
     readme = read_utf8(TRIG_README_FILE, errors)
     if readme and "03_trig_exercise_bank_zh.md" not in readme:
         errors.append("README.md: missing trigonometry exercise bank link")
@@ -587,7 +733,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print("PASS: summation, trigonometry, plane vectors, solid geometry, and analytic geometry content are present.")
+    print("PASS: summation, trigonometry, plane vectors, solid geometry, analytic geometry, and counting combinatorics content are present.")
     return 0
 
 
