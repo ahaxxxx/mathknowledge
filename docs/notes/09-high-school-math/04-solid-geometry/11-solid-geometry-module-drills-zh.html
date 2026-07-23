@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>立体几何与空间向量：模块分层训练题库 | math.bozhanli.com</title>
+  <meta name="description" content="这一页给每个模块补配套训练。目标不是让学生机械刷题，而是把每个知识点训练到“能识别、能解释、能迁移”的程度。若目标是高考数学 130 到 140 分，立体几何不能只会套公式，必须能在图形、证明、计算和方法选择之间切换。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">立体几何/空间向量</a><span>/</span><span>立体几何与空间向量：模块分层训练题库</span></div>
+      <h1>立体几何与空间向量：模块分层训练题库</h1>
+      <p>这一页给每个模块补配套训练。目标不是让学生机械刷题，而是把每个知识点训练到“能识别、能解释、能迁移”的程度。若目标是高考数学 130 到 140 分，立体几何不能只会套公式，必须能在图形、证明、计算和方法选择之间切换。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><p>使用建议：</p>
+<ol><li>每学完一个模块，先完成该模块 8 道题。</li><li>学生讲题时必须说出“对象、目标、依据、方法选择”。</li><li>如果基础题仍然卡住，不要急着刷综合题，先回到定义和判定。</li><li>完成模块题后，再从全量本地题库中抽同类题做限时训练。</li></ol>
+<h2>A. 空间图形语言与基本公理</h2>
+<h3>A1 基础识别</h3>
+<p>在正方体 $ABCD-A_1B_1C_1D_1$ 中，判断 $AB$ 与 $C_1D_1$ 的位置关系。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$C_1D_1\parallel CD$，且 $AB\parallel CD$，所以 $AB\parallel C_1D_1$。</p></div></details>
+<h3>A2 基础识别</h3>
+<p>在正方体 $ABCD-A_1B_1C_1D_1$ 中，判断 $AB$ 与 $DD_1$ 的位置关系。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$AB$ 与 $DD_1$ 不相交，也不共面，所以是异面直线。不能把“不相交”直接等同于“平行”。</p></div></details>
+<h3>A3 基础识别</h3>
+<p>已知 $A,B,C$ 不共线，点 $D$ 在直线 $AB$ 上。判断 $A,B,C,D$ 是否共面。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$A,B,C$ 不共线，确定平面 $ABC$。因为 $A,B\in$ 平面 $ABC$，所以 $AB\subset$ 平面 $ABC$，又 $D\in AB$，故四点共面。</p></div></details>
+<h3>A4 基础识别</h3>
+<p>若两个平面 $\alpha,\beta$ 有两个不同公共点 $A,B$，说明它们的交集至少包含什么。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>直线 $AB$ 同时在 $\alpha,\beta$ 内，所以两个平面的公共部分至少包含直线 $AB$。若两平面不同，则交集就是直线 $AB$。</p></div></details>
+<h3>A5 方法训练</h3>
+<p>在三棱锥 $P-ABC$ 中，$D\in PA$，$E\in PB$。说明直线 $DE$ 一定在哪个平面内。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$D,E$ 都在平面 $PAB$ 内，所以 $DE\subset$ 平面 $PAB$。依据是：直线上两个点在一个平面内，则整条直线在这个平面内。</p></div></details>
+<h3>A6 方法训练</h3>
+<p>在空间中，两条直线 $m,n$ 都平行于同一条直线 $l$。说明 $m,n$ 的位置关系。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>两条直线若都平行于同一条直线，则方向相同，因此 $m\parallel n$ 或重合。若题中已知它们是不同直线，则 $m\parallel n$。</p></div></details>
+<h3>A7 方法训练</h3>
+<p>已知 $l\subset\alpha$，点 $P\notin\alpha$。过 $P$ 和 $l$ 能确定几个平面？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>点 $P$ 不在平面 $\alpha$ 内，因此 $P$ 不在直线 $l$ 上。过一条直线和直线外一点，有且只有一个平面。</p></div></details>
+<h3>A8 综合提升</h3>
+<p>在四面体 $ABCD$ 中，$E,F$ 分别在 $AB,AC$ 上，$G,H$ 分别在 $DB,DC$ 上。若要证明 $EF$ 与 $GH$ 共面，应优先寻找什么条件？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>应优先寻找 $EF\parallel GH$ 或二者相交。两条平行直线确定一个平面，两条相交直线也确定一个平面。若题中给比例关系，通常先推出 $EF\parallel BC$、$GH\parallel BC$，再得 $EF\parallel GH$。</p></div></details>
+<h2>B. 空间平行</h2>
+<h3>B1 基础识别</h3>
+<p>在三棱锥 $P-ABC$ 中，$D,E$ 分别为 $PA,PB$ 的中点。证明 $DE\parallel$ 平面 $ABC$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>在 $\triangle PAB$ 中，$D,E$ 为两边中点，所以 $DE\parallel AB$。又 $AB\subset$ 平面 $ABC$，且 $DE\not\subset$ 平面 $ABC$，因此 $DE\parallel$ 平面 $ABC$。</p></div></details>
+<h3>B2 基础识别</h3>
+<p>在四棱锥 $P-ABCD$ 中，底面 $ABCD$ 是平行四边形。证明 $AB\parallel$ 平面 $PCD$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为 $ABCD$ 是平行四边形，所以 $AB\parallel CD$。又 $CD\subset$ 平面 $PCD$，且 $AB\not\subset$ 平面 $PCD$，所以 $AB\parallel$ 平面 $PCD$。</p></div></details>
+<h3>B3 基础识别</h3>
+<p>在正方体 $ABCD-A_1B_1C_1D_1$ 中，证明 $A_1D_1\parallel$ 平面 $ABCD$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$A_1D_1\parallel AD$，且 $AD\subset$ 平面 $ABCD$，$A_1D_1$ 不在平面 $ABCD$ 内，所以 $A_1D_1\parallel$ 平面 $ABCD$。</p></div></details>
+<h3>B4 基础识别</h3>
+<p>若 $l\parallel\alpha$，过 $l$ 的平面 $\beta$ 与 $\alpha$ 交于 $m$，判断 $l$ 与 $m$ 的关系。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由线面平行的性质定理，$l\parallel m$。这是“已知线面平行，推出线线平行”。</p></div></details>
+<h3>B5 方法训练</h3>
+<p>在三棱柱 $ABC-A_1B_1C_1$ 中，证明平面 $ABC\parallel$ 平面 $A_1B_1C_1$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>棱柱对应棱平行，$AB\parallel A_1B_1$，$AC\parallel A_1C_1$。又 $AB,AC$ 相交，所以平面 $ABC\parallel$ 平面 $A_1B_1C_1$。</p></div></details>
+<h3>B6 方法训练</h3>
+<p>在四棱锥 $P-ABCD$ 中，底面 $ABCD$ 为平行四边形。证明平面 $PAB$ 与平面 $PCD$ 的交线平行于 $AB$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为 $AB\parallel CD$。过 $P$ 作 $l\parallel AB$，则 $l\parallel CD$。由 $P,A,B$ 确定的平面中，过 $P$ 且平行 $AB$ 的直线在平面 $PAB$ 内；同理它也在平面 $PCD$ 内。因此两平面的交线平行于 $AB$。</p></div></details>
+<h3>B7 方法训练</h3>
+<p>已知平面 $\alpha\parallel\beta$，直线 $l\subset\alpha$。判断 $l$ 与 $\beta$ 的位置关系。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为 $\alpha$ 与 $\beta$ 没有公共点，而 $l\subset\alpha$，所以 $l$ 与 $\beta$ 没有公共点。因此 $l\parallel\beta$。</p></div></details>
+<h3>B8 综合提升</h3>
+<p>在四棱锥 $P-ABCD$ 中，底面 $ABCD$ 为平行四边形，$M,N$ 分别为 $PA,PC$ 的中点。能否直接推出 $MN\parallel$ 平面 $PBD$？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>不能。由中位线只能得到 $MN\parallel AC$。但 $AC$ 与平面 $PBD$ 交于底面对角线交点，$AC$ 并不是平面 $PBD$ 内一条与 $MN$ 平行的直线。因此不能直接推出线面平行。本题训练“替身直线必须在目标平面内”。</p></div></details>
+<h2>C. 空间垂直</h2>
+<h3>C1 基础识别</h3>
+<p>若 $PA\perp AB$，$PA\perp AC$，且 $AB,AC$ 相交于 $A$，证明 $PA\perp$ 平面 $ABC$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$AB,AC$ 是平面 $ABC$ 内两条相交直线，$PA$ 同时垂直它们，所以 $PA\perp$ 平面 $ABC$。</p></div></details>
+<h3>C2 基础识别</h3>
+<p>若 $PA\perp$ 平面 $ABC$，判断 $PA$ 与 $BC$ 的关系。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为 $BC\subset$ 平面 $ABC$，所以 $PA\perp BC$。</p></div></details>
+<h3>C3 基础识别</h3>
+<p>正方体中，证明 $AA_1\perp$ 平面 $ABCD$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$AA_1\perp AB$，$AA_1\perp AD$，而 $AB,AD$ 是平面 $ABCD$ 内两条相交直线，所以 $AA_1\perp$ 平面 $ABCD$。</p></div></details>
+<h3>C4 基础识别</h3>
+<p>已知平面 $\alpha\perp\beta$，交线为 $l$。若 $m\subset\alpha$ 且 $m\perp l$，判断 $m$ 与 $\beta$ 的关系。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由面面垂直的性质，$m\perp\beta$。条件必须是 $m$ 在其中一个平面内且垂直交线。</p></div></details>
+<h3>C5 方法训练</h3>
+<p>在三棱锥 $P-ABC$ 中，$PA\perp$ 平面 $ABC$，且 $AB\perp AC$。证明 $AC\perp$ 平面 $PAB$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>由 $PA\perp$ 平面 $ABC$ 且 $AC\subset$ 平面 $ABC$，得 $PA\perp AC$。又 $AB\perp AC$，且 $PA,AB$ 是平面 $PAB$ 内两条相交直线，所以 $AC\perp$ 平面 $PAB$。</p></div></details>
+<h3>C6 方法训练</h3>
+<p>若 $l\perp\alpha$，$m\parallel l$，证明 $m\perp\alpha$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>在平面 $\alpha$ 内取两条相交直线 $a,b$。由 $l\perp\alpha$ 得 $l\perp a$，$l\perp b$。又 $m\parallel l$，所以 $m\perp a$，$m\perp b$，故 $m\perp\alpha$。</p></div></details>
+<h3>C7 方法训练</h3>
+<p>已知平面 $\alpha\perp\beta$，交线为 $l$，点 $P\in\alpha$。从 $P$ 向 $l$ 作垂线 $PH$。证明 $PH\perp\beta$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为 $P,H$ 都在 $\alpha$ 内，所以 $PH\subset\alpha$。又 $PH\perp l$，由面面垂直性质，$PH\perp\beta$。</p></div></details>
+<h3>C8 综合提升</h3>
+<p>在四棱锥 $P-ABCD$ 中，底面 $ABCD$ 为矩形，$PA\perp$ 平面 $ABCD$。证明平面 $PAB\perp$ 平面 $PAD$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为 $ABCD$ 为矩形，$AB\perp AD$。又 $PA\perp$ 平面 $ABCD$，所以 $PA\perp AD$。于是 $AD$ 垂直平面 $PAB$ 内两条相交直线 $AB,PA$，故 $AD\perp$ 平面 $PAB$。又 $AD\subset$ 平面 $PAD$，所以平面 $PAD\perp$ 平面 $PAB$。</p></div></details>
+<h2>D. 体积、表面积与等体积法</h2>
+<h3>D1 基础识别</h3>
+<p>正四棱锥底面边长为 $4$，高为 $3$，求体积。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>底面面积为 $16$，所以 $V=\frac13\cdot16\cdot3=16$。</p></div></details>
+<h3>D2 基础识别</h3>
+<p>长方体长、宽、高分别为 $2,3,6$，求表面积。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+S=2(2\cdot3+2\cdot6+3\cdot6)=72.
+$$</div></div></details>
+<h3>D3 基础识别</h3>
+<p>圆锥底面半径为 $3$，高为 $4$，求体积。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+V=\frac13\pi r^2h=\frac13\pi\cdot9\cdot4=12\pi.
+$$</div></div></details>
+<h3>D4 基础识别</h3>
+<p>球半径为 $2$，求表面积和体积。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+S=4\pi R^2=16\pi,\qquad V=\frac43\pi R^3=\frac{32}{3}\pi.
+$$</div></div></details>
+<h3>D5 方法训练</h3>
+<p>四面体 $A-BCD$ 的体积为 $24$，$S_{\triangle BCD}=12$，求点 $A$ 到平面 $BCD$ 的距离。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>设距离为 $h$，则 $24=\frac13\cdot12\cdot h$，所以 $h=6$。</p></div></details>
+<h3>D6 方法训练</h3>
+<p>四面体 $A-BCD$ 中，$S_{\triangle ABC}=10$，点 $D$ 到平面 $ABC$ 的距离为 $6$。若 $S_{\triangle BCD}=15$，求点 $A$ 到平面 $BCD$ 的距离。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>同一四面体体积不变。先得 $V=\frac13\cdot10\cdot6=20$。设点 $A$ 到平面 $BCD$ 的距离为 $h$，则 $20=\frac13\cdot15\cdot h$，所以 $h=4$。</p></div></details>
+<h3>D7 方法训练</h3>
+<p>棱长为 $2$ 的正方体被切去一个棱长为 $1$ 的角上小正方体，求剩余体积。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>大正方体体积为 $8$，小正方体体积为 $1$，剩余体积为 $7$。</p></div></details>
+<h3>D8 综合提升</h3>
+<p>三棱锥 $P-ABC$ 中，$PA\perp$ 平面 $ABC$，$AB=AC=4$，$\angle BAC=60^\circ$，$PA=3$，求体积。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>底面面积</p>
+<div class="math-display">$$
+S_{\triangle ABC}=\frac12\cdot4\cdot4\cdot\sin60^\circ=4\sqrt3.
+$$</div>
+<p>高为 $3$，所以 $V=\frac13\cdot4\sqrt3\cdot3=4\sqrt3$。</p></div></details>
+<h2>E. 空间角的几何法</h2>
+<h3>E1 基础识别</h3>
+<p>正方体中，求 $AB$ 与 $A_1D_1$ 所成角。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$A_1D_1\parallel AD$，所以所求角等于 $AB$ 与 $AD$ 的夹角，即 $90^\circ$。</p></div></details>
+<h3>E2 基础识别</h3>
+<p>正方体中，求 $AB$ 与 $B_1C_1$ 所成角。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$B_1C_1\parallel BC$，而 $AB\perp BC$，所以所成角为 $90^\circ$。</p></div></details>
+<h3>E3 基础识别</h3>
+<p>正方体中，求 $A_1B$ 与平面 $ABCD$ 所成角。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$A_1$ 在底面的射影是 $A$，所以 $A_1B$ 在底面的射影是 $AB$。所求角是 $\angle A_1BA$。若棱长为 $a$，则 $\triangle A_1AB$ 是等腰直角三角形，所以角为 $45^\circ$。</p></div></details>
+<h3>E4 基础识别</h3>
+<p>正四棱锥 $P-ABCD$ 中，$O$ 为底面中心。侧棱 $PA$ 与底面所成角在哪个三角形中？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>因为 $PO\perp$ 底面，$P$ 的射影为 $O$，所以 $PA$ 的射影为 $AO$。线面角在直角三角形 $PAO$ 中。</p></div></details>
+<h3>E5 方法训练</h3>
+<p>正方体 $ABCD-A_1B_1C_1D_1$ 中，求 $A_1C_1$ 与 $AC$ 所成角。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$A_1C_1\parallel AC$，所以两直线所成角为 $0^\circ$。</p></div></details>
+<h3>E6 方法训练</h3>
+<p>正方体中，求 $A_1B$ 与 $CD_1$ 所成角。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>设棱长为 $1$，取 $A(0,0,0)$，$B(1,0,0)$，$C(1,1,0)$，$D_1(0,1,1)$，则</p>
+<div class="math-display">$$
+\overrightarrow{A_1B}=(1,0,-1),\quad \overrightarrow{CD_1}=(-1,0,1).
+$$</div>
+<p>两向量反向平行，所以所成角为 $0^\circ$。</p></div></details>
+<h3>E7 方法训练</h3>
+<p>正三棱锥 $P-ABC$ 中，$O$ 为底面中心，$PO\perp$ 底面。若 $PO=3$，$AO=4$，求侧棱 $PA$ 与底面所成角的正切值。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>线面角为 $\angle PAO$。在直角三角形 $PAO$ 中，$\tan\angle PAO=\frac{PO}{AO}=\frac34$。</p></div></details>
+<h3>E8 综合提升</h3>
+<p>二面角 $\alpha-l-\beta$ 中，$O\in l$。在 $\alpha$ 内作 $OA\perp l$，在 $\beta$ 内作 $OB\perp l$，若 $OA=OB=2$，$AB=2$，求二面角。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$OA,OB$ 都垂直于棱 $l$，所以 $\angle AOB$ 是二面角的平面角。三角形 $AOB$ 为等边三角形，故二面角为 $60^\circ$。</p></div></details>
+<h2>F. 空间向量：建系、坐标与法向量</h2>
+<h3>F1 基础识别</h3>
+<p>已知 $A(2,-1,3)$，$B(5,4,1)$，求 $\overrightarrow{AB}$。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+\overrightarrow{AB}=(5-2,\ 4-(-1),\ 1-3)=(3,5,-2).
+$$</div></div></details>
+<h3>F2 基础识别</h3>
+<p>判断向量 $(1,2,2)$ 与 $(2,-1,0)$ 是否垂直。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>内积为 $1\cdot2+2\cdot(-1)+2\cdot0=0$，所以垂直。</p></div></details>
+<h3>F3 基础识别</h3>
+<p>判断向量 $(2,4,-6)$ 与 $(-1,-2,3)$ 是否平行。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$(2,4,-6)=-2(-1,-2,3)$，所以平行。</p></div></details>
+<h3>F4 基础识别</h3>
+<p>正方体棱长为 $2$，以 $A$ 为原点，$AB,AD,AA_1$ 为 $x,y,z$ 轴，写出 $D_1$ 的坐标。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>从 $A$ 到 $D_1$ 沿 $AD$ 走 $2$，沿 $AA_1$ 走 $2$，沿 $AB$ 不走，所以 $D_1(0,2,2)$。</p></div></details>
+<h3>F5 方法训练</h3>
+<p>平面内有两条方向向量 $\mathbf u=(1,1,0)$，$\mathbf v=(0,1,1)$。求该平面的一个法向量。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>设 $\mathbf n=(x,y,z)$，则 $x+y=0,\ y+z=0$。取 $y=1$，得 $x=-1,z=-1$，所以可取 $\mathbf n=(-1,1,-1)$。</p></div></details>
+<h3>F6 方法训练</h3>
+<p>平面 $ABC$ 中，$A(0,0,0)$，$B(1,0,1)$，$C(0,1,1)$。求平面 $ABC$ 的一个法向量。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>取 $\overrightarrow{AB}=(1,0,1)$，$\overrightarrow{AC}=(0,1,1)$。设 $\mathbf n=(x,y,z)$，有 $x+z=0,\ y+z=0$。取 $z=1$，得 $\mathbf n=(-1,-1,1)$。</p></div></details>
+<h3>F7 方法训练</h3>
+<p>在长方体中建系时，为什么优先把三条互相垂直的棱作为坐标轴？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>这样点的坐标最简单，很多坐标分量为 $0$，方向向量也直接对应边长，同时垂直关系天然转成坐标轴互相垂直。</p></div></details>
+<h3>F8 综合提升</h3>
+<p>正四棱锥 $P-ABCD$ 底面边长为 $2$，高为 $2$，$O$ 为底面中心。以 $O$ 为原点，给出一种合理坐标表示。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>可取底面为 $z=0$：</p>
+<div class="math-display">$$
+A(1,1,0),\ B(-1,1,0),\ C(-1,-1,0),\ D(1,-1,0),\ P(0,0,2).
+$$</div>
+<p>这种坐标保留了正方形对称性，且高在 $z$ 轴上。</p></div></details>
+<h2>G. 空间向量求角</h2>
+<h3>G1 基础识别</h3>
+<p>两直线方向向量分别为 $(1,0,0)$ 与 $(0,1,0)$，求两直线所成角。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>内积为 $0$，所以两方向垂直，所成角为 $90^\circ$。</p></div></details>
+<h3>G2 基础识别</h3>
+<p>两直线方向向量分别为 $(1,1,0)$ 与 $(1,-1,0)$，求两直线所成角。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>内积为 $1-1=0$，所以角为 $90^\circ$。</p></div></details>
+<h3>G3 基础识别</h3>
+<p>直线方向向量为 $(0,0,1)$，平面法向量为 $(0,0,1)$，求线面角。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>方向向量与法向量平行，说明直线垂直平面，所以线面角为 $90^\circ$。</p></div></details>
+<h3>G4 基础识别</h3>
+<p>直线方向向量为 $(1,0,0)$，平面法向量为 $(0,0,1)$，求线面角。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>方向向量与法向量垂直，说明直线平行于平面或在平面内，所以线面角为 $0^\circ$。</p></div></details>
+<h3>G5 方法训练</h3>
+<p>直线方向向量 $\mathbf u=(1,1,1)$，平面法向量 $\mathbf n=(1,0,0)$，求线面角的正弦值。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+\sin\theta=\frac{|\mathbf u\cdot\mathbf n|}{|\mathbf u||\mathbf n|}=\frac{1}{\sqrt3}.
+$$</div></div></details>
+<h3>G6 方法训练</h3>
+<p>两个平面的法向量分别为 $(1,1,0)$ 与 $(1,0,1)$，求锐二面角的余弦值。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+\cos\theta=\frac{|1|}{\sqrt2\cdot\sqrt2}=\frac12.
+$$</div>
+<p>所以锐二面角为 $60^\circ$。</p></div></details>
+<h3>G7 方法训练</h3>
+<p>若两个平面的法向量互相平行，说明两个平面的位置关系可能是什么。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>两个平面的法向量平行，说明两个平面平行或重合。若题中已知两个平面不同，则它们平行。</p></div></details>
+<h3>G8 综合提升</h3>
+<p>平面 $\alpha$ 的法向量为 $(1,1,1)$，直线 $l$ 的方向向量为 $(1,-1,0)$。判断 $l$ 与 $\alpha$ 的位置关系。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>方向向量与法向量内积为 $1-1+0=0$。所以直线方向垂直于平面法向量，直线平行于平面或在平面内。若题中另知 $l\not\subset\alpha$，则 $l\parallel\alpha$。</p></div></details>
+<h2>H. 空间向量求距离</h2>
+<h3>H1 基础识别</h3>
+<p>平面 $z=0$，求点 $P(3,4,5)$ 到该平面的距离。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>平面 $z=0$ 是 $xOy$ 平面，距离为 $|5|=5$。</p></div></details>
+<h3>H2 基础识别</h3>
+<p>平面 $x+y+z=0$ 的法向量是什么？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>平面方程 $x+y+z=0$ 的法向量为 $(1,1,1)$。</p></div></details>
+<h3>H3 基础识别</h3>
+<p>点 $P(1,2,3)$ 到平面 $x=0$ 的距离是多少？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>平面 $x=0$ 是 $yOz$ 平面，距离为 $|1|=1$。</p></div></details>
+<h3>H4 基础识别</h3>
+<p>若直线 $l\parallel$ 平面 $\alpha$，点 $A\in l$ 到 $\alpha$ 的距离为 $4$，求 $l$ 到 $\alpha$ 的距离。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>直线平行平面时，直线到平面的距离等于直线上任一点到平面的距离，所以为 $4$。</p></div></details>
+<h3>H5 方法训练</h3>
+<p>平面过原点，法向量为 $(1,2,2)$。求点 $P(3,0,0)$ 到该平面的距离。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
+d=\frac{|(3,0,0)\cdot(1,2,2)|}{\sqrt{1^2+2^2+2^2}}=1.
+$$</div></div></details>
+<h3>H6 方法训练</h3>
+<p>平面过点 $A(1,1,1)$，法向量为 $(2,0,1)$。求点 $P(3,2,5)$ 到该平面的距离。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$\overrightarrow{AP}=(2,1,4)$，所以</p>
+<div class="math-display">$$
+d=\frac{|(2,1,4)\cdot(2,0,1)|}{\sqrt5}=\frac8{\sqrt5}.
+$$</div></div></details>
+<h3>H7 方法训练</h3>
+<p>直线 $l$ 过原点，方向向量为 $(1,0,0)$。求点 $P(2,3,4)$ 到 $l$ 的距离。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>直线为 $x$ 轴，垂足为 $(2,0,0)$，距离为 $\sqrt{3^2+4^2}=5$。</p></div></details>
+<h3>H8 综合提升</h3>
+<p>两平行平面 $\alpha,\beta$ 的法向量均为 $(1,2,2)$。点 $A(0,0,0)\in\alpha$，点 $B(3,0,0)\in\beta$。求两平面距离。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>平行平面距离等于点到平面的距离。用 $\overrightarrow{AB}$ 在法向量方向上的投影：</p>
+<div class="math-display">$$
+d=\frac{|(3,0,0)\cdot(1,2,2)|}{3}=1.
+$$</div></div></details>
+<h2>I. 外接球模型</h2>
+<h3>I1 基础识别</h3>
+<p>长方体棱长分别为 $2,3,6$，求外接球半径。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>体对角线长为 $\sqrt{2^2+3^2+6^2}=7$。外接球半径为 $R=\frac72$。</p></div></details>
+<h3>I2 基础识别</h3>
+<p>正方体棱长为 $4$，求外接球半径。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>体对角线为 $4\sqrt3$，外接球半径为 $2\sqrt3$。</p></div></details>
+<h3>I3 基础识别</h3>
+<p>直三棱柱高为 $8$，底面外接圆半径为 $3$，求外接球半径。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>球心在上下底面外接圆圆心连线中点，$R^2=3^2+4^2=25$，所以 $R=5$。</p></div></details>
+<h3>I4 基础识别</h3>
+<p>一个三棱锥的四个顶点都是某长方体的顶点。求外接球时优先考虑什么？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>优先补成长方体。若该长方体的外接球经过这四个顶点，则三棱锥外接球半径可由长方体体对角线一半得到。</p></div></details>
+<h3>I5 方法训练</h3>
+<p>正四棱锥底面边长为 $2$，高为 $2$，求外接球半径。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>底面外接圆半径 $r=\sqrt2$。设球心到底面距离为 $x$，则</p>
+<div class="math-display">$$
+x^2+2=(2-x)^2.
+$$</div>
+<p>解得 $x=\frac12$，所以 $R=\frac32$。</p></div></details>
+<h3>I6 方法训练</h3>
+<p>正三棱锥底面边长为 $6$，底面外接圆半径为 $2\sqrt3$，高为 $4$。求外接球半径。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>设球心到底面距离为 $x$，则</p>
+<div class="math-display">$$
+x^2+12=(4-x)^2.
+$$</div>
+<p>解得 $x=\frac12$，所以 $R^2=12+\frac14=\frac{49}{4}$，$R=\frac72$。</p></div></details>
+<h3>I7 方法训练</h3>
+<p>若直角三角形 $ABC$ 中 $\angle C=90^\circ$，$AB=10$，它的外接圆半径是多少？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>直角三角形外接圆圆心是斜边中点，半径为斜边一半，所以 $R=5$。</p></div></details>
+<h3>I8 综合提升</h3>
+<p>三棱锥 $P-ABC$ 中，$PA\perp$ 平面 $ABC$，$\triangle ABC$ 是直角三角形，$\angle ACB=90^\circ$，$AB=6$，$PA=8$。求该三棱锥外接球半径。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>底面直角三角形的外接圆半径为 $r=3$。高为 $8$，球心在底面外接圆圆心向高方向平移的垂线上，半高为 $4$，所以</p>
+<div class="math-display">$$
+R^2=3^2+4^2=25,
+$$</div>
+<p>故 $R=5$。</p></div></details>
+<h2>J. 综合题策略</h2>
+<h3>J1 基础识别</h3>
+<p>题目给出两个中点，要求证明线面平行，第一反应是什么？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>第一反应是找中位线。中位线给线线平行，再用线面平行判定。</p></div></details>
+<h3>J2 基础识别</h3>
+<p>题目给出一条线垂直平面，要求证明另一条线垂直某条线，第一反应是什么？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>用线面垂直性质：垂直于平面的直线，垂直于平面内任意直线。</p></div></details>
+<h3>J3 基础识别</h3>
+<p>题目要求线面角，第一步应该找什么？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>找直线在平面内的射影。通常需要从直线上一点向平面作垂线。</p></div></details>
+<h3>J4 基础识别</h3>
+<p>题目要求二面角，第一步应该找什么？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>先找两个平面的交线，也就是二面角的棱。随后在两个平面内分别作垂直于棱的线，或作垂直棱的截面。</p></div></details>
+<h3>J5 方法训练</h3>
+<p>一道题第一问证明垂直，第二问求二面角。为什么第一问常常是第二问的铺垫？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>第一问得到的垂直关系可能帮助确定二面角的平面角，或者帮助建立坐标系与法向量。高考综合题常把证明问作为计算问的结构准备。</p></div></details>
+<h3>J6 方法训练</h3>
+<p>一道空间题长度条件很完整，且有三条互相垂直的线。求角或距离时应优先考虑什么方法？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>优先考虑空间向量法。三条互相垂直的线可以直接作为坐标轴，点坐标清晰，角和距离可用方向向量、法向量计算。</p></div></details>
+<h3>J7 方法训练</h3>
+<p>若几何法作辅助线很复杂，但题目只要求一个角的余弦值，你会怎样转换？</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>考虑建系，把直线写成方向向量，把平面写成法向量。线线角用方向向量点积，线面角用方向向量和法向量的正弦关系，二面角用两个法向量。</p></div></details>
+<h3>J8 综合提升</h3>
+<p>设计一套讲题步骤，讲解“正方体中求二面角”的题目。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>第一，标出两个平面；第二，找交线作为二面角的棱；第三，判断能否作垂直棱的截面；第四，如果截面清楚，用几何法求平面角；第五，如果截面复杂，建立正方体坐标系；第六，求两个平面的法向量；第七，用法向量夹角判断二面角，并检查锐钝。</p></div></details>
+<h2>作业组合建议</h2>
+<p>如果一周上三次课，可以这样安排：</p>
+<ol><li>周三 1 小时：讲一个模块的概念和 3 道例题，布置该模块基础题。</li><li>周五 1 小时：让学生讲基础题，老师点评定理使用条件，补方法题。</li><li>周日 2 小时：做综合题和全量本地题库抽题，形成一页错题复盘。</li></ol>
+<p>冲 130 到 140 分时，立体几何的目标不是“做过很多题”，而是看到题后能迅速判断：这是证明链、几何角、向量角、距离、体积，还是外接球模型。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">立体几何/空间向量</a></li><li>源文件：<code>content/09_high_school_math/04_solid_geometry/11_solid_geometry_module_drills_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-solid-geometry-spatial-vectors-zh.html">立体几何与空间向量：从图形到坐标</a></h3><p>这一页是立体几何专题的总览。它不直接追求“背完所有公式”，而是建立一条上课主线：先把空间图形的语言说清楚，再用平行、垂直、角、距离、体积这些关系组织题目；当几何法不够稳定时，再把空间关系翻译成向量和坐标。</p></div><div class="note-item"><h3><a href="01-space-language-axioms-zh.html">空间图形语言与基本公理</a></h3><p>学立体几何的第一步不是套公式，而是把图读成数学语言。图上看到的是棱、面、顶点；题目真正使用的是点、线、面之间的位置关系。</p></div><div class="note-item"><h3><a href="02-parallel-relations-zh.html">空间平行：线线、线面、面面</a></h3><p>空间平行题的核心是“把高维关系降到低维关系”。线面平行通常转化为线线平行，面面平行通常转化为两组相交直线分别平行。</p></div><div class="note-item"><h3><a href="02-solid-geometry-exercises-zh.html">立体几何与空间向量：图形题库</a></h3><p>这一页按本地考点 22 到考点 28 重写整理。每道题先给题干图形；解析中的辅助线、坐标系和计算过程放在“查看解析”里。</p></div><div class="note-item"><h3><a href="03-perpendicular-relations-zh.html">空间垂直：线线、线面、面面</a></h3><p>空间垂直比空间平行更容易出错，因为“看起来垂直”不可靠。垂直证明必须说明垂直发生在哪里，是线线垂直、线面垂直，还是面面垂直。</p></div><div class="note-item"><h3><a href="03-solid-geometry-local-full-exercises-zh.html">立体几何与空间向量：考点 22-28 全量本地题库</a></h3><p>这一页把本地一轮复习资料中考点 22 到考点 28 的练习题按原考点完整整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后补充训练和查漏补缺。</p></div><div class="note-item"><h3><a href="04-volume-surface-equivolume-zh.html">体积、表面积与等体积法</a></h3><p>体积和表面积题表面上是计算，实质上仍然是读图。体积题的关键是找底面和高；表面积题的关键是确认哪些面暴露在外，哪些面被拼接或遮挡。</p></div><div class="note-item"><h3><a href="05-space-angles-geometric-zh.html">空间角的几何法</a></h3><p>空间角有三类：异面直线所成角、直线与平面所成角、二面角。它们的共同思想是把空间中的角还原成某个平面内的角。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

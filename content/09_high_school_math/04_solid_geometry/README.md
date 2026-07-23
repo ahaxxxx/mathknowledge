@@ -17,8 +17,9 @@
 9. [空间向量求距离](./08_spatial_vectors_distances_zh.md)
 10. [外接球模型](./09_circumsphere_models_zh.md)
 11. [综合题策略与讲题模板](./10_integrated_strategy_zh.md)
-12. [立体几何与空间向量：图形题库](./02_solid_geometry_exercises_zh.md)
-13. [立体几何与空间向量：考点 22-28 全量本地题库](./03_solid_geometry_local_full_exercises_zh.md)
+12. [立体几何与空间向量：模块分层训练题库](./11_solid_geometry_module_drills_zh.md)
+13. [立体几何与空间向量：图形题库](./02_solid_geometry_exercises_zh.md)
+14. [立体几何与空间向量：考点 22-28 全量本地题库](./03_solid_geometry_local_full_exercises_zh.md)
 
 ## 本地资料来源
 

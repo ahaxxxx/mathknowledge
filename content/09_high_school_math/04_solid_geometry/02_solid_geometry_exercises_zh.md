@@ -6,6 +6,8 @@
 
 这页不是原题堆叠，而是精选训练页。建议先学完对应模块，再做同类题。
 
+若需要每个模块更完整的作业量，先做 [模块分层训练题库](./11_solid_geometry_module_drills_zh.md)，再进入本页做图形综合题。
+
 1. 学 [空间图形语言与基本公理](./01_space_language_axioms_zh.md) 后，先做读图、共面、异面判断。
 2. 学 [空间平行](./02_parallel_relations_zh.md) 后，做 A 组空间平行。
 3. 学 [空间垂直](./03_perpendicular_relations_zh.md) 后，做 B 组空间垂直。

@@ -136,5 +136,6 @@
 
 ## 本地题库入口
 
-1. [图形题库：精选训练](./02_solid_geometry_exercises_zh.md)
-2. [考点 22-28 全量本地题库](./03_solid_geometry_local_full_exercises_zh.md)
+1. [模块分层训练题库：10 个模块，80 道新增配套题](./11_solid_geometry_module_drills_zh.md)
+2. [图形题库：精选训练](./02_solid_geometry_exercises_zh.md)
+3. [考点 22-28 全量本地题库](./03_solid_geometry_local_full_exercises_zh.md)
