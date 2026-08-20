@@ -39,6 +39,7 @@ COUNTING_DRILLS_FILE = CONTENT_DIR / "06_counting_combinatorics" / "06_counting_
 COUNTING_FULL_EXERCISES_FILE = CONTENT_DIR / "06_counting_combinatorics" / "07_counting_local_full_exercises_zh.md"
 COUNTING_SPRINT_MODELS_FILE = CONTENT_DIR / "06_counting_combinatorics" / "08_counting_sprint_models_zh.md"
 COUNTING_SPRINT_DRILLS_FILE = CONTENT_DIR / "06_counting_combinatorics" / "09_counting_sprint_drills_zh.md"
+FUNCTION_README_FILE = CONTENT_DIR / "00_functions" / "README.md"
 DERIVATIVE_README_FILE = CONTENT_DIR / "07_derivatives" / "README.md"
 DERIVATIVE_ORIGINS_FILE = CONTENT_DIR / "07_derivatives" / "01_derivative_origins_definition_rules_zh.md"
 DERIVATIVE_TANGENT_FILE = CONTENT_DIR / "07_derivatives" / "02_tangent_lines_zh.md"
@@ -850,6 +851,24 @@ def check_derivatives(errors: list[str]) -> None:
             errors.append(f"{DERIVATIVE_FULL_EXERCISES_FILE.name}: expected at least 142 solution blocks")
 
 
+def check_functions(errors: list[str]) -> None:
+    text = read_utf8(FUNCTION_README_FILE, errors)
+    if not text:
+        return
+    require_contains(
+        FUNCTION_README_FILE,
+        text,
+        [
+            "# 函数：从对应关系到变化与局部变化",
+            "## 这棵树的逻辑",
+            "## 三种表示法必须互相翻译",
+            "## 学习顺序",
+            "../07_derivatives/01_derivative_origins_definition_rules_zh.md",
+        ],
+        errors,
+    )
+
+
 def main() -> int:
     errors: list[str] = []
     check_summation(errors)
@@ -870,6 +889,7 @@ def main() -> int:
     check_solid_geometry(errors)
     check_analytic_geometry(errors)
     check_counting_combinatorics(errors)
+    check_functions(errors)
     check_derivatives(errors)
     readme = read_utf8(TRIG_README_FILE, errors)
     if readme and "03_trig_exercise_bank_zh.md" not in readme:
@@ -883,7 +903,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print("PASS: summation, trigonometry, plane vectors, solid geometry, analytic geometry, counting combinatorics, and derivatives content are present.")
+    print("PASS: summation, functions, trigonometry, plane vectors, solid geometry, analytic geometry, counting combinatorics, and derivatives content are present.")
     return 0
 
 
