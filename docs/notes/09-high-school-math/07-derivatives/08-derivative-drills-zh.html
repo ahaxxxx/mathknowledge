@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>导数核心训练：从定义到压轴表达 | math.bozhanli.com</title>
+  <meta name="description" content="每题先口述“对象、定义域、工具、结论”。答案默认折叠；先完成自己的推导，再展开核对。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">导数</a><span>/</span><span>导数核心训练：从定义到压轴表达</span></div>
+      <h1>导数核心训练：从定义到压轴表达</h1>
+      <p>每题先口述“对象、定义域、工具、结论”。答案默认折叠；先完成自己的推导，再展开核对。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>A. 定义与基本公式</h2>
+<h3>题 1</h3>
+<p>用导数定义求 $f(x)=x^2$ 在 $x=a$ 处的导数。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><div class="math-display">$$
+\frac{(a+h)^2-a^2}{h}=2a+h\to2a.
+$$</div>
+<p>故 $f&#x27;(a)=2a$，从而 $f&#x27;(x)=2x$。</p></div></details>
+<h3>题 2</h3>
+<p>判断 $f(x)=|x-2|$ 在 $x=2$ 处是否可导。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>差商为 $|h|/h$。右极限为 $1$，左极限为 $-1$，故导数不存在。</p></div></details>
+<h3>题 3</h3>
+<p>求 $y=(3x^2-1)^4$ 的导数。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><div class="math-display">$$y&#x27;=4(3x^2-1)^3\cdot6x=24x(3x^2-1)^3.$$</div></div></details>
+<h3>题 4</h3>
+<p>求 $y=\ln(1+x^2)$ 的导数并写出定义域。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>$1+x^2&gt;0$ 对任意实数成立，定义域为 $\mathbb R$。$y&#x27;=\frac{2x}{1+x^2}$。</p></div></details>
+<h3>题 5</h3>
+<p>求 $y=\frac{\sin x}{x}$ 的导数及定义域。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>定义域为 $x\ne0$。由商法则，</p>
+<div class="math-display">$$y&#x27;=\frac{x\cos x-\sin x}{x^2}.$$</div></div></details>
+<h2>B. 切线与线性近似</h2>
+<h3>题 6</h3>
+<p>求 $y=\ln x$ 在 $x=1$ 处的切线。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>$f(1)=0$，$f&#x27;(1)=1$，故切线为 $y=x-1$。</p></div></details>
+<h3>题 7</h3>
+<p>求曲线 $y=x^3$ 过点 $(1,0)$ 的所有切线。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>设切点横坐标为 $t$。切线为 $y-t^3=3t^2(x-t)$，即 $y=3t^2x-2t^3$。代入 $(1,0)$ 得 $t^2(3-2t)=0$，故 $t=0$ 或 $t=\frac32$。</p>
+<p>切线为 $y=0$ 与 $y=\frac{27}{4}x-\frac{27}{4}$。</p></div></details>
+<h3>题 8</h3>
+<p>用 $y=\sqrt{x}$ 在 $x=9$ 处的线性化估算 $\sqrt{9.12}$。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>$f(9)=3$，$f&#x27;(9)=\frac16$。取 $h=0.12$：</p>
+<div class="math-display">$$\sqrt{9.12}\approx3+\frac16\cdot0.12=3.02.$$</div></div></details>
+<h2>C. 单调、极值、最值</h2>
+<h3>题 9</h3>
+<p>求 $f(x)=x^3-6x^2+9x$ 的单调区间与极值。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>$f&#x27;(x)=3(x-1)(x-3)$。递增区间为 $(-\infty,1)$、$(3,+\infty)$，递减区间为 $(1,3)$。$f(1)=4$ 为极大值，$f(3)=0$ 为极小值。</p></div></details>
+<h3>题 10</h3>
+<p>求 $f(x)=x+\frac4x$ 在 $[1,5]$ 上的最值。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>$f&#x27;(x)=1-\frac4{x^2}$，驻点 $x=2$。比较 $f(1)=5$，$f(2)=4$，$f(5)=\frac{29}{5}$，故最小值为 $4$，最大值为 $\frac{29}{5}$。</p></div></details>
+<h3>题 11</h3>
+<p>判断 $f(x)=x^3$ 在 $0$ 处是否有极值，并说明理由。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>$f&#x27;(x)=3x^2\ge0$，且在 $0$ 两侧不改变符号；$f$ 在两侧均递增，故 $0$ 不是极值点。$f&#x27;(0)=0$ 仅是必要条件，不是充分条件。</p></div></details>
+<h2>D. 参数、恒成立与不等式</h2>
+<h3>题 12</h3>
+<p>求 $a$ 的范围，使 $x^2+ax+1\ge0$ 对任意 $x\in\mathbb R$ 成立。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>二次函数开口向上，最小值非负等价于判别式不大于零：$a^2-4\le0$，故 $-2\le a\le2$。也可对 $x^2+ax+1$ 求导找最小点。</p></div></details>
+<h3>题 13</h3>
+<p>求 $a$ 的范围，使 $f(x)=x^3+ax$ 在 $\mathbb R$ 上单调递增。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>$f&#x27;(x)=3x^2+a$。要求对任意 $x$ 非负，且 $3x^2$ 最小为 $0$，故 $a\ge0$。</p></div></details>
+<h3>题 14</h3>
+<p>证明 $\ln x\le x-1\ (x&gt;0)$，并说明等号条件。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>令 $H(x)=x-1-\ln x$。$H&#x27;(x)=\frac{x-1}{x}$，故 $H$ 在 $1$ 处取最小值 $0$。所以不等式成立，等号当且仅当 $x=1$。</p></div></details>
+<h3>题 15</h3>
+<p>证明 $e^x\ge1+x$，并说明它对应哪一条切线。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>令 $H(x)=e^x-x-1$，有 $H&#x27;(x)=e^x-1$，故 $H$ 在 $0$ 处取最小值 $0$。直线 $y=1+x$ 是 $y=e^x$ 在 $(0,1)$ 处的切线。</p></div></details>
+<h2>E. 零点与根数</h2>
+<h3>题 16</h3>
+<p>证明方程 $x^3+x-1=0$ 在 $(0,1)$ 内有且只有一个根。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>$F(0)=-1&lt;0,F(1)=1&gt;0$，连续性给出存在。$F&#x27;(x)=3x^2+1&gt;0$，严格递增给出唯一性。</p></div></details>
+<h3>题 17</h3>
+<p>讨论 $x+\frac1x=m\ (x&gt;0)$ 的正根个数。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>令 $g(x)=x+1/x$，其最小值为 $2$（在 $x=1$ 取到），两侧分别单调。故 $m&lt;2$ 无根，$m=2$ 一个根，$m&gt;2$ 两个根。</p></div></details>
+<h3>题 18</h3>
+<p>证明方程 $x+\ln x=0$ 在 $(0,+\infty)$ 内恰有一个根。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>令 $F=x+\ln x$。$F&#x27;(x)=1+1/x&gt;0$，故至多一个根。又 $F(1/2)=1/2-\ln2&lt;0,F(1)=1&gt;0$，故至少一个根，结论成立。</p></div></details>
+<h2>F. 表达式与综合</h2>
+<h3>题 19</h3>
+<p>求 $y=x^x\ (x&gt;0)$ 的导数。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>$\ln y=x\ln x$，故 $y&#x27;/y=\ln x+1$，所以 $y&#x27;=x^x(\ln x+1)$。</p></div></details>
+<h3>题 20</h3>
+<p>若 $x^2+y^2=4$ 且 $y&gt;0$，求 $y&#x27;$。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>隐式求导得 $2x+2yy&#x27;=0$，故</p>
+<div class="math-display">$$y&#x27;=-\frac{x}{y}=-\frac{x}{\sqrt{4-x^2}},\quad -2&lt;x&lt;2.$$</div></div></details>
+<h3>题 21</h3>
+<p>求 $f(x)=\frac{x^2-1}{x-1}$ 的导数，并写明原函数的定义域。</p>
+<details class="solution-toggle"><summary>解析</summary><div class="solution-body"><p>原定义域为 $x\ne1$。在该定义域 $f=x+1$，故 $f&#x27;(x)=1\ (x\ne1)$。不能把 $x=1$ 加入导数定义域。</p></div></details>
+<h2>自检标准</h2>
+<p>完成每题后，逐项核对：定义域是否写出；导数为零/无定义点是否全部列出；“存在”和“唯一”是否都有证明；参数边界是否检验；最终答案是否带上区间或等号条件。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">导数</a></li><li>源文件：<code>content/09_high_school_math/07_derivatives/08_derivative_drills_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-derivative-origins-definition-rules-zh.html">导数的前世今生、定义与基本初等函数求导公式的推导</a></h3><p>给定函数 $y=f(x)$ 和一点 $x=a$，我们要定义“在 $a$ 附近每单位 $x$ 的瞬时变化量”。这个对象叫 $f&#x27;(a)$。它首先是一个极限；“切线斜率”和“瞬时速度”是该极限在几何和物理中的解释。</p></div><div class="note-item"><h3><a href="02-tangent-lines-zh.html">切线：导数的第一个几何后果</a></h3><p>这一讲只解决一个问题：已知函数 $y=f(x)$，如何严谨地写出它在点 $P(a,f(a))$ 处的切线，并辨别题目究竟给的是横坐标、切点、斜率，还是“另一条”经过某点的切线。</p></div><div class="note-item"><h3><a href="03-monotonicity-extrema-zh.html">用导数研究单调性、极值与最值</a></h3><p>对区间 $I$：</p></div><div class="note-item"><h3><a href="04-parameters-constructed-functions-zh.html">参数、构造函数与恒成立问题</a></h3><p>参数题常把“存在、任意、恰有、恒成立”藏进文字里。先把量词译成数学语言：</p></div><div class="note-item"><h3><a href="05-inequalities-zeros-zh.html">导数证明不等式与研究零点</a></h3><p>当目标是 $A(x)\ge B(x)$，有两条值得先检查的入口：</p></div><div class="note-item"><h3><a href="06-advanced-derivative-structures-zh.html">导数压轴结构：从对象选择到可检验的变形</a></h3><p>压轴导数题没有一条脱离条件的万能大招。它们反复出现的，是几个可验证的结构：参数与变量能否分离、两个变量能否降为一个比值或一个函数值、零点数量能否由单调与极值控制、以及比较对象能否用同一条切线或同一函数串起来。</p></div><div class="note-item"><h3><a href="07-derivative-expression-zh.html">导数表达式：先看结构，再落笔计算</a></h3><p>给出复杂表达式时，求导前问两件事：</p></div><div class="note-item"><h3><a href="09-derivative-local-full-exercises-zh.html">导数：考点 49-55 全量本地题库</a></h3><p>这一页保留本地一轮复习资料的原题、公式图片与图形。它是课后抽题资料池，不替代前面的讲义和手写推导：第一次学习请先完成定义、定理和方法来源，再到这里限时训练。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>参数、构造函数与恒成立问题 | math.bozhanli.com</title>
+  <meta name="description" content="参数题常把“存在、任意、恰有、恒成立”藏进文字里。先把量词译成数学语言：">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">导数</a><span>/</span><span>参数、构造函数与恒成立问题</span></div>
+      <h1>参数、构造函数与恒成立问题</h1>
+      <p>参数题常把“存在、任意、恰有、恒成立”藏进文字里。先把量词译成数学语言：</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>这类题真正问什么</h2>
+<p>参数题常把“存在、任意、恰有、恒成立”藏进文字里。先把量词译成数学语言：</p>
+<ol><li>“对任意 $x\in I$ 恒成立”是 $\forall x\in I$；</li><li>“存在 $x\in I$”是 $\exists x\in I$；</li><li>“方程恰有一个根”除了解出根，还要排除其余根；</li><li>参数范围必须同时满足定义域、临界值与端点条件。</li></ol>
+<p>导数的作用是把“对所有 $x$”转化为函数的最值或单调性问题，而不是先对参数盲目分类。</p>
+<h2>恒成立不等式：先移到一边</h2>
+<p>要使 $f(x)\ge g(x)$ 在区间 $I$ 恒成立，令</p>
+<div class="math-display">$$
+h(x)=f(x)-g(x).
+$$</div>
+<p>问题等价于 $\min_{x\in I}h(x)\ge0$。若参数 $a$ 只出现在常数项，常可整理为 $a\ge \max\varphi(x)$ 或 $a\le\min\varphi(x)$；方向由移项决定，不能凭感觉记。</p>
+<details class="solution-toggle"><summary>例 1：参数与最值的方向</summary><div class="solution-body"><p>求实数 $a$ 的范围，使 $x^2-2x+a\ge0$ 对一切 $x\in\mathbb R$ 成立。</p>
+<p>令 $h(x)=x^2-2x+a=(x-1)^2+a-1$。由于 $(x-1)^2\ge0$，$h$ 的最小值为 $a-1$。恒成立当且仅当</p>
+<div class="math-display">$$
+a-1\ge0,
+$$</div>
+<p>即 $a\ge1$。也可用 $h&#x27;(x)=2x-2$ 找到最小点 $x=1$；两种方法结论一致。</p></div></details>
+<h2>构造函数不是凭空“设一个”</h2>
+<p>当题目要求证明 $A(x)\ge B(x)$，差 $A(x)-B(x)$ 的正负就是结论本身，因此定义差函数最自然。当题目给出两变量方程并要求比较时，若已知一个变量能由另一个表示，应消元成一元函数；若有相同结构，则可把重复部分看作一个新变量。构造的合法性来自“它的符号或零点正好编码了原命题”。</p>
+<details class="solution-toggle"><summary>例 2：构造差函数证明不等式</summary><div class="solution-body"><p>证明：对任意 $x&gt;0$，有 $\ln x\le x-1$。</p>
+<p>令 $h(x)=x-1-\ln x$。定义域为 $x&gt;0$，</p>
+<div class="math-display">$$
+h&#x27;(x)=1-\frac1x=\frac{x-1}{x}.
+$$</div>
+<p>当 $0&lt;x&lt;1$ 时 $h&#x27;&lt;0$，当 $x&gt;1$ 时 $h&#x27;&gt;0$，故 $h$ 在 $x=1$ 处取全局最小值。$h(1)=0$，于是 $h(x)\ge0$，即 $\ln x\le x-1$。等号只在 $x=1$ 成立。</p></div></details>
+<h2>单调性参数分类的临界线</h2>
+<p>研究 $f(x;a)$ 的单调性时，核心是 $f_x&#x27;(x;a)$ 在指定 $x$ 区间内的符号。常见操作：</p>
+<ol><li>因式分解后，固定符号因子可暂时忽略，但需说明其不为零或恒正；</li><li>把不等式整理为 $a\ge\varphi(x)$ 或 $a\le\varphi(x)$；</li><li>对 $\varphi$ 求最值，得到对所有 $x$ 都有效的参数界；</li><li>逐一回代检查边界值，因为边界常对应“允许导数为零但仍单调”。</li></ol>
+<details class="solution-toggle"><summary>例 3：在指定区间上递增</summary><div class="solution-body"><p>求 $a$ 的范围，使 $f(x)=x^3-3ax$ 在 $[0,2]$ 上单调不减。</p>
+<div class="math-display">$$
+f&#x27;(x)=3(x^2-a).
+$$</div>
+<p>单调不减要求对每个 $x\in[0,2]$ 有 $x^2-a\ge0$。由于 $x^2$ 在该区间的最小值为 $0$，这等价于 $a\le0$。</p>
+<p>当 $a=0$ 时 $f&#x27;(0)=0$ 而其余点 $f&#x27;&gt;0$，函数仍单调不减，故边界要取到。</p></div></details>
+<h2>“恰有一个零点”的三层证明</h2>
+<p>对 $F(x)=0$ 在区间 $I$ 恰有一个根，完整叙述通常有三层：</p>
+<ol><li><strong>存在性</strong>：连续性加介值定理，或直接给出一个根；</li><li><strong>唯一性</strong>：$F$ 在 $I$ 上严格单调，或其他排根理由；</li><li><strong>范围性</strong>：根确在指定区间内。</li></ol>
+<p>只证明 $F&#x27;(x)&gt;0$ 只能证明“至多一个根”，还缺“至少一个根”。</p>
+<details class="solution-toggle"><summary>例 4：存在与唯一必须分别说</summary><div class="solution-body"><p>证明方程 $x+\ln x=0$ 在 $(0,+\infty)$ 内恰有一个实根。</p>
+<p>令 $F(x)=x+\ln x$。$F$ 在 $(0,+\infty)$ 连续，且</p>
+<div class="math-display">$$
+F&#x27;(x)=1+\frac1x&gt;0,
+$$</div>
+<p>故 $F$ 严格递增，方程至多一个根。又 $F(\frac12)=\frac12-\ln2&lt;0$，$F(1)=1&gt;0$，由介值定理在 $(\frac12,1)$ 内至少有一个根。因此在 $(0,+\infty)$ 内恰有一个实根。</p></div></details>
+<h2>本地题源对应</h2>
+<p>本页对应<strong>考点 51：导数与参数范围问题</strong>和<strong>考点 52：构造函数法</strong>。本地题中的“存在/任意/恰有”会在原题题库保留；学生解释时应先读出量词，再选择最值、单调或零点路线。</p>
+<h2>费曼复述卡</h2>
+<ol><li>“恒成立”为什么能改写成某个函数的最小值非负？</li><li>为什么唯一零点必须分“至少一个”和“至多一个”两步？</li><li>参数边界为什么通常需要单独检验？</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">导数</a></li><li>源文件：<code>content/09_high_school_math/07_derivatives/04_parameters_constructed_functions_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-derivative-origins-definition-rules-zh.html">导数的前世今生、定义与基本初等函数求导公式的推导</a></h3><p>给定函数 $y=f(x)$ 和一点 $x=a$，我们要定义“在 $a$ 附近每单位 $x$ 的瞬时变化量”。这个对象叫 $f&#x27;(a)$。它首先是一个极限；“切线斜率”和“瞬时速度”是该极限在几何和物理中的解释。</p></div><div class="note-item"><h3><a href="02-tangent-lines-zh.html">切线：导数的第一个几何后果</a></h3><p>这一讲只解决一个问题：已知函数 $y=f(x)$，如何严谨地写出它在点 $P(a,f(a))$ 处的切线，并辨别题目究竟给的是横坐标、切点、斜率，还是“另一条”经过某点的切线。</p></div><div class="note-item"><h3><a href="03-monotonicity-extrema-zh.html">用导数研究单调性、极值与最值</a></h3><p>对区间 $I$：</p></div><div class="note-item"><h3><a href="05-inequalities-zeros-zh.html">导数证明不等式与研究零点</a></h3><p>当目标是 $A(x)\ge B(x)$，有两条值得先检查的入口：</p></div><div class="note-item"><h3><a href="06-advanced-derivative-structures-zh.html">导数压轴结构：从对象选择到可检验的变形</a></h3><p>压轴导数题没有一条脱离条件的万能大招。它们反复出现的，是几个可验证的结构：参数与变量能否分离、两个变量能否降为一个比值或一个函数值、零点数量能否由单调与极值控制、以及比较对象能否用同一条切线或同一函数串起来。</p></div><div class="note-item"><h3><a href="07-derivative-expression-zh.html">导数表达式：先看结构，再落笔计算</a></h3><p>给出复杂表达式时，求导前问两件事：</p></div><div class="note-item"><h3><a href="08-derivative-drills-zh.html">导数核心训练：从定义到压轴表达</a></h3><p>每题先口述“对象、定义域、工具、结论”。答案默认折叠；先完成自己的推导，再展开核对。</p></div><div class="note-item"><h3><a href="09-derivative-local-full-exercises-zh.html">导数：考点 49-55 全量本地题库</a></h3><p>这一页保留本地一轮复习资料的原题、公式图片与图形。它是课后抽题资料池，不替代前面的讲义和手写推导：第一次学习请先完成定义、定理和方法来源，再到这里限时训练。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

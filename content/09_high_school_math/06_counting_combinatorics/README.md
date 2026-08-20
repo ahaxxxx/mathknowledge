@@ -13,6 +13,8 @@
 5. [计数与概率接口：从样本点到古典概型](./05_counting_probability_bridge_zh.md)
 6. [分层训练题库与表达任务](./06_counting_expression_drills_zh.md)
 7. [考点 33-35 全量本地题库](./07_counting_local_full_exercises_zh.md)
+8. [满分模型：13 类限制条件的构造原理](./08_counting_sprint_models_zh.md)
+9. [满分冲刺训练：39 道模型复盘](./09_counting_sprint_drills_zh.md)
 
 ## 本地资料来源
 
@@ -21,6 +23,7 @@
 1. 考点 33：两个计数原理。
 2. 考点 34：排列、组合。
 3. 考点 35：二项式定理。
+4. 《排列组合满分冲刺》：可重复排列、限制排列、分配、错排、染色、数位与同余等 13 类模型。
 
 后续讲概率时，可以继续接入考点 31、36、37、38、39。
 

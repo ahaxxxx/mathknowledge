@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>导数 | math.bozhanli.com</title>
+  <meta name="description" content="导数不是一张“求导公式表”。它起源于一个很具体的问题：当平均变化率的时间间隔不断缩小时，能否得到某一瞬间的变化率？切线、速度、单调性、极值、恒成立不等式和零点个数，都是这个问题的不同外观。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><span>导数</span></div>
+      <h1>导数</h1>
+      <p>导数不是一张“求导公式表”。它起源于一个很具体的问题：当平均变化率的时间间隔不断缩小时，能否得到某一瞬间的变化率？切线、速度、单调性、极值、恒成立不等式和零点个数，都是这个问题的不同外观。</p>
+    </div>
+    <div class="subject-grid"><div class="rail"><section class="page-section article"><p>这一专题按“定义 - 定理 - 方法 - 训练”的顺序组织。每个结论都要区分：它是定义推出的、以标准极限定理为前提的，还是作为高中阶段可使用的定理；每道题先说清对象、定义域和量词，再谈技巧。</p>
+<h2>学习入口</h2>
+<ol><li><a href="01-derivative-origins-definition-rules-zh.html">导数的前世今生、定义与基本初等函数求导公式的推导</a></li><li><a href="02-tangent-lines-zh.html">切线：从局部线性近似到方程</a></li><li><a href="03-monotonicity-extrema-zh.html">单调性、极值与最值：用导数读函数的全局形状</a></li><li><a href="04-parameters-constructed-functions-zh.html">含参分类与构造函数：为什么要这样设函数</a></li><li><a href="05-inequalities-zeros-zh.html">恒成立不等式与零点：存在、唯一和个数</a></li><li><a href="06-advanced-derivative-structures-zh.html">导数压轴结构：参数分离、偏移、降维与比较</a></li><li><a href="07-derivative-expression-zh.html">导数高分表达：把推理写成可审计的证明</a></li><li><a href="08-derivative-drills-zh.html">导数分层训练与费曼讲题</a></li><li><a href="09-derivative-local-full-exercises-zh.html">考点 49-55 全量本地题库</a></li></ol>
+<h2>本地资料如何进入本专题</h2>
+<ol><li>考点 49 至 55 的讲解、练习、原卷与解析版，分别支撑切线、单调性、分类讨论、构造函数、极值最值、不等式与零点。</li><li><code>导数练习题.docx</code> 的 52 道高考大题用于筛选本专题的综合训练结构。</li><li>两份“2020 年高考导数大招题型梳理”用于整理高阶方法的适用条件，而不是把“大招”当成无需证明的套路。</li><li><code>分式型函数求值域.doc</code> 中的换元、分离常数与基本不等式会作为“方法边界”出现：能用代数方法解决时，不应为了求导而求导。</li></ol>
+<h2>上课顺序</h2>
+<ol><li>先完成第 1 页和第 2 页，学生必须能用极限说出“切线斜率为何是导数”。</li><li>再进入第 3 页，稳定完成导数符号表、极值和区间端点检查。</li><li>第 4 至第 6 页只在基础稳定后推进；它们处理的是 130/140 分段常见的参数、证明和零点问题。</li><li>每次课先由学生讲 1 道旧题：对象是什么、为什么这样构造、在哪一步使用了题设、如何确认没有漏情形。</li></ol></section><section class="page-section"><h2>本目录文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-derivative-origins-definition-rules-zh.html">导数的前世今生、定义与基本初等函数求导公式的推导</a></h3><p>给定函数 $y=f(x)$ 和一点 $x=a$，我们要定义“在 $a$ 附近每单位 $x$ 的瞬时变化量”。这个对象叫 $f&#x27;(a)$。它首先是一个极限；“切线斜率”和“瞬时速度”是该极限在几何和物理中的解释。</p></div><div class="note-item"><h3><a href="02-tangent-lines-zh.html">切线：导数的第一个几何后果</a></h3><p>这一讲只解决一个问题：已知函数 $y=f(x)$，如何严谨地写出它在点 $P(a,f(a))$ 处的切线，并辨别题目究竟给的是横坐标、切点、斜率，还是“另一条”经过某点的切线。</p></div><div class="note-item"><h3><a href="03-monotonicity-extrema-zh.html">用导数研究单调性、极值与最值</a></h3><p>对区间 $I$：</p></div><div class="note-item"><h3><a href="04-parameters-constructed-functions-zh.html">参数、构造函数与恒成立问题</a></h3><p>参数题常把“存在、任意、恰有、恒成立”藏进文字里。先把量词译成数学语言：</p></div><div class="note-item"><h3><a href="05-inequalities-zeros-zh.html">导数证明不等式与研究零点</a></h3><p>当目标是 $A(x)\ge B(x)$，有两条值得先检查的入口：</p></div><div class="note-item"><h3><a href="06-advanced-derivative-structures-zh.html">导数压轴结构：从对象选择到可检验的变形</a></h3><p>压轴导数题没有一条脱离条件的万能大招。它们反复出现的，是几个可验证的结构：参数与变量能否分离、两个变量能否降为一个比值或一个函数值、零点数量能否由单调与极值控制、以及比较对象能否用同一条切线或同一函数串起来。</p></div><div class="note-item"><h3><a href="07-derivative-expression-zh.html">导数表达式：先看结构，再落笔计算</a></h3><p>给出复杂表达式时，求导前问两件事：</p></div><div class="note-item"><h3><a href="08-derivative-drills-zh.html">导数核心训练：从定义到压轴表达</a></h3><p>每题先口述“对象、定义域、工具、结论”。答案默认折叠；先完成自己的推导，再展开核对。</p></div><div class="note-item"><h3><a href="09-derivative-local-full-exercises-zh.html">导数：考点 49-55 全量本地题库</a></h3><p>这一页保留本地一轮复习资料的原题、公式图片与图形。它是课后抽题资料池，不替代前面的讲义和手写推导：第一次学习请先完成定义、定理和方法来源，再到这里限时训练。</p></div></div></section></div><aside class="rail"><section class="page-section"><h2>自动发布说明</h2><ul><li>源目录：<code>content/09_high_school_math/07_derivatives</code></li><li>当前文章数：10</li><li>子目录数：0</li><li>这个页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></aside></div>
+  </div>
+</body>
+</html>

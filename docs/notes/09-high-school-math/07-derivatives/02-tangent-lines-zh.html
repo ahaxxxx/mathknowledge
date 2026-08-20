@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>切线：导数的第一个几何后果 | math.bozhanli.com</title>
+  <meta name="description" content="这一讲只解决一个问题：已知函数 $y=f(x)$，如何严谨地写出它在点 $P(a,f(a))$ 处的切线，并辨别题目究竟给的是横坐标、切点、斜率，还是“另一条”经过某点的切线。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">导数</a><span>/</span><span>切线：导数的第一个几何后果</span></div>
+      <h1>切线：导数的第一个几何后果</h1>
+      <p>这一讲只解决一个问题：已知函数 $y=f(x)$，如何严谨地写出它在点 $P(a,f(a))$ 处的切线，并辨别题目究竟给的是横坐标、切点、斜率，还是“另一条”经过某点的切线。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>学习目标</h2>
+<p>这一讲只解决一个问题：已知函数 $y=f(x)$，如何严谨地写出它在点 $P(a,f(a))$ 处的切线，并辨别题目究竟给的是横坐标、切点、斜率，还是“另一条”经过某点的切线。</p>
+<h2>切线定理</h2>
+<p>若 $f$ 在 $x=a$ 处可导，则曲线 $y=f(x)$ 在 $P(a,f(a))$ 处的切线为</p>
+<div class="math-display">$$
+y-f(a)=f&#x27;(a)(x-a).
+$$</div>
+<p>这不是记忆模板，而是点斜式：切线经过 $P$，斜率是导数 $f&#x27;(a)$。因此写题必须先确定两个对象：<strong>切点坐标</strong>与<strong>该点导数值</strong>。</p>
+<p>若 $f&#x27;(a)=0$，切线是水平线 $y=f(a)$；若题目把曲线改为参数曲线或隐函数，仍需先把切点和切线斜率求出，不能直接套本页公式。</p>
+<h2>一条切线、两条切线与“相切”</h2>
+<p>设直线 $l:y=kx+b$ 与曲线 $y=f(x)$ 在横坐标 $x=t$ 处相切。相切至少给出两件事：</p>
+<div class="math-display">$$
+f(t)=kt+b,\qquad f&#x27;(t)=k.
+$$</div>
+<p>第一式是“公共点”，第二式是“斜率相等”。它们是必要条件；在高中常见的光滑函数题中，联立后再回代检验，便能筛出切点。不要把“方程有重根”当作无需说明的魔法：对 $f(x)-(kx+b)$ 来说，切点处函数值和一阶变化率同时为零，才反映了相切。</p>
+<details class="solution-toggle"><summary>例 1：已知切点横坐标</summary><div class="solution-body"><p>求曲线 $y=x^3-3x+2$ 在 $x=2$ 处的切线。</p>
+<p>令 $f(x)=x^3-3x+2$，则 $f(2)=4$，$f&#x27;(x)=3x^2-3$，所以 $f&#x27;(2)=9$。</p>
+<p>切线经过 $(2,4)$，斜率为 $9$，故</p>
+<div class="math-display">$$
+y-4=9(x-2),
+$$</div>
+<p>即 $y=9x-14$。</p></div></details>
+<details class="solution-toggle"><summary>例 2：给切线斜率，切点未给出</summary><div class="solution-body"><p>求曲线 $y=x^2-2x+3$ 中斜率为 $4$ 的切线。</p>
+<p>设切点横坐标为 $t$。由于切线斜率等于 $f&#x27;(t)$，</p>
+<div class="math-display">$$
+2t-2=4,
+$$</div>
+<p>故 $t=3$。再算点的纵坐标：$f(3)=6$。所求切线是</p>
+<div class="math-display">$$
+y-6=4(x-3),
+$$</div>
+<p>即 $y=4x-6$。这里先由斜率找 $t$，再由函数值找点，顺序不能倒置。</p></div></details>
+<details class="solution-toggle"><summary>例 3：过定点的切线有几条</summary><div class="solution-body"><p>求曲线 $y=x^2$ 过点 $(0,-1)$ 的切线。</p>
+<p>设切点为 $(t,t^2)$。该点切线斜率为 $2t$，故切线为</p>
+<div class="math-display">$$
+y-t^2=2t(x-t),
+$$</div>
+<p>即 $y=2tx-t^2$。它经过 $(0,-1)$ 当且仅当 $-t^2=-1$，故 $t=\pm1$。</p>
+<p>因此有两条切线：</p>
+<div class="math-display">$$
+y=2x-1,\qquad y=-2x-1.
+$$</div>
+<p>“过曲线外一点”可能有零条、一条或多条切线；设切点参数 $t$ 是统一处理法。</p></div></details>
+<h2>局部线性化：切线为何有用</h2>
+<p>由导数定义可写成</p>
+<div class="math-display">$$
+f(a+h)=f(a)+f&#x27;(a)h+r(h),\qquad \frac{r(h)}h\to0\ (h\to0).
+$$</div>
+<p>这说明当 $h$ 很小时，函数的变化首先由 $f&#x27;(a)h$ 决定；切线 $L(x)=f(a)+f&#x27;(a)(x-a)$ 是曲线在 $a$ 附近的一阶近似，而不是在整个定义域都“等于”原函数。</p>
+<details class="solution-toggle"><summary>例 4：用切线估算而不伪装成等号</summary><div class="solution-body"><p>估算 $\sqrt{4.04}$。令 $f(x)=\sqrt{x}$，在 $a=4$ 处有 $f(4)=2$，$f&#x27;(4)=\frac14$。</p>
+<p>取 $h=0.04$，线性近似给出</p>
+<div class="math-display">$$
+\sqrt{4.04}=f(4.04)\approx f(4)+f&#x27;(4)\cdot0.04=2.01.
+$$</div>
+<p>近似号来自余项 $r(0.04)$ 未必为零；这正是“切线近似”与“函数恒等式”的边界。</p></div></details>
+<h2>本地题源对应</h2>
+<p>本页对应本地一轮复习的<strong>考点 49：导数的几何意义与切线问题</strong>。题库页会保留原题图形和原题文本；上课时先要求学生把“设切点横坐标为 $t$”这一句说完整，再进入计算。</p>
+<h2>费曼复述卡</h2>
+<ol><li>为什么切线斜率是极限，而不是任取两点斜率？</li><li>已知直线与曲线相切，为什么要同时写 $f(t)=kt+b$ 和 $f&#x27;(t)=k$？</li><li>过定点求切线时，参数 $t$ 分别承担了什么角色？</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">导数</a></li><li>源文件：<code>content/09_high_school_math/07_derivatives/02_tangent_lines_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-derivative-origins-definition-rules-zh.html">导数的前世今生、定义与基本初等函数求导公式的推导</a></h3><p>给定函数 $y=f(x)$ 和一点 $x=a$，我们要定义“在 $a$ 附近每单位 $x$ 的瞬时变化量”。这个对象叫 $f&#x27;(a)$。它首先是一个极限；“切线斜率”和“瞬时速度”是该极限在几何和物理中的解释。</p></div><div class="note-item"><h3><a href="03-monotonicity-extrema-zh.html">用导数研究单调性、极值与最值</a></h3><p>对区间 $I$：</p></div><div class="note-item"><h3><a href="04-parameters-constructed-functions-zh.html">参数、构造函数与恒成立问题</a></h3><p>参数题常把“存在、任意、恰有、恒成立”藏进文字里。先把量词译成数学语言：</p></div><div class="note-item"><h3><a href="05-inequalities-zeros-zh.html">导数证明不等式与研究零点</a></h3><p>当目标是 $A(x)\ge B(x)$，有两条值得先检查的入口：</p></div><div class="note-item"><h3><a href="06-advanced-derivative-structures-zh.html">导数压轴结构：从对象选择到可检验的变形</a></h3><p>压轴导数题没有一条脱离条件的万能大招。它们反复出现的，是几个可验证的结构：参数与变量能否分离、两个变量能否降为一个比值或一个函数值、零点数量能否由单调与极值控制、以及比较对象能否用同一条切线或同一函数串起来。</p></div><div class="note-item"><h3><a href="07-derivative-expression-zh.html">导数表达式：先看结构，再落笔计算</a></h3><p>给出复杂表达式时，求导前问两件事：</p></div><div class="note-item"><h3><a href="08-derivative-drills-zh.html">导数核心训练：从定义到压轴表达</a></h3><p>每题先口述“对象、定义域、工具、结论”。答案默认折叠；先完成自己的推导，再展开核对。</p></div><div class="note-item"><h3><a href="09-derivative-local-full-exercises-zh.html">导数：考点 49-55 全量本地题库</a></h3><p>这一页保留本地一轮复习资料的原题、公式图片与图形。它是课后抽题资料池，不替代前面的讲义和手写推导：第一次学习请先完成定义、定理和方法来源，再到这里限时训练。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

@@ -37,6 +37,18 @@ COUNTING_BINOMIAL_FILE = CONTENT_DIR / "06_counting_combinatorics" / "04_binomia
 COUNTING_PROB_BRIDGE_FILE = CONTENT_DIR / "06_counting_combinatorics" / "05_counting_probability_bridge_zh.md"
 COUNTING_DRILLS_FILE = CONTENT_DIR / "06_counting_combinatorics" / "06_counting_expression_drills_zh.md"
 COUNTING_FULL_EXERCISES_FILE = CONTENT_DIR / "06_counting_combinatorics" / "07_counting_local_full_exercises_zh.md"
+COUNTING_SPRINT_MODELS_FILE = CONTENT_DIR / "06_counting_combinatorics" / "08_counting_sprint_models_zh.md"
+COUNTING_SPRINT_DRILLS_FILE = CONTENT_DIR / "06_counting_combinatorics" / "09_counting_sprint_drills_zh.md"
+DERIVATIVE_README_FILE = CONTENT_DIR / "07_derivatives" / "README.md"
+DERIVATIVE_ORIGINS_FILE = CONTENT_DIR / "07_derivatives" / "01_derivative_origins_definition_rules_zh.md"
+DERIVATIVE_TANGENT_FILE = CONTENT_DIR / "07_derivatives" / "02_tangent_lines_zh.md"
+DERIVATIVE_MONOTONICITY_FILE = CONTENT_DIR / "07_derivatives" / "03_monotonicity_extrema_zh.md"
+DERIVATIVE_PARAMETERS_FILE = CONTENT_DIR / "07_derivatives" / "04_parameters_constructed_functions_zh.md"
+DERIVATIVE_INEQUALITY_FILE = CONTENT_DIR / "07_derivatives" / "05_inequalities_zeros_zh.md"
+DERIVATIVE_ADVANCED_FILE = CONTENT_DIR / "07_derivatives" / "06_advanced_derivative_structures_zh.md"
+DERIVATIVE_EXPRESSION_FILE = CONTENT_DIR / "07_derivatives" / "07_derivative_expression_zh.md"
+DERIVATIVE_DRILLS_FILE = CONTENT_DIR / "07_derivatives" / "08_derivative_drills_zh.md"
+DERIVATIVE_FULL_EXERCISES_FILE = CONTENT_DIR / "07_derivatives" / "09_derivative_local_full_exercises_zh.md"
 
 SOLUTION_PATTERN = re.compile(r"^:::solution\b", re.MULTILINE)
 
@@ -701,6 +713,143 @@ def check_counting_combinatorics(errors: list[str]) -> None:
             errors.append(f"{full_html_path.name}: expected at least 100 generated images, found {html_image_count}")
 
 
+    sprint_models = read_utf8(COUNTING_SPRINT_MODELS_FILE, errors)
+    if sprint_models:
+        require_contains(
+            COUNTING_SPRINT_MODELS_FILE,
+            sprint_models,
+            [
+                "# 排列组合满分模型：每一个公式都对应一种构造",
+                "## 1. 可重复排列：每个位置独立选择",
+                "## 5. 相同元素分配：隔板与上下界",
+                "## 9. 禁止配对与错排：先选反面还是容斥",
+                "## 10. 染色：边界条件决定相邻限制",
+                "## 13. 反面考虑：反面必须更简单",
+            ],
+            errors,
+        )
+        if len(SOLUTION_PATTERN.findall(sprint_models)) < 13:
+            errors.append(f"{COUNTING_SPRINT_MODELS_FILE.name}: expected at least 13 solution blocks")
+
+    sprint_drills = read_utf8(COUNTING_SPRINT_DRILLS_FILE, errors)
+    if sprint_drills:
+        require_contains(
+            COUNTING_SPRINT_DRILLS_FILE,
+            sprint_drills,
+            [
+                "# 排列组合满分冲刺训练：13 类模型，39 道复盘题",
+                "## 1. 可重复与数位",
+                "## 5. 相同物品与隔板",
+                "## 9. 禁配与错排",
+                "## 13. 反面考虑与容斥",
+                "## 复盘写作任务",
+            ],
+            errors,
+        )
+        if len(SOLUTION_PATTERN.findall(sprint_drills)) < 39:
+            errors.append(f"{COUNTING_SPRINT_DRILLS_FILE.name}: expected at least 39 solution blocks")
+
+
+def check_derivatives(errors: list[str]) -> None:
+    readme = read_utf8(DERIVATIVE_README_FILE, errors)
+    if readme:
+        require_contains(
+            DERIVATIVE_README_FILE,
+            readme,
+            [
+                "# 导数：从瞬时变化到函数的全局结构",
+                "前世今生、定义与基本初等函数求导公式的推导",
+                "考点 49-55 全量本地题库",
+            ],
+            errors,
+        )
+
+    origins = read_utf8(DERIVATIVE_ORIGINS_FILE, errors)
+    if origins:
+        require_contains(
+            DERIVATIVE_ORIGINS_FILE,
+            origins,
+            [
+                "## 一条历史线索：问题先于符号",
+                "## 从平均变化率到导数定义",
+                "## 可微为什么一定连续",
+                "## 三个基本极限",
+                "## 从定义推出的求导公式",
+                "## 运算法则如何来",
+                "## 基本初等函数的导数",
+                "\\lim_{h\\to0}\\frac{\\sin h}{h}=1",
+            ],
+            errors,
+        )
+        if len(SOLUTION_PATTERN.findall(origins)) < 2:
+            errors.append(f"{DERIVATIVE_ORIGINS_FILE.name}: expected at least 2 solution blocks")
+
+    for path, required in [
+        (
+            DERIVATIVE_TANGENT_FILE,
+            ["# 切线：导数的第一个几何后果", "## 切线定理", "## 局部线性化：切线为何有用"],
+        ),
+        (
+            DERIVATIVE_MONOTONICITY_FILE,
+            ["# 用导数研究单调性、极值与最值", "## 单调区间的标准流程", "## 闭区间最值：候选点从哪里来"],
+        ),
+        (
+            DERIVATIVE_PARAMETERS_FILE,
+            ["# 参数、构造函数与恒成立问题", "## 恒成立不等式：先移到一边", "## “恰有一个零点”的三层证明"],
+        ),
+        (
+            DERIVATIVE_INEQUALITY_FILE,
+            ["# 导数证明不等式与研究零点", "## 切线不等式的来源", "## 零点问题的四个动作"],
+        ),
+        (
+            DERIVATIVE_ADVANCED_FILE,
+            ["# 导数压轴结构：从对象选择到可检验的变形", "## 结构一：参数—变量分离", "## 高分检查单"],
+        ),
+        (
+            DERIVATIVE_EXPRESSION_FILE,
+            ["# 导数表达式：先看结构，再落笔计算", "## 结构识别表", "## 对数求导何时合理"],
+        ),
+    ]:
+        text = read_utf8(path, errors)
+        if text and len(SOLUTION_PATTERN.findall(text)) < 3:
+            errors.append(f"{path.name}: expected at least 3 solution blocks")
+        if text:
+            require_contains(path, text, required, errors)
+
+    drills = read_utf8(DERIVATIVE_DRILLS_FILE, errors)
+    if drills:
+        require_contains(
+            DERIVATIVE_DRILLS_FILE,
+            drills,
+            ["# 导数核心训练：从定义到压轴表达", "## A. 定义与基本公式", "## F. 表达式与综合", "## 自检标准"],
+            errors,
+        )
+        if len(SOLUTION_PATTERN.findall(drills)) < 21:
+            errors.append(f"{DERIVATIVE_DRILLS_FILE.name}: expected at least 21 solution blocks")
+
+    expression_html = OUTPUT_DIR / "07-derivatives" / "07-derivative-expression-zh.html"
+    if expression_html.exists() and re.search(r"<p>\s*\|", expression_html.read_text(encoding="utf-8")):
+        errors.append(f"{expression_html.name}: generated HTML leaked an unrendered Markdown table")
+
+    full = read_utf8(DERIVATIVE_FULL_EXERCISES_FILE, errors)
+    if full:
+        require_contains(
+            DERIVATIVE_FULL_EXERCISES_FILE,
+            full,
+            [
+                "# 导数：考点 49-55 全量本地题库",
+                "## 考点 49：利用导数求切线方程",
+                "## 考点 55：导数与函数零点",
+                "原卷题目：144 道。",
+            ],
+            errors,
+        )
+        if len(re.findall(r"^### 题\s+\d+", full, re.MULTILINE)) < 144:
+            errors.append(f"{DERIVATIVE_FULL_EXERCISES_FILE.name}: expected at least 144 questions")
+        if len(SOLUTION_PATTERN.findall(full)) < 142:
+            errors.append(f"{DERIVATIVE_FULL_EXERCISES_FILE.name}: expected at least 142 solution blocks")
+
+
 def main() -> int:
     errors: list[str] = []
     check_summation(errors)
@@ -721,6 +870,7 @@ def main() -> int:
     check_solid_geometry(errors)
     check_analytic_geometry(errors)
     check_counting_combinatorics(errors)
+    check_derivatives(errors)
     readme = read_utf8(TRIG_README_FILE, errors)
     if readme and "03_trig_exercise_bank_zh.md" not in readme:
         errors.append("README.md: missing trigonometry exercise bank link")
@@ -733,7 +883,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print("PASS: summation, trigonometry, plane vectors, solid geometry, analytic geometry, and counting combinatorics content are present.")
+    print("PASS: summation, trigonometry, plane vectors, solid geometry, analytic geometry, counting combinatorics, and derivatives content are present.")
     return 0
 
 
