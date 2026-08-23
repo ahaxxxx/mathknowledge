@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>导数压轴结构：从对象选择到可检验的变形 | math.bozhanli.com</title>
+  <meta name="description" content="压轴导数题没有一条脱离条件的万能大招。它们反复出现的，是几个可验证的结构：参数与变量能否分离、两个变量能否降为一个比值或一个函数值、零点数量能否由单调与极值控制、以及比较对象能否用同一条切线或同一函数串起来。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">导数</a><span>/</span><span>导数压轴结构：从对象选择到可检验的变形</span></div>
+      <h1>导数压轴结构：从对象选择到可检验的变形</h1>
+      <p>压轴导数题没有一条脱离条件的万能大招。它们反复出现的，是几个可验证的结构：参数与变量能否分离、两个变量能否降为一个比值或一个函数值、零点数量能否由单调与极值控制、以及比较对象能否用同一条切线或同一函数串起来。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>先说清“高级”不是什么</h2>
+<p>压轴导数题没有一条脱离条件的万能大招。它们反复出现的，是几个可验证的结构：参数与变量能否分离、两个变量能否降为一个比值或一个函数值、零点数量能否由单调与极值控制、以及比较对象能否用同一条切线或同一函数串起来。</p>
+<p>每次选择构造前，请先回答：构造后的函数值、导数符号或零点，是否与原命题等价？若只“看起来更简单”而失去等价性，就不能继续。</p>
+<h2>结构一：参数—变量分离</h2>
+<p>若目标是对 $x\in I$ 有</p>
+<div class="math-display">$$
+a\ge\varphi(x),
+$$</div>
+<p>则参数条件是 $a\ge\max_{x\in I}\varphi(x)$；若目标是 $a\le\varphi(x)$，则为 $a\le\min_{x\in I}\varphi(x)$。这一句的前提是移项、除法和乘法没有改变不等号方向，尤其要先确定除数的符号。</p>
+<details class="solution-toggle"><summary>例 1：分离后取最值</summary><div class="solution-body"><p>求 $a$ 的范围，使 $x+\frac a x\ge2$ 对任意 $x&gt;0$ 成立。</p>
+<p>移项得 $a\ge2x-x^2$。因此需要</p>
+<div class="math-display">$$
+a\ge\max_{x&gt;0}(2x-x^2).
+$$</div>
+<p>令 $\varphi(x)=2x-x^2$，则 $\varphi&#x27;(x)=2-2x$，在 $x=1$ 处取最大值 $1$。故 $a\ge1$。</p>
+<p>检验：当 $a=1$，原式左边减 $2$ 为 $x+\frac1x-2=\frac{(x-1)^2}{x}\ge0$。边界可取。</p></div></details>
+<h2>结构二：两变量比较先寻找共同坐标</h2>
+<p>若 $x_1,x_2$ 是方程 $F(x)=0$ 的两个根，题目比较 $x_1,x_2$ 或某个含它们的式子，优先考虑：</p>
+<ol><li>$F$ 在相关区间是否单调，从而根能否唯一；</li><li>能否写成 $x_2=\phi(x_1)$，把目标变为一元函数；</li><li>二者是否满足同一函数值 $g(x_1)=g(x_2)$，从而研究 $g$ 的单调区间或对称关系。</li></ol>
+<p>不要未经证明地使用韦达。只有当方程已确认为多项式且根的集合适合韦达关系时才可用；含指数、对数的方程通常不能这样处理。</p>
+<details class="solution-toggle"><summary>例 2：同一函数值的根数分析</summary><div class="solution-body"><p>讨论方程 $x+\frac1x=m$ 在 $x&gt;0$ 内的正根个数。</p>
+<p>令 $g(x)=x+\frac1x$，$x&gt;0$。则</p>
+<div class="math-display">$$
+g&#x27;(x)=1-\frac1{x^2}=\frac{(x-1)(x+1)}{x^2}.
+$$</div>
+<p>故 $g$ 在 $(0,1)$ 递减、在 $(1,+\infty)$ 递增，且最小值 $g(1)=2$。又 $g(x)\to+\infty$ 分别当 $x\to0^+$ 与 $x\to+\infty$。</p>
+<p>因此：$m&lt;2$ 时无正根；$m=2$ 时一个正根 $x=1$；$m&gt;2$ 时两个正根，且一个在 $(0,1)$、另一个在 $(1,+\infty)$。图像只是总结，根数来自单调区间和端行为。</p></div></details>
+<h2>结构三：极值点偏移要先换坐标</h2>
+<p>题目若给出“极大值点为 $x_1$、极小值点为 $x_2$”并要求比较 $x_1+x_2$、$x_2-x_1$ 或对称关系，先把导数方程写清。例如三次函数</p>
+<div class="math-display">$$
+f&#x27;(x)=3x^2+2px+q
+$$</div>
+<p>的两个临界点之和由二次方程韦达得到 $x_1+x_2=-\frac{2p}{3}$。这是导数作为二次式的结构结论；但要另查判别式大于零，才有两个不同临界点。</p>
+<details class="solution-toggle"><summary>例 3：由导数的根定位极值点</summary><div class="solution-body"><p>设 $f(x)=x^3-3x^2-9x+1$，求其极大、极小值点横坐标之和。</p>
+<div class="math-display">$$
+f&#x27;(x)=3x^2-6x-9=3(x-3)(x+1).
+$$</div>
+<p>临界点为 $-1,3$。由导数符号可知在 $-1$ 处由正变负，在 $3$ 处由负变正，二者分别为极大、极小值点。因此横坐标之和为 $2$。</p>
+<p>若直接把“导数方程的根”称为极值点，仍少了符号变化的检验；本题恰好需要这一步确认。</p></div></details>
+<h2>结构四：零点个数由“分段单调 + 端点符号”决定</h2>
+<p>对复杂 $F$，先找 $F&#x27;$ 的零点，将定义域分段。每一段严格单调，至多有一个零点；再用端点值、极值值、无穷远端行为决定该段是否真有根。这比一上来试图显式解出根更稳健。</p>
+<details class="solution-toggle"><summary>例 4：分段判断根数</summary><div class="solution-body"><p>求方程 $x^3-3x=1$ 的实根个数。</p>
+<p>令 $F(x)=x^3-3x-1$。$F&#x27;(x)=3(x-1)(x+1)$，所以 $F$ 在 $(-\infty,-1)$ 递增、$(-1,1)$ 递减、$(1,+\infty)$ 递增。</p>
+<div class="math-display">$$
+F(-1)=1&gt;0,\qquad F(1)=-3&lt;0.
+$$</div>
+<p>又 $F(x)\to-\infty$ 当 $x\to-\infty$，$F(x)\to+\infty$ 当 $x\to+\infty$。三段中每段都发生一次异号变化，故每段各有一个零点，总共有三个实根。</p></div></details>
+<h2>高分检查单</h2>
+<ol><li>我构造的新函数与原结论是等价、充分，还是必要？</li><li>我是否写出了讨论区间、连续性和定义域？</li><li>参数分离时，除数符号是否已确定？</li><li>说“恰有 $k$ 个根”时，我是否同时给了存在和排他性？</li><li>所谓“特殊值”是否只是试探，还是由极值、切线、端点或等号条件必然选出？</li></ol>
+<p>本页与两份本地“导数大招题型梳理”对应，但把每个所谓技巧还原为以上可审查的逻辑结构。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">导数</a></li><li>源文件：<code>content/09_high_school_math/07_derivatives/06_advanced_derivative_structures_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-derivative-origins-definition-rules-zh.html">导数的前世今生、定义与基本初等函数求导公式的推导</a></h3><p>给定函数 $y=f(x)$ 和一点 $x=a$，我们要定义“在 $a$ 附近每单位 $x$ 的瞬时变化量”。这个对象叫 $f&#x27;(a)$。它首先是一个极限；“切线斜率”和“瞬时速度”是该极限在几何和物理中的解释。</p></div><div class="note-item"><h3><a href="02-tangent-lines-zh.html">切线：导数的第一个几何后果</a></h3><p>这一讲只解决一个问题：已知函数 $y=f(x)$，如何严谨地写出它在点 $P(a,f(a))$ 处的切线，并辨别题目究竟给的是横坐标、切点、斜率，还是“另一条”经过某点的切线。</p></div><div class="note-item"><h3><a href="03-monotonicity-extrema-zh.html">用导数研究单调性、极值与最值</a></h3><p>对区间 $I$：</p></div><div class="note-item"><h3><a href="04-parameters-constructed-functions-zh.html">参数、构造函数与恒成立问题</a></h3><p>参数题常把“存在、任意、恰有、恒成立”藏进文字里。先把量词译成数学语言：</p></div><div class="note-item"><h3><a href="05-inequalities-zeros-zh.html">导数证明不等式与研究零点</a></h3><p>当目标是 $A(x)\ge B(x)$，有两条值得先检查的入口：</p></div><div class="note-item"><h3><a href="07-derivative-expression-zh.html">导数表达式：先看结构，再落笔计算</a></h3><p>给出复杂表达式时，求导前问两件事：</p></div><div class="note-item"><h3><a href="08-derivative-drills-zh.html">导数核心训练：从定义到压轴表达</a></h3><p>每题先口述“对象、定义域、工具、结论”。答案默认折叠；先完成自己的推导，再展开核对。</p></div><div class="note-item"><h3><a href="09-derivative-local-full-exercises-zh.html">导数：考点 49-55 全量本地题库</a></h3><p>这一页保留本地一轮复习资料的原题、公式图片与图形。它是课后抽题资料池，不替代前面的讲义和手写推导：第一次学习请先完成定义、定理和方法来源，再到这里限时训练。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

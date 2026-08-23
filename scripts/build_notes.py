@@ -46,12 +46,14 @@ SECTION_LABELS = {
     "10_english": "英语",
     "01_grammar_reading": "语法与阅读",
     "02_academic_listening": "学术听力",
+    "00_functions": "函数",
     "01_sequences": "数列",
     "02_trigonometry": "三角专题",
     "03_plane_vectors": "平面向量",
     "04_solid_geometry": "立体几何/空间向量",
     "05_analytic_geometry": "解析几何/圆锥曲线",
     "06_counting_combinatorics": "计数原理/排列组合",
+    "07_derivatives": "导数",
 }
 
 BLOCK_STARTERS = (

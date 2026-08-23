@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>函数 | math.bozhanli.com</title>
+  <meta name="description" content="函数专题研究的不是一张图像，而是一种对应关系：在给定定义域中，每一个自变量 $x$ 都被唯一地对应到一个函数值 $f(x)$。定义域、值域、图像、单调性、奇偶性、周期性、零点和导数，都围绕这同一个对象展开。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><span>函数</span></div>
+      <h1>函数</h1>
+      <p>函数专题研究的不是一张图像，而是一种对应关系：在给定定义域中，每一个自变量 $x$ 都被唯一地对应到一个函数值 $f(x)$。定义域、值域、图像、单调性、奇偶性、周期性、零点和导数，都围绕这同一个对象展开。</p>
+    </div>
+    <div class="subject-grid"><div class="rail"><section class="page-section article"><h2>这棵树的逻辑</h2>
+<ol><li><strong>先确认对象</strong>：函数的定义域是什么，输出可以取得哪些值，解析式、表格和图像是否描述同一个对应关系。</li><li><strong>再研究整体形状</strong>：单调、奇偶、周期、对称、最值和零点，回答函数在一个区间或整个定义域上如何变化。</li><li><strong>最后研究局部变化</strong>：导数把平均变化率推进到瞬时变化率；切线、速度、单调性和极值都由此得到更深的解释。</li></ol>
+<p>因此，导数不是与函数并列的一门孤立知识，而是函数专题中“局部变化与微分”的一支。</p>
+<h2>当前学习入口</h2>
+<ol><li><a href="index.html">函数总览：对象、表示、定义域和值域</a></li><li>函数性质：单调性、奇偶性、周期性、对称性与零点（即将补齐）</li><li>基本初等函数与图像变换（即将补齐）</li><li><a href="../07-derivatives/01-derivative-origins-definition-rules-zh.html">导数：前世今生、定义与基本初等函数求导公式的推导</a></li><li><a href="../07-derivatives/index.html">导数：切线、单调极值、参数、不等式与零点</a></li></ol>
+<h2>三种表示法必须互相翻译</h2>
+<ol><li><strong>解析式</strong>告诉我们可以代入什么、可以化简什么；但化简后不能忘记原定义域。</li><li><strong>图像</strong>直接呈现增减、零点、对称和局部形状；但图像读出的结论要能回到解析式或定义中验证。</li><li><strong>表格</strong>把函数理解为一组输入输出对应；它特别适合说明“每个输入只有一个输出”，也适合捕捉离散变化。</li></ol>
+<p>例如 $f(x)=\sqrt{x-1}$ 的根式要求 $x-1\ge0$，故定义域为 $[1,+\infty)$；函数值非负，故值域为 $[0,+\infty)$。这两条结论来自函数对象本身，而非图像大致看起来“从右上角开始”。</p>
+<h2>学习顺序</h2>
+<ol><li>先用函数基础建立定义域和值域意识。</li><li>再用性质与图像训练“整体观察”：单调、奇偶、周期、对称与零点。</li><li>学完基本初等函数后进入导数：平均变化率、极限、切线和基本求导公式。</li><li>再用导数重访函数整体结构，处理单调、极值、最值、参数范围、不等式和零点个数。</li></ol>
+<h2>费曼复述卡</h2>
+<ol><li>为什么“导数”必须依附于一个函数与一个具体自变量位置？</li><li>为什么图像、解析式和表格不是三套知识，而是同一函数的三种语言？</li><li>解释“导数研究局部变化，却能帮助判断整体单调性”这一句中间缺少了哪一个定理。</li></ol></section></div><aside class="rail"><section class="page-section"><h2>自动发布说明</h2><ul><li>源目录：<code>content/09_high_school_math/00_functions</code></li><li>当前文章数：1</li><li>子目录数：0</li><li>这个页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></aside></div>
+  </div>
+</body>
+</html>
