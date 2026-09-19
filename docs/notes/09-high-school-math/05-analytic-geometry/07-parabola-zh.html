@@ -66,7 +66,15 @@ $$</div>
 <div class="math-display">$$
 x^2=-2py.
 $$</div>
-<h2 id="section-3">焦半径</h2>
+<h2 id="section-3">从焦点准线定义推出方程</h2>
+<p>取 $F(p/2,0)$、准线 $x=-p/2$，其中 $p&gt;0$。点 $P(x,y)$ 满足定义，当且仅当</p>
+<div class="math-display">$$
+\sqrt{(x-p/2)^2+y^2}=|x+p/2|.
+$$</div>
+<p>两边都非负，因此平方是等价变形。展开消去 $x^2$ 与 $p^2/4$，得 $y^2=2px$。</p>
+<p>反过来，若 $y^2=2px$，由 $p&gt;0$ 得 $x\ge0$；距离平方相等且距离非负，所以点满足定义。由于 $x+p/2&gt;0$，此时可去掉绝对值，得到焦半径 $PF=x+p/2$。</p>
+<p>另外三个开口方向仍约定 $p&gt;0$，通过坐标反射或交换坐标获得；使用 $y^2=4ax$ 表示向右开口时要求 $a&gt;0$。</p>
+<h2 id="section-4">焦半径</h2>
 <p>对 $y^2=2px$，点 $P(x_0,y_0)$ 在抛物线上：</p>
 <div class="math-display">$$
 PF=x_0+\frac p2.
@@ -75,7 +83,7 @@ $$</div>
 <div class="math-display">$$
 PF=x_0+a.
 $$</div>
-<h2 id="section-4">焦点弦</h2>
+<h2 id="section-5">焦点弦</h2>
 <p>经过焦点的直线与抛物线交于 $A,B$，弦 $AB$ 叫焦点弦。焦点弦常用参数和韦达处理，是抛物线高频大题入口。</p>
 <figure class="math-diagram"><svg viewBox="0 0 620 300" role="img" aria-label="抛物线焦点准线">
   <path d="M258.928571 60 Q201.071429 150 258.928571 240" fill="none" stroke="#1f2937" stroke-width="3"/>
@@ -87,9 +95,9 @@ $$</div>
   <text x="310" y="140" font-size="17" fill="#dc2626">F</text>
   <text x="215" y="275" font-size="17">顶点</text>
 </svg></figure>
-<h2 id="section-5">常见题型</h2>
+<h2 id="section-6">常见题型</h2>
 <ol start="1"><li>由焦点或准线求方程。</li><li>由方程求焦点、准线、开口方向。</li><li>焦半径和焦点弦。</li><li>直线与抛物线联立。</li><li>抛物线与三角形面积、弦长、定点定值。</li></ol>
-<h2 id="section-6">训练题</h2>
+<h2 id="section-7">训练题</h2>
 <ol start="1"><li>抛物线 $y^2=8x$ 的焦点和准线是什么？</li></ol>
 <details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>写成 $y^2=4ax$，得 $4a=8$，$a=2$。焦点 $(2,0)$，准线 $x=-2$。</p></div></details>
 <ol start="2"><li>焦点为 $(3,0)$，准线为 $x=-3$ 的抛物线方程是什么？</li></ol>
@@ -103,8 +111,8 @@ $$</div></div></details>
 <details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>这里 $a=2$，所以 $PF=x_0+2$。</p></div></details>
 <ol start="5"><li>抛物线 $y^2=4x$ 与直线 $x=1$ 交于两点，求弦长。</li></ol>
 <details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>令 $x=1$，得 $y^2=4$，所以 $y=\pm2$，弦长为 $4$。</p></div></details>
-<h2 id="section-7">讲题追问</h2>
-<p>抛物线题先问：焦点和准线在哪里？如果不能画出焦点准线，后面的焦半径和焦点弦就会变成死公式。</p></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：直线方程、二次方程、韦达与距离公式</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a rel="prev" href="06-hyperbola-zh.html">上一节：双曲线</a></li><li><a rel="next" href="08-line-conic-engine-zh.html">下一节：直线与圆锥曲线的代数引擎</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li><li><a href="12-analytic-geometry-module-drills-zh.html">配套练习：解析几何与圆锥曲线：模块分层训练题库</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">定义</a></li><li class="toc-level-2"><a href="#section-2">标准方程</a></li><li class="toc-level-2"><a href="#section-3">焦半径</a></li><li class="toc-level-2"><a href="#section-4">焦点弦</a></li><li class="toc-level-2"><a href="#section-5">常见题型</a></li><li class="toc-level-2"><a href="#section-6">训练题</a></li><li class="toc-level-2"><a href="#section-7">讲题追问</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">解析几何/圆锥曲线</a></li><li>源文件：<code>content/09_high_school_math/05_analytic_geometry/07_parabola_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-analytic-geometry-overview-zh.html">解析几何：从坐标到曲线</a></h3><p>解析几何研究的是“图形与方程之间的翻译”。几何里看见点、线、圆和圆锥曲线；代数里写成坐标、方程、参数和不等式。高考解析几何大题的本质，就是在这两种语言之间来回切换。</p></div><div class="note-item"><h3><a href="02-coordinates-lines-zh.html">坐标、距离、斜率与直线基础</a></h3><p>解析几何的地基是坐标和直线。直线不是一条“画出来的线”，而是一组满足一次方程的点。掌握直线方程，就是掌握方向、位置、距离和交点。</p></div><div class="note-item"><h3><a href="03-circle-equations-zh.html">圆的方程与直线圆问题</a></h3><p>圆是解析几何中最重要的过渡对象。它比直线多了平方项，又比圆锥曲线简单。直线与圆的相交、相切、弦长，正好训练后面圆锥曲线大题需要的联立思想。</p></div><div class="note-item"><h3><a href="04-conic-unified-zh.html">圆锥曲线统一入口</a></h3><p>椭圆、双曲线、抛物线不是三堆孤立公式。它们都是“动点满足某种距离关系形成的轨迹”。先理解定义，后面的标准方程、焦点、离心率、弦长和大题才有根。</p></div><div class="note-item"><h3><a href="05-ellipse-zh.html">椭圆</a></h3><p>椭圆是到两个不同定点距离和为常数的点的轨迹。高考中椭圆常作为圆锥曲线大题的主角，因为它既有清晰几何定义，又适合与直线联立产生韦达结构。</p></div><div class="note-item"><h3><a href="06-hyperbola-zh.html">双曲线</a></h3><p>双曲线是到两个定点距离差的绝对值为常数的点的轨迹。它和椭圆最容易混淆，所以学习时要始终抓住两件事：定义中的“差”和图形中的“渐近线”。</p></div><div class="note-item"><h3><a href="08-line-conic-engine-zh.html">直线与圆锥曲线的代数引擎</a></h3><p>解析几何大题的核心引擎是：设直线、联立曲线、得到一元二次方程、使用判别式和韦达。很多题看起来问弦长、面积、斜率、定值、最值，本质都是把目标转成两根的和与积。</p></div><div class="note-item"><h3><a href="09-three-constants-zh.html">定点、定值、定直线</a></h3><p>定点、定值、定直线是圆锥曲线大题的高分分水岭。它们的共同本质是：虽然题中有变量，但某个对象不随变量改变。</p></div></div></section></aside></div>
+<h2 id="section-8">讲题追问</h2>
+<p>抛物线题先问：焦点和准线在哪里？如果不能画出焦点准线，后面的焦半径和焦点弦就会变成死公式。</p></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：直线方程、二次方程、韦达与距离公式</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a rel="prev" href="06-hyperbola-zh.html">上一节：双曲线</a></li><li><a rel="next" href="08-line-conic-engine-zh.html">下一节：直线与圆锥曲线的代数引擎</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li><li><a href="12-analytic-geometry-module-drills-zh.html">配套练习：解析几何与圆锥曲线：模块分层训练题库</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">定义</a></li><li class="toc-level-2"><a href="#section-2">标准方程</a></li><li class="toc-level-2"><a href="#section-3">从焦点准线定义推出方程</a></li><li class="toc-level-2"><a href="#section-4">焦半径</a></li><li class="toc-level-2"><a href="#section-5">焦点弦</a></li><li class="toc-level-2"><a href="#section-6">常见题型</a></li><li class="toc-level-2"><a href="#section-7">训练题</a></li><li class="toc-level-2"><a href="#section-8">讲题追问</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">解析几何/圆锥曲线</a></li><li>源文件：<code>content/09_high_school_math/05_analytic_geometry/07_parabola_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-analytic-geometry-overview-zh.html">解析几何：从坐标到曲线</a></h3><p>解析几何研究的是“图形与方程之间的翻译”。几何里看见点、线、圆和圆锥曲线；代数里写成坐标、方程、参数和不等式。高考解析几何大题的本质，就是在这两种语言之间来回切换。</p></div><div class="note-item"><h3><a href="02-coordinates-lines-zh.html">坐标、距离、斜率与直线基础</a></h3><p>解析几何的地基是坐标和直线。直线不是一条“画出来的线”，而是一组满足一次方程的点。掌握直线方程，就是掌握方向、位置、距离和交点。</p></div><div class="note-item"><h3><a href="03-circle-equations-zh.html">圆的方程与直线圆问题</a></h3><p>圆是解析几何中最重要的过渡对象。它比直线多了平方项，又比圆锥曲线简单。直线与圆的相交、相切、弦长，正好训练后面圆锥曲线大题需要的联立思想。</p></div><div class="note-item"><h3><a href="04-conic-unified-zh.html">圆锥曲线统一入口</a></h3><p>椭圆、双曲线、抛物线不是三堆孤立公式。它们都是“动点满足某种距离关系形成的轨迹”。先理解定义，后面的标准方程、焦点、离心率、弦长和大题才有根。</p></div><div class="note-item"><h3><a href="05-ellipse-zh.html">椭圆</a></h3><p>椭圆是到两个不同定点距离和为常数的点的轨迹。高考中椭圆常作为圆锥曲线大题的主角，因为它既有清晰几何定义，又适合与直线联立产生韦达结构。</p></div><div class="note-item"><h3><a href="06-hyperbola-zh.html">双曲线</a></h3><p>双曲线是到两个定点距离差的绝对值为常数的点的轨迹。它和椭圆最容易混淆，所以学习时要始终抓住两件事：定义中的“差”和图形中的“渐近线”。</p></div><div class="note-item"><h3><a href="08-line-conic-engine-zh.html">直线与圆锥曲线的代数引擎</a></h3><p>解析几何大题的核心引擎是：设直线、联立曲线、得到一元二次方程、使用判别式和韦达。很多题看起来问弦长、面积、斜率、定值、最值，本质都是把目标转成两根的和与积。</p></div><div class="note-item"><h3><a href="09-three-constants-zh.html">定点、定值、定直线</a></h3><p>定点、定值、定直线是圆锥曲线大题的高分分水岭。它们的共同本质是：虽然题中有变量，但某个对象不随变量改变。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

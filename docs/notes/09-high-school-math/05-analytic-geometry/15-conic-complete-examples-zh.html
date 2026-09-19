@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>圆锥曲线综合例题：存在、最值与完整性 | math.bozhanli.com</title>
+  <meta name="description" content="本页在基础检测之后使用。先修：标准方程、二次方程、韦达、向量数量积与基本不等式。每题都要回答：参数覆盖哪些对象？变形是否等价？所得条件是否充分？特殊情形有没有遗漏？">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">解析几何/圆锥曲线</a><span>/</span><span>圆锥曲线综合例题：存在、最值与完整性</span></div>
+      <h1>圆锥曲线综合例题：存在、最值与完整性</h1>
+      <p>本页在基础检测之后使用。先修：标准方程、二次方程、韦达、向量数量积与基本不等式。每题都要回答：参数覆盖哪些对象？变形是否等价？所得条件是否充分？特殊情形有没有遗漏？</p>
+    </div>
+    <div class="subject-grid"><a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article"><h2 id="section-1">例 1：椭圆中点弦何时存在，是否唯一</h2>
+<p>设椭圆 $E:x^2/a^2+y^2/b^2=1$，其中 $a&gt;b&gt;0$。给定 $M(u,v)$，求以 $M$ 为中点的非零长度弦所在直线，并讨论存在与唯一性。</p>
+<details class="solution-toggle"><summary>查看完整推导</summary><div class="solution-body"><p><strong>为什么从中点设端点？</strong> 设两端点为 $P=M+D,Q=M-D$，其中 $D=(h,j)\ne(0,0)$。这自动保留中点条件，也不依赖斜率，因此包含竖直弦。</p>
+<p>将两点分别代入椭圆方程，相减、相加得到</p>
+<div class="math-display">$$
+\frac{uh}{a^2}+\frac{vj}{b^2}=0,
+\qquad
+\frac{u^2}{a^2}+\frac{v^2}{b^2}+\frac{h^2}{a^2}+\frac{j^2}{b^2}=1.
+$$</div>
+<p>记 $q=u^2/a^2+v^2/b^2$。因为 $D\ne0$，第二式要求 $q&lt;1$。第一式说明端点所在直线满足</p>
+<div class="math-display">$$
+\frac{ux}{a^2}+\frac{vy}{b^2}=q.
+$$</div>
+<p>当 $M\ne O$ 时，法向量 $(u/a^2,v/b^2)$ 非零，所以上式确定唯一一条直线。但点差法到这里仅给出必要条件，还要证明这条直线确有两个交点。</p>
+<p>取非零方向 $d=(-v/b^2,u/a^2)$，将直线写成 $(x,y)=M+td$。由于交叉项为零，代入椭圆得</p>
+<div class="math-display">$$
+q+t^2\left(\frac{d_x^2}{a^2}+\frac{d_y^2}{b^2}\right)=1.
+$$</div>
+<p>括号内为正。当 $q&lt;1$ 时有两个相反的非零实根，故交点不同且中点确为 $M$；当 $q=1$ 时只有重根 $t=0$，成为切线而非非零长度弦；当 $q&gt;1$ 时没有实根。</p>
+<p>当 $M=O$ 时，上面的“直线方程”成为 $0=0$，不能称为一条直线。任取非零方向 $d$，代入同样得到两个相反的根，所以所有过中心的直线都满足，弦不唯一。</p>
+<p><strong>结论：</strong> 中点在椭圆内部时有弦；非中心中点对应唯一一条，中心对应无穷多条；在椭圆上或外部不能作为非零长度弦的中点。</p>
+<p>例如 $x^2/4+y^2=1$，$M=(1,1/2)$，有 $q=1/2$。弦所在直线为 $x+2y=2$，交点 $(0,1),(2,0)$，回代可验证中点和曲线条件。</p></div></details>
+<h3 id="section-2">变式 1</h3>
+<p>仍在 $x^2/4+y^2=1$ 上，分别讨论中点 $(1,0)$ 与 $(2,0)$。</p>
+<details class="solution-toggle"><summary>查看变式解析</summary><div class="solution-body"><p>$(1,0)$ 对应 $q=1/4&lt;1$，唯一弦为竖直线 $x=1$，端点 $(1,\pm\sqrt3/2)$。这说明只设 $y=kx+m$ 会漏掉合法弦。</p>
+<p>$(2,0)$ 对应 $q=1$，只有切点 $(2,0)$，不存在两个不同端点的弦。</p></div></details>
+<h2 id="section-3">例 2：抛物线焦点弦的最短长度</h2>
+<p>设抛物线 $y^2=4ax$，其中 $a&gt;0$，焦点为 $F(a,0)$。求所有经过焦点、具有两个不同交点的弦的长度范围。</p>
+<details class="solution-toggle"><summary>查看完整推导</summary><div class="solution-body"><p><strong>设线先检查覆盖范围。</strong> 水平直线 $y=0$ 只与抛物线交于顶点，不能形成焦点弦。其余过焦点的直线都可唯一表示为</p>
+<div class="math-display">$$
+x=a+ty,\qquad t\in\mathbb R.
+$$</div>
+<p>其中 $t=0$ 正好表示竖直线 $x=a$，无需在最后补它。</p>
+<p>联立得</p>
+<div class="math-display">$$
+y^2-4aty-4a^2=0.
+$$</div>
+<p>二次项系数为 1，判别式 $16a^2(t^2+1)&gt;0$，所以每个实参数确有两个交点。韦达给出 $y_1+y_2=4at$、$y_1y_2=-4a^2&lt;0$，两交点分居 $y=0$ 两侧，因此焦点位于弦内部。</p>
+<p>由焦半径 $PF=x+a$，可以将两段长度相加：</p>
+<div class="math-display">$$
+L=PF+FQ=x_1+x_2+2a
+=4a+ t(y_1+y_2)=4a(1+t^2).
+$$</div>
+<p>因此 $L\ge4a$，当且仅当 $t=0$ 取等号，即最短焦点弦垂直对称轴。任给 $L\ge4a$，选 $t=\sqrt{L/(4a)-1}$ 即可得到对应弦，故完整范围是 $[4a,+\infty)$。</p>
+<p>也可用距离公式复核：$|y_1-y_2|=4a\sqrt{1+t^2}$，而 $|x_1-x_2|=|t|\,|y_1-y_2|$，两点距离仍为 $4a(1+t^2)$。</p></div></details>
+<h3 id="section-4">变式 2</h3>
+<p>对 $y^2=8x$，求长度为 16 的全部焦点弦所在直线。</p>
+<details class="solution-toggle"><summary>查看变式解析</summary><div class="solution-body"><p>这里 $a=2$，令 $8(1+t^2)=16$，得 $t=\pm1$，故直线为 $x=2+y$ 或 $x=2-y$。两个参数均有正判别式，确有两个不同交点；水平直线不能形成弦，竖直直线的弦长为 8，不符合题意。因此没有遗漏。</p></div></details>
+<h2 id="section-5">例 3：椭圆截弦与中心组成三角形的面积范围</h2>
+<p>设 $E:x^2/a^2+y^2/b^2=1$，$a&gt;b&gt;0$，直线与椭圆交于两个不同点 $P,Q$。求 $S=\tfrac12|x_1y_2-x_2y_1|$ 的范围，并说明何时构成非退化三角形。</p>
+<details class="solution-toggle"><summary>查看完整推导</summary><div class="solution-body"><p>先处理非竖直直线 $y=kx+m$。联立整理为</p>
+<div class="math-display">$$
+(b^2+a^2k^2)x^2+2a^2kmx+a^2(m^2-b^2)=0.
+$$</div>
+<p>记 $D=b^2+a^2k^2&gt;0$，判别式为 $4a^2b^2(D-m^2)$。因此两个不同交点恰好要求 $m^2&lt;D$。</p>
+<p>由根差与面积公式，</p>
+<div class="math-display">$$
+|x_1-x_2|=\frac{2ab\sqrt{D-m^2}}{D},
+\qquad S=\frac12|m|\,|x_1-x_2|
+=ab\frac{|m|}{\sqrt D}\sqrt{1-\frac{m^2}{D}}.
+$$</div>
+<p>令 $s=|m|/\sqrt D\in[0,1)$。由于</p>
+<div class="math-display">$$
+s^2(1-s^2)=\frac14-\left(s^2-\frac12\right)^2\le\frac14,
+$$</div>
+<p>所以 $0\le S\le ab/2$，最大值对应 $s=1/\sqrt2$，仍满足两个交点条件，并非切线极限。</p>
+<p><strong>补竖直线。</strong> 若 $x=t$，两个不同交点要求 $|t|&lt;a$，端点纵坐标为 $\pm b\sqrt{1-t^2/a^2}$，面积为 $b|t|\sqrt{1-t^2/a^2}$。令 $s=|t|/a$，得到同一个表达式，故不产生新的范围。</p>
+<p><strong>证明每个值都可取到。</strong> 只考虑水平线 $y=bs$，$s\in[0,1/\sqrt2]$，它们都与椭圆有两个不同交点。面积 $ab s\sqrt{1-s^2}$ 连续地从 0 变化到 $ab/2$，由连续函数的介值性，覆盖其间每个值。因此 $S$ 的范围恰为 $[0,ab/2]$。</p>
+<p>当直线过原点时 $S=0$，三点共线。如果题目要求真正的非退化三角形，应排除该情形，范围改为 $(0,ab/2]$。相切时两交点合并，本题始终不允许。</p></div></details>
+<h3 id="section-6">变式 3</h3>
+<p>在 $x^2/4+y^2=1$ 中，面积最大值是多少？各举一条水平弦和竖直弦使其达到。</p>
+<details class="solution-toggle"><summary>查看变式解析</summary><div class="solution-body"><p>$a=2,b=1$，最大面积为 $ab/2=1$。水平线可取 $y=1/\sqrt2$，端点为 $(\pm\sqrt2,1/\sqrt2)$；竖直线可取 $x=\sqrt2$，端点为 $(\sqrt2,\pm1/\sqrt2)$。直接用底乘高的一半，均得面积 1，且交点不同。</p></div></details>
+<h2 id="section-7">综合验收</h2>
+<p>三道变式都应先独立解答，再展开解析。每题按四项各 0—2 分：设元覆盖完整；推导和计算正确；存在条件与特殊情形齐全；能证明充分性或可达性。每题至少 6/8 分且没有关键数学错误，再进入更复杂的综合题；这只是本课程的学习门槛，不代表考试分数。</p>
+<p>讲题时追加一个改变条件的问题：中点移到椭圆外会怎样？焦点换成其他定点还能把距离相加吗？面积题不允许过中心时为什么删去 0？</p>
+<p>返回：<a href="index.html">专题学习路线</a>。</p></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：直线方程、二次方程、韦达与距离公式</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a rel="prev" href="14-high-score-expression-open-tasks-zh.html">上一节：解析几何高分表达与开放题专项</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li><li><a href="12-analytic-geometry-module-drills-zh.html">配套练习：解析几何与圆锥曲线：模块分层训练题库</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">例 1：椭圆中点弦何时存在，是否唯一</a></li><li class="toc-level-3"><a href="#section-2">变式 1</a></li><li class="toc-level-2"><a href="#section-3">例 2：抛物线焦点弦的最短长度</a></li><li class="toc-level-3"><a href="#section-4">变式 2</a></li><li class="toc-level-2"><a href="#section-5">例 3：椭圆截弦与中心组成三角形的面积范围</a></li><li class="toc-level-3"><a href="#section-6">变式 3</a></li><li class="toc-level-2"><a href="#section-7">综合验收</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">解析几何/圆锥曲线</a></li><li>源文件：<code>content/09_high_school_math/05_analytic_geometry/15_conic_complete_examples_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-analytic-geometry-overview-zh.html">解析几何：从坐标到曲线</a></h3><p>解析几何研究的是“图形与方程之间的翻译”。几何里看见点、线、圆和圆锥曲线；代数里写成坐标、方程、参数和不等式。高考解析几何大题的本质，就是在这两种语言之间来回切换。</p></div><div class="note-item"><h3><a href="02-coordinates-lines-zh.html">坐标、距离、斜率与直线基础</a></h3><p>解析几何的地基是坐标和直线。直线不是一条“画出来的线”，而是一组满足一次方程的点。掌握直线方程，就是掌握方向、位置、距离和交点。</p></div><div class="note-item"><h3><a href="03-circle-equations-zh.html">圆的方程与直线圆问题</a></h3><p>圆是解析几何中最重要的过渡对象。它比直线多了平方项，又比圆锥曲线简单。直线与圆的相交、相切、弦长，正好训练后面圆锥曲线大题需要的联立思想。</p></div><div class="note-item"><h3><a href="04-conic-unified-zh.html">圆锥曲线统一入口</a></h3><p>椭圆、双曲线、抛物线不是三堆孤立公式。它们都是“动点满足某种距离关系形成的轨迹”。先理解定义，后面的标准方程、焦点、离心率、弦长和大题才有根。</p></div><div class="note-item"><h3><a href="05-ellipse-zh.html">椭圆</a></h3><p>椭圆是到两个不同定点距离和为常数的点的轨迹。高考中椭圆常作为圆锥曲线大题的主角，因为它既有清晰几何定义，又适合与直线联立产生韦达结构。</p></div><div class="note-item"><h3><a href="06-hyperbola-zh.html">双曲线</a></h3><p>双曲线是到两个定点距离差的绝对值为常数的点的轨迹。它和椭圆最容易混淆，所以学习时要始终抓住两件事：定义中的“差”和图形中的“渐近线”。</p></div><div class="note-item"><h3><a href="07-parabola-zh.html">抛物线</a></h3><p>抛物线是到焦点和准线距离相等的点的轨迹。它没有中心，只有一个焦点和一条准线。很多学生抛物线题不稳，是因为只记了方程，没有真正使用焦点准线定义。</p></div><div class="note-item"><h3><a href="08-line-conic-engine-zh.html">直线与圆锥曲线的代数引擎</a></h3><p>解析几何大题的核心引擎是：设直线、联立曲线、得到一元二次方程、使用判别式和韦达。很多题看起来问弦长、面积、斜率、定值、最值，本质都是把目标转成两根的和与积。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

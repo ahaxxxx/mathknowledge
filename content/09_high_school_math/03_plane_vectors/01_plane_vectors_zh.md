@@ -139,17 +139,19 @@ $$
 |\vec a|=\sqrt{x_1^2+y_1^2}.
 $$
 
+本节的长度与数量积坐标公式使用互相垂直、长度为 1 的坐标基底。前面的任意不共线基底仍可用于线性表示，但不能直接套这些度量公式。例如两个单位基底夹角为 $60^\circ$，它们在自身基底中的坐标为 $(1,0),(0,1)$，实际数量积为 $1/2$，不是 0。
+
 坐标法的优点是稳定：共线、垂直、长度、夹角都能转成方程。
 
 ### 6. 数量积：把夹角和长度变成乘法
 
-数量积定义为
+对于两个非零向量，数量积定义为
 
 $$
 \vec a\cdot\vec b=|\vec a||\vec b|\cos\theta,
 $$
 
-其中 $\theta$ 是 $\vec a,\vec b$ 的夹角。
+其中 $\theta\in[0,\pi]$ 是 $\vec a,\vec b$ 的夹角。零向量没有确定的方向或夹角；另规定它与任意向量的数量积为 0。
 
 坐标形式为
 
@@ -159,13 +161,13 @@ $$
 
 数量积负责四类问题：
 
-1. 求夹角：
+1. 求夹角（两个向量都非零）：
 
 $$
 \cos\theta=\frac{\vec a\cdot\vec b}{|\vec a||\vec b|}.
 $$
 
-2. 判垂直：
+2. 判垂直（此处讨论两个非零向量）：
 
 $$
 \vec a\perp\vec b\quad\Longleftrightarrow\quad \vec a\cdot\vec b=0.
@@ -177,7 +179,7 @@ $$
 |\vec a+\vec b|^2=(\vec a+\vec b)^2.
 $$
 
-4. 求投影：
+4. 求投影（要求 $\vec b\ne\vec0$，投影方向才存在）：
 
 $$
 \vec a\text{ 在 }\vec b\text{ 方向上的投影数量}
@@ -190,7 +192,7 @@ $$
 
 1. 中点：$M$ 是 $AB$ 中点，则 $\overrightarrow{OM}=\dfrac{\overrightarrow{OA}+\overrightarrow{OB}}2$。
 2. 重心：$G$ 是 $\triangle ABC$ 重心，则 $\overrightarrow{OG}=\dfrac{\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}}3$。
-3. 共线：$A,B,C$ 共线等价于 $\overrightarrow{AB}=\lambda\overrightarrow{AC}$。
+3. 共线（要求 $A\ne C$）：$A,B,C$ 共线等价于 $\overrightarrow{AB}=\lambda\overrightarrow{AC}$。
 4. 垂直：$AB\perp AC$ 等价于 $\overrightarrow{AB}\cdot\overrightarrow{AC}=0$。
 5. 角：$\angle BAC$ 由 $\overrightarrow{AB}$ 与 $\overrightarrow{AC}$ 的夹角决定。
 

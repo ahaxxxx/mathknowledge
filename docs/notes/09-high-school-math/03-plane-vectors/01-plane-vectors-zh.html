@@ -125,23 +125,24 @@ $$</div>
 <div class="math-display">$$
 |\vec a|=\sqrt{x_1^2+y_1^2}.
 $$</div>
+<p>本节的长度与数量积坐标公式使用互相垂直、长度为 1 的坐标基底。前面的任意不共线基底仍可用于线性表示，但不能直接套这些度量公式。例如两个单位基底夹角为 $60^\circ$，它们在自身基底中的坐标为 $(1,0),(0,1)$，实际数量积为 $1/2$，不是 0。</p>
 <p>坐标法的优点是稳定：共线、垂直、长度、夹角都能转成方程。</p>
 <h3 id="section-8">6. 数量积：把夹角和长度变成乘法</h3>
-<p>数量积定义为</p>
+<p>对于两个非零向量，数量积定义为</p>
 <div class="math-display">$$
 \vec a\cdot\vec b=|\vec a||\vec b|\cos\theta,
 $$</div>
-<p>其中 $\theta$ 是 $\vec a,\vec b$ 的夹角。</p>
+<p>其中 $\theta\in[0,\pi]$ 是 $\vec a,\vec b$ 的夹角。零向量没有确定的方向或夹角；另规定它与任意向量的数量积为 0。</p>
 <p>坐标形式为</p>
 <div class="math-display">$$
 (x_1,y_1)\cdot(x_2,y_2)=x_1x_2+y_1y_2.
 $$</div>
 <p>数量积负责四类问题：</p>
-<ol start="1"><li>求夹角：</li></ol>
+<ol start="1"><li>求夹角（两个向量都非零）：</li></ol>
 <div class="math-display">$$
 \cos\theta=\frac{\vec a\cdot\vec b}{|\vec a||\vec b|}.
 $$</div>
-<ol start="2"><li>判垂直：</li></ol>
+<ol start="2"><li>判垂直（此处讨论两个非零向量）：</li></ol>
 <div class="math-display">$$
 \vec a\perp\vec b\quad\Longleftrightarrow\quad \vec a\cdot\vec b=0.
 $$</div>
@@ -149,14 +150,14 @@ $$</div>
 <div class="math-display">$$
 |\vec a+\vec b|^2=(\vec a+\vec b)^2.
 $$</div>
-<ol start="4"><li>求投影：</li></ol>
+<ol start="4"><li>求投影（要求 $\vec b\ne\vec0$，投影方向才存在）：</li></ol>
 <div class="math-display">$$
 \vec a\text{ 在 }\vec b\text{ 方向上的投影数量}
 =\frac{\vec a\cdot\vec b}{|\vec b|}.
 $$</div>
 <h3 id="section-9">7. 向量与三角形</h3>
 <p>向量进入三角形后，最常见的翻译是：</p>
-<ol start="1"><li>中点：$M$ 是 $AB$ 中点，则 $\overrightarrow{OM}=\dfrac{\overrightarrow{OA}+\overrightarrow{OB}}2$。</li><li>重心：$G$ 是 $\triangle ABC$ 重心，则 $\overrightarrow{OG}=\dfrac{\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}}3$。</li><li>共线：$A,B,C$ 共线等价于 $\overrightarrow{AB}=\lambda\overrightarrow{AC}$。</li><li>垂直：$AB\perp AC$ 等价于 $\overrightarrow{AB}\cdot\overrightarrow{AC}=0$。</li><li>角：$\angle BAC$ 由 $\overrightarrow{AB}$ 与 $\overrightarrow{AC}$ 的夹角决定。</li></ol>
+<ol start="1"><li>中点：$M$ 是 $AB$ 中点，则 $\overrightarrow{OM}=\dfrac{\overrightarrow{OA}+\overrightarrow{OB}}2$。</li><li>重心：$G$ 是 $\triangle ABC$ 重心，则 $\overrightarrow{OG}=\dfrac{\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}}3$。</li><li>共线（要求 $A\ne C$）：$A,B,C$ 共线等价于 $\overrightarrow{AB}=\lambda\overrightarrow{AC}$。</li><li>垂直：$AB\perp AC$ 等价于 $\overrightarrow{AB}\cdot\overrightarrow{AC}=0$。</li><li>角：$\angle BAC$ 由 $\overrightarrow{AB}$ 与 $\overrightarrow{AC}$ 的夹角决定。</li></ol>
 <h2 id="section-10">方法识别</h2>
 <p>| 题目信号 | 优先方法 | | --- | --- | | 出现中点、重心、分点 | 用位置向量平均或基底表示 | | 证明三点共线 | 写成 $\overrightarrow{AB}=\lambda\overrightarrow{AC}$ | | 出现垂直、夹角、投影 | 用数量积 | | 出现长度或最值 | 先平方，转成数量积或坐标二次式 | | 图形中点很多 | 选基底，统一表示 | | 坐标已给出 | 直接坐标化，不要硬画图 |</p>
 <h2 id="section-11">典型例题</h2>
