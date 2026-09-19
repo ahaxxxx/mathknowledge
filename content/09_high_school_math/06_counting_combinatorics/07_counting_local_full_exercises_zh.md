@@ -1,5 +1,7 @@
 # 计数原理与排列组合：考点 33-35 全量本地题库
 
+> 核验说明：题号与完整题干（含公式图片指纹）匹配仅核验对应关系，不代表答案已逐题验算。标为“解析待核验”的题目暂不展示原配解析。
+
 这一页把本地一轮复习资料中考点 33 到考点 35 的练习题按原考点整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后抽题、限时训练和查漏补缺。
 
 返回专题首页：[计数原理与排列组合](./README.md)。配套训练：[计数原理与排列组合：分层训练题库](./06_counting_expression_drills_zh.md)。
@@ -23,7 +25,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -45,7 +47,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -67,7 +69,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -96,29 +98,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．用数字1，2，3，4，5组成没有重复数字的数，问</p>
-<p class="local-docx-line">（1）能够组成多少个五位奇数？</p>
-<p class="local-docx-line">（2）能够组成多少个正整数？</p>
-<p class="local-docx-line">（3）能够组成多少个大于40000的正整数？</p>
-<p class="local-docx-line">【答案】（1）<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-023-d787c290f8.png" alt="本地解析几何资料图片" width="448" height="416">；（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-024-6da18ce52b.png" alt="本地解析几何资料图片" width="672" height="448">；（3）<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-025-9cf7ccb87f.png" alt="本地解析几何资料图片" width="512" height="448">；</p>
-<p class="local-docx-line">【解析】（1）首先排最个位数字，从1、3、5中选1个数排在个位有<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-026-84da681afd.png" alt="本地解析几何资料图片" width="1056" height="608">种，其余4个数全排列有<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-027-81aaf5564b.png" alt="本地解析几何资料图片" width="1312" height="608">种，按照分步乘法计数原理可得有<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-028-d660ff595f.png" alt="本地解析几何资料图片" width="1664" height="608">个五位奇数；</p>
-<p class="local-docx-line">（2）根据题意，</p>
-<p class="local-docx-line">若组成一位数，有5种情况，即可以有5个一位数；</p>
-<p class="local-docx-line">若组成两位数，有<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-029-e2bb3273f4.png" alt="本地解析几何资料图片" width="1312" height="608">种情况，即可以有20个两位数；</p>
-<p class="local-docx-line">若组成三位数，有<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-030-44a1daf887.png" alt="本地解析几何资料图片" width="1280" height="608">种情况，即可以有60个三位数；</p>
-<p class="local-docx-line">若组成四位数，有<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-031-18f12ce589.png" alt="本地解析几何资料图片" width="1472" height="608">种情况，即可以有120个四位数；</p>
-<p class="local-docx-line">若组成五位数，有<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-032-726fcb168c.png" alt="本地解析几何资料图片" width="1440" height="608">种情况，即可以有120个五位数；</p>
-<p class="local-docx-line">则可以有<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-033-37c66793df.png" alt="本地解析几何资料图片" width="4000" height="416">个正整数；</p>
-<p class="local-docx-line">（3）根据题意，若组成的数字比40000大的正整数，其首位数字为5或4，有2种情况；</p>
-<p class="local-docx-line">在剩下的4个数，安排在后面四位，共有<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-034-c51d0abe76.png" alt="本地解析几何资料图片" width="1696" height="608">种情况，</p>
-<p class="local-docx-line">则有<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-035-9cf7ccb87f.png" alt="本地解析几何资料图片" width="512" height="448">个比40000大的正整数；</p>
-<p class="local-docx-line">【题组二 分组分配问题】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -130,7 +112,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -155,7 +137,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -186,23 +168,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．有6本不同的书，在下列不同的条件下，各有多少种不同的分法？</p>
-<p class="local-docx-line">（1）分给甲､乙､丙三人，其中一个人1本，一个人2本，一个人3本；</p>
-<p class="local-docx-line">（2）分成三组，一组4本，另外两组各1本；</p>
-<p class="local-docx-line">（3）甲得1本，乙得1本，丙得4本.</p>
-<p class="local-docx-line">【答案】（1）<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-040-0631f4f467.png" alt="本地解析几何资料图片" width="672" height="448">种；（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-041-b55d0f52c7.png" alt="本地解析几何资料图片" width="448" height="448">种；（3）<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-042-5371f9c099.png" alt="本地解析几何资料图片" width="480" height="448">种.</p>
-<p class="local-docx-line">【解析】（1）先将6本不同的书分成1本，2本，3本共3组，有<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-043-5bbb9c3ea2.png" alt="本地解析几何资料图片" width="1280" height="608">种，</p>
-<p class="local-docx-line">再将3组分配给3人有<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-044-e284781e5c.png" alt="本地解析几何资料图片" width="480" height="608">种，故共有<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-045-3e0ac6d00f.png" alt="本地解析几何资料图片" width="2656" height="608">种；</p>
-<p class="local-docx-line">（2）只需从6本中选4本一组，其余2本为2组，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-046-b15b612f91.png" alt="本地解析几何资料图片" width="1411" height="670">种；</p>
-<p class="local-docx-line">（3）分步处理，先从从6本中选4本给丙，其余2本分给甲乙各一本，</p>
-<p class="local-docx-line">即<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct33-a-047-89c5418303.png" alt="本地解析几何资料图片" width="1760" height="608">种.</p>
-<p class="local-docx-line">【题组三 染色问题】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -216,7 +184,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -241,7 +209,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -266,7 +234,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -295,30 +263,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．如图，用四种不同颜色给图中的A,B,C,D,E,F六个点涂色，要求每个点涂一种颜色，且图中每条线段的两个端点涂不同颜色，则不同的涂色方法用</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/counting-local/ct33-a-071-fb65c4cd8f.png" alt="本地解析几何资料图片" width="156" height="167"></div>
-<p class="local-docx-line">A．288种B．264种C．240种D．168种</p>
-<p class="local-docx-line">【答案】B</p>
-<p class="local-docx-line">【解析】</p>
-<p class="local-docx-line">先分步再排列</p>
-<p class="local-docx-line">先涂点E，有4种涂法，再涂点B，有两种可能：</p>
-<p class="local-docx-line">(1)B与E相同时，依次涂点F，C，D，A，涂法分别有3，2，2，2种；</p>
-<p class="local-docx-line">(2)B与E不相同时有3种涂法，再依次涂F、C、D、A点，涂F有2种涂法，涂C点时又有两种可能：</p>
-<p class="local-docx-line">（2.1）C与E相同，有1种涂法，再涂点D，有两种可能：</p>
-<p class="local-docx-line">①D与B相同，有1种涂法，最后涂A有2种涂法；</p>
-<p class="local-docx-line">②D与B不相同，有2种涂法，最后涂A有1种涂法．</p>
-<p class="local-docx-line">（2.2）C与E不相同，有1种涂法，再涂点D，有两种可能：</p>
-<p class="local-docx-line">①D与B相同，有1种涂法，最后涂A有2种涂法；</p>
-<p class="local-docx-line">②D与B不相同，有2种涂法，最后涂A有1种涂法．</p>
-<p class="local-docx-line">所以不同的涂色方法有</p>
-<p class="local-docx-line">4×{3×2×2×2+3×2×[1×(1×2+1×2)+1×(1×2+1×1)]}=4×(24+42)=264．</p>
-<p class="local-docx-line">【题组四 综合运用】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -331,7 +278,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -353,7 +300,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -377,7 +324,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -409,7 +356,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -433,18 +380,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2．已知<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-010-68f7d6868e.png" alt="本地解析几何资料图片" width="2176" height="608">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-011-1b662190ae.png" alt="本地解析几何资料图片" width="670" height="388">（    ）</p>
-<p class="local-docx-line">A．5B．7C．10D．14</p>
-<p class="local-docx-line">【答案】B</p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-012-68f7d6868e.png" alt="本地解析几何资料图片" width="2176" height="608">，</p>
-<p class="local-docx-line">可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-013-43ebf439f9.png" alt="本地解析几何资料图片" width="8096" height="512">，</p>
-<p class="local-docx-line">即<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-014-9a29fd913e.png" alt="本地解析几何资料图片" width="3296" height="512">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-015-077353b3d8.png" alt="本地解析几何资料图片" width="896" height="448">.故选：<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-016-d7a172d974.png" alt="本地解析几何资料图片" width="352" height="384">.</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -458,18 +396,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．若<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-017-02078e93c4.png" alt="本地解析几何资料图片" width="1344" height="608">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-018-64795d2af5.png" alt="本地解析几何资料图片" width="320" height="352">的值为（    ）</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-019-2dd012a8b8.png" alt="本地解析几何资料图片" width="320" height="416">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-020-7bc6f46cef.png" alt="本地解析几何资料图片" width="288" height="448">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-021-0563812418.png" alt="本地解析几何资料图片" width="320" height="416">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-022-d92f88f1eb.png" alt="本地解析几何资料图片" width="288" height="448"></p>
-<p class="local-docx-line">【答案】D</p>
-<p class="local-docx-line">【解析】由排列数公式可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-023-11926735a8.png" alt="本地解析几何资料图片" width="2880" height="640">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-024-44c6ef639a.png" alt="本地解析几何资料图片" width="2304" height="512">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-025-c9936d28ea.png" alt="本地解析几何资料图片" width="1408" height="512">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-026-eceeaf7acb.png" alt="本地解析几何资料图片" width="864" height="448">.故选：D.</p>
-<p class="local-docx-line">【题组二 组合数计算】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -482,7 +411,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -507,28 +436,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-034-8bba01e513.png" alt="本地解析几何资料图片" width="4544" height="608">的值为（    ）</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-035-d00a562efb.png" alt="本地解析几何资料图片" width="800" height="608">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-036-c53ed66a14.png" alt="本地解析几何资料图片" width="832" height="608">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-037-3879983499.png" alt="本地解析几何资料图片" width="832" height="608">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-038-1f6d1bb38c.png" alt="本地解析几何资料图片" width="800" height="608"></p>
-<p class="local-docx-line">【答案】C</p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-039-fb46b4dc01.png" alt="本地解析几何资料图片" width="3776" height="608">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-040-74881fdcfa.png" alt="本地解析几何资料图片" width="2624" height="608"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-041-8bba01e513.png" alt="本地解析几何资料图片" width="4544" height="608"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-042-fa7a56e0dd.png" alt="本地解析几何资料图片" width="4064" height="1664"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-043-acda1f9c8b.png" alt="本地解析几何资料图片" width="1120" height="608"></p>
-<p class="local-docx-line">故选：C</p>
-<p class="local-docx-line">【题组三 综合运用】1．下列等式中，正确的是（    ）</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-044-dcec213b23.png" alt="本地解析几何资料图片" width="2816" height="608">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-045-dabd0ba083.png" alt="本地解析几何资料图片" width="1888" height="608"></p>
-<p class="local-docx-line">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-046-081aa3d819.png" alt="本地解析几何资料图片" width="3872" height="608">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-047-bfb7a5cc0a.png" alt="本地解析几何资料图片" width="2592" height="992"></p>
-<p class="local-docx-line">【答案】ABD</p>
-<p class="local-docx-line">【解析】选项A，左边=<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-048-5012338bb3.png" alt="本地解析几何资料图片" width="11104" height="1184"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-049-be74ef4a82.png" alt="本地解析几何资料图片" width="2144" height="1184">=右边，正确；</p>
-<p class="local-docx-line">选项B，右边<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-050-8fe9f12635.png" alt="本地解析几何资料图片" width="9792" height="1184">左边，正确；</p>
-<p class="local-docx-line">选项C，右边<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-051-4545e3bfb3.png" alt="本地解析几何资料图片" width="3264" height="608">左边，错误；</p>
-<p class="local-docx-line">选项D，右边<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-052-cf0bc9dee5.png" alt="本地解析几何资料图片" width="12096" height="1184">左边，正确.故选：ABD</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -540,7 +450,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -561,7 +471,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -583,29 +493,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．若<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-063-c9706b75c3.png" alt="本地解析几何资料图片" width="1696" height="608">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-064-1b662190ae.png" alt="本地解析几何资料图片" width="670" height="388">__________．</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-065-b426f92e5d.png" alt="本地解析几何资料图片" width="288" height="448"></p>
-<p class="local-docx-line">【解析】由<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-066-c9706b75c3.png" alt="本地解析几何资料图片" width="1696" height="608">得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-067-bf6c1bcd2e.png" alt="本地解析几何资料图片" width="4448" height="1728">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-068-fff84f1452.png" alt="本地解析几何资料图片" width="896" height="448"></p>
-<p class="local-docx-line">故答案为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-069-b426f92e5d.png" alt="本地解析几何资料图片" width="288" height="448"></p>
-<p class="local-docx-line">5（1）解不等式：<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-070-12f71ce47c.png" alt="本地解析几何资料图片" width="3232" height="608">；</p>
-<p class="local-docx-line">（2）已知<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-071-e70f363206.png" alt="本地解析几何资料图片" width="2848" height="1088">，求<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-072-4dcd674813.png" alt="本地解析几何资料图片" width="800" height="608">．</p>
-<p class="local-docx-line">【答案】（1）<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-073-e766248fb7.png" alt="本地解析几何资料图片" width="1248" height="640">（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-074-e242affa7c.png" alt="本地解析几何资料图片" width="1568" height="608"></p>
-<p class="local-docx-line">【解析】（1）因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-075-50b7c39f07.png" alt="本地解析几何资料图片" width="3392" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-076-82fa2fef9f.png" alt="本地解析几何资料图片" width="3232" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-077-e3f1cc817d.png" alt="本地解析几何资料图片" width="2368" height="640">，</p>
-<p class="local-docx-line">所以不等式可化为<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-078-7341183ef4.png" alt="本地解析几何资料图片" width="3968" height="640">，</p>
-<p class="local-docx-line">解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-079-8d57d0f3be.png" alt="本地解析几何资料图片" width="1792" height="992">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-080-95a82684e8.png" alt="本地解析几何资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-081-249b4b6583.png" alt="本地解析几何资料图片" width="952" height="458">，</p>
-<p class="local-docx-line">所以不等式的解集为<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-082-e766248fb7.png" alt="本地解析几何资料图片" width="1248" height="640">．</p>
-<p class="local-docx-line">（2）因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-083-ae76c51976.png" alt="本地解析几何资料图片" width="2720" height="1120">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-084-d8659c04bf.png" alt="本地解析几何资料图片" width="2720" height="1120">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-085-193a3c312c.png" alt="本地解析几何资料图片" width="2720" height="1120">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-086-e70f363206.png" alt="本地解析几何资料图片" width="2848" height="1088">，</p>
-<p class="local-docx-line">可化为<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-087-9b7f834446.png" alt="本地解析几何资料图片" width="4128" height="1056">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-088-b1acf80bfb.png" alt="本地解析几何资料图片" width="2848" height="512">，</p>
-<p class="local-docx-line">解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-089-12d8b9b8aa.png" alt="本地解析几何资料图片" width="1152" height="448">（舍去）或2，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct34-a-090-e242affa7c.png" alt="本地解析几何资料图片" width="1568" height="608">．</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -619,7 +509,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -646,7 +536,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -682,7 +572,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -708,7 +598,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -729,7 +619,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -749,7 +639,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -769,7 +659,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -790,7 +680,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -811,7 +701,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -832,7 +722,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -855,17 +745,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">8．已知在<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-060-972939c347.png" alt="本地解析几何资料图片" width="2434" height="1340">的展开式中，第6项为常数项，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-061-5732bbcc03.png" alt="本地解析几何资料图片" width="670" height="388">______.</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-062-215a2c175b.png" alt="本地解析几何资料图片" width="448" height="448"></p>
-<p class="local-docx-line">【解析】二项式<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-063-972939c347.png" alt="本地解析几何资料图片" width="2434" height="1340">的展开式的通项公式为<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-064-aaf4f21ec2.png" alt="本地解析几何资料图片" width="2976" height="960">，</p>
-<p class="local-docx-line">令<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-065-5c679e5be9.png" alt="本地解析几何资料图片" width="896" height="448">，可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-066-6cbe2de260.png" alt="本地解析几何资料图片" width="1664" height="992">，求得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-067-da3dd836ec.png" alt="本地解析几何资料图片" width="1056" height="448">．故答案为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-068-215a2c175b.png" alt="本地解析几何资料图片" width="448" height="448"></p>
-<p class="local-docx-line">【题组二  因式之积的特定项系数】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -878,7 +760,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -904,7 +786,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -931,7 +813,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -956,7 +838,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -976,7 +858,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1001,17 +883,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">6．若随机变量<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-137-281966cf7a.png" alt="本地解析几何资料图片" width="2144" height="704">，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-138-3640d60f62.png" alt="本地解析几何资料图片" width="3296" height="640">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-139-a84e7e9399.png" alt="本地解析几何资料图片" width="3264" height="1216">展开式中<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-140-f2e6609013.png" alt="本地解析几何资料图片" width="416" height="512">项的系数是__________．</p>
-<p class="local-docx-line">【答案】1620</p>
-<p class="local-docx-line">【解析】</p>
-<p class="local-docx-line">随机变量<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-141-281966cf7a.png" alt="本地解析几何资料图片" width="2144" height="704">，均值是2，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-142-b38d1ec47c.png" alt="本地解析几何资料图片" width="3296" height="640">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-143-c2199a7adc.png" alt="本地解析几何资料图片" width="864" height="448">；∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-144-b848e23d17.png" alt="本地解析几何资料图片" width="10656" height="1216">；又<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-145-7b66351c6b.png" alt="本地解析几何资料图片" width="1888" height="1216">展开式的通项公式为<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-146-5eab5ca6d2.png" alt="本地解析几何资料图片" width="7712" height="1216">，令<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-147-bc85fe20b4.png" alt="本地解析几何资料图片" width="1536" height="992">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-148-a030351d5a.png" alt="本地解析几何资料图片" width="800" height="896">，不合题意，舍去；令<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-149-02a4497d41.png" alt="本地解析几何资料图片" width="1632" height="992">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-150-c185aa0ac0.png" alt="本地解析几何资料图片" width="928" height="416">，对应<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-151-3d16811d9f.png" alt="本地解析几何资料图片" width="448" height="512">的系数为<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-152-7cea1983dd.png" alt="本地解析几何资料图片" width="3040" height="704">；令<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-153-31fcaa0aba.png" alt="本地解析几何资料图片" width="1600" height="992">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-154-406b38461a.png" alt="本地解析几何资料图片" width="928" height="992">，不合题意，舍去；∴展开式中<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-155-f2e6609013.png" alt="本地解析几何资料图片" width="416" height="512">项的系数是<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-156-d3a5e5a6bb.png" alt="本地解析几何资料图片" width="2304" height="448">，故答案为1620.</p>
-<p class="local-docx-line">【题组三 （二项式）系数和】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1024,7 +898,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1050,7 +924,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1073,7 +947,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1100,7 +974,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1123,19 +997,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">5．二项式<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-203-41662c31b6.png" alt="本地解析几何资料图片" width="1920" height="1216">中，前三项的系数成等差数列，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-204-5732bbcc03.png" alt="本地解析几何资料图片" width="670" height="388">__________，二项式系数最大的项是__________.</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-205-674c1f29f5.png" alt="本地解析几何资料图片" width="288" height="448">    <img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-206-3982217188.png" alt="本地解析几何资料图片" width="928" height="1056"></p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-207-41662c31b6.png" alt="本地解析几何资料图片" width="1920" height="1216">展开式的通项为<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-208-f299662c6d.png" alt="本地解析几何资料图片" width="6400" height="1216">，</p>
-<p class="local-docx-line">由题意可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-209-c3c17d9664.png" alt="本地解析几何资料图片" width="3008" height="992">，整理得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-210-e6d3b6ce78.png" alt="本地解析几何资料图片" width="2272" height="512">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-211-0e665cbc66.png" alt="本地解析几何资料图片" width="1216" height="448">且<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-212-66d1297b71.png" alt="本地解析几何资料图片" width="1088" height="512">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-213-32ecaf7de0.png" alt="本地解析几何资料图片" width="768" height="416">，</p>
-<p class="local-docx-line">因此，二项式系数最大的项为<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-214-a5d8f040a2.png" alt="本地解析几何资料图片" width="4320" height="1184">.故答案为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-215-674c1f29f5.png" alt="本地解析几何资料图片" width="288" height="448">；<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-216-3982217188.png" alt="本地解析几何资料图片" width="928" height="1056">.</p>
-<p class="local-docx-line">【题组四 二项式性质及运用】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1148,7 +1012,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1176,7 +1040,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1203,7 +1067,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1227,19 +1091,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．若<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-252-cbe81aa1f4.png" alt="本地解析几何资料图片" width="1760" height="992">展开式中只有第四项的系数最大，则展开式中有理项的项数为（    ）</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-253-8215aa87bc.png" alt="本地解析几何资料图片" width="224" height="416">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-254-8ddef9d0e2.png" alt="本地解析几何资料图片" width="320" height="416">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-255-6da24262de.png" alt="本地解析几何资料图片" width="288" height="448">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-256-1c19950b7f.png" alt="本地解析几何资料图片" width="320" height="416"></p>
-<p class="local-docx-line">【答案】D</p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-257-f43a0f5cb4.png" alt="本地解析几何资料图片" width="1888" height="1184">展开式中只有第四项的系数最大，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-258-3abcbefc15.png" alt="本地解析几何资料图片" width="896" height="448">，</p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-259-698242e2fe.png" alt="本地解析几何资料图片" width="1856" height="1184">展开式通项为<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-260-0c850e5e20.png" alt="本地解析几何资料图片" width="5312" height="1184">，</p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-261-a087e2d190.png" alt="本地解析几何资料图片" width="1408" height="448">，所以当<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-262-fcbfcf3835.png" alt="本地解析几何资料图片" width="1856" height="512">时为有理项，所以有理项共有4项，故选：D.</p>
-<p class="local-docx-line">【题组五  整除问题】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1252,7 +1106,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1278,7 +1132,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1299,19 +1153,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3.5051﹣1被7除后的余数为_____．</p>
-<p class="local-docx-line">【答案】0</p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-277-d424c4643d.png" alt="本地解析几何资料图片" width="9632" height="608"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/counting-local/ct35-a-278-69b35ff7ff.png" alt="本地解析几何资料图片" width="4960" height="608"></p>
-<p class="local-docx-line">因为49是7的倍数，所以5051﹣1被7除后的余数为0.</p>
-<p class="local-docx-line">故答案为：0</p>
-<p class="local-docx-line">【题组六 杨辉三角】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1325,7 +1169,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1360,7 +1204,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1385,7 +1229,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1404,7 +1248,7 @@
 
 :::
 
-## 抽取统计
+## 历史抽取统计（非核验结果）
 
 - 全量原卷题目：54 道。
 - 可折叠解析版题块：54 道。

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>函数概念与三种表示 | math.bozhanli.com</title>
+  <meta name="description" content="函数把允许的输入与唯一的输出联系起来。本节完成后，你应能判断一个对应是否为函数，并在表格、图像和解析式之间转换。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">函数</a><span>/</span><span>函数概念与三种表示</span></div>
+      <h1>函数概念与三种表示</h1>
+      <p>函数把允许的输入与唯一的输出联系起来。本节完成后，你应能判断一个对应是否为函数，并在表格、图像和解析式之间转换。</p>
+    </div>
+    <div class="subject-grid"><a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article"><h2 id="section-1">先修与对象</h2>
+<p>先修：实数、区间和代入计算。集合是对象的汇集，$x\in A$ 表示 $x$ 属于集合 $A$。区间 $[a,b]$ 包含端点，$(a,b)$ 不包含端点。</p>
+<p>设非空实数集 $A,B$。若对每个 $x\in A$，按对应规则 $f$ 都有唯一的 $y\in B$，称 $f:A\to B$ 为函数。$A$ 是定义域；实际取得的输出组成值域 $f(A)$，值域可能只是 $B$ 的一部分。</p>
+<p>“唯一”限制一个输入的输出数，不限制不同输入能否对应相同输出。$f(x)=x^2$ 中 $f(1)=f(-1)$ 完全合法。</p>
+<h2 id="section-2">三种语言如何翻译</h2>
+<p>解析式规定计算规则，表格记录输入输出，图像是所有点 $(x,f(x))$ 的集合。</p>
+<p>以 $f(x)=x^2$、定义域 $\{-1,0,2\}$ 为例：表格的三组对应是 $-1\mapsto1$、$0\mapsto0$、$2\mapsto4$；图像只有 $(-1,1),(0,0),(2,4)$ 三个点，不能擅自连成整条抛物线，因为定义域没有其他数。</p>
+<p>若定义域改为 $\mathbb R$，才得到完整抛物线。相同解析式、不同定义域，表示不同函数。</p>
+<h2 id="section-3">为什么竖线可以检验函数图像</h2>
+<p>固定输入 $x=c$ 相当于画竖线。若它与图形交于两个不同点，就给同一输入两个输出，违反唯一性。对已声明的定义域，每条相应竖线还必须有一个交点；只检查“至多一个”不能排除输入遗漏。</p>
+<details class="solution-toggle"><summary>例题：圆是否是函数图像</summary><div class="solution-body"><p>圆 $x^2+y^2=1$ 中，输入 $x=0$ 同时给出 $y=1,-1$，所以整个圆不是以 $x$ 为自变量的函数图像。保留上半圆后，$y=\sqrt{1-x^2}$ 在 $[-1,1]$ 上每个输入恰有一个输出，构成函数。</p></div></details>
+<h2 id="section-4">边界与反例</h2>
+<p>有限表格不能唯一确定一个未限定形式的函数。经过 $(0,0),(1,1)$ 的函数可以是 $x$，也可以是 $x^2$；两点以外的输出不同。只有额外给定“函数是一次函数”等条件，才能进一步确定。</p>
+<h2 id="section-5">基础练习</h2>
+<ol start="1"><li>$f(x)=x^2$ 的定义域为 $\{-2,1,2\}$，求值域。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>逐一代入得到 $4,1,4$，集合中重复值只写一次，所以值域是 $\{1,4\}$。三个输入不要求产生三个不同输出。</p></div></details>
+<ol start="2"><li>对应 $x\mapsto\pm\sqrt{x}$，定义域为 $[0,4]$，是否为函数？</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>不是。例如 $x=1$ 对应两个不同值 $1,-1$。如果只保留正根，则成为函数；$x=0$ 的唯一性不能代表其他输入。</p></div></details>
+<h2 id="section-6">混合检测与讲题</h2>
+<p>定义 $f(x)=x+1$（$x&lt;0$），$f(x)=x^2$（$x\ge0$）。求 $f(-2),f(0)$，并说明分段为什么不破坏函数定义。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>先按输入选择分支：$f(-2)=-1$，$f(0)=0$。两个输入区间互不重叠且覆盖实数，每个输入只进入一个分支。若把第一段改成 $x\le0$，零点同时得到 1 和 0，就不再是函数。</p></div></details>
+<p>讲题验收：能说清定义域、唯一输出和分支端点；不能只报计算结果。下一节研究哪些输入合法、哪些输出能真正达到。</p></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：实数运算、区间与一元不等式</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a rel="next" href="02-domain-range-zh.html">下一节：定义域与值域：合法输入与实际输出</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">先修与对象</a></li><li class="toc-level-2"><a href="#section-2">三种语言如何翻译</a></li><li class="toc-level-2"><a href="#section-3">为什么竖线可以检验函数图像</a></li><li class="toc-level-2"><a href="#section-4">边界与反例</a></li><li class="toc-level-2"><a href="#section-5">基础练习</a></li><li class="toc-level-2"><a href="#section-6">混合检测与讲题</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">函数</a></li><li>源文件：<code>content/09_high_school_math/00_functions/01_objects_representations_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="02-domain-range-zh.html">定义域与值域：合法输入与实际输出</a></h3><p>本节目标是从表达式限制求定义域，并通过“必要性＋可达到性”证明值域。先修：上一节函数定义、一元不等式、完全平方公式。</p></div><div class="note-item"><h3><a href="03-monotonicity-extrema-zh.html">单调性与最值：先比较，再求导</a></h3><p>先修：函数定义、区间、因式分解与不等式符号。本节先用定义理解增减，不使用导数。</p></div><div class="note-item"><h3><a href="04-symmetry-periodicity-zh.html">奇偶、周期与对称：检查整个定义域</a></h3><p>先修：函数定义、代入和图像。目标是把图形直觉翻译成带条件的等式。</p></div><div class="note-item"><h3><a href="05-elementary-graphs-zh.html">基本初等函数与图像变换</a></h3><p>先修：定义域、值域、单调性与奇偶性。目标是用关键性质重建图像，再理解平移与伸缩。</p></div><div class="note-item"><h3><a href="06-zeros-equations-zh.html">零点、方程与不等式</a></h3><p>先修：函数图像、单调性、二次方程和因式分解。目标是把方程解与函数零点连接起来，分清存在性与唯一性。</p></div><div class="note-item"><h3><a href="90-mixed-checkpoint-zh.html">函数：混合检测与讲题验收</a></h3><p>先独立完成，再展开解析。题目不标方法名称；请写出选择依据和限制条件。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

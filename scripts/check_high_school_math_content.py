@@ -450,7 +450,7 @@ def check_solid_geometry(errors: list[str]) -> None:
     full_html_path = OUTPUT_DIR / "04-solid-geometry" / "03-solid-geometry-local-full-exercises-zh.html"
     if full_html_path.exists():
         html = full_html_path.read_text(encoding="utf-8")
-        question_count = html.count("<h3>题 ")
+        question_count = len(re.findall(r"<h3(?:\s[^>]*)?>题\s+\d+", html))
         html_solution_count = html.count("<details class=\"solution-toggle\">")
         html_image_count = html.count("local-docx-image")
         if question_count < 132:
@@ -565,7 +565,7 @@ def check_analytic_geometry(errors: list[str]) -> None:
     full_html_path = OUTPUT_DIR / "05-analytic-geometry" / "13-analytic-geometry-local-full-exercises-zh.html"
     if full_html_path.exists():
         html = full_html_path.read_text(encoding="utf-8")
-        question_count = html.count("<h3>题 ")
+        question_count = len(re.findall(r"<h3(?:\s[^>]*)?>题\s+\d+", html))
         html_solution_count = html.count("<details class=\"solution-toggle\">")
         html_image_count = html.count("local-docx-image")
         if question_count < 134:
@@ -701,7 +701,7 @@ def check_counting_combinatorics(errors: list[str]) -> None:
     full_html_path = OUTPUT_DIR / "06-counting-combinatorics" / "07-counting-local-full-exercises-zh.html"
     if full_html_path.exists():
         html = full_html_path.read_text(encoding="utf-8")
-        question_count = html.count("<h3>题 ")
+        question_count = len(re.findall(r"<h3(?:\s[^>]*)?>题\s+\d+", html))
         html_solution_count = html.count("<details class=\"solution-toggle\">")
         html_image_count = html.count("local-docx-image")
         if question_count < 54:
@@ -738,7 +738,7 @@ def check_counting_combinatorics(errors: list[str]) -> None:
             COUNTING_SPRINT_DRILLS_FILE,
             sprint_drills,
             [
-                "# 排列组合满分冲刺训练：13 类模型，39 道复盘题",
+                "# 排列组合综合提高训练：13 类模型，39 道复盘题",
                 "## 1. 可重复与数位",
                 "## 5. 相同物品与隔板",
                 "## 9. 禁配与错排",

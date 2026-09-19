@@ -1,10 +1,10 @@
 # 椭圆
 
-椭圆是到两个定点距离和为常数的点的轨迹。高考中椭圆常作为圆锥曲线大题的主角，因为它既有清晰几何定义，又适合与直线联立产生韦达结构。
+椭圆是到两个不同定点距离和为常数的点的轨迹。高考中椭圆常作为圆锥曲线大题的主角，因为它既有清晰几何定义，又适合与直线联立产生韦达结构。
 
 ## 定义
 
-平面内到两个定点 $F_1,F_2$ 的距离和等于常数 $2a$ 的点的轨迹叫椭圆：
+平面内到两个不同定点 $F_1,F_2$ 的距离和等于常数 $2a$ 的点的轨迹叫椭圆：
 
 $$
 PF_1+PF_2=2a.
@@ -50,8 +50,8 @@ $$
   <ellipse cx="310" cy="150" rx="180" ry="95" fill="#f8f3ea" stroke="#1f2937" stroke-width="3"/>
   <line x1="90" y1="150" x2="530" y2="150" stroke="#94a3b8" stroke-width="2"/>
   <line x1="310" y1="35" x2="310" y2="265" stroke="#94a3b8" stroke-width="2"/>
-  <circle cx="235" cy="150" r="5" fill="#dc2626"/><circle cx="385" cy="150" r="5" fill="#dc2626"/>
-  <text x="218" y="135" font-size="17">F1</text><text x="392" y="135" font-size="17">F2</text>
+  <circle cx="157.11" cy="150" r="5" fill="#dc2626"/><circle cx="462.89" cy="150" r="5" fill="#dc2626"/>
+  <text x="138" y="135" font-size="17">F1</text><text x="471" y="135" font-size="17">F2</text>
   <text x="115" y="145" font-size="17">(-a,0)</text><text x="455" y="145" font-size="17">(a,0)</text>
   <text x="320" y="55" font-size="17">(0,b)</text><text x="320" y="255" font-size="17">(0,-b)</text>
 </svg>

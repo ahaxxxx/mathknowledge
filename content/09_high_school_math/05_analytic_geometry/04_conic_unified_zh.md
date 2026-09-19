@@ -4,7 +4,7 @@
 
 ## 三类定义
 
-椭圆：到两个定点 $F_1,F_2$ 的距离和为常数。
+椭圆：到两个不同定点 $F_1,F_2$ 的距离和为常数。
 
 $$
 PF_1+PF_2=2a,\qquad 2a>F_1F_2.
@@ -16,7 +16,7 @@ $$
 |PF_1-PF_2|=2a,\qquad 0<2a<F_1F_2.
 $$
 
-抛物线：到一个定点 $F$ 的距离等于到一条定直线 $l$ 的距离。
+抛物线：到一个定点 $F$ 的距离等于到一条定直线 $l$ 的距离，且必须有 $F\notin l$。若 $F$ 在线上，轨迹退化为过 $F$ 且垂直于 $l$ 的直线。
 
 $$
 PF=d(P,l).
@@ -33,18 +33,16 @@ $$
 椭圆和双曲线有两个焦点，所以通常以中心为原点；抛物线只有一个焦点和一条准线，所以通常以顶点为原点。
 
 :::diagram
-<svg viewBox="0 0 760 260" role="img" aria-label="三类圆锥曲线的距离定义">
-  <ellipse cx="150" cy="130" rx="95" ry="60" fill="#f8f3ea" stroke="#1f2937" stroke-width="3"/>
-  <circle cx="115" cy="130" r="5" fill="#dc2626"/><circle cx="185" cy="130" r="5" fill="#dc2626"/>
-  <text x="95" y="215" font-size="17">椭圆：距离和定值</text>
-  <path d="M345 60 C250 120 250 140 345 200" fill="none" stroke="#1f2937" stroke-width="3"/>
-  <path d="M415 60 C510 120 510 140 415 200" fill="none" stroke="#1f2937" stroke-width="3"/>
-  <circle cx="350" cy="130" r="5" fill="#dc2626"/><circle cx="410" cy="130" r="5" fill="#dc2626"/>
-  <text x="295" y="215" font-size="17">双曲线：距离差定值</text>
-  <path d="M610 55 Q520 130 610 205" fill="none" stroke="#1f2937" stroke-width="3"/>
-  <line x1="690" y1="45" x2="690" y2="215" stroke="#0f766e" stroke-width="3"/>
-  <circle cx="560" cy="130" r="5" fill="#dc2626"/>
-  <text x="545" y="235" font-size="17">抛物线：到点=到线</text>
+<svg viewBox="0 0 760 280" role="img" aria-label="椭圆、双曲线、抛物线的焦点与准线示意">
+<ellipse cx="125" cy="120" rx="90" ry="54" fill="none" stroke="#1f2937" stroke-width="3"/>
+<circle cx="53" cy="120" r="4" fill="#dc2626"/><circle cx="197" cy="120" r="4" fill="#dc2626"/>
+<text x="45" y="230" font-size="16">椭圆：距离和定值</text>
+<path d="M290 40 Q350 120 290 200 M450 40 Q390 120 450 200" fill="none" stroke="#1f2937" stroke-width="3"/>
+<text x="280" y="230" font-size="16">双曲线：两支向外延伸</text>
+<path d="M715 40 Q515 120 715 200" fill="none" stroke="#1f2937" stroke-width="3"/>
+<line x1="599" y1="30" x2="599" y2="210" stroke="#0f766e" stroke-width="2"/>
+<circle cx="631" cy="120" r="4" fill="#dc2626"/><text x="637" y="115" font-size="16">F</text>
+<text x="565" y="250" font-size="16">抛物线：到点=到线</text>
 </svg>
 :::
 
@@ -80,19 +78,19 @@ $$
 
 ## 训练题
 
-1. 若动点到 $F_1,F_2$ 距离和为定值，且定值大于 $F_1F_2$，轨迹是什么？
+1. 若动点到不同两点 $F_1,F_2$ 距离和为定值，且定值大于 $F_1F_2$，轨迹是什么？
 
 :::solution 查看解析
 轨迹是椭圆，两个定点是焦点。
 :::
 
-2. 若动点到 $F_1,F_2$ 距离差的绝对值为定值，且定值小于 $F_1F_2$，轨迹是什么？
+2. 若动点到 $F_1,F_2$ 距离差的绝对值为定值，且定值严格大于 0、小于 $F_1F_2$，轨迹是什么？
 
 :::solution 查看解析
 轨迹是双曲线。
 :::
 
-3. 若动点到点 $F$ 和直线 $l$ 的距离相等，轨迹是什么？
+3. 若 $F\notin l$，动点到点 $F$ 和直线 $l$ 的距离相等，轨迹是什么？
 
 :::solution 查看解析
 轨迹是抛物线，其中 $F$ 为焦点，$l$ 为准线。

@@ -34,25 +34,26 @@
       <h1>两个计数原理：加法与乘法</h1>
       <p>计数的第一原则是先描述对象。没有对象，就没有“多少种”。很多排列组合错误不是公式错，而是学生没有说清楚自己正在数什么。</p>
     </div>
-    <div class="subject-grid"><section class="page-section article"><h2>加法原理</h2>
+    <div class="subject-grid"><a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article"><h2 id="section-1">加法原理</h2>
 <p>如果完成一件事可以分成若干类，并且每一种完成方式只属于其中一类，那么总数等于各类数量相加：</p>
 <div class="math-display">$$
 N=N_1+N_2+\cdots+N_k.
 $$</div>
 <p>关键词是“分类”。分类必须互斥，不能重叠。比如从广州到北京，可以坐飞机或高铁，如果一趟行程不能同时算作飞机和高铁，那么可以相加。</p>
-<h2>乘法原理</h2>
+<h2 id="section-2">乘法原理</h2>
 <p>如果完成一件事要连续做若干步，每一步都有若干选择，并且前后步骤共同确定一个完整对象，那么总数等于各步数量相乘：</p>
 <div class="math-display">$$
 N=N_1N_2\cdots N_k.
 $$</div>
-<p>关键词是“分步”。每一步都必须完成，缺一步就不是完整对象。</p>
-<h2>加法和乘法的根本区别</h2>
+<p>关键词是“分步”。每一步都必须完成，缺一步就不是完整对象。还必须保证：对任意合法的前 $i-1$ 步选择，第 $i$ 步都恰有 $N_i$ 种后续选择，而且完整选择序列与所数对象一一对应。选择的具体内容可以依赖前一步，数量必须满足这一条件。</p>
+<p>若第一步有甲、乙两种选择，甲后有 2 种，乙后有 3 种，则总数为 $2+3=5$。此时不能给第二步随意指定统一选择数后相乘；应先分类，再在各类中分步。</p>
+<h2 id="section-3">加法和乘法的根本区别</h2>
 <p>加法回答：“这件事有几种互斥路线？”</p>
 <p>乘法回答：“这件事要经过几个连续部件？”</p>
 <p>比如要组成一个三位数：</p>
-<ol><li>先选百位。</li><li>再选十位。</li><li>再选个位。</li></ol>
+<ol start="1"><li>先选百位。</li><li>再选十位。</li><li>再选个位。</li></ol>
 <p>这是分步，所以乘。若题目问“组成三位偶数或三位奇数”，这是分类，所以加。</p>
-<h2>最小例子</h2>
+<h2 id="section-4">最小例子</h2>
 <p>用数字 $1,2,3,4$ 组成无重复数字的两位数，有多少个？</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p>对象是两位数，所以十位和个位都要确定。</p>
 <p>第一步选十位，有 $4$ 种；第二步选个位，因为不能重复，只剩 $3$ 种。</p>
@@ -61,11 +62,11 @@ $$</div>
 4\cdot3=12
 $$</div>
 <p>个。</p></div></details>
-<h2>容易错的地方</h2>
-<ol><li>分类重叠：同一种情况被两个类别同时包含。</li><li>分步不完整：只数了前两步，忘了最后一步。</li><li>顺序改变：本来是组合对象，却按排列数了。</li><li>限制条件后处理太晚：导致先数了很多非法对象再忘记扣。</li></ol>
-<h2>费曼讲题任务</h2>
+<h2 id="section-5">容易错的地方</h2>
+<ol start="1"><li>分类重叠：同一种情况被两个类别同时包含。</li><li>分步不完整：只数了前两步，忘了最后一步。</li><li>顺序改变：本来是组合对象，却按排列数了。</li><li>限制条件后处理太晚：导致先数了很多非法对象再忘记扣。</li></ol>
+<h2 id="section-6">费曼讲题任务</h2>
 <p>让学生不要直接说公式，而要说：</p>
-<ol><li>“我现在是在分类还是分步？”</li><li>“每一类是否互斥？”</li><li>“每一步是否都必须完成？”</li><li>“这个乘法结果是否唯一对应一个对象？”</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">计数原理/排列组合</a></li><li>源文件：<code>content/09_high_school_math/06_counting_combinatorics/01_counting_principles_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="02-permutations-combinations-zh.html">排列与组合：有序、无序和先选后排</a></h3><p>排列组合的分界线只有一句话：如果交换位置后算不同结果，就是排列；如果只关心选了哪些对象，不关心顺序，就是组合。</p></div><div class="note-item"><h3><a href="03-common-models-zh.html">常见模型：特殊优先、捆绑、插空、分组分配</a></h3><p>模型不是口诀，而是限制条件的处理顺序。限制越强，越应该优先处理。</p></div><div class="note-item"><h3><a href="04-binomial-theorem-zh.html">二项式定理：通项、系数和与赋值法</a></h3><p>二项式定理不是纯代数公式，它本质上也是计数：展开 $(a+b)^n$ 时，每一项都来自 $n$ 个括号中分别选择 $a$ 或 $b$。</p></div><div class="note-item"><h3><a href="05-counting-probability-bridge-zh.html">计数与概率接口：从样本点到古典概型</a></h3><p>排列组合之后很自然会进入概率。古典概型的核心公式很简单：</p></div><div class="note-item"><h3><a href="06-counting-expression-drills-zh.html">计数原理与排列组合：分层训练题库</a></h3><p>这页不是为了刷题量，而是为了训练学生把计数过程讲清楚。每道题讲解时都要回答四件事：数的对象是什么，分类还是分步，有序还是无序，为什么不重不漏。</p></div><div class="note-item"><h3><a href="07-counting-local-full-exercises-zh.html">计数原理与排列组合：考点 33-35 全量本地题库</a></h3><p>这一页把本地一轮复习资料中考点 33 到考点 35 的练习题按原考点整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后抽题、限时训练和查漏补缺。</p></div><div class="note-item"><h3><a href="08-counting-sprint-models-zh.html">排列组合满分模型：每一个公式都对应一种构造</a></h3><p>本页按本地《排列组合满分冲刺》的 13 组模型重建。模型不是见词套法：先定义要数的对象，再说明构造过程与对象之间为何一一对应，最后才写数。</p></div><div class="note-item"><h3><a href="09-counting-sprint-drills-zh.html">排列组合满分冲刺训练：13 类模型，39 道复盘题</a></h3><p>每组三题按“识别—变式—表达”安排。先只看题目，写下你数的对象和分类/分步依据；再展开解析检查。</p></div></div></section></aside></div>
+<ol start="1"><li>“我现在是在分类还是分步？”</li><li>“每一类是否互斥？”</li><li>“每一步是否都必须完成？”</li><li>“这个乘法结果是否唯一对应一个对象？”</li></ol></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：分类分步、排列组合、对象是否有序</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a rel="next" href="02-permutations-combinations-zh.html">下一节：排列与组合：有序、无序和先选后排</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li><li><a href="06-counting-expression-drills-zh.html">配套练习：计数原理与排列组合：分层训练题库</a></li><li><a href="09-counting-sprint-drills-zh.html">配套练习：排列组合综合提高训练：13 类模型，39 道复盘题</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">加法原理</a></li><li class="toc-level-2"><a href="#section-2">乘法原理</a></li><li class="toc-level-2"><a href="#section-3">加法和乘法的根本区别</a></li><li class="toc-level-2"><a href="#section-4">最小例子</a></li><li class="toc-level-2"><a href="#section-5">容易错的地方</a></li><li class="toc-level-2"><a href="#section-6">费曼讲题任务</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">计数原理/排列组合</a></li><li>源文件：<code>content/09_high_school_math/06_counting_combinatorics/01_counting_principles_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="02-permutations-combinations-zh.html">排列与组合：有序、无序和先选后排</a></h3><p>排列组合的分界线只有一句话：如果交换位置后算不同结果，就是排列；如果只关心选了哪些对象，不关心顺序，就是组合。</p></div><div class="note-item"><h3><a href="03-common-models-zh.html">常见模型：特殊优先、捆绑、插空、分组分配</a></h3><p>模型不是口诀，而是限制条件的处理顺序。限制越强，越应该优先处理。</p></div><div class="note-item"><h3><a href="04-binomial-theorem-zh.html">二项式定理：通项、系数和与赋值法</a></h3><p>二项式定理不是纯代数公式，它本质上也是计数：展开 $(a+b)^n$ 时，每一项都来自 $n$ 个括号中分别选择 $a$ 或 $b$。</p></div><div class="note-item"><h3><a href="05-counting-probability-bridge-zh.html">计数与概率接口：从样本点到古典概型</a></h3><p>排列组合之后很自然会进入概率。古典概型的核心公式很简单：</p></div><div class="note-item"><h3><a href="06-counting-expression-drills-zh.html">计数原理与排列组合：分层训练题库</a></h3><p>这页不是为了刷题量，而是为了训练学生把计数过程讲清楚。每道题讲解时都要回答四件事：数的对象是什么，分类还是分步，有序还是无序，为什么不重不漏。</p></div><div class="note-item"><h3><a href="07-counting-local-full-exercises-zh.html">计数原理与排列组合：考点 33-35 全量本地题库</a></h3><p>这一页把本地一轮复习资料中考点 33 到考点 35 的练习题按原考点整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后抽题、限时训练和查漏补缺。</p></div><div class="note-item"><h3><a href="08-counting-sprint-models-zh.html">排列组合满分模型：每一个公式都对应一种构造</a></h3><p>本页按本地《排列组合综合提高》的 13 组模型重建。模型不是见词套法：先定义要数的对象，再说明构造过程与对象之间为何一一对应，最后才写数。</p></div><div class="note-item"><h3><a href="09-counting-sprint-drills-zh.html">排列组合综合提高训练：13 类模型，39 道复盘题</a></h3><p>每组三题按“识别—变式—表达”安排。先只看题目，写下你数的对象和分类/分步依据；再展开解析检查。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

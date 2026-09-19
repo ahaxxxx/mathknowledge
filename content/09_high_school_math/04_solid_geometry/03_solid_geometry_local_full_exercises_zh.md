@@ -1,5 +1,7 @@
 # 立体几何与空间向量：考点 22-28 全量本地题库
 
+> 核验说明：题号与完整题干（含公式图片指纹）匹配仅核验对应关系，不代表答案已逐题验算。标为“解析待核验”的题目暂不展示原配解析。
+
 这一页把本地一轮复习资料中考点 22 到考点 28 的练习题按原考点完整整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后补充训练和查漏补缺。
 
 返回专题首页：[立体几何与空间向量](./README.md)。精选入门题库：[立体几何与空间向量：图形题库](./02_solid_geometry_exercises_zh.md)。
@@ -23,7 +25,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -48,7 +50,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -73,7 +75,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -97,7 +99,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -123,7 +125,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -149,21 +151,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">6．如图所示，在三棱柱ABC－A1B1C1中，AC＝BC，点D是AB的中点，求证：BC1∥平面CA1D．</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp22-a-099-292f045542.png" alt="本地资料图片" width="645" height="675"></div>
-<p class="local-docx-line">【答案】略</p>
-<p class="local-docx-line">【解析】证明：如图所示，连接AC1交A1C于点O，连接OD，则O是AC1的中点．∵点D是AB的中点，</p>
-<p class="local-docx-line">∴OD∥BC1.</p>
-<p class="local-docx-line">又∵OD⊂平面CA1D，BC1⊄平面CA1D，</p>
-<p class="local-docx-line">∴BC1∥平面CA1D.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp22-a-100-cc1c294b67.png" alt="本地资料图片" width="241" height="243"></div>
-<p class="local-docx-line">【题组二  构造平行四边形证线面平行】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -176,7 +166,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -202,7 +192,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -231,7 +221,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -258,26 +248,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．在如图所示的五面体<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-181-e4c09038a6.png" alt="本地资料图片" width="1664" height="448">中,四边形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-182-505254b4f2.png" alt="本地资料图片" width="1152" height="448">为菱形,且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-183-57ceb70070.png" alt="本地资料图片" width="8352" height="512">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-184-f72cc3b48c.png" alt="本地资料图片" width="640" height="448">中点，求证:<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-185-281e886896.png" alt="本地资料图片" width="1344" height="480">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-186-021237beee.png" alt="本地资料图片" width="896" height="416"></p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp22-a-187-c8c8220da3.png" alt="本地资料图片" width="270" height="180"></div>
-<p class="local-docx-line">【答案】见解析</p>
-<p class="local-docx-line">【解析】取<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-188-88c22376f3.png" alt="本地资料图片" width="640" height="416">中点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-189-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">,连接<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-190-bf9eea3aa1.png" alt="本地资料图片" width="1440" height="512">,</p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-191-df38d122fc.png" alt="本地资料图片" width="928" height="512">分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-192-9b563fa7a5.png" alt="本地资料图片" width="1312" height="512">的中点,所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-193-217515b6ff.png" alt="本地资料图片" width="1696" height="448">,且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-194-29059e9ca1.png" alt="本地资料图片" width="1984" height="992">,</p>
-<p class="local-docx-line">因为四边形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-195-505254b4f2.png" alt="本地资料图片" width="1152" height="448">为菱形,所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-196-40151dca04.png" alt="本地资料图片" width="2976" height="544">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-197-0af8419f56.png" alt="本地资料图片" width="2112" height="512">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-198-446b4fa14f.png" alt="本地资料图片" width="1120" height="416">,</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-199-a276cdbba6.png" alt="本地资料图片" width="1024" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-200-446b4fa14f.png" alt="本地资料图片" width="1120" height="416">.</p>
-<p class="local-docx-line">因为平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-201-d1ddd6cc78.png" alt="本地资料图片" width="1440" height="480">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-202-dfd5de05c5.png" alt="本地资料图片" width="3104" height="512">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-203-0f478d082a.png" alt="本地资料图片" width="1152" height="448">,</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-204-cb11c3dbf9.png" alt="本地资料图片" width="1600" height="480">.</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-205-493deca9fd.png" alt="本地资料图片" width="2112" height="448">,所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-206-fae7b99220.png" alt="本地资料图片" width="1632" height="896">.</p>
-<p class="local-docx-line">所以四边形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-207-d34d5b203b.png" alt="本地资料图片" width="1184" height="448">为平行四边形，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-208-8c44983eaa.png" alt="本地资料图片" width="1664" height="448">.</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-209-3a18ad8932.png" alt="本地资料图片" width="992" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-210-021237beee.png" alt="本地资料图片" width="896" height="416">，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-211-a7ab5fb827.png" alt="本地资料图片" width="1088" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-212-021237beee.png" alt="本地资料图片" width="896" height="416">,所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-213-daf2eb1eb5.png" alt="本地资料图片" width="1088" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-214-021237beee.png" alt="本地资料图片" width="896" height="416">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp22-a-215-355004a6ec.png" alt="本地资料图片" width="263" height="166"></div>
-<p class="local-docx-line">【题组三  线面垂直证线面平行】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -290,7 +263,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -321,43 +294,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2．已知正方体<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-238-d5d3fd3107.png" alt="本地资料图片" width="2848" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-239-befdba0474.png" alt="本地资料图片" width="800" height="512">分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-240-3e35dbcf65.png" alt="本地资料图片" width="672" height="448">和<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-241-3ce21cbd26.png" alt="本地资料图片" width="736" height="576">上的点，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-242-49f54d4afc.png" alt="本地资料图片" width="1600" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-243-7599f7d8d9.png" alt="本地资料图片" width="1696" height="576">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp22-a-244-71b199ef63.png" alt="本地资料图片" width="299" height="309"></div>
-<p class="local-docx-line">（1）求证：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-245-11f559b71a.png" alt="本地资料图片" width="1632" height="576">；</p>
-<p class="local-docx-line">（2）求证：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-246-a33d913614.png" alt="本地资料图片" width="2080" height="576">三条直线交于一点.</p>
-<p class="local-docx-line">【答案】（1）详见解析；（2）详见解析</p>
-<p class="local-docx-line">【解析】证明：(1)如图，连结<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-247-9e87c270b7.png" alt="本地资料图片" width="672" height="576">和<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-248-21b99141d1.png" alt="本地资料图片" width="704" height="576">，</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp22-a-249-4285dab19d.png" alt="本地资料图片" width="316" height="310"></div>
-<p class="local-docx-line">在正方体<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-250-d5d3fd3107.png" alt="本地资料图片" width="2848" height="576">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-251-7846b24855.png" alt="本地资料图片" width="1728" height="576">，</p>
-<p class="local-docx-line">∵<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-252-7599f7d8d9.png" alt="本地资料图片" width="1696" height="576">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-253-158808f2ca.png" alt="本地资料图片" width="1664" height="576">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-254-49f54d4afc.png" alt="本地资料图片" width="1600" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-255-2f41e92b02.png" alt="本地资料图片" width="2336" height="576">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-256-d0465f7e37.png" alt="本地资料图片" width="2656" height="576">．</p>
-<p class="local-docx-line">又在正方体<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-257-d5d3fd3107.png" alt="本地资料图片" width="2848" height="576">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-258-91612db77d.png" alt="本地资料图片" width="1728" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-259-19ad6f7edb.png" alt="本地资料图片" width="1824" height="576">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-260-8c3523c67b.png" alt="本地资料图片" width="2560" height="576"></p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-261-3eb9ef4fbb.png" alt="本地资料图片" width="2848" height="576">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-262-4c9258ea0f.png" alt="本地资料图片" width="2880" height="576">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-263-b0d379c2e5.png" alt="本地资料图片" width="1728" height="576">．</p>
-<p class="local-docx-line">同理可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-264-e0927b564f.png" alt="本地资料图片" width="1728" height="576">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-265-f9dcfee9cc.png" alt="本地资料图片" width="2400" height="576">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-266-45a9636366.png" alt="本地资料图片" width="2752" height="576">．</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-267-e885548455.png" alt="本地资料图片" width="640" height="416">∥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-268-edb01c97b1.png" alt="本地资料图片" width="704" height="576">.</p>
-<p class="local-docx-line">（2）由题意可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-269-314b77b54d.png" alt="本地资料图片" width="1600" height="576">（或者<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-270-848b006c31.png" alt="本地资料图片" width="768" height="576">和<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-271-7f3bbb245a.png" alt="本地资料图片" width="576" height="384">不平行），</p>
-<p class="local-docx-line">又由(1)知<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-272-e885548455.png" alt="本地资料图片" width="640" height="416">∥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-273-edb01c97b1.png" alt="本地资料图片" width="704" height="576">，</p>
-<p class="local-docx-line">所以直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-274-848b006c31.png" alt="本地资料图片" width="768" height="576">和<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-275-7f3bbb245a.png" alt="本地资料图片" width="576" height="384">必相交，不妨设<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-276-59a5a14404.png" alt="本地资料图片" width="2336" height="576">，</p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-277-6ca4e37712.png" alt="本地资料图片" width="1408" height="576">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-278-04d0c30306.png" alt="本地资料图片" width="3168" height="576">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-279-245eca5a39.png" alt="本地资料图片" width="2720" height="576">，</p>
-<p class="local-docx-line">同理<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-280-1c2862e087.png" alt="本地资料图片" width="2528" height="512">．</p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-281-2e1211cc3c.png" alt="本地资料图片" width="5184" height="576">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-282-564526db33.png" alt="本地资料图片" width="1312" height="448">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-283-7f3bbb245a.png" alt="本地资料图片" width="576" height="384">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-284-848b006c31.png" alt="本地资料图片" width="768" height="576">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-285-b7d76bdde2.png" alt="本地资料图片" width="640" height="416">三条直线交于一点．</p>
-<p class="local-docx-line">【题组四  三角形相似比证线线平行】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -370,7 +309,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -399,21 +338,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2．如图，三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-329-4e8adfd87a.png" alt="本地资料图片" width="1504" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-330-8a42f8b11f.png" alt="本地资料图片" width="928" height="416">底面ABC，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-331-ffc99e70fa.png" alt="本地资料图片" width="1472" height="416">，点E、F分别为PA、AB的中点，点D在PC上，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-332-8e323ac58e.png" alt="本地资料图片" width="1824" height="448">,明：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-333-d3ee3a9725.png" alt="本地资料图片" width="928" height="448">平面BDE；</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp22-a-334-695ac70036.png" alt="本地资料图片" width="221" height="258"></div>
-<p class="local-docx-line">【答案】见解析</p>
-<p class="local-docx-line">【解析】设AE中点为G，连结GF，GC，</p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-335-7d7c42aa15.png" alt="本地资料图片" width="1568" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-336-e262f9c9d6.png" alt="本地资料图片" width="960" height="416">平面EBD.</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-337-3de825e66f.png" alt="本地资料图片" width="2368" height="992">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-338-a09c448ae8.png" alt="本地资料图片" width="1600" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-339-0ece601aa2.png" alt="本地资料图片" width="1056" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-340-c0a1a400b5.png" alt="本地资料图片" width="896" height="416">，</p>
-<p class="local-docx-line">∴平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-341-57f5b3a9d7.png" alt="本地资料图片" width="1280" height="448">平面EBD，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-342-c59254b048.png" alt="本地资料图片" width="1024" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-343-4fc95f9e6e.png" alt="本地资料图片" width="928" height="576">；</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp22-a-344-c94ef3976d.png" alt="本地资料图片" width="221" height="258"></div>
-<p class="local-docx-line">【题组五  线面平行性质证线线平行】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -426,7 +353,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -453,7 +380,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -478,7 +405,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -504,22 +431,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．如图所示，已知三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-434-78c0526327.png" alt="本地资料图片" width="1504" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-435-4149aeb8e7.png" alt="本地资料图片" width="384" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-436-ef34cb6bc9.png" alt="本地资料图片" width="416" height="416">分别是边<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-437-d28a4b1ac3.png" alt="本地资料图片" width="640" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-438-18dc66aafe.png" alt="本地资料图片" width="672" height="416">的中点，过<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-439-e885548455.png" alt="本地资料图片" width="640" height="416">的平面截三棱锥得到的截面为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-440-f11de91a89.png" alt="本地资料图片" width="1184" height="448">，求证：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-441-e51a8c2a99.png" alt="本地资料图片" width="1472" height="448">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp22-a-442-76c7c60199.png" alt="本地资料图片" width="150" height="165"></div>
-<p class="local-docx-line">【答案】证明见解析</p>
-<p class="local-docx-line">【解析】证明：在<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-443-b3330db505.png" alt="本地资料图片" width="1248" height="416">中，因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-444-4149aeb8e7.png" alt="本地资料图片" width="384" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-445-ef34cb6bc9.png" alt="本地资料图片" width="416" height="416">分别是边<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-446-d28a4b1ac3.png" alt="本地资料图片" width="640" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-447-18dc66aafe.png" alt="本地资料图片" width="672" height="416">的中点，</p>
-<p class="local-docx-line">所以由三角形的中位线定理可知<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-448-9061a988f3.png" alt="本地资料图片" width="1376" height="448">.</p>
-<p class="local-docx-line">又因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-449-698660035d.png" alt="本地资料图片" width="992" height="448">面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-450-4bae6d8f66.png" alt="本地资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-451-33d06495f8.png" alt="本地资料图片" width="1024" height="416">面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-452-4bae6d8f66.png" alt="本地资料图片" width="896" height="448">，</p>
-<p class="local-docx-line">所以由线面平行的判定定理可知<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-453-d699321197.png" alt="本地资料图片" width="896" height="448">面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-454-4bae6d8f66.png" alt="本地资料图片" width="896" height="448">.</p>
-<p class="local-docx-line">又因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-455-0e4b61e0e8.png" alt="本地资料图片" width="992" height="416">面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-456-f11de91a89.png" alt="本地资料图片" width="1184" height="448">，面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-457-69c72dae03.png" alt="本地资料图片" width="1504" height="448">面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-458-fff5846f62.png" alt="本地资料图片" width="1888" height="448">，</p>
-<p class="local-docx-line">所以由线面平行的性质定理可知<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-459-e51a8c2a99.png" alt="本地资料图片" width="1472" height="448">.</p>
-<p class="local-docx-line">【题组六 面面平行性质证线线平行】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -532,7 +446,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -562,7 +476,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -595,7 +509,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -625,7 +539,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -657,26 +571,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">5．如图，在四棱柱<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-585-b117197e5a.png" alt="本地资料图片" width="2816" height="512">中，点M和N分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-586-21b99141d1.png" alt="本地资料图片" width="704" height="576">和<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-587-5fc66bc337.png" alt="本地资料图片" width="800" height="576">的中点、求证：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-588-9843502531.png" alt="本地资料图片" width="1120" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-589-505254b4f2.png" alt="本地资料图片" width="1152" height="448">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp22-a-590-049d9fb94b.png" alt="本地资料图片" width="324" height="317"></div>
-<p class="local-docx-line">【答案】证明见解析.</p>
-<p class="local-docx-line">【解析】证明：如图，</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp22-a-591-beb27c82ee.png" alt="本地资料图片" width="304" height="318"></div>
-<p class="local-docx-line">设E为棱<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-592-349dd38305.png" alt="本地资料图片" width="640" height="512">的中点，连接<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-593-3b3d4f836d.png" alt="本地资料图片" width="1568" height="448">.</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-594-a2d43e6e0c.png" alt="本地资料图片" width="1440" height="448">分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-595-21b99141d1.png" alt="本地资料图片" width="704" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-596-c72bf0e8ec.png" alt="本地资料图片" width="736" height="576">的中点，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-597-a5b6c591ba.png" alt="本地资料图片" width="2976" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-598-fc6c2f94f7.png" alt="本地资料图片" width="1568" height="448">.</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-599-0bcf364988.png" alt="本地资料图片" width="1856" height="448">在平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-600-505254b4f2.png" alt="本地资料图片" width="1152" height="448">的外部，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-601-9ea53fad73.png" alt="本地资料图片" width="1376" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-602-505254b4f2.png" alt="本地资料图片" width="1152" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-603-0d6398bf5c.png" alt="本地资料图片" width="640" height="448">∥平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-604-505254b4f2.png" alt="本地资料图片" width="1152" height="448">.又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-605-888551e24c.png" alt="本地资料图片" width="2304" height="448">，</p>
-<p class="local-docx-line">∴平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-606-f2af9014ef.png" alt="本地资料图片" width="1344" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-607-505254b4f2.png" alt="本地资料图片" width="1152" height="448">.</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-608-491c8b3469.png" alt="本地资料图片" width="1088" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-609-c78e0407a6.png" alt="本地资料图片" width="960" height="448">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-610-670122b431.png" alt="本地资料图片" width="1622" height="493">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp22-a-611-505254b4f2.png" alt="本地资料图片" width="1152" height="448">.</p>
-<p class="local-docx-line">【题组七  面面平行】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -692,7 +589,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -731,7 +628,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -772,7 +669,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -797,7 +694,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -823,7 +720,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -849,7 +746,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -871,7 +768,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -899,23 +796,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">6．如图，已知<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-137-9c05ea61cd.png" alt="本地资料图片" width="992" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-138-505254b4f2.png" alt="本地资料图片" width="1152" height="448">，四边形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-139-81eb2ffd83.png" alt="本地资料图片" width="992" height="384">为矩形，四边形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-140-505254b4f2.png" alt="本地资料图片" width="1152" height="448">为直角梯形，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-141-ecfbef8ed3.png" alt="本地资料图片" width="2293" height="493">，AB∥CD，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-142-989d9a85e7.png" alt="本地资料图片" width="3104" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-143-fb9676a305.png" alt="本地资料图片" width="1216" height="416">,求证：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-144-6338c52003.png" alt="本地资料图片" width="992" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-145-9057cca70b.png" alt="本地资料图片" width="896" height="448"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-146-c3070cc598.png" alt="本地资料图片" width="204" height="109"></p>
-<p class="local-docx-line">【答案】见解析</p>
-<p class="local-docx-line">【解析】证明：过点C作CM⊥AB，垂足为M，因为AD⊥DC，</p>
-<p class="local-docx-line">所以四边形ADCM为矩形，所以AM＝MB＝2，</p>
-<p class="local-docx-line">又AD＝2，AB＝4，所以AC＝2<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-147-28b1b80c7f.png" alt="本地资料图片" width="40" height="43">，CM＝2，BC＝2<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-148-28b1b80c7f.png" alt="本地资料图片" width="40" height="43">，</p>
-<p class="local-docx-line">所以AC2＋BC2＝AB2，所以AC⊥BC，因为AF⊥平面ABCD，AF∥BE，</p>
-<p class="local-docx-line">所以BE⊥平面ABCD，所以BE⊥AC.</p>
-<p class="local-docx-line">又BE⊂平面BCE，BC⊂平面BCE，且BE∩BC＝B，</p>
-<p class="local-docx-line">所以AC⊥平面BCE.</p>
-<p class="local-docx-line">【题组二  面面垂直】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -928,7 +811,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -958,7 +841,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -989,7 +872,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1012,7 +895,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1047,23 +930,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">5．梯形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-274-505254b4f2.png" alt="本地资料图片" width="1152" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-275-55fb363e5a.png" alt="本地资料图片" width="1440" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-276-3620af15bf.png" alt="本地资料图片" width="1856" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-277-e7ccf387a6.png" alt="本地资料图片" width="1888" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-278-03b565c1ce.png" alt="本地资料图片" width="2176" height="448">，过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-279-376ad671b1.png" alt="本地资料图片" width="384" height="416">作<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-280-6e0e530c7a.png" alt="本地资料图片" width="1568" height="416">，交<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-281-f72cc3b48c.png" alt="本地资料图片" width="640" height="448">于<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-282-4149aeb8e7.png" alt="本地资料图片" width="384" height="416">（如图1）.现沿<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-283-3177d1291d.png" alt="本地资料图片" width="640" height="416">将<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-284-9f3f300e81.png" alt="本地资料图片" width="1088" height="416">折起，使得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-285-9adaa5278f.png" alt="本地资料图片" width="1632" height="448">，得四棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-286-34f5445661.png" alt="本地资料图片" width="1760" height="448">（如图2）求证：平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-287-ea3e92afb0.png" alt="本地资料图片" width="1248" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-288-1c61998676.png" alt="本地资料图片" width="896" height="448"></p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp23-a-289-db416ef4f6.png" alt="本地资料图片" width="479" height="206"></div>
-<p class="local-docx-line">.</p>
-<p class="local-docx-line">【答案】证明见解析</p>
-<p class="local-docx-line">【解析】在<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-290-9f3f300e81.png" alt="本地资料图片" width="1088" height="416">中，∵<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-291-3620af15bf.png" alt="本地资料图片" width="1856" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-292-6e0e530c7a.png" alt="本地资料图片" width="1568" height="416">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-293-2b1c639efc.png" alt="本地资料图片" width="1792" height="992">，又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-294-e7ccf387a6.png" alt="本地资料图片" width="1888" height="992">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-295-7fa764f981.png" alt="本地资料图片" width="1440" height="448">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-296-de6a855a46.png" alt="本地资料图片" width="1408" height="448">，∴四边形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-297-960cf6ae82.png" alt="本地资料图片" width="1152" height="448">为平行四边形.</p>
-<p class="local-docx-line">∵<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-298-07ef40fe5c.png" alt="本地资料图片" width="1600" height="448">，∴平行四边形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-299-960cf6ae82.png" alt="本地资料图片" width="1152" height="448">为菱形，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-300-57432b44c2.png" alt="本地资料图片" width="1632" height="448">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-301-9adaa5278f.png" alt="本地资料图片" width="1632" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-302-da34bc42e2.png" alt="本地资料图片" width="1696" height="512">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-303-1c61998676.png" alt="本地资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-304-b8910eb7ec.png" alt="本地资料图片" width="2208" height="480">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-305-aa71fce7da.png" alt="本地资料图片" width="896" height="384">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-306-1c61998676.png" alt="本地资料图片" width="896" height="448">.</p>
-<p class="local-docx-line">又∵<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-307-0b8372f97c.png" alt="本地资料图片" width="672" height="416"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-308-dcfd84c9ba.png" alt="本地资料图片" width="384" height="320">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-309-021237beee.png" alt="本地资料图片" width="896" height="416">，∴.平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-310-ea3e92afb0.png" alt="本地资料图片" width="1248" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp23-a-311-1c61998676.png" alt="本地资料图片" width="896" height="448">.</p>
-<p class="local-docx-line">【题组三 线线垂直】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1076,7 +945,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1104,7 +973,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1136,7 +1005,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1173,7 +1042,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1208,7 +1077,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1257,7 +1126,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1297,7 +1166,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1339,7 +1208,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1380,7 +1249,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1420,32 +1289,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">8．如图，在几何体ABCDEF中，四边形ABCD是菱形，BE⊥平面ABCD，DF∥BE，且DF＝2BE＝2，EF＝3.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp24-a-296-c6a3064d2e.png" alt="本地资料图片" width="400" height="314"></div>
-<p class="local-docx-line">（1）证明：平面ACF⊥平面BEFD．</p>
-<p class="local-docx-line">（2）若，求几何体ABCDEF的体积．</p>
-<p class="local-docx-line">【答案】（1）见解析;（2）∴.</p>
-<p class="local-docx-line">【解析】（1）证明：∵四边形是菱形，∴</p>
-<p class="local-docx-line">∵平面∴</p>
-<p class="local-docx-line">∴平面</p>
-<p class="local-docx-line">∴平面⊥平面</p>
-<p class="local-docx-line">（2）设与的交点为，，</p>
-<p class="local-docx-line">由（1）得平面，</p>
-<p class="local-docx-line">∵平面∴，</p>
-<p class="local-docx-line">∵，∴，</p>
-<p class="local-docx-line">∴，∴</p>
-<p class="local-docx-line">∴，</p>
-<p class="local-docx-line">∵，∴</p>
-<p class="local-docx-line">∴，</p>
-<p class="local-docx-line">∴，∴</p>
-<p class="local-docx-line">∴.</p>
-<p class="local-docx-line">【题组二 表面积】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1460,7 +1306,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1502,7 +1348,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1543,36 +1389,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．如图，在四棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-391-2042709d87.png" alt="本地资料图片" width="1760" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-392-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">为等腰三角形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-393-ac9a283a2a.png" alt="本地资料图片" width="928" height="416">的底边中点，平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-394-ac9a283a2a.png" alt="本地资料图片" width="928" height="416">与等腰梯形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-395-b23837c3be.png" alt="本地资料图片" width="1152" height="448">所在的平面垂直，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-396-2a62ff3be4.png" alt="本地资料图片" width="1408" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-397-aef9056d24.png" alt="本地资料图片" width="2368" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-398-62c7e10827.png" alt="本地资料图片" width="3680" height="448">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp24-a-399-b1847bafb6.png" alt="本地资料图片" width="454" height="410"></div>
-<p class="local-docx-line">（1）求证：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-400-bc63f05a46.png" alt="本地资料图片" width="1058" height="458">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-401-ac6d6e6517.png" alt="本地资料图片" width="928" height="448">；</p>
-<p class="local-docx-line">（2）若三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-402-0ce7f4ddf3.png" alt="本地资料图片" width="1504" height="448">的体积为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-403-6146827c3d.png" alt="本地资料图片" width="640" height="1088">，求该三棱锥的侧面积.</p>
-<p class="local-docx-line">【答案】（1）证明见解析；（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-404-2a4a5769ae.png" alt="本地资料图片" width="832" height="1088"></p>
-<p class="local-docx-line">【解析】（1）过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-405-4149aeb8e7.png" alt="本地资料图片" width="384" height="416">，作<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-406-f35ec8d020.png" alt="本地资料图片" width="1696" height="448">，交<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-407-f72cc3b48c.png" alt="本地资料图片" width="640" height="448">于<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-408-92ee052543.png" alt="本地资料图片" width="512" height="416">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp24-a-409-ef7faf5e8b.png" alt="本地资料图片" width="502" height="417"></div>
-<p class="local-docx-line">由已知得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-410-197603f799.png" alt="本地资料图片" width="2144" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-411-785e4cd24a.png" alt="本地资料图片" width="2240" height="512">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-412-05997e493c.png" alt="本地资料图片" width="2112" height="512"></p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-413-f35ec8d020.png" alt="本地资料图片" width="1696" height="448">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-414-8e9138880d.png" alt="本地资料图片" width="2176" height="512">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-415-c8d9c68d90.png" alt="本地资料图片" width="4032" height="512">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-416-496163abe3.png" alt="本地资料图片" width="1696" height="416">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-417-8d17fbc40a.png" alt="本地资料图片" width="1600" height="448">.</p>
-<p class="local-docx-line">由已知得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-418-141770f8bb.png" alt="本地资料图片" width="1600" height="448">，</p>
-<p class="local-docx-line">因为平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-419-3a966bd20b.png" alt="本地资料图片" width="1120" height="384">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-420-b23837c3be.png" alt="本地资料图片" width="1152" height="448">，平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-421-841bb15f67.png" alt="本地资料图片" width="1216" height="480">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-422-221da8b1ed.png" alt="本地资料图片" width="2080" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-423-284fa1153c.png" alt="本地资料图片" width="960" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-424-ac9a283a2a.png" alt="本地资料图片" width="928" height="416">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-425-bafe1fca04.png" alt="本地资料图片" width="960" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-426-b23837c3be.png" alt="本地资料图片" width="1152" height="448">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-427-0639459c62.png" alt="本地资料图片" width="1536" height="448">，</p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-428-0d6008fab7.png" alt="本地资料图片" width="2208" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-429-bc63f05a46.png" alt="本地资料图片" width="1058" height="458">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-430-ac6d6e6517.png" alt="本地资料图片" width="928" height="448">.</p>
-<p class="local-docx-line">（2）在<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-431-7d50cab326.png" alt="本地资料图片" width="1088" height="448">中，由余弦定理可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-432-2d95f27570.png" alt="本地资料图片" width="1504" height="576">，同理<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-433-6042f634aa.png" alt="本地资料图片" width="1472" height="576">，因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-434-fd8abb6149.png" alt="本地资料图片" width="2240" height="512">，</p>
-<p class="local-docx-line">所以，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-435-4496a81f1f.png" alt="本地资料图片" width="6272" height="1088"></p>
-<p class="local-docx-line">又因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-436-4ad1a0c39b.png" alt="本地资料图片" width="6048" height="1088"></p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-437-332d668915.png" alt="本地资料图片" width="1184" height="448"></p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-438-fe19e6b81a.png" alt="本地资料图片" width="3104" height="1088">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-439-3d943601ca.png" alt="本地资料图片" width="4448" height="1088">，</p>
-<p class="local-docx-line">所以三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-440-0ce7f4ddf3.png" alt="本地资料图片" width="1504" height="448">的侧面积为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-441-2a4a5769ae.png" alt="本地资料图片" width="832" height="1088">.</p>
-<p class="local-docx-line">【题组三 求参数】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1588,7 +1407,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1639,38 +1458,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2．在四棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-513-67b0714e72.png" alt="本地资料图片" width="1760" height="448">中，底面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-514-505254b4f2.png" alt="本地资料图片" width="1152" height="448">是平行四边形，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-515-955caa6bc6.png" alt="本地资料图片" width="2208" height="512">，侧面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-516-393daa6c7a.png" alt="本地资料图片" width="1184" height="416">底面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-517-505254b4f2.png" alt="本地资料图片" width="1152" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-518-f6f6afe004.png" alt="本地资料图片" width="1536" height="416">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-519-ece549c206.png" alt="本地资料图片" width="3316" height="493">, <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-520-befdba0474.png" alt="本地资料图片" width="800" height="512">分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-521-e671e623a7.png" alt="本地资料图片" width="1344" height="512">的中点，过<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-522-e885548455.png" alt="本地资料图片" width="640" height="416">的平面与面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-523-f5e951acaf.png" alt="本地资料图片" width="896" height="448">交于<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-524-a84ffdbb9c.png" alt="本地资料图片" width="960" height="512">两点.</p>
-<p class="local-docx-line">（1）求证： <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-525-ee6de06ef0.png" alt="本地资料图片" width="1312" height="416">；</p>
-<p class="local-docx-line">（2）求证：平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-526-e76e3d1ad6.png" alt="本地资料图片" width="1376" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-527-2d68c8f03c.png" alt="本地资料图片" width="896" height="448">；</p>
-<p class="local-docx-line">（3）设<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-528-7ba8536ee7.png" alt="本地资料图片" width="1184" height="896">，当<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-529-92e05d43dd.png" alt="本地资料图片" width="352" height="448">为何值时四棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-530-832e61e688.png" alt="本地资料图片" width="1696" height="416">的体积等于<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-531-bb93cdeecd.png" alt="本地资料图片" width="224" height="416">，求<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-532-92e05d43dd.png" alt="本地资料图片" width="352" height="448">的值.</p>
-<p class="local-docx-line">【答案】（1）见证明；（2）见证明；（3）<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-533-22e2906a91.png" alt="本地资料图片" width="992" height="992"></p>
-<p class="local-docx-line">【解析】（1）在平行四边形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-534-d110b76d34.png" alt="本地资料图片" width="1152" height="448">中 ，由<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-535-0d5fa2a6fd.png" alt="本地资料图片" width="800" height="512">分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-536-ee3949d23e.png" alt="本地资料图片" width="1344" height="512">的中点，得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-537-86dcd77442.png" alt="本地资料图片" width="1472" height="448"></p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-538-b5f4c4a88b.png" alt="本地资料图片" width="1024" height="448">面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-539-5f3a57cbee.png" alt="本地资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-540-b21d863b94.png" alt="本地资料图片" width="992" height="448">面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-541-5f3a57cbee.png" alt="本地资料图片" width="896" height="448">.</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-542-ff5daee64e.png" alt="本地资料图片" width="896" height="448">面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-543-5f3a57cbee.png" alt="本地资料图片" width="896" height="448">.</p>
-<p class="local-docx-line">过<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-544-2e889a6fd8.png" alt="本地资料图片" width="640" height="416">的平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-545-f6bfcfd3ee.png" alt="本地资料图片" width="1216" height="448">与面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-546-5f3a57cbee.png" alt="本地资料图片" width="896" height="448">交于<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-547-cd48b13cb1.png" alt="本地资料图片" width="736" height="448">.</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-548-2e889a6fd8.png" alt="本地资料图片" width="640" height="416">∥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-549-cd48b13cb1.png" alt="本地资料图片" width="736" height="448">.</p>
-<p class="local-docx-line">（2）证明：在平行四边形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-550-d110b76d34.png" alt="本地资料图片" width="1152" height="448">中，</p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-551-5e24795155.png" alt="本地资料图片" width="1568" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-552-89c143a431.png" alt="本地资料图片" width="2208" height="512">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-553-4c7554cd32.png" alt="本地资料图片" width="1600" height="448">.</p>
-<p class="local-docx-line">由（1）得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-554-265aab42e8.png" alt="本地资料图片" width="1344" height="448">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-555-c77c45688b.png" alt="本地资料图片" width="1600" height="448">.</p>
-<p class="local-docx-line">因为侧面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-556-bf81e231d1.png" alt="本地资料图片" width="1184" height="416">底面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-557-d110b76d34.png" alt="本地资料图片" width="1152" height="448">，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-558-332b97ac64.png" alt="本地资料图片" width="1536" height="416">，面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-559-70739adcdd.png" alt="本地资料图片" width="1184" height="416">面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-560-e0e7efd07e.png" alt="本地资料图片" width="1952" height="512"></p>
-<p class="local-docx-line">且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-561-2d051f52a7.png" alt="本地资料图片" width="960" height="416">面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-562-c3b8cdbb2b.png" alt="本地资料图片" width="832" height="416">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-563-a57ca1025a.png" alt="本地资料图片" width="928" height="416">底面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-564-d110b76d34.png" alt="本地资料图片" width="1152" height="448">.</p>
-<p class="local-docx-line">又因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-565-aaa831efac.png" alt="本地资料图片" width="992" height="416">底面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-566-d110b76d34.png" alt="本地资料图片" width="1152" height="448">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-567-66b5c8e4d1.png" alt="本地资料图片" width="1536" height="416">.</p>
-<p class="local-docx-line">又因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-568-856e18aa48.png" alt="本地资料图片" width="2176" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-569-2d051f52a7.png" alt="本地资料图片" width="960" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-570-9b77f4b931.png" alt="本地资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-571-94c893cbc4.png" alt="本地资料图片" width="1024" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-572-9b77f4b931.png" alt="本地资料图片" width="896" height="448">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-573-e97ab31e6c.png" alt="本地资料图片" width="992" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-574-9b77f4b931.png" alt="本地资料图片" width="896" height="448">.</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-575-aaa831efac.png" alt="本地资料图片" width="992" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-576-f6bfcfd3ee.png" alt="本地资料图片" width="1216" height="448">.</p>
-<p class="local-docx-line">所以平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-577-61e13076f6.png" alt="本地资料图片" width="1568" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-578-b6de411faa.png" alt="本地资料图片" width="928" height="448"></p>
-<p class="local-docx-line">（3）由题得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-579-6789be484a.png" alt="本地资料图片" width="1600" height="576"> ,</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-580-be19074abd.png" alt="本地资料图片" width="5952" height="992">.</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-581-b371b1d943.png" alt="本地资料图片" width="960" height="992">,因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-582-b45a0b7f8e.png" alt="本地资料图片" width="2336" height="1440"></p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-583-50ad931bac.png" alt="本地资料图片" width="992" height="992">.</p>
-<p class="local-docx-line">【题组四 求最值】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1685,7 +1475,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1732,7 +1522,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1780,7 +1570,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1855,7 +1645,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1892,7 +1682,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1933,41 +1723,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">6．如图，在四棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-937-67b0714e72.png" alt="本地资料图片" width="1760" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-938-ab37c252f6.png" alt="本地资料图片" width="608" height="416"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-939-383fe66316.png" alt="本地资料图片" width="384" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-940-505254b4f2.png" alt="本地资料图片" width="1152" height="448">, <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-941-218e92fb9a.png" alt="本地资料图片" width="1440" height="384">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-942-55fb363e5a.png" alt="本地资料图片" width="1440" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-943-e625b96d66.png" alt="本地资料图片" width="2368" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-944-bfaffd018b.png" alt="本地资料图片" width="1664" height="544">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-945-92ee052543.png" alt="本地资料图片" width="512" height="416">是线段<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-946-0823c4c1c7.png" alt="本地资料图片" width="640" height="416">的中点.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp24-a-947-7e26aff24a.png" alt="本地资料图片" width="168" height="156"></div>
-<p class="local-docx-line">（1）证明：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-948-78b502eb81.png" alt="本地资料图片" width="1216" height="480">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-949-f5e951acaf.png" alt="本地资料图片" width="896" height="448"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-950-1913d46f9d.png" alt="本地资料图片" width="192" height="416"></p>
-<p class="local-docx-line">（2）当<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-951-ab37c252f6.png" alt="本地资料图片" width="608" height="416">为何值时，四棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-952-67b0714e72.png" alt="本地资料图片" width="1760" height="448">的体积最大？并求此最大值</p>
-<p class="local-docx-line">【答案】（1）见解析（2）当PA＝4时，体积最大值为16．</p>
-<p class="local-docx-line">【解析】（1）取PD中点N，连接MN，CN，</p>
-<p class="local-docx-line">∵M是AP的中点，</p>
-<p class="local-docx-line">∴MN∥AD且MN<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-953-4eb5a52d24.png" alt="本地资料图片" width="1280" height="992">，</p>
-<p class="local-docx-line">∵AD∥BC，AD＝2BC，</p>
-<p class="local-docx-line">∴MN∥BC，MN＝BC，</p>
-<p class="local-docx-line">∴四边形MNCB是平行四边形，</p>
-<p class="local-docx-line">∴MB∥CN，</p>
-<p class="local-docx-line">又BM<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-954-7d7dad9adc.png" alt="本地资料图片" width="384" height="384">平面PCD，CN⊂平面PCD，</p>
-<p class="local-docx-line">∴BM∥平面PCD；</p>
-<p class="local-docx-line">（2）设PA＝x（0＜x＜4<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-955-8c058981a3.png" alt="本地资料图片" width="608" height="544">），</p>
-<p class="local-docx-line">∵PA⊥平面ABCD，</p>
-<p class="local-docx-line">∴PA⊥AB，</p>
-<p class="local-docx-line">∵<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-956-59a913f5b8.png" alt="本地资料图片" width="1664" height="544">，</p>
-<p class="local-docx-line">∴AB<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-957-726aab10e9.png" alt="本地资料图片" width="4128" height="640">，</p>
-<p class="local-docx-line">又∵AB⊥AD，AD＝2BC＝4，</p>
-<p class="local-docx-line">∴VP﹣ABCD<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-958-06bf1fc9f3.png" alt="本地资料图片" width="2336" height="992"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-959-3774743612.png" alt="本地资料图片" width="4544" height="992"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-960-2babd4fec2.png" alt="本地资料图片" width="1984" height="640"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-961-130d1b91a0.png" alt="本地资料图片" width="2240" height="1056"></p>
-<p class="local-docx-line">＝16，</p>
-<p class="local-docx-line">当且仅当x<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp24-a-962-aede299b2c.png" alt="本地资料图片" width="1792" height="640">，即x＝4时取等号，</p>
-<p class="local-docx-line">故当PA＝4时，四棱锥P﹣ABCD的体积最大，最大值为16．</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp24-a-963-1f0e0b4c52.png" alt="本地资料图片" width="221" height="222"></div>
-<p class="local-docx-line">【题组五 历史中的空间几何体】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1980,7 +1738,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2005,7 +1763,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2034,7 +1792,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2062,7 +1820,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2088,7 +1846,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2117,7 +1875,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2143,7 +1901,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2173,7 +1931,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2199,27 +1957,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">7．如图，矩形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-161-505254b4f2.png" alt="本地资料图片" width="1152" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-162-18a9833ac7.png" alt="本地资料图片" width="1216" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-163-66832975cf.png" alt="本地资料图片" width="1024" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-164-4149aeb8e7.png" alt="本地资料图片" width="384" height="416">是<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-165-5f066b54ac.png" alt="本地资料图片" width="640" height="448">的中点，将<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-166-f7571f3691.png" alt="本地资料图片" width="1120" height="416">沿<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-167-3177d1291d.png" alt="本地资料图片" width="640" height="416">折起，使折起后平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-168-3a966bd20b.png" alt="本地资料图片" width="1120" height="384">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-169-4855cc2338.png" alt="本地资料图片" width="1120" height="448">，则异面直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-170-3177d1291d.png" alt="本地资料图片" width="640" height="416">和<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-171-5f066b54ac.png" alt="本地资料图片" width="640" height="448">所成的角的余弦值为__________．</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp25-a-172-4e2ab8a740.png" alt="本地资料图片" width="435" height="122"></div>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-173-faf1a4beb8.png" alt="本地资料图片" width="672" height="1088"></p>
-<p class="local-docx-line">【解析】由题意，取<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-174-d28a4b1ac3.png" alt="本地资料图片" width="640" height="416">中点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-175-ef34cb6bc9.png" alt="本地资料图片" width="416" height="416">，连接<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-176-e35727fc32.png" alt="本地资料图片" width="640" height="448">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-177-d9443ddd82.png" alt="本地资料图片" width="1568" height="512">，可得直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-178-3177d1291d.png" alt="本地资料图片" width="640" height="416">和<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-179-5f066b54ac.png" alt="本地资料图片" width="640" height="448">所成角的平面角为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-180-84a436efb1.png" alt="本地资料图片" width="1088" height="416">，（如图）</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp25-a-181-ddb01faace.png" alt="本地资料图片" width="234" height="122"></div>
-<p class="local-docx-line">过<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-182-9fd69941b2.png" alt="本地资料图片" width="416" height="416">作<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-183-a7b1dd03f6.png" alt="本地资料图片" width="800" height="416">垂直<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-184-3177d1291d.png" alt="本地资料图片" width="640" height="416">于<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-185-92ee052543.png" alt="本地资料图片" width="512" height="416">，平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-186-98ad7ca1f5.png" alt="本地资料图片" width="896" height="416">⊥平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-187-4855cc2338.png" alt="本地资料图片" width="1120" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-188-7aecbfb8ed.png" alt="本地资料图片" width="1600" height="416"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-189-058eafbfde.png" alt="本地资料图片" width="2048" height="416">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-190-359d8eaae3.png" alt="本地资料图片" width="1440" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-191-4855cc2338.png" alt="本地资料图片" width="1120" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-192-5bb3fd1e5d.png" alt="本地资料图片" width="2112" height="416">，</p>
-<p class="local-docx-line">且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-193-7fb9b63649.png" alt="本地资料图片" width="1824" height="416"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-194-e0fcacab7f.png" alt="本地资料图片" width="960" height="1088">，结合平面图形可得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-195-e6b6506352.png" alt="本地资料图片" width="1056" height="416"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-196-52e0cf8d61.png" alt="本地资料图片" width="672" height="1088">,</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-197-d82fd9858b.png" alt="本地资料图片" width="1280" height="416"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-198-0ff3aa7997.png" alt="本地资料图片" width="2848" height="608">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-199-71eac62d42.png" alt="本地资料图片" width="928" height="448"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-200-fbe810a1e5.png" alt="本地资料图片" width="608" height="544">,</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-201-c5a11b45f4.png" alt="本地资料图片" width="864" height="512">=<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-202-a108d2ea01.png" alt="本地资料图片" width="2624" height="992">, ∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-203-652ee519b8.png" alt="本地资料图片" width="832" height="512">=<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-204-657e60b3b6.png" alt="本地资料图片" width="2624" height="512">,</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp25-a-205-f99e61de3d.png" alt="本地资料图片" width="192" height="127"></div>
-<p class="local-docx-line">∴在<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-206-7f5881b868.png" alt="本地资料图片" width="1152" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-207-652ee519b8.png" alt="本地资料图片" width="832" height="512">=<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-208-21d50dcf94.png" alt="本地资料图片" width="1856" height="512">,</p>
-<p class="local-docx-line">∴△DFC是直角三角形且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-209-ff46d9cc9a.png" alt="本地资料图片" width="1632" height="448">，可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-210-6c7d7301dc.png" alt="本地资料图片" width="1728" height="448"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-211-78d3ca4243.png" alt="本地资料图片" width="1888" height="1152">．</p>
-<p class="local-docx-line">【题组二  线面角】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2232,7 +1972,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2266,7 +2006,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2292,7 +2032,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2332,7 +2072,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2372,7 +2112,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2411,7 +2151,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2447,7 +2187,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2494,29 +2234,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">8．如图，在四棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-521-dafe487c96.png" alt="本地资料图片" width="1760" height="448">中，底面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-522-505254b4f2.png" alt="本地资料图片" width="1152" height="448">是边长为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-523-fbe810a1e5.png" alt="本地资料图片" width="608" height="544">的正方形，平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-524-d6471f1bb0.png" alt="本地资料图片" width="1248" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-525-bf06a6ae27.png" alt="本地资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-526-fcd582fe20.png" alt="本地资料图片" width="2048" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-527-ef34cb6bc9.png" alt="本地资料图片" width="416" height="416">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-528-0b8372f97c.png" alt="本地资料图片" width="672" height="416">中点，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-529-8311e0d7d0.png" alt="本地资料图片" width="1152" height="416">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp25-a-530-187afc9ae5.png" alt="本地资料图片" width="1004" height="889"></div>
-<p class="local-docx-line">（1）求证：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-531-5d65d34f9f.png" alt="本地资料图片" width="1632" height="448">；</p>
-<p class="local-docx-line">（2）求<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-532-83774fc5b9.png" alt="本地资料图片" width="576" height="416">与平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-533-505254b4f2.png" alt="本地资料图片" width="1152" height="448">所成角的正弦值.</p>
-<p class="local-docx-line">【答案】（1）证明见解析；（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-534-113c03b0d5.png" alt="本地资料图片" width="672" height="1088">.</p>
-<p class="local-docx-line">【解析】（1）因为平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-535-d6471f1bb0.png" alt="本地资料图片" width="1248" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-536-bf06a6ae27.png" alt="本地资料图片" width="896" height="448">，平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-537-72e136f17d.png" alt="本地资料图片" width="1216" height="480">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-538-632dbe2b89.png" alt="本地资料图片" width="1792" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-539-fcd582fe20.png" alt="本地资料图片" width="2048" height="448">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-540-98a24ddb27.png" alt="本地资料图片" width="928" height="384">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-541-bf06a6ae27.png" alt="本地资料图片" width="896" height="448">，又由<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-542-ac3222f668.png" alt="本地资料图片" width="1600" height="608">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-543-bf06a6ae27.png" alt="本地资料图片" width="896" height="448">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-544-3c390769f1.png" alt="本地资料图片" width="1632" height="448">，</p>
-<p class="local-docx-line">∵<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-545-505254b4f2.png" alt="本地资料图片" width="1152" height="448">为正方形，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-546-b16274a121.png" alt="本地资料图片" width="1632" height="448">，</p>
-<p class="local-docx-line">又∵<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-547-f9d36f9797.png" alt="本地资料图片" width="2208" height="480">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-548-f0c26c839b.png" alt="本地资料图片" width="992" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-549-98ad7ca1f5.png" alt="本地资料图片" width="896" height="416">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-550-5d65d34f9f.png" alt="本地资料图片" width="1632" height="448">.</p>
-<p class="local-docx-line">（2）过<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-551-ef34cb6bc9.png" alt="本地资料图片" width="416" height="416">作<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-552-e7b41076de.png" alt="本地资料图片" width="1728" height="416">于<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-553-92ee052543.png" alt="本地资料图片" width="512" height="416">，连接<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-554-d32fcce0d7.png" alt="本地资料图片" width="736" height="448">.</p>
-<p class="local-docx-line">由（1）得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-555-f0c26c839b.png" alt="本地资料图片" width="992" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-556-98ad7ca1f5.png" alt="本地资料图片" width="896" height="416">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-557-0b497418d6.png" alt="本地资料图片" width="1696" height="448">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-558-4839af0acb.png" alt="本地资料图片" width="2272" height="480">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-559-45777fdd46.png" alt="本地资料图片" width="1088" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-560-505254b4f2.png" alt="本地资料图片" width="1152" height="448">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-561-960773b6d0.png" alt="本地资料图片" width="1280" height="448">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-562-83774fc5b9.png" alt="本地资料图片" width="576" height="416">与平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-563-505254b4f2.png" alt="本地资料图片" width="1152" height="448">所成角，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-564-81fa9d4a17.png" alt="本地资料图片" width="2464" height="544">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-565-8311e0d7d0.png" alt="本地资料图片" width="1152" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-566-749a620248.png" alt="本地资料图片" width="1312" height="992">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-567-8d3b7465b2.png" alt="本地资料图片" width="1280" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-568-a702b86a17.png" alt="本地资料图片" width="3584" height="608">，</p>
-<p class="local-docx-line">由<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-569-182cbcb52e.png" alt="本地资料图片" width="1248" height="416">∽<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-570-9067e08656.png" alt="本地资料图片" width="992" height="384">，可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-571-364ba61257.png" alt="本地资料图片" width="1824" height="992">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-572-4afc9b03b7.png" alt="本地资料图片" width="3392" height="1088">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-573-7e55ea7c7e.png" alt="本地资料图片" width="3776" height="1088"></p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp25-a-574-bc71bfca18.png" alt="本地资料图片" width="962" height="854"></div>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2531,7 +2251,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2571,28 +2291,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">10．已知四棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-617-67b0714e72.png" alt="本地资料图片" width="1760" height="448">的底面是边长为1的正方形，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-618-aa0927b7f6.png" alt="本地资料图片" width="4224" height="608">，E为PC的中点．</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp25-a-619-657c987d79.png" alt="本地资料图片" width="306" height="312"></div>
-<p class="local-docx-line">（1）证明：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-620-a4e12715fa.png" alt="本地资料图片" width="1632" height="448">；</p>
-<p class="local-docx-line">（2）求直线AP与平面ADE所成角．</p>
-<p class="local-docx-line">【答案】（1）见解析（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-621-05bf602cb2.png" alt="本地资料图片" width="352" height="896"></p>
-<p class="local-docx-line">【解析】（1）由已知得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-622-9c26ede47e.png" alt="本地资料图片" width="1536" height="544">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-623-42e4556fee.png" alt="本地资料图片" width="3424" height="512">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-624-d9ec31dbfc.png" alt="本地资料图片" width="1600" height="416">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-625-699cee79e6.png" alt="本地资料图片" width="1600" height="416">，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-626-05db027bb6.png" alt="本地资料图片" width="1664" height="512">平面ABCD，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-627-90d0c622c0.png" alt="本地资料图片" width="2176" height="480"></p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-628-93322e7be2.png" alt="本地资料图片" width="992" height="416">平面ABCD，又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-629-bc6fcf32c7.png" alt="本地资料图片" width="1024" height="416">平面ABCD，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-630-fac507c3b1.png" alt="本地资料图片" width="1632" height="416"></p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-631-9c7e8528a8.png" alt="本地资料图片" width="5696" height="512">平面PDC，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-632-ade9858436.png" alt="本地资料图片" width="1024" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-633-f5e951acaf.png" alt="本地资料图片" width="896" height="448">.</p>
-<p class="local-docx-line">∵<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-634-ccc23d998c.png" alt="本地资料图片" width="992" height="448">平面PDC，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-635-a4e12715fa.png" alt="本地资料图片" width="1632" height="448">；</p>
-<p class="local-docx-line">（2）∵<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-636-4573fb3a88.png" alt="本地资料图片" width="1600" height="448">，E为PC中点，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-637-8b92922c34.png" alt="本地资料图片" width="1632" height="448"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-638-b8326f981b.png" alt="本地资料图片" width="1632" height="448">，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-639-c183cd4711.png" alt="本地资料图片" width="4000" height="512">平面ADE，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-640-e04425abf1.png" alt="本地资料图片" width="960" height="416">平面ADE</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-641-3aaf87d696.png" alt="本地资料图片" width="1120" height="416">是PA与平面ADE所成角</p>
-<p class="local-docx-line">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-642-7b34ced1ec.png" alt="本地资料图片" width="1472" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-643-b40b919219.png" alt="本地资料图片" width="1568" height="672">，在<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-644-9642a9a09a.png" alt="本地资料图片" width="1504" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-645-a160c1797b.png" alt="本地资料图片" width="3040" height="1088"></p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-646-557211552a.png" alt="本地资料图片" width="3360" height="1184">，∴直线AP与平面ADE所成角<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-647-05bf602cb2.png" alt="本地资料图片" width="352" height="896">.</p>
-<p class="local-docx-line">【题组三  二面角】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2605,7 +2306,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2632,20 +2333,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2．如图，在三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-649-78c0526327.png" alt="本地资料图片" width="1504" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-650-454137de15.png" alt="本地资料图片" width="1120" height="416">为等边三角形，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-651-5534a2746a.png" alt="本地资料图片" width="1568" height="448">，平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-652-7c1d688f23.png" alt="本地资料图片" width="1248" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-653-4bae6d8f66.png" alt="本地资料图片" width="896" height="448">且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-654-d44f0d2aaf.png" alt="本地资料图片" width="1536" height="448">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp25-a-655-21decdb380.png" alt="本地资料图片" width="1676" height="1388"></div>
-<p class="local-docx-line">（1）求证：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-656-6d7ada535d.png" alt="本地资料图片" width="1632" height="448">；</p>
-<p class="local-docx-line">（2）求二面角<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-657-dbc197bc85.png" alt="本地资料图片" width="1856" height="448">的正切值.</p>
-<p class="local-docx-line">【答案】（1）详见解析；（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-658-61c8562043.png" alt="本地资料图片" width="608" height="576">.</p>
-<p class="local-docx-line">【解析】（1）取<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-659-88c22376f3.png" alt="本地资料图片" width="640" height="416">中点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-660-4149aeb8e7.png" alt="本地资料图片" width="384" height="416">，连接<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-661-3177d1291d.png" alt="本地资料图片" width="640" height="416">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-662-fe1beee8a6.png" alt="本地资料图片" width="1600" height="416">，因为平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-663-7c1d688f23.png" alt="本地资料图片" width="1248" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-664-4bae6d8f66.png" alt="本地资料图片" width="896" height="448">，平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-665-31239be424.png" alt="本地资料图片" width="1248" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-666-c8c461ed55.png" alt="本地资料图片" width="1824" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-667-cc47aa025a.png" alt="本地资料图片" width="992" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-668-747b8bfa2f.png" alt="本地资料图片" width="2528" height="512">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-669-98a24ddb27.png" alt="本地资料图片" width="928" height="384">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-670-4bae6d8f66.png" alt="本地资料图片" width="896" height="448">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-671-ad1157137a.png" alt="本地资料图片" width="1600" height="448">，又因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-672-fab5a90d99.png" alt="本地资料图片" width="3808" height="512">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-673-b5574b05a7.png" alt="本地资料图片" width="928" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-674-78aea26fb1.png" alt="本地资料图片" width="1952" height="512">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-675-8d51a171c4.png" alt="本地资料图片" width="800" height="384">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-676-6d7ada535d.png" alt="本地资料图片" width="1632" height="448">.</p>
-<p class="local-docx-line">（2）过<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-677-4149aeb8e7.png" alt="本地资料图片" width="384" height="416">作<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-678-bebf51e16e.png" alt="本地资料图片" width="1600" height="448">交<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-679-5f066b54ac.png" alt="本地资料图片" width="640" height="448">于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-680-ef34cb6bc9.png" alt="本地资料图片" width="416" height="416">，由（1）知<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-681-3c390769f1.png" alt="本地资料图片" width="1632" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-682-a103e83dda.png" alt="本地资料图片" width="2272" height="416">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-683-f0c26c839b.png" alt="本地资料图片" width="992" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-684-664de90fdf.png" alt="本地资料图片" width="896" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-685-f533ef51fc.png" alt="本地资料图片" width="1024" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-686-664de90fdf.png" alt="本地资料图片" width="896" height="416">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-687-c49ba70868.png" alt="本地资料图片" width="1632" height="448">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-688-d100253071.png" alt="本地资料图片" width="1120" height="416">为二面角<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-689-dbc197bc85.png" alt="本地资料图片" width="1856" height="448">的平面角.因为三角形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-690-8d51a171c4.png" alt="本地资料图片" width="800" height="384">为等边三角形，令<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-691-10d910c070.png" alt="本地资料图片" width="1216" height="416">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-692-b9cdb07daa.png" alt="本地资料图片" width="1472" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-693-e5aa18126e.png" alt="本地资料图片" width="1376" height="960">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-694-60fbc3017c.png" alt="本地资料图片" width="4480" height="1632">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp25-a-695-1e9f750d1f.png" alt="本地资料图片" width="1695" height="1388"></div>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2660,7 +2350,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2707,7 +2397,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2756,7 +2446,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2796,7 +2486,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2838,7 +2528,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2879,7 +2569,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2911,7 +2601,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2958,61 +2648,12 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">10．已知四棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1048-67b0714e72.png" alt="本地资料图片" width="1760" height="448">中,底面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1049-505254b4f2.png" alt="本地资料图片" width="1152" height="448">是直角梯形,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1050-18dc66aafe.png" alt="本地资料图片" width="672" height="416">∥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1051-f72cc3b48c.png" alt="本地资料图片" width="640" height="448">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1052-94d85b73b0.png" alt="本地资料图片" width="1568" height="448">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1053-223710986f.png" alt="本地资料图片" width="2080" height="416">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1054-b808d63328.png" alt="本地资料图片" width="1216" height="448">,又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1055-cb08798abe.png" alt="本地资料图片" width="960" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1056-505254b4f2.png" alt="本地资料图片" width="1152" height="448">,且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1057-54130a6ac9.png" alt="本地资料图片" width="1120" height="416">,点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1058-4149aeb8e7.png" alt="本地资料图片" width="384" height="416">在棱<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1059-b1c7452efd.png" alt="本地资料图片" width="640" height="416">上且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1060-93a2ab5a8c.png" alt="本地资料图片" width="1568" height="416">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp25-a-1061-cd6981b221.png" alt="本地资料图片" width="545" height="464"></div>
-<p class="local-docx-line">（1）求证:<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1062-1b2f2cfe81.png" alt="本地资料图片" width="1408" height="416">;</p>
-<p class="local-docx-line">（2）求<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1063-395296a710.png" alt="本地资料图片" width="608" height="448">与平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1064-a1de29bc68.png" alt="本地资料图片" width="800" height="384">所成角的正弦值;</p>
-<p class="local-docx-line">（3）求二面角<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1065-ccc6fc7ae8.png" alt="本地资料图片" width="1856" height="416">的大小.</p>
-<p class="local-docx-line">【答案】（1）答案见解析（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1066-04ff536dfe.png" alt="本地资料图片" width="800" height="1088">（3）<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1067-d2ef2b92c5.png" alt="本地资料图片" width="423" height="987"></p>
-<p class="local-docx-line">【解析】（1）取<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1068-f72cc3b48c.png" alt="本地资料图片" width="640" height="448">中点为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1069-ef34cb6bc9.png" alt="本地资料图片" width="416" height="416">,连接<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1070-a661472637.png" alt="本地资料图片" width="740" height="458"></p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp25-a-1071-7321eb3f5f.png" alt="本地资料图片" width="451" height="383"></div>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1072-8181bcb71e.png" alt="本地资料图片" width="352" height="320"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1073-b808d63328.png" alt="本地资料图片" width="1216" height="448">,</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1074-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1075-90582b8bbf.png" alt="本地资料图片" width="2016" height="448"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1076-8181bcb71e.png" alt="本地资料图片" width="352" height="320">底面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1077-505254b4f2.png" alt="本地资料图片" width="1152" height="448">是直角梯形,</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1078-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1079-18dc66aafe.png" alt="本地资料图片" width="672" height="416">∥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1080-16d67c63d1.png" alt="本地资料图片" width="608" height="448">,即<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1081-18dc66aafe.png" alt="本地资料图片" width="672" height="416">∥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1082-dd76fa142f.png" alt="本地资料图片" width="608" height="416"></p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1083-8181bcb71e.png" alt="本地资料图片" width="352" height="320"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1084-264766ebbd.png" alt="本地资料图片" width="2048" height="416"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1085-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"> 四边形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1086-b7176ad86a.png" alt="本地资料图片" width="1120" height="416">是平行四边形</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1087-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1088-de6b27553b.png" alt="本地资料图片" width="2080" height="416"></p>
-<p class="local-docx-line">可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1089-279463cf12.png" alt="本地资料图片" width="1888" height="992">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1090-f72cc3b48c.png" alt="本地资料图片" width="640" height="448">中点为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1091-ef34cb6bc9.png" alt="本地资料图片" width="416" height="416">,</p>
-<p class="local-docx-line">根据直角三角形性质可得:<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1092-f785a105e4.png" alt="本地资料图片" width="1088" height="416">为直角三角形,且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1093-813995c043.png" alt="本地资料图片" width="2048" height="512"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1094-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1095-fff2c7bf11.png" alt="本地资料图片" width="1632" height="448"></p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1096-8181bcb71e.png" alt="本地资料图片" width="352" height="320"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1097-cb08798abe.png" alt="本地资料图片" width="960" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1098-505254b4f2.png" alt="本地资料图片" width="1152" height="448"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1099-223c7ad4a6.png" alt="本地资料图片" width="1888" height="448"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1100-c160ea59b1.png" alt="本地资料图片" width="2464" height="480"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1101-ad006d60fe.png" alt="本地资料图片" width="1344" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1102-a1de29bc68.png" alt="本地资料图片" width="800" height="384"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1103-867419f56b.png" alt="本地资料图片" width="1888" height="448"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1104-b2d7760b7b.png" alt="本地资料图片" width="2560" height="480"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1105-c1d05f5577.png" alt="本地资料图片" width="1280" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1106-f5e951acaf.png" alt="本地资料图片" width="896" height="448"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1107-aa15dec377.png" alt="本地资料图片" width="1888" height="448"></p>
-<p class="local-docx-line">（2）由（1）可得:<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1108-f0c26c839b.png" alt="本地资料图片" width="992" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1109-a1de29bc68.png" alt="本地资料图片" width="800" height="384"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1110-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1111-5609fb97e5.png" alt="本地资料图片" width="1184" height="448">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1112-395296a710.png" alt="本地资料图片" width="608" height="448">与平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1113-a1de29bc68.png" alt="本地资料图片" width="800" height="384">所成角</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1114-8181bcb71e.png" alt="本地资料图片" width="352" height="320"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1115-cd9baaef65.png" alt="本地资料图片" width="1024" height="416">为直角三角形,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1116-813995c043.png" alt="本地资料图片" width="2048" height="512">,</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1117-8181bcb71e.png" alt="本地资料图片" width="352" height="320"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1118-641ae8b557.png" alt="本地资料图片" width="1600" height="448">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1119-545d98fd4f.png" alt="本地资料图片" width="1536" height="448"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1120-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1121-cd9baaef65.png" alt="本地资料图片" width="1024" height="416">为等腰直角三角形</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1122-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1123-704f098052.png" alt="本地资料图片" width="1536" height="544"></p>
-<p class="local-docx-line">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1124-d07d31832d.png" alt="本地资料图片" width="1472" height="448">中,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1125-31edfb5316.png" alt="本地资料图片" width="5440" height="640"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1126-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1127-56dac8f821.png" alt="本地资料图片" width="4672" height="1152"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1128-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1129-395296a710.png" alt="本地资料图片" width="608" height="448">与平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1130-a1de29bc68.png" alt="本地资料图片" width="800" height="384">所成角的正弦值<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1131-04ff536dfe.png" alt="本地资料图片" width="800" height="1088">.</p>
-<p class="local-docx-line">（3）连结<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1132-d39e4535c2.png" alt="本地资料图片" width="672" height="416">,交<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1133-88c22376f3.png" alt="本地资料图片" width="640" height="416">于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1134-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1135-8300f0cef9.png" alt="本地资料图片" width="1632" height="448">,如图:</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp25-a-1136-e13caebfce.png" alt="本地资料图片" width="458" height="386"></div>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1137-8181bcb71e.png" alt="本地资料图片" width="352" height="320"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1138-cb08798abe.png" alt="本地资料图片" width="960" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1139-505254b4f2.png" alt="本地资料图片" width="1152" height="448">,</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1140-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"> 平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1141-a1de29bc68.png" alt="本地资料图片" width="800" height="384"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1142-383fe66316.png" alt="本地资料图片" width="384" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1143-8d51a171c4.png" alt="本地资料图片" width="800" height="384">,</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1144-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1145-7dd245d6f6.png" alt="本地资料图片" width="672" height="448"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1146-383fe66316.png" alt="本地资料图片" width="384" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1147-a1de29bc68.png" alt="本地资料图片" width="800" height="384"></p>
-<p class="local-docx-line">过<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1148-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">作<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1149-f886546aa8.png" alt="本地资料图片" width="704" height="448"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1150-383fe66316.png" alt="本地资料图片" width="384" height="416"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1151-b1c7452efd.png" alt="本地资料图片" width="640" height="416">于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1152-5a24cd24db.png" alt="本地资料图片" width="416" height="384">,连结<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1153-9efe820412.png" alt="本地资料图片" width="704" height="416">,则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1154-9efe820412.png" alt="本地资料图片" width="704" height="416"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1155-383fe66316.png" alt="本地资料图片" width="384" height="416"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1156-b1c7452efd.png" alt="本地资料图片" width="640" height="416">,</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1157-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1158-c5533c9d0f.png" alt="本地资料图片" width="1216" height="448">为二面角<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1159-ccc6fc7ae8.png" alt="本地资料图片" width="1856" height="416">的平面角,</p>
-<p class="local-docx-line">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1160-58960e758e.png" alt="本地资料图片" width="1472" height="448">中,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1161-63ce5c5dfa.png" alt="本地资料图片" width="1600" height="1088"></p>
-<p class="local-docx-line">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1162-7b34ced1ec.png" alt="本地资料图片" width="1472" height="448">中,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1163-a6e65f3fb6.png" alt="本地资料图片" width="4640" height="1152"></p>
-<p class="local-docx-line">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1164-58fd3fc2c6.png" alt="本地资料图片" width="1568" height="448">中,<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1165-fca29044be.png" alt="本地资料图片" width="4640" height="2080"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1166-6d817ada76.png" alt="本地资料图片" width="2208" height="992"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1167-4ed3f556fd.png" alt="本地资料图片" width="352" height="320"> 二面角<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1168-ccc6fc7ae8.png" alt="本地资料图片" width="1856" height="416">的大小为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp25-a-1169-d2ef2b92c5.png" alt="本地资料图片" width="423" height="987">.</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
+
 
 ## 考点 26：空间向量求空间角
 
@@ -3028,17 +2669,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">1．如图，在等腰三角形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-002-1c61998676.png" alt="本地资料图片" width="896" height="448">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-003-8d51a171c4.png" alt="本地资料图片" width="800" height="384">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-004-e2e5c3c4af.png" alt="本地资料图片" width="3488" height="448">，平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-005-7c1d688f23.png" alt="本地资料图片" width="1248" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-006-1c61998676.png" alt="本地资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-007-4149aeb8e7.png" alt="本地资料图片" width="384" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-008-ef34cb6bc9.png" alt="本地资料图片" width="416" height="416">分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-009-88c22376f3.png" alt="本地资料图片" width="640" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-010-3e35dbcf65.png" alt="本地资料图片" width="672" height="448">的中点，则异面直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-011-3177d1291d.png" alt="本地资料图片" width="640" height="416">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-012-1da505f9c3.png" alt="本地资料图片" width="640" height="416">所成的角为（    ）</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp26-a-013-bdae15f523.png" alt="本地资料图片" width="1964" height="1370"></div>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-014-e9a7da1069.png" alt="本地资料图片" width="416" height="992">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-015-d2ef2b92c5.png" alt="本地资料图片" width="423" height="987">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-016-a865ed0871.png" alt="本地资料图片" width="384" height="992">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-017-05bf602cb2.png" alt="本地资料图片" width="352" height="896"></p>
-<p class="local-docx-line">【答案】B</p>
-<p class="local-docx-line">【解析】由于在等腰三角形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-018-1c61998676.png" alt="本地资料图片" width="896" height="448">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-019-8d51a171c4.png" alt="本地资料图片" width="800" height="384">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-020-e2e5c3c4af.png" alt="本地资料图片" width="3488" height="448">，平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-021-7c1d688f23.png" alt="本地资料图片" width="1248" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-022-1c61998676.png" alt="本地资料图片" width="896" height="448">，根据面面垂直的性质定理可知<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-023-ade9858436.png" alt="本地资料图片" width="1024" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-024-1c61998676.png" alt="本地资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-025-b5574b05a7.png" alt="本地资料图片" width="928" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-026-8d51a171c4.png" alt="本地资料图片" width="800" height="384">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-027-6bdd1361aa.png" alt="本地资料图片" width="1472" height="416">.依题意设<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-028-ac0bcba814.png" alt="本地资料图片" width="3008" height="448">，由于<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-029-befdba0474.png" alt="本地资料图片" width="800" height="512">是等腰直角三角形斜边的中点，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-030-0e639fd9d2.png" alt="本地资料图片" width="2720" height="1088">.设异面直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-031-3177d1291d.png" alt="本地资料图片" width="640" height="416">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-032-1da505f9c3.png" alt="本地资料图片" width="640" height="416">所成的角为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-033-60668bd80f.png" alt="本地资料图片" width="320" height="448">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-034-55533d0bcf.png" alt="本地资料图片" width="3456" height="832"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-035-3cd0f1131f.png" alt="本地资料图片" width="2080" height="1536"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-036-36c3f6d2ac.png" alt="本地资料图片" width="4448" height="1984"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-037-76588a67c4.png" alt="本地资料图片" width="5952" height="2176"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-038-56281e0a79.png" alt="本地资料图片" width="5120" height="2176"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-039-33d0bc1f98.png" alt="本地资料图片" width="6624" height="1984"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-040-3c159db320.png" alt="本地资料图片" width="4928" height="2016">，由于<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-041-f6a41376a5.png" alt="本地资料图片" width="1664" height="1088">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-042-1311ecd184.png" alt="本地资料图片" width="992" height="992">.故选：B</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -3052,7 +2685,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3083,7 +2716,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3112,40 +2745,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．如图所示，四棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-111-67b0714e72.png" alt="本地资料图片" width="1760" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-112-4d31a8f64b.png" alt="本地资料图片" width="3392" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-113-18f7847cb0.png" alt="本地资料图片" width="1824" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-114-a793109260.png" alt="本地资料图片" width="2048" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-115-3a3d40cea1.png" alt="本地资料图片" width="2469" height="493">，点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-116-1fe311b065.png" alt="本地资料图片" width="1152" height="448">分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-117-6889590332.png" alt="本地资料图片" width="1408" height="448">的中点．</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp26-a-118-91ba00fa7a.png" alt="本地资料图片" width="207" height="221"></div>
-<p class="local-docx-line">（1）证明：平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-119-29870300a6.png" alt="本地资料图片" width="1024" height="448">∥平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-120-5d634d3dff.png" alt="本地资料图片" width="896" height="448">；</p>
-<p class="local-docx-line">（2）若<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-121-3bd0b08f18.png" alt="本地资料图片" width="1696" height="1088">，求异面直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-122-ab37c252f6.png" alt="本地资料图片" width="608" height="416">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-123-f72cc3b48c.png" alt="本地资料图片" width="640" height="448">所成角的余弦值．</p>
-<p class="local-docx-line">【答案】（1）证明见解析；（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-124-15acae0a71.png" alt="本地资料图片" width="672" height="1088"></p>
-<p class="local-docx-line">【解析】（1）如图，因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-125-1fe311b065.png" alt="本地资料图片" width="1152" height="448">分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-126-6889590332.png" alt="本地资料图片" width="1408" height="448">的中点，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-127-a5a05b9bd3.png" alt="本地资料图片" width="1632" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-128-1d5e4b28e0.png" alt="本地资料图片" width="1088" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-129-5d634d3dff.png" alt="本地资料图片" width="896" height="448">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-130-9843502531.png" alt="本地资料图片" width="1120" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-131-5d634d3dff.png" alt="本地资料图片" width="896" height="448">；</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-132-53b4f2991d.png" alt="本地资料图片" width="1568" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-133-18f7847cb0.png" alt="本地资料图片" width="1824" height="416">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-134-b3330db505.png" alt="本地资料图片" width="1248" height="416">为正三角形，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-135-a97dd9a99b.png" alt="本地资料图片" width="1568" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-136-3a3d40cea1.png" alt="本地资料图片" width="2469" height="493">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-137-7c42e73817.png" alt="本地资料图片" width="2080" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-138-a08fe2b24a.png" alt="本地资料图片" width="1568" height="448">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-139-76f227931e.png" alt="本地资料图片" width="1632" height="448">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-140-246d77a46e.png" alt="本地资料图片" width="1664" height="512">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-141-335bc5b806.png" alt="本地资料图片" width="1024" height="512">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-142-5d634d3dff.png" alt="本地资料图片" width="896" height="448"></p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-143-603be8b7d5.png" alt="本地资料图片" width="2496" height="416">，</p>
-<p class="local-docx-line">所以平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-144-a01afed0c4.png" alt="本地资料图片" width="1344" height="512">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-145-5d634d3dff.png" alt="本地资料图片" width="896" height="448">．</p>
-<p class="local-docx-line">（2）如图，取<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-146-88c22376f3.png" alt="本地资料图片" width="640" height="416">中点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-147-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">，连结<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-148-65ff7a580d.png" alt="本地资料图片" width="2016" height="480">，</p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-149-13a8015d2b.png" alt="本地资料图片" width="1568" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-150-43910b1ef3.png" alt="本地资料图片" width="1920" height="416">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-151-b3330db505.png" alt="本地资料图片" width="1248" height="416">为正三角形，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-152-8300f0cef9.png" alt="本地资料图片" width="1632" height="448">，</p>
-<p class="local-docx-line">又因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-153-fa7ed264bb.png" alt="本地资料图片" width="1120" height="448">为等腰三角形，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-154-7c75226bee.png" alt="本地资料图片" width="1600" height="448">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-155-0fbde3ab59.png" alt="本地资料图片" width="1632" height="448">三点共线，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-156-5b7156e7ac.png" alt="本地资料图片" width="1632" height="448">，</p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-157-8ef650e006.png" alt="本地资料图片" width="1344" height="384">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-158-aa92a72bbd.png" alt="本地资料图片" width="1600" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-159-9c0e04e36d.png" alt="本地资料图片" width="2080" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-160-3a3d40cea1.png" alt="本地资料图片" width="2469" height="493">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-161-cc8892df56.png" alt="本地资料图片" width="1504" height="576">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-162-85eba874c8.png" alt="本地资料图片" width="4256" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-163-ff83b2895b.png" alt="本地资料图片" width="2272" height="992">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-164-3bd0b08f18.png" alt="本地资料图片" width="1696" height="1088">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-165-6c73593cfc.png" alt="本地资料图片" width="2848" height="512">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-166-fe658cb92a.png" alt="本地资料图片" width="1632" height="448">，又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-167-4cdf0498aa.png" alt="本地资料图片" width="2240" height="480">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-168-15d7333774.png" alt="本地资料图片" width="992" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-169-505254b4f2.png" alt="本地资料图片" width="1152" height="448">．</p>
-<p class="local-docx-line">以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-170-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">为坐标原点，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-171-981842834a.png" alt="本地资料图片" width="1920" height="608">分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-172-d5351099ec.png" alt="本地资料图片" width="320" height="352">轴，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-173-f528bdf372.png" alt="本地资料图片" width="352" height="416">轴，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-174-c1acf60c9f.png" alt="本地资料图片" width="288" height="288">轴建立如图所示的空间直角坐标系，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-175-313db3af6b.png" alt="本地资料图片" width="1728" height="1088">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-176-a8e9881e22.png" alt="本地资料图片" width="1696" height="1088">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-177-d54daadf4e.png" alt="本地资料图片" width="1984" height="1280">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-178-13bfd1938f.png" alt="本地资料图片" width="2016" height="1088">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-179-6e454ccec7.png" alt="本地资料图片" width="2624" height="1088">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-180-be2f4fa084.png" alt="本地资料图片" width="3264" height="1280">，</p>
-<p class="local-docx-line">设异面直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-181-ab37c252f6.png" alt="本地资料图片" width="608" height="416">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-182-f72cc3b48c.png" alt="本地资料图片" width="640" height="448">所成角为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-183-b9589b5df2.png" alt="本地资料图片" width="384" height="352">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-184-2dc3a747cb.png" alt="本地资料图片" width="7008" height="2112">．</p>
-<p class="local-docx-line">所以异面直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-185-ab37c252f6.png" alt="本地资料图片" width="608" height="416">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-186-f72cc3b48c.png" alt="本地资料图片" width="640" height="448">所成角的余弦值为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-187-15acae0a71.png" alt="本地资料图片" width="672" height="1088">．</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp26-a-188-81421dce72.png" alt="本地资料图片" width="151" height="166"></div>
-<p class="local-docx-line">【题组二 线面角】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -3160,39 +2762,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">1．如图，在△ABC中，D，E分别为AB，AC的中点，O为DE的中点，AB=AC=2<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-189-8e5bc36bc2.png" alt="本地资料图片" width="576" height="576">，BC=4．将△ADE沿DE折起到△A1DE的位置，使得平面A1DE<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-190-383fe66316.png" alt="本地资料图片" width="384" height="416">平面BCED，如下图．</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp26-a-191-b699eb4a76.png" alt="本地资料图片" width="1598" height="755"></div>
-<p class="local-docx-line">（Ⅰ）求证：A1O<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-192-383fe66316.png" alt="本地资料图片" width="384" height="416">BD；</p>
-<p class="local-docx-line">（Ⅱ）求直线A1C和平面A1BD所成角的正弦值；</p>
-<p class="local-docx-line">【答案】（Ⅰ）证明见详解；（Ⅱ）<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-193-294c4f08aa.png" alt="本地资料图片" width="864" height="1088">.</p>
-<p class="local-docx-line">【解析】（Ⅰ）因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-194-5e24795155.png" alt="本地资料图片" width="1568" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-195-532134d240.png" alt="本地资料图片" width="832" height="512">分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-196-043068b110.png" alt="本地资料图片" width="1312" height="512">中点，</p>
-<p class="local-docx-line">故可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-197-1017fc4024.png" alt="本地资料图片" width="1568" height="416">，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-198-ad749e04bd.png" alt="本地资料图片" width="1280" height="576">为等腰三角形，又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-199-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-200-db15fd43ac.png" alt="本地资料图片" width="672" height="416">中点，</p>
-<p class="local-docx-line">故可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-201-57fe9ac64f.png" alt="本地资料图片" width="1696" height="576">，又因为平面A1DE<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-202-383fe66316.png" alt="本地资料图片" width="384" height="416">平面BCED，且交线为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-203-db15fd43ac.png" alt="本地资料图片" width="672" height="416">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-204-58c535e064.png" alt="本地资料图片" width="1088" height="576">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-205-6fb5a5653d.png" alt="本地资料图片" width="992" height="576">，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-206-3a8d4e3d86.png" alt="本地资料图片" width="1056" height="576">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-207-dfa0a36f4e.png" alt="本地资料图片" width="1152" height="448">，又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-208-1baa795e11.png" alt="本地资料图片" width="1024" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-209-2463e8bf62.png" alt="本地资料图片" width="1408" height="448">，</p>
-<p class="local-docx-line">故<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-210-61712beedf.png" alt="本地资料图片" width="1664" height="576">.即证.</p>
-<p class="local-docx-line">（Ⅱ）过<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-211-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">作<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-212-01a2fd9d2d.png" alt="本地资料图片" width="1664" height="448">，由（Ⅰ）可知<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-213-3a8d4e3d86.png" alt="本地资料图片" width="1056" height="576">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-214-dfa0a36f4e.png" alt="本地资料图片" width="1152" height="448">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-215-df4992af58.png" alt="本地资料图片" width="1728" height="512">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-216-dfa0a36f4e.png" alt="本地资料图片" width="1152" height="448">，故可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-217-453b1c1a95.png" alt="本地资料图片" width="3424" height="576">，</p>
-<p class="local-docx-line">又因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-218-896af321cb.png" alt="本地资料图片" width="2336" height="512">//<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-219-db15fd43ac.png" alt="本地资料图片" width="672" height="416">，故可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-220-7448bc3b39.png" alt="本地资料图片" width="1664" height="448">.</p>
-<p class="local-docx-line">综上所述：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-221-16fcae611e.png" alt="本地资料图片" width="2048" height="576">两两垂直，</p>
-<p class="local-docx-line">故以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-222-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">为坐标原点，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-223-16fcae611e.png" alt="本地资料图片" width="2048" height="576">分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-224-77a14a1b25.png" alt="本地资料图片" width="992" height="416">轴建立空间直角坐标系，</p>
-<p class="local-docx-line">如下图所示：</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp26-a-225-5658e5f901.png" alt="本地资料图片" width="2726" height="2151"></div>
-<p class="local-docx-line">故可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-226-78239fe86a.png" alt="本地资料图片" width="6944" height="640">，</p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-227-28de92f627.png" alt="本地资料图片" width="5024" height="672"></p>
-<p class="local-docx-line">设平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-228-f321604b57.png" alt="本地资料图片" width="992" height="576">的法向量为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-229-1d42945e7a.png" alt="本地资料图片" width="1888" height="640">，</p>
-<p class="local-docx-line">故可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-230-d432fc9d70.png" alt="本地资料图片" width="1920" height="1344">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-231-83dba84045.png" alt="本地资料图片" width="2048" height="1152">，</p>
-<p class="local-docx-line">取<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-232-70091f91a4.png" alt="本地资料图片" width="832" height="448">，可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-233-152a288625.png" alt="本地资料图片" width="1984" height="512">.故<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-234-5990b71736.png" alt="本地资料图片" width="1952" height="640">.</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-235-6986b0502c.png" alt="本地资料图片" width="2464" height="672">，</p>
-<p class="local-docx-line">故可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-236-ba688ef91d.png" alt="本地资料图片" width="4576" height="1344">.</p>
-<p class="local-docx-line">设直线A1C和平面A1BD所成角为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-237-60668bd80f.png" alt="本地资料图片" width="320" height="448">，</p>
-<p class="local-docx-line">故可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-238-f0b7de9fa5.png" alt="本地资料图片" width="4256" height="1088">.</p>
-<p class="local-docx-line">则直线A1C和平面A1BD所成角的正弦值为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-239-294c4f08aa.png" alt="本地资料图片" width="864" height="1088">.</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -3207,7 +2779,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3249,7 +2821,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3299,7 +2871,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3350,49 +2922,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">5．如图，四棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-430-67b0714e72.png" alt="本地资料图片" width="1760" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-431-31c0010290.png" alt="本地资料图片" width="960" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-432-f5e951acaf.png" alt="本地资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-433-20c4242a2c.png" alt="本地资料图片" width="1504" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-434-4ba37dac4b.png" alt="本地资料图片" width="2046" height="1093">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-435-142cf194da.png" alt="本地资料图片" width="4056" height="1093">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-436-4149aeb8e7.png" alt="本地资料图片" width="384" height="416">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-437-18dc66aafe.png" alt="本地资料图片" width="672" height="416">的中点，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-438-3e35dbcf65.png" alt="本地资料图片" width="672" height="448">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-439-7f3bbb245a.png" alt="本地资料图片" width="576" height="384">相交于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-440-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp26-a-441-7c80e44303.png" alt="本地资料图片" width="242" height="182"></div>
-<p class="local-docx-line">（Ⅰ）求证：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-442-15d7333774.png" alt="本地资料图片" width="992" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-443-505254b4f2.png" alt="本地资料图片" width="1152" height="448">；</p>
-<p class="local-docx-line">（Ⅱ）求直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-444-d28a4b1ac3.png" alt="本地资料图片" width="640" height="416">与平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-445-a1de29bc68.png" alt="本地资料图片" width="800" height="384">所成角的正弦值.</p>
-<p class="local-docx-line">【答案】（Ⅰ）详见解析；（Ⅱ）<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-446-0825254ca6.png" alt="本地资料图片" width="1216" height="992">.</p>
-<p class="local-docx-line">【解析】Ⅰ）</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp26-a-447-16276439dd.png" alt="本地资料图片" width="241" height="158"></div>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp26-a-448-98e34c787b.png" alt="本地资料图片" width="251" height="166"></div>
-<p class="local-docx-line">由已知<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-449-31c0010290.png" alt="本地资料图片" width="960" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-450-f5e951acaf.png" alt="本地资料图片" width="896" height="448">，可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-451-e44b9ff7df.png" alt="本地资料图片" width="1728" height="493">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-452-35dd449e25.png" alt="本地资料图片" width="1600" height="448">，</p>
-<p class="local-docx-line">由题意得，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-453-505254b4f2.png" alt="本地资料图片" width="1152" height="448">为直角梯形，如图所示，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-454-30acd32e10.png" alt="本地资料图片" width="1552" height="740">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-455-b23837c3be.png" alt="本地资料图片" width="1152" height="448">为平行四边形，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-456-72366bf86c.png" alt="本地资料图片" width="1440" height="416">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-457-d0cc383185.png" alt="本地资料图片" width="1568" height="416">.</p>
-<p class="local-docx-line">又因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-458-3f265b1e73.png" alt="本地资料图片" width="1600" height="448">，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-459-28513f1bb5.png" alt="本地资料图片" width="2176" height="480">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-460-bc63f05a46.png" alt="本地资料图片" width="1058" height="458">面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-461-2bfeadf57f.png" alt="本地资料图片" width="896" height="448">，</p>
-<p class="local-docx-line">故<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-462-7416e3924e.png" alt="本地资料图片" width="1728" height="493">.</p>
-<p class="local-docx-line">在直角梯形中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-463-fab3f4e740.png" alt="本地资料图片" width="3704" height="599">，</p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-464-31c0010290.png" alt="本地资料图片" width="960" height="416">面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-465-f5e951acaf.png" alt="本地资料图片" width="896" height="448">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-466-e44b9ff7df.png" alt="本地资料图片" width="1728" height="493">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-467-892658a751.png" alt="本地资料图片" width="1088" height="448">为等腰直角三角形，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-468-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">为斜边<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-469-3e35dbcf65.png" alt="本地资料图片" width="672" height="448">上的中点，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-470-0bc392ec97.png" alt="本地资料图片" width="1632" height="448">.且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-471-b24de4fec2.png" alt="本地资料图片" width="2434" height="493">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-472-15d7333774.png" alt="本地资料图片" width="992" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-473-505254b4f2.png" alt="本地资料图片" width="1152" height="448"></p>
-<p class="local-docx-line">（Ⅱ）法一：以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-474-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">为原点，分别以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-475-36af209ad3.png" alt="本地资料图片" width="2151" height="564">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-476-d5351099ec.png" alt="本地资料图片" width="320" height="352">轴，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-477-f528bdf372.png" alt="本地资料图片" width="352" height="416">轴，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-478-c1acf60c9f.png" alt="本地资料图片" width="288" height="288">轴的建立直角坐标系.</p>
-<p class="local-docx-line">不妨设<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-479-28fa819c75.png" alt="本地资料图片" width="1152" height="448"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-480-fdda2becc7.png" alt="本地资料图片" width="1834" height="564">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-481-950535bf37.png" alt="本地资料图片" width="1481" height="564">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-482-52c7571a89.png" alt="本地资料图片" width="1344" height="512">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-483-cc6aa3207c.png" alt="本地资料图片" width="1763" height="564">，</p>
-<p class="local-docx-line">设<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-484-3cbdf064eb.png" alt="本地资料图片" width="1632" height="576">是平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-485-a1de29bc68.png" alt="本地资料图片" width="800" height="384">的法向量.</p>
-<p class="local-docx-line">满足<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-486-f997e5611b.png" alt="本地资料图片" width="1824" height="1216"> ，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-487-1570602678.png" alt="本地资料图片" width="2048" height="1152"> ，</p>
-<p class="local-docx-line">则令<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-488-70091f91a4.png" alt="本地资料图片" width="832" height="448"> ，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-489-5714b975fb.png" alt="本地资料图片" width="1834" height="670"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-490-10e43dcbd6.png" alt="本地资料图片" width="3386" height="917"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-491-fb0c3292e3.png" alt="本地资料图片" width="3245" height="1622"></p>
-<p class="local-docx-line">法二：（等体积法求<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-492-376ad671b1.png" alt="本地资料图片" width="384" height="416">到平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-493-a1de29bc68.png" alt="本地资料图片" width="800" height="384">的距离）</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-494-483c512207.png" alt="本地资料图片" width="2645" height="635"></p>
-<p class="local-docx-line">设<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-495-fafb6e2e9a.png" alt="本地资料图片" width="1128" height="458">，计算可得</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-496-f7e1386c37.png" alt="本地资料图片" width="1152" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-497-21350726de.png" alt="本地资料图片" width="1658" height="635"> ，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-498-eedabefa17.png" alt="本地资料图片" width="1504" height="576"> ，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-499-cdef541d10.png" alt="本地资料图片" width="2293" height="1199"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-500-d3e96fa3cd.png" alt="本地资料图片" width="5221" height="1093">，</p>
-<p class="local-docx-line">解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-501-213c5fd67a.png" alt="本地资料图片" width="1975" height="1093"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp26-a-502-480a527764.png" alt="本地资料图片" width="3598" height="1093"></p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp26-a-503-ba77c3af7b.png" alt="本地资料图片" width="332" height="253"></div>
-<p class="local-docx-line">【题组三 二面角】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -3407,7 +2939,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3452,7 +2984,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3498,7 +3030,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3550,7 +3082,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3602,7 +3134,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3644,7 +3176,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3685,7 +3217,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3737,7 +3269,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3782,7 +3314,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3804,7 +3336,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3828,30 +3360,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．设点M是棱长为2的正方体ABCD-A1B1C1D1的棱AD的中点，点P在面BCC1B1所在的平面内，若平面D1PM分别与平面ABCD和平面BCC1B1所成的锐二面角相等，则点P到点C1的最短距离是（    ）</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-021-e8855a4611.png" alt="本地资料图片" width="768" height="960">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-022-52e0cf8d61.png" alt="本地资料图片" width="672" height="1088">C．1D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-023-bee41ee8a0.png" alt="本地资料图片" width="672" height="1088"></p>
-<p class="local-docx-line">【答案】A</p>
-<p class="local-docx-line">【解析】如图，过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-024-b68700206f.png" alt="本地资料图片" width="352" height="384">作<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-025-3ff2ae99b3.png" alt="本地资料图片" width="864" height="576">的平行线交<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-026-f72cc3b48c.png" alt="本地资料图片" width="640" height="448">于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-027-24c1ea1166.png" alt="本地资料图片" width="384" height="512">、交<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-028-a009055a69.png" alt="本地资料图片" width="768" height="576">于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-029-4149aeb8e7.png" alt="本地资料图片" width="384" height="416">，连接<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-030-4795e109db.png" alt="本地资料图片" width="736" height="512">，</p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-031-bfdab6e33b.png" alt="本地资料图片" width="640" height="512">是平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-032-9088a7c065.png" alt="本地资料图片" width="1120" height="576">与平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-033-a77f132402.png" alt="本地资料图片" width="1280" height="576">的交线，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-034-4795e109db.png" alt="本地资料图片" width="736" height="512">是平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-035-9088a7c065.png" alt="本地资料图片" width="1120" height="576">与平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-036-505254b4f2.png" alt="本地资料图片" width="1152" height="448">的交线．</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-037-e885548455.png" alt="本地资料图片" width="640" height="416">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-038-b60625895a.png" alt="本地资料图片" width="672" height="576">平行，交<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-039-f72cc3b48c.png" alt="本地资料图片" width="640" height="448">于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-040-ef34cb6bc9.png" alt="本地资料图片" width="416" height="416">，过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-041-ef34cb6bc9.png" alt="本地资料图片" width="416" height="416">作<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-042-20bf353981.png" alt="本地资料图片" width="672" height="448">垂直<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-043-4795e109db.png" alt="本地资料图片" width="736" height="512">于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-044-9ba7032d03.png" alt="本地资料图片" width="416" height="448">，则有，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-045-4795e109db.png" alt="本地资料图片" width="736" height="512">与平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-046-7131c851bc.png" alt="本地资料图片" width="896" height="448">垂直，所以，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-047-1031b67ca5.png" alt="本地资料图片" width="672" height="448">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-048-4795e109db.png" alt="本地资料图片" width="736" height="512">垂直，即角<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-049-05c5863d6d.png" alt="本地资料图片" width="928" height="448">是平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-050-6dc472aa7b.png" alt="本地资料图片" width="1056" height="384">与平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-051-505254b4f2.png" alt="本地资料图片" width="1152" height="448">的夹角的平面角，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-052-d6fed7c7b5.png" alt="本地资料图片" width="2368" height="896">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-053-cd48b13cb1.png" alt="本地资料图片" width="736" height="448">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-054-5f066b54ac.png" alt="本地资料图片" width="640" height="448">平行交<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-055-f72cc3b48c.png" alt="本地资料图片" width="640" height="448">于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-056-a1eeb0e1c6.png" alt="本地资料图片" width="448" height="448">，过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-057-a1eeb0e1c6.png" alt="本地资料图片" width="448" height="448">作<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-058-da0ba2ef9d.png" alt="本地资料图片" width="736" height="448">垂直<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-059-0ad6ec8c47.png" alt="本地资料图片" width="640" height="512">于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-060-5a24cd24db.png" alt="本地资料图片" width="416" height="384">，</p>
-<p class="local-docx-line">同上有：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-061-c62a26be8e.png" alt="本地资料图片" width="2560" height="896">，且有<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-062-7477501b4f.png" alt="本地资料图片" width="2432" height="416">，又因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-063-32606430e3.png" alt="本地资料图片" width="2240" height="416">，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-064-dd2aeb54fc.png" alt="本地资料图片" width="1504" height="416">，</p>
-<p class="local-docx-line">而<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-065-96380ed787.png" alt="本地资料图片" width="4352" height="576">，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-066-4e4d0e4058.png" alt="本地资料图片" width="1472" height="480">，</p>
-<p class="local-docx-line">而四边形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-067-3dd5465eaa.png" alt="本地资料图片" width="1152" height="512">一定是平行四边形，故它还是菱形，即点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-068-4149aeb8e7.png" alt="本地资料图片" width="384" height="416">一定是<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-069-a009055a69.png" alt="本地资料图片" width="768" height="576">的中点，</p>
-<p class="local-docx-line">点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-070-b68700206f.png" alt="本地资料图片" width="352" height="384">到点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-071-7a4c81b559.png" alt="本地资料图片" width="448" height="576">的最短距离是点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-072-7a4c81b559.png" alt="本地资料图片" width="448" height="576">到直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-073-7f3bbb245a.png" alt="本地资料图片" width="576" height="384">的距离，</p>
-<p class="local-docx-line">以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-074-376ad671b1.png" alt="本地资料图片" width="384" height="416">为原点，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-075-d28a4b1ac3.png" alt="本地资料图片" width="640" height="416">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-076-d5351099ec.png" alt="本地资料图片" width="320" height="352">轴，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-077-18dc66aafe.png" alt="本地资料图片" width="672" height="416">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-078-f528bdf372.png" alt="本地资料图片" width="352" height="416">轴，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-079-7c17988515.png" alt="本地资料图片" width="672" height="576">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-080-c1acf60c9f.png" alt="本地资料图片" width="288" height="288">轴，建立空间直角坐标系，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-081-3657ef30ce.png" alt="本地资料图片" width="1504" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-082-1059b2f63e.png" alt="本地资料图片" width="1693" height="705">， <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-083-fed14d7b5a.png" alt="本地资料图片" width="1664" height="640">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-084-3490227696.png" alt="本地资料图片" width="1824" height="608">， <img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-085-8609fb0b8a.png" alt="本地资料图片" width="1984" height="608">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-086-4ed3f556fd.png" alt="本地资料图片" width="352" height="320">点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-087-b68700206f.png" alt="本地资料图片" width="352" height="384">到点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-088-7a4c81b559.png" alt="本地资料图片" width="448" height="576">的最短距离：</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-089-dd09b1ec95.png" alt="本地资料图片" width="8480" height="1184">．</p>
-<p class="local-docx-line">故选：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-090-376ad671b1.png" alt="本地资料图片" width="384" height="416">．</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp27-a-091-4c77283f8e.png" alt="本地资料图片" width="293" height="232"></div>
-<p class="local-docx-line">【题组二 点线距】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -3866,22 +3377,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">1．已知正方体ABCD ­A1B1C1D1的棱长为2，点E是A1B1的中点，则点A到直线BE的距离是(　　)</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-092-9aabd66a4a.png" alt="本地资料图片" width="832" height="1088">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-093-33c5399677.png" alt="本地资料图片" width="832" height="1088"></p>
-<p class="local-docx-line">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-094-e8855a4611.png" alt="本地资料图片" width="768" height="960">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-095-51b5fc85db.png" alt="本地资料图片" width="576" height="960"></p>
-<p class="local-docx-line">【答案】B</p>
-<p class="local-docx-line">【解析】建立如图所示空间直角坐标系，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-096-2bb877c2b7.png" alt="本地资料图片" width="608" height="512">＝(0,2,0)，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-097-9fee39a605.png" alt="本地资料图片" width="608" height="512">＝(0,1,2)．</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp27-a-098-9a12523cc7.png" alt="本地资料图片" width="827" height="703"></div>
-<p class="local-docx-line">∴cosθ＝<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-099-c96c040bdf.png" alt="本地资料图片" width="1568" height="1408">＝<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-100-69227569d8.png" alt="本地资料图片" width="1760" height="1152">.∴sinθ＝<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-101-06731fc821.png" alt="本地资料图片" width="2944" height="992">.</p>
-<p class="local-docx-line">故点A到直线BE的距离d＝|<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-102-88e723ced0.png" alt="本地资料图片" width="640" height="512">|sinθ＝2×<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-103-f592998470.png" alt="本地资料图片" width="2048" height="992">.</p>
-<p class="local-docx-line">故答案为B</p>
-<p class="local-docx-line">【题组三 点面距】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -3896,7 +3394,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3936,7 +3434,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3967,7 +3465,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4007,39 +3505,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．如图，四棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-240-67b0714e72.png" alt="本地资料图片" width="1760" height="448">中，底面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-241-505254b4f2.png" alt="本地资料图片" width="1152" height="448">为矩形，侧面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-242-cb0ed70b42.png" alt="本地资料图片" width="896" height="416">为正三角形，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-243-0554ad4ccb.png" alt="本地资料图片" width="1248" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-244-e35fe6581c.png" alt="本地资料图片" width="1056" height="416">，平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-245-194a2f856c.png" alt="本地资料图片" width="1216" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-246-505254b4f2.png" alt="本地资料图片" width="1152" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-247-4149aeb8e7.png" alt="本地资料图片" width="384" height="416">为棱<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-248-4903117669.png" alt="本地资料图片" width="608" height="416">上一点（不与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-249-b68700206f.png" alt="本地资料图片" width="352" height="384">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-250-c070be86e9.png" alt="本地资料图片" width="352" height="384">重合），平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-251-ac9a283a2a.png" alt="本地资料图片" width="928" height="416">交棱<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-252-1dc8e4fb5d.png" alt="本地资料图片" width="640" height="448">于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-253-ef34cb6bc9.png" alt="本地资料图片" width="416" height="416">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp27-a-254-be0df7f26e.png" alt="本地资料图片" width="483" height="453"></div>
-<p class="local-docx-line">（1）求证：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-255-1f652ac578.png" alt="本地资料图片" width="1600" height="512">；</p>
-<p class="local-docx-line">（2）若二面角<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-256-444d2cbaa8.png" alt="本地资料图片" width="1888" height="448">的余弦值为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-257-6779f388e1.png" alt="本地资料图片" width="1024" height="1088">，求点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-258-c070be86e9.png" alt="本地资料图片" width="352" height="384">到平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-259-ac6bd5b5c1.png" alt="本地资料图片" width="800" height="416">的距离.</p>
-<p class="local-docx-line">【答案】（1）证明见解析；（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-260-08bbd4dcba.png" alt="本地资料图片" width="864" height="960">.</p>
-<p class="local-docx-line">【解析】（1）<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-261-8181bcb71e.png" alt="本地资料图片" width="352" height="320">底面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-262-505254b4f2.png" alt="本地资料图片" width="1152" height="448">为矩形，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-263-4b160ec633.png" alt="本地资料图片" width="1920" height="512">.</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-264-dd197e7f59.png" alt="本地资料图片" width="1376" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-265-5d634d3dff.png" alt="本地资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-266-6ee0351c44.png" alt="本地资料图片" width="992" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-267-5d634d3dff.png" alt="本地资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-268-2ef04c7460.png" alt="本地资料图片" width="1312" height="512">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-269-5d634d3dff.png" alt="本地资料图片" width="896" height="448">.</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-270-9a0ed77dc2.png" alt="本地资料图片" width="1376" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-271-ac9a283a2a.png" alt="本地资料图片" width="928" height="416">，平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-272-841bb15f67.png" alt="本地资料图片" width="1216" height="480">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-273-a6f9b0b2da.png" alt="本地资料图片" width="1568" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-274-5629453282.png" alt="本地资料图片" width="1920" height="512">.</p>
-<p class="local-docx-line">（2）取<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-275-18dc66aafe.png" alt="本地资料图片" width="672" height="416">的中点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-276-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">，连接<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-277-ee18015487.png" alt="本地资料图片" width="640" height="448">，过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-278-ad2c0fbebb.png" alt="本地资料图片" width="384" height="448">作<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-279-4ac79654d4.png" alt="本地资料图片" width="1632" height="512">交<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-280-f72cc3b48c.png" alt="本地资料图片" width="640" height="448">于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-281-5a24cd24db.png" alt="本地资料图片" width="416" height="384">.</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-282-8181bcb71e.png" alt="本地资料图片" width="352" height="320">侧面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-283-cb0ed70b42.png" alt="本地资料图片" width="896" height="416">为正三角形，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-284-617b807e0c.png" alt="本地资料图片" width="1952" height="448">.</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-285-8181bcb71e.png" alt="本地资料图片" width="352" height="320">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-286-194a2f856c.png" alt="本地资料图片" width="1216" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-287-505254b4f2.png" alt="本地资料图片" width="1152" height="448">且交线为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-288-18dc66aafe.png" alt="本地资料图片" width="672" height="416">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-289-f42ecfbed0.png" alt="本地资料图片" width="1312" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-290-505254b4f2.png" alt="本地资料图片" width="1152" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-291-860c85c023.png" alt="本地资料图片" width="1312" height="416">为矩形，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-292-c0411a0422.png" alt="本地资料图片" width="1920" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-293-e2f46cb22b.png" alt="本地资料图片" width="1984" height="448">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-294-4ed3f556fd.png" alt="本地资料图片" width="352" height="320">如图所示，建立以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-295-2673ea12be.png" alt="本地资料图片" width="670" height="493">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-296-f886546aa8.png" alt="本地资料图片" width="704" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-297-ccc71b57b3.png" alt="本地资料图片" width="640" height="448">所在直线为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-298-d5351099ec.png" alt="本地资料图片" width="320" height="352">轴，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-299-f528bdf372.png" alt="本地资料图片" width="352" height="416">轴，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-300-c1acf60c9f.png" alt="本地资料图片" width="288" height="288">轴的空间直角坐标系<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-301-740ecc30a9.png" alt="本地资料图片" width="1248" height="512"></p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp27-a-302-badb8c5878.png" alt="本地资料图片" width="304" height="298"></div>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-303-79712bb820.png" alt="本地资料图片" width="1888" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-304-254dca6ed9.png" alt="本地资料图片" width="1824" height="768">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-305-0223a0e17d.png" alt="本地资料图片" width="1472" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-306-025a833ba1.png" alt="本地资料图片" width="1472" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-307-4e32819c9e.png" alt="本地资料图片" width="1728" height="640">.</p>
-<p class="local-docx-line">设<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-308-45036e9db9.png" alt="本地资料图片" width="1600" height="640">，又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-309-e5fd20ed91.png" alt="本地资料图片" width="3616" height="608">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-310-96a7b83cf5.png" alt="本地资料图片" width="3424" height="768">.</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-311-2016bd31c9.png" alt="本地资料图片" width="4448" height="768">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-312-2cea813641.png" alt="本地资料图片" width="2304" height="672">.</p>
-<p class="local-docx-line">设平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-313-ac6bd5b5c1.png" alt="本地资料图片" width="800" height="416">的法向量为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-314-973bcf846d.png" alt="本地资料图片" width="2176" height="672"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-315-5546baa9c0.png" alt="本地资料图片" width="8128" height="1344">，</p>
-<p class="local-docx-line">令<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-316-8421c13200.png" alt="本地资料图片" width="960" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-317-a116088428.png" alt="本地资料图片" width="1312" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-318-9000085819.png" alt="本地资料图片" width="2432" height="1088">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-319-4ed3f556fd.png" alt="本地资料图片" width="352" height="320">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-320-ac6bd5b5c1.png" alt="本地资料图片" width="800" height="416">的一个法向量<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-321-10a1f7972f.png" alt="本地资料图片" width="3328" height="1280">.</p>
-<p class="local-docx-line">又易知<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-322-b1f3e5d703.png" alt="本地资料图片" width="2336" height="768">是平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-323-1c61998676.png" alt="本地资料图片" width="896" height="448">的一个法向量，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-324-95f8c10c80.png" alt="本地资料图片" width="8864" height="2240">，</p>
-<p class="local-docx-line">解得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-325-3d0602f493.png" alt="本地资料图片" width="992" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-326-b05f185652.png" alt="本地资料图片" width="2368" height="1280">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-327-cef6840035.png" alt="本地资料图片" width="3168" height="1280">.</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-328-8181bcb71e.png" alt="本地资料图片" width="352" height="320">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-329-ac6bd5b5c1.png" alt="本地资料图片" width="800" height="416">的一个法向量<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-330-b91579a009.png" alt="本地资料图片" width="2496" height="768">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-331-4ed3f556fd.png" alt="本地资料图片" width="352" height="320">点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-332-c070be86e9.png" alt="本地资料图片" width="352" height="384">到平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-333-ac6bd5b5c1.png" alt="本地资料图片" width="800" height="416">的距离为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp27-a-334-3508b7208c.png" alt="本地资料图片" width="4448" height="1184">.</p>
-<p class="local-docx-line">【题组四 线面距】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -4053,7 +3521,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4089,7 +3557,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4118,7 +3586,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4140,7 +3608,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4168,18 +3636,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．（2020·黑龙江省哈师大附中）已知三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-042-d7999bc34e.png" alt="本地资料图片" width="1504" height="448">的四个顶点都在球<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-043-ed7382d549.png" alt="本地资料图片" width="384" height="448">的球面上，若<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-044-b8acf2a8a4.png" alt="本地资料图片" width="928" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-045-68989f7626.png" alt="本地资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-046-7b55040459.png" alt="本地资料图片" width="2080" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-047-bcc375e4e0.png" alt="本地资料图片" width="2272" height="992">，则球<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-048-ed7382d549.png" alt="本地资料图片" width="384" height="448">的表面积为（    ）</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-049-ca534fb7b4.png" alt="本地资料图片" width="1408" height="1088">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-050-57e3e4e365.png" alt="本地资料图片" width="832" height="992">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-051-a359cf4f6a.png" alt="本地资料图片" width="736" height="448">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-052-03bc770267.png" alt="本地资料图片" width="768" height="448"></p>
-<p class="local-docx-line">【答案】D</p>
-<p class="local-docx-line">【解析】设<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-053-9daa3bec08.png" alt="本地资料图片" width="1088" height="448">外接圆半径为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-054-feaaef6e0b.png" alt="本地资料图片" width="288" height="320">，根据正弦定理：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-055-2e88a4990e.png" alt="本地资料图片" width="3712" height="1472">，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-056-3986f8ebc3.png" alt="本地资料图片" width="832" height="448">，</p>
-<p class="local-docx-line">设球<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-057-ed7382d549.png" alt="本地资料图片" width="384" height="448">的半径为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-058-def79c754b.png" alt="本地资料图片" width="384" height="416">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-059-7e73196c19.png" alt="本地资料图片" width="3392" height="1184">，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-060-ec3af5f7bb.png" alt="本地资料图片" width="2624" height="512">.故选：D.</p>
-<p class="local-docx-line">【题组二 墙角模型】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -4192,7 +3651,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4216,7 +3675,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4239,18 +3698,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．（2020·江苏省海安高级中学）长方体的长、宽、高分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-084-8a7218488e.png" alt="本地资料图片" width="320" height="416">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-085-51856b0fca.png" alt="本地资料图片" width="288" height="448">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-086-9e2879e9c1.png" alt="本地资料图片" width="224" height="416">，其顶点都在球<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-087-ed7382d549.png" alt="本地资料图片" width="384" height="448">的球面上，则球<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-088-ed7382d549.png" alt="本地资料图片" width="384" height="448">的表面积为_______.</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-089-9a22c0ade8.png" alt="本地资料图片" width="768" height="448"></p>
-<p class="local-docx-line">【解析】设球<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-090-ed7382d549.png" alt="本地资料图片" width="384" height="448">的半径为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-091-def79c754b.png" alt="本地资料图片" width="384" height="416">，由于长方体的体对角线为球<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-092-ed7382d549.png" alt="本地资料图片" width="384" height="448">的直径，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-093-0b06149518.png" alt="本地资料图片" width="3968" height="640">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-094-94df2562b7.png" alt="本地资料图片" width="1792" height="1088">，因此，球<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-095-ed7382d549.png" alt="本地资料图片" width="384" height="448">的表面积为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-096-c73498d6f5.png" alt="本地资料图片" width="5024" height="1344">.</p>
-<p class="local-docx-line">故答案为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-097-9a22c0ade8.png" alt="本地资料图片" width="768" height="448">.</p>
-<p class="local-docx-line">【题组三 斗笠模型】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -4263,7 +3713,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4292,7 +3742,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4317,24 +3767,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．已知<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-139-7989fe32e7.png" alt="本地资料图片" width="1088" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-140-0667fa6251.png" alt="本地资料图片" width="2112" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-141-c43386280c.png" alt="本地资料图片" width="2048" height="448">，平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-142-bc48fb3be8.png" alt="本地资料图片" width="896" height="448">外一点P满足<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-143-352a32381d.png" alt="本地资料图片" width="3424" height="576">，则三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-144-1ff15b4b00.png" alt="本地资料图片" width="1504" height="448">的外接球的表面积是（    ）</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-145-241b904421.png" alt="本地资料图片" width="672" height="416">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-146-47b57eb5c2.png" alt="本地资料图片" width="736" height="448">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-147-4fe854c281.png" alt="本地资料图片" width="736" height="448">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-148-2b27e776a2.png" alt="本地资料图片" width="704" height="448"></p>
-<p class="local-docx-line">【答案】B</p>
-<p class="local-docx-line">【解析】因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-149-352a32381d.png" alt="本地资料图片" width="3424" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-150-cef2aac444.png" alt="本地资料图片" width="352" height="320">棱锥顶点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-151-7d53a95619.png" alt="本地资料图片" width="352" height="384">在底面投影为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-152-7989fe32e7.png" alt="本地资料图片" width="1088" height="448">的外心，</p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-153-43a474b03b.png" alt="本地资料图片" width="1216" height="448">的外接圆半径等于三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-154-1ff15b4b00.png" alt="本地资料图片" width="1504" height="448">外接球半径，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-155-72079a47ca.png" alt="本地资料图片" width="1376" height="448">是等腰直角三角形，斜边<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-156-98d450217c.png" alt="本地资料图片" width="1728" height="544">，</p>
-<p class="local-docx-line">如图在<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-157-43a474b03b.png" alt="本地资料图片" width="1216" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-158-b75348f26e.png" alt="本地资料图片" width="2560" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-159-98d450217c.png" alt="本地资料图片" width="1728" height="544"></p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-160-097712c270.png" alt="本地资料图片" width="6944" height="960">，设<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-161-43a474b03b.png" alt="本地资料图片" width="1216" height="448">外接圆的半径为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-162-36eef965a0.png" alt="本地资料图片" width="288" height="320">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-163-e072b2d176.png" alt="本地资料图片" width="3456" height="864">解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-164-048d394fdd.png" alt="本地资料图片" width="832" height="448"></p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp28-a-165-70c6d57395.png" alt="本地资料图片" width="391" height="262"></div>
-<p class="local-docx-line">则三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-166-1ff15b4b00.png" alt="本地资料图片" width="1504" height="448">外接球的半径<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-167-907bcf1ffb.png" alt="本地资料图片" width="928" height="448">，</p>
-<p class="local-docx-line">故三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-168-1ff15b4b00.png" alt="本地资料图片" width="1504" height="448">外接球的表面积<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-169-0a7901c044.png" alt="本地资料图片" width="2592" height="512">．故选：B．</p>
-<p class="local-docx-line">【题组四  怀表模型】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -4347,7 +3782,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4382,7 +3817,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4413,33 +3848,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．（2020·黑龙江省哈尔滨三中）在边长为2的菱形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-262-6d53f638bf.png" alt="本地资料图片" width="1152" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-263-8a2816d8c3.png" alt="本地资料图片" width="1696" height="576">，将菱形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-264-6d53f638bf.png" alt="本地资料图片" width="1152" height="448">沿对角线<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-265-48c3e3062f.png" alt="本地资料图片" width="672" height="448">折起，使得平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-266-9dd86ca63f.png" alt="本地资料图片" width="1248" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-267-ba1294b6c8.png" alt="本地资料图片" width="928" height="448">，则所得三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-268-bc24379ed3.png" alt="本地资料图片" width="1504" height="448">的外接球表面积为（    ）</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-269-63c85e57c7.png" alt="本地资料图片" width="544" height="992">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-270-deef13bd05.png" alt="本地资料图片" width="736" height="992">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-271-15d12c3804.png" alt="本地资料图片" width="768" height="992">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-272-056cafac52.png" alt="本地资料图片" width="768" height="992"></p>
-<p class="local-docx-line">【答案】C</p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-273-375c44a651.png" alt="本地资料图片" width="352" height="320">在边长为2的菱形<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-274-6d53f638bf.png" alt="本地资料图片" width="1152" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-275-8a2816d8c3.png" alt="本地资料图片" width="1696" height="576">，</p>
-<p class="local-docx-line">如图，</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp28-a-276-015aedc317.png" alt="本地资料图片" width="440" height="363"></div>
-<p class="local-docx-line">由已知可得，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-277-9daa3bec08.png" alt="本地资料图片" width="1088" height="448">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-278-2ae96b845d.png" alt="本地资料图片" width="1120" height="448">均为边长为2的等边三角形，</p>
-<p class="local-docx-line">取<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-279-48c3e3062f.png" alt="本地资料图片" width="672" height="448">中点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-280-e6b5ca216e.png" alt="本地资料图片" width="416" height="448">，连接<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-281-ce6c057c64.png" alt="本地资料图片" width="672" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-282-06c9e70494.png" alt="本地资料图片" width="704" height="448">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-283-29ef679382.png" alt="本地资料图片" width="1632" height="448">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-284-0d676196e5.png" alt="本地资料图片" width="8352" height="960">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-285-375c44a651.png" alt="本地资料图片" width="352" height="320">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-286-9dd86ca63f.png" alt="本地资料图片" width="1248" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-287-ba1294b6c8.png" alt="本地资料图片" width="928" height="448">，交线为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-288-48c3e3062f.png" alt="本地资料图片" width="672" height="448">，</p>
-<p class="local-docx-line">而<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-289-640a80dee4.png" alt="本地资料图片" width="896" height="416">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-290-68989f7626.png" alt="本地资料图片" width="896" height="448">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-291-1f4ace8c04.png" alt="本地资料图片" width="992" height="448">平面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-292-ba1294b6c8.png" alt="本地资料图片" width="928" height="448">，</p>
-<p class="local-docx-line">分别取<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-293-3264cdbb39.png" alt="本地资料图片" width="1120" height="448">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-294-83d8c0434e.png" alt="本地资料图片" width="1248" height="416">的外心<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-295-4b4d6aa1bc.png" alt="本地资料图片" width="384" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-296-5c723ab97e.png" alt="本地资料图片" width="416" height="416">，</p>
-<p class="local-docx-line">过<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-297-4b4d6aa1bc.png" alt="本地资料图片" width="384" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-298-5c723ab97e.png" alt="本地资料图片" width="416" height="416">分别作两面的垂线，相交于<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-299-ed7382d549.png" alt="本地资料图片" width="384" height="448">，</p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-300-ed7382d549.png" alt="本地资料图片" width="384" height="448">为三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-301-bc24379ed3.png" alt="本地资料图片" width="1504" height="448">的外接球的球心，</p>
-<p class="local-docx-line">由<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-302-e9cfdcda44.png" alt="本地资料图片" width="1088" height="448">与<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-303-2ae96b845d.png" alt="本地资料图片" width="1120" height="448">均为等边三角形且边长为2，</p>
-<p class="local-docx-line">可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-304-0429d8e4be.png" alt="本地资料图片" width="3264" height="960">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-305-23fe2e0fe5.png" alt="本地资料图片" width="3456" height="960">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-306-70756ff692.png" alt="本地资料图片" width="6688" height="1088">，</p>
-<p class="local-docx-line">即三棱锥外接球的半径：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-307-352e189992.png" alt="本地资料图片" width="2368" height="1088">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-308-a06558a383.png" alt="本地资料图片" width="352" height="320">三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-309-bc24379ed3.png" alt="本地资料图片" width="1504" height="448">的外接球的表面积为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-310-e86e622169.png" alt="本地资料图片" width="4096" height="960">.故选：C.</p>
-<p class="local-docx-line">【题组五 矩形模型】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -4452,22 +3863,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">1．（2020·重庆一中高三）已知四面体<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-311-6d53f638bf.png" alt="本地资料图片" width="1152" height="448">满足：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-312-621b33e900.png" alt="本地资料图片" width="4864" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-313-fa76a2240e.png" alt="本地资料图片" width="1536" height="544">，则四面体<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-314-6d53f638bf.png" alt="本地资料图片" width="1152" height="448">外接球的表面积为_______.</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-315-3ebdd49db4.png" alt="本地资料图片" width="576" height="448"></p>
-<p class="local-docx-line">【解析】因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-316-d726f01088.png" alt="本地资料图片" width="3904" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-317-fa76a2240e.png" alt="本地资料图片" width="1536" height="544">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-318-c1cd00f5e6.png" alt="本地资料图片" width="2880" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-319-05cefbb385.png" alt="本地资料图片" width="2880" height="512">，</p>
-<p class="local-docx-line">所以△<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-320-0ee3ba5172.png" alt="本地资料图片" width="992" height="512">△<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-321-6c42b20ca4.png" alt="本地资料图片" width="992" height="512">均为直角三角形，取斜边<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-322-a2632e2556.png" alt="本地资料图片" width="640" height="416">的中点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-323-ed7382d549.png" alt="本地资料图片" width="384" height="448">，连接<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-324-117994bc8d.png" alt="本地资料图片" width="640" height="448">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-325-f2dede01a0.png" alt="本地资料图片" width="672" height="448">，如图：</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp28-a-326-b41a554f5f.png" alt="本地资料图片" width="326" height="352"></div>
-<p class="local-docx-line">易得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-327-a43e373987.png" alt="本地资料图片" width="3456" height="448">，所以点<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-328-ed7382d549.png" alt="本地资料图片" width="384" height="448">为该四面体外接球的球心，</p>
-<p class="local-docx-line">所以球的半径<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-329-235fa8e7db.png" alt="本地资料图片" width="3360" height="1088">，故其表面积<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-330-82880e04a8.png" alt="本地资料图片" width="4544" height="1344">.</p>
-<p class="local-docx-line">故答案为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-331-3ebdd49db4.png" alt="本地资料图片" width="576" height="448">.</p>
-<p class="local-docx-line">【题组六 L模型】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -4480,7 +3878,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4519,7 +3917,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4550,7 +3948,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4572,24 +3970,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．（2020·黑龙江省铁人中学）已知三棱锥<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-420-d7999bc34e.png" alt="本地资料图片" width="1504" height="448">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-421-094d3784b1.png" alt="本地资料图片" width="1120" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-422-12d5fc9564.png" alt="本地资料图片" width="1472" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-423-eae618ec5f.png" alt="本地资料图片" width="1696" height="544">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-424-e84d08f9b0.png" alt="本地资料图片" width="2304" height="576">，面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-425-9b94d023d9.png" alt="本地资料图片" width="1184" height="416">面ABC，则此三棱锥的外接球的表面积为____．</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-426-6c570b9342.png" alt="本地资料图片" width="768" height="896"></p>
-<p class="local-docx-line">【解析】作示意图如图所示：</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/solid-geometry-local/kp28-a-427-9513eb35a9.png" alt="本地资料图片" width="131" height="172"></div>
-<p class="local-docx-line">设<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-428-fd170d8011.png" alt="本地资料图片" width="416" height="384">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-429-207d90e3ae.png" alt="本地资料图片" width="640" height="416">的中点，由<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-430-e84d08f9b0.png" alt="本地资料图片" width="2304" height="576">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-431-696d2d91d8.png" alt="本地资料图片" width="1632" height="448">，又面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-432-9b94d023d9.png" alt="本地资料图片" width="1184" height="416">面ABC，</p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-433-50dda7aba1.png" alt="本地资料图片" width="1024" height="448">面<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-434-b2d2f8f339.png" alt="本地资料图片" width="832" height="416">，</p>
-<p class="local-docx-line">由题<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-435-7c3fb49f2b.png" alt="本地资料图片" width="2784" height="480">，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-436-81cc81ba52.png" alt="本地资料图片" width="1504" height="416">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-437-2cdbb4f92a.png" alt="本地资料图片" width="2528" height="416">，</p>
-<p class="local-docx-line">故三棱锥的外接球球心<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-438-ed7382d549.png" alt="本地资料图片" width="384" height="448">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-439-33c6b3ab58.png" alt="本地资料图片" width="704" height="448">上，球半径为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-440-def79c754b.png" alt="本地资料图片" width="384" height="416">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-441-ccb7eeb21d.png" alt="本地资料图片" width="672" height="416"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-442-b6cbaf8b4a.png" alt="本地资料图片" width="1408" height="416">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-443-c9b51f3e48.png" alt="本地资料图片" width="4096" height="640">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-444-db181e11f0.png" alt="本地资料图片" width="3808" height="576">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-445-14dd9653a2.png" alt="本地资料图片" width="3040" height="512">，得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-446-d469b91d87.png" alt="本地资料图片" width="3456" height="704">，得<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-447-ee0f6b821a.png" alt="本地资料图片" width="1504" height="1056">，</p>
-<p class="local-docx-line">三棱锥的外接球的表面积为<img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-448-5b4a89c53e.png" alt="本地资料图片" width="3168" height="1056"><img class="local-docx-image local-docx-inline-image" src="../../../assets/solid-geometry-local/kp28-a-449-f2bc201d7a.png" alt="本地资料图片" width="1120" height="992">.</p>
-<p class="local-docx-line">【题组七 最值问题】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -4602,7 +3985,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4640,7 +4023,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -4664,7 +4047,7 @@
 
 :::
 
-## 抽取统计
+## 历史抽取统计（非核验结果）
 
 - 全量原卷题目：132 道。
 - 可折叠解析版题块：133 道。

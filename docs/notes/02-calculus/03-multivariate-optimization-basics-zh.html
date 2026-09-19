@@ -34,30 +34,30 @@
       <h1>多元函数最值与优化基础：从极值判别到稀疏优化</h1>
       <p>这篇不按教材章节走，而按“读优化/特征选择论文时最常用的局部工具”来整理。</p>
     </div>
-    <div class="subject-grid"><section class="page-section article"><p>如果把这篇压成一句话，那就是：</p>
+    <div class="subject-grid"><a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article"><p>如果把这篇压成一句话，那就是：</p>
 <blockquote><p>梯度告诉你“往哪里走最陡”，Hessian 告诉你“地形怎么弯”，约束决定你“哪些方向根本不能走”，而 <code>L1</code> 正则会把几何直接改造成偏爱稀疏解的形状。</p></blockquote>
 <p>这也是高数进入优化、再进入 AI 的一条最短路径。和 <a href="../03-linear-algebra/03-linear-algebra-in-machine-learning-zh.html">线性代数在机器学习中的核心结构作用</a> 配合看，会更容易把“方向、曲率、条件数、稀疏性”连成一条线。</p>
 <hr>
-<h2>一、核心知识点总结</h2>
-<h3>1. 梯度（Gradient）</h3>
+<h2 id="section-1">一、核心知识点总结</h2>
+<h3 id="section-2">1. 梯度（Gradient）</h3>
 <ul><li><strong>核心定义</strong>：对可微函数 $f:\mathbb{R}^n \to \mathbb{R}$，梯度是各个一阶偏导数组成的向量，它把“每个坐标方向上的变化率”收集到一起。</li><li><strong>直观理解</strong>：把函数看成地形，梯度就是当前位置“上坡最快”的方向；反方向 $-\nabla f$ 就是“下坡最快”的方向。</li><li><strong>数学表达</strong>：$\nabla f(x)=\left(\frac{\partial f}{\partial x_1},\frac{\partial f}{\partial x_2},\dots,\frac{\partial f}{\partial x_n}\right)^T$，并且对单位向量 $u$ 有方向导数 $D_u f(x)=\nabla f(x)^T u$；其最大值在 $u=\frac{\nabla f(x)}{\|\nabla f(x)\|}$ 处取得。</li><li><strong>在优化/AI中的作用</strong>：几乎所有一阶优化算法都围绕梯度展开。梯度下降、随机梯度下降、动量法、Adam，本质上都在近似回答一句话：当前最值得优先修正的参数方向是什么。</li></ul>
-<h3>2. 驻点（Critical Point）</h3>
+<h3 id="section-3">2. 驻点（Critical Point）</h3>
 <ul><li><strong>核心定义</strong>：对无约束可微问题，若某点满足 $\nabla f(x^\star)=0$，则称 $x^\star$ 为驻点。</li><li><strong>直观理解</strong>：在驻点处，一阶线性近似已经不给出明确的上升或下降偏好；也就是“站在局部看，所有一阶方向都暂时打平了”。</li><li><strong>数学表达</strong>：若 $x^\star$ 是定义域内部的局部极大值点或局部极小值点，且 $f$ 在该点可微，则必有 $\nabla f(x^\star)=0$。这是一阶必要条件，不是充分条件。</li><li><strong>在优化/AI中的作用</strong>：训练算法常把“找到驻点”当成停机目标，但驻点未必是最小值，也可能是鞍点。深度学习里这点尤其重要，因为高维非凸问题中鞍点比局部极大值更常见。</li></ul>
-<h3>3. Hessian 矩阵</h3>
+<h3 id="section-4">3. Hessian 矩阵</h3>
 <ul><li><strong>核心定义</strong>：Hessian 是由二阶偏导数组成的矩阵，用来描述多元函数的二阶局部变化。</li><li><strong>直观理解</strong>：梯度像“坡度”，Hessian 像“地形弯曲方式”。同一个驻点附近，地形可能像碗、像倒扣碗，也可能像马鞍。</li><li><strong>数学表达</strong>：$H_f(x)=\left[\frac{\partial^2 f}{\partial x_i \partial x_j}\right]_{i,j=1}^n$。二阶 Taylor 近似写成 $f(x+h)\approx f(x)+\nabla f(x)^T h+\frac{1}{2}h^T H_f(x) h$。</li><li><strong>在优化/AI中的作用</strong>：Hessian 决定局部曲率，也决定优化难度。牛顿法、拟牛顿法、Gauss-Newton、Fisher 近似，都是在想办法利用或近似利用这个二阶结构。</li></ul>
-<h3>4. 二阶判别法（极值判断）</h3>
+<h3 id="section-5">4. 二阶判别法（极值判断）</h3>
 <ul><li><strong>核心定义</strong>：在驻点处，利用 Hessian 的正定性、负定性或不定性来判断该点是极小、极大还是鞍点。</li><li><strong>直观理解</strong>：一阶项消失以后，真正决定地形局部形状的就是二阶项 $h^T H h$。如果所有小扰动都让函数增大，那是局部极小；如果有些方向增大、有些方向减小，那就是鞍点。</li><li><strong>数学表达</strong>：若 $\nabla f(x^\star)=0$，那么当 $H_f(x^\star)\succ 0$ 时，$x^\star$ 是严格局部极小点；当 $H_f(x^\star)\prec 0$ 时，$x^\star$ 是严格局部极大点；当 $H_f(x^\star)$ 不定时，$x^\star$ 是鞍点；当 $H_f(x^\star)$ 只有半正定或半负定时，二阶判别法不能直接下结论。对二元函数 $f(x,y)$，常用判别式 $D=f_{xx}f_{yy}-f_{xy}^2$：若 $D&gt;0$ 且 $f_{xx}&gt;0$，则局部极小；若 $D&gt;0$ 且 $f_{xx}&lt;0$，则局部极大；若 $D&lt;0$，则为鞍点；若 $D=0$，则结论不确定。</li><li><strong>在优化/AI中的作用</strong>：这套判别法是理解“为什么某些点训练会停、但并不是好解”的第一块砖。它也是从一阶方法过渡到二阶方法、从几何直觉过渡到算法选择的关键。</li></ul>
-<h3>5. 拉格朗日乘子法</h3>
+<h3 id="section-6">5. 拉格朗日乘子法</h3>
 <ul><li><strong>核心定义</strong>：它是处理等式约束极值问题的基本方法，把原问题转成一个拉格朗日函数，再联合求驻点。</li><li><strong>直观理解</strong>：约束会限制你只能沿可行集移动；最优点处，目标函数在可行方向上已经无法继续下降，因此目标函数梯度必须落在约束法向方向上。</li><li><strong>数学表达</strong>：对约束 $g(x)=0$，构造 $\mathcal{L}(x,\lambda)=f(x)+\lambda g(x)$。一阶条件写成 $\nabla_x \mathcal{L}(x,\lambda)=\nabla f(x)+\lambda \nabla g(x)=0$， $g(x)=0$。 常见等价写法是 $\nabla f(x)=\mu \nabla g(x)$。</li><li><strong>在优化/AI中的作用</strong>：很多学习问题天然带约束，比如 simplex 约束、资源预算、范数约束、概率归一化。拉格朗日乘子法是进入 KKT 条件、对偶问题、约束优化算法的起点。</li></ul>
-<h3>6. <code>L1</code> 正则与不可导问题</h3>
+<h3 id="section-7">6. <code>L1</code> 正则与不可导问题</h3>
 <ul><li><strong>核心定义</strong>：<code>L1</code> 正则指在目标函数中加入 $\|x\|_1=\sum_i |x_i|$。它在 $x_i=0$ 处不可导，因此不能机械地沿用“令梯度等于零”的套路。</li><li><strong>直观理解</strong>：<code>|x|</code> 在 0 附近有尖点，意思是“是否保留这个变量”在 0 这个位置发生了结构变化；这正是它能做变量筛选的几何来源。</li><li><strong>数学表达</strong>：单变量函数 $|x|$ 在 $x=0$ 处左导数为 $-1$、右导数为 $1$，所以不可导。对问题 $\min_x \|Ax-b\|^2+\lambda \|x\|_1$， 正确的一阶最优性条件不是 $\nabla f(x)=0$，而是 $0 \in 2A^T(Ax-b)+\lambda \,\partial \|x\|_1$， 其中 $\partial \|x\|_1$ 是次梯度集合。</li><li><strong>在优化/AI中的作用</strong>：<code>L1</code> 正则是 Lasso、稀疏编码、特征选择的经典基础。它通过“允许很多坐标精确地落到 0”来完成模型压缩、变量筛选和可解释性增强。</li></ul>
 <hr>
-<h2>二、典型例题</h2>
-<h3>例题 1：梯度与驻点</h3>
+<h2 id="section-8">二、典型例题</h2>
+<h3 id="section-9">例题 1：梯度与驻点</h3>
 <p>已知</p>
 <div class="math-display">$$f(x,y)=x^2+xy+y^2$$</div>
 <p>要求：</p>
-<ol><li>求梯度</li><li>求驻点</li></ol>
+<ol start="1"><li>求梯度</li><li>求驻点</li></ol>
 <h4>Step 1：先求一阶偏导</h4>
 <p>为什么先做这一步：因为驻点的定义就是 $\nabla f=0$，所以必须先把梯度写出来。</p>
 <p>对 $x$ 求偏导：</p>
@@ -82,17 +82,17 @@ $$</div>
 <p>进一步得到</p>
 <div class="math-display">$$y=-2x=0$$</div>
 <h4>标准答案</h4>
-<ol><li>梯度是</li></ol>
+<ol start="1"><li>梯度是</li></ol>
 <div class="math-display">$$\nabla f(x,y)=\begin{pmatrix}2x+y\\ x+2y\end{pmatrix}$$</div>
-<ol><li>驻点是</li></ol>
+<ol start="2"><li>驻点是</li></ol>
 <div class="math-display">$$ (0,0) $$</div>
 <p>这里先只得到“候选点”；它到底是最小值、最大值还是鞍点，要靠二阶信息继续判断。</p>
 <hr>
-<h3>例题 2：Hessian 判别</h3>
+<h3 id="section-10">例题 2：Hessian 判别</h3>
 <p>仍考虑</p>
 <div class="math-display">$$f(x,y)=x^2+xy+y^2$$</div>
 <p>要求：</p>
-<ol><li>写出 Hessian</li><li>判断极值类型，并说明理由</li></ol>
+<ol start="1"><li>写出 Hessian</li><li>判断极值类型，并说明理由</li></ol>
 <h4>Step 1：计算二阶偏导</h4>
 <p>为什么这样做：Hessian 的每个元素都是二阶偏导，极值类型要看二阶曲率结构。</p>
 <p>由上一题的一阶偏导可知：</p>
@@ -121,15 +121,15 @@ $$</div>
 <div class="math-display">$$f(x,y)=\begin{pmatrix}x&amp;y\end{pmatrix}\begin{pmatrix}1&amp;1/2\\1/2&amp;1\end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix}$$</div>
 <p>对任意非零向量 $(x,y)^T$，都有 $f(x,y)&gt;0$，并且在 $(0,0)$ 取到 $0$。所以它不仅是局部极小点，还是全局最小点。</p>
 <h4>标准答案</h4>
-<ol><li>Hessian 是</li></ol>
+<ol start="1"><li>Hessian 是</li></ol>
 <div class="math-display">$$H_f(x,y)=\begin{pmatrix}2&amp;1\\1&amp;2\end{pmatrix}$$</div>
-<ol><li>由于 Hessian 正定，驻点 $(0,0)$ 是严格局部极小点；进一步，由于函数是正定二次型，它还是全局最小点。</li></ol>
+<ol start="2"><li>由于 Hessian 正定，驻点 $(0,0)$ 是严格局部极小点；进一步，由于函数是正定二次型，它还是全局最小点。</li></ol>
 <hr>
-<h3>例题 3：二次函数最小值</h3>
+<h3 id="section-11">例题 3：二次函数最小值</h3>
 <p>已知</p>
 <div class="math-display">$$f(x,y)=x^2+y^2-4x-6y$$</div>
 <p>要求：</p>
-<ol><li>求最小值点</li><li>说明为什么是全局最小</li></ol>
+<ol start="1"><li>求最小值点</li><li>说明为什么是全局最小</li></ol>
 <h4>Step 1：求梯度并找驻点</h4>
 <p>为什么先求梯度：对无约束平滑最优化，候选最优点先由一阶条件给出。</p>
 <p>计算偏导：</p>
@@ -161,13 +161,13 @@ $$</div>
 <p>因此在 $(x,y)=(2,3)$ 处取到最小值</p>
 <div class="math-display">$$f_{\min}=-13$$</div>
 <h4>标准答案</h4>
-<ol><li>最小值点是</li></ol>
+<ol start="1"><li>最小值点是</li></ol>
 <div class="math-display">$$ (2,3) $$</div>
-<ol><li>最小值为</li></ol>
+<ol start="2"><li>最小值为</li></ol>
 <div class="math-display">$$ -13 $$</div>
-<ol><li>由于 Hessian 为 $2I \succ 0$，函数严格凸，因此该点是唯一全局最小点。</li></ol>
+<ol start="3"><li>由于 Hessian 为 $2I \succ 0$，函数严格凸，因此该点是唯一全局最小点。</li></ol>
 <hr>
-<h3>例题 4：拉格朗日乘子</h3>
+<h3 id="section-12">例题 4：拉格朗日乘子</h3>
 <p>求解</p>
 <div class="math-display">$$
 \min f(x,y)=x^2+y^2
@@ -175,7 +175,7 @@ $$</div>
 <p>约束为</p>
 <div class="math-display">$$x+y=1$$</div>
 <p>要求：</p>
-<ol><li>写出 Lagrangian</li><li>求解</li><li>给出几何解释</li></ol>
+<ol start="1"><li>写出 Lagrangian</li><li>求解</li><li>给出几何解释</li></ol>
 <h4>Step 1：构造拉格朗日函数</h4>
 <p>为什么这么做：约束优化里，目标函数和约束要被合并成一个统一对象，才能用驻点方程一起求。</p>
 <p>把约束写成</p>
@@ -215,21 +215,21 @@ $$</div>
 <div class="math-display">$$\nabla g(x,y)=(1,1)$$</div>
 <p>两者平行，这正是 $\nabla f=\mu \nabla g$ 的几何含义：目标函数的最陡变化方向已经和约束法向方向重合，因此沿可行切向方向再也降不下去了。</p>
 <h4>标准答案</h4>
-<ol><li>Lagrangian 是</li></ol>
+<ol start="1"><li>Lagrangian 是</li></ol>
 <div class="math-display">$$\mathcal{L}(x,y,\lambda)=x^2+y^2+\lambda(x+y-1)$$</div>
-<ol><li>最优解是</li></ol>
+<ol start="2"><li>最优解是</li></ol>
 <div class="math-display">$$x^\star=y^\star=\frac{1}{2},\quad \lambda^\star=-1$$</div>
-<ol><li>最优值是</li></ol>
+<ol start="3"><li>最优值是</li></ol>
 <div class="math-display">$$f^\star=\frac{1}{2}$$</div>
-<ol><li>几何解释：最优点是原点到直线 $x+y=1$ 的正交投影点，且在该点目标梯度与约束法向量平行。</li></ol>
+<ol start="4"><li>几何解释：最优点是原点到直线 $x+y=1$ 的正交投影点，且在该点目标梯度与约束法向量平行。</li></ol>
 <hr>
-<h3>例题 5：<code>L1</code> 正则理解题</h3>
+<h3 id="section-13">例题 5：<code>L1</code> 正则理解题</h3>
 <p>考虑问题</p>
 <div class="math-display">$$
 \min_x \|Ax-b\|^2+\lambda \|x\|_1
 $$</div>
 <p>要求：</p>
-<ol><li>为什么不能直接用 $\nabla f=0$？</li><li><code>L1</code> 为什么会导致稀疏解？</li><li>常用求解方法有哪些？</li></ol>
+<ol start="1"><li>为什么不能直接用 $\nabla f=0$？</li><li><code>L1</code> 为什么会导致稀疏解？</li><li>常用求解方法有哪些？</li></ol>
 <h4>Step 1：解释为什么不能直接令梯度为零</h4>
 <p>为什么这题关键不在计算：因为这里真正的障碍不是线性代数运算，而是目标函数不再处处可导。</p>
 <p>平滑部分 $\|Ax-b\|^2$ 的梯度没有问题：</p>
@@ -251,27 +251,27 @@ $$</div>
 <h4>Step 3：列出常用求解方法</h4>
 <p>为什么这里只列方法不展开：这已经进入非光滑优化算法层面，当前先建立方法地图更重要。</p>
 <p>常见方法包括：</p>
-<ol><li>次梯度法（subgradient method）</li><li>坐标下降（coordinate descent）</li><li>近端梯度法（proximal gradient / ISTA）</li><li>加速近端梯度法（FISTA）</li><li>ADMM</li><li>LARS / Lasso path 方法</li><li>近端牛顿法（proximal Newton）</li></ol>
+<ol start="1"><li>次梯度法（subgradient method）</li><li>坐标下降（coordinate descent）</li><li>近端梯度法（proximal gradient / ISTA）</li><li>加速近端梯度法（FISTA）</li><li>ADMM</li><li>LARS / Lasso path 方法</li><li>近端牛顿法（proximal Newton）</li></ol>
 <h4>标准答案</h4>
-<ol><li>不能直接令 $\nabla f=0$，因为 $\|x\|_1$ 在 $x_i=0$ 处不可导，最优点往往正落在这些不可导位置。</li><li><code>L1</code> 会导致稀疏解，因为它在 0 处有尖点，几何上更容易把解推到坐标轴上，代数上则鼓励小系数直接归零。</li><li>常用方法有次梯度法、坐标下降、ISTA、FISTA、ADMM、LARS/Lasso path、近端牛顿法等。</li></ol>
+<ol start="1"><li>不能直接令 $\nabla f=0$，因为 $\|x\|_1$ 在 $x_i=0$ 处不可导，最优点往往正落在这些不可导位置。</li><li><code>L1</code> 会导致稀疏解，因为它在 0 处有尖点，几何上更容易把解推到坐标轴上，代数上则鼓励小系数直接归零。</li><li>常用方法有次梯度法、坐标下降、ISTA、FISTA、ADMM、LARS/Lasso path、近端牛顿法等。</li></ol>
 <hr>
-<h2>三、科研视角总结</h2>
-<h3>1. 从“求极值”到“优化问题”</h3>
+<h2 id="section-14">三、科研视角总结</h2>
+<h3 id="section-15">1. 从“求极值”到“优化问题”</h3>
 <p>如果只停留在高数语境，问题通常写成：</p>
 <ul><li>这个函数哪里最大？</li><li>这个函数哪里最小？</li></ul>
 <p>但一旦进入科研，问题会立刻变成更完整的形式：</p>
 <ul><li>目标函数是什么？</li><li>有没有约束？</li><li>有没有正则项？</li><li>函数是不是光滑？</li><li>是凸问题还是非凸问题？</li><li>一阶方法够不够，还是要看二阶曲率？</li></ul>
 <p>也就是说，“求极值”只是优化问题的一个最简原型。 真正的优化关心的是：<strong>目标、几何、约束、正则、算法</strong> 五件事如何同时出现。</p>
-<h3>2. 在机器学习里的对应关系</h3>
+<h3 id="section-16">2. 在机器学习里的对应关系</h3>
 <ul><li><strong>loss function</strong>：对应“你到底想拟合什么”。回归常见平方误差，分类常见交叉熵，本质上都是把任务目标写成一个可优化标量函数。</li><li><strong>regularization</strong>：对应“你允许模型长成什么样”。<code>L2</code> 偏向平滑和小范数，<code>L1</code> 偏向稀疏和特征筛选，低秩约束偏向结构压缩。</li><li><strong>optimization algorithm</strong>：对应“你实际上怎样把参数推到一个好位置”。梯度下降利用一阶信息，牛顿类方法利用二阶信息，近端方法处理非光滑项，约束方法处理可行域限制。</li></ul>
 <p>这三者不是三张分离的表，而是一套联动系统：</p>
 <ul><li>loss 决定你在拟合什么</li><li>regularization 决定你偏爱什么结构</li><li>optimization 决定你能否把这个问题真正解出来</li></ul>
-<h3>3. 这篇最该记住的主线</h3>
+<h3 id="section-17">3. 这篇最该记住的主线</h3>
 <p>如果以后你在论文里再次看到“梯度、Hessian、约束、稀疏”，可以直接按下面这条线去读：</p>
-<ol><li>梯度：当前最敏感的下降方向是什么？</li><li>驻点：一阶上已经没有明显下降方向了吗？</li><li>Hessian：这是碗、倒扣碗，还是马鞍？</li><li>约束：有哪些方向根本不允许走？</li><li><code>L1</code>：是不是在主动逼迫一部分变量消失？</li></ol>
+<ol start="1"><li>梯度：当前最敏感的下降方向是什么？</li><li>驻点：一阶上已经没有明显下降方向了吗？</li><li>Hessian：这是碗、倒扣碗，还是马鞍？</li><li>约束：有哪些方向根本不允许走？</li><li><code>L1</code>：是不是在主动逼迫一部分变量消失？</li></ol>
 <p>把这五个问题连起来，“多元函数极值”就不再只是高数题，而会自然变成机器学习里的完整优化视角。</p>
-<h3>4. 一句压缩总结</h3>
-<blockquote><p>在 AI / 优化 / 特征选择里，梯度负责方向，Hessian 负责局部地形，拉格朗日乘子负责可行方向，<code>L1</code> 正则负责结构偏置；它们合在一起，才构成一个真正可计算、可解释、可用于科研的优化问题。</p></blockquote></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高数</a></li><li>源文件：<code>content/02_calculus/03_multivariate_optimization_basics_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="00-what-is-calculus-zh.html">高数到底在研究什么</a></h3><p>高数最核心的问题，不是“怎么求导”或“怎么积分”，而是：</p></div><div class="note-item"><h3><a href="01-calculus-core-framework-zh.html">高数骨干内容框架</a></h3><p>高数最底层的问题不是“求导和积分”，而是：</p></div><div class="note-item"><h3><a href="02-classic-texts-zh.html">高数经典书目候选</a></h3><p>自动从 Markdown 源稿生成。</p></div></div></section></aside></div>
+<h3 id="section-18">4. 一句压缩总结</h3>
+<blockquote><p>在 AI / 优化 / 特征选择里，梯度负责方向，Hessian 负责局部地形，拉格朗日乘子负责可行方向，<code>L1</code> 正则负责结构偏置；它们合在一起，才构成一个真正可计算、可解释、可用于科研的优化问题。</p></blockquote></section><aside id="reading-guide" class="rail"><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">一、核心知识点总结</a></li><li class="toc-level-3"><a href="#section-2">1. 梯度（Gradient）</a></li><li class="toc-level-3"><a href="#section-3">2. 驻点（Critical Point）</a></li><li class="toc-level-3"><a href="#section-4">3. Hessian 矩阵</a></li><li class="toc-level-3"><a href="#section-5">4. 二阶判别法（极值判断）</a></li><li class="toc-level-3"><a href="#section-6">5. 拉格朗日乘子法</a></li><li class="toc-level-3"><a href="#section-7">6. L1 正则与不可导问题</a></li><li class="toc-level-2"><a href="#section-8">二、典型例题</a></li><li class="toc-level-3"><a href="#section-9">例题 1：梯度与驻点</a></li><li class="toc-level-3"><a href="#section-10">例题 2：Hessian 判别</a></li><li class="toc-level-3"><a href="#section-11">例题 3：二次函数最小值</a></li><li class="toc-level-3"><a href="#section-12">例题 4：拉格朗日乘子</a></li><li class="toc-level-3"><a href="#section-13">例题 5：L1 正则理解题</a></li><li class="toc-level-2"><a href="#section-14">三、科研视角总结</a></li><li class="toc-level-3"><a href="#section-15">1. 从“求极值”到“优化问题”</a></li><li class="toc-level-3"><a href="#section-16">2. 在机器学习里的对应关系</a></li><li class="toc-level-3"><a href="#section-17">3. 这篇最该记住的主线</a></li><li class="toc-level-3"><a href="#section-18">4. 一句压缩总结</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高数</a></li><li>源文件：<code>content/02_calculus/03_multivariate_optimization_basics_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="00-what-is-calculus-zh.html">高数到底在研究什么</a></h3><p>高数最核心的问题，不是“怎么求导”或“怎么积分”，而是：</p></div><div class="note-item"><h3><a href="01-calculus-core-framework-zh.html">高数骨干内容框架</a></h3><p>高数最底层的问题不是“求导和积分”，而是：</p></div><div class="note-item"><h3><a href="02-classic-texts-zh.html">高数经典书目候选</a></h3><p>自动从 Markdown 源稿生成。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

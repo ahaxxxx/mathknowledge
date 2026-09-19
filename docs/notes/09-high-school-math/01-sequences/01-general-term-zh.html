@@ -34,17 +34,17 @@
       <h1>数列求通项公式</h1>
       <p>这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。</p>
     </div>
-    <div class="subject-grid"><section class="page-section article"><h2>课堂目标</h2>
+    <div class="subject-grid"><a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article"><h2 id="section-1">课堂目标</h2>
 <p>这一讲的目标不是让学生背很多方法名，而是让她看到一个数列题时，能先判断“题目给了什么关系”，再选择合适的通项求法。</p>
 <p>本讲主线：</p>
-<ol><li>数列的含义。</li><li>数列的表示方法：列表法、图像法、通项公式法、递推公式法。</li><li>等差数列的含义及性质。</li><li>等比数列的含义及性质。</li><li>数列求通项公式：累加法、累乘法、构造等差或等比、分式递推中的不动点与取倒数、因式分解法、数学归纳法、$S_n$ 与 $a_n$ 互换、带权和式递推。</li><li>数列求和：公式法、裂项相消法、错位相减法、分组求和法。这个部分单独放在下一页：<a href="02-summation-zh.html">数列求和</a>。</li></ol>
-<h2>这部分在解决什么问题</h2>
+<ol start="1"><li>数列的含义。</li><li>数列的表示方法：列表法、图像法、通项公式法、递推公式法。</li><li>等差数列的含义及性质。</li><li>等比数列的含义及性质。</li><li>数列求通项公式：累加法、累乘法、构造等差或等比、分式递推中的不动点与取倒数、因式分解法、数学归纳法、$S_n$ 与 $a_n$ 互换、带权和式递推。</li><li>数列求和：公式法、裂项相消法、错位相减法、分组求和法。这个部分单独放在下一页：<a href="02-summation-zh.html">数列求和</a>。</li></ol>
+<h2 id="section-2">这部分在解决什么问题</h2>
 <p>数列求通项公式的目标，是把递推关系、前 n 项和关系或局部规律，转成可以直接使用的 $a_n$。通项公式一旦清楚，后面的求和、单调性、最值、证明都会顺很多。</p>
 <p>学生最容易误解的是：数列求通项不是“看到题就套一个公式”，而是先判断题目给的是差、比、和、递推、分式、因式，还是带权求和。</p>
-<h2>数列的几种表示方法</h2>
+<h2 id="section-3">数列的几种表示方法</h2>
 <ul><li>列表法：直接列出前几项，例如 $1,4,9,16,\cdots$。</li><li>图像法：把点 $(n,a_n)$ 画出来，看变化趋势。</li><li>通项公式法：直接给 $a_n=f(n)$，例如 $a_n=n^2$。</li><li>递推公式法：给初始项和相邻项关系，例如 $a_1=1,\ a_{n+1}=2a_n+1$。</li></ul>
 <p>通项公式适合直接计算任意一项；递推公式适合描述“后一项如何由前一项得到”。求通项公式，本质上就是把递推描述转成直接描述。</p>
-<h2>等差数列与等比数列</h2>
+<h2 id="section-4">等差数列与等比数列</h2>
 <p>等差数列：</p>
 <div class="math-display">$$
 a_{n+1}-a_n=d,
@@ -61,8 +61,8 @@ a_n=a_1q^{n-1}.
 $$</div>
 <p>常用性质：</p>
 <ul><li>若 $m+n=p+q$，则 $a_ma_n=a_pa_q$。</li><li>等比中项：若 $a,b,c$ 成等比，则 $b^2=ac$。</li><li>前 n 项和：$S_n=\frac{a_1(1-q^n)}{1-q}\ (q\ne1)$。</li></ul>
-<h2>求通项的方法地图</h2>
-<h3>1. 累加法</h3>
+<h2 id="section-5">求通项的方法地图</h2>
+<h3 id="section-6">1. 累加法</h3>
 <p>信号：题目给出</p>
 <div class="math-display">$$
 a_{n+1}-a_n=f(n).
@@ -76,7 +76,7 @@ $$</div>
 <div class="math-display">$$
 a_n=1+\sum_{k=1}^{n-1}(2k+1)=n^2.
 $$</div>
-<h3>2. 累乘法</h3>
+<h3 id="section-7">2. 累乘法</h3>
 <p>信号：题目给出</p>
 <div class="math-display">$$
 \frac{a_{n+1}}{a_n}=f(n)
@@ -93,7 +93,7 @@ $$</div>
 <div class="math-display">$$
 a_n=2\cdot\frac21\cdot\frac32\cdots\frac n{n-1}=2n.
 $$</div>
-<h3>3. 由 $S_n$ 求 $a_n$</h3>
+<h3 id="section-8">3. 由 $S_n$ 求 $a_n$</h3>
 <p>信号：题目给前 n 项和 $S_n$。</p>
 <p>必须分两步：</p>
 <div class="math-display">$$
@@ -107,7 +107,7 @@ $$</div>
 a_n=(n^2+3n)-[(n-1)^2+3(n-1)]=2n+2.
 $$</div>
 <p>因为 $n=1$ 时也成立，所以 $a_n=2n+2$。</p>
-<h3>4. 待定系数法：构造等差或等比</h3>
+<h3 id="section-9">4. 待定系数法：构造等差或等比</h3>
 <p>这是课堂里最重要的一类“构造新数列”。</p>
 <h4>一次线性递推</h4>
 <p>形如</p>
@@ -144,7 +144,7 @@ $$</div>
 a_n+xB^n+y
 $$</div>
 <p>使其转化为等比或更简单的递推。若 $p=B$，还可能出现 $nB^n$ 型修正项，这类题要特别小心。</p>
-<h3>5. 二阶线性递推与特征方程</h3>
+<h3 id="section-10">5. 二阶线性递推与特征方程</h3>
 <p>信号：题目同时含有 $a_{n+1},a_n,a_{n-1}$，例如</p>
 <div class="math-display">$$
 a_{n+1}+pa_n+qa_{n-1}=0.
@@ -162,7 +162,7 @@ $$</div>
 a_n=(A+Bn)r^{n-1}.
 $$</div>
 <p>这部分对高二升高三学生属于进阶内容。建议放在“会识别即可，遇到再讲”的位置，不要在第一轮复习里压太重。</p>
-<h3>6. 分式型递推：不动点、距离比与平移取倒数</h3>
+<h3 id="section-11">6. 分式型递推：不动点、距离比与平移取倒数</h3>
 <p>如果需要把这个原理从头手推一遍，可以单独看：<a href="01-general-term-fixed-point-ratio-principle-zh.html">两不动点距离比法：从定义到手动推导</a>。</p>
 <p>这一类题的研究对象不是一个孤立公式，而是一个反复作用的变换：</p>
 <div class="math-display">$$
@@ -173,7 +173,7 @@ $$</div>
 f(x)=\frac{px+A}{Bx+C}.
 $$</div>
 <p>这里首先要问三个问题：</p>
-<ol><li>这个变换在哪些 $x$ 上有意义？至少要有 $Bx+C\ne0$。</li><li>有没有某些数被这个变换保持不动？</li><li>能否找到一个新变量，让反复作用的分式变换变成等差、等比或一次线性递推？</li></ol>
+<ol start="1"><li>这个变换在哪些 $x$ 上有意义？至少要有 $Bx+C\ne0$。</li><li>有没有某些数被这个变换保持不动？</li><li>能否找到一个新变量，让反复作用的分式变换变成等差、等比或一次线性递推？</li></ol>
 <h4>定义：什么是不动点</h4>
 <p>若数 $\alpha$ 满足</p>
 <div class="math-display">$$
@@ -454,8 +454,8 @@ $$</div>
 <p>符合 $a_1=2$。</p>
 <h4>课堂判断顺序</h4>
 <p>遇到分式递推时，建议按以下顺序问：</p>
-<ol><li>原递推在哪些项上有定义？</li><li>不动点是什么？</li><li>两个不动点都能找到时，能否构造距离比？</li><li>如果选择一个不动点平移，代入后常数项能否消掉？</li><li>消掉常数项后，能否通过除以乘积转为倒数的一次线性递推？</li><li>最后得到的通项是否满足初值和原递推的定义条件？</li></ol>
-<h3>7. 因式分解型递推</h3>
+<ol start="1"><li>原递推在哪些项上有定义？</li><li>不动点是什么？</li><li>两个不动点都能找到时，能否构造距离比？</li><li>如果选择一个不动点平移，代入后常数项能否消掉？</li><li>消掉常数项后，能否通过除以乘积转为倒数的一次线性递推？</li><li>最后得到的通项是否满足初值和原递推的定义条件？</li></ol>
+<h3 id="section-12">7. 因式分解型递推</h3>
 <p>信号：递推式不是直接给出 $a_{n+1}$，而是一个关于 $a_{n+1}$ 与 $a_n$ 的方程。常见做法是因式分解，分支后再结合初值、正负性或题设条件判断应该取哪一支。</p>
 <p>例型：</p>
 <div class="math-display">$$
@@ -470,13 +470,13 @@ $$</div>
 <div class="math-display">$$
 (a_{n+1}-2a_n)(a_{n+1}+a_n)=0.
 $$</div>
-<p>如果题目给出 $a_n&gt;0$ 或初值为正，就能排除不合适的分支。</p>
+<p>如果题目明确要求每一项 $a_n&gt;0$，就能排除负值分支。仅初值为正并不能保证以后每项为正，必须结合递推条件逐步判断。</p>
 <p>还有根式型：</p>
 <div class="math-display">$$
 a_{n+1}-\sqrt{a_{n+1}}=a_n+\sqrt{a_n}.
 $$</div>
 <p>这类题要考虑令 $b_n=\sqrt{a_n}$，把根式关系转成关于 $b_n$ 的关系。</p>
-<h3>8. 带权和式递推</h3>
+<h3 id="section-13">8. 带权和式递推</h3>
 <p>信号：题目给的是带权求和关系，例如</p>
 <div class="math-display">$$
 a_1+2a_2+3a_3+\cdots+na_n=n^2.
@@ -499,7 +499,7 @@ $$</div>
 a_n=2-\frac1n.
 $$</div>
 <p>如果权重是 $2,2^2,2^3,\cdots,2^n$，同样先整体记作 $T_n$，再用 $T_n-T_{n-1}$ 提取最后一项。</p>
-<h3>9. 奇偶项或隔项递推</h3>
+<h3 id="section-14">9. 奇偶项或隔项递推</h3>
 <p>这是外部核对后建议补进来的一个常见遗漏点。</p>
 <p>信号：递推关系让 $a_{n+2}$ 和 $a_n$ 直接相连，例如</p>
 <div class="math-display">$$
@@ -508,26 +508,26 @@ $$</div>
 <p>此时不要强行把所有项揉在一起，而是把奇数项和偶数项分开看：</p>
 <ul><li>$a_1,a_3,a_5,\cdots$ 组成一个子数列。</li><li>$a_2,a_4,a_6,\cdots$ 组成另一个子数列。</li></ul>
 <p>分别求出两个子数列后，再写成分段通项或用 $(-1)^n$ 统一表达。</p>
-<h3>10. 数学归纳法：猜想后的证明工具</h3>
+<h3 id="section-15">10. 数学归纳法：猜想后的证明工具</h3>
 <p>数学归纳法不是万能求法，它更像验证工具。</p>
 <p>使用顺序通常是：</p>
-<ol><li>先算前几项。</li><li>观察并猜想 $a_n$。</li><li>用数学归纳法证明猜想正确。</li></ol>
+<ol start="1"><li>先算前几项。</li><li>观察并猜想 $a_n$。</li><li>用数学归纳法证明猜想正确。</li></ol>
 <p>如果规律很难猜，就不要硬用归纳法。它适合检查“我猜出来的公式到底对不对”。</p>
-<h2>易错点</h2>
+<h2 id="section-16">易错点</h2>
 <ul><li>累加时上下限错，尤其是从 $a_1$ 累到 $a_n$ 时，应该加到 $n-1$。</li><li>累乘时忽略某些项不能为 0，导致除法不合法。</li><li>由 $S_n$ 求 $a_n$ 时忘记单独检查 $n=1$。</li><li>看到 $a_{n+1}=pa_n+q$ 时，只会迭代，不会构造 $a_n+c$。</li><li>分式递推没有先观察取倒数或不动点。</li><li>因式分解型题目分支后，没有根据初值或正负条件排除错误分支。</li><li>二阶递推套特征方程时，忘记重根情形。</li><li>隔项递推没有把奇偶项分开。</li></ul>
-<h2>复习作业</h2>
+<h2 id="section-17">复习作业</h2>
 <p>A 组：基础识别，全部完成。</p>
-<ol><li>已知 $a_1=2,\ a_{n+1}-a_n=3$，求 $a_n$。</li><li>已知 $a_1=3,\ a_{n+1}=2a_n$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}-a_n=2n+1$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}=2a_n+3$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}=\frac{a_n}{a_n+1}$，求 $a_n$。</li><li>已知 $a_1=2,\ a_{n+1}=\frac{n+1}{n}a_n$，求 $a_n$。</li></ol>
+<ol start="1"><li>已知 $a_1=2,\ a_{n+1}-a_n=3$，求 $a_n$。</li><li>已知 $a_1=3,\ a_{n+1}=2a_n$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}-a_n=2n+1$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}=2a_n+3$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}=\frac{a_n}{a_n+1}$，求 $a_n$。</li><li>已知 $a_1=2,\ a_{n+1}=\frac{n+1}{n}a_n$，求 $a_n$。</li></ol>
 <p>B 组：方法转换，要求写出“为什么想到这个方法”。</p>
-<ol><li>已知 $a_1=1,\ a_{n+1}=a_n+3\cdot2^n$，求 $a_n$。</li><li>已知 $a_1=0,\ a_{n+1}=3a_n+2$，求 $a_n$。</li><li>已知 $a_1=2,\ a_{n+1}=\frac{n}{n+1}a_n$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}-a_n=\frac1{n(n+1)}$，求 $a_n$。</li><li>已知 $S_n=n^2+3n$，求 $a_n$。</li><li>已知 $S_n=2^n-1$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}=2a_n+2^n$，求 $a_n$。</li><li>已知 $a_1=2,\ a_{n+1}=\frac{n}{n+2}a_n$，求 $a_n$。</li><li>已知 $a_1=1,\ a_2=2,\ a_{n+2}=3a_n$，求 $a_n$。</li><li>已知 $a_1+2a_2+\cdots+na_n=n^2$，求 $a_n$。</li></ol>
+<ol start="1"><li>已知 $a_1=1,\ a_{n+1}=a_n+3\cdot2^n$，求 $a_n$。</li><li>已知 $a_1=0,\ a_{n+1}=3a_n+2$，求 $a_n$。</li><li>已知 $a_1=2,\ a_{n+1}=\frac{n}{n+1}a_n$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}-a_n=\frac1{n(n+1)}$，求 $a_n$。</li><li>已知 $S_n=n^2+3n$，求 $a_n$。</li><li>已知 $S_n=2^n-1$，求 $a_n$。</li><li>已知 $a_1=1,\ a_{n+1}=2a_n+2^n$，求 $a_n$。</li><li>已知 $a_1=2,\ a_{n+1}=\frac{n}{n+2}a_n$，求 $a_n$。</li><li>已知 $a_1=1,\ a_2=2,\ a_{n+2}=3a_n$，求 $a_n$。</li><li>已知 $a_1+2a_2+\cdots+na_n=n^2$，求 $a_n$。</li></ol>
 <p>C 组：讲题题，任选 2 题准备口头讲解。</p>
-<ol><li>对比 $a_{n+1}-a_n=3n+1$ 与 $a_{n+1}=3a_n+1$，说明为什么一个偏累加，一个偏构造等比。</li><li>为什么 $a_{n+1}=\frac{a_n}{a_n+1}$ 要考虑取倒数？</li><li>由 $S_n$ 求 $a_n$ 时，为什么必须单独看 $a_1$？</li><li>因式分解型递推为什么不能只解出两个分支就结束？还要检查什么？</li><li>遇到 $a_{n+2}=qa_n+r$，为什么要先分奇偶项？</li></ol>
-<h2>参考答案</h2>
-<ol><li>$a_n=3n-1$。</li><li>$a_n=3\cdot2^{n-1}$。</li><li>$a_n=n^2$。</li><li>$a_n=2^{n+1}-3$。</li><li>$a_n=\frac1n$。</li><li>$a_n=2n$。</li><li>$a_n=3\cdot2^n-5$。</li><li>$a_n=3^{n-1}-1$。</li><li>$a_n=\frac2n$。</li><li>$a_n=2-\frac1n$。</li><li>$a_n=2n+2$。</li><li>$a_n=2^{n-1}$。</li><li>$a_n=n2^{n-1}$。</li><li>$a_n=\frac{6}{n(n+1)}$。</li><li>$a_{2k-1}=3^{k-1},\ a_{2k}=2\cdot3^{k-1}$。</li><li>$a_n=2-\frac1n$。</li></ol>
-<h2>外部核对后的补充说明</h2>
+<ol start="1"><li>对比 $a_{n+1}-a_n=3n+1$ 与 $a_{n+1}=3a_n+1$，说明为什么一个偏累加，一个偏构造等比。</li><li>为什么 $a_{n+1}=\frac{a_n}{a_n+1}$ 要考虑取倒数？</li><li>由 $S_n$ 求 $a_n$ 时，为什么必须单独看 $a_1$？</li><li>因式分解型递推为什么不能只解出两个分支就结束？还要检查什么？</li><li>遇到 $a_{n+2}=qa_n+r$，为什么要先分奇偶项？</li></ol>
+<h2 id="section-18">参考答案</h2>
+<ol start="1"><li>$a_n=3n-1$。</li><li>$a_n=3\cdot2^{n-1}$。</li><li>$a_n=n^2$。</li><li>$a_n=2^{n+1}-3$。</li><li>$a_n=\frac1n$。</li><li>$a_n=2n$。</li><li>$a_n=3\cdot2^n-5$。</li><li>$a_n=3^{n-1}-1$。</li><li>$a_n=\frac2n$。</li><li>$a_n=2-\frac1n$。</li><li>$a_n=2n+2$。</li><li>$a_n=2^{n-1}$。</li><li>$a_n=n2^{n-1}$。</li><li>$a_n=\frac{4}{n(n+1)}$。由累乘得 $a_n=2\prod_{k=1}^{n-1}\frac{k}{k+2}=\frac{4}{n(n+1)}$，代入 $n=1$ 也满足初值。</li><li>$a_{2k-1}=3^{k-1},\ a_{2k}=2\cdot3^{k-1}$。</li><li>$a_n=2-\frac1n$。</li></ol>
+<h2 id="section-19">外部核对后的补充说明</h2>
 <p>我核对了公开资料中对“数列通项公式求解”的归纳，常见方法包括逐差全加、逐商全乘、从和式求通项、换元法、不动点法、数学归纳法和特征方程法。和课堂大纲相比，最值得补进高中复习体系的是：不动点视角、二阶线性递推的特征方程、奇偶项分组、以及“猜想后用归纳法证明”的定位。</p>
 <p>参考：</p>
-<ul><li><a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E5%88%97">数列：通项公式的求解</a></li><li><a href="https://zh.wikipedia.org/wiki/%E4%BA%8C%E9%98%B6%E7%BA%BF%E6%80%A7%E9%80%92%E6%8E%A8%E5%BC%8F">二阶线性递推式</a></li><li><a href="https://zh.wikipedia.org/wiki/%E7%AD%89%E5%B7%AE-%E7%AD%89%E6%AF%94%E6%95%B0%E5%88%97">等差-等比数列与错位相减</a></li></ul></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">数列</a></li><li>源文件：<code>content/09_high_school_math/01_sequences/01_general_term_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-general-term-exercises-zh.html">数列求通项公式专项练习</a></h3><p>这份练习按“题型识别”编排。每个题型至少 5 道题，建议学生先判断方法，再动笔计算；点开解答前，先尝试把“为什么用这个方法”讲出来。</p></div><div class="note-item"><h3><a href="01-general-term-fixed-point-ratio-principle-zh.html">两不动点距离比法：从定义到手动推导</a></h3><p>这一页只讲一个原理：</p></div><div class="note-item"><h3><a href="02-summation-exercises-zh.html">数列求和专项练习</a></h3><p>这份练习按“题型识别”编排，共 6 类，每类 5 题。做题前先口头回答：通项有什么结构？为什么选这个方法？点开解答前，先写出至少一行关键变形。</p></div><div class="note-item"><h3><a href="02-summation-zh.html">数列求和：从通项结构到求和方法</a></h3><p>数列求和不是“背六种技巧”，而是研究一个明确对象：已知数列 $\{a_n\}$ 的通项或结构，求它的前 $n$ 项和</p></div></div></section></aside></div>
+<ul><li><a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E5%88%97">数列：通项公式的求解</a></li><li><a href="https://zh.wikipedia.org/wiki/%E4%BA%8C%E9%98%B6%E7%BA%BF%E6%80%A7%E9%80%92%E6%8E%A8%E5%BC%8F">二阶线性递推式</a></li><li><a href="https://zh.wikipedia.org/wiki/%E7%AD%89%E5%B7%AE-%E7%AD%89%E6%AF%94%E6%95%B0%E5%88%97">等差-等比数列与错位相减</a></li></ul></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：等差等比数列、因式分解、分式合法性</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a rel="next" href="02-summation-zh.html">下一节：数列求和：从通项结构到求和方法</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li><li><a href="01-general-term-exercises-zh.html">配套练习：数列求通项公式专项练习</a></li><li><a href="02-summation-exercises-zh.html">配套练习：数列求和专项练习</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">课堂目标</a></li><li class="toc-level-2"><a href="#section-2">这部分在解决什么问题</a></li><li class="toc-level-2"><a href="#section-3">数列的几种表示方法</a></li><li class="toc-level-2"><a href="#section-4">等差数列与等比数列</a></li><li class="toc-level-2"><a href="#section-5">求通项的方法地图</a></li><li class="toc-level-3"><a href="#section-6">1. 累加法</a></li><li class="toc-level-3"><a href="#section-7">2. 累乘法</a></li><li class="toc-level-3"><a href="#section-8">3. 由 $S_n$ 求 $a_n$</a></li><li class="toc-level-3"><a href="#section-9">4. 待定系数法：构造等差或等比</a></li><li class="toc-level-3"><a href="#section-10">5. 二阶线性递推与特征方程</a></li><li class="toc-level-3"><a href="#section-11">6. 分式型递推：不动点、距离比与平移取倒数</a></li><li class="toc-level-3"><a href="#section-12">7. 因式分解型递推</a></li><li class="toc-level-3"><a href="#section-13">8. 带权和式递推</a></li><li class="toc-level-3"><a href="#section-14">9. 奇偶项或隔项递推</a></li><li class="toc-level-3"><a href="#section-15">10. 数学归纳法：猜想后的证明工具</a></li><li class="toc-level-2"><a href="#section-16">易错点</a></li><li class="toc-level-2"><a href="#section-17">复习作业</a></li><li class="toc-level-2"><a href="#section-18">参考答案</a></li><li class="toc-level-2"><a href="#section-19">外部核对后的补充说明</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">数列</a></li><li>源文件：<code>content/09_high_school_math/01_sequences/01_general_term_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-general-term-exercises-zh.html">数列求通项公式专项练习</a></h3><p>这份练习按“题型识别”编排。每个题型至少 5 道题，建议学生先判断方法，再动笔计算；点开解答前，先尝试把“为什么用这个方法”讲出来。</p></div><div class="note-item"><h3><a href="01-general-term-fixed-point-ratio-principle-zh.html">两不动点距离比法：从定义到手动推导</a></h3><p>这一页只讲一个原理：</p></div><div class="note-item"><h3><a href="02-summation-exercises-zh.html">数列求和专项练习</a></h3><p>这份练习按“题型识别”编排，共 6 类，每类 5 题。做题前先口头回答：通项有什么结构？为什么选这个方法？点开解答前，先写出至少一行关键变形。</p></div><div class="note-item"><h3><a href="02-summation-zh.html">数列求和：从通项结构到求和方法</a></h3><p>数列求和不是“背六种技巧”，而是研究一个明确对象：已知数列 $\{a_n\}$ 的通项或结构，求它的前 $n$ 项和</p></div><div class="note-item"><h3><a href="90-mixed-checkpoint-zh.html">数列：混合检测与讲题验收</a></h3><p>先独立完成，再展开解析。题目不标方法名称；请写出选择依据和限制条件。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

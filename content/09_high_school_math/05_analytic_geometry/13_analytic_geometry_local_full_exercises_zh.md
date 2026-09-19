@@ -1,5 +1,7 @@
 # 解析几何与圆锥曲线：考点 40-46 全量本地题库
 
+> 核验说明：题号与完整题干（含公式图片指纹）匹配仅核验对应关系，不代表答案已逐题验算。标为“解析待核验”的题目暂不展示原配解析。
+
 这一页把本地一轮复习资料中考点 40 到考点 46 的练习题按原考点整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后抽题、限时训练和查漏补缺。
 
 返回专题首页：[解析几何与圆锥曲线](./README.md)。配套训练：[解析几何与圆锥曲线：模块分层训练题库](./12_analytic_geometry_module_drills_zh.md)。
@@ -22,7 +24,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -43,7 +45,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -66,21 +68,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．已知直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-019-801a6c9b35.png" alt="本地解析几何资料图片" width="224" height="448">过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-020-2fd3a4e1d9.png" alt="本地解析几何资料图片" width="1088" height="512">且与以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-021-d68ecfc40d.png" alt="本地解析几何资料图片" width="1088" height="512">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-022-6ae438264c.png" alt="本地解析几何资料图片" width="1376" height="512">为端点的线段<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-023-24acb572bc.png" alt="本地解析几何资料图片" width="640" height="416">有公共点，则直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-024-801a6c9b35.png" alt="本地解析几何资料图片" width="224" height="448">倾斜角的取值范围为_______．</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-025-bea20f6fa8.png" alt="本地解析几何资料图片" width="2784" height="1088"></p>
-<p class="local-docx-line">【解析】如图所示：</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/analytic-geometry-local/ag40-a-026-989151d1ad.png" alt="本地解析几何资料图片" width="314" height="355"></div>
-<p class="local-docx-line">设直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-027-801a6c9b35.png" alt="本地解析几何资料图片" width="224" height="448">过<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-028-9d3484040c.png" alt="本地解析几何资料图片" width="384" height="416">点时直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-029-801a6c9b35.png" alt="本地解析几何资料图片" width="224" height="448">的斜率为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-030-92dc0fce4c.png" alt="本地解析几何资料图片" width="384" height="576">，直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-031-801a6c9b35.png" alt="本地解析几何资料图片" width="224" height="448">过<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-032-fef496c9ab.png" alt="本地解析几何资料图片" width="352" height="384">点时直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-033-801a6c9b35.png" alt="本地解析几何资料图片" width="224" height="448">的斜率为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-034-7800f4ee57.png" alt="本地解析几何资料图片" width="416" height="576">，</p>
-<p class="local-docx-line">则，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-035-afc0ee37d0.png" alt="本地解析几何资料图片" width="2222" height="1093">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-036-817b5a31eb.png" alt="本地解析几何资料图片" width="2822" height="1093">，</p>
-<p class="local-docx-line">所以要使直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-037-801a6c9b35.png" alt="本地解析几何资料图片" width="224" height="448">与线段<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-038-24acb572bc.png" alt="本地解析几何资料图片" width="640" height="416">有公共点，则直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-039-801a6c9b35.png" alt="本地解析几何资料图片" width="224" height="448">的斜率的取值范围为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-040-8e037a7a1d.png" alt="本地解析几何资料图片" width="896" height="544">,</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-041-801a6c9b35.png" alt="本地解析几何资料图片" width="224" height="448">倾斜角的取值范围<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-042-bea20f6fa8.png" alt="本地解析几何资料图片" width="2784" height="1088">.故答案为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-043-bea20f6fa8.png" alt="本地解析几何资料图片" width="2784" height="1088">.</p>
-<p class="local-docx-line">【题组二 直线方程】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -93,7 +83,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -118,21 +108,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2．“直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-045-c44d66e9dc.png" alt="本地解析几何资料图片" width="2624" height="512">在坐标轴上截距相等”是“<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-046-db48f1a0eb.png" alt="本地解析几何资料图片" width="1088" height="448">”的（    ）</p>
-<p class="local-docx-line">A．充分不必要条件B．必要不充分条件</p>
-<p class="local-docx-line">C．充分必要条件D．既不充分也不必要条件</p>
-<p class="local-docx-line">【答案】B</p>
-<p class="local-docx-line">【解析】由题知：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-047-e55372189a.png" alt="本地解析几何资料图片" width="896" height="448">，由<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-048-9d41a9e61b.png" alt="本地解析几何资料图片" width="896" height="448">得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-049-a31e925b5f.png" alt="本地解析几何资料图片" width="1568" height="512">；由<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-050-1c4790889e.png" alt="本地解析几何资料图片" width="896" height="512">得，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-051-073c8a0c47.png" alt="本地解析几何资料图片" width="1632" height="992">.</p>
-<p class="local-docx-line">因为在坐标轴上的截距相等，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-052-c8d24beb60.png" alt="本地解析几何资料图片" width="2272" height="992">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-053-3a514de7f2.png" alt="本地解析几何资料图片" width="960" height="992">或<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-054-db48f1a0eb.png" alt="本地解析几何资料图片" width="1088" height="448">.</p>
-<p class="local-docx-line">所以直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-055-c44d66e9dc.png" alt="本地解析几何资料图片" width="2624" height="512">在坐标轴上截距相等”是“<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-056-db48f1a0eb.png" alt="本地解析几何资料图片" width="1088" height="448">”的必要不充分条件.</p>
-<p class="local-docx-line">故选：B.</p>
-<p class="local-docx-line">【题组三 直线的位置关系】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -146,7 +124,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -172,7 +150,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -197,7 +175,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -225,23 +203,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-106-93e413a324.png" alt="本地解析几何资料图片" width="960" height="992">是“直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-107-32ccba011e.png" alt="本地解析几何资料图片" width="3264" height="512">与直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-108-01d55c76f4.png" alt="本地解析几何资料图片" width="3936" height="512">相互垂直”的（    ）.</p>
-<p class="local-docx-line">A．充分而不必要条件B．必要而不充分条件</p>
-<p class="local-docx-line">C．充要条件D．既不充分也不必要条件</p>
-<p class="local-docx-line">【答案】A</p>
-<p class="local-docx-line">【解析】对于：直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-109-32ccba011e.png" alt="本地解析几何资料图片" width="3264" height="512">与直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-110-01d55c76f4.png" alt="本地解析几何资料图片" width="3936" height="512">，</p>
-<p class="local-docx-line">当<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-111-fdfcbef5b5.png" alt="本地解析几何资料图片" width="896" height="448">时，分别化为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-112-7282d9658b.png" alt="本地解析几何资料图片" width="1344" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-113-b30d3fe917.png" alt="本地解析几何资料图片" width="1952" height="480">，此时两条直线不垂直，舍去；</p>
-<p class="local-docx-line">当<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-114-9f67b319f2.png" alt="本地解析几何资料图片" width="1088" height="448">时，分别化为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-115-80a46d6ede.png" alt="本地解析几何资料图片" width="1600" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-116-ff734c1369.png" alt="本地解析几何资料图片" width="1792" height="448">，此时两条直线相互垂直，因此<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-117-9f67b319f2.png" alt="本地解析几何资料图片" width="1088" height="448">满足条件；</p>
-<p class="local-docx-line">当<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-118-d65d2b9c81.png" alt="本地解析几何资料图片" width="1088" height="448">，0时，两条直线的斜率分别为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-119-07e7f9b0d5.png" alt="本地解析几何资料图片" width="992" height="896">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-120-c3a2cbfb8b.png" alt="本地解析几何资料图片" width="768" height="896">，由于两条直线垂直，可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-121-4e414c21ef.png" alt="本地解析几何资料图片" width="2592" height="896">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-122-93e413a324.png" alt="本地解析几何资料图片" width="960" height="992">或<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-123-36eecfe750.png" alt="本地解析几何资料图片" width="480" height="416">（舍去）．</p>
-<p class="local-docx-line">综上可得：两条直线相互垂直的充要条件为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-124-93e413a324.png" alt="本地解析几何资料图片" width="960" height="992">或<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-125-36eecfe750.png" alt="本地解析几何资料图片" width="480" height="416">．</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-126-6e383e46c0.png" alt="本地解析几何资料图片" width="352" height="320"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-127-93e413a324.png" alt="本地解析几何资料图片" width="960" height="992">是“直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-128-32ccba011e.png" alt="本地解析几何资料图片" width="3264" height="512">与直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-129-01d55c76f4.png" alt="本地解析几何资料图片" width="3936" height="512">相互垂直”的充分而不必要条件．故选：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-130-9d3484040c.png" alt="本地解析几何资料图片" width="384" height="416">．</p>
-<p class="local-docx-line">【题组四 距离问题】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -253,7 +217,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -276,21 +240,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2．点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-138-e8a4420454.png" alt="本地解析几何资料图片" width="352" height="384">是曲线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-139-9f539e8a9a.png" alt="本地解析几何资料图片" width="3040" height="608">上任意一点，则点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-140-e8a4420454.png" alt="本地解析几何资料图片" width="352" height="384">到直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-141-5391621f5c.png" alt="本地解析几何资料图片" width="2304" height="512">的最小距离是（  ）</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-142-174ebed2cf.png" alt="本地解析几何资料图片" width="1984" height="1088">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-143-e97b7f1e85.png" alt="本地解析几何资料图片" width="1984" height="1088">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-144-a7781a02ca.png" alt="本地解析几何资料图片" width="2112" height="1088">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-145-bef6cf0b38.png" alt="本地解析几何资料图片" width="1440" height="864"></p>
-<p class="local-docx-line">【答案】B</p>
-<p class="local-docx-line">【解析】将直线4x＋4y＋1＝0平移后得直线l：4x＋4y＋b＝0，使直线l与曲线切于点P(x0，y0)，</p>
-<p class="local-docx-line">由x2－y－2ln<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-146-1517b59bb3.png" alt="本地解析几何资料图片" width="608" height="576">＝0得y′＝2x－<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-147-53cf26636f.png" alt="本地解析几何资料图片" width="384" height="992">，</p>
-<p class="local-docx-line">∴直线l的斜率k＝2x0－<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-148-72b89675fe.png" alt="本地解析几何资料图片" width="512" height="1088">＝－1⇒x0＝<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-149-672f7f6f67.png" alt="本地解析几何资料图片" width="384" height="992">或x0＝－1(舍去)，</p>
-<p class="local-docx-line">∴P<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-150-ae97d66f0a.png" alt="本地解析几何资料图片" width="2080" height="1088">，所求的最短距离即为点P<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-151-ae97d66f0a.png" alt="本地解析几何资料图片" width="2080" height="1088"></p>
-<p class="local-docx-line">到直线4x＋4y＋1＝0的距离d＝<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-152-a8c74db568.png" alt="本地解析几何资料图片" width="2848" height="1184">＝<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-153-80ab577f7e.png" alt="本地解析几何资料图片" width="672" height="1088">(1＋ln 2)．故选B.</p>
-<p class="local-docx-line">【题组五 定点问题】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -302,7 +254,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -323,16 +275,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2．对任意实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-157-944efd74c6.png" alt="本地解析几何资料图片" width="416" height="352">，直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-158-ab7a4a0895.png" alt="本地解析几何资料图片" width="2912" height="512">恒过定点，则该定点的坐标为_________</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-159-ad13d33067.png" alt="本地解析几何资料图片" width="800" height="512"></p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-160-ab7a4a0895.png" alt="本地解析几何资料图片" width="2912" height="512">化为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-161-f369eaaa84.png" alt="本地解析几何资料图片" width="2432" height="512">，方程表示过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-162-ad13d33067.png" alt="本地解析几何资料图片" width="800" height="512">斜率为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-163-944efd74c6.png" alt="本地解析几何资料图片" width="416" height="352">的直线方程，所以直线过定点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-164-ad13d33067.png" alt="本地解析几何资料图片" width="800" height="512">.故答案为:<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-a-165-ad13d33067.png" alt="本地解析几何资料图片" width="800" height="512">.</p>
-<p class="local-docx-line">【题组六 对称问题】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -345,7 +290,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -373,7 +318,21 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
+
+原题号与题干首段尚未唯一匹配。暂不展示可能错配的解析，请教师核对题源后补充。
+
+:::
+
+### 题 16（原题 3）
+
+:::diagram
+<div class="local-docx-card local-docx-question">
+<p class="local-docx-line">3．直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-051-e7745425a7.png" alt="本地解析几何资料图片" width="2336" height="512">关于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-052-a2dfc7a129.png" alt="本地解析几何资料图片" width="1504" height="512">对称的直线的方程为_________.</p>
+</div>
+:::
+
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -392,15 +351,17 @@
 
 :::
 
-### 题 16（原题 3）
+### 题 17（原题 4）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">3．直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-051-e7745425a7.png" alt="本地解析几何资料图片" width="2336" height="512">关于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-052-a2dfc7a129.png" alt="本地解析几何资料图片" width="1504" height="512">对称的直线的方程为_________.</p>
+<p class="local-docx-line">4．已知直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-053-a70a9c251a.png" alt="本地解析几何资料图片" width="2720" height="512">，点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-054-553186770e.png" alt="本地解析几何资料图片" width="1568" height="512">.求：</p>
+<p class="local-docx-line">（1）直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-055-801a6c9b35.png" alt="本地解析几何资料图片" width="224" height="448">关于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-056-553186770e.png" alt="本地解析几何资料图片" width="1568" height="512">对称的直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-057-aa9bfaa0c7.png" alt="本地解析几何资料图片" width="320" height="448">的方程；</p>
+<p class="local-docx-line">（2）直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-058-95117cbaa5.png" alt="本地解析几何资料图片" width="2912" height="512">关于直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-059-801a6c9b35.png" alt="本地解析几何资料图片" width="224" height="448">的对称直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-060-e1b01a1e94.png" alt="本地解析几何资料图片" width="480" height="448">的方程.</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -426,17 +387,15 @@
 
 :::
 
-### 题 17（原题 4）
+### 题 18（原题 5）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">4．已知直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-053-a70a9c251a.png" alt="本地解析几何资料图片" width="2720" height="512">，点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-054-553186770e.png" alt="本地解析几何资料图片" width="1568" height="512">.求：</p>
-<p class="local-docx-line">（1）直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-055-801a6c9b35.png" alt="本地解析几何资料图片" width="224" height="448">关于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-056-553186770e.png" alt="本地解析几何资料图片" width="1568" height="512">对称的直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-057-aa9bfaa0c7.png" alt="本地解析几何资料图片" width="320" height="448">的方程；</p>
-<p class="local-docx-line">（2）直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-058-95117cbaa5.png" alt="本地解析几何资料图片" width="2912" height="512">关于直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-059-801a6c9b35.png" alt="本地解析几何资料图片" width="224" height="448">的对称直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-060-e1b01a1e94.png" alt="本地解析几何资料图片" width="480" height="448">的方程.</p>
+<p class="local-docx-line">5．圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-061-020c256ad3.png" alt="本地解析几何资料图片" width="2208" height="576">关于直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-062-7d017344a1.png" alt="本地解析几何资料图片" width="1728" height="512">对称的圆的标准方程为__．</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -451,14 +410,6 @@
 
 :::
 
-### 题 18（原题 5）
-
-:::diagram
-<div class="local-docx-card local-docx-question">
-<p class="local-docx-line">5．圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-061-020c256ad3.png" alt="本地解析几何资料图片" width="2208" height="576">关于直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag40-q-062-7d017344a1.png" alt="本地解析几何资料图片" width="1728" height="512">对称的圆的标准方程为__．</p>
-</div>
-:::
-
 ## 考点 41：圆的方程
 
 本组来自 `考点41 圆的方程（练习）（原卷版）.docx`；原卷共抽取 25 道题，解析版原始抽取 25 道，可对齐显示 25 道。
@@ -471,7 +422,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -492,7 +443,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -516,7 +467,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -539,7 +490,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -563,7 +514,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -587,17 +538,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">6．若方程<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-051-b46a01c9cc.png" alt="本地解析几何资料图片" width="3488" height="576">表示一个圆，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-052-8fcbfde449.png" alt="本地解析几何资料图片" width="416" height="352">的取值范围是______.</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-053-d5f40466c0.png" alt="本地解析几何资料图片" width="1376" height="1088"></p>
-<p class="local-docx-line">【解析】根据题意，方程<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-054-b46a01c9cc.png" alt="本地解析几何资料图片" width="3488" height="576">表示一个圆，</p>
-<p class="local-docx-line">则有<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-055-89e7f49d9a.png" alt="本地解析几何资料图片" width="2176" height="416">，解的<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-056-eb118e3294.png" alt="本地解析几何资料图片" width="1024" height="992">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-057-8fcbfde449.png" alt="本地解析几何资料图片" width="416" height="352">的取值范围为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-058-d5f40466c0.png" alt="本地解析几何资料图片" width="1376" height="1088">；故答案为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-059-d5f40466c0.png" alt="本地解析几何资料图片" width="1376" height="1088">．</p>
-<p class="local-docx-line">【题组二 点与圆的位置关系】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -609,7 +552,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -636,7 +579,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -661,23 +604,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．过点作直线的垂线，垂足为M，已知点，则当变化时，的取值范围是</p>
-<p class="local-docx-line">A．B．C．D．</p>
-<p class="local-docx-line">【答案】B</p>
-<p class="local-docx-line">【解析】直线，即，</p>
-<p class="local-docx-line">由，求得，直线经过定点．</p>
-<p class="local-docx-line">由为直角三角形，斜边为PQ，M在以PQ为直径的圆上运动，</p>
-<p class="local-docx-line">可得圆心为PQ的中点，半径为，</p>
-<p class="local-docx-line">则与M的最大值为，</p>
-<p class="local-docx-line">则与M的最小值为，</p>
-<p class="local-docx-line">故MN的范围为：，故选：B．</p>
-<p class="local-docx-line">【题组三 直线与圆】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -690,7 +619,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -715,7 +644,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -740,7 +669,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -764,7 +693,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -790,7 +719,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -813,7 +742,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -837,7 +766,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -860,7 +789,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -888,18 +817,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">9．在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-206-b1a349dc07.png" alt="本地解析几何资料图片" width="960" height="512">上随机取一个数<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-207-61f8f0ee01.png" alt="本地解析几何资料图片" width="320" height="448">，使直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-208-e67d13cc00.png" alt="本地解析几何资料图片" width="1920" height="512">与圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-209-bc00630dfd.png" alt="本地解析几何资料图片" width="1728" height="576">相交的概率为（   ）</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-210-cd7c15b390.png" alt="本地解析几何资料图片" width="384" height="992">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-211-dd0a43d4a3.png" alt="本地解析几何资料图片" width="352" height="992">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-212-3e0621bf56.png" alt="本地解析几何资料图片" width="672" height="1088">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-213-96f7250671.png" alt="本地解析几何资料图片" width="672" height="1088"></p>
-<p class="local-docx-line">【答案】C</p>
-<p class="local-docx-line">【解析】因为圆心<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-214-8a4a5e2920.png" alt="本地解析几何资料图片" width="896" height="512">，半径<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-215-4a9eba4551.png" alt="本地解析几何资料图片" width="800" height="416">，直线与圆相交，所以</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-216-1d6d3984ba.png" alt="本地解析几何资料图片" width="2400" height="1088">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-217-248f55209f.png" alt="本地解析几何资料图片" width="2432" height="1088"> 所以相交的概率<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-218-7e2244b176.png" alt="本地解析几何资料图片" width="2304" height="1504">,故选C.</p>
-<p class="local-docx-line">【题组四 圆与圆】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -913,7 +833,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -937,7 +857,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -959,7 +879,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -987,7 +907,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1013,22 +933,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">5．已知圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-257-da2d930c12.png" alt="本地解析几何资料图片" width="3616" height="608">和圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-258-b028baf76d.png" alt="本地解析几何资料图片" width="3744" height="608">的公共弦所在的直线恒过定点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-259-11bf2576f6.png" alt="本地解析几何资料图片" width="512" height="416">，且点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-260-11bf2576f6.png" alt="本地解析几何资料图片" width="512" height="416">在直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-261-e48a930f7f.png" alt="本地解析几何资料图片" width="1888" height="512">上，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-262-462132d993.png" alt="本地解析几何资料图片" width="1600" height="608">的最小值为（    ）</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-263-b64d2f07de.png" alt="本地解析几何资料图片" width="352" height="992">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-264-3f45b2648a.png" alt="本地解析几何资料图片" width="576" height="960">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-265-f5463307fa.png" alt="本地解析几何资料图片" width="768" height="960">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-266-f9f67a55e1.png" alt="本地解析几何资料图片" width="384" height="992"></p>
-<p class="local-docx-line">【答案】C</p>
-<p class="local-docx-line">【解析】由圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-267-da2d930c12.png" alt="本地解析几何资料图片" width="3616" height="608">和圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-268-b028baf76d.png" alt="本地解析几何资料图片" width="3744" height="608">，</p>
-<p class="local-docx-line">可得圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-269-0cef57579a.png" alt="本地解析几何资料图片" width="448" height="576">和<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-270-daecce0383.png" alt="本地解析几何资料图片" width="480" height="576">的公共弦所在的直线方程为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-271-c6db8eaa18.png" alt="本地解析几何资料图片" width="3392" height="512">，</p>
-<p class="local-docx-line">联立<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-272-a8c331374c.png" alt="本地解析几何资料图片" width="1856" height="1152">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-273-4515e13a16.png" alt="本地解析几何资料图片" width="1088" height="1152">，即点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-274-93d452c452.png" alt="本地解析几何资料图片" width="1216" height="512">，</p>
-<p class="local-docx-line">又因为点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-275-11bf2576f6.png" alt="本地解析几何资料图片" width="512" height="416">在直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-276-e48a930f7f.png" alt="本地解析几何资料图片" width="1888" height="512">上，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-277-aa21b9e4eb.png" alt="本地解析几何资料图片" width="1728" height="448">，</p>
-<p class="local-docx-line">又由原点到直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-278-d487026177.png" alt="本地解析几何资料图片" width="1664" height="512">的距离为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-279-5c6fc5d30b.png" alt="本地解析几何资料图片" width="3168" height="1184">，</p>
-<p class="local-docx-line">即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-280-462132d993.png" alt="本地解析几何资料图片" width="1600" height="608">的最小值为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag41-a-281-f5463307fa.png" alt="本地解析几何资料图片" width="768" height="960">.故选：C.</p>
-<p class="local-docx-line">【题组六 几何意义运用】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1041,7 +948,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1066,7 +973,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1095,7 +1002,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1118,7 +1025,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1140,7 +1047,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1161,7 +1068,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1190,24 +1097,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">5．已知椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-053-775c69c942.png" alt="本地解析几何资料图片" width="2336" height="1056">，圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-054-d9b3494096.png" alt="本地解析几何资料图片" width="4064" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-055-3bcd5bbfbe.png" alt="本地解析几何资料图片" width="352" height="384">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-056-e555da4745.png" alt="本地解析几何资料图片" width="384" height="512">分別为椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-057-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">和圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-058-f89c8a9ab1.png" alt="本地解析几何资料图片" width="384" height="416">上的点，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-059-712e9ea6a5.png" alt="本地解析几何资料图片" width="1472" height="640">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-060-13d648ffce.png" alt="本地解析几何资料图片" width="1760" height="640">的最小值为（    ）</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-061-d17707c159.png" alt="本地解析几何资料图片" width="1376" height="1088">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-062-4592c18496.png" alt="本地解析几何资料图片" width="1280" height="544">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-063-8fd9c0ab8a.png" alt="本地解析几何资料图片" width="1120" height="544">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-064-d9b029d55a.png" alt="本地解析几何资料图片" width="1120" height="544"></p>
-<p class="local-docx-line">【答案】D</p>
-<p class="local-docx-line">【解析】圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-065-f89c8a9ab1.png" alt="本地解析几何资料图片" width="384" height="416">的标准方程为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-066-e6df8d9016.png" alt="本地解析几何资料图片" width="3776" height="1184">，圆心<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-067-d9ff91cd82.png" alt="本地解析几何资料图片" width="1472" height="1088">，半径<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-068-366a574765.png" alt="本地解析几何资料图片" width="1216" height="1088">，</p>
-<p class="local-docx-line">如下图所示，可知点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-069-3a5a4d1e6f.png" alt="本地解析几何资料图片" width="416" height="416">为椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-070-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的左焦点，设点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-071-a0cc0e281d.png" alt="本地解析几何资料图片" width="384" height="416">为椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-072-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的右焦点，易知点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-073-a0cc0e281d.png" alt="本地解析几何资料图片" width="384" height="416">在圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-074-f89c8a9ab1.png" alt="本地解析几何资料图片" width="384" height="416">上，</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/analytic-geometry-local/ag42-a-075-571fff155e.png" alt="本地解析几何资料图片" width="746" height="658"></div>
-<p class="local-docx-line">由椭圆的定义可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-076-95749a52f2.png" alt="本地解析几何资料图片" width="4032" height="640">，</p>
-<p class="local-docx-line">由圆的几何性质可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-077-28be61cb0f.png" alt="本地解析几何资料图片" width="4128" height="1088">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-078-7bfa54e407.png" alt="本地解析几何资料图片" width="11968" height="1088">，</p>
-<p class="local-docx-line">当且仅当<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-079-3bcd5bbfbe.png" alt="本地解析几何资料图片" width="352" height="384">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-080-f89c8a9ab1.png" alt="本地解析几何资料图片" width="384" height="416">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-081-a0cc0e281d.png" alt="本地解析几何资料图片" width="384" height="416">三点共线且点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-082-3bcd5bbfbe.png" alt="本地解析几何资料图片" width="352" height="384">在点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-083-f89c8a9ab1.png" alt="本地解析几何资料图片" width="384" height="416">的上方时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-084-13d648ffce.png" alt="本地解析几何资料图片" width="1760" height="640">取得最小值<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-085-d9b029d55a.png" alt="本地解析几何资料图片" width="1120" height="544">.</p>
-<p class="local-docx-line">故选：D.</p>
-<p class="local-docx-line">【题组二 焦点三角形周长及面积】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1220,7 +1112,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1244,7 +1136,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1269,7 +1161,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1292,7 +1184,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1314,19 +1206,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">5．若<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-136-19fd007dad.png" alt="本地解析几何资料图片" width="928" height="576">是椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-137-11bd028f57.png" alt="本地解析几何资料图片" width="1792" height="1056">的两个焦点，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-138-3bcd5bbfbe.png" alt="本地解析几何资料图片" width="352" height="384">是该椭圆上的一个动点，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-139-af8411c261.png" alt="本地解析几何资料图片" width="1728" height="640">的最大值是________.</p>
-<p class="local-docx-line">【答案】4</p>
-<p class="local-docx-line">【解析】由椭圆方程<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-140-11bd028f57.png" alt="本地解析几何资料图片" width="1792" height="1056">可知<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-141-a2f73f5ab1.png" alt="本地解析几何资料图片" width="896" height="448">，</p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-142-3bcd5bbfbe.png" alt="本地解析几何资料图片" width="352" height="384">是该椭圆上的一个动点，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-143-10eb65b67e.png" alt="本地解析几何资料图片" width="3232" height="640">，</p>
-<p class="local-docx-line">因此由基本不等式可得；</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-144-2cea59733f.png" alt="本地解析几何资料图片" width="4928" height="1056">（当且仅当<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-145-9aff4aeeb6.png" alt="本地解析几何资料图片" width="2496" height="640">时，取等号）.故答案为：4</p>
-<p class="local-docx-line">【题组三 离心率】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1338,7 +1220,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1359,7 +1241,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1382,7 +1264,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1404,7 +1286,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1429,7 +1311,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1457,7 +1339,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1483,7 +1365,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1520,24 +1402,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">8．已知椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-279-362359a1b8.png" alt="本地解析几何资料图片" width="1856" height="1056">的左右焦点分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-280-56ddee6cfe.png" alt="本地解析几何资料图片" width="928" height="576">，过<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-281-8364afd2f2.png" alt="本地解析几何资料图片" width="416" height="576">作倾斜角为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-282-85bdf60ac5.png" alt="本地解析几何资料图片" width="608" height="512">的直线与椭圆交于<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-283-0464c55fe7.png" alt="本地解析几何资料图片" width="768" height="512">两点，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-284-f4d4612b31.png" alt="本地解析几何资料图片" width="1856" height="640">，则椭圆的离心率=           。</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-285-77bb3deee8.png" alt="本地解析几何资料图片" width="672" height="1088"></p>
-<p class="local-docx-line">【解析】椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-286-9c3cb63285.png" alt="本地解析几何资料图片" width="1824" height="1056">的左右焦点分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-287-e71312ddb6.png" alt="本地解析几何资料图片" width="1088" height="576">，过<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-288-b0df8192ab.png" alt="本地解析几何资料图片" width="1472" height="576">且斜率为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-289-519a22a6f1.png" alt="本地解析几何资料图片" width="832" height="448">的直线为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-290-52be3373f4.png" alt="本地解析几何资料图片" width="1472" height="416"></p>
-<p class="local-docx-line">联立直线与椭圆方程<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-291-595b75c795.png" alt="本地解析几何资料图片" width="2048" height="1664"></p>
-<p class="local-docx-line">消<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-292-ab4402a583.png" alt="本地解析几何资料图片" width="320" height="352">后，化简可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-293-5f693ae68c.png" alt="本地解析几何资料图片" width="5856" height="576"></p>
-<p class="local-docx-line">因为直线交椭圆于A，B，设<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-294-ded888ad2e.png" alt="本地解析几何资料图片" width="3616" height="576"></p>
-<p class="local-docx-line">由韦达定理可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-295-3808648aab.png" alt="本地解析几何资料图片" width="5920" height="1056"></p>
-<p class="local-docx-line">且<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-296-f4d4612b31.png" alt="本地解析几何资料图片" width="1856" height="640">，可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-297-12384ba01a.png" alt="本地解析几何资料图片" width="1568" height="576">，代入韦达定理表达式可得</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-298-0c1e1b1759.png" alt="本地解析几何资料图片" width="5600" height="1056"></p>
-<p class="local-docx-line">即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-299-e24c86fab0.png" alt="本地解析几何资料图片" width="4352" height="1280"></p>
-<p class="local-docx-line">化简可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-300-ddda062593.png" alt="本地解析几何资料图片" width="1536" height="512">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-301-ba7791f046.png" alt="本地解析几何资料图片" width="1856" height="1088"></p>
-<p class="local-docx-line">【题组四 标准方程】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1551,7 +1418,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1574,7 +1441,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1598,7 +1465,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1621,7 +1488,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1643,7 +1510,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1673,7 +1540,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1698,7 +1565,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1723,7 +1590,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1748,18 +1615,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">9．已知椭圆C：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-432-9096a200ce.png" alt="本地解析几何资料图片" width="3456" height="1056">的左右焦点为F1,F2离心率为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-433-4026a2305f.png" alt="本地解析几何资料图片" width="640" height="1088">，过F2的直线l交C与A,B两点，若△AF1B的周长为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-434-7bb7771add.png" alt="本地解析几何资料图片" width="768" height="576">，则C的方程为( )</p>
-<p class="local-docx-line">A．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-435-0b1fec9cc1.png" alt="本地解析几何资料图片" width="1824" height="1056">B．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-436-e7baa0da82.png" alt="本地解析几何资料图片" width="1760" height="1056">C．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-437-f9b84eda53.png" alt="本地解析几何资料图片" width="1824" height="1056">D．<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-438-a6663f00ef.png" alt="本地解析几何资料图片" width="1824" height="1056"></p>
-<p class="local-docx-line">【答案】A</p>
-<p class="local-docx-line">【解析】若△AF1B的周长为4<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-439-e556b8053f.png" alt="本地解析几何资料图片" width="576" height="576">,由椭圆的定义可知<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-440-14896d40a5.png" alt="本地解析几何资料图片" width="1568" height="576">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-441-37821b8144.png" alt="本地解析几何资料图片" width="1472" height="576">,</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-442-93bcf21f1c.png" alt="本地解析几何资料图片" width="2144" height="1088">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-443-e98360f4d1.png" alt="本地解析几何资料图片" width="1120" height="448">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-444-deecb3226c.png" alt="本地解析几何资料图片" width="1305" height="529">，所以方程为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-445-0b1fec9cc1.png" alt="本地解析几何资料图片" width="1824" height="1056">，故选A.</p>
-<p class="local-docx-line">【题组五 直线与椭圆的位置关系】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1771,7 +1629,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1793,7 +1651,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1814,7 +1672,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1839,21 +1697,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．已知椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-474-139bdcec98.png" alt="本地解析几何资料图片" width="2272" height="1056">，直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-475-8d444a808a.png" alt="本地解析几何资料图片" width="1920" height="512">，若椭圆C上存在两点关于直线l对称，则m的取值范围是        。</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-476-a4b46b1383.png" alt="本地解析几何资料图片" width="1984" height="1280"></p>
-<p class="local-docx-line">【解析】设<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-477-f1259a1f94.png" alt="本地解析几何资料图片" width="1472" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-478-c43988e3c1.png" alt="本地解析几何资料图片" width="1568" height="640">是椭圆C上关于l对称的两点，AB的中点为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-479-749889372b.png" alt="本地解析几何资料图片" width="1696" height="640">，</p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-480-1c6d4ca33f.png" alt="本地解析几何资料图片" width="1984" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-481-031b3a8920.png" alt="本地解析几何资料图片" width="2048" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-482-1df08d7cb1.png" alt="本地解析几何资料图片" width="1376" height="576">.</p>
-<p class="local-docx-line">又因为A，B在椭圆C上，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-483-585ee55852.png" alt="本地解析几何资料图片" width="1760" height="1056">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-484-d4a5dfc3f5.png" alt="本地解析几何资料图片" width="1760" height="1056">，</p>
-<p class="local-docx-line">两式相减可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-485-baccb4390d.png" alt="本地解析几何资料图片" width="3264" height="1088">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-486-108f6e566c.png" alt="本地解析几何资料图片" width="1376" height="576">.</p>
-<p class="local-docx-line">又点M在l上，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-487-83ec43662e.png" alt="本地解析几何资料图片" width="1824" height="576">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-488-b885a45e27.png" alt="本地解析几何资料图片" width="1120" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-489-952ac4b7d6.png" alt="本地解析几何资料图片" width="1344" height="576">.</p>
-<p class="local-docx-line">因为点M在椭圆C内部，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-490-0ccb8f6127.png" alt="本地解析几何资料图片" width="2048" height="512">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag42-a-491-189c406a86.png" alt="本地解析几何资料图片" width="2624" height="1280">.</p>
-<p class="local-docx-line">【题组六 弦长】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1865,7 +1711,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1890,7 +1736,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1921,7 +1767,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1942,7 +1788,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1965,7 +1811,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1990,7 +1836,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2012,7 +1858,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2042,7 +1888,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2067,16 +1913,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2．设双曲线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-016-fb084d8296.png" alt="本地解析几何资料图片" width="2112" height="1056">（<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-017-b36f20754b.png" alt="本地解析几何资料图片" width="960" height="448">）的焦距为12，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-018-c60100d603.png" alt="本地解析几何资料图片" width="704" height="352">      。</p>
-<p class="local-docx-line">【答案】2</p>
-<p class="local-docx-line">【解析】因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-019-fb084d8296.png" alt="本地解析几何资料图片" width="2112" height="1056">可化为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-020-4c26f87566.png" alt="本地解析几何资料图片" width="2176" height="1056">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-021-5e46f9015a.png" alt="本地解析几何资料图片" width="5376" height="1184">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-022-8aaa381ecd.png" alt="本地解析几何资料图片" width="992" height="448">.</p>
-<p class="local-docx-line">【题组二  焦点三角形】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2088,7 +1927,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2115,7 +1954,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2141,7 +1980,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2171,7 +2010,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2197,7 +2036,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2224,23 +2063,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">6．已知双曲线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-143-59de8d9bf5.png" alt="本地解析几何资料图片" width="1760" height="1056">的左、右焦点分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-144-13a8a5f41b.png" alt="本地解析几何资料图片" width="416" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-145-1b78fa9f4f.png" alt="本地解析几何资料图片" width="448" height="576">，若双曲线右支上一点M，使得直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-146-9e07b47971.png" alt="本地解析几何资料图片" width="736" height="576">与圆O：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-147-f4ef0cc98d.png" alt="本地解析几何资料图片" width="1728" height="576">相切.则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-148-9f3b94818b.png" alt="本地解析几何资料图片" width="1408" height="576">的面积为    。</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-149-8849c87832.png" alt="本地解析几何资料图片" width="1344" height="544"></p>
-<p class="local-docx-line">【解析】过O作切线的垂线，垂足为A，过<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-150-1b78fa9f4f.png" alt="本地解析几何资料图片" width="448" height="576">作切线的垂线，垂足为B，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-151-173f1a4b65.png" alt="本地解析几何资料图片" width="1312" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-152-fbd03422d7.png" alt="本地解析几何资料图片" width="1760" height="640">，设<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-153-3510130bfb.png" alt="本地解析几何资料图片" width="1984" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-154-89206f36e2.png" alt="本地解析几何资料图片" width="1952" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-155-6dd497b552.png" alt="本地解析几何资料图片" width="1952" height="992">，</p>
-<p class="local-docx-line">根据双曲线的定义，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-156-59fa704b72.png" alt="本地解析几何资料图片" width="3648" height="992">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-157-2da257ffc2.png" alt="本地解析几何资料图片" width="2720" height="992">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-158-8ab3bedea7.png" alt="本地解析几何资料图片" width="2560" height="992">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-159-cc5d28eb61.png" alt="本地解析几何资料图片" width="3552" height="1920">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-160-508e532128.png" alt="本地解析几何资料图片" width="1856" height="512"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-161-23b883ef9d.png" alt="本地解析几何资料图片" width="1344" height="992">.</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-162-c2c3100553.png" alt="本地解析几何资料图片" width="6784" height="1088">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/analytic-geometry-local/ag43-a-163-8b0872df29.png" alt="本地解析几何资料图片" width="192" height="196"></div>
-<p class="local-docx-line">【题组三 离心率】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2252,7 +2077,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2277,7 +2102,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2299,7 +2124,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2323,17 +2148,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．已知双曲线C：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-225-01caa61cc5.png" alt="本地解析几何资料图片" width="1856" height="1056">（<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-226-5d2f62324b.png" alt="本地解析几何资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-227-408d211eb3.png" alt="本地解析几何资料图片" width="864" height="448">）的一条渐近线被圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-228-318247b425.png" alt="本地解析几何资料图片" width="2592" height="704">所截得的弦长为2，的C的离心率为   。</p>
-<p class="local-docx-line">【答案】2</p>
-<p class="local-docx-line">【解析】双曲线的一条渐近线方程为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-229-c7a0fcc896.png" alt="本地解析几何资料图片" width="1248" height="992">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-230-80d877b653.png" alt="本地解析几何资料图片" width="1600" height="480">，被圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-231-318247b425.png" alt="本地解析几何资料图片" width="2592" height="704">所截得的弦长为2，所以圆心<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-232-1bd921a8fe.png" alt="本地解析几何资料图片" width="896" height="512">到直线的距离为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-233-e7ecd4b133.png" alt="本地解析几何资料图片" width="2592" height="608">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-234-c4c95e2b40.png" alt="本地解析几何资料图片" width="3296" height="1120">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-235-6644a5eb05.png" alt="本地解析几何资料图片" width="1376" height="512">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-236-01deea1f7b.png" alt="本地解析几何资料图片" width="2816" height="1120"></p>
-<p class="local-docx-line">【题组四 渐近线】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2345,7 +2162,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2368,7 +2185,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2394,24 +2211,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．在平面直角坐标系<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-263-2ca4a7471c.png" alt="本地解析几何资料图片" width="768" height="512">中，若双曲线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-264-4f6d110da0.png" alt="本地解析几何资料图片" width="2784" height="1056">经过点（3，4)，则该双曲线的渐近线方程是_____.</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-265-25607dceb5.png" alt="本地解析几何资料图片" width="1600" height="608">.</p>
-<p class="local-docx-line">【解析】由已知得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-266-db845db7e1.png" alt="本地解析几何资料图片" width="1696" height="1056">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-267-f742591be0.png" alt="本地解析几何资料图片" width="1184" height="544">或<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-268-ebb7890f33.png" alt="本地解析几何资料图片" width="1408" height="544">，</p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-269-59ba0cbf42.png" alt="本地解析几何资料图片" width="864" height="448">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-270-f742591be0.png" alt="本地解析几何资料图片" width="1184" height="544">.因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-271-a9b5fc9559.png" alt="本地解析几何资料图片" width="736" height="416">，所以双曲线的渐近线方程为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-272-25607dceb5.png" alt="本地解析几何资料图片" width="1600" height="608">.</p>
-<p class="local-docx-line">4已知抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-273-aed67a7043.png" alt="本地解析几何资料图片" width="1696" height="576">的准线与圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-274-cc51647f16.png" alt="本地解析几何资料图片" width="2688" height="576">相切，双曲线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-275-32fe2e4312.png" alt="本地解析几何资料图片" width="4352" height="1056">过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-276-08325d2443.png" alt="本地解析几何资料图片" width="1216" height="640">，则双曲线C的渐近线方程为________.</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-277-56fd8d8a6b.png" alt="本地解析几何资料图片" width="1760" height="1088"></p>
-<p class="local-docx-line">【解析】由已知条件可知，抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-278-aed67a7043.png" alt="本地解析几何资料图片" width="1696" height="576">的准线为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-279-fd6dadb921.png" alt="本地解析几何资料图片" width="896" height="448">；圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-280-cc51647f16.png" alt="本地解析几何资料图片" width="2688" height="576">的圆心为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-281-89e181093b.png" alt="本地解析几何资料图片" width="928" height="640">，半径为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-282-f4abf7c86c.png" alt="本地解析几何资料图片" width="1440" height="640">；</p>
-<p class="local-docx-line">又抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-283-aed67a7043.png" alt="本地解析几何资料图片" width="1696" height="576">的准线与圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-284-cc51647f16.png" alt="本地解析几何资料图片" width="2688" height="576">相切，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-285-2973593ffb.png" alt="本地解析几何资料图片" width="1088" height="448">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-286-e3a25cc383.png" alt="本地解析几何资料图片" width="896" height="448">；</p>
-<p class="local-docx-line">又双曲线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-287-32fe2e4312.png" alt="本地解析几何资料图片" width="4352" height="1056">过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-288-08325d2443.png" alt="本地解析几何资料图片" width="1216" height="640">；</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-289-89ff873f62.png" alt="本地解析几何资料图片" width="1792" height="992">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-290-b6ef887158.png" alt="本地解析几何资料图片" width="1152" height="576">；</p>
-<p class="local-docx-line">所以双曲线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-291-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的渐近线方程为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-292-56fd8d8a6b.png" alt="本地解析几何资料图片" width="1760" height="1088">.故答案为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-293-56fd8d8a6b.png" alt="本地解析几何资料图片" width="1760" height="1088">.</p>
-<p class="local-docx-line">【题组五 标准方程】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2423,7 +2225,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2443,7 +2245,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2466,7 +2268,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2490,7 +2292,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2513,28 +2315,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">5．已知双曲线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-355-f43d55214d.png" alt="本地解析几何资料图片" width="3936" height="1056">的左、右焦点分别为F1，F2，过F2且斜率为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-356-9e0e3803cd.png" alt="本地解析几何资料图片" width="564" height="987">的直线与双曲线在第一象限的交点为A，若<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-357-31a00d20e7.png" alt="本地解析几何资料图片" width="3392" height="1088">，则此双曲线的标准方程可能为          。</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-358-9865469ef4.png" alt="本地解析几何资料图片" width="1824" height="1056"></p>
-<p class="local-docx-line">【解析】由题可知，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-359-e1c3dd56a3.png" alt="本地解析几何资料图片" width="2912" height="800">，</p>
-<p class="local-docx-line">若<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-360-31a00d20e7.png" alt="本地解析几何资料图片" width="3392" height="1088">，即为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-361-addc64d8b1.png" alt="本地解析几何资料图片" width="4480" height="928">，</p>
-<p class="local-docx-line">可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-362-85f1e39d47.png" alt="本地解析几何资料图片" width="1856" height="768">，即有<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-363-7344cb608a.png" alt="本地解析几何资料图片" width="2496" height="512">，</p>
-<p class="local-docx-line">由双曲线的定义可知<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-364-ce05460b74.png" alt="本地解析几何资料图片" width="2688" height="640">，</p>
-<p class="local-docx-line">可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-365-17a1890980.png" alt="本地解析几何资料图片" width="2112" height="512">，</p>
-<p class="local-docx-line">由于过F2的直线斜率为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-366-9e0e3803cd.png" alt="本地解析几何资料图片" width="564" height="987">，</p>
-<p class="local-docx-line">所以在等腰三角形<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-367-915255a824.png" alt="本地解析几何资料图片" width="1128" height="635">中，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-368-2256c06d49.png" alt="本地解析几何资料图片" width="2944" height="992">，</p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-369-904dd01761.png" alt="本地解析几何资料图片" width="2944" height="992">，</p>
-<p class="local-docx-line">由余弦定理得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-370-77c2a7953c.png" alt="本地解析几何资料图片" width="5952" height="928">，</p>
-<p class="local-docx-line">化简得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-371-8f94953e04.png" alt="本地解析几何资料图片" width="1248" height="448">，</p>
-<p class="local-docx-line">即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-372-d31c19998f.png" alt="本地解析几何资料图片" width="1152" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-373-7fd054654f.png" alt="本地解析几何资料图片" width="1152" height="992">，</p>
-<p class="local-docx-line">可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-374-f6d6a522d7.png" alt="本地解析几何资料图片" width="1658" height="458">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-375-6d80d31251.png" alt="本地解析几何资料图片" width="2176" height="512">，</p>
-<p class="local-docx-line">所以此双曲线的标准方程可能为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-376-9865469ef4.png" alt="本地解析几何资料图片" width="1824" height="1056">.</p>
-<p class="local-docx-line">【题组六 直线与双曲线的位置关系】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2546,7 +2329,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2568,7 +2351,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2591,7 +2374,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2616,7 +2399,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2638,19 +2421,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">5．若直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-419-70b992f55f.png" alt="本地解析几何资料图片" width="224" height="448">：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-420-85697d46d4.png" alt="本地解析几何资料图片" width="1536" height="512">与双曲线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-421-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-422-e12a158cc1.png" alt="本地解析几何资料图片" width="1888" height="576">的右支交于不同的两点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-423-f22646b0ee.png" alt="本地解析几何资料图片" width="384" height="416">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-424-06dd9f60b5.png" alt="本地解析几何资料图片" width="352" height="384">，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-425-abdc050810.png" alt="本地解析几何资料图片" width="320" height="448">的取值范围是      。</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-426-7821ec66e3.png" alt="本地解析几何资料图片" width="2176" height="544"></p>
-<p class="local-docx-line">【解析】将直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-427-85697d46d4.png" alt="本地解析几何资料图片" width="1536" height="512">代入双曲线方程，</p>
-<p class="local-docx-line">并整理得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-428-95aa15b8aa.png" alt="本地解析几何资料图片" width="3712" height="704">.</p>
-<p class="local-docx-line">依题意，直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-429-70b992f55f.png" alt="本地解析几何资料图片" width="224" height="448">与双曲线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-430-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的右支交于不同两点，故</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag43-a-431-7e320618ee.png" alt="本地解析几何资料图片" width="8768" height="3520">，</p>
-<p class="local-docx-line">【题组七 弦长问题】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2662,7 +2435,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2688,7 +2461,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2716,7 +2489,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2742,7 +2515,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2775,7 +2548,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2816,7 +2589,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2837,7 +2610,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2861,7 +2634,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2884,7 +2657,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2910,7 +2683,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2932,26 +2705,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">6．已知点P为抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-089-e9aedc533e.png" alt="本地解析几何资料图片" width="1280" height="576">上的动点，过点P作圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-090-61f0ac1cee.png" alt="本地解析几何资料图片" width="2496" height="704">的切线，切点为A，则PA的最小值为_________.</p>
-<p class="local-docx-line">【答案】1</p>
-<p class="local-docx-line">【解析】圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-091-61f0ac1cee.png" alt="本地解析几何资料图片" width="2496" height="704">的圆心<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-092-6053f39023.png" alt="本地解析几何资料图片" width="1216" height="640">，半径<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-093-4e5c9a91cc.png" alt="本地解析几何资料图片" width="800" height="416">，</p>
-<p class="local-docx-line">由切线的性质可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-094-07a30e6312.png" alt="本地解析几何资料图片" width="4832" height="832">，</p>
-<p class="local-docx-line">若要使<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-095-3f3897cd7a.png" alt="本地解析几何资料图片" width="704" height="640">最小，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-096-d78a0f8f71.png" alt="本地解析几何资料图片" width="768" height="640">取最小值，</p>
-<p class="local-docx-line">设<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-097-5bc44eb460.png" alt="本地解析几何资料图片" width="1888" height="1216">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-098-502b0d17de.png" alt="本地解析几何资料图片" width="7648" height="1408">，</p>
-<p class="local-docx-line">令<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-099-ebb14f14c5.png" alt="本地解析几何资料图片" width="3680" height="1056">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-100-d97f0d9c48.png" alt="本地解析几何资料图片" width="3072" height="1056">，</p>
-<p class="local-docx-line">易知<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-101-9ce50dba74.png" alt="本地解析几何资料图片" width="1024" height="640">单调递增，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-102-b936f18595.png" alt="本地解析几何资料图片" width="1568" height="640">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-103-e07e99039d.png" alt="本地解析几何资料图片" width="928" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-104-82987c301b.png" alt="本地解析几何资料图片" width="1248" height="640">上单调递减，在<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-105-4a4baa44bb.png" alt="本地解析几何资料图片" width="1248" height="640">上单调递增，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-106-9125b24c95.png" alt="本地解析几何资料图片" width="2688" height="640">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-107-b7efba1f85.png" alt="本地解析几何资料图片" width="2912" height="1056">的最小值为2即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-108-d78a0f8f71.png" alt="本地解析几何资料图片" width="768" height="640">的最小值为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-109-bf0137db3d.png" alt="本地解析几何资料图片" width="608" height="544">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-110-8141eef0d8.png" alt="本地解析几何资料图片" width="2944" height="672">.</p>
-<p class="local-docx-line">故答案为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-111-32127b8552.png" alt="本地解析几何资料图片" width="224" height="416">.</p>
-<p class="local-docx-line">【题组二 抛物线的标准方程】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2963,7 +2719,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2985,7 +2741,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3007,17 +2763,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．已知抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-132-385eb7dc6a.png" alt="本地解析几何资料图片" width="1280" height="576">上的一点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-133-ac2047be75.png" alt="本地解析几何资料图片" width="512" height="416">到此抛物线的焦点的距离为3，则点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-134-ac2047be75.png" alt="本地解析几何资料图片" width="512" height="416">的纵坐标是       。</p>
-<p class="local-docx-line">【答案】2</p>
-<p class="local-docx-line">【解析】设点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-135-ac2047be75.png" alt="本地解析几何资料图片" width="512" height="416"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-136-ec0195dfe3.png" alt="本地解析几何资料图片" width="1472" height="640">，由抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-137-385eb7dc6a.png" alt="本地解析几何资料图片" width="1280" height="576">，则抛物线的准线为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-138-b7cc9e04eb.png" alt="本地解析几何资料图片" width="1088" height="512">，</p>
-<p class="local-docx-line">点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-139-ac2047be75.png" alt="本地解析几何资料图片" width="512" height="416">到此抛物线的焦点的距离为3，根据抛物线的定义可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-140-2deb92be27.png" alt="本地解析几何资料图片" width="1600" height="576">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-141-980d2c88ea.png" alt="本地解析几何资料图片" width="1184" height="576">，</p>
-<p class="local-docx-line">【题组三 直线与抛物线的位置关系】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -3031,27 +2779,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
-
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">1．过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-142-15d6df827d.png" alt="本地解析几何资料图片" width="896" height="512">与抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-143-6d84ddee58.png" alt="本地解析几何资料图片" width="1248" height="576">只有一个公共点的直线有        条</p>
-<p class="local-docx-line">【答案】3</p>
-<p class="local-docx-line">【解析】因为点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-a-144-15d6df827d.png" alt="本地解析几何资料图片" width="896" height="512">在抛物线外面，与抛物线只有一个交点的直线有2条切线，1条和对称轴平行，故3条．</p>
-</div>
-:::
-
-:::
-
-### 题 122（原题 3）
-
-:::diagram
-<div class="local-docx-card local-docx-question">
-<p class="local-docx-line">3．过点P(2,2)作抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-q-047-c7d44c01a1.png" alt="本地解析几何资料图片" width="1280" height="576">的弦AB,恰好被P平分，则弦AB所在的直线方程是       。</p>
-</div>
-:::
-
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3071,17 +2799,15 @@
 
 :::
 
-### 题 123（原题 4）
+### 题 122（原题 3）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">4．过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-q-048-44793b3669.png" alt="本地解析几何资料图片" width="1120" height="640">且倾斜角为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-q-049-70b81f3737.png" alt="本地解析几何资料图片" width="640" height="448">的直线与抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-q-050-e9aedc533e.png" alt="本地解析几何资料图片" width="1280" height="576">的位置关系是（）</p>
-<p class="local-docx-line">A．相交且有两公共点B．相交且有一公共点</p>
-<p class="local-docx-line">C．有一公共点且相切D．无公共点</p>
+<p class="local-docx-line">3．过点P(2,2)作抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-q-047-c7d44c01a1.png" alt="本地解析几何资料图片" width="1280" height="576">的弦AB,恰好被P平分，则弦AB所在的直线方程是       。</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3103,6 +2829,22 @@
 
 :::
 
+### 题 123（原题 4）
+
+:::diagram
+<div class="local-docx-card local-docx-question">
+<p class="local-docx-line">4．过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-q-048-44793b3669.png" alt="本地解析几何资料图片" width="1120" height="640">且倾斜角为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-q-049-70b81f3737.png" alt="本地解析几何资料图片" width="640" height="448">的直线与抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag44-q-050-e9aedc533e.png" alt="本地解析几何资料图片" width="1280" height="576">的位置关系是（）</p>
+<p class="local-docx-line">A．相交且有两公共点B．相交且有一公共点</p>
+<p class="local-docx-line">C．有一公共点且相切D．无公共点</p>
+</div>
+:::
+
+:::solution 解析待核验
+
+原题号与题干首段尚未唯一匹配。暂不展示可能错配的解析，请教师核对题源后补充。
+
+:::
+
 ## 考点 45：三定问题（定点、定值、定直线）
 
 本组来自 `考点45 三定问题（定点、定值、定直线）（练习）（原卷版）.docx`；原卷共抽取 7 道题，解析版原始抽取 7 道，可对齐显示 7 道。
@@ -3118,7 +2860,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3156,7 +2898,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3200,36 +2942,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．（2020·全国高三课时练习（理））已知A、B分别为椭圆E：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-078-9c540069ed.png" alt="本地解析几何资料图片" width="1792" height="1056">（a&gt;1）的左、右顶点，G为E的上顶点，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-079-4f9effc075.png" alt="本地解析几何资料图片" width="1728" height="512">，P为直线x=6上的动点，PA与E的另一交点为C，PB与E的另一交点为D．</p>
-<p class="local-docx-line">（1）求E的方程；</p>
-<p class="local-docx-line">（2）证明：直线CD过定点.</p>
-<p class="local-docx-line">【答案】（1）<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-080-125aaf0281.png" alt="本地解析几何资料图片" width="1760" height="1056">；（2）证明详见解析.</p>
-<p class="local-docx-line">【解析】（1）依据题意作出如下图象：</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/analytic-geometry-local/ag45-a-081-8b5a08f4b2.png" alt="本地解析几何资料图片" width="432" height="253"></div>
-<p class="local-docx-line">由椭圆方程<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-082-9253f77cb1.png" alt="本地解析几何资料图片" width="3232" height="1056">可得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-083-9053994b37.png" alt="本地解析几何资料图片" width="1472" height="640">， <img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-084-455a5fc8a1.png" alt="本地解析几何资料图片" width="1248" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-085-77d0fc1799.png" alt="本地解析几何资料图片" width="1184" height="640"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-086-3d680e0f25.png" alt="本地解析几何资料图片" width="352" height="320"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-087-3746cfe469.png" alt="本地解析几何资料图片" width="1824" height="672">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-088-77497bcac8.png" alt="本地解析几何资料图片" width="2016" height="672"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-089-3d680e0f25.png" alt="本地解析几何资料图片" width="352" height="320"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-090-4fd4966e88.png" alt="本地解析几何资料图片" width="3136" height="544">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-091-3d680e0f25.png" alt="本地解析几何资料图片" width="352" height="320"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-092-040f053417.png" alt="本地解析几何资料图片" width="1056" height="512"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-093-3d680e0f25.png" alt="本地解析几何资料图片" width="352" height="320">椭圆方程为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-094-125aaf0281.png" alt="本地解析几何资料图片" width="1760" height="1056"></p>
-<p class="local-docx-line">（2）证明：设<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-095-b32e8fcfc4.png" alt="本地解析几何资料图片" width="1408" height="640">，</p>
-<p class="local-docx-line">则直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-096-1f6cb98a7f.png" alt="本地解析几何资料图片" width="640" height="416">的方程为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-097-3d9e69f24b.png" alt="本地解析几何资料图片" width="3040" height="1120">，即：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-098-3c9ed215bc.png" alt="本地解析几何资料图片" width="2208" height="992"></p>
-<p class="local-docx-line">联立直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-099-1f6cb98a7f.png" alt="本地解析几何资料图片" width="640" height="416">的方程与椭圆方程可得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-100-4cc23e8ac1.png" alt="本地解析几何资料图片" width="2400" height="2176">，整理得：</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-101-96e6448622.png" alt="本地解析几何资料图片" width="5280" height="704">，解得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-102-c1f88ad57e.png" alt="本地解析几何资料图片" width="1088" height="448">或<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-103-1e2f24b042.png" alt="本地解析几何资料图片" width="2368" height="1152"></p>
-<p class="local-docx-line">将<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-104-1e2f24b042.png" alt="本地解析几何资料图片" width="2368" height="1152">代入直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-105-3c9ed215bc.png" alt="本地解析几何资料图片" width="2208" height="992">可得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-106-2962cd4ead.png" alt="本地解析几何资料图片" width="1792" height="1088"></p>
-<p class="local-docx-line">所以点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-107-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的坐标为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-108-e1504b3b2a.png" alt="本地解析几何资料图片" width="3424" height="1216">.</p>
-<p class="local-docx-line">同理可得：点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-109-9fd69941b2.png" alt="本地解析几何资料图片" width="416" height="416">的坐标为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-110-06207c33a4.png" alt="本地解析几何资料图片" width="2912" height="1216"></p>
-<p class="local-docx-line">当<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-111-12fe2247c6.png" alt="本地解析几何资料图片" width="1056" height="608">时，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-112-3d680e0f25.png" alt="本地解析几何资料图片" width="352" height="320">直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-113-3d4134937b.png" alt="本地解析几何资料图片" width="640" height="448">的方程为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-114-ae01e09f1f.png" alt="本地解析几何资料图片" width="7936" height="2304">，</p>
-<p class="local-docx-line">整理可得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-115-8be32edac0.png" alt="本地解析几何资料图片" width="10336" height="1344"></p>
-<p class="local-docx-line">整理得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-116-aee1ae2e5b.png" alt="本地解析几何资料图片" width="7072" height="1216"></p>
-<p class="local-docx-line">所以直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-117-3d4134937b.png" alt="本地解析几何资料图片" width="640" height="448">过定点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-118-0e0f7888b6.png" alt="本地解析几何资料图片" width="1120" height="1088">．</p>
-<p class="local-docx-line">当<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-119-155a88084d.png" alt="本地解析几何资料图片" width="1056" height="608">时，直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-120-3d4134937b.png" alt="本地解析几何资料图片" width="640" height="448">：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-121-75e8247bf9.png" alt="本地解析几何资料图片" width="960" height="992">，直线过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-122-0e0f7888b6.png" alt="本地解析几何资料图片" width="1120" height="1088">．故直线CD过定点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-123-0e0f7888b6.png" alt="本地解析几何资料图片" width="1120" height="1088">．</p>
-<p class="local-docx-line">【题组二 定值】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -3246,48 +2961,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">1．（2019·福建高三其他（理））已知椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-124-4a232cd23f.png" alt="本地解析几何资料图片" width="3936" height="1056">的下顶点为点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-125-9fd69941b2.png" alt="本地解析几何资料图片" width="416" height="416">，右焦点为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-126-41da73f2bd.png" alt="本地解析几何资料图片" width="1216" height="576">.延长<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-127-4d6c186a81.png" alt="本地解析几何资料图片" width="736" height="576">交椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-128-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">于点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-129-b7f13c3809.png" alt="本地解析几何资料图片" width="384" height="416">，且满足<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-130-92d368b7f3.png" alt="本地解析几何资料图片" width="2208" height="640">.</p>
-<p class="local-docx-line">（1）试求椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-131-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的标准方程；</p>
-<p class="local-docx-line">（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-132-1484967380.png" alt="本地解析几何资料图片" width="768" height="512">分别是椭圆长轴的左右两个端点，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-133-6f5ffe75d2.png" alt="本地解析几何资料图片" width="960" height="512">是椭圆上与<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-134-1484967380.png" alt="本地解析几何资料图片" width="768" height="512">均不重合的相异两点，设直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-135-8eb53bc395.png" alt="本地解析几何资料图片" width="1312" height="448">的斜率分别是<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-136-087629680c.png" alt="本地解析几何资料图片" width="832" height="576">.若直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-137-ea7be7386f.png" alt="本地解析几何资料图片" width="736" height="448">过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-138-49c187186c.png" alt="本地解析几何资料图片" width="1408" height="1280">，求证：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-139-fad9266086.png" alt="本地解析几何资料图片" width="1824" height="992">.</p>
-<p class="local-docx-line">【答案】（1）<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-140-72447c54bd.png" alt="本地解析几何资料图片" width="1600" height="928">；（2）证明见解析.</p>
-<p class="local-docx-line">（1）解：椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-141-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的下顶点为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-142-85fa60ace1.png" alt="本地解析几何资料图片" width="1440" height="512">，右焦点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-143-41da73f2bd.png" alt="本地解析几何资料图片" width="1216" height="576">，设点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-144-b7f13c3809.png" alt="本地解析几何资料图片" width="384" height="416">的坐标为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-145-04bec0cb16.png" alt="本地解析几何资料图片" width="832" height="480">，</p>
-<p class="local-docx-line">∵<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-146-92d368b7f3.png" alt="本地解析几何资料图片" width="2208" height="640">，可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-147-c708b0e6f5.png" alt="本地解析几何资料图片" width="1952" height="640">，又<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-148-f98af9aa14.png" alt="本地解析几何资料图片" width="1888" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-149-d9dd83a725.png" alt="本地解析几何资料图片" width="2464" height="640">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-150-26b7df6ed1.png" alt="本地解析几何资料图片" width="1984" height="1216">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-151-8f5679e6e3.png" alt="本地解析几何资料图片" width="1184" height="2112">，</p>
-<p class="local-docx-line">代入<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-152-f35067c9c0.png" alt="本地解析几何资料图片" width="1824" height="1056">可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-153-592904d80f.png" alt="本地解析几何资料图片" width="2688" height="1600">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-154-a210ba2f67.png" alt="本地解析几何资料图片" width="1824" height="992">，得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-155-c418e35286.png" alt="本地解析几何资料图片" width="1056" height="512">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-156-0341586f0d.png" alt="本地解析几何资料图片" width="1664" height="512">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-157-80fe6b03a5.png" alt="本地解析几何资料图片" width="864" height="480">，</p>
-<p class="local-docx-line">∴椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-158-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的标准方程为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-159-72447c54bd.png" alt="本地解析几何资料图片" width="1600" height="928">；</p>
-<p class="local-docx-line">（2）由题意设直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-160-32ba88cdaa.png" alt="本地解析几何资料图片" width="2976" height="1088">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-161-72d62b537b.png" alt="本地解析几何资料图片" width="2816" height="512">，</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/analytic-geometry-local/ag45-a-162-7b70688087.png" alt="本地解析几何资料图片" width="548" height="423"></div>
-<p class="local-docx-line">由<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-163-ab646997c3.png" alt="本地解析几何资料图片" width="2240" height="2240">得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-164-2c9a8cd08d.png" alt="本地解析几何资料图片" width="4480" height="608">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-165-89d6a32068.png" alt="本地解析几何资料图片" width="2848" height="1088">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-166-0bf4e0a04a.png" alt="本地解析几何资料图片" width="3008" height="1184">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-167-4e01e286fd.png" alt="本地解析几何资料图片" width="3904" height="1120"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-168-de59a5c763.png" alt="本地解析几何资料图片" width="3552" height="1152"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-169-0fb5103ec5.png" alt="本地解析几何资料图片" width="9216" height="1728"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-170-99ce460171.png" alt="本地解析几何资料图片" width="4928" height="1536"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-171-a14f42fa69.png" alt="本地解析几何资料图片" width="6240" height="2400"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-172-a712b68467.png" alt="本地解析几何资料图片" width="5248" height="1920">．</p>
-<p class="local-docx-line">2（2020·广西兴宁南宁三）已知椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-173-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-174-b5e6b0e4a4.png" alt="本地解析几何资料图片" width="3456" height="1056">的右焦点为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-175-8da15454e7.png" alt="本地解析几何资料图片" width="416" height="416">，上顶点为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-176-2a446db50d.png" alt="本地解析几何资料图片" width="512" height="416">，直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-177-59024e5ad9.png" alt="本地解析几何资料图片" width="672" height="384">的斜率为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-178-5044e13fc3.png" alt="本地解析几何资料图片" width="928" height="1088">，且原点到直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-179-59024e5ad9.png" alt="本地解析几何资料图片" width="672" height="384">的距离为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-180-75cf431beb.png" alt="本地解析几何资料图片" width="672" height="1088">.</p>
-<p class="local-docx-line">（1）求椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-181-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的标准方程；</p>
-<p class="local-docx-line">（2）若不经过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-182-8da15454e7.png" alt="本地解析几何资料图片" width="416" height="416">的直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-183-2911574242.png" alt="本地解析几何资料图片" width="224" height="448">：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-184-e8f5e44935.png" alt="本地解析几何资料图片" width="3328" height="640">与椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-185-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">交于<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-186-1484967380.png" alt="本地解析几何资料图片" width="768" height="512">两点，且与圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-187-9165f0ddae.png" alt="本地解析几何资料图片" width="1728" height="576">相切.试探究<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-188-e96b614909.png" alt="本地解析几何资料图片" width="1088" height="416">的周长是否为定值，若是，求出定值；若不是，请说明理由.</p>
-<p class="local-docx-line">【答案】（1）<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-189-fdb14f0879.png" alt="本地解析几何资料图片" width="1760" height="1056">；（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-190-2e8d623169.png" alt="本地解析几何资料图片" width="768" height="576"></p>
-<p class="local-docx-line">【解析】（1）由题可知，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-191-94f1b6670b.png" alt="本地解析几何资料图片" width="1248" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-192-60d3837ffa.png" alt="本地解析几何资料图片" width="1344" height="640">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-193-31dae6002e.png" alt="本地解析几何资料图片" width="1824" height="1088">，</p>
-<p class="local-docx-line">直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-194-0abaaf414e.png" alt="本地解析几何资料图片" width="736" height="416">的方程为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-195-26fa28e665.png" alt="本地解析几何资料图片" width="1504" height="992">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-196-9dc2255fb7.png" alt="本地解析几何资料图片" width="2432" height="512">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-197-b6a4fb4939.png" alt="本地解析几何资料图片" width="2432" height="1216">，</p>
-<p class="local-docx-line">解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-198-eb928e68da.png" alt="本地解析几何资料图片" width="800" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-199-5f38eaeb6b.png" alt="本地解析几何资料图片" width="1152" height="544">，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-200-347a850f37.png" alt="本地解析几何资料图片" width="2464" height="512">，所以椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-201-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的标准方程为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-202-57d3c1bc26.png" alt="本地解析几何资料图片" width="1792" height="1056">.</p>
-<p class="local-docx-line">（2）因为直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-203-7faba21722.png" alt="本地解析几何资料图片" width="3744" height="704">与圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-204-9165f0ddae.png" alt="本地解析几何资料图片" width="1728" height="576">相切，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-205-3687171305.png" alt="本地解析几何资料图片" width="1824" height="1184">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-206-f4c61ef03a.png" alt="本地解析几何资料图片" width="1728" height="512">.</p>
-<p class="local-docx-line">设<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-207-f9c5da2b72.png" alt="本地解析几何资料图片" width="1472" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-208-05e726ca34.png" alt="本地解析几何资料图片" width="1568" height="640">，</p>
-<p class="local-docx-line">联立<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-209-d00d925f90.png" alt="本地解析几何资料图片" width="1984" height="1664">，得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-210-0e5aa28cf5.png" alt="本地解析几何资料图片" width="5312" height="704">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-211-c130a1dc71.png" alt="本地解析几何资料图片" width="5472" height="704"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-212-75e91ebe5e.png" alt="本地解析几何资料图片" width="4288" height="704">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-213-95c02e9f5a.png" alt="本地解析几何资料图片" width="2560" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-214-cc6ab76e34.png" alt="本地解析几何资料图片" width="2592" height="1184">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-215-bf4b44d340.png" alt="本地解析几何资料图片" width="3712" height="736"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-216-bb62cabbe0.png" alt="本地解析几何资料图片" width="4096" height="1120">.</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-217-f4c61ef03a.png" alt="本地解析几何资料图片" width="1728" height="512">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-218-a7ec94de98.png" alt="本地解析几何资料图片" width="2592" height="1088">.</p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-219-27e351ccf6.png" alt="本地解析几何资料图片" width="4064" height="960"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-220-60e4160013.png" alt="本地解析几何资料图片" width="5632" height="1312">，</p>
-<p class="local-docx-line">同理<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-221-98fe69d87e.png" alt="本地解析几何资料图片" width="2848" height="1088">.</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-222-f6dab7e2eb.png" alt="本地解析几何资料图片" width="5024" height="1088">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-223-964f175e7e.png" alt="本地解析几何资料图片" width="1088" height="416">的周长是<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-224-b944f8f096.png" alt="本地解析几何资料图片" width="5536" height="1088">，</p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-225-964f175e7e.png" alt="本地解析几何资料图片" width="1088" height="416">的周长为定值<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-226-078f02ad42.png" alt="本地解析几何资料图片" width="768" height="576">.</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -3302,33 +2978,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．（2020·河南南阳高三二）已知椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-227-4a232cd23f.png" alt="本地解析几何资料图片" width="3936" height="1056">的右焦点为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-228-751d2f071a.png" alt="本地解析几何资料图片" width="1184" height="640">，点P，M，N为椭圆C上的点，直线MN过坐标原点，直线PM，PN的斜率分别为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-229-302bf53514.png" alt="本地解析几何资料图片" width="384" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-230-635a2bfcf9.png" alt="本地解析几何资料图片" width="416" height="576">，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-231-bea541b212.png" alt="本地解析几何资料图片" width="1824" height="992">.</p>
-<p class="local-docx-line">（1）求椭圆C的标准方程；</p>
-<p class="local-docx-line">（2）若<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-232-1cf7b71cbf.png" alt="本地解析几何资料图片" width="1664" height="448">且直线PF与椭圆的另一个交点为Q，问<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-233-fb9d2260ca.png" alt="本地解析几何资料图片" width="1216" height="1120">是否为常数？若是，求出该常数；若不是，请说明理由.</p>
-<p class="local-docx-line">【答案】（1）<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-234-72447c54bd.png" alt="本地解析几何资料图片" width="1600" height="928">（2）是常数，常数为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-235-3e2de04b77.png" alt="本地解析几何资料图片" width="800" height="544"></p>
-<p class="local-docx-line">【解析】（1）设<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-236-f32dac7da9.png" alt="本地解析几何资料图片" width="3232" height="640">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-237-aaa65940bc.png" alt="本地解析几何资料图片" width="2048" height="640">.</p>
-<p class="local-docx-line">由<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-238-bd019f783c.png" alt="本地解析几何资料图片" width="2048" height="2176">得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-239-9f94a65fc6.png" alt="本地解析几何资料图片" width="6560" height="1056"></p>
-<p class="local-docx-line">即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-240-ff30c10b56.png" alt="本地解析几何资料图片" width="3904" height="1152">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-241-d8653437d1.png" alt="本地解析几何资料图片" width="1792" height="1056"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-242-d351bf771d.png" alt="本地解析几何资料图片" width="928" height="992">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-243-9a1fb6a544.png" alt="本地解析几何资料图片" width="1376" height="512">，又<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-244-7644023f1a.png" alt="本地解析几何资料图片" width="1664" height="512">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-245-d3eeec2da2.png" alt="本地解析几何资料图片" width="1056" height="512">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-246-b7975f84be.png" alt="本地解析几何资料图片" width="864" height="480">，</p>
-<p class="local-docx-line">故椭圆C的标准方程为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-247-72447c54bd.png" alt="本地解析几何资料图片" width="1600" height="928">.</p>
-<p class="local-docx-line">（2）设直线PQ的方程为：.<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-248-d0e234289a.png" alt="本地解析几何资料图片" width="1440" height="512">，则直线MN的方程为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-249-b5318430ad.png" alt="本地解析几何资料图片" width="992" height="448"></p>
-<p class="local-docx-line">由<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-250-61c76f62e4.png" alt="本地解析几何资料图片" width="1984" height="1664">得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-251-10232e14f2.png" alt="本地解析几何资料图片" width="3584" height="704">，</p>
-<p class="local-docx-line">设<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-252-618d37d4be.png" alt="本地解析几何资料图片" width="1568" height="640">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-253-3d1c81bea6.png" alt="本地解析几何资料图片" width="5184" height="704">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-254-b9f79a1288.png" alt="本地解析几何资料图片" width="2720" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-255-28a2844027.png" alt="本地解析几何资料图片" width="2304" height="992"></p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-256-3f0218fa58.png" alt="本地解析几何资料图片" width="8896" height="736"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-257-ca6bce0c3d.png" alt="本地解析几何资料图片" width="4480" height="736"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-258-243cc3d8b3.png" alt="本地解析几何资料图片" width="4544" height="1120"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-259-3a2777149d.png" alt="本地解析几何资料图片" width="2176" height="1088"></p>
-<p class="local-docx-line">由<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-260-5515b9419a.png" alt="本地解析几何资料图片" width="2016" height="1664">，得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-261-b09968345f.png" alt="本地解析几何资料图片" width="1792" height="992">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-262-ef30df72e6.png" alt="本地解析几何资料图片" width="7520" height="1248"></p>
-<p class="local-docx-line">故<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag45-a-263-90ef47bbaf.png" alt="本地解析几何资料图片" width="2304" height="1120">为常数，得证.</p>
-<p class="local-docx-line">【题组三 定直线】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -3342,7 +2994,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3382,7 +3034,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3423,31 +3075,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">1．（2020·浙江椒江台州一中高三期中）如图所示己知抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-002-82a893e0b0.png" alt="本地解析几何资料图片" width="3104" height="576">的焦点为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-003-8da15454e7.png" alt="本地解析几何资料图片" width="416" height="416">，准线为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-004-2911574242.png" alt="本地解析几何资料图片" width="224" height="448">，过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-005-28b9f59256.png" alt="本地解析几何资料图片" width="1184" height="512">的直线交抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-006-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">于<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-007-5450192c8a.png" alt="本地解析几何资料图片" width="1472" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-008-ae2405d912.png" alt="本地解析几何资料图片" width="1568" height="640">两点.且<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-009-3462d34c8c.png" alt="本地解析几何资料图片" width="1856" height="544">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/analytic-geometry-local/ag46-a-010-7d7a911614.png" alt="本地解析几何资料图片" width="209" height="184"></div>
-<p class="local-docx-line">（1）求抛物线方程；</p>
-<p class="local-docx-line">（2）若点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-011-25e718e3fa.png" alt="本地解析几何资料图片" width="352" height="384">在准线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-012-2911574242.png" alt="本地解析几何资料图片" width="224" height="448">上的投影为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-013-b7f13c3809.png" alt="本地解析几何资料图片" width="384" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-014-9fd69941b2.png" alt="本地解析几何资料图片" width="416" height="416">是<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-015-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">上一点，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-016-2e5d7efdd1.png" alt="本地解析几何资料图片" width="1824" height="544">，求<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-017-c9e06f62c7.png" alt="本地解析几何资料图片" width="1248" height="416">面积的最小值及此时直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-018-4af7a3019b.png" alt="本地解析几何资料图片" width="672" height="416">的方程.</p>
-<p class="local-docx-line">【答案】（1）<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-019-eb6869edd6.png" alt="本地解析几何资料图片" width="960" height="544">；（2）见解析</p>
-<p class="local-docx-line">【解析】（1）依题意<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-020-c9ba35e2cd.png" alt="本地解析几何资料图片" width="1504" height="1088">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-021-24fc3e7879.png" alt="本地解析几何资料图片" width="2144" height="544"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-022-d7b8686182.png" alt="本地解析几何资料图片" width="2432" height="640">即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-023-075945d7af.png" alt="本地解析几何资料图片" width="2048" height="992">.即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-024-fa55ac04f3.png" alt="本地解析几何资料图片" width="1088" height="512"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-025-84fd54f760.png" alt="本地解析几何资料图片" width="1312" height="992">.</p>
-<p class="local-docx-line">所以抛物线方程<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-026-abbfb035f0.png" alt="本地解析几何资料图片" width="1088" height="576">.</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/analytic-geometry-local/ag46-a-027-ebf27bcad4.png" alt="本地解析几何资料图片" width="181" height="158"></div>
-<p class="local-docx-line">(2）设<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-028-60c43dafd6.png" alt="本地解析几何资料图片" width="1600" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-029-4d7ae5bfa7.png" alt="本地解析几何资料图片" width="1248" height="704">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-030-b63ff0aa06.png" alt="本地解析几何资料图片" width="1632" height="1088">，</p>
-<p class="local-docx-line">设<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-031-4cae6aea32.png" alt="本地解析几何资料图片" width="2368" height="512">，联立<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-032-851415a853.png" alt="本地解析几何资料图片" width="1824" height="1216">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-033-e005a081b4.png" alt="本地解析几何资料图片" width="2336" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-034-9becd7e91a.png" alt="本地解析几何资料图片" width="1536" height="576"></p>
-<p class="local-docx-line">所以可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-035-1fcb8f0319.png" alt="本地解析几何资料图片" width="1792" height="1088"></p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-036-6ee58ab206.png" alt="本地解析几何资料图片" width="1568" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-037-37967d20de.png" alt="本地解析几何资料图片" width="1632" height="416">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-038-359e488a61.png" alt="本地解析几何资料图片" width="1440" height="992">·故直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-039-9ef7ec9ade.png" alt="本地解析几何资料图片" width="3712" height="1088">.</p>
-<p class="local-docx-line">由<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-040-07ee5e5cc4.png" alt="本地解析几何资料图片" width="3104" height="1664">，得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-041-f9a62a447f.png" alt="本地解析几何资料图片" width="3104" height="992">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-042-33bf5a4792.png" alt="本地解析几何资料图片" width="1856" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-043-88c21e3a32.png" alt="本地解析几何资料图片" width="2240" height="992">.</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-044-bd9057835a.png" alt="本地解析几何资料图片" width="3616" height="736"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-045-717e712650.png" alt="本地解析几何资料图片" width="4640" height="832"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-046-77975ba16f.png" alt="本地解析几何资料图片" width="3648" height="1120"></p>
-<p class="local-docx-line">设点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-047-25e718e3fa.png" alt="本地解析几何资料图片" width="352" height="384">到直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-048-55af31d7a6.png" alt="本地解析几何资料图片" width="672" height="416">的距离为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-049-f64bd061f2.png" alt="本地解析几何资料图片" width="352" height="448">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-050-5a968801cc.png" alt="本地解析几何资料图片" width="5312" height="1664">.</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-051-f15f10c078.png" alt="本地解析几何资料图片" width="2656" height="992"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-052-2a7397c8ae.png" alt="本地解析几何资料图片" width="3296" height="1280">.当且仅当<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-053-b47eae3824.png" alt="本地解析几何资料图片" width="896" height="512">.即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-054-e02780d564.png" alt="本地解析几何资料图片" width="992" height="448"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-055-36dd12a0b8.png" alt="本地解析几何资料图片" width="736" height="448">时，直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-056-55af31d7a6.png" alt="本地解析几何资料图片" width="672" height="416">的方程为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-057-8944d8b126.png" alt="本地解析几何资料图片" width="2144" height="512">.</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-058-43d2ffb743.png" alt="本地解析几何资料图片" width="992" height="448">时，直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-059-55af31d7a6.png" alt="本地解析几何资料图片" width="672" height="416">的方程为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-060-2200f15f45.png" alt="本地解析几何资料图片" width="2144" height="512"></p>
-</div>
-:::
+原题号与题干首段尚未唯一匹配。暂不展示可能错配的解析，请教师核对题源后补充。
 
 :::
 
@@ -3461,49 +3091,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
-
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2．（2020·浙江省春晖中学高二月考）已知点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-061-d967898954.png" alt="本地解析几何资料图片" width="1152" height="992">在椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-062-60a1a6e124.png" alt="本地解析几何资料图片" width="2016" height="928">内，过<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-063-261f91e6d2.png" alt="本地解析几何资料图片" width="352" height="384">的直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-064-2911574242.png" alt="本地解析几何资料图片" width="224" height="448">与椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-065-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">相交于A，B两点，且点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-066-261f91e6d2.png" alt="本地解析几何资料图片" width="352" height="384">是线段AB的中点，O为坐标原点．</p>
-<div class="local-docx-figure"><img class="local-docx-image local-docx-block-image" src="../../../assets/analytic-geometry-local/ag46-a-067-67ec14be20.png" alt="本地解析几何资料图片" width="230" height="141"></div>
-<p class="local-docx-line">（Ⅰ）是否存在实数t，使直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-068-e8ca98801a.png" alt="本地解析几何资料图片" width="9" height="19">和直线OP的倾斜角互补？若存在，求出<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-069-5a3a70e121.png" alt="本地解析几何资料图片" width="9" height="16">的值，若不存在，试说明理由；</p>
-<p class="local-docx-line">（Ⅱ）求<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-070-69e7f4f190.png" alt="本地解析几何资料图片" width="1164" height="493">面积S的最大值．</p>
-<p class="local-docx-line">【答案】( Ⅰ)存在；(Ⅱ) <img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-071-9b30103c74.png" alt="本地解析几何资料图片" width="1696" height="1088">.</p>
-<p class="local-docx-line">【解析】（Ⅰ）存在.</p>
-<p class="local-docx-line">由题意直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-072-e8ca98801a.png" alt="本地解析几何资料图片" width="9" height="19">的斜率必存在，设直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-073-e8ca98801a.png" alt="本地解析几何资料图片" width="9" height="19">的方程</p>
-<p class="local-docx-line">是<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-074-8b30180dfa.png" alt="本地解析几何资料图片" width="105" height="41"></p>
-<p class="local-docx-line">代入<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-075-01fd1eaf4e.png" alt="本地解析几何资料图片" width="87" height="24">得：</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-076-810c004844.png" alt="本地解析几何资料图片" width="89" height="24"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-077-700ad1e962.png" alt="本地解析几何资料图片" width="101" height="41"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-078-98edb59e2c.png" alt="本地解析几何资料图片" width="124" height="41">.（1）</p>
-<p class="local-docx-line">设<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-079-26c561124c.png" alt="本地解析几何资料图片" width="61" height="23">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-080-0177ef7abe.png" alt="本地解析几何资料图片" width="64" height="23">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-081-a49d0e7e02.png" alt="本地解析几何资料图片" width="80" height="23">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-082-dab8a5b0b1.png" alt="本地解析几何资料图片" width="104" height="60">，</p>
-<p class="local-docx-line">解得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-083-34c66d6d09.png" alt="本地解析几何资料图片" width="45" height="19">，</p>
-<p class="local-docx-line">此时方程（1）即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-084-569c35385f.png" alt="本地解析几何资料图片" width="87" height="24"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-085-3c6d8a11b3.png" alt="本地解析几何资料图片" width="92" height="41"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-086-4d379fe37e.png" alt="本地解析几何资料图片" width="119" height="41"></p>
-<p class="local-docx-line">由<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-087-342d557081.png" alt="本地解析几何资料图片" width="145" height="21">解得，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-088-8630b6376a.png" alt="本地解析几何资料图片" width="69" height="41">，</p>
-<p class="local-docx-line">（或由<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-089-9e4a7638a4.png" alt="本地解析几何资料图片" width="68" height="44">解得，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-090-8630b6376a.png" alt="本地解析几何资料图片" width="69" height="41">）</p>
-<p class="local-docx-line">当<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-091-362caccdd4.png" alt="本地解析几何资料图片" width="35" height="19">时，显然不符合题意；</p>
-<p class="local-docx-line">当<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-092-00fdd12b66.png" alt="本地解析几何资料图片" width="35" height="19">时，设直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-093-8d08faf9f9.png" alt="本地解析几何资料图片" width="27" height="19">的斜率为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-094-f95a284dad.png" alt="本地解析几何资料图片" width="16" height="23">，只需<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-095-1dcfd9b1e3.png" alt="本地解析几何资料图片" width="73" height="23">，</p>
-<p class="local-docx-line">即<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-096-6c11b578cc.png" alt="本地解析几何资料图片" width="87" height="41">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-097-e5e245f109.png" alt="本地解析几何资料图片" width="61" height="45">，均符合题意.</p>
-<p class="local-docx-line">（Ⅱ）由（1）知<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-098-e8ca98801a.png" alt="本地解析几何资料图片" width="9" height="19">的方程是<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-099-8f90f355a3.png" alt="本地解析几何资料图片" width="107" height="41">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-100-9fa0d8def5.png" alt="本地解析几何资料图片" width="143" height="41">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-101-c2d87ebec1.png" alt="本地解析几何资料图片" width="79" height="41"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-102-49ff7c25d3.png" alt="本地解析几何资料图片" width="111" height="47"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-103-a8ed2d1cf6.png" alt="本地解析几何资料图片" width="133" height="41">，</p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-104-8630b6376a.png" alt="本地解析几何资料图片" width="69" height="41">，所以当<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-105-9bfa16815c.png" alt="本地解析几何资料图片" width="45" height="41">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-a-106-2e942cd109.png" alt="本地解析几何资料图片" width="73" height="45">.</p>
-</div>
-:::
-
-:::
-
-### 题 133（原题 4）
-
-:::diagram
-<div class="local-docx-card local-docx-question">
-<p class="local-docx-line">4．（2020·河南高三其他（理））设椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-049-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-050-040b18f127.png" alt="本地解析几何资料图片" width="3520" height="1056">的离心率为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-051-41ceceea3c.png" alt="本地解析几何资料图片" width="928" height="992">，椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-052-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">上一点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-053-261f91e6d2.png" alt="本地解析几何资料图片" width="352" height="384">到左右两个焦点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-054-c0ea71caf2.png" alt="本地解析几何资料图片" width="416" height="576">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-055-a1abd62775.png" alt="本地解析几何资料图片" width="448" height="576">的距离之和是4.</p>
-<p class="local-docx-line">（1）求椭圆的方程；</p>
-<p class="local-docx-line">（2）已知过<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-056-a1abd62775.png" alt="本地解析几何资料图片" width="448" height="576">的直线与椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-057-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">交于<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-058-72948e237a.png" alt="本地解析几何资料图片" width="384" height="416">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-059-25e718e3fa.png" alt="本地解析几何资料图片" width="352" height="384">两点，且两点与左右顶点不重合，若<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-060-6bbd259659.png" alt="本地解析几何资料图片" width="2656" height="640">，求四边形<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-061-1a9bfb5647.png" alt="本地解析几何资料图片" width="1216" height="576">面积的最大值.</p>
-</div>
-:::
-
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3530,23 +3118,17 @@
 
 :::
 
-### 题 134（原题 5）
+### 题 133（原题 4）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">5．（2020·湖北东西湖华中师大一附中高三其他（理））已知点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-062-63bbf028bd.png" alt="本地解析几何资料图片" width="2336" height="1280">在椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-063-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-064-040b18f127.png" alt="本地解析几何资料图片" width="3520" height="1056">上，且点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-065-2a446db50d.png" alt="本地解析几何资料图片" width="512" height="416">到<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-066-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的左、右焦点的距离之和为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-067-3e2de04b77.png" alt="本地解析几何资料图片" width="800" height="544">.</p>
-<p class="local-docx-line">（1）求<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-068-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的方程；</p>
-<p class="local-docx-line">（2）设<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-069-df2912d12b.png" alt="本地解析几何资料图片" width="384" height="448">为坐标原点，若<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-070-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的弦<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-071-a231c269ea.png" alt="本地解析几何资料图片" width="640" height="416">的中点在线段<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-072-66a825eded.png" alt="本地解析几何资料图片" width="704" height="416">（不含端点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-073-df2912d12b.png" alt="本地解析几何资料图片" width="384" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-074-2a446db50d.png" alt="本地解析几何资料图片" width="512" height="416">）上，求<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-075-c9ca40a97c.png" alt="本地解析几何资料图片" width="1312" height="544">的取值范围.</p>
-<p class="local-docx-line">6（2020·湖南怀化高三二模）已知椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-076-4a232cd23f.png" alt="本地解析几何资料图片" width="3936" height="1056">的两个焦点是<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-077-446eabdcbd.png" alt="本地解析几何资料图片" width="1408" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-078-d3b3ebeecd.png" alt="本地解析几何资料图片" width="1280" height="640">，且离心率<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-079-41ceceea3c.png" alt="本地解析几何资料图片" width="928" height="992">.</p>
-<p class="local-docx-line">（1）求椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-080-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的标准方程；</p>
-<p class="local-docx-line">（2）过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-081-b1e142b92d.png" alt="本地解析几何资料图片" width="864" height="640">作椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-082-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的一条切线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-083-2911574242.png" alt="本地解析几何资料图片" width="224" height="448">交圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-084-ffbd581e4b.png" alt="本地解析几何资料图片" width="2272" height="576">于<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-085-2a446db50d.png" alt="本地解析几何资料图片" width="512" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-086-c13bc54930.png" alt="本地解析几何资料图片" width="448" height="448">两点，求<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-087-c31fc0475c.png" alt="本地解析几何资料图片" width="1216" height="448">面积的最大值.</p>
-<p class="local-docx-line">7（2020·湖北荆门高三期末）    已知抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-088-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的顶点为坐标原点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-089-df2912d12b.png" alt="本地解析几何资料图片" width="384" height="448">，焦点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-090-8da15454e7.png" alt="本地解析几何资料图片" width="416" height="416">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-091-8fb84fe0e0.png" alt="本地解析几何资料图片" width="352" height="416">轴的正半轴上，过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-092-8da15454e7.png" alt="本地解析几何资料图片" width="416" height="416">的直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-093-2911574242.png" alt="本地解析几何资料图片" width="224" height="448">与抛物线相交于<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-094-72948e237a.png" alt="本地解析几何资料图片" width="384" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-095-25e718e3fa.png" alt="本地解析几何资料图片" width="352" height="384">两点，且满足<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-096-7ac570c07e.png" alt="本地解析几何资料图片" width="2304" height="992"></p>
-<p class="local-docx-line">（1）求抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-097-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的方程；</p>
-<p class="local-docx-line">（2）若<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-098-261f91e6d2.png" alt="本地解析几何资料图片" width="352" height="384">是抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-099-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">上的动点，点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-100-6f5ffe75d2.png" alt="本地解析几何资料图片" width="960" height="512">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-101-7aac99c8f5.png" alt="本地解析几何资料图片" width="320" height="352">轴上，圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-102-f25e3ea4fa.png" alt="本地解析几何资料图片" width="2432" height="576">内切于<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-103-d3e830085f.png" alt="本地解析几何资料图片" width="1216" height="448">，求<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-104-d3e830085f.png" alt="本地解析几何资料图片" width="1216" height="448">面积的最小值.</p>
+<p class="local-docx-line">4．（2020·河南高三其他（理））设椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-049-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-050-040b18f127.png" alt="本地解析几何资料图片" width="3520" height="1056">的离心率为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-051-41ceceea3c.png" alt="本地解析几何资料图片" width="928" height="992">，椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-052-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">上一点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-053-261f91e6d2.png" alt="本地解析几何资料图片" width="352" height="384">到左右两个焦点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-054-c0ea71caf2.png" alt="本地解析几何资料图片" width="416" height="576">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-055-a1abd62775.png" alt="本地解析几何资料图片" width="448" height="576">的距离之和是4.</p>
+<p class="local-docx-line">（1）求椭圆的方程；</p>
+<p class="local-docx-line">（2）已知过<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-056-a1abd62775.png" alt="本地解析几何资料图片" width="448" height="576">的直线与椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-057-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">交于<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-058-72948e237a.png" alt="本地解析几何资料图片" width="384" height="416">、<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-059-25e718e3fa.png" alt="本地解析几何资料图片" width="352" height="384">两点，且两点与左右顶点不重合，若<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-060-6bbd259659.png" alt="本地解析几何资料图片" width="2656" height="640">，求四边形<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-061-1a9bfb5647.png" alt="本地解析几何资料图片" width="1216" height="576">面积的最大值.</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3576,8 +3158,30 @@
 :::
 
 :::
+### 题 134（原题 5）
 
-## 抽取统计
+:::diagram
+<div class="local-docx-card local-docx-question">
+<p class="local-docx-line">5．（2020·湖北东西湖华中师大一附中高三其他（理））已知点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-062-63bbf028bd.png" alt="本地解析几何资料图片" width="2336" height="1280">在椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-063-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">：<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-064-040b18f127.png" alt="本地解析几何资料图片" width="3520" height="1056">上，且点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-065-2a446db50d.png" alt="本地解析几何资料图片" width="512" height="416">到<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-066-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的左、右焦点的距离之和为<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-067-3e2de04b77.png" alt="本地解析几何资料图片" width="800" height="544">.</p>
+<p class="local-docx-line">（1）求<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-068-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的方程；</p>
+<p class="local-docx-line">（2）设<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-069-df2912d12b.png" alt="本地解析几何资料图片" width="384" height="448">为坐标原点，若<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-070-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的弦<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-071-a231c269ea.png" alt="本地解析几何资料图片" width="640" height="416">的中点在线段<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-072-66a825eded.png" alt="本地解析几何资料图片" width="704" height="416">（不含端点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-073-df2912d12b.png" alt="本地解析几何资料图片" width="384" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-074-2a446db50d.png" alt="本地解析几何资料图片" width="512" height="416">）上，求<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-075-c9ca40a97c.png" alt="本地解析几何资料图片" width="1312" height="544">的取值范围.</p>
+<p class="local-docx-line">6（2020·湖南怀化高三二模）已知椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-076-4a232cd23f.png" alt="本地解析几何资料图片" width="3936" height="1056">的两个焦点是<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-077-446eabdcbd.png" alt="本地解析几何资料图片" width="1408" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-078-d3b3ebeecd.png" alt="本地解析几何资料图片" width="1280" height="640">，且离心率<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-079-41ceceea3c.png" alt="本地解析几何资料图片" width="928" height="992">.</p>
+<p class="local-docx-line">（1）求椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-080-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的标准方程；</p>
+<p class="local-docx-line">（2）过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-081-b1e142b92d.png" alt="本地解析几何资料图片" width="864" height="640">作椭圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-082-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的一条切线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-083-2911574242.png" alt="本地解析几何资料图片" width="224" height="448">交圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-084-ffbd581e4b.png" alt="本地解析几何资料图片" width="2272" height="576">于<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-085-2a446db50d.png" alt="本地解析几何资料图片" width="512" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-086-c13bc54930.png" alt="本地解析几何资料图片" width="448" height="448">两点，求<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-087-c31fc0475c.png" alt="本地解析几何资料图片" width="1216" height="448">面积的最大值.</p>
+<p class="local-docx-line">7（2020·湖北荆门高三期末）    已知抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-088-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的顶点为坐标原点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-089-df2912d12b.png" alt="本地解析几何资料图片" width="384" height="448">，焦点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-090-8da15454e7.png" alt="本地解析几何资料图片" width="416" height="416">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-091-8fb84fe0e0.png" alt="本地解析几何资料图片" width="352" height="416">轴的正半轴上，过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-092-8da15454e7.png" alt="本地解析几何资料图片" width="416" height="416">的直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-093-2911574242.png" alt="本地解析几何资料图片" width="224" height="448">与抛物线相交于<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-094-72948e237a.png" alt="本地解析几何资料图片" width="384" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-095-25e718e3fa.png" alt="本地解析几何资料图片" width="352" height="384">两点，且满足<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-096-7ac570c07e.png" alt="本地解析几何资料图片" width="2304" height="992"></p>
+<p class="local-docx-line">（1）求抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-097-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">的方程；</p>
+<p class="local-docx-line">（2）若<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-098-261f91e6d2.png" alt="本地解析几何资料图片" width="352" height="384">是抛物线<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-099-8c235f27f1.png" alt="本地解析几何资料图片" width="384" height="448">上的动点，点<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-100-6f5ffe75d2.png" alt="本地解析几何资料图片" width="960" height="512">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-101-7aac99c8f5.png" alt="本地解析几何资料图片" width="320" height="352">轴上，圆<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-102-f25e3ea4fa.png" alt="本地解析几何资料图片" width="2432" height="576">内切于<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-103-d3e830085f.png" alt="本地解析几何资料图片" width="1216" height="448">，求<img class="local-docx-image local-docx-inline-image" src="../../../assets/analytic-geometry-local/ag46-q-104-d3e830085f.png" alt="本地解析几何资料图片" width="1216" height="448">面积的最小值.</p>
+</div>
+:::
+
+:::solution 解析待核验
+
+原题号与题干首段尚未唯一匹配。暂不展示可能错配的解析，请教师核对题源后补充。
+
+:::
+
+
+## 历史抽取统计（非核验结果）
 
 - 全量原卷题目：134 道。
 - 可折叠解析版题块：133 道。

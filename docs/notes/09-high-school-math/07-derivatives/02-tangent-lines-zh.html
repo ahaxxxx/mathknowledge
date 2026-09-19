@@ -34,16 +34,16 @@
       <h1>切线：导数的第一个几何后果</h1>
       <p>这一讲只解决一个问题：已知函数 $y=f(x)$，如何严谨地写出它在点 $P(a,f(a))$ 处的切线，并辨别题目究竟给的是横坐标、切点、斜率，还是“另一条”经过某点的切线。</p>
     </div>
-    <div class="subject-grid"><section class="page-section article"><h2>学习目标</h2>
+    <div class="subject-grid"><a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article"><h2 id="section-1">学习目标</h2>
 <p>这一讲只解决一个问题：已知函数 $y=f(x)$，如何严谨地写出它在点 $P(a,f(a))$ 处的切线，并辨别题目究竟给的是横坐标、切点、斜率，还是“另一条”经过某点的切线。</p>
-<h2>切线定理</h2>
+<h2 id="section-2">切线定理</h2>
 <p>若 $f$ 在 $x=a$ 处可导，则曲线 $y=f(x)$ 在 $P(a,f(a))$ 处的切线为</p>
 <div class="math-display">$$
 y-f(a)=f&#x27;(a)(x-a).
 $$</div>
 <p>这不是记忆模板，而是点斜式：切线经过 $P$，斜率是导数 $f&#x27;(a)$。因此写题必须先确定两个对象：<strong>切点坐标</strong>与<strong>该点导数值</strong>。</p>
 <p>若 $f&#x27;(a)=0$，切线是水平线 $y=f(a)$；若题目把曲线改为参数曲线或隐函数，仍需先把切点和切线斜率求出，不能直接套本页公式。</p>
-<h2>一条切线、两条切线与“相切”</h2>
+<h2 id="section-3">一条切线、两条切线与“相切”</h2>
 <p>设直线 $l:y=kx+b$ 与曲线 $y=f(x)$ 在横坐标 $x=t$ 处相切。相切至少给出两件事：</p>
 <div class="math-display">$$
 f(t)=kt+b,\qquad f&#x27;(t)=k.
@@ -77,7 +77,7 @@ $$</div>
 y=2x-1,\qquad y=-2x-1.
 $$</div>
 <p>“过曲线外一点”可能有零条、一条或多条切线；设切点参数 $t$ 是统一处理法。</p></div></details>
-<h2>局部线性化：切线为何有用</h2>
+<h2 id="section-4">局部线性化：切线为何有用</h2>
 <p>由导数定义可写成</p>
 <div class="math-display">$$
 f(a+h)=f(a)+f&#x27;(a)h+r(h),\qquad \frac{r(h)}h\to0\ (h\to0).
@@ -89,10 +89,10 @@ $$</div>
 \sqrt{4.04}=f(4.04)\approx f(4)+f&#x27;(4)\cdot0.04=2.01.
 $$</div>
 <p>近似号来自余项 $r(0.04)$ 未必为零；这正是“切线近似”与“函数恒等式”的边界。</p></div></details>
-<h2>本地题源对应</h2>
+<h2 id="section-5">本地题源对应</h2>
 <p>本页对应本地一轮复习的<strong>考点 49：导数的几何意义与切线问题</strong>。题库页会保留原题图形和原题文本；上课时先要求学生把“设切点横坐标为 $t$”这一句说完整，再进入计算。</p>
-<h2>费曼复述卡</h2>
-<ol><li>为什么切线斜率是极限，而不是任取两点斜率？</li><li>已知直线与曲线相切，为什么要同时写 $f(t)=kt+b$ 和 $f&#x27;(t)=k$？</li><li>过定点求切线时，参数 $t$ 分别承担了什么角色？</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">导数</a></li><li>源文件：<code>content/09_high_school_math/07_derivatives/02_tangent_lines_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-derivative-origins-definition-rules-zh.html">导数的前世今生、定义与基本初等函数求导公式的推导</a></h3><p>给定函数 $y=f(x)$ 和一点 $x=a$，我们要定义“在 $a$ 附近每单位 $x$ 的瞬时变化量”。这个对象叫 $f&#x27;(a)$。它首先是一个极限；“切线斜率”和“瞬时速度”是该极限在几何和物理中的解释。</p></div><div class="note-item"><h3><a href="03-monotonicity-extrema-zh.html">用导数研究单调性、极值与最值</a></h3><p>对区间 $I$：</p></div><div class="note-item"><h3><a href="04-parameters-constructed-functions-zh.html">参数、构造函数与恒成立问题</a></h3><p>参数题常把“存在、任意、恰有、恒成立”藏进文字里。先把量词译成数学语言：</p></div><div class="note-item"><h3><a href="05-inequalities-zeros-zh.html">导数证明不等式与研究零点</a></h3><p>当目标是 $A(x)\ge B(x)$，有两条值得先检查的入口：</p></div><div class="note-item"><h3><a href="06-advanced-derivative-structures-zh.html">导数压轴结构：从对象选择到可检验的变形</a></h3><p>压轴导数题没有一条脱离条件的万能大招。它们反复出现的，是几个可验证的结构：参数与变量能否分离、两个变量能否降为一个比值或一个函数值、零点数量能否由单调与极值控制、以及比较对象能否用同一条切线或同一函数串起来。</p></div><div class="note-item"><h3><a href="07-derivative-expression-zh.html">导数表达式：先看结构，再落笔计算</a></h3><p>给出复杂表达式时，求导前问两件事：</p></div><div class="note-item"><h3><a href="08-derivative-drills-zh.html">导数核心训练：从定义到压轴表达</a></h3><p>每题先口述“对象、定义域、工具、结论”。答案默认折叠；先完成自己的推导，再展开核对。</p></div><div class="note-item"><h3><a href="09-derivative-local-full-exercises-zh.html">导数：考点 49-55 全量本地题库</a></h3><p>这一页保留本地一轮复习资料的原题、公式图片与图形。它是课后抽题资料池，不替代前面的讲义和手写推导：第一次学习请先完成定义、定理和方法来源，再到这里限时训练。</p></div></div></section></aside></div>
+<h2 id="section-6">费曼复述卡</h2>
+<ol start="1"><li>为什么切线斜率是极限，而不是任取两点斜率？</li><li>已知直线与曲线相切，为什么要同时写 $f(t)=kt+b$ 和 $f&#x27;(t)=k$？</li><li>过定点求切线时，参数 $t$ 分别承担了什么角色？</li></ol></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：函数六节基础、基本求导、符号表</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a rel="prev" href="01-derivative-origins-definition-rules-zh.html">上一节：导数的前世今生、定义与基本初等函数求导公式的推导</a></li><li><a rel="next" href="03-monotonicity-extrema-zh.html">下一节：用导数研究单调性、极值与最值</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li><li><a href="08-derivative-drills-zh.html">配套练习：导数核心训练：从定义到压轴表达</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">学习目标</a></li><li class="toc-level-2"><a href="#section-2">切线定理</a></li><li class="toc-level-2"><a href="#section-3">一条切线、两条切线与“相切”</a></li><li class="toc-level-2"><a href="#section-4">局部线性化：切线为何有用</a></li><li class="toc-level-2"><a href="#section-5">本地题源对应</a></li><li class="toc-level-2"><a href="#section-6">费曼复述卡</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">导数</a></li><li>源文件：<code>content/09_high_school_math/07_derivatives/02_tangent_lines_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-derivative-origins-definition-rules-zh.html">导数的前世今生、定义与基本初等函数求导公式的推导</a></h3><p>给定函数 $y=f(x)$ 和一点 $x=a$，我们要定义“在 $a$ 附近每单位 $x$ 的瞬时变化量”。这个对象叫 $f&#x27;(a)$。它首先是一个极限；“切线斜率”和“瞬时速度”是该极限在几何和物理中的解释。</p></div><div class="note-item"><h3><a href="03-monotonicity-extrema-zh.html">用导数研究单调性、极值与最值</a></h3><p>对区间 $I$：</p></div><div class="note-item"><h3><a href="04-parameters-constructed-functions-zh.html">参数、构造函数与恒成立问题</a></h3><p>参数题常把“存在、任意、恰有、恒成立”藏进文字里。先把量词译成数学语言：</p></div><div class="note-item"><h3><a href="05-inequalities-zeros-zh.html">导数证明不等式与研究零点</a></h3><p>当目标是 $A(x)\ge B(x)$，有两条值得先检查的入口：</p></div><div class="note-item"><h3><a href="06-advanced-derivative-structures-zh.html">导数压轴结构：从对象选择到可检验的变形</a></h3><p>压轴导数题没有一条脱离条件的万能大招。它们反复出现的，是几个可验证的结构：参数与变量能否分离、两个变量能否降为一个比值或一个函数值、零点数量能否由单调与极值控制、以及比较对象能否用同一条切线或同一函数串起来。</p></div><div class="note-item"><h3><a href="07-derivative-expression-zh.html">导数表达式：先看结构，再落笔计算</a></h3><p>给出复杂表达式时，求导前问两件事：</p></div><div class="note-item"><h3><a href="08-derivative-drills-zh.html">导数核心训练：从定义到压轴表达</a></h3><p>每题先口述“对象、定义域、工具、结论”。答案默认折叠；先完成自己的推导，再展开核对。</p></div><div class="note-item"><h3><a href="09-derivative-local-full-exercises-zh.html">导数：考点 49-55 全量本地题库</a></h3><p>这一页保留本地一轮复习资料的原题、公式图片与图形。它是课后抽题资料池，不替代前面的讲义和手写推导：第一次学习请先完成定义、定理和方法来源，再到这里限时训练。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

@@ -34,10 +34,10 @@
       <h1>数列求和专项练习</h1>
       <p>这份练习按“题型识别”编排，共 6 类，每类 5 题。做题前先口头回答：通项有什么结构？为什么选这个方法？点开解答前，先写出至少一行关键变形。</p>
     </div>
-    <div class="subject-grid"><section class="page-section article"><p>返回讲义：<a href="02-summation-zh.html">数列求和：从通项结构到求和方法</a>。</p>
-<h2>题型 A：公式法</h2>
+    <div class="subject-grid"><a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article"><p>返回讲义：<a href="02-summation-zh.html">数列求和：从通项结构到求和方法</a>。</p>
+<h2 id="section-1">题型 A：公式法</h2>
 <p>识别信号：常数、等差、等比、$k$、$k^2$ 等基本结构可以直接使用有限和公式。</p>
-<h3>A1</h3>
+<h3 id="section-2">A1</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}(4k-3).
@@ -49,7 +49,7 @@ S_n=4\sum_{k=1}^{n}k-3\sum_{k=1}^{n}1
 =2n^2-n.
 $$</div>
 <p>检查 $n=1$：结果为 $1$，与原式首项 $4-3=1$ 一致。</p></div></details>
-<h3>A2</h3>
+<h3 id="section-3">A2</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}(3k^2-2k+1).
@@ -63,7 +63,7 @@ S_n
 \end{aligned}
 $$</div>
 <p>取 $n=1$，右边为 $2$，原式首项也是 $3-2+1=2$。</p></div></details>
-<h3>A3</h3>
+<h3 id="section-4">A3</h3>
 <p>等差数列的首项为 $5$，公差为 $3$，求前 $n$ 项和。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 第 $n$ 项为</p>
 <div class="math-display">$$
@@ -76,7 +76,7 @@ S_n=\frac{n(a_1+a_n)}2
 =\frac{n(3n+7)}2.
 $$</div>
 <p>检查 $n=1$ 得 $S_1=5$。</p></div></details>
-<h3>A4</h3>
+<h3 id="section-5">A4</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}2^{k-1}.
@@ -86,7 +86,7 @@ $$</div>
 S_n=\frac{1-2^n}{1-2}=2^n-1.
 $$</div>
 <p>检查 $n=1$ 得 $1$，与原式一致。</p></div></details>
-<h3>A5</h3>
+<h3 id="section-6">A5</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}3\left(\frac12\right)^{k-1}.
@@ -97,9 +97,9 @@ S_n=3\frac{1-(\frac12)^n}{1-\frac12}
 =6\left(1-\frac1{2^n}\right).
 $$</div>
 <p>当 $n=1$ 时，右边为 $3$。</p></div></details>
-<h2>题型 B：分组求和与并项求和</h2>
+<h2 id="section-7">题型 B：分组求和与并项求和</h2>
 <p>识别信号：通项由几个基本结构相加，或相邻若干项合并后结构更简单。</p>
-<h3>B1</h3>
+<h3 id="section-8">B1</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}(2k-1+3^k).
@@ -113,7 +113,7 @@ S_n
 \end{aligned}
 $$</div>
 <p>检查 $n=1$：右边为 $1+3=4$。</p></div></details>
-<h3>B2</h3>
+<h3 id="section-9">B2</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}(k^2+2k+1).
@@ -128,7 +128,7 @@ S_n
 \end{aligned}
 $$</div>
 <p>当 $n=1$ 时，结果为 $4$，与 $(1+1)^2$ 一致。</p></div></details>
-<h3>B3</h3>
+<h3 id="section-10">B3</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}(4^k-2^k).
@@ -138,7 +138,7 @@ $$</div>
 S_n=\frac{4(4^n-1)}3-2(2^n-1).
 $$</div>
 <p>这里分别使用了公比 $4$ 和 $2$，都不等于 1。取 $n=1$，结果为 $4-2=2$。</p></div></details>
-<h3>B4</h3>
+<h3 id="section-11">B4</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}\left[3k+(-1)^{k-1}\right].
@@ -155,7 +155,7 @@ $$</div>
 <div class="math-display">$$
 S_n=\frac{3n(n+1)}2+\frac{1-(-1)^n}{2}.
 $$</div></div></details>
-<h3>B5</h3>
+<h3 id="section-12">B5</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}\left[(2k-1)^2-(2k)^2\right].
@@ -173,9 +173,9 @@ S_n=\sum_{k=1}^{n}(1-4k)
 =-2n^2-n.
 $$</div>
 <p>检查 $n=1$：$1^2-2^2=-3$，公式也给出 $-3$。</p></div></details>
-<h2>题型 C：裂项相消</h2>
+<h2 id="section-13">题型 C：裂项相消</h2>
 <p>识别信号：分式、根式或差平方结构能写成 $u_k-u_{k+m}$。必须写出开头若干项和末尾若干项，确认边界。</p>
-<h3>C1</h3>
+<h3 id="section-14">C1</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}\frac1{k(k+1)}.
@@ -190,7 +190,7 @@ S_n=\left(1-\frac12\right)+\left(\frac12-\frac13\right)+\cdots+left(\frac1n-\fra
 =1-\frac1{n+1}
 =\frac n{n+1}.
 $$</div></div></details>
-<h3>C2</h3>
+<h3 id="section-15">C2</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}\frac1{(k+1)(k+3)}.
@@ -205,7 +205,7 @@ $$</div>
 S_n=\frac12\left(\frac12+\frac13-\frac1{n+2}-\frac1{n+3}\right).
 $$</div>
 <p>若只保留首尾各一项，就会漏掉边界项。</p></div></details>
-<h3>C3</h3>
+<h3 id="section-16">C3</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}\frac1{(2k-1)(2k+1)}.
@@ -220,7 +220,7 @@ $$</div>
 S_n=\frac12\left(1-\frac1{2n+1}\right)
 =\frac n{2n+1}.
 $$</div></div></details>
-<h3>C4</h3>
+<h3 id="section-17">C4</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}\frac1{\sqrt{k+2}+\sqrt{k+1}}.
@@ -235,7 +235,7 @@ $$</div>
 S_n=(\sqrt3-\sqrt2)+(\sqrt4-\sqrt3)+\cdots+(\sqrt{n+2}-\sqrt{n+1})
 =\sqrt{n+2}-\sqrt2.
 $$</div></div></details>
-<h3>C5</h3>
+<h3 id="section-18">C5</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}\frac{2k+1}{k^2(k+1)^2}.
@@ -254,9 +254,9 @@ $$</div>
 S_n=1-\frac1{(n+1)^2}.
 $$</div>
 <p>检查 $n=1$：左边为 $\frac34$，右边也是 $\frac34$。</p></div></details>
-<h2>题型 D：错位相减</h2>
+<h2 id="section-19">题型 D：错位相减</h2>
 <p>识别信号：一次式与指数式相乘。先区分原式是 $q^{k-1}$ 还是 $q^k$，再对齐相减或使用已推导公式。</p>
-<h3>D1</h3>
+<h3 id="section-20">D1</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}k2^{k-1}.
@@ -278,7 +278,7 @@ $$</div>
 S_n=1+(n-1)2^n.
 $$</div>
 <p>检查 $n=1$ 得 $1$。</p></div></details>
-<h3>D2</h3>
+<h3 id="section-21">D2</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}k3^{k-1}.
@@ -292,7 +292,7 @@ S_n
 \end{aligned}
 $$</div>
 <p>公式条件 $q\ne1$ 满足。$n=1$ 时右边为 $1$。</p></div></details>
-<h3>D3</h3>
+<h3 id="section-22">D3</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}\frac{k}{2^k}.
@@ -306,7 +306,7 @@ $$</div>
 S_n=2-\frac{n+2}{2^n}.
 $$</div>
 <p>检查 $n=1$：右边为 $\frac12$，与原式一致。</p></div></details>
-<h3>D4</h3>
+<h3 id="section-23">D4</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}(2k-1)2^{k-1}.
@@ -326,7 +326,7 @@ $$</div>
 S_n=3+(2n-3)2^n.
 $$</div>
 <p>当 $n=1$ 时，右边为 $1$。</p></div></details>
-<h3>D5</h3>
+<h3 id="section-24">D5</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}\frac{k+1}{3^k}.
@@ -349,9 +349,9 @@ $$</div>
 S_n=\frac54-\frac{2n+5}{4\cdot3^n}.
 $$</div>
 <p>检查 $n=1$：结果为 $\frac23$，等于原式 $\frac{1+1}{3}$。</p></div></details>
-<h2>题型 E：倒序相加</h2>
+<h2 id="section-25">题型 E：倒序相加</h2>
 <p>识别信号：第 $k$ 项与第 $n+1-k$ 项配对后，和不再依赖 $k$。</p>
-<h3>E1</h3>
+<h3 id="section-26">E1</h3>
 <p>用倒序相加法求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}(5k-2).
@@ -370,7 +370,7 @@ $$</div>
 \qquad
 S_n=\frac{n(5n+1)}2.
 $$</div></div></details>
-<h3>E2</h3>
+<h3 id="section-27">E2</h3>
 <p>已知数列前 $n$ 项满足</p>
 <div class="math-display">$$
 a_k+a_{n+1-k}=12
@@ -387,7 +387,7 @@ $$</div>
 S_n=6n.
 $$</div>
 <p>即使 $n$ 为奇数，中间项与自己配对也满足 $2a_{(n+1)/2}=12$，不需另改公式。</p></div></details>
-<h3>E3</h3>
+<h3 id="section-28">E3</h3>
 <p>用倒序相加法求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}\frac{k}{n+1}.
@@ -403,7 +403,7 @@ $$</div>
 S_n=\frac n2.
 $$</div>
 <p>这与直接提出常数 $\frac1{n+1}$ 后使用 $\sum k$ 的结果一致。</p></div></details>
-<h3>E4</h3>
+<h3 id="section-29">E4</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}\frac1{1+2^{n+1-2k}}.
@@ -425,7 +425,7 @@ $$</div>
 S_n=\frac n2.
 $$</div>
 <p>这里 $x&gt;0$ 保证分母不为 0。</p></div></details>
-<h3>E5</h3>
+<h3 id="section-30">E5</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n-1}\sin^2\frac{k\pi}{2n}.
@@ -443,9 +443,9 @@ $$</div>
 \qquad
 S_n=\frac{n-1}{2}.
 $$</div></div></details>
-<h2>题型 F：奇偶、周期与绝对值分段</h2>
+<h2 id="section-31">题型 F：奇偶、周期与绝对值分段</h2>
 <p>识别信号：通项含 $(-1)^k$、固定周期，或绝对值内的表达式会随下标改变符号。</p>
-<h3>F1</h3>
+<h3 id="section-32">F1</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=1-2+3-4+\cdots+(-1)^{n-1}n.
@@ -466,7 +466,7 @@ S_n=
 \dfrac{n+1}{2},&amp;n\text{ 为奇数}.
 \end{cases}
 $$</div></div></details>
-<h3>F2</h3>
+<h3 id="section-33">F2</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}(-1)^{k-1}(2k-1).
@@ -484,7 +484,7 @@ $$</div>
 <div class="math-display">$$
 S_n=(-1)^{n-1}n.
 $$</div></div></details>
-<h3>F3</h3>
+<h3 id="section-34">F3</h3>
 <p>数列以 $1,2,-3$ 为一个周期重复，求前 $n$ 项和。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 每个完整周期的和为</p>
 <div class="math-display">$$
@@ -500,7 +500,7 @@ S_n=
 \end{cases}
 $$</div>
 <p>这里 $q$、$r$ 分别表示完整周期数和余项数。</p></div></details>
-<h3>F4</h3>
+<h3 id="section-35">F4</h3>
 <p>求</p>
 <div class="math-display">$$
 S_n=\sum_{k=1}^{n}|k-3|.
@@ -518,7 +518,7 @@ S_n=3+\sum_{j=1}^{n-3}j
 =3+\frac{(n-3)(n-2)}2.
 $$</div>
 <p>两段在 $n=3$ 时都给出 $3$，边界一致。</p></div></details>
-<h3>F5</h3>
+<h3 id="section-36">F5</h3>
 <p>数列以 $2,-1,3,-4$ 为一个周期重复，求前 $n$ 项和。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 一个完整周期的和为</p>
 <div class="math-display">$$
@@ -538,9 +538,9 @@ S_n=
 4,&amp;r=3.
 \end{cases}
 $$</div></div></details>
-<h2>综合讲题任务</h2>
+<h2 id="section-37">综合讲题任务</h2>
 <p>从每一类中任选 1 题，共准备 6 题。课堂上随机抽 2 题讲，每题回答：</p>
-<ol><li>我为什么识别出这个方法？</li><li>关键变形保留了什么、消去了什么？</li><li>哪个边界项最容易漏？</li><li>我如何用 $n=1$ 或 $n=2$ 验算？</li><li>题目怎样改动后，原方法会失效？</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">数列</a></li><li>源文件：<code>content/09_high_school_math/01_sequences/02_summation_exercises_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-general-term-exercises-zh.html">数列求通项公式专项练习</a></h3><p>这份练习按“题型识别”编排。每个题型至少 5 道题，建议学生先判断方法，再动笔计算；点开解答前，先尝试把“为什么用这个方法”讲出来。</p></div><div class="note-item"><h3><a href="01-general-term-fixed-point-ratio-principle-zh.html">两不动点距离比法：从定义到手动推导</a></h3><p>这一页只讲一个原理：</p></div><div class="note-item"><h3><a href="01-general-term-zh.html">数列求通项公式</a></h3><p>这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。</p></div><div class="note-item"><h3><a href="02-summation-zh.html">数列求和：从通项结构到求和方法</a></h3><p>数列求和不是“背六种技巧”，而是研究一个明确对象：已知数列 $\{a_n\}$ 的通项或结构，求它的前 $n$ 项和</p></div></div></section></aside></div>
+<ol start="1"><li>我为什么识别出这个方法？</li><li>关键变形保留了什么、消去了什么？</li><li>哪个边界项最容易漏？</li><li>我如何用 $n=1$ 或 $n=2$ 验算？</li><li>题目怎样改动后，原方法会失效？</li></ol></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：等差等比数列、因式分解、分式合法性</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li><li><a href="01-general-term-exercises-zh.html">配套练习：数列求通项公式专项练习</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">题型 A：公式法</a></li><li class="toc-level-3"><a href="#section-2">A1</a></li><li class="toc-level-3"><a href="#section-3">A2</a></li><li class="toc-level-3"><a href="#section-4">A3</a></li><li class="toc-level-3"><a href="#section-5">A4</a></li><li class="toc-level-3"><a href="#section-6">A5</a></li><li class="toc-level-2"><a href="#section-7">题型 B：分组求和与并项求和</a></li><li class="toc-level-3"><a href="#section-8">B1</a></li><li class="toc-level-3"><a href="#section-9">B2</a></li><li class="toc-level-3"><a href="#section-10">B3</a></li><li class="toc-level-3"><a href="#section-11">B4</a></li><li class="toc-level-3"><a href="#section-12">B5</a></li><li class="toc-level-2"><a href="#section-13">题型 C：裂项相消</a></li><li class="toc-level-3"><a href="#section-14">C1</a></li><li class="toc-level-3"><a href="#section-15">C2</a></li><li class="toc-level-3"><a href="#section-16">C3</a></li><li class="toc-level-3"><a href="#section-17">C4</a></li><li class="toc-level-3"><a href="#section-18">C5</a></li><li class="toc-level-2"><a href="#section-19">题型 D：错位相减</a></li><li class="toc-level-3"><a href="#section-20">D1</a></li><li class="toc-level-3"><a href="#section-21">D2</a></li><li class="toc-level-3"><a href="#section-22">D3</a></li><li class="toc-level-3"><a href="#section-23">D4</a></li><li class="toc-level-3"><a href="#section-24">D5</a></li><li class="toc-level-2"><a href="#section-25">题型 E：倒序相加</a></li><li class="toc-level-3"><a href="#section-26">E1</a></li><li class="toc-level-3"><a href="#section-27">E2</a></li><li class="toc-level-3"><a href="#section-28">E3</a></li><li class="toc-level-3"><a href="#section-29">E4</a></li><li class="toc-level-3"><a href="#section-30">E5</a></li><li class="toc-level-2"><a href="#section-31">题型 F：奇偶、周期与绝对值分段</a></li><li class="toc-level-3"><a href="#section-32">F1</a></li><li class="toc-level-3"><a href="#section-33">F2</a></li><li class="toc-level-3"><a href="#section-34">F3</a></li><li class="toc-level-3"><a href="#section-35">F4</a></li><li class="toc-level-3"><a href="#section-36">F5</a></li><li class="toc-level-2"><a href="#section-37">综合讲题任务</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">数列</a></li><li>源文件：<code>content/09_high_school_math/01_sequences/02_summation_exercises_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-general-term-exercises-zh.html">数列求通项公式专项练习</a></h3><p>这份练习按“题型识别”编排。每个题型至少 5 道题，建议学生先判断方法，再动笔计算；点开解答前，先尝试把“为什么用这个方法”讲出来。</p></div><div class="note-item"><h3><a href="01-general-term-fixed-point-ratio-principle-zh.html">两不动点距离比法：从定义到手动推导</a></h3><p>这一页只讲一个原理：</p></div><div class="note-item"><h3><a href="01-general-term-zh.html">数列求通项公式</a></h3><p>这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。</p></div><div class="note-item"><h3><a href="02-summation-zh.html">数列求和：从通项结构到求和方法</a></h3><p>数列求和不是“背六种技巧”，而是研究一个明确对象：已知数列 $\{a_n\}$ 的通项或结构，求它的前 $n$ 项和</p></div><div class="note-item"><h3><a href="90-mixed-checkpoint-zh.html">数列：混合检测与讲题验收</a></h3><p>先独立完成，再展开解析。题目不标方法名称；请写出选择依据和限制条件。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

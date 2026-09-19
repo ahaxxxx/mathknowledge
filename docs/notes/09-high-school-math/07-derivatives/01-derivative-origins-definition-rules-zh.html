@@ -34,12 +34,12 @@
       <h1>导数的前世今生、定义与基本初等函数求导公式的推导</h1>
       <p>给定函数 $y=f(x)$ 和一点 $x=a$，我们要定义“在 $a$ 附近每单位 $x$ 的瞬时变化量”。这个对象叫 $f&#x27;(a)$。它首先是一个极限；“切线斜率”和“瞬时速度”是该极限在几何和物理中的解释。</p>
     </div>
-    <div class="subject-grid"><section class="page-section article"><h2>这一页研究什么</h2>
+    <div class="subject-grid"><a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article"><h2 id="section-1">这一页研究什么</h2>
 <p>给定函数 $y=f(x)$ 和一点 $x=a$，我们要定义“在 $a$ 附近每单位 $x$ 的瞬时变化量”。这个对象叫 $f&#x27;(a)$。它首先是一个极限；“切线斜率”和“瞬时速度”是该极限在几何和物理中的解释。</p>
-<h2>一条历史线索：问题先于符号</h2>
-<ol><li>古希腊的穷竭法已经在逼近面积和体积：不断缩小误差，但没有现代极限语言。</li><li>17 世纪，费马研究极大、极小与切线，牛顿研究运动中的瞬时速度，莱布尼茨发展 $dy/dx$ 的记号。三人面对的是同一种“无限小变化”问题。</li><li>19 世纪，柯西、魏尔斯特拉斯把“无限小”改写为可检验的极限定义。今天高中所用的导数，属于这一条严格化后的路线。</li></ol>
+<h2 id="section-2">一条历史线索：问题先于符号</h2>
+<ol start="1"><li>古希腊的穷竭法已经在逼近面积和体积：不断缩小误差，但没有现代极限语言。</li><li>17 世纪，费马研究极大、极小与切线，牛顿研究运动中的瞬时速度，莱布尼茨发展 $dy/dx$ 的记号。三人面对的是同一种“无限小变化”问题。</li><li>19 世纪，柯西、魏尔斯特拉斯把“无限小”改写为可检验的极限定义。今天高中所用的导数，属于这一条严格化后的路线。</li></ol>
 <p>历史的启发是：切线不是“和曲线只交一个点的直线”。圆的切线可以在一个点相交，但某些曲线的切线也可能再次与曲线相交。切线的定义来自割线位置的极限。</p>
-<h2>从平均变化率到导数定义</h2>
+<h2 id="section-3">从平均变化率到导数定义</h2>
 <p>当 $x$ 从 $a$ 变到 $a+h$，且 $h\ne0$ 时，函数增量为</p>
 <div class="math-display">$$
 \Delta y=f(a+h)-f(a).
@@ -53,13 +53,13 @@ $$</div>
 f&#x27;(a)=\lim_{h\to0}\frac{f(a+h)-f(a)}{h}=L.
 $$</div>
 <p>这里的条件不能省略：$a+h$ 必须在定义域中；差商中的 $h$ 不可为 $0$；极限必须存在且有限。左右极限不相等、趋于无穷或振荡时，导数不存在。</p>
-<h2>两个解释，但不要混淆定义</h2>
-<ol><li><strong>几何解释</strong>：若曲线在 $(a,f(a))$ 处存在切线，则该切线斜率是 $f&#x27;(a)$，方程为</li></ol>
+<h2 id="section-4">两个解释，但不要混淆定义</h2>
+<ol start="1"><li><strong>几何解释</strong>：若函数在 $a$ 处可导，则曲线在 $(a,f(a))$ 处存在非竖直切线，其斜率是 $f&#x27;(a)$，方程为</li></ol>
 <div class="math-display">$$
 y-f(a)=f&#x27;(a)(x-a).
 $$</div>
-<ol><li><strong>物理解释</strong>：若 $s=s(t)$ 表示位置，$s&#x27;(t)$ 是时刻 $t$ 的瞬时速度；它不是 $s(t)/t$，而是位置增量与时间增量的极限比。</li></ol>
-<h2>可微为什么一定连续</h2>
+<ol start="2"><li><strong>物理解释</strong>：若 $s=s(t)$ 表示位置，$s&#x27;(t)$ 是时刻 $t$ 的瞬时速度；它不是 $s(t)/t$，而是位置增量与时间增量的极限比。</li></ol>
+<h2 id="section-5">可微为什么一定连续</h2>
 <p>若 $f&#x27;(a)$ 存在，则当 $h\ne0$ 时</p>
 <div class="math-display">$$
 f(a+h)-f(a)=h\cdot\frac{f(a+h)-f(a)}{h}.
@@ -78,9 +78,9 @@ $$</div>
 \end{cases}
 $$</div>
 <p>左右极限不同，所以 $f&#x27;(0)$ 不存在。图像的“尖点”只是结果；真正理由是差商极限不存在。</p></div></details>
-<h2>三个基本极限</h2>
+<h2 id="section-6">三个基本极限</h2>
 <p>下列极限是初等求导的地基。后续推导会清楚指出何处使用它们。</p>
-<h3>1. 三角函数基本极限</h3>
+<h3 id="section-7">1. 三角函数基本极限</h3>
 <p>当 $0&lt;h&lt;\frac\pi2$ 时，单位圆中的面积比较给出</p>
 <div class="math-display">$$
 \sin h&lt;h&lt;\tan h.
@@ -97,20 +97,20 @@ $$</div>
 <div class="math-display">$$
 \lim_{h\to0}\frac{\cos h-1}{h}=0.
 $$</div>
-<h3>2. 自然常数 $e$</h3>
+<h3 id="section-8">2. 自然常数 $e$</h3>
 <p>我们把 $e$ 选作唯一满足</p>
 <div class="math-display">$$
 \lim_{h\to0}\frac{e^h-1}{h}=1
 $$</div>
 <p>的正底数。这个选择不是随意的：它恰好让指数函数的变化率等于自身。对一般 $a&gt;0,a\ne1$，写成 $a^x=e^{x\ln a}$ 即可。</p>
-<h3>3. 对数基本极限</h3>
+<h3 id="section-9">3. 对数基本极限</h3>
 <p>由 $\ln(1+u)$ 是 $e^x$ 的反函数关系，或由积分/夹逼理论，可得到</p>
 <div class="math-display">$$
 \lim_{u\to0}\frac{\ln(1+u)}u=1.
 $$</div>
 <p>在高中讲义中，我们把它作为由指数函数反函数性质推出的标准极限使用。</p>
-<h2>从定义推出的求导公式</h2>
-<h3>常数与幂函数</h3>
+<h2 id="section-10">从定义推出的求导公式</h2>
+<h3 id="section-11">常数与幂函数</h3>
 <p>常数 $c$：</p>
 <div class="math-display">$$
 (c)&#x27;=\lim_{h\to0}\frac{c-c}{h}=0.
@@ -139,14 +139,14 @@ $$</div>
 (\sqrt{x})&#x27;=\frac1{2\sqrt{x}}.
 $$</div>
 <p>有理化不是技巧口号：它的目的，是让差商中的 $h$ 被消去，才能讨论极限。</p></div></details>
-<h2>运算法则如何来</h2>
+<h2 id="section-12">运算法则如何来</h2>
 <p>设 $u,v$ 在 $x$ 处可导。</p>
-<h3>和、差、常数倍</h3>
+<h3 id="section-13">和、差、常数倍</h3>
 <p>差商可以线性拆开，因此</p>
 <div class="math-display">$$
 (u\pm v)&#x27;=u&#x27;\pm v&#x27;,\qquad(cu)&#x27;=cu&#x27;.
 $$</div>
-<h3>乘法法则</h3>
+<h3 id="section-14">乘法法则</h3>
 <p>故意补上并减去 $u(x+h)v(x)$：</p>
 <div class="math-display">$$
 \begin{aligned}
@@ -158,7 +158,7 @@ $$</div>
 <div class="math-display">$$
 (uv)&#x27;=u&#x27;v+uv&#x27;.
 $$</div>
-<h3>倒数与商法则</h3>
+<h3 id="section-15">倒数与商法则</h3>
 <p>若 $v(x)\ne0$，由 $v\cdot\frac1v=1$ 及乘法法则，</p>
 <div class="math-display">$$
 \left(\frac1v\right)&#x27;=-\frac{v&#x27;}{v^2}.
@@ -168,7 +168,7 @@ $$</div>
 \left(\frac uv\right)&#x27;=\frac{u&#x27;v-uv&#x27;}{v^2},\qquad v\ne0.
 $$</div>
 <p>分母条件是公式的一部分，不是备注。</p>
-<h3>链式法则</h3>
+<h3 id="section-16">链式法则</h3>
 <p>令 $y=f(u)$、$u=g(x)$。当 $\Delta u\ne0$ 时，</p>
 <div class="math-display">$$
 \frac{\Delta y}{\Delta x}=\frac{\Delta y}{\Delta u}\cdot\frac{\Delta u}{\Delta x}.
@@ -178,8 +178,8 @@ $$</div>
 \frac{dy}{dx}=\frac{dy}{du}\cdot\frac{du}{dx},\qquad [f(g(x))]&#x27;=f&#x27;(g(x))g&#x27;(x).
 $$</div>
 <p>它不是“里导外导相乘”的押韵句，而是两个变化率相乘。</p>
-<h2>基本初等函数的导数</h2>
-<h3>指数与对数</h3>
+<h2 id="section-17">基本初等函数的导数</h2>
+<h3 id="section-18">指数与对数</h3>
 <p>由 $e^{x+h}=e^xe^h$，</p>
 <div class="math-display">$$
 \begin{aligned}
@@ -199,7 +199,7 @@ $$</div>
 <div class="math-display">$$
 (\ln x)&#x27;=\frac1x\quad(x&gt;0),\qquad (\log_a x)&#x27;=\frac1{x\ln a}.
 $$</div>
-<h3>正弦、余弦、正切</h3>
+<h3 id="section-19">正弦、余弦、正切</h3>
 <p>利用加法公式和前面的三角基本极限：</p>
 <div class="math-display">$$
 \begin{aligned}
@@ -220,10 +220,10 @@ $$</div>
 <div class="math-display">$$
 (\sin u)&#x27;=\cos u\cdot u&#x27;,\quad (e^u)&#x27;=e^u u&#x27;,\quad(\ln u)&#x27;=\frac{u&#x27;}u\ (u&gt;0).
 $$</div>
-<h2>方法边界：何时不该求导</h2>
+<h2 id="section-20">方法边界：何时不该求导</h2>
 <p>分式值域、简单最值问题有时用分离常数、换元、图像或基本不等式更短、更透明。选择方法的标准不是“我会不会求导”，而是：哪个变换最直接暴露定义域、等号条件或函数范围。求导是在研究变化，不是所有最值题的默认动作。</p>
-<h2>费曼讲题任务</h2>
-<ol><li>用自己的话解释 $h$ 为什么不能直接取 $0$，却又要让 $h$ 趋于 $0$。</li><li>不看讲义，推导 $(x^3)&#x27;$ 与 $(\sin x)&#x27;$，并指出各自用了什么定理。</li><li>解释乘法法则中为什么要“补一项再减一项”。</li><li>写出 $(\ln(3x^2-1))&#x27;$ 的定义域，并解释分母与对数条件分别来自哪里。</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">导数</a></li><li>源文件：<code>content/09_high_school_math/07_derivatives/01_derivative_origins_definition_rules_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="02-tangent-lines-zh.html">切线：导数的第一个几何后果</a></h3><p>这一讲只解决一个问题：已知函数 $y=f(x)$，如何严谨地写出它在点 $P(a,f(a))$ 处的切线，并辨别题目究竟给的是横坐标、切点、斜率，还是“另一条”经过某点的切线。</p></div><div class="note-item"><h3><a href="03-monotonicity-extrema-zh.html">用导数研究单调性、极值与最值</a></h3><p>对区间 $I$：</p></div><div class="note-item"><h3><a href="04-parameters-constructed-functions-zh.html">参数、构造函数与恒成立问题</a></h3><p>参数题常把“存在、任意、恰有、恒成立”藏进文字里。先把量词译成数学语言：</p></div><div class="note-item"><h3><a href="05-inequalities-zeros-zh.html">导数证明不等式与研究零点</a></h3><p>当目标是 $A(x)\ge B(x)$，有两条值得先检查的入口：</p></div><div class="note-item"><h3><a href="06-advanced-derivative-structures-zh.html">导数压轴结构：从对象选择到可检验的变形</a></h3><p>压轴导数题没有一条脱离条件的万能大招。它们反复出现的，是几个可验证的结构：参数与变量能否分离、两个变量能否降为一个比值或一个函数值、零点数量能否由单调与极值控制、以及比较对象能否用同一条切线或同一函数串起来。</p></div><div class="note-item"><h3><a href="07-derivative-expression-zh.html">导数表达式：先看结构，再落笔计算</a></h3><p>给出复杂表达式时，求导前问两件事：</p></div><div class="note-item"><h3><a href="08-derivative-drills-zh.html">导数核心训练：从定义到压轴表达</a></h3><p>每题先口述“对象、定义域、工具、结论”。答案默认折叠；先完成自己的推导，再展开核对。</p></div><div class="note-item"><h3><a href="09-derivative-local-full-exercises-zh.html">导数：考点 49-55 全量本地题库</a></h3><p>这一页保留本地一轮复习资料的原题、公式图片与图形。它是课后抽题资料池，不替代前面的讲义和手写推导：第一次学习请先完成定义、定理和方法来源，再到这里限时训练。</p></div></div></section></aside></div>
+<h2 id="section-21">费曼讲题任务</h2>
+<ol start="1"><li>用自己的话解释 $h$ 为什么不能直接取 $0$，却又要让 $h$ 趋于 $0$。</li><li>不看讲义，推导 $(x^3)&#x27;$ 与 $(\sin x)&#x27;$，并指出各自用了什么定理。</li><li>解释乘法法则中为什么要“补一项再减一项”。</li><li>写出 $(\ln(3x^2-1))&#x27;$ 的定义域，并解释分母与对数条件分别来自哪里。</li></ol></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：函数六节基础、基本求导、符号表</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a rel="next" href="02-tangent-lines-zh.html">下一节：切线：导数的第一个几何后果</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li><li><a href="08-derivative-drills-zh.html">配套练习：导数核心训练：从定义到压轴表达</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">这一页研究什么</a></li><li class="toc-level-2"><a href="#section-2">一条历史线索：问题先于符号</a></li><li class="toc-level-2"><a href="#section-3">从平均变化率到导数定义</a></li><li class="toc-level-2"><a href="#section-4">两个解释，但不要混淆定义</a></li><li class="toc-level-2"><a href="#section-5">可微为什么一定连续</a></li><li class="toc-level-2"><a href="#section-6">三个基本极限</a></li><li class="toc-level-3"><a href="#section-7">1. 三角函数基本极限</a></li><li class="toc-level-3"><a href="#section-8">2. 自然常数 $e$</a></li><li class="toc-level-3"><a href="#section-9">3. 对数基本极限</a></li><li class="toc-level-2"><a href="#section-10">从定义推出的求导公式</a></li><li class="toc-level-3"><a href="#section-11">常数与幂函数</a></li><li class="toc-level-2"><a href="#section-12">运算法则如何来</a></li><li class="toc-level-3"><a href="#section-13">和、差、常数倍</a></li><li class="toc-level-3"><a href="#section-14">乘法法则</a></li><li class="toc-level-3"><a href="#section-15">倒数与商法则</a></li><li class="toc-level-3"><a href="#section-16">链式法则</a></li><li class="toc-level-2"><a href="#section-17">基本初等函数的导数</a></li><li class="toc-level-3"><a href="#section-18">指数与对数</a></li><li class="toc-level-3"><a href="#section-19">正弦、余弦、正切</a></li><li class="toc-level-2"><a href="#section-20">方法边界：何时不该求导</a></li><li class="toc-level-2"><a href="#section-21">费曼讲题任务</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">导数</a></li><li>源文件：<code>content/09_high_school_math/07_derivatives/01_derivative_origins_definition_rules_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="02-tangent-lines-zh.html">切线：导数的第一个几何后果</a></h3><p>这一讲只解决一个问题：已知函数 $y=f(x)$，如何严谨地写出它在点 $P(a,f(a))$ 处的切线，并辨别题目究竟给的是横坐标、切点、斜率，还是“另一条”经过某点的切线。</p></div><div class="note-item"><h3><a href="03-monotonicity-extrema-zh.html">用导数研究单调性、极值与最值</a></h3><p>对区间 $I$：</p></div><div class="note-item"><h3><a href="04-parameters-constructed-functions-zh.html">参数、构造函数与恒成立问题</a></h3><p>参数题常把“存在、任意、恰有、恒成立”藏进文字里。先把量词译成数学语言：</p></div><div class="note-item"><h3><a href="05-inequalities-zeros-zh.html">导数证明不等式与研究零点</a></h3><p>当目标是 $A(x)\ge B(x)$，有两条值得先检查的入口：</p></div><div class="note-item"><h3><a href="06-advanced-derivative-structures-zh.html">导数压轴结构：从对象选择到可检验的变形</a></h3><p>压轴导数题没有一条脱离条件的万能大招。它们反复出现的，是几个可验证的结构：参数与变量能否分离、两个变量能否降为一个比值或一个函数值、零点数量能否由单调与极值控制、以及比较对象能否用同一条切线或同一函数串起来。</p></div><div class="note-item"><h3><a href="07-derivative-expression-zh.html">导数表达式：先看结构，再落笔计算</a></h3><p>给出复杂表达式时，求导前问两件事：</p></div><div class="note-item"><h3><a href="08-derivative-drills-zh.html">导数核心训练：从定义到压轴表达</a></h3><p>每题先口述“对象、定义域、工具、结论”。答案默认折叠；先完成自己的推导，再展开核对。</p></div><div class="note-item"><h3><a href="09-derivative-local-full-exercises-zh.html">导数：考点 49-55 全量本地题库</a></h3><p>这一页保留本地一轮复习资料的原题、公式图片与图形。它是课后抽题资料池，不替代前面的讲义和手写推导：第一次学习请先完成定义、定理和方法来源，再到这里限时训练。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

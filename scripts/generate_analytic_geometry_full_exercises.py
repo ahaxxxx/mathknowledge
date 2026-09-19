@@ -10,6 +10,7 @@ import zipfile
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from pathlib import Path
+from solution_matching import match_solutions, PENDING
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -278,7 +279,7 @@ def solution_to_markdown(question: Question | None) -> str:
     if question is None:
         return ""
     body = "\n".join(rendered for block in question.blocks if (rendered := block_to_html(block)))
-    lines = [":::solution 查看解析版原文", ""]
+    lines = [":::solution 查看解析版原文（题号与完整题干匹配，未逐题验算）", ""]
     if body:
         lines.extend(
             [
@@ -321,24 +322,27 @@ def main() -> int:
         solved = find_docx(point, source="练习", version="解析版")
         _, questions = split_questions(docx_blocks(original, f"ag{point}-q"))
         _, solutions = split_questions(docx_blocks(solved, f"ag{point}-a"))
+        matched_solutions = match_solutions(questions, solutions)
         print(f"  extracted questions={len(questions)} solutions={len(solutions)}", flush=True)
-        aligned_solutions = min(len(questions), len(solutions))
+        aligned_solutions = sum(item is not None for item in matched_solutions)
         summary.append((point, title, len(questions), len(solutions), aligned_solutions))
 
         lines.extend([f"## 考点 {point}：{title}", ""])
         lines.extend(
             [
-                f"本组来自 `{original.name}`；原卷共抽取 {len(questions)} 道题，解析版原始抽取 {len(solutions)} 道，可对齐显示 {aligned_solutions} 道。",
+                f"本组来自 `{original.name}`；原卷共抽取 {len(questions)} 道题，解析版原始抽取 {len(solutions)} 道，题号与完整题干匹配 {aligned_solutions} 道。",
                 "",
             ]
         )
         for index, question in enumerate(questions):
             lines.append(question_to_markdown(question, global_index))
             lines.append("")
-            solution = solutions[index] if index < len(solutions) else None
+            solution = matched_solutions[index]
             if solution:
                 lines.append(solution_to_markdown(solution))
                 lines.append("")
+            else:
+                lines.extend([PENDING, ""])
             global_index += 1
 
     total_questions = sum(item[2] for item in summary)
@@ -353,7 +357,7 @@ def main() -> int:
         ]
     )
     for point, title, q_count, raw_a_count, aligned_count in summary:
-        lines.append(f"- 考点 {point} {title}：原卷 {q_count} 道，解析版原始抽取 {raw_a_count} 道，可对齐显示 {aligned_count} 道。")
+        lines.append(f"- 考点 {point} {title}：原卷 {q_count} 道，解析版原始抽取 {raw_a_count} 道，题号与完整题干匹配 {aligned_count} 道。")
 
     CONTENT_FILE.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
     print(f"wrote {CONTENT_FILE}")

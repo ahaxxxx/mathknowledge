@@ -34,12 +34,12 @@
       <h1>导数证明不等式与研究零点</h1>
       <p>当目标是 $A(x)\ge B(x)$，有两条值得先检查的入口：</p>
     </div>
-    <div class="subject-grid"><section class="page-section article"><h2>不等式的两条入口</h2>
+    <div class="subject-grid"><a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article"><h2 id="section-1">不等式的两条入口</h2>
 <p>当目标是 $A(x)\ge B(x)$，有两条值得先检查的入口：</p>
-<ol><li><strong>代数入口</strong>：因式分解、配方、基本不等式、分式型函数的等价变形能直接给出正负或等号条件时，优先使用它；</li><li><strong>函数入口</strong>：差值结构复杂但可导时，令 $H(x)=A(x)-B(x)$，通过 $H&#x27;$ 找到其最小值。</li></ol>
+<ol start="1"><li><strong>代数入口</strong>：因式分解、配方、基本不等式、分式型函数的等价变形能直接给出正负或等号条件时，优先使用它；</li><li><strong>函数入口</strong>：差值结构复杂但可导时，令 $H(x)=A(x)-B(x)$，通过 $H&#x27;$ 找到其最小值。</li></ol>
 <p>导数不是更高级的装饰，而是在代数结构不透明时，研究整体变化的工具。两种方法得到的等号条件必须互相吻合。</p>
-<h2>切线不等式的来源</h2>
-<p>若函数 $f$ 在区间上是凸的，图像在该区间位于任意切线之上：</p>
+<h2 id="section-2">切线不等式的来源</h2>
+<p>若函数 $f$ 在区间上是凸的，且在内点 $a$ 可导，图像在该区间位于任意切线之上：</p>
 <div class="math-display">$$
 f(x)\ge f(a)+f&#x27;(a)(x-a).
 $$</div>
@@ -54,14 +54,14 @@ $$</div>
 <details class="solution-toggle"><summary>例 2：对数函数的切线上界</summary><div class="solution-body"><p>证明对任意 $x&gt;0$，$\ln x\le x-1$。</p>
 <p>令 $H(x)=x-1-\ln x$。$H&#x27;(x)=\frac{x-1}{x}$，所以 $H$ 在 $x=1$ 处取最小值 $0$。故结论成立，等号当且仅当 $x=1$。</p>
 <p>这个结论在分式函数和值域题中常与基本不等式配合使用；先确认变量范围 $x&gt;0$，否则 $\ln x$ 本身无意义。</p></div></details>
-<h2>零点问题的四个动作</h2>
+<h2 id="section-3">零点问题的四个动作</h2>
 <p>研究 $F(x)=0$，按以下顺序组织：</p>
-<ol><li>写定义域与连续区间；</li><li>找到能使 $F$ 异号的两个点，证明存在；</li><li>用 $F&#x27;$ 的符号证明单调，得到唯一性或根数上界；</li><li>若问根的范围，再把区间缩小到题目要求的精度。</li></ol>
+<ol start="1"><li>写定义域与连续区间；</li><li>找到能使 $F$ 异号的两个点，证明存在；</li><li>用 $F&#x27;$ 的符号证明单调，得到唯一性或根数上界；</li><li>若问根的范围，再把区间缩小到题目要求的精度。</li></ol>
 <p>介值定理不能跨越不连续点使用。例如 $1/x$ 在 $[-1,1]$ 两端异号，却没有零点；因为 $x=0$ 不在定义域。</p>
 <details class="solution-toggle"><summary>例 3：带根区间的唯一零点</summary><div class="solution-body"><p>证明 $F(x)=x^3+x-1$ 在 $(0,1)$ 内有且只有一个零点。</p>
 <p>$F$ 是多项式，故在 $[0,1]$ 连续。$F(0)=-1&lt;0$，$F(1)=1&gt;0$，所以在 $(0,1)$ 内至少有一个零点。</p>
 <p>又 $F&#x27;(x)=3x^2+1&gt;0$ 对全体实数成立，因此 $F$ 严格递增，零点至多一个。综上，在 $(0,1)$ 内恰有一个零点。</p></div></details>
-<h2>根的个数上界：罗尔定理的逆向使用</h2>
+<h2 id="section-4">根的个数上界：罗尔定理的逆向使用</h2>
 <p>若可导函数 $F$ 有两个不同零点 $x_1&lt;x_2$，罗尔定理保证存在 $c\in(x_1,x_2)$ 使 $F&#x27;(c)=0$。因此：</p>
 <div class="math-display">$$
 \text{$F&#x27;$ 在区间内至多有 $m$ 个零点}\quad\Longrightarrow\quad
@@ -73,11 +73,11 @@ $$</div>
 F&#x27;(x)=3(x^2-1),
 $$</div>
 <p>它只有两个零点 $-1,1$。若 $F$ 有四个不同实根，反复用罗尔定理可推出 $F&#x27;$ 至少有三个不同零点，矛盾。因此 $F$ 至多有三个实根；进一步，由 $F&#x27;$ 只有两个零点，只能得到至多三个，而不能仅凭这一点断言至多两个。</p>
-<p>实际计算 $F(-1)=5$、$F(1)=1$，且两处均为正；又 $F$ 在 $(-\infty,-1)$ 递增、$(-1,1)$ 递减、$(1,+\infty)$ 递增，所以只可能在左侧有一个根，故 $F$ 恰有一个实根。这个例子提醒：罗尔定理给出的粗上界要结合极值符号才能收紧。</p></div></details>
-<h2>本地题源对应</h2>
+<p>实际计算 $F(-1)=5$、$F(1)=1$，且两处均为正；又 $F$ 在 $(-\infty,-1)$ 递增、$(-1,1)$ 递减、$(1,+\infty)$ 递增，所以只可能在左侧有根。又 $F(-3)=-15&lt;0$，$F(-1)=5&gt;0$，由连续性保证左侧存在根，再由严格递增保证唯一，故 $F$ 恰有一个实根。这个例子提醒：罗尔定理给出的粗上界要结合极值符号才能收紧。</p></div></details>
+<h2 id="section-5">本地题源对应</h2>
 <p>本页对应<strong>考点 54：利用导数证明不等式</strong>和<strong>考点 55：利用导数研究函数零点问题</strong>，并与“分式型函数求值域”资料形成方法边界：能代数解决时，要能说明为什么；需要研究变化、根数和最佳常数时，再让导数接手。</p>
-<h2>费曼复述卡</h2>
-<ol><li>为什么 $e^x\ge x+1$ 的证明本质是最小值问题？</li><li>介值定理要先检查什么？</li><li>“至多一个零点”和“恰有一个零点”分别缺哪一半论证？</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">导数</a></li><li>源文件：<code>content/09_high_school_math/07_derivatives/05_inequalities_zeros_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-derivative-origins-definition-rules-zh.html">导数的前世今生、定义与基本初等函数求导公式的推导</a></h3><p>给定函数 $y=f(x)$ 和一点 $x=a$，我们要定义“在 $a$ 附近每单位 $x$ 的瞬时变化量”。这个对象叫 $f&#x27;(a)$。它首先是一个极限；“切线斜率”和“瞬时速度”是该极限在几何和物理中的解释。</p></div><div class="note-item"><h3><a href="02-tangent-lines-zh.html">切线：导数的第一个几何后果</a></h3><p>这一讲只解决一个问题：已知函数 $y=f(x)$，如何严谨地写出它在点 $P(a,f(a))$ 处的切线，并辨别题目究竟给的是横坐标、切点、斜率，还是“另一条”经过某点的切线。</p></div><div class="note-item"><h3><a href="03-monotonicity-extrema-zh.html">用导数研究单调性、极值与最值</a></h3><p>对区间 $I$：</p></div><div class="note-item"><h3><a href="04-parameters-constructed-functions-zh.html">参数、构造函数与恒成立问题</a></h3><p>参数题常把“存在、任意、恰有、恒成立”藏进文字里。先把量词译成数学语言：</p></div><div class="note-item"><h3><a href="06-advanced-derivative-structures-zh.html">导数压轴结构：从对象选择到可检验的变形</a></h3><p>压轴导数题没有一条脱离条件的万能大招。它们反复出现的，是几个可验证的结构：参数与变量能否分离、两个变量能否降为一个比值或一个函数值、零点数量能否由单调与极值控制、以及比较对象能否用同一条切线或同一函数串起来。</p></div><div class="note-item"><h3><a href="07-derivative-expression-zh.html">导数表达式：先看结构，再落笔计算</a></h3><p>给出复杂表达式时，求导前问两件事：</p></div><div class="note-item"><h3><a href="08-derivative-drills-zh.html">导数核心训练：从定义到压轴表达</a></h3><p>每题先口述“对象、定义域、工具、结论”。答案默认折叠；先完成自己的推导，再展开核对。</p></div><div class="note-item"><h3><a href="09-derivative-local-full-exercises-zh.html">导数：考点 49-55 全量本地题库</a></h3><p>这一页保留本地一轮复习资料的原题、公式图片与图形。它是课后抽题资料池，不替代前面的讲义和手写推导：第一次学习请先完成定义、定理和方法来源，再到这里限时训练。</p></div></div></section></aside></div>
+<h2 id="section-6">费曼复述卡</h2>
+<ol start="1"><li>为什么 $e^x\ge x+1$ 的证明本质是最小值问题？</li><li>介值定理要先检查什么？</li><li>“至多一个零点”和“恰有一个零点”分别缺哪一半论证？</li></ol></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：函数六节基础、基本求导、符号表</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a rel="prev" href="04-parameters-constructed-functions-zh.html">上一节：参数、构造函数与恒成立问题</a></li><li><a rel="next" href="06-advanced-derivative-structures-zh.html">下一节：导数压轴结构：从对象选择到可检验的变形</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li><li><a href="08-derivative-drills-zh.html">配套练习：导数核心训练：从定义到压轴表达</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">不等式的两条入口</a></li><li class="toc-level-2"><a href="#section-2">切线不等式的来源</a></li><li class="toc-level-2"><a href="#section-3">零点问题的四个动作</a></li><li class="toc-level-2"><a href="#section-4">根的个数上界：罗尔定理的逆向使用</a></li><li class="toc-level-2"><a href="#section-5">本地题源对应</a></li><li class="toc-level-2"><a href="#section-6">费曼复述卡</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">导数</a></li><li>源文件：<code>content/09_high_school_math/07_derivatives/05_inequalities_zeros_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-derivative-origins-definition-rules-zh.html">导数的前世今生、定义与基本初等函数求导公式的推导</a></h3><p>给定函数 $y=f(x)$ 和一点 $x=a$，我们要定义“在 $a$ 附近每单位 $x$ 的瞬时变化量”。这个对象叫 $f&#x27;(a)$。它首先是一个极限；“切线斜率”和“瞬时速度”是该极限在几何和物理中的解释。</p></div><div class="note-item"><h3><a href="02-tangent-lines-zh.html">切线：导数的第一个几何后果</a></h3><p>这一讲只解决一个问题：已知函数 $y=f(x)$，如何严谨地写出它在点 $P(a,f(a))$ 处的切线，并辨别题目究竟给的是横坐标、切点、斜率，还是“另一条”经过某点的切线。</p></div><div class="note-item"><h3><a href="03-monotonicity-extrema-zh.html">用导数研究单调性、极值与最值</a></h3><p>对区间 $I$：</p></div><div class="note-item"><h3><a href="04-parameters-constructed-functions-zh.html">参数、构造函数与恒成立问题</a></h3><p>参数题常把“存在、任意、恰有、恒成立”藏进文字里。先把量词译成数学语言：</p></div><div class="note-item"><h3><a href="06-advanced-derivative-structures-zh.html">导数压轴结构：从对象选择到可检验的变形</a></h3><p>压轴导数题没有一条脱离条件的万能大招。它们反复出现的，是几个可验证的结构：参数与变量能否分离、两个变量能否降为一个比值或一个函数值、零点数量能否由单调与极值控制、以及比较对象能否用同一条切线或同一函数串起来。</p></div><div class="note-item"><h3><a href="07-derivative-expression-zh.html">导数表达式：先看结构，再落笔计算</a></h3><p>给出复杂表达式时，求导前问两件事：</p></div><div class="note-item"><h3><a href="08-derivative-drills-zh.html">导数核心训练：从定义到压轴表达</a></h3><p>每题先口述“对象、定义域、工具、结论”。答案默认折叠；先完成自己的推导，再展开核对。</p></div><div class="note-item"><h3><a href="09-derivative-local-full-exercises-zh.html">导数：考点 49-55 全量本地题库</a></h3><p>这一页保留本地一轮复习资料的原题、公式图片与图形。它是课后抽题资料池，不替代前面的讲义和手写推导：第一次学习请先完成定义、定理和方法来源，再到这里限时训练。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

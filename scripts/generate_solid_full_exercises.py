@@ -10,6 +10,7 @@ import zipfile
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from pathlib import Path
+from solution_matching import match_solutions, PENDING
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -293,7 +294,7 @@ def solution_to_markdown(question: Question | None) -> str:
     if question is None:
         return ""
     body = "\n".join(rendered for block in question.blocks if (rendered := block_to_html(block)))
-    lines = [":::solution 查看解析版原文", ""]
+    lines = [":::solution 查看解析版原文（题号与完整题干匹配，未逐题验算）", ""]
     if body:
         lines.extend(
             [
@@ -328,32 +329,37 @@ def main() -> int:
     ]
 
     global_index = 1
+    matched_total = 0
     summary: list[tuple[str, str, int, int]] = []
     for point, title in POINTS:
         original = find_docx(point, source="练习", version="原卷版")
         solved = find_docx(point, source="练习", version="解析版")
         _, questions = split_questions(docx_blocks(original, f"kp{point}-q"))
         _, solutions = split_questions(docx_blocks(solved, f"kp{point}-a"))
+        matched_solutions = match_solutions(questions, solutions)
+        matched_total += sum(s is not None for s in matched_solutions)
         summary.append((point, title, len(questions), len(solutions)))
 
         lines.extend([f"## 考点 {point}：{title}", ""])
         lines.extend(
             [
-                f"本组来自 `{original.name}`；原卷共抽取 {len(questions)} 道题，解析版可对齐 {len(solutions)} 道。",
+                f"本组来自 `{original.name}`；原卷共抽取 {len(questions)} 道题，解析版抽取 {len(solutions)} 道（是否匹配见各题状态）。",
                 "",
             ]
         )
         for index, question in enumerate(questions):
             lines.append(question_to_markdown(question, global_index))
             lines.append("")
-            solution = solutions[index] if index < len(solutions) else None
+            solution = matched_solutions[index]
             if solution:
                 lines.append(solution_to_markdown(solution))
                 lines.append("")
+            else:
+                lines.extend([PENDING, ""])
             global_index += 1
 
     total_questions = sum(item[2] for item in summary)
-    total_solutions = sum(item[3] for item in summary)
+    total_solutions = matched_total
     lines.extend(
         [
             "## 抽取统计",

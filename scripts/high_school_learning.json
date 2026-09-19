@@ -1,0 +1,50 @@
+{
+  "00_functions": {
+    "title": "函数",
+    "prerequisites": "实数运算、区间与一元不等式",
+    "first": "01_objects_representations_zh.md",
+    "checkpoint": "90_mixed_checkpoint_zh.md"
+  },
+  "01_sequences": {
+    "title": "数列",
+    "prerequisites": "等差等比数列、因式分解、分式合法性",
+    "first": "01_general_term_zh.md",
+    "checkpoint": "90_mixed_checkpoint_zh.md"
+  },
+  "02_trigonometry": {
+    "title": "三角",
+    "prerequisites": "单位圆、三角函数与正余弦定理",
+    "first": "01_trig_functions_zh.md",
+    "checkpoint": "90_mixed_checkpoint_zh.md"
+  },
+  "03_plane_vectors": {
+    "title": "平面向量",
+    "prerequisites": "向量运算、坐标与数量积",
+    "first": "01_plane_vectors_zh.md",
+    "checkpoint": "90_mixed_checkpoint_zh.md"
+  },
+  "04_solid_geometry": {
+    "title": "立体几何",
+    "prerequisites": "平面几何、空间点线面关系、向量",
+    "first": "01_space_language_axioms_zh.md",
+    "checkpoint": "90_mixed_checkpoint_zh.md"
+  },
+  "05_analytic_geometry": {
+    "title": "解析几何",
+    "prerequisites": "直线方程、二次方程、韦达与距离公式",
+    "first": "01_analytic_geometry_overview_zh.md",
+    "checkpoint": "90_mixed_checkpoint_zh.md"
+  },
+  "06_counting_combinatorics": {
+    "title": "计数",
+    "prerequisites": "分类分步、排列组合、对象是否有序",
+    "first": "01_counting_principles_zh.md",
+    "checkpoint": "90_mixed_checkpoint_zh.md"
+  },
+  "07_derivatives": {
+    "title": "导数",
+    "prerequisites": "函数六节基础、基本求导、符号表",
+    "first": "01_derivative_origins_definition_rules_zh.md",
+    "checkpoint": "90_mixed_checkpoint_zh.md"
+  }
+}

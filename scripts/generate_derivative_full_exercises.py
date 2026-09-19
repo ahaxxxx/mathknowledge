@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from solution_matching import match_solutions, PENDING
 
 import generate_analytic_geometry_full_exercises as base
 
@@ -56,7 +57,8 @@ def main() -> int:
         solved = base.find_docx(point, source="练习", version="解析版")
         _, questions = base.split_questions(base.docx_blocks(original, f"dv{point}-q"))
         _, solutions = base.split_questions(base.docx_blocks(solved, f"dv{point}-a"))
-        aligned = min(len(questions), len(solutions))
+        matched_solutions = match_solutions(questions, solutions)
+        aligned = sum(item is not None for item in matched_solutions)
         summary.append((point, title, len(questions), len(solutions), aligned))
         print(f"  questions={len(questions)} solutions={len(solutions)}", flush=True)
 
@@ -71,15 +73,15 @@ def main() -> int:
         for index, question in enumerate(questions):
             lines.append(base.question_to_markdown(question, global_index))
             lines.append("")
-            if index < len(solutions):
-                lines.append(base.solution_to_markdown(solutions[index]))
+            if matched_solutions[index] is not None:
+                lines.append(base.solution_to_markdown(matched_solutions[index]))
                 lines.append("")
             else:
                 lines.extend(
                     [
                         ":::solution 查看教师补充说明",
                         "",
-                        "这道原题在本地解析版中没有可按题号对应的独立题块。不要把后一题的答案错配过来；完整的教师版推导会放在前面的分层训练中。",
+                        "解析待核验：原题号或完整题干未能唯一匹配，不能按顺序猜配。请由教师核对题源后补充。",
                         "",
                         ":::",
                         "",
@@ -91,7 +93,7 @@ def main() -> int:
     total_solutions = sum(item[4] for item in summary)
     lines.extend(["## 抽取统计", "", f"- 原卷题目：{total_questions} 道。", f"- 对应解析题块：{total_solutions} 道。", ""])
     for point, title, q_count, solution_count, aligned in summary:
-        lines.append(f"- 考点 {point} {title}：原卷 {q_count} 道，解析 {solution_count} 道，可按顺序对齐 {aligned} 道。")
+        lines.append(f"- 考点 {point} {title}：原卷 {q_count} 道，解析 {solution_count} 道，题号与完整题干匹配 {aligned} 道。")
 
     CONTENT_FILE.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
     print(f"wrote {CONTENT_FILE}")

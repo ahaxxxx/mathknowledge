@@ -34,13 +34,13 @@
       <h1>两不动点距离比法：从定义到手动推导</h1>
       <p>这一页只讲一个原理：</p>
     </div>
-    <div class="subject-grid"><section class="page-section article"><div class="math-display">$$
+    <div class="subject-grid"><a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article"><div class="math-display">$$
 \frac{a_{n+1}-\alpha}{a_{n+1}-\beta}
 =\lambda
 \frac{a_n-\alpha}{a_n-\beta}.
 $$</div>
 <p>它不是一个需要背下来的公式，而是一次分式递推的结构事实。理解它以后，学生可以自己从头推出，不必依赖“老师说令这个”的记忆。</p>
-<h2>本页研究什么对象</h2>
+<h2 id="section-1">本页研究什么对象</h2>
 <p>我们研究的对象是由递推关系定义的数列：</p>
 <div class="math-display">$$
 a_{n+1}=f(a_n),
@@ -58,7 +58,7 @@ $$</div>
 Ba_n+C\ne0.
 $$</div>
 <p>如果某一步分母为 0，原递推式本身就没有意义，后面的讨论不能继续。</p>
-<h2>定义：不动点</h2>
+<h2 id="section-2">定义：不动点</h2>
 <p>若数 $\alpha$ 满足</p>
 <div class="math-display">$$
 f(\alpha)=\alpha,
@@ -71,7 +71,7 @@ a_n=\alpha
 a_{n+1}=f(a_n)=f(\alpha)=\alpha.
 $$</div>
 <p>所以不动点是递推变换自己给出的稳定位置。它不是技巧的名字，而是这个变换的内在结构。</p>
-<h2>核心命题</h2>
+<h2 id="section-3">核心命题</h2>
 <p>设</p>
 <div class="math-display">$$
 f(x)=\frac{px+A}{Bx+C}.
@@ -101,7 +101,7 @@ $$</div>
 b_{n+1}=\lambda b_n.
 $$</div>
 <p>于是 $\{b_n\}$ 是等比数列。</p>
-<h2>为什么这个命题成立</h2>
+<h2 id="section-4">为什么这个命题成立</h2>
 <p>下面完整推导，不跳步。</p>
 <p>先从</p>
 <div class="math-display">$$
@@ -187,7 +187,7 @@ $$</div>
 \lambda=\frac{p-\alpha B}{p-\beta B}.
 $$</div>
 <p>这就是两不动点距离比法的来源。</p>
-<h2>这个新变量到底在表示什么</h2>
+<h2 id="section-5">这个新变量到底在表示什么</h2>
 <p>新变量</p>
 <div class="math-display">$$
 b_n=\frac{a_n-\alpha}{a_n-\beta}
@@ -198,13 +198,13 @@ $$</div>
 <div class="math-display">$$
 \frac{a_n-\alpha}{a_n-\beta}.
 $$</div>
-<h2>手动推导流程</h2>
+<h2 id="section-6">手动推导流程</h2>
 <p>遇到</p>
 <div class="math-display">$$
 a_{n+1}=\frac{pa_n+A}{Ba_n+C}
 $$</div>
 <p>时，按下面步骤手动推导。</p>
-<h3>第一步：写出变换和定义域</h3>
+<h3 id="section-7">第一步：写出变换和定义域</h3>
 <p>令</p>
 <div class="math-display">$$
 f(x)=\frac{px+A}{Bx+C}.
@@ -217,7 +217,7 @@ $$</div>
 <div class="math-display">$$
 Ba_n+C\ne0.
 $$</div>
-<h3>第二步：求不动点</h3>
+<h3 id="section-8">第二步：求不动点</h3>
 <p>解</p>
 <div class="math-display">$$
 x=f(x).
@@ -231,7 +231,7 @@ $$</div>
 x(Bx+C)=px+A.
 $$</div>
 <p>整理成二次方程。若得到两个不同根 $\alpha,\beta$，就可以考虑距离比法。</p>
-<h3>第三步：先讨论特殊初值</h3>
+<h3 id="section-9">第三步：先讨论特殊初值</h3>
 <p>如果</p>
 <div class="math-display">$$
 a_1=\alpha,
@@ -249,7 +249,7 @@ $$</div>
 a_n=\beta.
 $$</div>
 <p>这些常值情形要先处理，否则后面构造分式时可能出现分母为 0。</p>
-<h3>第四步：构造距离比</h3>
+<h3 id="section-10">第四步：构造距离比</h3>
 <p>在 $a_n\ne\beta$ 的情形下，令</p>
 <div class="math-display">$$
 b_n=\frac{a_n-\alpha}{a_n-\beta}.
@@ -262,7 +262,7 @@ $$</div>
 <div class="math-display">$$
 b_n=b_1\lambda^{n-1}.
 $$</div>
-<h3>第五步：把 $b_n$ 解回 $a_n$</h3>
+<h3 id="section-11">第五步：把 $b_n$ 解回 $a_n$</h3>
 <p>设</p>
 <div class="math-display">$$
 b_n=t_n.
@@ -292,13 +292,13 @@ $$</div>
 a_n=\frac{\alpha-t_n\beta}{1-t_n}.
 $$</div>
 <p>最后检查初值和原递推分母。</p>
-<h2>完整例题</h2>
+<h2 id="section-12">完整例题</h2>
 <p>已知</p>
 <div class="math-display">$$
 a_1=4,\qquad a_{n+1}=\frac{5a_n-4}{2a_n-1}.
 $$</div>
 <p>求 $a_n$。</p>
-<h3>1. 写出变换</h3>
+<h3 id="section-13">1. 写出变换</h3>
 <div class="math-display">$$
 f(x)=\frac{5x-4}{2x-1}.
 $$</div>
@@ -306,7 +306,7 @@ $$</div>
 <div class="math-display">$$
 2x-1\ne0.
 $$</div>
-<h3>2. 求不动点</h3>
+<h3 id="section-14">2. 求不动点</h3>
 <p>解</p>
 <div class="math-display">$$
 x=\frac{5x-4}{2x-1}.
@@ -336,7 +336,7 @@ $$</div>
 1,\quad 2.
 $$</div>
 <p>这里 $a_1=4$，不是不动点，所以不是常值数列。</p>
-<h3>3. 构造距离比</h3>
+<h3 id="section-15">3. 构造距离比</h3>
 <p>取</p>
 <div class="math-display">$$
 \alpha=2,\qquad \beta=1.
@@ -392,7 +392,7 @@ b_{n+1}
 =\frac13\frac{a_n-2}{a_n-1}
 =\frac13b_n.
 $$</div>
-<h3>4. 求出 $b_n$</h3>
+<h3 id="section-16">4. 求出 $b_n$</h3>
 <p>因为</p>
 <div class="math-display">$$
 b_1=\frac{4-2}{4-1}=\frac23,
@@ -402,7 +402,7 @@ $$</div>
 b_n=\frac23\left(\frac13\right)^{n-1}
 =\frac2{3^n}.
 $$</div>
-<h3>5. 解回 $a_n$</h3>
+<h3 id="section-17">5. 解回 $a_n$</h3>
 <p>由</p>
 <div class="math-display">$$
 \frac{a_n-2}{a_n-1}=\frac2{3^n},
@@ -423,13 +423,13 @@ $$</div>
 <div class="math-display">$$
 a_n=\frac{2\cdot3^n-2}{3^n-2}.
 $$</div>
-<h3>6. 检查</h3>
+<h3 id="section-18">6. 检查</h3>
 <p>当 $n=1$ 时，</p>
 <div class="math-display">$$
 a_1=\frac{2\cdot3-2}{3-2}=4,
 $$</div>
 <p>符合初值。并且对这个结果，$2a_n-1$ 不为 0，原递推分母有意义。</p>
-<h2>和“平移后取倒数法”的关系</h2>
+<h2 id="section-19">和“平移后取倒数法”的关系</h2>
 <p>两不动点距离比法和平移后取倒数法不是两件互不相关的事。</p>
 <p>设 $\alpha,\beta$ 是两个不动点。令</p>
 <div class="math-display">$$
@@ -482,19 +482,19 @@ C_{n+1}
 =\frac1\lambda C_n+\frac{1-\lambda}{\lambda d}.
 $$</div>
 <p>这就是一次线性递推。也就是说，平移后取倒数法可以看成两不动点距离比法的另一种书写方式。</p>
-<h2>边界条件</h2>
+<h2 id="section-20">边界条件</h2>
 <p>使用本方法时必须检查：</p>
-<ol><li>原递推分母是否可能为 0。</li><li>求不动点时同乘的分母是否为 0。</li><li>两个不动点是否真的不同。</li><li>初值是否正好等于某个不动点。</li><li>构造 $\frac{a_n-\alpha}{a_n-\beta}$ 时，是否出现 $a_n=\beta$。</li><li>解回 $a_n$ 后，是否满足初值和原递推。</li></ol>
-<h2>学生讲题问题</h2>
+<ol start="1"><li>原递推分母是否可能为 0。</li><li>求不动点时同乘的分母是否为 0。</li><li>两个不动点是否真的不同。</li><li>初值是否正好等于某个不动点。</li><li>构造 $\frac{a_n-\alpha}{a_n-\beta}$ 时，是否出现 $a_n=\beta$。</li><li>解回 $a_n$ 后，是否满足初值和原递推。</li></ol>
+<h2 id="section-21">学生讲题问题</h2>
 <p>学生讲这一页时，不要求背公式，要求能回答：</p>
-<ol><li>什么是不动点？</li><li>为什么递推题里要找不动点？</li><li>为什么看一个距离不够，而要看两个距离的比？</li><li>核心等式</li></ol>
+<ol start="1"><li>什么是不动点？</li><li>为什么递推题里要找不动点？</li><li>为什么看一个距离不够，而要看两个距离的比？</li><li>核心等式</li></ol>
 <div class="math-display">   $$
    f(x)-\alpha
    =\frac{(p-\alpha B)(x-\alpha)}{Bx+C}
    $$</div>
 <p>   是怎么推出来的？</p>
-<ol><li>为什么 $\{b_n\}$ 会成为等比数列？</li><li>最后如何从 $b_n$ 解回 $a_n$？</li><li>哪些分母不能为 0？</li></ol>
-<p>如果这些问题能讲清楚，才说明她不是在照搬，而是在理解这个方法。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">数列</a></li><li>源文件：<code>content/09_high_school_math/01_sequences/01_general_term_fixed_point_ratio_principle_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-general-term-exercises-zh.html">数列求通项公式专项练习</a></h3><p>这份练习按“题型识别”编排。每个题型至少 5 道题，建议学生先判断方法，再动笔计算；点开解答前，先尝试把“为什么用这个方法”讲出来。</p></div><div class="note-item"><h3><a href="01-general-term-zh.html">数列求通项公式</a></h3><p>这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。</p></div><div class="note-item"><h3><a href="02-summation-exercises-zh.html">数列求和专项练习</a></h3><p>这份练习按“题型识别”编排，共 6 类，每类 5 题。做题前先口头回答：通项有什么结构？为什么选这个方法？点开解答前，先写出至少一行关键变形。</p></div><div class="note-item"><h3><a href="02-summation-zh.html">数列求和：从通项结构到求和方法</a></h3><p>数列求和不是“背六种技巧”，而是研究一个明确对象：已知数列 $\{a_n\}$ 的通项或结构，求它的前 $n$ 项和</p></div></div></section></aside></div>
+<ol start="5"><li>为什么 $\{b_n\}$ 会成为等比数列？</li><li>最后如何从 $b_n$ 解回 $a_n$？</li><li>哪些分母不能为 0？</li></ol>
+<p>如果这些问题能讲清楚，才说明她不是在照搬，而是在理解这个方法。</p></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：等差等比数列、因式分解、分式合法性</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li><li><a href="01-general-term-exercises-zh.html">配套练习：数列求通项公式专项练习</a></li><li><a href="02-summation-exercises-zh.html">配套练习：数列求和专项练习</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">本页研究什么对象</a></li><li class="toc-level-2"><a href="#section-2">定义：不动点</a></li><li class="toc-level-2"><a href="#section-3">核心命题</a></li><li class="toc-level-2"><a href="#section-4">为什么这个命题成立</a></li><li class="toc-level-2"><a href="#section-5">这个新变量到底在表示什么</a></li><li class="toc-level-2"><a href="#section-6">手动推导流程</a></li><li class="toc-level-3"><a href="#section-7">第一步：写出变换和定义域</a></li><li class="toc-level-3"><a href="#section-8">第二步：求不动点</a></li><li class="toc-level-3"><a href="#section-9">第三步：先讨论特殊初值</a></li><li class="toc-level-3"><a href="#section-10">第四步：构造距离比</a></li><li class="toc-level-3"><a href="#section-11">第五步：把 $b_n$ 解回 $a_n$</a></li><li class="toc-level-2"><a href="#section-12">完整例题</a></li><li class="toc-level-3"><a href="#section-13">1. 写出变换</a></li><li class="toc-level-3"><a href="#section-14">2. 求不动点</a></li><li class="toc-level-3"><a href="#section-15">3. 构造距离比</a></li><li class="toc-level-3"><a href="#section-16">4. 求出 $b_n$</a></li><li class="toc-level-3"><a href="#section-17">5. 解回 $a_n$</a></li><li class="toc-level-3"><a href="#section-18">6. 检查</a></li><li class="toc-level-2"><a href="#section-19">和“平移后取倒数法”的关系</a></li><li class="toc-level-2"><a href="#section-20">边界条件</a></li><li class="toc-level-2"><a href="#section-21">学生讲题问题</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">数列</a></li><li>源文件：<code>content/09_high_school_math/01_sequences/01_general_term_fixed_point_ratio_principle_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-general-term-exercises-zh.html">数列求通项公式专项练习</a></h3><p>这份练习按“题型识别”编排。每个题型至少 5 道题，建议学生先判断方法，再动笔计算；点开解答前，先尝试把“为什么用这个方法”讲出来。</p></div><div class="note-item"><h3><a href="01-general-term-zh.html">数列求通项公式</a></h3><p>这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。</p></div><div class="note-item"><h3><a href="02-summation-exercises-zh.html">数列求和专项练习</a></h3><p>这份练习按“题型识别”编排，共 6 类，每类 5 题。做题前先口头回答：通项有什么结构？为什么选这个方法？点开解答前，先写出至少一行关键变形。</p></div><div class="note-item"><h3><a href="02-summation-zh.html">数列求和：从通项结构到求和方法</a></h3><p>数列求和不是“背六种技巧”，而是研究一个明确对象：已知数列 $\{a_n\}$ 的通项或结构，求它的前 $n$ 项和</p></div><div class="note-item"><h3><a href="90-mixed-checkpoint-zh.html">数列：混合检测与讲题验收</a></h3><p>先独立完成，再展开解析。题目不标方法名称；请写出选择依据和限制条件。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

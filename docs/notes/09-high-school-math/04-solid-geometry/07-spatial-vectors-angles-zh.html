@@ -34,49 +34,50 @@
       <h1>空间向量求角</h1>
       <p>向量求角的本质是把“角”转成两个向量或两个法向量的夹角。公式不难，难的是判断应该取方向向量还是法向量。</p>
     </div>
-    <div class="subject-grid"><section class="page-section article"><h2>线线角</h2>
+    <div class="subject-grid"><a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article"><p>以下方向向量与法向量均须非零。</p>
+<h2 id="section-1">线线角</h2>
 <p>若直线 $l_1,l_2$ 的方向向量分别为 $\mathbf u,\mathbf v$，则两直线所成角 $\theta$ 满足</p>
 <div class="math-display">$$
 \cos\theta=\frac{|\mathbf u\cdot\mathbf v|}{|\mathbf u||\mathbf v|}.
 $$</div>
-<p>这里取绝对值，是因为高中通常求的是锐角或直角。</p>
-<h2>线面角</h2>
+<p>这里取绝对值，是因为取两直线较小的夹角，范围为 $[0,90^\circ]$（平行时为零）。</p>
+<h2 id="section-2">线面角</h2>
 <p>若直线 $l$ 的方向向量为 $\mathbf u$，平面 $\alpha$ 的法向量为 $\mathbf n$，直线与平面所成角为 $\theta$，则</p>
 <div class="math-display">$$
 \sin\theta=\frac{|\mathbf u\cdot\mathbf n|}{|\mathbf u||\mathbf n|}.
 $$</div>
-<p>为什么是正弦？因为 $\mathbf u$ 与法向量 $\mathbf n$ 的夹角和线面角互余。</p>
-<h2>二面角</h2>
+<p>为什么是正弦？因为直线方向与法线方向的较小夹角和线面角互余；任取有向法向量得到的向量夹角还可能是这个较小夹角的补角。</p>
+<h2 id="section-3">二面角</h2>
 <p>若两个平面的法向量分别为 $\mathbf n_1,\mathbf n_2$，则二面角的平面角与两个法向量夹角相等或互补。</p>
-<p>常用公式：</p>
+<p>若只求两平面较小的夹角（包括直角），可用：</p>
 <div class="math-display">$$
 \cos\theta=\frac{|\mathbf n_1\cdot\mathbf n_2|}{|\mathbf n_1||\mathbf n_2|}.
 $$</div>
 <p>如果题目要求的是锐二面角，取绝对值即可；如果题目明确要钝角，需要结合图形判断是否取补角。</p>
-<h2>选择向量的规则</h2>
-<ol><li>求两条线的角：取两条线的方向向量。</li><li>求直线和平面的角：取直线方向向量和平面法向量，用正弦。</li><li>求两个平面的角：取两个平面的法向量，用余弦，再判断锐钝。</li></ol>
-<h2>易错点</h2>
-<ol><li>线面角公式用的是正弦，不是余弦。</li><li>二面角不一定等于两个法向量的锐角，需要看题目要求。</li><li>法向量可以反向，所以结果通常要取绝对值。</li><li>没有先确认方向向量或法向量是否正确，就直接套公式。</li></ol>
-<h2>训练题</h2>
-<ol><li>直线 $l_1,l_2$ 的方向向量分别为 $(1,1,0)$ 与 $(1,0,1)$，求两直线所成角。</li></ol>
+<h2 id="section-4">选择向量的规则</h2>
+<ol start="1"><li>求两条线的角：取两条线的方向向量。</li><li>求直线和平面的角：取直线方向向量和平面法向量，用正弦。</li><li>求两个平面的角：取两个平面的法向量，用余弦，再判断锐钝。</li></ol>
+<h2 id="section-5">易错点</h2>
+<ol start="1"><li>线面角公式用的是正弦，不是余弦。</li><li>二面角不一定等于两个法向量的锐角，需要看题目要求。</li><li>法向量可以反向，所以结果通常要取绝对值。</li><li>没有先确认方向向量或法向量是否正确，就直接套公式。</li></ol>
+<h2 id="section-6">训练题</h2>
+<ol start="1"><li>直线 $l_1,l_2$ 的方向向量分别为 $(1,1,0)$ 与 $(1,0,1)$，求两直线所成角。</li></ol>
 <details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>内积为 $1$，两个向量模长均为 $\sqrt2$，所以</p>
 <div class="math-display">$$
 \cos\theta=\frac{1}{2}.
 $$</div>
 <p>故 $\theta=60^\circ$。</p></div></details>
-<ol><li>直线方向向量为 $\mathbf u=(1,1,1)$，平面法向量为 $\mathbf n=(0,0,1)$，求线面角。</li></ol>
+<ol start="2"><li>直线方向向量为 $\mathbf u=(1,1,1)$，平面法向量为 $\mathbf n=(0,0,1)$，求线面角。</li></ol>
 <details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><div class="math-display">$$
 \sin\theta=\frac{|1|}{\sqrt3\cdot1}=\frac1{\sqrt3}.
 $$</div>
 <p>所以 $\theta=\arcsin\frac1{\sqrt3}$。</p></div></details>
-<ol><li>两个平面的法向量分别为 $(1,0,0)$ 与 $(0,1,0)$，求二面角。</li></ol>
+<ol start="3"><li>两个平面的法向量分别为 $(1,0,0)$ 与 $(0,1,0)$，求二面角。</li></ol>
 <details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>两个法向量垂直，所以两个平面也互相垂直，二面角为 $90^\circ$。</p></div></details>
-<ol><li>两个平面的法向量分别为 $(1,1,0)$ 与 $(1,-1,0)$，求它们所成锐二面角。</li></ol>
-<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>内积为 $0$，所以锐二面角为 $90^\circ$。</p></div></details>
-<ol><li>若直线方向向量 $\mathbf u$ 与平面法向量 $\mathbf n$ 平行，则直线与平面的位置关系是什么？</li></ol>
+<ol start="4"><li>两个平面的法向量分别为 $(1,1,0)$ 与 $(1,-1,0)$，求它们所成二面角。</li></ol>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>内积为 $0$，所以二面角为 $90^\circ$。</p></div></details>
+<ol start="5"><li>若直线方向向量 $\mathbf u$ 与平面法向量 $\mathbf n$ 平行，则直线与平面的位置关系是什么？</li></ol>
 <details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>方向向量平行于法向量，说明直线垂直于平面。线面角为 $90^\circ$。</p></div></details>
-<h2>讲题追问</h2>
-<p>每次套公式前先问学生：我现在使用的是方向向量还是法向量？这个问题能防止大部分线面角和二面角公式混用。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">立体几何/空间向量</a></li><li>源文件：<code>content/09_high_school_math/04_solid_geometry/07_spatial_vectors_angles_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-solid-geometry-spatial-vectors-zh.html">立体几何与空间向量：从图形到坐标</a></h3><p>这一页是立体几何专题的总览。它不直接追求“背完所有公式”，而是建立一条上课主线：先把空间图形的语言说清楚，再用平行、垂直、角、距离、体积这些关系组织题目；当几何法不够稳定时，再把空间关系翻译成向量和坐标。</p></div><div class="note-item"><h3><a href="01-space-language-axioms-zh.html">空间图形语言与基本公理</a></h3><p>学立体几何的第一步不是套公式，而是把图读成数学语言。图上看到的是棱、面、顶点；题目真正使用的是点、线、面之间的位置关系。</p></div><div class="note-item"><h3><a href="02-parallel-relations-zh.html">空间平行：线线、线面、面面</a></h3><p>空间平行题的核心是“把高维关系降到低维关系”。线面平行通常转化为线线平行，面面平行通常转化为两组相交直线分别平行。</p></div><div class="note-item"><h3><a href="02-solid-geometry-exercises-zh.html">立体几何与空间向量：图形题库</a></h3><p>这一页按本地考点 22 到考点 28 重写整理。每道题先给题干图形；解析中的辅助线、坐标系和计算过程放在“查看解析”里。</p></div><div class="note-item"><h3><a href="03-perpendicular-relations-zh.html">空间垂直：线线、线面、面面</a></h3><p>空间垂直比空间平行更容易出错，因为“看起来垂直”不可靠。垂直证明必须说明垂直发生在哪里，是线线垂直、线面垂直，还是面面垂直。</p></div><div class="note-item"><h3><a href="03-solid-geometry-local-full-exercises-zh.html">立体几何与空间向量：考点 22-28 全量本地题库</a></h3><p>这一页把本地一轮复习资料中考点 22 到考点 28 的练习题按原考点完整整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后补充训练和查漏补缺。</p></div><div class="note-item"><h3><a href="04-volume-surface-equivolume-zh.html">体积、表面积与等体积法</a></h3><p>体积和表面积题表面上是计算，实质上仍然是读图。体积题的关键是找底面和高；表面积题的关键是确认哪些面暴露在外，哪些面被拼接或遮挡。</p></div><div class="note-item"><h3><a href="05-space-angles-geometric-zh.html">空间角的几何法</a></h3><p>空间角有三类：异面直线所成角、直线与平面所成角、二面角。它们的共同思想是把空间中的角还原成某个平面内的角。</p></div></div></section></aside></div>
+<h2 id="section-7">讲题追问</h2>
+<p>每次套公式前先问学生：我现在使用的是方向向量还是法向量？这个问题能防止大部分线面角和二面角公式混用。</p></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：平面几何、空间点线面关系、向量</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a rel="prev" href="06-spatial-vectors-coordinates-normals-zh.html">上一节：空间向量：建系、坐标与法向量</a></li><li><a rel="next" href="08-spatial-vectors-distances-zh.html">下一节：空间向量求距离</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li><li><a href="02-solid-geometry-exercises-zh.html">配套练习：立体几何与空间向量：图形题库</a></li><li><a href="11-solid-geometry-module-drills-zh.html">配套练习：立体几何与空间向量：模块分层训练题库</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">线线角</a></li><li class="toc-level-2"><a href="#section-2">线面角</a></li><li class="toc-level-2"><a href="#section-3">二面角</a></li><li class="toc-level-2"><a href="#section-4">选择向量的规则</a></li><li class="toc-level-2"><a href="#section-5">易错点</a></li><li class="toc-level-2"><a href="#section-6">训练题</a></li><li class="toc-level-2"><a href="#section-7">讲题追问</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">立体几何/空间向量</a></li><li>源文件：<code>content/09_high_school_math/04_solid_geometry/07_spatial_vectors_angles_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-solid-geometry-spatial-vectors-zh.html">立体几何与空间向量：从图形到坐标</a></h3><p>这一页是立体几何专题的总览。它不直接追求“背完所有公式”，而是建立一条上课主线：先把空间图形的语言说清楚，再用平行、垂直、角、距离、体积这些关系组织题目；当几何法不够稳定时，再把空间关系翻译成向量和坐标。</p></div><div class="note-item"><h3><a href="01-space-language-axioms-zh.html">空间图形语言与基本公理</a></h3><p>学立体几何的第一步不是套公式，而是把图读成数学语言。图上看到的是棱、面、顶点；题目真正使用的是点、线、面之间的位置关系。</p></div><div class="note-item"><h3><a href="02-parallel-relations-zh.html">空间平行：线线、线面、面面</a></h3><p>空间平行题的核心是“把高维关系降到低维关系”。线面平行通常转化为线线平行，面面平行通常转化为两组相交直线分别平行。</p></div><div class="note-item"><h3><a href="02-solid-geometry-exercises-zh.html">立体几何与空间向量：图形题库</a></h3><p>这一页按本地考点 22 到考点 28 重写整理。每道题先给题干图形；解析中的辅助线、坐标系和计算过程放在“查看解析”里。</p></div><div class="note-item"><h3><a href="03-perpendicular-relations-zh.html">空间垂直：线线、线面、面面</a></h3><p>空间垂直比空间平行更容易出错，因为“看起来垂直”不可靠。垂直证明必须说明垂直发生在哪里，是线线垂直、线面垂直，还是面面垂直。</p></div><div class="note-item"><h3><a href="03-solid-geometry-local-full-exercises-zh.html">立体几何与空间向量：考点 22-28 全量本地题库</a></h3><p>这一页把本地一轮复习资料中考点 22 到考点 28 的练习题按原考点完整整理出来。题干中的公式、图形和原 Word 图片会一起呈现；解析版内容折叠在“查看解析版原文”里，适合课后补充训练和查漏补缺。</p></div><div class="note-item"><h3><a href="04-volume-surface-equivolume-zh.html">体积、表面积与等体积法</a></h3><p>体积和表面积题表面上是计算，实质上仍然是读图。体积题的关键是找底面和高；表面积题的关键是确认哪些面暴露在外，哪些面被拼接或遮挡。</p></div><div class="note-item"><h3><a href="05-space-angles-geometric-zh.html">空间角的几何法</a></h3><p>空间角有三类：异面直线所成角、直线与平面所成角、二面角。它们的共同思想是把空间中的角还原成某个平面内的角。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

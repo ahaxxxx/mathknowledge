@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import html
+import json
 import os
 import re
 import time
@@ -346,13 +347,14 @@ def render_inline(text: str, source_path: Path, output_rel: Path) -> str:
     return escaped
 
 
-def render_list(items: Iterable[str], ordered: bool, source_path: Path, output_rel: Path) -> str:
+def render_list(items: Iterable[str], ordered: bool, source_path: Path, output_rel: Path, start: int = 1) -> str:
     tag = "ol" if ordered else "ul"
     rendered = "".join(
         f"<li>{render_inline(item.strip(), source_path, output_rel)}</li>"
         for item in items
     )
-    return f"<{tag}>{rendered}</{tag}>"
+    attrs = f' start="{start}"' if ordered else ""
+    return f"<{tag}{attrs}>{rendered}</{tag}>"
 
 
 def render_text_paragraph(text: str, source_path: Path, output_rel: Path) -> str:
@@ -575,8 +577,9 @@ def render_markdown(markdown_text: str, source_path: Path, output_rel: Path) -> 
             continue
 
         if re.match(r"^\d+\.\s+", stripped):
+            start_number = int(re.match(r"^(\d+)", stripped).group(1))
             items, i = collect_list_items(lines, i, ordered=True)
-            blocks.append(render_list(items, True, source_path, output_rel))
+            blocks.append(render_list(items, True, source_path, output_rel, start_number))
             continue
 
         paragraph_lines = [line]
@@ -767,14 +770,14 @@ def render_directory_page(node: DirectoryNode, nodes: dict[Path, DirectoryNode])
             "</section>"
         )
 
-    article_count = len(node.notes) + (1 if node.readme else 0)
+    article_count = sum(len(n.notes) for path, n in nodes.items() if path == node.source_dir or node.source_dir in path.parents)
     child_count = len(node.children)
     meta_html = (
         '<section class="page-section">'
         "<h2>自动发布说明</h2>"
         "<ul>"
         f"<li>源目录：<code>{source_dir_label}</code></li>"
-        f"<li>当前文章数：{article_count}</li>"
+        f"<li>文章总数（含子目录，不含目录介绍）：{article_count}</li>"
         f"<li>子目录数：{child_count}</li>"
         "<li>这个页面由 <code>scripts/build_notes.py</code> 自动生成。</li>"
         "</ul>"
@@ -796,6 +799,52 @@ def render_directory_page(node: DirectoryNode, nodes: dict[Path, DirectoryNode])
     )
 
 
+
+def article_navigation(article_html: str) -> tuple[str, str]:
+    entries = []
+    def heading(match):
+        level, body = match.group(1), match.group(2)
+        anchor = f"section-{len(entries) + 1}"
+        label = html.escape(html.unescape(re.sub(r"<[^>]+>", "", body)))
+        entries.append(f'<li class="toc-level-{level}"><a href="#{anchor}">{label}</a></li>')
+        return f'<h{level} id="{anchor}">{body}</h{level}>'
+    article_html = re.sub(r"<h([23])>(.*?)</h\1>", heading, article_html, flags=re.S)
+    toc = '<nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul>' + ''.join(entries) + '</ul></nav>'
+    return article_html, toc
+
+
+def learning_navigation(note: Note, node: DirectoryNode) -> str:
+    if not note.source_rel.parts or note.source_rel.parts[0] != "09_high_school_math":
+        return ""
+    config_path = ROOT / "scripts" / "high_school_learning.json"
+    config = json.loads(config_path.read_text(encoding="utf-8"))
+    settings = config.get(note.source_dir.name)
+    if not settings:
+        return ""
+    # README's explicit links express the teaching order; append remaining lessons.
+    order = []
+    if node.readme:
+        for filename in re.findall(r"\]\(\./([^/)]+\.md)\)", node.readme.content):
+            if filename != "README.md" and filename not in order:
+                order.append(filename)
+    order += [n.source_path.name for n in node.notes if n.source_path.name not in order]
+    core = [n for filename in order for n in node.notes if n.source_path.name == filename
+            and not any(token in filename for token in ("local_full", "checkpoint", "exercises", "exercise_bank", "drills", "fixed_point"))]
+    links = [f'<a href="{relative_href(note.output_rel, node.output_rel)}">专题路线与先修内容</a>']
+    if note in core:
+        index = core.index(note)
+        if index:
+            links.append(f'<a rel="prev" href="{relative_href(note.output_rel, core[index-1].output_rel)}">上一节：{html.escape(core[index-1].title)}</a>')
+        if index + 1 < len(core):
+            links.append(f'<a rel="next" href="{relative_href(note.output_rel, core[index+1].output_rel)}">下一节：{html.escape(core[index+1].title)}</a>')
+    checkpoint = next((n for n in node.notes if n.source_path.name == settings['checkpoint']), None)
+    if checkpoint and checkpoint != note:
+        links.append(f'<a href="{relative_href(note.output_rel, checkpoint.output_rel)}">混合检测与讲题验收</a>')
+    exercises = [n for n in node.notes if any(t in n.source_path.name for t in ("exercises", "drills", "exercise_bank")) and "local_full" not in n.source_path.name]
+    links += [f'<a href="{relative_href(note.output_rel,n.output_rel)}">配套练习：{html.escape(n.title)}</a>' for n in exercises[:2] if n != note]
+    return '<section class="page-section learning-nav"><h2>学习路线</h2><p>先修：' + html.escape(settings['prerequisites']) + '</p><ul>' + ''.join('<li>'+link+'</li>' for link in links) + '</ul></section>'
+
+
 def render_note_page(note: Note, nodes: dict[Path, DirectoryNode]) -> str:
     root_prefix = root_prefix_for(note.output_rel)
     directory_node = nodes[note.source_dir]
@@ -804,6 +853,8 @@ def render_note_page(note: Note, nodes: dict[Path, DirectoryNode]) -> str:
         note.source_path,
         note.output_rel,
     )
+    article_html, toc_html = article_navigation(article_html)
+    learning_html = learning_navigation(note, directory_node)
     sibling_notes = [item for item in directory_node.notes if item.output_rel != note.output_rel]
     sibling_links = "".join(render_note_links(item, note.output_rel) for item in sibling_notes[:8])
     sibling_section = (
@@ -827,8 +878,8 @@ def render_note_page(note: Note, nodes: dict[Path, DirectoryNode]) -> str:
     )
     body_html = (
         '<div class="subject-grid">'
-        f'<section class="page-section article">{article_html}</section>'
-        f'<aside class="rail">{meta_html}{sibling_section}</aside>'
+        f'<a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article">{article_html}</section>'
+        f'<aside id="reading-guide" class="rail">{learning_html}{toc_html}<details class="source-info"><summary>来源信息</summary>{meta_html}</details>{sibling_section}</aside>'
         "</div>"
     )
     return page_shell(

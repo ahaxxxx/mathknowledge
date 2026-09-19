@@ -1,5 +1,7 @@
 # 导数：考点 49-55 全量本地题库
 
+> 核验说明：题号与完整题干（含公式图片指纹）匹配仅核验对应关系，不代表答案已逐题验算。标为“解析待核验”的题目暂不展示原配解析。
+
 这一页保留本地一轮复习资料的原题、公式图片与图形。它是课后抽题资料池，不替代前面的讲义和手写推导：第一次学习请先完成定义、定理和方法来源，再到这里限时训练。
 
 返回专题首页：[导数](./README.md)。优先训练：[导数：分层训练与费曼讲题](./08_derivative_drills_zh.md)。
@@ -22,7 +24,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -42,7 +44,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -62,7 +64,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -82,7 +84,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -103,7 +105,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -123,7 +125,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -144,7 +146,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -166,17 +168,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">8．若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-065-bdfec828f1.png" alt="本地解析几何资料图片" width="4000" height="1088">，则曲线<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-066-3f2a04d008.png" alt="本地解析几何资料图片" width="1536" height="640">在点<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-067-937789d99f.png" alt="本地解析几何资料图片" width="1600" height="640">处的切线的倾斜角是     。</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-068-d2ef2b92c5.png" alt="本地解析几何资料图片" width="423" height="987"></p>
-<p class="local-docx-line">【解析】因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-069-a6bd654a48.png" alt="本地解析几何资料图片" width="4032" height="1088">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-070-bfd240b945.png" alt="本地解析几何资料图片" width="3200" height="992"></p>
-<p class="local-docx-line">因此<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-071-5ffb69e8e2.png" alt="本地解析几何资料图片" width="2560" height="608">，倾斜角为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-072-71c5e4c2e5.png" alt="本地解析几何资料图片" width="416" height="992">.</p>
-<p class="local-docx-line">【题组二  在某点处求切线】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -188,7 +182,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -209,7 +203,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -230,7 +224,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -251,7 +245,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -273,7 +267,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -296,7 +290,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -317,7 +311,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -338,18 +332,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">8．若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-145-d82496a0b2.png" alt="本地解析几何资料图片" width="4256" height="640">为奇函数，则曲线<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-146-3f2a04d008.png" alt="本地解析几何资料图片" width="1536" height="640">在点<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-147-5bcfbdf14a.png" alt="本地解析几何资料图片" width="1408" height="640">处的切线方程为______________．</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-148-8ef19508e7.png" alt="本地解析几何资料图片" width="1984" height="512"></p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-149-e7f0aedb61.png" alt="本地解析几何资料图片" width="4288" height="640">为奇函数,则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-150-7f3ef00f2b.png" alt="本地解析几何资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-151-0d7fe584fc.png" alt="本地解析几何资料图片" width="2688" height="640">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-152-1753749031.png" alt="本地解析几何资料图片" width="2464" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-153-1c911e770f.png" alt="本地解析几何资料图片" width="3424" height="640">，又<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-154-12b6ebf6ff.png" alt="本地解析几何资料图片" width="1600" height="640">，</p>
-<p class="local-docx-line">曲线<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-155-9c6ae7a84c.png" alt="本地解析几何资料图片" width="1536" height="640">在点<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-156-753e4f7e76.png" alt="本地解析几何资料图片" width="1408" height="704">处的切线方程为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-157-f2815466d3.png" alt="本地解析几何资料图片" width="1856" height="512">,即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-158-59a5f5bdf1.png" alt="本地解析几何资料图片" width="1984" height="512">.</p>
-<p class="local-docx-line">【题组三  过某点求切线】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -361,7 +346,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -383,7 +368,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -409,7 +394,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -435,7 +420,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -460,7 +445,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -481,7 +466,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -502,20 +487,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">7．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-236-106c7bed3a.png" alt="本地解析几何资料图片" width="2208" height="640">和点<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-237-ec958a2a33.png" alt="本地解析几何资料图片" width="1344" height="640">，则过点<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-238-b68700206f.png" alt="本地解析几何资料图片" width="352" height="384">与该函数图像相切的直线条数为 。</p>
-<p class="local-docx-line">【答案】2</p>
-<p class="local-docx-line">【解析】函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-239-106c7bed3a.png" alt="本地解析几何资料图片" width="2208" height="640">和点<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-240-ec958a2a33.png" alt="本地解析几何资料图片" width="1344" height="640">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-241-a4db0dc30c.png" alt="本地解析几何资料图片" width="2528" height="640">所以点<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-242-ec958a2a33.png" alt="本地解析几何资料图片" width="1344" height="640">没有在函数的图像上设切点坐标为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-243-9a696af9f8.png" alt="本地解析几何资料图片" width="1248" height="640"> ,则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-244-226bf0078d.png" alt="本地解析几何资料图片" width="1952" height="608">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-245-3fcb1a23bf.png" alt="本地解析几何资料图片" width="2400" height="640"></p>
-<p class="local-docx-line">由导数的几何意义可知,过切点的斜率为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-246-7b177ab597.png" alt="本地解析几何资料图片" width="1792" height="608"></p>
-<p class="local-docx-line">过<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-247-ec958a2a33.png" alt="本地解析几何资料图片" width="1344" height="640">于切点的斜率表示为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-248-a5f63432f2.png" alt="本地解析几何资料图片" width="1600" height="1088"></p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-249-7d76ffb5a3.png" alt="本地解析几何资料图片" width="2688" height="1792">,化简可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-250-ab8d6ab6b7.png" alt="本地解析几何资料图片" width="2528" height="640"></p>
-<p class="local-docx-line">所以解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-251-46d9e90fe3.png" alt="本地解析几何资料图片" width="1024" height="576">或<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv49-a-252-c454e0777e.png" alt="本地解析几何资料图片" width="1088" height="992">则切点有两个,因而有两条切线方程</p>
-<p class="local-docx-line">【题组四  已知切线求参数】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -527,7 +501,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -549,7 +523,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -570,7 +544,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -601,7 +575,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -627,7 +601,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -647,7 +621,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -672,7 +646,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -704,14 +678,14 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">1．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-002-e7b0cc1b32.png" alt="本地解析几何资料图片" width="2784" height="640">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-003-0ecca2ce5e.png" alt="本地解析几何资料图片" width="928" height="640">的单调递增区间为______．</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-004-b5ef611281.png" alt="本地解析几何资料图片" width="864" height="640"></p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-005-0ecca2ce5e.png" alt="本地解析几何资料图片" width="928" height="640">的定义域是<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-006-c1776e85c8.png" alt="本地解析几何资料图片" width="1216" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-007-864420d498.png" alt="本地解析几何资料图片" width="3232" height="992">，令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-008-58d76564d4.png" alt="本地解析几何资料图片" width="1600" height="640">，解得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-009-67eea5e8c2.png" alt="本地解析几何资料图片" width="800" height="448">，</p>
-<p class="local-docx-line">故<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-010-0ecca2ce5e.png" alt="本地解析几何资料图片" width="928" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-011-b5ef611281.png" alt="本地解析几何资料图片" width="864" height="640">递增，故答案为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-012-b5ef611281.png" alt="本地解析几何资料图片" width="864" height="640">．</p>
+<p class="local-docx-line">2．求函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-013-2545adc3a9.png" alt="本地解析几何资料图片" width="1632" height="1056">的单调增区间是__________．</p>
+<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-014-6a243dc678.png" alt="本地解析几何资料图片" width="1344" height="640">或<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-015-1ecac80768.png" alt="本地解析几何资料图片" width="1280" height="640"></p>
+<p class="local-docx-line">【解析】由<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-016-2545adc3a9.png" alt="本地解析几何资料图片" width="1632" height="1056">，得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-017-13ed4b592d.png" alt="本地解析几何资料图片" width="2528" height="1056">令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-018-57105c3a43.png" alt="本地解析几何资料图片" width="1440" height="640">，可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-019-a31c863ccc.png" alt="本地解析几何资料图片" width="832" height="416"></p>
+<p class="local-docx-line">故函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-020-0598b4d82d.png" alt="本地解析几何资料图片" width="1664" height="1056">的单调递增区间是<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-021-e035a74929.png" alt="本地解析几何资料图片" width="1184" height="640">故答案为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-022-6a243dc678.png" alt="本地解析几何资料图片" width="1344" height="640">或<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-023-1ecac80768.png" alt="本地解析几何资料图片" width="1280" height="640">.</p>
 </div>
 :::
 
@@ -725,14 +699,13 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2．求函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-013-2545adc3a9.png" alt="本地解析几何资料图片" width="1632" height="1056">的单调增区间是__________．</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-014-6a243dc678.png" alt="本地解析几何资料图片" width="1344" height="640">或<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-015-1ecac80768.png" alt="本地解析几何资料图片" width="1280" height="640"></p>
-<p class="local-docx-line">【解析】由<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-016-2545adc3a9.png" alt="本地解析几何资料图片" width="1632" height="1056">，得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-017-13ed4b592d.png" alt="本地解析几何资料图片" width="2528" height="1056">令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-018-57105c3a43.png" alt="本地解析几何资料图片" width="1440" height="640">，可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-019-a31c863ccc.png" alt="本地解析几何资料图片" width="832" height="416"></p>
-<p class="local-docx-line">故函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-020-0598b4d82d.png" alt="本地解析几何资料图片" width="1664" height="1056">的单调递增区间是<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-021-e035a74929.png" alt="本地解析几何资料图片" width="1184" height="640">故答案为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-022-6a243dc678.png" alt="本地解析几何资料图片" width="1344" height="640">或<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-023-1ecac80768.png" alt="本地解析几何资料图片" width="1280" height="640">.</p>
+<p class="local-docx-line">3．函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-024-8f6fbd84c9.png" alt="本地解析几何资料图片" width="2048" height="512">的单调减区间是______．</p>
+<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-025-b0f9b75d1e.png" alt="本地解析几何资料图片" width="928" height="992"></p>
+<p class="local-docx-line">【解析】函数的定义域为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-026-f8e61d6bcc.png" alt="本地解析几何资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-027-fcd468435e.png" alt="本地解析几何资料图片" width="2144" height="512">，令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-028-aa7d0f42b7.png" alt="本地解析几何资料图片" width="1696" height="448">，得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-029-686f6f2a86.png" alt="本地解析几何资料图片" width="1888" height="992">函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-030-8bcb548a6e.png" alt="本地解析几何资料图片" width="1536" height="512">的单调递减区间是<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-031-903d16c4b4.png" alt="本地解析几何资料图片" width="1056" height="1088">，故答案为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-032-903d16c4b4.png" alt="本地解析几何资料图片" width="1056" height="1088">.</p>
 </div>
 :::
 
@@ -746,13 +719,13 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-024-8f6fbd84c9.png" alt="本地解析几何资料图片" width="2048" height="512">的单调减区间是______．</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-025-b0f9b75d1e.png" alt="本地解析几何资料图片" width="928" height="992"></p>
-<p class="local-docx-line">【解析】函数的定义域为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-026-f8e61d6bcc.png" alt="本地解析几何资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-027-fcd468435e.png" alt="本地解析几何资料图片" width="2144" height="512">，令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-028-aa7d0f42b7.png" alt="本地解析几何资料图片" width="1696" height="448">，得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-029-686f6f2a86.png" alt="本地解析几何资料图片" width="1888" height="992">函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-030-8bcb548a6e.png" alt="本地解析几何资料图片" width="1536" height="512">的单调递减区间是<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-031-903d16c4b4.png" alt="本地解析几何资料图片" width="1056" height="1088">，故答案为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-032-903d16c4b4.png" alt="本地解析几何资料图片" width="1056" height="1088">.</p>
+<p class="local-docx-line">4．函数f(x)＝2x2－ln x的单调递增区间是________．</p>
+<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-033-548e62ac22.png" alt="本地解析几何资料图片" width="1376" height="992"></p>
+<p class="local-docx-line">【解析】函数f(x)的定义域为(0，＋∞)，令f′(x)＝4x－<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-034-ceb1f05be6.png" alt="本地解析几何资料图片" width="1856" height="1056">＞0，得x＞<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-035-98ead14342.png" alt="本地解析几何资料图片" width="384" height="992">.递增区间为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-036-bd3a54bc52.png" alt="本地解析几何资料图片" width="1408" height="1088"></p>
 </div>
 :::
 
@@ -766,13 +739,14 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">4．函数f(x)＝2x2－ln x的单调递增区间是________．</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-033-548e62ac22.png" alt="本地解析几何资料图片" width="1376" height="992"></p>
-<p class="local-docx-line">【解析】函数f(x)的定义域为(0，＋∞)，令f′(x)＝4x－<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-034-ceb1f05be6.png" alt="本地解析几何资料图片" width="1856" height="1056">＞0，得x＞<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-035-98ead14342.png" alt="本地解析几何资料图片" width="384" height="992">.递增区间为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-036-bd3a54bc52.png" alt="本地解析几何资料图片" width="1408" height="1088"></p>
+<p class="local-docx-line">5．函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-037-e52676e220.png" alt="本地解析几何资料图片" width="1792" height="480">的单调递减区间为　　．</p>
+<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-038-e51c5886ba.png" alt="本地解析几何资料图片" width="416" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-039-c9fea40919.png" alt="本地解析几何资料图片" width="416" height="896"></p>
+<p class="local-docx-line">【解析】函数的定义域为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-040-71decd3127.png" alt="本地解析几何资料图片" width="800" height="416"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-041-0eb77b63f4.png" alt="本地解析几何资料图片" width="1824" height="480">令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-042-992d00473f.png" alt="本地解析几何资料图片" width="1344" height="448">得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-043-bb3095f3b1.png" alt="本地解析几何资料图片" width="1248" height="896">，</p>
+<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-044-6e0b027356.png" alt="本地解析几何资料图片" width="320" height="320">函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-045-03d318fe6d.png" alt="本地解析几何资料图片" width="1248" height="480">的单调递减区间是<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-046-583e73b981.png" alt="本地解析几何资料图片" width="224" height="480"> 0，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-047-23b07951b1.png" alt="本地解析几何资料图片" width="416" height="896">故答案为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-048-e51c5886ba.png" alt="本地解析几何资料图片" width="416" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-049-c9fea40919.png" alt="本地解析几何资料图片" width="416" height="896">。</p>
 </div>
 :::
 
@@ -787,16 +761,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">5．函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-037-e52676e220.png" alt="本地解析几何资料图片" width="1792" height="480">的单调递减区间为　　．</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-038-e51c5886ba.png" alt="本地解析几何资料图片" width="416" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-039-c9fea40919.png" alt="本地解析几何资料图片" width="416" height="896"></p>
-<p class="local-docx-line">【解析】函数的定义域为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-040-71decd3127.png" alt="本地解析几何资料图片" width="800" height="416"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-041-0eb77b63f4.png" alt="本地解析几何资料图片" width="1824" height="480">令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-042-992d00473f.png" alt="本地解析几何资料图片" width="1344" height="448">得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-043-bb3095f3b1.png" alt="本地解析几何资料图片" width="1248" height="896">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-044-6e0b027356.png" alt="本地解析几何资料图片" width="320" height="320">函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-045-03d318fe6d.png" alt="本地解析几何资料图片" width="1248" height="480">的单调递减区间是<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-046-583e73b981.png" alt="本地解析几何资料图片" width="224" height="480"> 0，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-047-23b07951b1.png" alt="本地解析几何资料图片" width="416" height="896">故答案为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-048-e51c5886ba.png" alt="本地解析几何资料图片" width="416" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-049-c9fea40919.png" alt="本地解析几何资料图片" width="416" height="896">。</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -808,14 +775,13 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">6．函数f(x)＝x2－ln x的单调递减区间为________．</p>
-<p class="local-docx-line">【答案】(0,1)</p>
-<p class="local-docx-line">【解析】由题意知，函数f(x)的定义域为(0，＋∞)，由f(x)＝x－＜0，得0＜x＜1，所以函数f(x)的单调递减区间为(0,1)．</p>
-<p class="local-docx-line">【题组二  单调函数求参数】</p>
+<p class="local-docx-line">1．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-050-b20f901601.png" alt="本地解析几何资料图片" width="4160" height="896">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-051-f51d79aec3.png" alt="本地解析几何资料图片" width="416" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-052-07bdf5ca6e.png" alt="本地解析几何资料图片" width="384" height="480">上为增函数，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-053-c23094f1f9.png" alt="本地解析几何资料图片" width="288" height="320">的取值范围是   。</p>
+<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-054-d0d2346d93.png" alt="本地解析几何资料图片" width="1340" height="564"></p>
+<p class="local-docx-line">【解析】函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-055-fc2f7e49d2.png" alt="本地解析几何资料图片" width="4160" height="896">，可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-056-22faba524e.png" alt="本地解析几何资料图片" width="3488" height="544">，由条件，问题转化为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-057-8120ebb064.png" alt="本地解析几何资料图片" width="2816" height="544">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-058-5bca419070.png" alt="本地解析几何资料图片" width="896" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-059-678e2efeaf.png" alt="本地解析几何资料图片" width="384" height="480">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-060-df2ccbee33.png" alt="本地解析几何资料图片" width="2144" height="896">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-061-e0314a1d05.png" alt="本地解析几何资料图片" width="896" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-062-69f59102ba.png" alt="本地解析几何资料图片" width="384" height="480">，由基本不等式知<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-063-537afd082d.png" alt="本地解析几何资料图片" width="672" height="448">.</p>
 </div>
 :::
 
@@ -830,15 +796,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">1．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-050-b20f901601.png" alt="本地解析几何资料图片" width="4160" height="896">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-051-f51d79aec3.png" alt="本地解析几何资料图片" width="416" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-052-07bdf5ca6e.png" alt="本地解析几何资料图片" width="384" height="480">上为增函数，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-053-c23094f1f9.png" alt="本地解析几何资料图片" width="288" height="320">的取值范围是   。</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-054-d0d2346d93.png" alt="本地解析几何资料图片" width="1340" height="564"></p>
-<p class="local-docx-line">【解析】函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-055-fc2f7e49d2.png" alt="本地解析几何资料图片" width="4160" height="896">，可得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-056-22faba524e.png" alt="本地解析几何资料图片" width="3488" height="544">，由条件，问题转化为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-057-8120ebb064.png" alt="本地解析几何资料图片" width="2816" height="544">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-058-5bca419070.png" alt="本地解析几何资料图片" width="896" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-059-678e2efeaf.png" alt="本地解析几何资料图片" width="384" height="480">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-060-df2ccbee33.png" alt="本地解析几何资料图片" width="2144" height="896">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-061-e0314a1d05.png" alt="本地解析几何资料图片" width="896" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-062-69f59102ba.png" alt="本地解析几何资料图片" width="384" height="480">，由基本不等式知<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-063-537afd082d.png" alt="本地解析几何资料图片" width="672" height="448">.</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -850,38 +810,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
-
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2.若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-064-fdc3a41ed0.png" alt="本地解析几何资料图片" width="2144" height="544">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-065-76cc641547.png" alt="本地解析几何资料图片" width="1056" height="480">上单调递减，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-066-9754277a8d.png" alt="本地解析几何资料图片" width="288" height="416">的取值范围为       。</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-067-28b6b1fe95.png" alt="本地解析几何资料图片" width="1280" height="896"></p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-068-a15efe52e9.png" alt="本地解析几何资料图片" width="320" height="288">函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-069-3bed5c1cf4.png" alt="本地解析几何资料图片" width="2144" height="544">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-070-4429466b86.png" alt="本地解析几何资料图片" width="1056" height="480">上单调递减，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-071-e939cbf873.png" alt="本地解析几何资料图片" width="3040" height="544">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-072-5e63ceffda.png" alt="本地解析几何资料图片" width="1056" height="480">上恒成立，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-073-88e6f42509.png" alt="本地解析几何资料图片" width="1344" height="928">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-074-60f7d9bc8f.png" alt="本地解析几何资料图片" width="1056" height="480">上恒成立，</p>
-<p class="local-docx-line">令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-075-30b8b4aa2b.png" alt="本地解析几何资料图片" width="1600" height="928">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-076-61f5c8c08c.png" alt="本地解析几何资料图片" width="800" height="416">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-077-25de205460.png" alt="本地解析几何资料图片" width="2400" height="896">，</p>
-<p class="local-docx-line">当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-078-23573c9cdf.png" alt="本地解析几何资料图片" width="1280" height="416">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-079-6011cacb7a.png" alt="本地解析几何资料图片" width="1312" height="480">，此时<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-080-0378f890eb.png" alt="本地解析几何资料图片" width="736" height="480">单调递增，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-081-87aebc5fe5.png" alt="本地解析几何资料图片" width="800" height="416">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-082-a20f0f1f69.png" alt="本地解析几何资料图片" width="1312" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-083-c2f50228c2.png" alt="本地解析几何资料图片" width="736" height="480">单调递减</p>
-<p class="local-docx-line">故当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-084-7c1385d6f4.png" alt="本地解析几何资料图片" width="800" height="416">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-085-ef83cf76bb.png" alt="本地解析几何资料图片" width="736" height="480">取得最大值<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-086-9630eaaf16.png" alt="本地解析几何资料图片" width="320" height="384">（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-087-c98fe6707b.png" alt="本地解析几何资料图片" width="736" height="896">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-088-89ad202c75.png" alt="本地解析几何资料图片" width="928" height="896">，</p>
-<p class="local-docx-line">3若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-089-8dd5e4cf94.png" alt="本地解析几何资料图片" width="2784" height="544">在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-090-d93c0196d7.png" alt="本地解析几何资料图片" width="1280" height="896">上单调递减，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-091-5ccdb4d3ee.png" alt="本地解析几何资料图片" width="288" height="320">的取值范围是    。</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-092-fc8c17c9be.png" alt="本地解析几何资料图片" width="1312" height="576"></p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-093-53d80155ea.png" alt="本地解析几何资料图片" width="3776" height="544">，若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-094-a7d8481156.png" alt="本地解析几何资料图片" width="768" height="480">在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-095-ea584e4099.png" alt="本地解析几何资料图片" width="1280" height="896">上单调递减，</p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-096-63ad476a81.png" alt="本地解析几何资料图片" width="2592" height="448">区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-097-a13412e454.png" alt="本地解析几何资料图片" width="1280" height="896">上恒成立，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-098-a13c7e5bba.png" alt="本地解析几何资料图片" width="2144" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-099-cc9f7f3f64.png" alt="本地解析几何资料图片" width="1760" height="896">，</p>
-<p class="local-docx-line">令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-100-356d58ae81.png" alt="本地解析几何资料图片" width="4800" height="896">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-101-73bb6da3ed.png" alt="本地解析几何资料图片" width="1760" height="896">，</p>
-<p class="local-docx-line">故<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-102-4a23830e2d.png" alt="本地解析几何资料图片" width="1824" height="896">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-103-382975e279.png" alt="本地解析几何资料图片" width="672" height="896">，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-104-af9c7a92ac.png" alt="本地解析几何资料图片" width="1504" height="896">的最大值是1，此时<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-105-ea0d68f9dc.png" alt="本地解析几何资料图片" width="1472" height="896">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-106-2cc7cb4faf.png" alt="本地解析几何资料图片" width="1120" height="896">，</p>
-<p class="local-docx-line">故<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-107-f9538ee53d.png" alt="本地解析几何资料图片" width="704" height="480">的最大值是<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-108-abcce051fa.png" alt="本地解析几何资料图片" width="544" height="512">，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-109-f07bf19de2.png" alt="本地解析几何资料图片" width="960" height="544">，</p>
-</div>
-:::
-
-:::
-
-### 题 39（原题 5）
-
-:::diagram
-<div class="local-docx-card local-docx-question">
-<p class="local-docx-line">5.函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-020-88301adbab.png" alt="本地解析几何资料图片" width="4576" height="896">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-021-f937c2678e.png" alt="本地解析几何资料图片" width="1344" height="480">上单调递增，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-022-55a0c63464.png" alt="本地解析几何资料图片" width="288" height="320">的范围是     。</p>
-</div>
-:::
-
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -897,15 +826,15 @@
 
 :::
 
-### 题 40（原题 6）
+### 题 39（原题 5）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">6．若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-023-c282feb104.png" alt="本地解析几何资料图片" width="2848" height="928">在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-024-e108c5e797.png" alt="本地解析几何资料图片" width="736" height="480">上单调递减，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-025-8c5042c31c.png" alt="本地解析几何资料图片" width="288" height="320">的取值范围为       。</p>
+<p class="local-docx-line">5.函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-020-88301adbab.png" alt="本地解析几何资料图片" width="4576" height="896">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-021-f937c2678e.png" alt="本地解析几何资料图片" width="1344" height="480">上单调递增，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-022-55a0c63464.png" alt="本地解析几何资料图片" width="288" height="320">的范围是     。</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -920,15 +849,15 @@
 
 :::
 
-### 题 41（原题 7）
+### 题 40（原题 6）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">7.若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-026-13067b6122.png" alt="本地解析几何资料图片" width="3392" height="896">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-027-f103ce3364.png" alt="本地解析几何资料图片" width="320" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-028-92906b4de4.png" alt="本地解析几何资料图片" width="384" height="480">上单调递增，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-029-09fb1e0e4f.png" alt="本地解析几何资料图片" width="960" height="416">的最小值是       。</p>
+<p class="local-docx-line">6．若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-023-c282feb104.png" alt="本地解析几何资料图片" width="2848" height="928">在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-024-e108c5e797.png" alt="本地解析几何资料图片" width="736" height="480">上单调递减，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-025-8c5042c31c.png" alt="本地解析几何资料图片" width="288" height="320">的取值范围为       。</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -944,15 +873,15 @@
 
 :::
 
-### 题 42（原题 8）
+### 题 41（原题 7）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">8.函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-030-3d562788af.png" alt="本地解析几何资料图片" width="2880" height="896">在定义域上是增函数，求实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-031-dfe0f4e00f.png" alt="本地解析几何资料图片" width="288" height="320">的取值范围       。</p>
+<p class="local-docx-line">7.若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-026-13067b6122.png" alt="本地解析几何资料图片" width="3392" height="896">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-027-f103ce3364.png" alt="本地解析几何资料图片" width="320" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-028-92906b4de4.png" alt="本地解析几何资料图片" width="384" height="480">上单调递增，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-029-09fb1e0e4f.png" alt="本地解析几何资料图片" width="960" height="416">的最小值是       。</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -967,15 +896,15 @@
 
 :::
 
-### 题 43（原题 9）
+### 题 42（原题 8）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">9.若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-032-140457c1d3.png" alt="本地解析几何资料图片" width="2144" height="480">在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-033-3f9a355b75.png" alt="本地解析几何资料图片" width="992" height="480">单调递增，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-034-3fc8e173b9.png" alt="本地解析几何资料图片" width="288" height="416">的取值范围是      。</p>
+<p class="local-docx-line">8.函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-030-3d562788af.png" alt="本地解析几何资料图片" width="2880" height="896">在定义域上是增函数，求实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-031-dfe0f4e00f.png" alt="本地解析几何资料图片" width="288" height="320">的取值范围       。</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -991,16 +920,15 @@
 
 :::
 
-### 题 44（原题 10）
+### 题 43（原题 9）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">10.若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-035-f8a5293c14.png" alt="本地解析几何资料图片" width="3040" height="896">存在单调递减区间，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-036-4ac2e301ab.png" alt="本地解析几何资料图片" width="288" height="416">的取值范围为      。</p>
-<p class="local-docx-line">【题组三  非单调函数求参数】</p>
+<p class="local-docx-line">9.若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-032-140457c1d3.png" alt="本地解析几何资料图片" width="2144" height="480">在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-033-3f9a355b75.png" alt="本地解析几何资料图片" width="992" height="480">单调递增，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-034-3fc8e173b9.png" alt="本地解析几何资料图片" width="288" height="416">的取值范围是      。</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1013,6 +941,21 @@
 
 :::
 
+### 题 44（原题 10）
+
+:::diagram
+<div class="local-docx-card local-docx-question">
+<p class="local-docx-line">10.若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-035-f8a5293c14.png" alt="本地解析几何资料图片" width="3040" height="896">存在单调递减区间，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-036-4ac2e301ab.png" alt="本地解析几何资料图片" width="288" height="416">的取值范围为      。</p>
+<p class="local-docx-line">【题组三  非单调函数求参数】</p>
+</div>
+:::
+
+:::solution 解析待核验
+
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
+
+:::
+
 ### 题 45（原题 1）
 
 :::diagram
@@ -1021,31 +964,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
-
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">10.若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-237-f8a5293c14.png" alt="本地解析几何资料图片" width="3040" height="896">存在单调递减区间，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-238-4ac2e301ab.png" alt="本地解析几何资料图片" width="288" height="416">的取值范围为      。</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-239-218b4379c0.png" alt="本地解析几何资料图片" width="1056" height="480"></p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-240-5f6dea7736.png" alt="本地解析几何资料图片" width="3040" height="896">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-241-813fa334a6.png" alt="本地解析几何资料图片" width="2752" height="896">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-242-8a8198f501.png" alt="本地解析几何资料图片" width="2176" height="896">，</p>
-<p class="local-docx-line">当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-243-e4cdeeaadc.png" alt="本地解析几何资料图片" width="800" height="416">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-244-139787a3fa.png" alt="本地解析几何资料图片" width="2560" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-245-5e78e9c280.png" alt="本地解析几何资料图片" width="736" height="416">时取等号，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-246-3dace74370.png" alt="本地解析几何资料图片" width="672" height="448">，</p>
-<p class="local-docx-line">当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-247-da56a67047.png" alt="本地解析几何资料图片" width="800" height="416">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-248-1a3be85bc7.png" alt="本地解析几何资料图片" width="4608" height="928">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-249-1de033e26a.png" alt="本地解析几何资料图片" width="768" height="480">递增，不成立，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-250-a4c0898e65.png" alt="本地解析几何资料图片" width="800" height="416">.</p>
-<p class="local-docx-line">【题组三  非单调函数求参数】</p>
-</div>
-:::
-
-:::
-
-### 题 46（原题 2）
-
-:::diagram
-<div class="local-docx-card local-docx-question">
-<p class="local-docx-line">2．若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-040-f62c9c0516.png" alt="本地解析几何资料图片" width="3648" height="576">恰好有三个单调区间，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-041-3bea866181.png" alt="本地解析几何资料图片" width="320" height="352">的取值范围是         。</p>
-</div>
-:::
-
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1061,16 +980,15 @@
 
 :::
 
-### 题 47（原题 3）
+### 题 46（原题 2）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">3．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-042-c631ff14aa.png" alt="本地解析几何资料图片" width="3584" height="576">,则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-043-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">在(1，3)上不单调的一个充分不必要条件是    。</p>
-<p class="local-docx-line">①<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-044-dd40f85e59.png" alt="本地解析几何资料图片" width="1824" height="992">②<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-045-bda97858ab.png" alt="本地解析几何资料图片" width="2144" height="992">③<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-046-7bf876a735.png" alt="本地解析几何资料图片" width="1728" height="928">④<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-047-44b5b2a53c.png" alt="本地解析几何资料图片" width="1632" height="992"></p>
+<p class="local-docx-line">2．若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-040-f62c9c0516.png" alt="本地解析几何资料图片" width="3648" height="576">恰好有三个单调区间，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-041-3bea866181.png" alt="本地解析几何资料图片" width="320" height="352">的取值范围是         。</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1085,15 +1003,16 @@
 
 :::
 
-### 题 48（原题 4）
+### 题 47（原题 3）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">4．已知函数f(x)＝－<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-048-2abaf0ee58.png" alt="本地解析几何资料图片" width="352" height="992">x3＋bx2－(2b＋3)x＋2－b在R上不是单调递减函数，则b的取值范围是         。</p>
+<p class="local-docx-line">3．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-042-c631ff14aa.png" alt="本地解析几何资料图片" width="3584" height="576">,则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-043-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">在(1，3)上不单调的一个充分不必要条件是    。</p>
+<p class="local-docx-line">①<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-044-dd40f85e59.png" alt="本地解析几何资料图片" width="1824" height="992">②<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-045-bda97858ab.png" alt="本地解析几何资料图片" width="2144" height="992">③<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-046-7bf876a735.png" alt="本地解析几何资料图片" width="1728" height="928">④<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-047-44b5b2a53c.png" alt="本地解析几何资料图片" width="1632" height="992"></p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1110,15 +1029,15 @@
 
 :::
 
-### 题 49（原题 5）
+### 题 48（原题 4）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">5．若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-049-5899714634.png" alt="本地解析几何资料图片" width="2752" height="640">在定义域内的一个子区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-050-607e47ec7d.png" alt="本地解析几何资料图片" width="1888" height="640">上不是单调函数，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-051-df042bd7b1.png" alt="本地解析几何资料图片" width="320" height="448">的取值范围______.</p>
+<p class="local-docx-line">4．已知函数f(x)＝－<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-048-2abaf0ee58.png" alt="本地解析几何资料图片" width="352" height="992">x3＋bx2－(2b＋3)x＋2－b在R上不是单调递减函数，则b的取值范围是         。</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1130,15 +1049,15 @@
 
 :::
 
-### 题 50（原题 6）
+### 题 49（原题 5）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">6．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-052-fbdcf5102a.png" alt="本地解析几何资料图片" width="3680" height="576">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-053-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">上不单调，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-054-df042bd7b1.png" alt="本地解析几何资料图片" width="320" height="448">的取值范围是______.</p>
+<p class="local-docx-line">5．若函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-049-5899714634.png" alt="本地解析几何资料图片" width="2752" height="640">在定义域内的一个子区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-050-607e47ec7d.png" alt="本地解析几何资料图片" width="1888" height="640">上不是单调函数，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-051-df042bd7b1.png" alt="本地解析几何资料图片" width="320" height="448">的取值范围______.</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1152,15 +1071,15 @@
 
 :::
 
-### 题 51（原题 7）
+### 题 50（原题 6）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">7．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-055-4ec61e623a.png" alt="本地解析几何资料图片" width="4992" height="640">恰有三个单调区间，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-056-3bea866181.png" alt="本地解析几何资料图片" width="320" height="352">的取值范围是__________．</p>
+<p class="local-docx-line">6．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-052-fbdcf5102a.png" alt="本地解析几何资料图片" width="3680" height="576">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-053-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">上不单调，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-054-df042bd7b1.png" alt="本地解析几何资料图片" width="320" height="448">的取值范围是______.</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1175,16 +1094,15 @@
 
 :::
 
-### 题 52（原题 8）
+### 题 51（原题 7）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">8．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-057-a9065e634d.png" alt="本地解析几何资料图片" width="3648" height="576">在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-058-bf8d760eea.png" alt="本地解析几何资料图片" width="832" height="512">上不是单调函数，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-059-3bea866181.png" alt="本地解析几何资料图片" width="320" height="352">的取值范围是_________.</p>
-<p class="local-docx-line">【题组四  利用单调性比大小】</p>
+<p class="local-docx-line">7．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-055-4ec61e623a.png" alt="本地解析几何资料图片" width="4992" height="640">恰有三个单调区间，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-056-3bea866181.png" alt="本地解析几何资料图片" width="320" height="352">的取值范围是__________．</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1199,6 +1117,21 @@
 
 :::
 
+### 题 52（原题 8）
+
+:::diagram
+<div class="local-docx-card local-docx-question">
+<p class="local-docx-line">8．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-057-a9065e634d.png" alt="本地解析几何资料图片" width="3648" height="576">在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-058-bf8d760eea.png" alt="本地解析几何资料图片" width="832" height="512">上不是单调函数，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-059-3bea866181.png" alt="本地解析几何资料图片" width="320" height="352">的取值范围是_________.</p>
+<p class="local-docx-line">【题组四  利用单调性比大小】</p>
+</div>
+:::
+
+:::solution 解析待核验
+
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
+
+:::
+
 ### 题 53（原题 1）
 
 :::diagram
@@ -1207,30 +1140,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
-
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">8．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-326-a9065e634d.png" alt="本地解析几何资料图片" width="3648" height="576">在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-327-bf8d760eea.png" alt="本地解析几何资料图片" width="832" height="512">上不是单调函数，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-328-3bea866181.png" alt="本地解析几何资料图片" width="320" height="352">的取值范围是_________.</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-329-bb54444274.png" alt="本地解析几何资料图片" width="928" height="640"></p>
-<p class="local-docx-line">【解析】对函数求导可得，f′（x）＝3x2+4x﹣a，此时对称轴<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-330-8cb6a3dee7.png" alt="本地解析几何资料图片" width="1792" height="992">，</p>
-<p class="local-docx-line">函数f（x）＝x3+2x2﹣ax+1在区间（0，1）上不是单调函数，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-331-1ac7f7d588.png" alt="本地解析几何资料图片" width="1664" height="1280">，解得：0＜a＜7，故答案为：（0，7）．</p>
-<p class="local-docx-line">【题组四  利用单调性比大小】</p>
-</div>
-:::
-
-:::
-
-### 题 54（原题 2）
-
-:::diagram
-<div class="local-docx-card local-docx-question">
-<p class="local-docx-line">2．函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-062-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">是定义域为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-063-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">的可导函数，且对任意实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-064-d5351099ec.png" alt="本地解析几何资料图片" width="320" height="352">都有<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-065-fe25b1fc17.png" alt="本地解析几何资料图片" width="2656" height="640">成立．若当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-066-d2c803ab57.png" alt="本地解析几何资料图片" width="832" height="448">时，不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-067-f7c93167e1.png" alt="本地解析几何资料图片" width="2720" height="640">成立，设<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-068-61e572629f.png" alt="本地解析几何资料图片" width="1728" height="512">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-069-f7de5fb8a0.png" alt="本地解析几何资料图片" width="1472" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-070-79ceff4c9e.png" alt="本地解析几何资料图片" width="1408" height="512">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-071-3bea866181.png" alt="本地解析几何资料图片" width="320" height="352">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-072-9eb8191ab2.png" alt="本地解析几何资料图片" width="320" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-073-9a4cf97916.png" alt="本地解析几何资料图片" width="288" height="352">的大小关系是            .</p>
-</div>
-:::
-
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1244,15 +1154,15 @@
 
 :::
 
-### 题 55（原题 3）
+### 题 54（原题 2）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">3．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-074-3f2a04d008.png" alt="本地解析几何资料图片" width="1536" height="640">的定义域为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-075-c758c91a66.png" alt="本地解析几何资料图片" width="1280" height="640">，且函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-076-bd3b0a357f.png" alt="本地解析几何资料图片" width="2080" height="640">的图象关于直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-077-45c7df2174.png" alt="本地解析几何资料图片" width="1088" height="448">对称，当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-078-70ca964a22.png" alt="本地解析几何资料图片" width="1536" height="640">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-079-643b9b7570.png" alt="本地解析几何资料图片" width="4128" height="1088">（其中<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-080-eb6d93fd81.png" alt="本地解析几何资料图片" width="1024" height="640">是<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-081-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">的导函数），若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-082-c4453a1a97.png" alt="本地解析几何资料图片" width="2176" height="640">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-083-c43741bbc0.png" alt="本地解析几何资料图片" width="2240" height="1216">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-084-dd0983d1b2.png" alt="本地解析几何资料图片" width="1792" height="1216">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-085-4e65ac6ebf.png" alt="本地解析几何资料图片" width="960" height="512">的大小关系是       .</p>
+<p class="local-docx-line">2．函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-062-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">是定义域为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-063-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">的可导函数，且对任意实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-064-d5351099ec.png" alt="本地解析几何资料图片" width="320" height="352">都有<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-065-fe25b1fc17.png" alt="本地解析几何资料图片" width="2656" height="640">成立．若当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-066-d2c803ab57.png" alt="本地解析几何资料图片" width="832" height="448">时，不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-067-f7c93167e1.png" alt="本地解析几何资料图片" width="2720" height="640">成立，设<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-068-61e572629f.png" alt="本地解析几何资料图片" width="1728" height="512">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-069-f7de5fb8a0.png" alt="本地解析几何资料图片" width="1472" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-070-79ceff4c9e.png" alt="本地解析几何资料图片" width="1408" height="512">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-071-3bea866181.png" alt="本地解析几何资料图片" width="320" height="352">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-072-9eb8191ab2.png" alt="本地解析几何资料图片" width="320" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-073-9a4cf97916.png" alt="本地解析几何资料图片" width="288" height="352">的大小关系是            .</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1269,15 +1179,15 @@
 
 :::
 
-### 题 56（原题 4）
+### 题 55（原题 3）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">4.已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-086-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">为偶函数，当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-087-6f93c6b132.png" alt="本地解析几何资料图片" width="896" height="448">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-088-a70597e888.png" alt="本地解析几何资料图片" width="2496" height="1056">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-089-6861648812.png" alt="本地解析几何资料图片" width="4974" height="776">的大小关系                。</p>
+<p class="local-docx-line">3．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-074-3f2a04d008.png" alt="本地解析几何资料图片" width="1536" height="640">的定义域为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-075-c758c91a66.png" alt="本地解析几何资料图片" width="1280" height="640">，且函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-076-bd3b0a357f.png" alt="本地解析几何资料图片" width="2080" height="640">的图象关于直线<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-077-45c7df2174.png" alt="本地解析几何资料图片" width="1088" height="448">对称，当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-078-70ca964a22.png" alt="本地解析几何资料图片" width="1536" height="640">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-079-643b9b7570.png" alt="本地解析几何资料图片" width="4128" height="1088">（其中<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-080-eb6d93fd81.png" alt="本地解析几何资料图片" width="1024" height="640">是<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-081-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">的导函数），若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-082-c4453a1a97.png" alt="本地解析几何资料图片" width="2176" height="640">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-083-c43741bbc0.png" alt="本地解析几何资料图片" width="2240" height="1216">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-084-dd0983d1b2.png" alt="本地解析几何资料图片" width="1792" height="1216">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-085-4e65ac6ebf.png" alt="本地解析几何资料图片" width="960" height="512">的大小关系是       .</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1311,6 +1221,20 @@
 
 :::
 
+### 题 56（原题 4）
+
+:::diagram
+<div class="local-docx-card local-docx-question">
+<p class="local-docx-line">4.已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-086-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">为偶函数，当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-087-6f93c6b132.png" alt="本地解析几何资料图片" width="896" height="448">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-088-a70597e888.png" alt="本地解析几何资料图片" width="2496" height="1056">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-q-089-6861648812.png" alt="本地解析几何资料图片" width="4974" height="776">的大小关系                。</p>
+</div>
+:::
+
+:::solution 解析待核验
+
+原题号与题干首段尚未唯一匹配。暂不展示可能错配的解析，请教师核对题源后补充。
+
+:::
+
 ### 题 57（原题 5）
 
 :::diagram
@@ -1319,7 +1243,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1341,7 +1265,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1368,7 +1292,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1389,7 +1313,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1413,7 +1337,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1434,7 +1358,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1457,22 +1381,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">11．已知<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-535-3a7cf19f31.png" alt="本地解析几何资料图片" width="1888" height="1184">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-536-a9a9f6afde.png" alt="本地解析几何资料图片" width="1984" height="1184">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-537-232d02ddd1.png" alt="本地解析几何资料图片" width="1024" height="768">，其中<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-538-af0b688947.png" alt="本地解析几何资料图片" width="256" height="320">是自然对数的底数，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-539-3bea866181.png" alt="本地解析几何资料图片" width="320" height="352">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-540-9eb8191ab2.png" alt="本地解析几何资料图片" width="320" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-541-9a4cf97916.png" alt="本地解析几何资料图片" width="288" height="352">的大小关系是           。</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-542-8fc9a0a14c.png" alt="本地解析几何资料图片" width="1440" height="448"></p>
-<p class="local-docx-line">【解析】对<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-543-3bea866181.png" alt="本地解析几何资料图片" width="320" height="352">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-544-9eb8191ab2.png" alt="本地解析几何资料图片" width="320" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-545-9a4cf97916.png" alt="本地解析几何资料图片" width="288" height="352">两边都取自然对数得</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-546-7764130799.png" alt="本地解析几何资料图片" width="2688" height="1088">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-547-ca137684fa.png" alt="本地解析几何资料图片" width="2848" height="1088">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-548-cb37769fa5.png" alt="本地解析几何资料图片" width="2592" height="992">，</p>
-<p class="local-docx-line">令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-549-5bdd6f42df.png" alt="本地解析几何资料图片" width="3776" height="1056">，得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-550-b28da93823.png" alt="本地解析几何资料图片" width="3840" height="1440">，设<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-551-08e247a3e0.png" alt="本地解析几何资料图片" width="3648" height="992">，</p>
-<p class="local-docx-line">得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-552-dd6ed9ee06.png" alt="本地解析几何资料图片" width="3392" height="1184">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-553-e2eaa7dff7.png" alt="本地解析几何资料图片" width="896" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-554-fa8b63462a.png" alt="本地解析几何资料图片" width="1248" height="640">递减，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-555-c3cb2b1bdc.png" alt="本地解析几何资料图片" width="2624" height="640">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-556-403ce5767f.png" alt="本地解析几何资料图片" width="1600" height="640">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-557-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-558-fa8b63462a.png" alt="本地解析几何资料图片" width="1248" height="640">递减，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-559-00161fffab.png" alt="本地解析几何资料图片" width="1984" height="1088">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-560-700950beb6.png" alt="本地解析几何资料图片" width="2048" height="1088">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-561-ecb85f0f90.png" alt="本地解析几何资料图片" width="1824" height="640">，∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-562-fad5781392.png" alt="本地解析几何资料图片" width="3584" height="1088">，</p>
-<p class="local-docx-line">∴<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-563-8fc9a0a14c.png" alt="本地解析几何资料图片" width="1440" height="448">.</p>
-<p class="local-docx-line">【题组五  利用单调性解不等式】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1484,18 +1395,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">1.设定义在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-564-e267b1373e.png" alt="本地解析几何资料图片" width="352" height="384">上的函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-565-eaa55685f4.png" alt="本地解析几何资料图片" width="768" height="480">的导函数为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-566-218a254c0e.png" alt="本地解析几何资料图片" width="832" height="480">，若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-567-d0171a55f0.png" alt="本地解析几何资料图片" width="2304" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-568-df8f37dd58.png" alt="本地解析几何资料图片" width="1760" height="480">，则不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-569-3c7144b0c0.png" alt="本地解析几何资料图片" width="2848" height="544">（其中<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-570-fae8e6fbd9.png" alt="本地解析几何资料图片" width="256" height="320">为自然对数的底数）的解集为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-571-357493a514.png" alt="本地解析几何资料图片" width="224" height="480">　　<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-572-17e75ae5f8.png" alt="本地解析几何资料图片" width="224" height="480"></p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-573-cb54ca5d90.png" alt="本地解析几何资料图片" width="1056" height="480"></p>
-<p class="local-docx-line">【解析】设<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-574-a89bf31ebf.png" alt="本地解析几何资料图片" width="2752" height="544">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-575-c7a2e025f1.png" alt="本地解析几何资料图片" width="7168" height="544">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-576-338465729a.png" alt="本地解析几何资料图片" width="2592" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-577-30cebd60a4.png" alt="本地解析几何资料图片" width="928" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-578-43afb85124.png" alt="本地解析几何资料图片" width="4576" height="544">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-579-6fe16a9161.png" alt="本地解析几何资料图片" width="1024" height="480">是<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-580-86541f073e.png" alt="本地解析几何资料图片" width="352" height="384">上的增函数，</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-581-e4d5e70115.png" alt="本地解析几何资料图片" width="3200" height="480">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-582-074d62af34.png" alt="本地解析几何资料图片" width="2016" height="480">的解集为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-583-d9908da0eb.png" alt="本地解析几何资料图片" width="1056" height="480">，</p>
-<p class="local-docx-line">即不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-584-85c6c2b561.png" alt="本地解析几何资料图片" width="2848" height="544">的解集为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv50-a-585-51dfdd58b9.png" alt="本地解析几何资料图片" width="1056" height="480">．</p>
-</div>
-:::
+原题号与题干首段尚未唯一匹配。暂不展示可能错配的解析，请教师核对题源后补充。
 
 :::
 
@@ -1507,7 +1409,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1531,7 +1433,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1555,7 +1457,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1582,7 +1484,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1608,7 +1510,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1631,7 +1533,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1658,7 +1560,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1681,7 +1583,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1706,7 +1608,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1730,7 +1632,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1758,21 +1660,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">7．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-130-1d8222496a.png" alt="本地解析几何资料图片" width="3680" height="512">.求函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-131-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">的单调区间；</p>
-<p class="local-docx-line">【答案】见解析；</p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-132-b46e7db405.png" alt="本地解析几何资料图片" width="5088" height="992">，</p>
-<p class="local-docx-line">①若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-133-b197ba4d67.png" alt="本地解析几何资料图片" width="896" height="448">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-134-76b6aa0be0.png" alt="本地解析几何资料图片" width="1568" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-135-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-136-6008a8e623.png" alt="本地解析几何资料图片" width="1344" height="640">上单调递增；</p>
-<p class="local-docx-line">②若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-137-ae7d8d43e9.png" alt="本地解析几何资料图片" width="896" height="448">,当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-138-ccc55b005f.png" alt="本地解析几何资料图片" width="1728" height="992">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-139-76b6aa0be0.png" alt="本地解析几何资料图片" width="1568" height="640">，当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-140-3310e91bae.png" alt="本地解析几何资料图片" width="1152" height="992">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-141-0044a8cbee.png" alt="本地解析几何资料图片" width="1568" height="640">，</p>
-<p class="local-docx-line">所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-142-ede062ec55.png" alt="本地解析几何资料图片" width="1280" height="1088">是函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-143-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">的单调递增区间，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-144-618a5290c9.png" alt="本地解析几何资料图片" width="1632" height="1088">是函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-145-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">的单调减区间，</p>
-<p class="local-docx-line">综上所述，当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-146-b197ba4d67.png" alt="本地解析几何资料图片" width="896" height="448">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-147-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">的单调递增区间为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-148-6008a8e623.png" alt="本地解析几何资料图片" width="1344" height="640">；</p>
-<p class="local-docx-line">当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-149-ae7d8d43e9.png" alt="本地解析几何资料图片" width="896" height="448">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-150-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">的单调递增区间为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-151-ede062ec55.png" alt="本地解析几何资料图片" width="1280" height="1088">，单调递减区间为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-152-618a5290c9.png" alt="本地解析几何资料图片" width="1632" height="1088">．</p>
-<p class="local-docx-line">【题组二  可因式分解的导函数两根】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -1784,7 +1674,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1808,7 +1698,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1831,7 +1721,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1861,7 +1751,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1888,7 +1778,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -1969,7 +1859,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2000,7 +1890,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2031,7 +1921,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2058,26 +1948,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">9．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-425-95c5577553.png" alt="本地解析几何资料图片" width="5088" height="576">，讨论<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-426-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">的单调区间；</p>
-<p class="local-docx-line">【答案】见解析</p>
-<p class="local-docx-line">【解析】函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-427-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">定义域为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-428-9a20e030db.png" alt="本地解析几何资料图片" width="1184" height="512">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-429-d58c0c0d3f.png" alt="本地解析几何资料图片" width="3456" height="992"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-430-fb7863de5a.png" alt="本地解析几何资料图片" width="5376" height="1056">.</p>
-<p class="local-docx-line">①若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-431-5088d7bb59.png" alt="本地解析几何资料图片" width="896" height="448">时，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-432-22e41e6ec7.png" alt="本地解析几何资料图片" width="1408" height="512">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-433-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-434-9a20e030db.png" alt="本地解析几何资料图片" width="1184" height="512">上单调递减；</p>
-<p class="local-docx-line">②若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-435-ec8e9a06fb.png" alt="本地解析几何资料图片" width="896" height="448">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-436-04fab3a134.png" alt="本地解析几何资料图片" width="2048" height="992">，令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-437-493db0ee4c.png" alt="本地解析几何资料图片" width="3264" height="992">或<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-438-9573dbab06.png" alt="本地解析几何资料图片" width="960" height="992">.</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-439-f8e61d6bcc.png" alt="本地解析几何资料图片" width="896" height="448">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-440-e19fc462e9.png" alt="本地解析几何资料图片" width="1152" height="512">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-441-6e95bb9a73.png" alt="本地解析几何资料图片" width="1088" height="1088">上单调递减，在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-442-bef552e1f6.png" alt="本地解析几何资料图片" width="1408" height="1088">上单调递增；</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-443-9209ffd13b.png" alt="本地解析几何资料图片" width="234" height="70"></p>
-<p class="local-docx-line">③若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-444-2105ae5573.png" alt="本地解析几何资料图片" width="800" height="416">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-445-af73c4ea7e.png" alt="本地解析几何资料图片" width="2048" height="992">，</p>
-<p class="local-docx-line">令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-446-43986673c3.png" alt="本地解析几何资料图片" width="2816" height="992">或<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-447-c4289e1c4d.png" alt="本地解析几何资料图片" width="1440" height="992">.</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-448-f8e61d6bcc.png" alt="本地解析几何资料图片" width="896" height="448">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-449-e19fc462e9.png" alt="本地解析几何资料图片" width="1152" height="512">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-450-9e8eec6d26.png" alt="本地解析几何资料图片" width="1536" height="1088">上单调递减，在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv51-a-451-c60dc4066c.png" alt="本地解析几何资料图片" width="1888" height="1088">上单调递增；</p>
-<p class="local-docx-line">【题组三  无法因式分解导函数】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2089,7 +1962,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2112,7 +1985,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2140,7 +2013,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2171,7 +2044,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2211,7 +2084,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2233,7 +2106,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2255,16 +2128,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．设函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-025-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-026-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">上存在导函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-027-e645a98aff.png" alt="本地解析几何资料图片" width="1024" height="640">，对任意的实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-028-d5351099ec.png" alt="本地解析几何资料图片" width="320" height="352">都有<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-029-54f40eeef3.png" alt="本地解析几何资料图片" width="3232" height="640">，当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-030-516acd11fd.png" alt="本地解析几何资料图片" width="1792" height="640">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-031-da4b77a9e7.png" alt="本地解析几何资料图片" width="2368" height="992">.若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-032-443b36830a.png" alt="本地解析几何资料图片" width="4352" height="992">，则实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-033-8f15ee08a2.png" alt="本地解析几何资料图片" width="416" height="352">的取值范围是           .</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-034-67a2d6621c.png" alt="本地解析几何资料图片" width="1664" height="1088"></p>
-<p class="local-docx-line">【解析】构造函数法令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-035-cf769a14e4.png" alt="本地解析几何资料图片" width="2848" height="576">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-036-045f1c7168.png" alt="本地解析几何资料图片" width="4352" height="992">，函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-037-4ab5c167de.png" alt="本地解析几何资料图片" width="864" height="512">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-038-0c68e900aa.png" alt="本地解析几何资料图片" width="1184" height="512">上为减函数，因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-039-7561aec6d5.png" alt="本地解析几何资料图片" width="6080" height="576">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-040-4e84db281f.png" alt="本地解析几何资料图片" width="2464" height="512">，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-041-4ab5c167de.png" alt="本地解析几何资料图片" width="864" height="512">为奇函数，于是<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-042-4ab5c167de.png" alt="本地解析几何资料图片" width="864" height="512">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-043-dd137fc6df.png" alt="本地解析几何资料图片" width="1504" height="512">上为减函数，而不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-044-864e00c9fd.png" alt="本地解析几何资料图片" width="4656" height="1093">可化为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-045-46fbf68150.png" alt="本地解析几何资料图片" width="2848" height="512">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-046-acef179b03.png" alt="本地解析几何资料图片" width="1760" height="448">，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-047-21988957c2.png" alt="本地解析几何资料图片" width="1280" height="992">.</p>
-<p class="local-docx-line">【题组二  加-乘不等号型】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2276,7 +2142,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2299,7 +2165,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2330,16 +2196,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．已知定义在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-105-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">上的可导函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-106-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">的导函数为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-107-d799ac66ec.png" alt="本地解析几何资料图片" width="960" height="512">，对任意实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-108-57ce811416.png" alt="本地解析几何资料图片" width="320" height="352">均有<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-109-57fb140439.png" alt="本地解析几何资料图片" width="3648" height="512">成立，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-110-8ce40e9c4b.png" alt="本地解析几何资料图片" width="2432" height="512">是奇函数，不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-111-4765f96294.png" alt="本地解析几何资料图片" width="2208" height="576">的解集是          .</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-112-6160a8a9b2.png" alt="本地解析几何资料图片" width="1024" height="544"></p>
-<p class="local-docx-line">【解析】要求解的不等式等价于<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-113-bb0749a314.png" alt="本地解析几何资料图片" width="1600" height="1056">，令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-114-fe06e7584a.png" alt="本地解析几何资料图片" width="2272" height="1056">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-115-7c3df42c71.png" alt="本地解析几何资料图片" width="5152" height="1088">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-116-e2eaa7dff7.png" alt="本地解析几何资料图片" width="896" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-117-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">上为增函数，又因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-118-8ce40e9c4b.png" alt="本地解析几何资料图片" width="2432" height="512">是奇函数，故<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-119-db3a4cb7cf.png" alt="本地解析几何资料图片" width="1408" height="640">，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-120-1509e81077.png" alt="本地解析几何资料图片" width="1312" height="640">，所以所求不等式等价于<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-121-0c48815912.png" alt="本地解析几何资料图片" width="1984" height="640">，所以解集为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-a-122-2ae2c1ff32.png" alt="本地解析几何资料图片" width="1152" height="640">.</p>
-<p class="local-docx-line">【题组三  减-除不等号型】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2351,7 +2210,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2377,7 +2236,21 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
+
+原题号与题干首段尚未唯一匹配。暂不展示可能错配的解析，请教师核对题源后补充。
+
+:::
+
+### 题 97（原题 3）
+
+:::diagram
+<div class="local-docx-card local-docx-question">
+<p class="local-docx-line">3．设函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-055-d799ac66ec.png" alt="本地解析几何资料图片" width="960" height="512">是奇函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-056-ecf9071b65.png" alt="本地解析几何资料图片" width="1952" height="512">的导函数，当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-057-f8e61d6bcc.png" alt="本地解析几何资料图片" width="896" height="448">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-058-6d1ca0ab28.png" alt="本地解析几何资料图片" width="3232" height="992">，则使得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-059-89506be75b.png" alt="本地解析几何资料图片" width="2528" height="576">成立的<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-060-d5351099ec.png" alt="本地解析几何资料图片" width="320" height="352">的取值范围是        .</p>
+</div>
+:::
+
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2397,15 +2270,15 @@
 
 :::
 
-### 题 97（原题 3）
+### 题 98（原题 4）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">3．设函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-055-d799ac66ec.png" alt="本地解析几何资料图片" width="960" height="512">是奇函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-056-ecf9071b65.png" alt="本地解析几何资料图片" width="1952" height="512">的导函数，当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-057-f8e61d6bcc.png" alt="本地解析几何资料图片" width="896" height="448">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-058-6d1ca0ab28.png" alt="本地解析几何资料图片" width="3232" height="992">，则使得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-059-89506be75b.png" alt="本地解析几何资料图片" width="2528" height="576">成立的<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-060-d5351099ec.png" alt="本地解析几何资料图片" width="320" height="352">的取值范围是        .</p>
+<p class="local-docx-line">4．定义在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-061-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">上的函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-062-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">,其导函数为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-063-eb6d93fd81.png" alt="本地解析几何资料图片" width="1024" height="640">,且<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-064-ce3b1130a0.png" alt="本地解析几何资料图片" width="3616" height="640">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-065-0377e31d8a.png" alt="本地解析几何资料图片" width="2016" height="640">,则不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-066-7488095fb0.png" alt="本地解析几何资料图片" width="3616" height="640">的解集为            .</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2424,15 +2297,15 @@
 
 :::
 
-### 题 98（原题 4）
+### 题 99（原题 5）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">4．定义在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-061-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">上的函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-062-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">,其导函数为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-063-eb6d93fd81.png" alt="本地解析几何资料图片" width="1024" height="640">,且<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-064-ce3b1130a0.png" alt="本地解析几何资料图片" width="3616" height="640">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-065-0377e31d8a.png" alt="本地解析几何资料图片" width="2016" height="640">,则不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-066-7488095fb0.png" alt="本地解析几何资料图片" width="3616" height="640">的解集为            .</p>
+<p class="local-docx-line">5．己知定义在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-067-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">上的可导函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-068-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">的导函数为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-069-5ad8cf0637.png" alt="本地解析几何资料图片" width="928" height="512">，满足<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-070-6e6fe4b6db.png" alt="本地解析几何资料图片" width="2048" height="512">，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-071-3c40b03c3b.png" alt="本地解析几何资料图片" width="1376" height="512">为偶函数，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-072-f28b70a950.png" alt="本地解析几何资料图片" width="1344" height="512">，则不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-073-46794b03b9.png" alt="本地解析几何资料图片" width="1536" height="576">的解集为       .</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2449,15 +2322,15 @@
 
 :::
 
-### 题 99（原题 5）
+### 题 100（原题 6）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">5．己知定义在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-067-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">上的可导函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-068-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">的导函数为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-069-5ad8cf0637.png" alt="本地解析几何资料图片" width="928" height="512">，满足<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-070-6e6fe4b6db.png" alt="本地解析几何资料图片" width="2048" height="512">，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-071-3c40b03c3b.png" alt="本地解析几何资料图片" width="1376" height="512">为偶函数，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-072-f28b70a950.png" alt="本地解析几何资料图片" width="1344" height="512">，则不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-073-46794b03b9.png" alt="本地解析几何资料图片" width="1536" height="576">的解集为       .</p>
+<p class="local-docx-line">6．设<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-074-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-075-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">上的函数，其导函数为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-076-78f8b4cab9.png" alt="本地解析几何资料图片" width="1056" height="640">，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-077-6349a6fc0e.png" alt="本地解析几何资料图片" width="2944" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-078-1021eec304.png" alt="本地解析几何资料图片" width="2080" height="640">，则不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-079-5e9fa73517.png" alt="本地解析几何资料图片" width="2848" height="992">的解集为               .</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2480,15 +2353,30 @@
 
 :::
 
-### 题 100（原题 6）
+### 题 101（原题 7）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">6．设<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-074-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-075-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">上的函数，其导函数为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-076-78f8b4cab9.png" alt="本地解析几何资料图片" width="1056" height="640">，且<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-077-6349a6fc0e.png" alt="本地解析几何资料图片" width="2944" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-078-1021eec304.png" alt="本地解析几何资料图片" width="2080" height="640">，则不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-079-5e9fa73517.png" alt="本地解析几何资料图片" width="2848" height="992">的解集为               .</p>
+<p class="local-docx-line">7．已知<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-080-e645a98aff.png" alt="本地解析几何资料图片" width="1024" height="640">是奇函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-081-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">的导函数，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-082-30929acb9a.png" alt="本地解析几何资料图片" width="1664" height="640">，当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-083-f8e61d6bcc.png" alt="本地解析几何资料图片" width="896" height="448">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-084-c235be4c29.png" alt="本地解析几何资料图片" width="2848" height="640">，则使得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-085-2f39208b6f.png" alt="本地解析几何资料图片" width="1504" height="640">成立的<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-086-57ce811416.png" alt="本地解析几何资料图片" width="320" height="352">的取值范围是        .</p>
+<p class="local-docx-line">【题组四  带常数不等号型】</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
+
+原题号与题干首段尚未唯一匹配。暂不展示可能错配的解析，请教师核对题源后补充。
+
+:::
+
+### 题 102（原题 1）
+
+:::diagram
+<div class="local-docx-card local-docx-question">
+<p class="local-docx-line">1．函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-087-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">的定义域为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-088-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-089-fce869d30c.png" alt="本地解析几何资料图片" width="1552" height="564">，对<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-090-ccf77266cd.png" alt="本地解析几何资料图片" width="1184" height="448">，有<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-091-3baef5474c.png" alt="本地解析几何资料图片" width="2560" height="672">，则不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-092-7e8f9756f6.png" alt="本地解析几何资料图片" width="2560" height="576">的解集为         .</p>
+</div>
+:::
+
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2506,16 +2394,15 @@
 
 :::
 
-### 题 101（原题 7）
+### 题 103（原题 2）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">7．已知<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-080-e645a98aff.png" alt="本地解析几何资料图片" width="1024" height="640">是奇函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-081-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">的导函数，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-082-30929acb9a.png" alt="本地解析几何资料图片" width="1664" height="640">，当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-083-f8e61d6bcc.png" alt="本地解析几何资料图片" width="896" height="448">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-084-c235be4c29.png" alt="本地解析几何资料图片" width="2848" height="640">，则使得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-085-2f39208b6f.png" alt="本地解析几何资料图片" width="1504" height="640">成立的<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-086-57ce811416.png" alt="本地解析几何资料图片" width="320" height="352">的取值范围是        .</p>
-<p class="local-docx-line">【题组四  带常数不等号型】</p>
+<p class="local-docx-line">2．定义在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-093-fa8b63462a.png" alt="本地解析几何资料图片" width="1248" height="640">上的函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-094-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">满足<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-095-9f6188d66d.png" alt="本地解析几何资料图片" width="1219" height="339">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-096-eb4c438ae6.png" alt="本地解析几何资料图片" width="1664" height="640">,则不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-097-e7d50725bf.png" alt="本地解析几何资料图片" width="2400" height="640">的解集为         .</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2531,15 +2418,15 @@
 
 :::
 
-### 题 102（原题 1）
+### 题 104（原题 3）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">1．函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-087-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">的定义域为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-088-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-089-fce869d30c.png" alt="本地解析几何资料图片" width="1552" height="564">，对<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-090-ccf77266cd.png" alt="本地解析几何资料图片" width="1184" height="448">，有<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-091-3baef5474c.png" alt="本地解析几何资料图片" width="2560" height="672">，则不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-092-7e8f9756f6.png" alt="本地解析几何资料图片" width="2560" height="576">的解集为         .</p>
+<p class="local-docx-line">3．设定义在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-098-6008a8e623.png" alt="本地解析几何资料图片" width="1344" height="640">上函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-099-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">的导函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-100-78f8b4cab9.png" alt="本地解析几何资料图片" width="1056" height="640">满足<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-101-4c0fe0d9ae.png" alt="本地解析几何资料图片" width="1568" height="1056">,则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-102-5bf168dac9.png" alt="本地解析几何资料图片" width="2575" height="705"> .</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2555,15 +2442,15 @@
 
 :::
 
-### 题 103（原题 2）
+### 题 105（原题 4）
 
 :::diagram
 <div class="local-docx-card local-docx-question">
-<p class="local-docx-line">2．定义在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-093-fa8b63462a.png" alt="本地解析几何资料图片" width="1248" height="640">上的函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-094-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">满足<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-095-9f6188d66d.png" alt="本地解析几何资料图片" width="1219" height="339">,<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-096-eb4c438ae6.png" alt="本地解析几何资料图片" width="1664" height="640">,则不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-097-e7d50725bf.png" alt="本地解析几何资料图片" width="2400" height="640">的解集为         .</p>
+<p class="local-docx-line">4．设<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-103-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">是定义在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-104-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">上的函数，其导函数为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-105-e645a98aff.png" alt="本地解析几何资料图片" width="1024" height="640">，若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-106-a0f9c53396.png" alt="本地解析几何资料图片" width="2656" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-107-b08a7ef7a6.png" alt="本地解析几何资料图片" width="2048" height="640">，则不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-108-18181b56f4.png" alt="本地解析几何资料图片" width="3072" height="640">（其中<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-109-af0b688947.png" alt="本地解析几何资料图片" width="256" height="320">为自然对数的底数）的解集为          .</p>
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2580,34 +2467,6 @@
 
 :::
 
-### 题 104（原题 3）
-
-:::diagram
-<div class="local-docx-card local-docx-question">
-<p class="local-docx-line">3．设定义在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-098-6008a8e623.png" alt="本地解析几何资料图片" width="1344" height="640">上函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-099-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">的导函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-100-78f8b4cab9.png" alt="本地解析几何资料图片" width="1056" height="640">满足<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-101-4c0fe0d9ae.png" alt="本地解析几何资料图片" width="1568" height="1056">,则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-102-5bf168dac9.png" alt="本地解析几何资料图片" width="2575" height="705"> .</p>
-</div>
-:::
-
-:::solution 查看教师补充说明
-
-这道原题在本地解析版中没有可按题号对应的独立题块。不要把后一题的答案错配过来；完整的教师版推导会放在前面的分层训练中。
-
-:::
-
-### 题 105（原题 4）
-
-:::diagram
-<div class="local-docx-card local-docx-question">
-<p class="local-docx-line">4．设<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-103-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">是定义在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-104-003dad7bad.png" alt="本地解析几何资料图片" width="384" height="416">上的函数，其导函数为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-105-e645a98aff.png" alt="本地解析几何资料图片" width="1024" height="640">，若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-106-a0f9c53396.png" alt="本地解析几何资料图片" width="2656" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-107-b08a7ef7a6.png" alt="本地解析几何资料图片" width="2048" height="640">，则不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-108-18181b56f4.png" alt="本地解析几何资料图片" width="3072" height="640">（其中<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv52-q-109-af0b688947.png" alt="本地解析几何资料图片" width="256" height="320">为自然对数的底数）的解集为          .</p>
-</div>
-:::
-
-:::solution 查看教师补充说明
-
-这道原题在本地解析版中没有可按题号对应的独立题块。不要把后一题的答案错配过来；完整的教师版推导会放在前面的分层训练中。
-
-:::
-
 ## 考点 53：利用导数求极值与最值
 
 原卷抽取 25 道，解析版抽取 25 道。
@@ -2620,7 +2479,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2640,7 +2499,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2662,18 +2521,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-026-08f63e098c.png" alt="本地解析几何资料图片" width="1952" height="992">的极大值是______.</p>
-<p class="local-docx-line">【答案】1</p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-027-fb1e1f3adb.png" alt="本地解析几何资料图片" width="3712" height="928">．可得：<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-028-413bcd6da7.png" alt="本地解析几何资料图片" width="1504" height="512">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-029-ebdb0c57da.png" alt="本地解析几何资料图片" width="1760" height="512">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-030-fe025e4be5.png" alt="本地解析几何资料图片" width="1504" height="512">；<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-031-ec062bde91.png" alt="本地解析几何资料图片" width="1760" height="512">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-032-efa11c789d.png" alt="本地解析几何资料图片" width="1344" height="480">．</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-033-1d66b606f1.png" alt="本地解析几何资料图片" width="1056" height="416">时，函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-034-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">取得极大值，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-035-0d31c65bd4.png" alt="本地解析几何资料图片" width="1344" height="512">．故答案为：1．</p>
-<p class="local-docx-line">【题组二  无参数的最值】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2685,7 +2535,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2710,7 +2560,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2735,19 +2585,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-073-ed2e1130cd.png" alt="本地解析几何资料图片" width="1376" height="544">时，函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-074-a1aeef99ed.png" alt="本地解析几何资料图片" width="1728" height="1056">的最大值是__________.</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-075-2bcca076f7.png" alt="本地解析几何资料图片" width="256" height="320"></p>
-<p class="local-docx-line">【解析】因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-076-317366c3b0.png" alt="本地解析几何资料图片" width="2560" height="1056"> ，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-077-ed2e1130cd.png" alt="本地解析几何资料图片" width="1376" height="544"></p>
-<p class="local-docx-line">所以在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-078-1fe850db79.png" alt="本地解析几何资料图片" width="1088" height="640"> 上<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-079-c52841b695.png" alt="本地解析几何资料图片" width="1568" height="640"> ，函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-080-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">单调递减，</p>
-<p class="local-docx-line">在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-081-8a00ee6960.png" alt="本地解析几何资料图片" width="800" height="640"> 上<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-082-9e4a64648b.png" alt="本地解析几何资料图片" width="1568" height="640"> ，函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-083-45a1752bf2.png" alt="本地解析几何资料图片" width="928" height="640">单调递增，</p>
-<p class="local-docx-line">因为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-084-66b88773eb.png" alt="本地解析几何资料图片" width="3264" height="992"> 所以最大值<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-085-af0b688947.png" alt="本地解析几何资料图片" width="256" height="320">.故答案为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-086-af0b688947.png" alt="本地解析几何资料图片" width="256" height="320"></p>
-<p class="local-docx-line">【题组三  利用极值求参数】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2759,7 +2599,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2779,7 +2619,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2802,7 +2642,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2825,7 +2665,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2848,7 +2688,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2872,7 +2712,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2894,7 +2734,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2921,16 +2761,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">8．已知<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-191-db82a365cc.png" alt="本地解析几何资料图片" width="3104" height="992">在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-192-9b66f7779b.png" alt="本地解析几何资料图片" width="928" height="640">上有极值点，实数a的取值范围是           .</p>
-<p class="local-docx-line">【答案】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-193-9a6ad26f19.png" alt="本地解析几何资料图片" width="928" height="640"></p>
-<p class="local-docx-line">【解析】<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-194-25628d06a2.png" alt="本地解析几何资料图片" width="3456" height="1056">,由于函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-195-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-196-77df84b548.png" alt="本地解析几何资料图片" width="896" height="512">上有极值点，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-197-5ad91d4b32.png" alt="本地解析几何资料图片" width="960" height="576">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-198-77df84b548.png" alt="本地解析几何资料图片" width="896" height="512">上有零点。所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-199-d513911950.png" alt="本地解析几何资料图片" width="1376" height="1280">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-200-3a2392ed0a.png" alt="本地解析几何资料图片" width="1472" height="512">.</p>
-<p class="local-docx-line">【题组四  利用最值求参数】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -2942,7 +2775,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2969,7 +2802,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -2991,7 +2824,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3016,7 +2849,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3042,17 +2875,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">5．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-261-fb22b0eea9.png" alt="本地解析几何资料图片" width="4640" height="576">若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-262-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">有最小值<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-263-9f84e23b74.png" alt="本地解析几何资料图片" width="480" height="384">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-264-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">的最大值为____</p>
-<p class="local-docx-line">【答案】2</p>
-<p class="local-docx-line">【解析】二次函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-265-c58b2c4663.png" alt="本地解析几何资料图片" width="1536" height="640"> 在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-266-d91f9a68f8.png" alt="本地解析几何资料图片" width="1440" height="640"> 单调递增，当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv53-a-267-7a4d4e464f.png" alt="本地解析几何资料图片" width="1440" height="640"> 单调递减</p>
-<p class="local-docx-line">故在x=0时取得最小值，即a=2</p>
-<p class="local-docx-line">【题组五  分类讨论求极值与最值】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -3066,7 +2891,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3116,7 +2941,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3164,7 +2989,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3204,7 +3029,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3255,7 +3080,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3306,7 +3131,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3358,7 +3183,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3399,41 +3224,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">2．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-041-3ad43e00cd.png" alt="本地解析几何资料图片" width="3584" height="576">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-042-5d8dea71ae.png" alt="本地解析几何资料图片" width="1760" height="512">.</p>
-<p class="local-docx-line">（1）若<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-043-cc924a260b.png" alt="本地解析几何资料图片" width="896" height="448">，求函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-044-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-045-a8cac14297.png" alt="本地解析几何资料图片" width="800" height="512">上的最小值；</p>
-<p class="local-docx-line">（2）若不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-046-1dfa167f32.png" alt="本地解析几何资料图片" width="1120" height="512"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-047-f816e106f3.png" alt="本地解析几何资料图片" width="1120" height="512">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-048-a8cac14297.png" alt="本地解析几何资料图片" width="800" height="512">上恒成立，求实数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-049-1bf2e8df7f.png" alt="本地解析几何资料图片" width="320" height="352">的取值范围.</p>
-<p class="local-docx-line">【答案】（1）<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-050-026cebbebd.png" alt="本地解析几何资料图片" width="4480" height="1920">；（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-051-74324ccde5.png" alt="本地解析几何资料图片" width="4339" height="1199">.</p>
-<p class="local-docx-line">【解析】（1）<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-052-bdf557227a.png" alt="本地解析几何资料图片" width="6752" height="608">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-053-a9b40d9dd7.png" alt="本地解析几何资料图片" width="1184" height="480"></p>
-<p class="local-docx-line">令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-054-d8e08350fe.png" alt="本地解析几何资料图片" width="1504" height="512">，解得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-055-f4e52d7cec.png" alt="本地解析几何资料图片" width="1184" height="576">（舍负），</p>
-<p class="local-docx-line">①当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-056-bee940a818.png" alt="本地解析几何资料图片" width="1120" height="576">时，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-057-f4899dac75.png" alt="本地解析几何资料图片" width="1376" height="448">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-058-58a113eb8c.png" alt="本地解析几何资料图片" width="1504" height="512">恒成立，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-059-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-060-a8cac14297.png" alt="本地解析几何资料图片" width="800" height="512">上单调递增，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-061-2fe5d796a2.png" alt="本地解析几何资料图片" width="3520" height="576">，</p>
-<p class="local-docx-line">②当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-062-d50e9c4c45.png" alt="本地解析几何资料图片" width="1696" height="576">时，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-063-602a859233.png" alt="本地解析几何资料图片" width="1408" height="448">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-064-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-065-db38b8a680.png" alt="本地解析几何资料图片" width="1120" height="608">上单调递减，</p>
-<p class="local-docx-line">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-066-e68aa402c5.png" alt="本地解析几何资料图片" width="1184" height="608">上单调递增，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-067-94fc25507c.png" alt="本地解析几何资料图片" width="4192" height="640">，</p>
-<p class="local-docx-line">③当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-068-d6e72344bc.png" alt="本地解析几何资料图片" width="1184" height="576">时，即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-069-5662804f2c.png" alt="本地解析几何资料图片" width="881" height="458">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-070-b6f94180ae.png" alt="本地解析几何资料图片" width="1504" height="512">恒成立，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-071-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-072-a8cac14297.png" alt="本地解析几何资料图片" width="800" height="512">上单调递减，所以<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-073-912fbbbe25.png" alt="本地解析几何资料图片" width="3680" height="576">，</p>
-<p class="local-docx-line">综上所述：</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-074-026cebbebd.png" alt="本地解析几何资料图片" width="4480" height="1920"></p>
-<p class="local-docx-line">（2）当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-075-b3a3039de3.png" alt="本地解析几何资料图片" width="1376" height="640">时，不等式<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-076-c0bf09872b.png" alt="本地解析几何资料图片" width="1376" height="512">恒成立，</p>
-<p class="local-docx-line">所以 <img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-077-4f05a45abc.png" alt="本地解析几何资料图片" width="2112" height="512"> <img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-078-beee23b923.png" alt="本地解析几何资料图片" width="2432" height="512">或<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-079-08ba081e05.png" alt="本地解析几何资料图片" width="2176" height="512"></p>
-<p class="local-docx-line">①由<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-080-4442fe9518.png" alt="本地解析几何资料图片" width="1952" height="512">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-081-a8cac14297.png" alt="本地解析几何资料图片" width="800" height="512">上恒成立得</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-082-0984437542.png" alt="本地解析几何资料图片" width="2272" height="512">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-083-828e8c65b9.png" alt="本地解析几何资料图片" width="2496" height="992">，</p>
-<p class="local-docx-line">设<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-084-844a4e2707.png" alt="本地解析几何资料图片" width="992" height="480"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-085-ee332fbc44.png" alt="本地解析几何资料图片" width="1440" height="992">，则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-086-5fbb72592f.png" alt="本地解析几何资料图片" width="5408" height="1056"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-087-bcb6df407c.png" alt="本地解析几何资料图片" width="4992" height="576">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-088-ca6989476c.png" alt="本地解析几何资料图片" width="1088" height="512">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-089-a8cac14297.png" alt="本地解析几何资料图片" width="800" height="512">上单调递增，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-090-72408827a5.png" alt="本地解析几何资料图片" width="2976" height="576">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-091-74a1987c7a.png" alt="本地解析几何资料图片" width="1312" height="448">，   <img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-092-06797f1dd4.png" alt="本地解析几何资料图片" width="1248" height="992">；</p>
-<p class="local-docx-line">②由<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-093-f06e868e07.png" alt="本地解析几何资料图片" width="2080" height="512">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-094-a8cac14297.png" alt="本地解析几何资料图片" width="800" height="512">上恒成立得</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-095-52c6cdeca0.png" alt="本地解析几何资料图片" width="2528" height="512"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-096-ccefc6289c.png" alt="本地解析几何资料图片" width="2432" height="992">，</p>
-<p class="local-docx-line">设<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-097-aa45dc6032.png" alt="本地解析几何资料图片" width="1088" height="512"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-098-b4642c6194.png" alt="本地解析几何资料图片" width="1440" height="992">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-099-11e9be1eaf.png" alt="本地解析几何资料图片" width="5408" height="1056">，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-100-799cbcc7c6.png" alt="本地解析几何资料图片" width="5056" height="640">    <img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-101-dcb352a2f9.png" alt="本地解析几何资料图片" width="1760" height="512"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-102-6531f1aa48.png" alt="本地解析几何资料图片" width="1088" height="512">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-103-a8cac14297.png" alt="本地解析几何资料图片" width="800" height="512">上单调递增，</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-104-df20a89432.png" alt="本地解析几何资料图片" width="4096" height="992">  <img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-105-45fa4a6693.png" alt="本地解析几何资料图片" width="2336" height="992">    <img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-106-307f499d7c.png" alt="本地解析几何资料图片" width="2208" height="992"></p>
-<p class="local-docx-line">综上，所求 <img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-107-1bf2e8df7f.png" alt="本地解析几何资料图片" width="320" height="352">的取值范围为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv54-a-108-d57395afe0.png" alt="本地解析几何资料图片" width="4000" height="1088">.</p>
-<p class="local-docx-line">【题组二 参变量分离法】</p>
-</div>
-:::
+原题号与题干首段尚未唯一匹配。暂不展示可能错配的解析，请教师核对题源后补充。
 
 :::
 
@@ -3447,7 +3240,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3503,7 +3296,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3545,7 +3338,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3588,7 +3381,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3626,7 +3419,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3674,7 +3467,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3718,7 +3511,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3754,7 +3547,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3791,50 +3584,9 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 解析待核验
 
-:::diagram
-<div class="local-docx-card local-docx-answer">
-<p class="local-docx-line">3．已知函数<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-091-cb861e474b.png" alt="本地解析几何资料图片" width="3488" height="512">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-092-1f947bbee9.png" alt="本地解析几何资料图片" width="960" height="576">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-093-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">的导数．证明：</p>
-<p class="local-docx-line">（1）<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-094-1f947bbee9.png" alt="本地解析几何资料图片" width="960" height="576">在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-095-0c57770c1e.png" alt="本地解析几何资料图片" width="1184" height="992">存在唯一极大值点；</p>
-<p class="local-docx-line">（2）<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-096-b8bdd33b59.png" alt="本地解析几何资料图片" width="768" height="480">有且仅有2个零点．</p>
-<p class="local-docx-line">【答案】（1）见解析；（2）见解析</p>
-<p class="local-docx-line">【解析】（1）由题意知：<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-097-d8a9bca7f2.png" alt="本地解析几何资料图片" width="928" height="640">定义域为：<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-098-0076907ae0.png" alt="本地解析几何资料图片" width="1408" height="640">且<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-099-1e9d5efe8d.png" alt="本地解析几何资料图片" width="3200" height="992"></p>
-<p class="local-docx-line">令<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-100-2360b57d3b.png" alt="本地解析几何资料图片" width="3104" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-101-ed82d28957.png" alt="本地解析几何资料图片" width="1888" height="1088"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-102-3cd6f084e8.png" alt="本地解析几何资料图片" width="4160" height="1184">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-103-ed82d28957.png" alt="本地解析几何资料图片" width="1888" height="1088"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-104-5a5d84e9b0.png" alt="本地解析几何资料图片" width="1600" height="1184">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-105-0ed22b6ffb.png" alt="本地解析几何资料图片" width="1120" height="992">上单调递减，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-106-94f2980f7a.png" alt="本地解析几何资料图片" width="1152" height="448">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-107-0ed22b6ffb.png" alt="本地解析几何资料图片" width="1120" height="992">上单调递减</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-108-02bf97ef1d.png" alt="本地解析几何资料图片" width="1280" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-109-0ed22b6ffb.png" alt="本地解析几何资料图片" width="1120" height="992">上单调递减</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-110-b200e3277f.png" alt="本地解析几何资料图片" width="3840" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-111-e3340c3a81.png" alt="本地解析几何资料图片" width="6976" height="1216"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-112-fa90ad346e.png" alt="本地解析几何资料图片" width="2304" height="1088">，使得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-113-1ea54d97d1.png" alt="本地解析几何资料图片" width="1696" height="640"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-114-68534231fa.png" alt="本地解析几何资料图片" width="352" height="320">当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-115-de16f616db.png" alt="本地解析几何资料图片" width="1824" height="640">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-116-63a9214d3e.png" alt="本地解析几何资料图片" width="1568" height="640">；<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-117-18ef5662fb.png" alt="本地解析几何资料图片" width="1824" height="1088">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-118-0bebff7873.png" alt="本地解析几何资料图片" width="1536" height="640"></p>
-<p class="local-docx-line">即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-119-c13a7e9356.png" alt="本地解析几何资料图片" width="896" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-120-3bdc88b0d8.png" alt="本地解析几何资料图片" width="1280" height="640">上单调递增；在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-121-8519748802.png" alt="本地解析几何资料图片" width="1411" height="1199">上单调递减</p>
-<p class="local-docx-line">则<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-122-1736cd0596.png" alt="本地解析几何资料图片" width="992" height="576">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-123-c13a7e9356.png" alt="本地解析几何资料图片" width="896" height="640">唯一的极大值点</p>
-<p class="local-docx-line">即：<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-124-ec6950a6a4.png" alt="本地解析几何资料图片" width="1024" height="640">在区间<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-125-0ed22b6ffb.png" alt="本地解析几何资料图片" width="1120" height="992">上存在唯一的极大值点<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-126-b8c9906ac4.png" alt="本地解析几何资料图片" width="384" height="512">.</p>
-<p class="local-docx-line">（2）由（1）知：<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-127-1e9d5efe8d.png" alt="本地解析几何资料图片" width="3200" height="992">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-128-cf558bb496.png" alt="本地解析几何资料图片" width="1760" height="544"></p>
-<p class="local-docx-line">①当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-129-58a0ac42e7.png" alt="本地解析几何资料图片" width="1664" height="640">时，由（1）可知<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-130-ec6950a6a4.png" alt="本地解析几何资料图片" width="1024" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-131-4b468204c1.png" alt="本地解析几何资料图片" width="1088" height="640">上单调递增</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-132-a5277cf3ef.png" alt="本地解析几何资料图片" width="3136" height="640">    <img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-133-929c434503.png" alt="本地解析几何资料图片" width="1248" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-134-4b468204c1.png" alt="本地解析几何资料图片" width="1088" height="640">上单调递减</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-135-d52fd93cbf.png" alt="本地解析几何资料图片" width="1472" height="640"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-136-b10919171f.png" alt="本地解析几何资料图片" width="1056" height="416">为<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-137-d8a9bca7f2.png" alt="本地解析几何资料图片" width="928" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-138-4b468204c1.png" alt="本地解析几何资料图片" width="1088" height="640">上的唯一零点</p>
-<p class="local-docx-line">②当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-139-5216adbbca.png" alt="本地解析几何资料图片" width="1664" height="1088">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-140-ec6950a6a4.png" alt="本地解析几何资料图片" width="1024" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-141-48aab6f47d.png" alt="本地解析几何资料图片" width="1088" height="640">上单调递增，在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-142-8519748802.png" alt="本地解析几何资料图片" width="1411" height="1199">上单调递减</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-143-450450af77.png" alt="本地解析几何资料图片" width="1568" height="640">    <img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-144-871bcdf73c.png" alt="本地解析几何资料图片" width="2016" height="640"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-145-929c434503.png" alt="本地解析几何资料图片" width="1248" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-146-48aab6f47d.png" alt="本地解析几何资料图片" width="1088" height="640">上单调递增，此时<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-147-98f97aa7b2.png" alt="本地解析几何资料图片" width="2688" height="640">，不存在零点</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-148-2f1bbcd8e7.png" alt="本地解析几何资料图片" width="5664" height="1088"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-149-9b813e915a.png" alt="本地解析几何资料图片" width="2432" height="1088">，使得<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-150-281aa70824.png" alt="本地解析几何资料图片" width="1696" height="640"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-151-929c434503.png" alt="本地解析几何资料图片" width="1248" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-152-e205805262.png" alt="本地解析几何资料图片" width="1184" height="640">上单调递增，在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-153-ca0e9b317b.png" alt="本地解析几何资料图片" width="1248" height="1088">上单调递减</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-154-de4bb121d9.png" alt="本地解析几何资料图片" width="2816" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-155-0fbc5eb9ff.png" alt="本地解析几何资料图片" width="7168" height="1088"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-156-e63d68c4b5.png" alt="本地解析几何资料图片" width="1792" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-157-8519748802.png" alt="本地解析几何资料图片" width="1411" height="1199">上恒成立，此时不存在零点</p>
-<p class="local-docx-line">③当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-158-ae7d980844.png" alt="本地解析几何资料图片" width="1760" height="1088">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-159-4a5be2a343.png" alt="本地解析几何资料图片" width="832" height="448">单调递减，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-160-f0db591197.png" alt="本地解析几何资料图片" width="1696" height="640">单调递减</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-161-929c434503.png" alt="本地解析几何资料图片" width="1248" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-162-4af40daa72.png" alt="本地解析几何资料图片" width="1184" height="1088">上单调递减</p>
-<p class="local-docx-line">又<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-163-ec73ed1968.png" alt="本地解析几何资料图片" width="1696" height="1088">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-164-0a58d36c0d.png" alt="本地解析几何资料图片" width="6368" height="640"></p>
-<p class="local-docx-line">即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-165-5239823da4.png" alt="本地解析几何资料图片" width="2720" height="1088">，又<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-166-d8a9bca7f2.png" alt="本地解析几何资料图片" width="928" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-167-4af40daa72.png" alt="本地解析几何资料图片" width="1184" height="1088">上单调递减</p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-168-68534231fa.png" alt="本地解析几何资料图片" width="352" height="320"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-169-d8a9bca7f2.png" alt="本地解析几何资料图片" width="928" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-170-4af40daa72.png" alt="本地解析几何资料图片" width="1184" height="1088">上存在唯一零点</p>
-<p class="local-docx-line">④当<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-171-9747050050.png" alt="本地解析几何资料图片" width="1856" height="640">时，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-172-2b80d173d8.png" alt="本地解析几何资料图片" width="2048" height="640">，<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-173-1e48c02249.png" alt="本地解析几何资料图片" width="4576" height="640"></p>
-<p class="local-docx-line"><img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-174-e180a0f12f.png" alt="本地解析几何资料图片" width="3328" height="640"></p>
-<p class="local-docx-line">即<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-175-d8a9bca7f2.png" alt="本地解析几何资料图片" width="928" height="640">在<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-176-4f5521b8eb.png" alt="本地解析几何资料图片" width="1280" height="640">上不存在零点</p>
-<p class="local-docx-line">综上所述：<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-177-d8a9bca7f2.png" alt="本地解析几何资料图片" width="928" height="640">有且仅有<img class="local-docx-image local-docx-inline-image" src="../../../assets/derivative-local/dv55-a-178-188b011607.png" alt="本地解析几何资料图片" width="320" height="416">个零点</p>
-<p class="local-docx-line">【题组二 已知零点求参数】</p>
-</div>
-:::
+题号与首段一致，但完整题干尚未通过一致性检查。为避免漏条件或错误配对，暂不展示原解析，请教师核对题源后补充。
 
 :::
 
@@ -3848,7 +3600,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3888,7 +3640,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3932,7 +3684,7 @@
 </div>
 :::
 
-:::solution 查看解析版原文
+:::solution 查看解析版原文（题号与完整题干匹配，答案未逐题验算）
 
 :::diagram
 <div class="local-docx-card local-docx-answer">
@@ -3957,7 +3709,7 @@
 
 :::
 
-## 抽取统计
+## 历史抽取统计（非核验结果）
 
 - 原卷题目：144 道。
 - 对应解析题块：142 道。

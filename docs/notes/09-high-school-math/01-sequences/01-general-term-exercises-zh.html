@@ -34,8 +34,8 @@
       <h1>数列求通项公式专项练习</h1>
       <p>这份练习按“题型识别”编排。每个题型至少 5 道题，建议学生先判断方法，再动笔计算；点开解答前，先尝试把“为什么用这个方法”讲出来。</p>
     </div>
-    <div class="subject-grid"><section class="page-section article"><blockquote><p>使用建议：每次作业不必全布置，可以每类选 1 到 2 题；上课时让学生挑题讲解，你只点评方法选择、关键变形和易错点。</p></blockquote>
-<h2>题型 A：等差、等比基础识别</h2>
+    <div class="subject-grid"><a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article"><blockquote><p>使用建议：每次作业不必全布置，可以每类选 1 到 2 题；上课时让学生挑题讲解，你只点评方法选择、关键变形和易错点。</p></blockquote>
+<h2 id="section-1">题型 A：等差、等比基础识别</h2>
 <p><strong>1.</strong> 已知 $a_1=5,\ a_{n+1}-a_n=3$，求 $a_n$。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 相邻两项差为常数 $3$，所以是等差数列，公差 $d=3$。</p>
 <p>因此</p>
@@ -60,7 +60,7 @@
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 等差数列中下标和相等的两项和相等，$a_4+a_{10}=2a_7=34$，所以 $a_7=17$。</p>
 <p>又 $a_7-a_6=d=3$，所以</p>
 <div class="math-display">$$a_n=a_6+(n-6)d=14+3(n-6)=3n-4.$$</div></div></details>
-<h2>题型 B：累加法</h2>
+<h2 id="section-2">题型 B：累加法</h2>
 <p><strong>1.</strong> 已知 $a_1=2,\ a_{n+1}-a_n=2n$，求 $a_n$。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 对 $k=1,2,\ldots,n-1$ 累加：</p>
 <div class="math-display">$$a_n-a_1=\sum_{k=1}^{n-1}2k=(n-1)n.$$</div>
@@ -86,7 +86,7 @@
 <div class="math-display">$$a_n=1+\sum_{k=1}^{n-1}(-1)^k.$$</div>
 <p>当 $n$ 为奇数时，后面的和为 $0$；当 $n$ 为偶数时，后面的和为 $-1$。统一写成</p>
 <div class="math-display">$$a_n=\frac{1+(-1)^{n+1}}2.$$</div></div></details>
-<h2>题型 C：累乘法</h2>
+<h2 id="section-3">题型 C：累乘法</h2>
 <p><strong>1.</strong> 已知 $a_1=3,\ a_{n+1}=\frac{n+1}{n}a_n$，求 $a_n$。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 两边连乘：</p>
 <div class="math-display">$$a_n=3\prod_{k=1}^{n-1}\frac{k+1}{k}=3n.$$</div></div></details>
@@ -107,7 +107,7 @@
 <div class="math-display">$$a_n=4\prod_{k=1}^{n-1}\left(\frac{k}{k+1}\right)^2
 =4\cdot\frac1{n^2}
 =\frac4{n^2}.$$</div></div></details>
-<h2>题型 D：由 $S_n$ 求 $a_n$</h2>
+<h2 id="section-4">题型 D：由 $S_n$ 求 $a_n$</h2>
 <p><strong>1.</strong> 已知 $S_n=n^2+2n$，求 $a_n$。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 用 $a_n=S_n-S_{n-1}$。当 $n\ge2$ 时，</p>
 <div class="math-display">$$a_n=(n^2+2n)-[(n-1)^2+2(n-1)]=2n+1.$$</div>
@@ -130,7 +130,7 @@
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong></p>
 <div class="math-display">$$a_n=n^3-(n-1)^3=3n^2-3n+1.$$</div>
 <p>当 $n=1$ 时，$a_1=1$，符合。</p></div></details>
-<h2>题型 E：一次线性递推与待定系数法</h2>
+<h2 id="section-5">题型 E：一次线性递推与待定系数法</h2>
 <p><strong>1.</strong> 已知 $a_1=1,\ a_{n+1}=2a_n+3$，求 $a_n$。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 先找不动点：若 $x=2x+3$，则 $x=-3$。令 $b_n=a_n+3$，则</p>
 <div class="math-display">$$b_{n+1}=a_{n+1}+3=2a_n+6=2b_n.$$</div>
@@ -157,7 +157,7 @@
 <div class="math-display">$$b_{n+1}=5b_n.$$</div>
 <p>又 $b_1=\frac{17}{4}$，所以</p>
 <div class="math-display">$$a_n=\frac{17}{4}\cdot5^{n-1}-\frac14.$$</div></div></details>
-<h2>题型 F：多项式扰动与指数扰动</h2>
+<h2 id="section-6">题型 F：多项式扰动与指数扰动</h2>
 <p><strong>1.</strong> 已知 $a_1=1,\ a_{n+1}=2a_n+2^n$，求 $a_n$。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 两边除以 $2^n$。令 $b_n=\frac{a_n}{2^{n-1}}$，则</p>
 <div class="math-display">$$b_{n+1}=\frac{a_{n+1}}{2^n}=\frac{a_n}{2^{n-1}}+1=b_n+1.$$</div>
@@ -184,7 +184,7 @@
 <p>又 $b_1=2$，所以 $b_n=2-2(n-1)=4-2n$。</p>
 <p>因此</p>
 <div class="math-display">$$a_n=(4-2n)3^{n-1}.$$</div></div></details>
-<h2>题型 G：二阶线性递推与特征方程</h2>
+<h2 id="section-7">题型 G：二阶线性递推与特征方程</h2>
 <p><strong>1.</strong> 已知 $a_1=1,\ a_2=3,\ a_{n+2}=2a_{n+1}+3a_n$，求 $a_n$。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 特征方程为</p>
 <div class="math-display">$$r^2=2r+3,\quad r^2-2r-3=0,$$</div>
@@ -219,7 +219,7 @@
 <p>由 $a_1=1$ 得 $A=1$；由 $a_2=4$ 得 $2(1+B)=4$，所以 $B=1$。</p>
 <p>因此</p>
 <div class="math-display">$$a_n=n2^{n-1}.$$</div></div></details>
-<h2>题型 H：分式型递推、倒数法与不动点思路</h2>
+<h2 id="section-8">题型 H：分式型递推、倒数法与不动点思路</h2>
 <p><strong>1.</strong> 已知 $a_1=1,\ a_{n+1}=\frac{a_n}{a_n+1}$，求 $a_n$。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 取倒数，令 $b_n=\frac1{a_n}$，则</p>
 <div class="math-display">$$b_{n+1}=\frac{a_n+1}{a_n}=b_n+1.$$</div>
@@ -256,7 +256,7 @@
 <div class="math-display">$$b_n=\frac{13}{4}\cdot2^{n-1}-3=\frac{13\cdot2^{n-1}-12}{4}.$$</div>
 <p>因此</p>
 <div class="math-display">$$a_n=\frac4{13\cdot2^{n-1}-12}.$$</div></div></details>
-<h2>题型 I：一次分式变换与两个不动点距离比</h2>
+<h2 id="section-9">题型 I：一次分式变换与两个不动点距离比</h2>
 <p>原理入口：<a href="01-general-term-fixed-point-ratio-principle-zh.html">两不动点距离比法：从定义到手动推导</a>。先能手动推出核心命题，再做下面的题。</p>
 <p>这一类处理的是一次分式变换</p>
 <div class="math-display">$$
@@ -331,7 +331,7 @@ $$</div>
 <p>又 $b_1=\frac{5-2}{5+1}=\frac12$，所以 $b_n=2^{-n}$。</p>
 <p>由 $\frac{a_n-2}{a_n+1}=2^{-n}$ 解得</p>
 <div class="math-display">$$a_n=\frac{2^{n+1}+1}{2^n-1}.$$</div></div></details>
-<h2>题型 J：平移参数消常数项与取倒数法</h2>
+<h2 id="section-10">题型 J：平移参数消常数项与取倒数法</h2>
 <p>这一题型对应你图里的方法。它的核心不是“记住令 $B_n=a_n+\alpha$”，而是先把递推写成方程</p>
 <div class="math-display">$$
 F(a_n,a_{n+1})=0,
@@ -610,7 +610,7 @@ a_n=1+\frac1{C_n}
 =\frac{4\cdot5^{n-1}-4^{n-1}}{2\cdot5^{n-1}-4^{n-1}}.
 $$</div>
 <p>当 $n=1$ 时，右边为 $3$，符合初值。</p></div></details>
-<h2>题型 K：因式分解型递推</h2>
+<h2 id="section-11">题型 K：因式分解型递推</h2>
 <p><strong>1.</strong> 已知 $a_1=1,\ a_n&gt;0$，且 $a_{n+1}^2-a_na_{n+1}-2a_n^2=0$，求 $a_n$。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 因式分解：</p>
 <div class="math-display">$$a_{n+1}^2-a_na_{n+1}-2a_n^2=(a_{n+1}-2a_n)(a_{n+1}+a_n).$$</div>
@@ -637,7 +637,7 @@ $$</div>
 <p><strong>5.</strong> 已知 $a_1=1$，且每一步取满足 $a_{n+1}=na_n$ 的分支，求 $a_n$。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 这是累乘型：</p>
 <div class="math-display">$$a_n=a_1\cdot1\cdot2\cdots(n-1)=(n-1)!.$$</div></div></details>
-<h2>题型 L：带权和式递推</h2>
+<h2 id="section-12">题型 L：带权和式递推</h2>
 <p><strong>1.</strong> 已知 $a_1+2a_2+3a_3+\cdots+na_n=n^2$，求 $a_n$。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 设</p>
 <div class="math-display">$$T_n=a_1+2a_2+\cdots+na_n=n^2.$$</div>
@@ -670,7 +670,7 @@ $$</div>
 <div class="math-display">$$(2n-1)a_n=T_n-T_{n-1}=n^2-(n-1)^2=2n-1.$$</div>
 <p>所以</p>
 <div class="math-display">$$a_n=1.$$</div></div></details>
-<h2>题型 M：奇偶项与隔项递推</h2>
+<h2 id="section-13">题型 M：奇偶项与隔项递推</h2>
 <p><strong>1.</strong> 已知 $a_1=1,\ a_2=2,\ a_{n+2}=2a_n$，求 $a_n$。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 隔两项递推，所以分奇偶。</p>
 <p>奇数项：$a_1=1,\ a_3=2,\ a_5=4,\ldots$，所以</p>
@@ -695,7 +695,7 @@ $$</div>
 <div class="math-display">$$a_{2k-1}=1+(1+3+\cdots+(2k-3))=1+(k-1)^2.$$</div>
 <p>偶数项：</p>
 <div class="math-display">$$a_{2k}=2+(2+4+\cdots+(2k-2))=2+k(k-1).$$</div></div></details>
-<h2>题型 N：猜想后用数学归纳法证明</h2>
+<h2 id="section-14">题型 N：猜想后用数学归纳法证明</h2>
 <p><strong>1.</strong> 已知 $a_1=1,\ a_{n+1}=a_n+2n+1$，先写出前 4 项，猜想并证明 $a_n$。</p>
 <details class="solution-toggle"><summary>查看解答</summary><div class="solution-body"><p><strong>解答：</strong> 前四项为 $1,4,9,16$，猜想</p>
 <div class="math-display">$$a_n=n^2.$$</div>
@@ -727,7 +727,7 @@ $$</div>
 <div class="math-display">$$a_n=n!.$$</div>
 <p>归纳证明：当 $n=1$ 时成立。若 $a_n=n!$，则</p>
 <div class="math-display">$$a_{n+1}=(n+1)a_n=(n+1)n!=(n+1)!.$$</div>
-<p>所以猜想成立。</p></div></details></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">数列</a></li><li>源文件：<code>content/09_high_school_math/01_sequences/01_general_term_exercises_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-general-term-fixed-point-ratio-principle-zh.html">两不动点距离比法：从定义到手动推导</a></h3><p>这一页只讲一个原理：</p></div><div class="note-item"><h3><a href="01-general-term-zh.html">数列求通项公式</a></h3><p>这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。</p></div><div class="note-item"><h3><a href="02-summation-exercises-zh.html">数列求和专项练习</a></h3><p>这份练习按“题型识别”编排，共 6 类，每类 5 题。做题前先口头回答：通项有什么结构？为什么选这个方法？点开解答前，先写出至少一行关键变形。</p></div><div class="note-item"><h3><a href="02-summation-zh.html">数列求和：从通项结构到求和方法</a></h3><p>数列求和不是“背六种技巧”，而是研究一个明确对象：已知数列 $\{a_n\}$ 的通项或结构，求它的前 $n$ 项和</p></div></div></section></aside></div>
+<p>所以猜想成立。</p></div></details></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：等差等比数列、因式分解、分式合法性</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li><li><a href="02-summation-exercises-zh.html">配套练习：数列求和专项练习</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">题型 A：等差、等比基础识别</a></li><li class="toc-level-2"><a href="#section-2">题型 B：累加法</a></li><li class="toc-level-2"><a href="#section-3">题型 C：累乘法</a></li><li class="toc-level-2"><a href="#section-4">题型 D：由 $S_n$ 求 $a_n$</a></li><li class="toc-level-2"><a href="#section-5">题型 E：一次线性递推与待定系数法</a></li><li class="toc-level-2"><a href="#section-6">题型 F：多项式扰动与指数扰动</a></li><li class="toc-level-2"><a href="#section-7">题型 G：二阶线性递推与特征方程</a></li><li class="toc-level-2"><a href="#section-8">题型 H：分式型递推、倒数法与不动点思路</a></li><li class="toc-level-2"><a href="#section-9">题型 I：一次分式变换与两个不动点距离比</a></li><li class="toc-level-2"><a href="#section-10">题型 J：平移参数消常数项与取倒数法</a></li><li class="toc-level-2"><a href="#section-11">题型 K：因式分解型递推</a></li><li class="toc-level-2"><a href="#section-12">题型 L：带权和式递推</a></li><li class="toc-level-2"><a href="#section-13">题型 M：奇偶项与隔项递推</a></li><li class="toc-level-2"><a href="#section-14">题型 N：猜想后用数学归纳法证明</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">数列</a></li><li>源文件：<code>content/09_high_school_math/01_sequences/01_general_term_exercises_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-general-term-fixed-point-ratio-principle-zh.html">两不动点距离比法：从定义到手动推导</a></h3><p>这一页只讲一个原理：</p></div><div class="note-item"><h3><a href="01-general-term-zh.html">数列求通项公式</a></h3><p>这一页按课堂实际讲授的大纲整理。它不是只列“累加、累乘、构造”几种方法，而是把数列的基本概念、表示方式、等差等比、递推关系、构造新数列和讲题训练放在同一个框架里。</p></div><div class="note-item"><h3><a href="02-summation-exercises-zh.html">数列求和专项练习</a></h3><p>这份练习按“题型识别”编排，共 6 类，每类 5 题。做题前先口头回答：通项有什么结构？为什么选这个方法？点开解答前，先写出至少一行关键变形。</p></div><div class="note-item"><h3><a href="02-summation-zh.html">数列求和：从通项结构到求和方法</a></h3><p>数列求和不是“背六种技巧”，而是研究一个明确对象：已知数列 $\{a_n\}$ 的通项或结构，求它的前 $n$ 项和</p></div><div class="note-item"><h3><a href="90-mixed-checkpoint-zh.html">数列：混合检测与讲题验收</a></h3><p>先独立完成，再展开解析。题目不标方法名称；请写出选择依据和限制条件。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

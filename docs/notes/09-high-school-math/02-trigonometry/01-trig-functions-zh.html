@@ -34,19 +34,19 @@
       <h1>三角函数：从单位圆到图像与恒等变换</h1>
       <p>三角函数不是一组需要硬背的公式，而是一条很清楚的链：</p>
     </div>
-    <div class="subject-grid"><section class="page-section article"><div class="math-display">$$
+    <div class="subject-grid"><a class="mobile-guide-link" href="#reading-guide">查看本页目录与学习路线 ↓</a><section class="page-section article"><div class="math-display">$$
 \text{角}\longrightarrow \text{单位圆上的点}
 \longrightarrow \text{函数值}
 \longrightarrow \text{图像性质}
 \longrightarrow \text{恒等变换与方程}.
 $$</div>
 <p>如果学生只背“奇变偶不变、符号看象限”，她遇到复杂题时会很容易散掉。真正可靠的学习方式，是让每一条公式都能回到单位圆、坐标、对称、内积或图像上去解释。</p>
-<h2>研究对象</h2>
+<h2 id="section-1">研究对象</h2>
 <p>本页研究四个对象：</p>
-<ol><li><strong>角</strong>：角可以继续旋转，所以同一个终边对应无穷多个角。</li><li><strong>坐标</strong>：角的终边与单位圆交于一点，横坐标给余弦，纵坐标给正弦。</li><li><strong>函数</strong>：$\sin x,\cos x,\tan x$ 把角变成数，因此可以讨论定义域、值域、周期、单调和对称。</li><li><strong>变换</strong>：三角恒等变换本质是把同一个几何关系写成不同代数形式。</li></ol>
+<ol start="1"><li><strong>角</strong>：角可以继续旋转，所以同一个终边对应无穷多个角。</li><li><strong>坐标</strong>：角的终边与单位圆交于一点，横坐标给余弦，纵坐标给正弦。</li><li><strong>函数</strong>：$\sin x,\cos x,\tan x$ 把角变成数，因此可以讨论定义域、值域、周期、单调和对称。</li><li><strong>变换</strong>：三角恒等变换本质是把同一个几何关系写成不同代数形式。</li></ol>
 <p>课堂上先让学生回答一句话：三角函数到底在研究什么？较好的答案是：它研究角旋转到某个位置时，与单位圆交点的坐标及其变化规律。</p>
-<h2>核心知识结构</h2>
-<h3>1. 任意角、终边相同角与弧度制</h3>
+<h2 id="section-2">核心知识结构</h2>
+<h3 id="section-3">1. 任意角、终边相同角与弧度制</h3>
 <p>在平面直角坐标系中，以 $x$ 轴正半轴为始边，逆时针旋转为正角，顺时针旋转为负角。若两个角终边相同，则它们相差整圈：</p>
 <div class="math-display">$$
 \beta=\alpha+2k\pi,\qquad k\in\mathbb Z.
@@ -64,7 +64,7 @@ $$</div>
 180^\circ=\pi,\qquad 360^\circ=2\pi.
 $$</div>
 <p>弧度制不是“把角度换个名字”，而是让角和弧长、周期、函数图像直接相连。高中三角函数一旦进入图像和方程，默认应优先使用弧度制。</p>
-<h3>2. 单位圆定义：公式从坐标来</h3>
+<h3 id="section-4">2. 单位圆定义：公式从坐标来</h3>
 <p>设角 $\alpha$ 的终边与单位圆交于点</p>
 <div class="math-display">$$
 P(x,y).
@@ -85,19 +85,19 @@ $$</div>
 \tan\alpha=\frac yx\quad(x\ne0).
 $$</div>
 <p>这里要强调三件事：</p>
-<ol><li>$\sin\alpha$ 是纵坐标，不是“斜边分之一”的死公式。直角三角形只是第一象限锐角情形。</li><li>$\cos\alpha$ 是横坐标，因此符号由横坐标决定。</li><li>$\tan\alpha$ 是斜率，所以当终边竖直时无定义。</li></ol>
+<ol start="1"><li>$\sin\alpha$ 是纵坐标，不是“斜边分之一”的死公式。直角三角形只是第一象限锐角情形。</li><li>$\cos\alpha$ 是横坐标，因此符号由横坐标决定。</li><li>$\tan\alpha$ 是斜率，所以当终边竖直时无定义。</li></ol>
 <p>由单位圆方程 $x^2+y^2=1$ 立刻得到</p>
 <div class="math-display">$$
 \sin^2\alpha+\cos^2\alpha=1.
 $$</div>
 <p>这就是同角基本关系的源头。</p>
-<h3>3. 三角函数线：把不等式和大小比较画出来</h3>
+<h3 id="section-5">3. 三角函数线：把不等式和大小比较画出来</h3>
 <p>三角函数线是单位圆上的几何表示：</p>
-<ol><li>$\sin\alpha$ 对应纵向长度；</li><li>$\cos\alpha$ 对应横向长度；</li><li>$\tan\alpha$ 对应过 $(1,0)$ 的切线与终边延长线的交点纵坐标。</li></ol>
+<ol start="1"><li>$\sin\alpha$ 对应纵向长度；</li><li>$\cos\alpha$ 对应横向长度；</li><li>$\tan\alpha$ 对应过 $(1,0)$ 的切线与终边延长线的交点纵坐标。</li></ol>
 <p>它最有用的地方不是记定义，而是处理三类问题：</p>
-<ol><li>比较大小，例如比较 $\sin1,\sin2,\sin3$；</li><li>解三角不等式，例如 $\sin x&gt;\frac12$；</li><li>判断取值范围，例如由点在第一象限推出 $\sin x,\cos x$ 的符号。</li></ol>
+<ol start="1"><li>比较大小，例如比较 $\sin1,\sin2,\sin3$；</li><li>解三角不等式，例如 $\sin x&gt;\frac12$；</li><li>判断取值范围，例如由点在第一象限推出 $\sin x,\cos x$ 的符号。</li></ol>
 <p>课堂上可以让学生先画单位圆，再问：如果 $\sin x&gt;\frac12$，单位圆上点的纵坐标应该在哪里？这样她会自然看到一个弧段，而不是机械背区间。</p>
-<h3>4. 同角关系与“弦的齐次”</h3>
+<h3 id="section-6">4. 同角关系与“弦的齐次”</h3>
 <p>同角三角函数关系有两条最基本：</p>
 <div class="math-display">$$
 \sin^2\alpha+\cos^2\alpha=1,\qquad
@@ -113,7 +113,7 @@ $$</div>
 $$</div>
 <p>并且已知 $\tan\alpha$，常把分子分母同除以 $\cos\alpha$，化成 $\tan\alpha$。这就是一类常见的“弦的齐次”题。</p>
 <p>但要小心：开平方时必须由象限决定符号。比如由 $\sin^2\alpha=\frac49$ 只能得到 $\sin\alpha=\pm\frac23$，不能直接写正号。</p>
-<h3>5. 诱导公式：先看位置，再看名称</h3>
+<h3 id="section-7">5. 诱导公式：先看位置，再看名称</h3>
 <p>诱导公式本质是单位圆对称性。比如</p>
 <div class="math-display">$$
 \sin(-\alpha)=-\sin\alpha,\qquad
@@ -127,14 +127,14 @@ $$</div>
 $$</div>
 <p>因为点关于 $y$ 轴对称，纵坐标不变，横坐标变号。</p>
 <p>系统处理诱导公式时，不要只背口诀，要按两步走：</p>
-<ol><li><strong>看位置</strong>：把角化成某个象限内的参考角，判断正负号。</li><li><strong>看名称</strong>：若是 $k\pi\pm\alpha$，函数名通常不变；若是 $\frac\pi2\pm\alpha$，正弦和余弦互换。</li></ol>
+<ol start="1"><li><strong>看位置</strong>：把角化成某个象限内的参考角，判断正负号。</li><li><strong>看名称</strong>：若是 $k\pi\pm\alpha$，函数名通常不变；若是 $\frac\pi2\pm\alpha$，正弦和余弦互换。</li></ol>
 <p>例如</p>
 <div class="math-display">$$
 \sin\left(\frac\pi2+\alpha\right)=\cos\alpha,\qquad
 \cos\left(\frac\pi2+\alpha\right)=-\sin\alpha.
 $$</div>
 <p>它不是神秘口诀，而是单位圆旋转 $90^\circ$ 后，横纵坐标交换并改变符号。</p>
-<h3>6. 两角和差公式：从坐标内积推出来</h3>
+<h3 id="section-8">6. 两角和差公式：从坐标内积推出来</h3>
 <p>令</p>
 <div class="math-display">$$
 \mathbf u=(\cos\alpha,\sin\alpha),\qquad
@@ -171,7 +171,7 @@ $$</div>
 =\sin\alpha\cos\beta-\cos\alpha\sin\beta.
 $$</div>
 <p>这四条公式不应孤立背。要让学生知道：余弦差公式来自两个单位向量的内积，其他公式可以从它推出。</p>
-<h3>7. 二倍角、降幂与辅助角</h3>
+<h3 id="section-9">7. 二倍角、降幂与辅助角</h3>
 <p>令 $\beta=\alpha$，得到二倍角公式：</p>
 <div class="math-display">$$
 \sin2\alpha=2\sin\alpha\cos\alpha,
@@ -202,15 +202,15 @@ a\sin x+b\cos x
 =R\sin(x+\varphi).
 $$</div>
 <p>它的意义是：两个同频率的正弦、余弦叠加后，仍然是同频率的正弦波，只是振幅和相位改变了。</p>
-<h3>8. 图像性质与图像变换</h3>
+<h3 id="section-10">8. 图像性质与图像变换</h3>
 <p>三角函数图像要抓五个指标：定义域、值域、周期、奇偶、单调。基础函数可以这样记：</p>
-<ol><li>$y=\sin x$：定义域 $\mathbb R$；值域 $[-1,1]$；最小正周期 $2\pi$；奇函数。</li><li>$y=\cos x$：定义域 $\mathbb R$；值域 $[-1,1]$；最小正周期 $2\pi$；偶函数。</li><li>$y=\tan x$：定义域 $x\ne\frac\pi2+k\pi$；值域 $\mathbb R$；最小正周期 $\pi$；奇函数。</li></ol>
+<ol start="1"><li>$y=\sin x$：定义域 $\mathbb R$；值域 $[-1,1]$；最小正周期 $2\pi$；奇函数。</li><li>$y=\cos x$：定义域 $\mathbb R$；值域 $[-1,1]$；最小正周期 $2\pi$；偶函数。</li><li>$y=\tan x$：定义域 $x\ne\frac\pi2+k\pi$；值域 $\mathbb R$；最小正周期 $\pi$；奇函数。</li></ol>
 <p>对于</p>
 <div class="math-display">$$
 y=A\sin(\omega x+\varphi)+b,
 $$</div>
 <p>要看四个参数：</p>
-<ol><li>$A$ 控制振幅，值域变为 $[b-|A|,b+|A|]$；</li><li>$\omega$ 控制周期，$T=\dfrac{2\pi}{|\omega|}$；</li><li>$\varphi$ 控制水平平移，平移量是 $-\dfrac{\varphi}{\omega}$；</li><li>$b$ 控制上下平移。</li></ol>
+<ol start="1"><li>$A$ 控制振幅，值域变为 $[b-|A|,b+|A|]$；</li><li>$\omega$ 控制周期，$T=\dfrac{2\pi}{|\omega|}$；</li><li>$\varphi$ 控制水平平移，平移量是 $-\dfrac{\varphi}{\omega}$；</li><li>$b$ 控制上下平移。</li></ol>
 <p>最容易错的是平移量。比如</p>
 <div class="math-display">$$
 y=\sin(2x-\frac\pi3)
@@ -222,16 +222,16 @@ $$</div>
 u=\omega x+\varphi,
 $$</div>
 <p>先把 $u$ 放回母函数的单调区间，再解关于 $x$ 的不等式。常用母函数区间是：</p>
-<ol><li>$\sin u$ 在 $\left[-\frac\pi2+2k\pi,\frac\pi2+2k\pi\right]$ 上递增，在 $\left[\frac\pi2+2k\pi,\frac{3\pi}2+2k\pi\right]$ 上递减；</li><li>$\cos u$ 在 $\left[-\pi+2k\pi,2k\pi\right]$ 上递增，在 $\left[2k\pi,\pi+2k\pi\right]$ 上递减；</li><li>$\tan u$ 在 $\left(-\frac\pi2+k\pi,\frac\pi2+k\pi\right)$ 上递增。</li></ol>
+<ol start="1"><li>$\sin u$ 在 $\left[-\frac\pi2+2k\pi,\frac\pi2+2k\pi\right]$ 上递增，在 $\left[\frac\pi2+2k\pi,\frac{3\pi}2+2k\pi\right]$ 上递减；</li><li>$\cos u$ 在 $\left[-\pi+2k\pi,2k\pi\right]$ 上递增，在 $\left[2k\pi,\pi+2k\pi\right]$ 上递减；</li><li>$\tan u$ 在 $\left(-\frac\pi2+k\pi,\frac\pi2+k\pi\right)$ 上递增。</li></ol>
 <p>如果前面有负号，例如 $-2\sin u+1$，递增和递减要互换；如果 $\omega&lt;0$，解不等式时方向也要跟着改变。</p>
 <p>对称轴和对称中心也不是另一套新公式，而是把母函数的特殊位置搬到 $u=\omega x+\varphi$ 里：</p>
-<ol><li>$y=A\sin u+b$：对称轴来自峰谷，$u=\frac\pi2+k\pi$；对称中心来自零点，$u=k\pi$，中心纵坐标是 $b$。</li><li>$y=A\cos u+b$：对称轴来自峰谷，$u=k\pi$；对称中心来自零点，$u=\frac\pi2+k\pi$，中心纵坐标是 $b$。</li><li>$y=A\tan u+b$：没有对称轴；对称中心来自 $u=k\pi$，中心纵坐标是 $b$。</li></ol>
+<ol start="1"><li>$y=A\sin u+b$：对称轴来自峰谷，$u=\frac\pi2+k\pi$；对称中心来自零点，$u=k\pi$，中心纵坐标是 $b$。</li><li>$y=A\cos u+b$：对称轴来自峰谷，$u=k\pi$；对称中心来自零点，$u=\frac\pi2+k\pi$，中心纵坐标是 $b$。</li><li>$y=A\tan u+b$：没有对称轴；对称中心来自 $u=k\pi$，中心纵坐标是 $b$。</li></ol>
 <p>由图像反求解析式时，先从最高点和最低点读出</p>
 <div class="math-display">$$
 |A|=\frac{y_{\max}-y_{\min}}2,\qquad b=\frac{y_{\max}+y_{\min}}2,
 $$</div>
 <p>再由周期读出 $|\omega|=\frac{2\pi}{T}$，最后用一个特殊点（最大点、最小点或过中线点）确定 $\varphi$。</p>
-<h3>9. 三角方程、最值与参数</h3>
+<h3 id="section-11">9. 三角方程、最值与参数</h3>
 <p>三角方程要写全体解。例如</p>
 <div class="math-display">$$
 \sin x=\frac12
@@ -247,18 +247,18 @@ x=2k\pi+\frac\pi6
 x=2k\pi+\frac{5\pi}6,\qquad k\in\mathbb Z.
 $$</div>
 <p>最值题通常有三种入口：</p>
-<ol><li>直接由 $[-1,1]$ 得值域；</li><li>化成 $R\sin(x+\varphi)+b$；</li><li>换元成一元二次函数，但必须保留换元范围。</li></ol>
+<ol start="1"><li>直接由 $[-1,1]$ 得值域；</li><li>化成 $R\sin(x+\varphi)+b$；</li><li>换元成一元二次函数，但必须保留换元范围。</li></ol>
 <p>例如令 $t=\sin x$ 时，不能只说 $t$ 是实数，而要写</p>
 <div class="math-display">$$
 -1\le t\le1.
 $$</div>
-<h2>方法识别</h2>
+<h2 id="section-12">方法识别</h2>
 <p>看到三角函数题，先判断它属于哪一层：</p>
-<ol><li><strong>定义层</strong>：终边经过点、象限、三角函数线。</li><li><strong>关系层</strong>：同角关系、弦的齐次、诱导公式。</li><li><strong>公式层</strong>：和差角、二倍角、降幂、辅助角。</li><li><strong>图像层</strong>：周期、单调、对称、最值、参数。</li><li><strong>方程层</strong>：基本角、周期、定义域、全体解。</li></ol>
+<ol start="1"><li><strong>定义层</strong>：终边经过点、象限、三角函数线。</li><li><strong>关系层</strong>：同角关系、弦的齐次、诱导公式。</li><li><strong>公式层</strong>：和差角、二倍角、降幂、辅助角。</li><li><strong>图像层</strong>：周期、单调、对称、最值、参数。</li><li><strong>方程层</strong>：基本角、周期、定义域、全体解。</li></ol>
 <p>失败信号：</p>
 <ul><li>忘记象限，只给绝对值；</li><li>把 $\sin^2x$ 写成 $\sin x^2$；</li><li>诱导公式只背口诀，不判断新角所在象限；</li><li>图像平移把 $-\frac{\varphi}{\omega}$ 写成 $-\varphi$；</li><li>三角方程只写一个特殊解；</li><li>换元后忘记新变量范围。</li></ul>
-<h2>典型例题</h2>
-<h3>例 1：终边经过点</h3>
+<h2 id="section-13">典型例题</h2>
+<h3 id="section-14">例 1：终边经过点</h3>
 <p>角 $\alpha$ 的终边经过点 $P(-3,4)$，求 $\sin\alpha,\cos\alpha,\tan\alpha$。</p>
 <p>解：先求</p>
 <div class="math-display">$$
@@ -271,7 +271,7 @@ $$</div>
 \tan\alpha=-\frac43.
 $$</div>
 <p>点在第二象限，所以正弦为正，余弦和正切为负。</p>
-<h3>例 2：弦的齐次</h3>
+<h3 id="section-15">例 2：弦的齐次</h3>
 <p>已知 $\tan\alpha=2$，求</p>
 <div class="math-display">$$
 \frac{3\sin\alpha-\cos\alpha}{\sin\alpha+2\cos\alpha}.
@@ -283,7 +283,7 @@ $$</div>
 =\frac54.
 $$</div>
 <p>这种题的核心不是求 $\sin\alpha,\cos\alpha$，而是利用齐次结构直接化为 $\tan\alpha$。</p>
-<h3>例 3：角的拼凑</h3>
+<h3 id="section-16">例 3：角的拼凑</h3>
 <p>已知 $\sin\alpha=\frac35$，$\alpha$ 为锐角，$\cos\beta=\frac{12}{13}$，$\beta$ 为锐角，求 $\sin(\alpha+\beta)$。</p>
 <p>解：先补出</p>
 <div class="math-display">$$
@@ -296,7 +296,7 @@ $$</div>
 =\frac35\cdot\frac{12}{13}+\frac45\cdot\frac5{13}
 =\frac{56}{65}.
 $$</div>
-<h3>例 4：辅助角求最值</h3>
+<h3 id="section-17">例 4：辅助角求最值</h3>
 <p>求函数</p>
 <div class="math-display">$$
 f(x)=\sqrt3\sin x+\cos x+1
@@ -312,7 +312,7 @@ $$</div>
 f(x)=2\sin\left(x+\frac\pi6\right)+1.
 $$</div>
 <p>最大值为 $3$。</p>
-<h3>例 5：图像参数</h3>
+<h3 id="section-18">例 5：图像参数</h3>
 <p>函数</p>
 <div class="math-display">$$
 y=2\sin\left(3x-\frac\pi2\right)-1
@@ -326,7 +326,7 @@ $$</div>
 <div class="math-display">$$
 [-3,1].
 $$</div>
-<h3>例 6：三角方程</h3>
+<h3 id="section-19">例 6：三角方程</h3>
 <p>解方程</p>
 <div class="math-display">$$
 2\cos x-1=0.
@@ -341,10 +341,10 @@ x=2k\pi+\frac\pi3
 \quad\text{或}\quad
 x=2k\pi+\frac{5\pi}3,\qquad k\in\mathbb Z.
 $$</div>
-<h2>自我训练</h2>
+<h2 id="section-20">自我训练</h2>
 <p>下面的训练按题型分层。课堂上不需要一次全做完，可以让学生每类挑一题讲解，再由你追问定义来源、符号条件和变形方向。</p>
-<h2>分层题型训练</h2>
-<h3>A. 单位圆与三角函数线</h3>
+<h2 id="section-21">分层题型训练</h2>
+<h3 id="section-22">A. 单位圆与三角函数线</h3>
 <h4>训练 1</h4>
 <p>角 $\alpha$ 的终边经过点 $P(5,-12)$，求 $\sin\alpha,\cos\alpha,\tan\alpha$。</p>
 <details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>$r=\sqrt{5^2+(-12)^2}=13$，所以</p>
@@ -377,7 +377,7 @@ $$</div></div></details>
 \frac\pi6&lt;x&lt;\frac{5\pi}6.
 $$</div>
 <p>所以解集为 $\left(\frac\pi6,\frac{5\pi}6\right)$。</p></div></details>
-<h3>B. 恒等变换与角的拼凑</h3>
+<h3 id="section-23">B. 恒等变换与角的拼凑</h3>
 <h4>训练 5</h4>
 <p>化简：</p>
 <div class="math-display">$$
@@ -427,7 +427,7 @@ $$</div>
 =\frac45\cdot\frac45-\frac35\cdot\frac35
 =\frac7{25}.
 $$</div></div></details>
-<h3>C. 图像性质与参数</h3>
+<h3 id="section-24">C. 图像性质与参数</h3>
 <h4>训练 9</h4>
 <p>求函数</p>
 <div class="math-display">$$
@@ -489,9 +489,9 @@ $$</div>
 2(-2)^2-1=7.
 $$</div>
 <p>所以值域为 $[-1,7]$。关键是不能忘记 $t$ 的范围。</p></div></details>
-<h2>费曼讲题任务</h2>
+<h2 id="section-25">费曼讲题任务</h2>
 <p>让学生从训练 4、训练 8、训练 10、训练 12 中任选一道讲给你听。你可以只追问四句话：</p>
-<ol><li>这道题的对象是角、坐标、公式、图像还是方程？</li><li>你用了哪条定义或公式？它从哪里来？</li><li>有没有象限、定义域或换元范围需要检查？</li><li>如果题目把角的范围改掉，答案会不会变？</li></ol></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">三角专题</a></li><li>源文件：<code>content/09_high_school_math/02_trigonometry/01_trig_functions_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="02-solving-triangles-zh.html">解三角形：正弦定理、余弦定理与边角信息</a></h3><p>解三角形不是“正弦定理、余弦定理、面积公式”三条公式的堆叠。它研究的是：在一个三角形中，已知若干边角信息，怎样判断三角形是否存在、是否唯一，并进一步求出未知边角、面积、形状或取值范围。</p></div><div class="note-item"><h3><a href="03-trig-exercise-bank-zh.html">三角专题分层题库</a></h3><p>本页是三角专题的训练库，不替代讲义页。讲义页负责把概念讲透，题库页负责让学生反复练“识别题型、选择方法、检查条件”。</p></div><div class="note-item"><h3><a href="04-trig-local-review-supplement-zh.html">三角函数与解三角形：本地一轮复习补充</a></h3><p>这一页根据本地 2021 高考一轮复习资料中的考点 13 到考点 17 重写整理，补充三角函数定义、同角关系、诱导恒等变换、图像性质与解三角形的题型方法。</p></div></div></section></aside></div>
+<ol start="1"><li>这道题的对象是角、坐标、公式、图像还是方程？</li><li>你用了哪条定义或公式？它从哪里来？</li><li>有没有象限、定义域或换元范围需要检查？</li><li>如果题目把角的范围改掉，答案会不会变？</li></ol></section><aside id="reading-guide" class="rail"><section class="page-section learning-nav"><h2>学习路线</h2><p>先修：单位圆、三角函数与正余弦定理</p><ul><li><a href="index.html">专题路线与先修内容</a></li><li><a rel="next" href="02-solving-triangles-zh.html">下一节：解三角形：正弦定理、余弦定理与边角信息</a></li><li><a href="90-mixed-checkpoint-zh.html">混合检测与讲题验收</a></li><li><a href="03-trig-exercise-bank-zh.html">配套练习：三角专题分层题库</a></li></ul></section><nav class="page-section article-toc" aria-label="本页目录"><h2>本页目录</h2><ul><li class="toc-level-2"><a href="#section-1">研究对象</a></li><li class="toc-level-2"><a href="#section-2">核心知识结构</a></li><li class="toc-level-3"><a href="#section-3">1. 任意角、终边相同角与弧度制</a></li><li class="toc-level-3"><a href="#section-4">2. 单位圆定义：公式从坐标来</a></li><li class="toc-level-3"><a href="#section-5">3. 三角函数线：把不等式和大小比较画出来</a></li><li class="toc-level-3"><a href="#section-6">4. 同角关系与“弦的齐次”</a></li><li class="toc-level-3"><a href="#section-7">5. 诱导公式：先看位置，再看名称</a></li><li class="toc-level-3"><a href="#section-8">6. 两角和差公式：从坐标内积推出来</a></li><li class="toc-level-3"><a href="#section-9">7. 二倍角、降幂与辅助角</a></li><li class="toc-level-3"><a href="#section-10">8. 图像性质与图像变换</a></li><li class="toc-level-3"><a href="#section-11">9. 三角方程、最值与参数</a></li><li class="toc-level-2"><a href="#section-12">方法识别</a></li><li class="toc-level-2"><a href="#section-13">典型例题</a></li><li class="toc-level-3"><a href="#section-14">例 1：终边经过点</a></li><li class="toc-level-3"><a href="#section-15">例 2：弦的齐次</a></li><li class="toc-level-3"><a href="#section-16">例 3：角的拼凑</a></li><li class="toc-level-3"><a href="#section-17">例 4：辅助角求最值</a></li><li class="toc-level-3"><a href="#section-18">例 5：图像参数</a></li><li class="toc-level-3"><a href="#section-19">例 6：三角方程</a></li><li class="toc-level-2"><a href="#section-20">自我训练</a></li><li class="toc-level-2"><a href="#section-21">分层题型训练</a></li><li class="toc-level-3"><a href="#section-22">A. 单位圆与三角函数线</a></li><li class="toc-level-3"><a href="#section-23">B. 恒等变换与角的拼凑</a></li><li class="toc-level-3"><a href="#section-24">C. 图像性质与参数</a></li><li class="toc-level-2"><a href="#section-25">费曼讲题任务</a></li></ul></nav><details class="source-info"><summary>来源信息</summary><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">三角专题</a></li><li>源文件：<code>content/09_high_school_math/02_trigonometry/01_trig_functions_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></details><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="02-solving-triangles-zh.html">解三角形：正弦定理、余弦定理与边角信息</a></h3><p>解三角形不是“正弦定理、余弦定理、面积公式”三条公式的堆叠。它研究的是：在一个三角形中，已知若干边角信息，怎样判断三角形是否存在、是否唯一，并进一步求出未知边角、面积、形状或取值范围。</p></div><div class="note-item"><h3><a href="03-trig-exercise-bank-zh.html">三角专题分层题库</a></h3><p>本页是三角专题的训练库，不替代讲义页。讲义页负责把概念讲透，题库页负责让学生反复练“识别题型、选择方法、检查条件”。</p></div><div class="note-item"><h3><a href="04-trig-local-review-supplement-zh.html">三角函数与解三角形：本地一轮复习补充</a></h3><p>这一页根据本地 2021 高考一轮复习资料中的考点 13 到考点 17 重写整理，补充三角函数定义、同角关系、诱导恒等变换、图像性质与解三角形的题型方法。</p></div><div class="note-item"><h3><a href="90-mixed-checkpoint-zh.html">三角：混合检测与讲题验收</a></h3><p>先独立完成，再展开解析。题目不标方法名称；请写出选择依据和限制条件。</p></div></div></section></aside></div>
   </div>
 </body>
 </html>

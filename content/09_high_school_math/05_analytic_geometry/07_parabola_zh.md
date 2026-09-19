@@ -4,7 +4,7 @@
 
 ## 定义
 
-平面内到定点 $F$ 的距离等于到定直线 $l$ 的距离的点的轨迹叫抛物线。定点 $F$ 叫焦点，定直线 $l$ 叫准线。
+平面内到定点 $F$ 的距离等于到定直线 $l$ 的距离的点的轨迹叫抛物线。要求 $F\notin l$；若焦点在准线上，轨迹会退化为直线。定点 $F$ 叫焦点，定直线 $l$ 叫准线。
 
 ## 标准方程
 
@@ -72,13 +72,13 @@ $$
 
 :::diagram
 <svg viewBox="0 0 620 300" role="img" aria-label="抛物线焦点准线">
-  <path d="M230 60 Q420 150 230 240" fill="none" stroke="#1f2937" stroke-width="3"/>
+  <path d="M258.928571 60 Q201.071429 150 258.928571 240" fill="none" stroke="#1f2937" stroke-width="3"/>
   <line x1="160" y1="45" x2="160" y2="255" stroke="#0f766e" stroke-width="3"/>
-  <circle cx="310" cy="150" r="5" fill="#dc2626"/>
+  <circle cx="300" cy="150" r="5" fill="#dc2626"/>
   <line x1="80" y1="150" x2="560" y2="150" stroke="#94a3b8" stroke-width="2"/>
   <line x1="230" y1="45" x2="230" y2="255" stroke="#94a3b8" stroke-width="2"/>
   <text x="145" y="275" font-size="17" fill="#0f766e">准线</text>
-  <text x="320" y="140" font-size="17" fill="#dc2626">F</text>
+  <text x="310" y="140" font-size="17" fill="#dc2626">F</text>
   <text x="215" y="275" font-size="17">顶点</text>
 </svg>
 :::
