@@ -1,0 +1,206 @@
+[
+  {
+    "week": 1,
+    "title": "工作与经历",
+    "description": "从熟悉的内容开始，让表达连起来。",
+    "audio": "https://learnenglish.britishcouncil.org/free-resources/listening/b1/phone-call-customer",
+    "level": "B1",
+    "days": [
+      {
+        "day": 1,
+        "title": "建立起点",
+        "speak": "不看稿介绍工作与学习背景，录 90 秒；回答 Why do you want to improve your English?",
+        "write": "写 80—120 词自我介绍；保存初稿，不先让 AI 代写。"
+      },
+      {
+        "day": 2,
+        "title": "说清职责",
+        "speak": "用三个具体动作介绍日常工作，再举一个例子。",
+        "write": "把昨天三处不自然的表达改写；读句子主干讲义的一小节。"
+      },
+      {
+        "day": 3,
+        "title": "解释一个产品",
+        "speak": "假设听众没有专业背景，解释一种熟悉的产品有什么用途。",
+        "write": "写五句说明：用途、使用者、流程、限制、一个问题。"
+      },
+      {
+        "day": 4,
+        "title": "叙述一次经历",
+        "speak": "讲一次解决问题的经历，区分发生了什么与现在的情况。",
+        "write": "读时态与体的一小节；写 100 词事件经过。"
+      },
+      {
+        "day": 5,
+        "title": "客户追问",
+        "speak": "模拟回答 What does it do? What are its limitations? What happens next?",
+        "write": "写一封模拟跟进邮件，明确对方需要确认的事项。"
+      },
+      {
+        "day": 6,
+        "title": "换一个情境",
+        "speak": "不复用昨天的稿子，向新同事解释一个工作流程。",
+        "write": "读另一段相近难度材料，写三条要点。"
+      },
+      {
+        "day": 7,
+        "title": "第一周复盘",
+        "speak": "重录第 1 天内容，再临时回答一个新问题；比较两次录音。",
+        "write": "选一段没听过的同级材料，记录主题、两条细节和最难的一句。"
+      }
+    ]
+  },
+  {
+    "week": 2,
+    "title": "解释自己的研究",
+    "description": "从研究问题走向方法、证据和局限。",
+    "audio": "https://learnenglish.britishcouncil.org/free-resources/listening/b1/introduction-lecture",
+    "level": "B1",
+    "days": [
+      {
+        "day": 8,
+        "title": "先说研究问题",
+        "speak": "用生活化例子解释你研究的问题，暂时不讲公式。",
+        "write": "读自己熟悉的一篇论文摘要，写三句通俗解释。"
+      },
+      {
+        "day": 9,
+        "title": "方法的直觉",
+        "speak": "回答 What is the main idea behind the method? 先直觉，后术语。",
+        "write": "从摘要挑三个表达，换成自己的例子。"
+      },
+      {
+        "day": 10,
+        "title": "解释术语",
+        "speak": "用简单英语解释 feature selection、uncertainty 或一个熟悉术语。",
+        "write": "写定义、例子、反例各一句；避免循环定义。"
+      },
+      {
+        "day": 11,
+        "title": "讲实验过程",
+        "speak": "按输入、处理、比较和结果的顺序说明一个实验。",
+        "write": "写 100 词方法说明，检查时态与被动语态是否有必要。"
+      },
+      {
+        "day": 12,
+        "title": "结果和证据",
+        "speak": "区分 We observed… 与 This may suggest…，说明一个结果。",
+        "write": "读立场与证据讲义的一小节；把过强的结论改得准确。"
+      },
+      {
+        "day": 13,
+        "title": "承认限制",
+        "speak": "回答 When might this method fail? 和 What would you test next?",
+        "write": "写一段局限说明，不编造实验数值。"
+      },
+      {
+        "day": 14,
+        "title": "第二周复盘",
+        "speak": "用两分钟说明问题、方法、一个发现和一个局限；允许看关键词。",
+        "write": "换一篇摘要，写主题和一个真实问题；记录哪些表达能迁移。"
+      }
+    ]
+  },
+  {
+    "week": 3,
+    "title": "互动与澄清",
+    "description": "练习听不清、不同意和暂时不知道时如何继续。",
+    "audio": "https://learnenglish.britishcouncil.org/free-resources/listening/b2/creating-study-group",
+    "level": "B2",
+    "days": [
+      {
+        "day": 15,
+        "title": "请求重述",
+        "speak": "用 Could you rephrase that? 发起澄清，再用自己的话确认。",
+        "write": "写三个听不清时可直接使用的句子。"
+      },
+      {
+        "day": 16,
+        "title": "核对理解",
+        "speak": "用 Do you mean that…? 核对一个概念，再确认下一步。",
+        "write": "写一段四轮对话，确保后一句回应前一句。"
+      },
+      {
+        "day": 17,
+        "title": "礼貌不同意",
+        "speak": "先准确复述对方观点，再提出一个理由和替代建议。",
+        "write": "写 100 词意见回复；区分事实、判断和建议。"
+      },
+      {
+        "day": 18,
+        "title": "解释困难",
+        "speak": "说清卡在哪里、尝试了什么、希望得到什么帮助。",
+        "write": "写一封模拟求助邮件，不只写 It does not work。"
+      },
+      {
+        "day": 19,
+        "title": "回答未知问题",
+        "speak": "练习 I would need to check…，再说明怎样查证，不编答案。",
+        "write": "读情态与反事实讲义的一小节，写三个不同确定程度的回答。"
+      },
+      {
+        "day": 20,
+        "title": "临场追问",
+        "speak": "请伙伴或 AI 每次问一个陌生追问；先回答，再看反馈。",
+        "write": "整理三处影响理解的错误，用新内容再写一次。"
+      },
+      {
+        "day": 21,
+        "title": "第三周复盘",
+        "speak": "进行五分钟对话；独练时随机选三问回答，不能当作真实互动测评。",
+        "write": "记录是否成功澄清、是否答到问题、是否能继续交流。"
+      }
+    ]
+  },
+  {
+    "week": 4,
+    "title": "新材料与独立讨论",
+    "description": "将熟悉主题中的能力迁移到新内容。",
+    "audio": "https://learnenglish.britishcouncil.org/free-resources/listening/b2/lecture-about-experiment",
+    "level": "B2",
+    "days": [
+      {
+        "day": 22,
+        "title": "听懂新材料",
+        "speak": "听一段新讲解，用三句话说出主题、过程和结论。",
+        "write": "读对应原文，标明一处没听出来但认识的词组。"
+      },
+      {
+        "day": 23,
+        "title": "事实与推断",
+        "speak": "分别说出材料明确讲了什么，以及你据此推测什么。",
+        "write": "写 100 词摘要，避免把自己的推测算到作者头上。"
+      },
+      {
+        "day": 24,
+        "title": "比较两个观点",
+        "speak": "比较两种方法或观点：共同点、差异、适用条件。",
+        "write": "读比较与省略的一小节，写五句公平比较。"
+      },
+      {
+        "day": 25,
+        "title": "提出好问题",
+        "speak": "围绕证据、适用范围和替代解释，各提出一个问题。",
+        "write": "读学术论证的一小节；写一段问题说明。"
+      },
+      {
+        "day": 26,
+        "title": "两分钟小报告",
+        "speak": "用新材料做两分钟报告，只带五个关键词。",
+        "write": "写一段简介和一段局限，检查听众是否能理解术语。"
+      },
+      {
+        "day": 27,
+        "title": "陌生情境迁移",
+        "speak": "改成日常生活话题，解释一个决定并回应反对意见。",
+        "write": "选生活类材料，写一封建议或请求邮件。"
+      },
+      {
+        "day": 28,
+        "title": "四周回看",
+        "speak": "重录自我介绍和研究介绍，再做一段新材料复述。",
+        "write": "比较第 1、7、28 天记录，选择下轮最需要练的两项。"
+      }
+    ]
+  }
+]
