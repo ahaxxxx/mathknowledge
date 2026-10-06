@@ -4,6 +4,10 @@
 
 ## 最近新增：凸优化与强化学习
 
+- [Sutton 与 Barto 第二版：章节地图与验收标准](rl-book.md)
+- [强化学习原创训练册：六组任务与完整解析](rl-practice.md)
+- [研究工作台：论文分析与知识卡片](rl-research.md)
+
 - [Boyd《凸优化》：阅读顺序、训练与 KKT 例子](convex-study.md)
 - [强化学习：从 MDP 到策略梯度的路线](rl-study.md)
 

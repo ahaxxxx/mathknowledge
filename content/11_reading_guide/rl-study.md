@@ -4,7 +4,8 @@
 
 ## 学习材料怎样分工
 
-- 主线：[David Silver 强化学习课程](https://davidstarsilver.wordpress.com/teaching/)。官网提供课件、视频、Easy21 作业以及往年考试题和答案。
+- 主教材：[Sutton 与 Barto 第二版章节地图](rl-book.md)，配套 [原创训练册](rl-practice.md) 与 [研究卡片](rl-research.md)。
+- 辅助课程：[David Silver 强化学习课程](https://davidstarsilver.wordpress.com/teaching/)。官网提供课件、视频、Easy21 作业以及往年考试题和答案。
 - 深度学习桥梁：[Spinning Up 的强化学习概念页](https://spinningup.openai.com/en/latest/spinningup/rl_intro.html)。用于核对符号、目标与价值函数；其代码和依赖有历史背景，不能假定能直接运行于当前环境。
 - 数学配套：[概率训练](probability.md)、[线代训练](algebra.md)、[Boyd《凸优化》指南](convex-study.md)。
 

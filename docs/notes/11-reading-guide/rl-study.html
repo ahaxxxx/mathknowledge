@@ -35,7 +35,7 @@
       <p>先在有限状态问题中把对象、方程和算法讲清楚，再进入函数逼近与深度强化学习。本页提供学习路线、一个完整 Bellman 例子和论文分析模板，不宣称覆盖全部强化学习。</p>
     </div>
     <div class="subject-grid"><section class="page-section article"><h2>学习材料怎样分工</h2>
-<ul><li>主线：<a href="https://davidstarsilver.wordpress.com/teaching/">David Silver 强化学习课程</a>。官网提供课件、视频、Easy21 作业以及往年考试题和答案。</li><li>深度学习桥梁：<a href="https://spinningup.openai.com/en/latest/spinningup/rl_intro.html">Spinning Up 的强化学习概念页</a>。用于核对符号、目标与价值函数；其代码和依赖有历史背景，不能假定能直接运行于当前环境。</li><li>数学配套：<a href="probability.html">概率训练</a>、<a href="algebra.html">线代训练</a>、<a href="convex-study.html">Boyd《凸优化》指南</a>。</li></ul>
+<ul><li>主教材：<a href="rl-book.html">Sutton 与 Barto 第二版章节地图</a>，配套 <a href="rl-practice.html">原创训练册</a> 与 <a href="rl-research.html">研究卡片</a>。</li><li>辅助课程：<a href="https://davidstarsilver.wordpress.com/teaching/">David Silver 强化学习课程</a>。官网提供课件、视频、Easy21 作业以及往年考试题和答案。</li><li>深度学习桥梁：<a href="https://spinningup.openai.com/en/latest/spinningup/rl_intro.html">Spinning Up 的强化学习概念页</a>。用于核对符号、目标与价值函数；其代码和依赖有历史背景，不能假定能直接运行于当前环境。</li><li>数学配套：<a href="probability.html">概率训练</a>、<a href="algebra.html">线代训练</a>、<a href="convex-study.html">Boyd《凸优化》指南</a>。</li></ul>
 <p>Silver 是经典基础课程，不是现代大模型强化学习的全部路线。先掌握基本对象，再按具体研究任务补近期论文。以下阶段与训练由本站组织，并非课程官方周计划。</p>
 <h2>阶段一：定义序贯决策问题</h2>
 <p>对象是一段不断行动并获得反馈的过程。起步只讨论有限状态、有限动作、折扣无限时域 MDP：状态集合 S、各状态可用动作、转移概率 P、期望一步奖励 r、初始分布 ρ 与折扣因子 γ。要求 0≤γ&lt;1，奖励有界。</p>

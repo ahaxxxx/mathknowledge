@@ -44,6 +44,10 @@ Reinforcement Learning · 10 Lectures；David Silver · 2015 课程。
 
 经典基础课程，不代表现代大模型强化学习的全部技术。
 
+## 主教材与训练
+
+[以 Sutton 与 Barto 第二版为主教材](rl-book.md)，配合 [六组原创训练与解析](rl-practice.md) 和 [论文分析模板](rl-research.md)。本页 Silver 课程作为辅助讲授材料。
+
 ## 继续深入
 
 [进入强化学习路线与 Bellman 方程训练](rl-study.md)。
