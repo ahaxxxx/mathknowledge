@@ -56,3 +56,9 @@ For continuous rebuilds while editing:
 python scripts/build_notes.py --watch
 ```
 
+
+## Free reading and training guide
+
+Source guides live in `content/11_reading_guide/`; run `python3 scripts/build_notes.py` to regenerate `docs/notes/11-reading-guide/`. The directory README is the reading hub. Resource cards link to official sources; the convex optimization and reinforcement learning study notes contain original training examples.
+
+The homepage, references, course overviews, and roadmap are hand-maintained HTML under `docs/`. Their guide links should be updated there when a guide is renamed. The notes builder does not regenerate those overview pages.

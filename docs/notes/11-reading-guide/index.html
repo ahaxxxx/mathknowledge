@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>免费阅读与训练 | math.bozhanli.com</title>
+  <meta name="description" content="从数学基础到 AI 研究的阅读路线。先固定数分、线代与概率三条主线，再按研究问题补充工具。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../index.html">首页</a><a href="../../about.html">关于</a><a href="../../method.html">方法</a><a href="../../high-school-math.html">高中数学</a><a href="../../english.html">英语</a><a href="../../calculus.html">高数</a><a href="../../linear-algebra.html">线代</a><a href="../../probability.html">概率</a><a href="../../references.html">书目</a><a href="../../roadmap.html">路线</a><a href="../../live.html">答疑</a><a href="../../faq.html">FAQ</a><a class="is-active" href="../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../index.html">首页</a><span>/</span><a href="../index.html">笔记</a><span>/</span><span>免费阅读与训练</span></div>
+      <h1>免费阅读与训练</h1>
+      <p>从数学基础到 AI 研究的阅读路线。先固定数分、线代与概率三条主线，再按研究问题补充工具。</p>
+    </div>
+    <div class="subject-grid"><div class="rail"><section class="page-section article"><h2>最近新增：凸优化与强化学习</h2>
+<ul><li><a href="convex-study.html">Boyd《凸优化》：阅读顺序、训练与 KKT 例子</a></li><li><a href="rl-study.html">强化学习：从 MDP 到策略梯度的路线</a></li></ul>
+<h2>这些免费资料够用吗？</h2>
+<p>足够用于系统补练，并深入许多研究专题。覆盖范围和练习反馈比书单长度更重要。Axler 未覆盖的多项式内容可用 Judson 补充；没有完整官方解答的资料，需要通过讨论、严谨核对与独立重做获得反馈。</p>
+<h2>01 基础训练</h2>
+<ul><li><a href="analysis.html">数学分析：从定义到证明</a>：英文 / 免费全文 / 章节习题。沿实数、极限、连续与微积分重建分析框架，逐步进入多元分析。</li><li><a href="algebra.html">高等代数：理解线性结构</a>：中文可读 / 免费全文 / 证明训练。从向量空间、基与维数，到线性映射、谱定理和奇异值分解。</li><li><a href="probability.html">概率论：练习选择工具</a>：英文 / 官方解答 / 视频。从条件概率到条件期望；先做专题题，再在综合作业中自己判断方法。</li><li><a href="strang.html">线性代数：计算与几何直觉</a>：英文 / 视频 / 作业解答。为线性方程组、正交投影、最小二乘与特征值补充计算训练。</li><li><a href="judson.html">代数补充：群、环与多项式</a>：英文 / 开放教材 / 按需补充。补充线代教材之外的代数内容；从环与多项式连接已有的群、环、域知识。</li></ul>
+<h2>02 连接 AI 工具</h2>
+<ul><li><a href="optimization.html">优化：从目标到算法</a>：英文 / 免费全文 / 附加习题。建立凸集、凸函数、对偶和最优性条件的框架，把模型转化为可分析的问题。</li><li><a href="numerical.html">数值方法：误差与稳定性</a>：英文 / 研究生课程 / 作业解答。理解为什么正确的数学表达式，在计算机上仍可能产生不可靠的结果。</li><li><a href="statistics.html">统计推断：从样本到结论</a>：英文 / 视频 / 作业。理解估计、推断与统计方法背后的理论，连接概率知识与数据分析。</li><li><a href="vmls.html">应用桥梁：最小二乘与建模</a>：英文 / 免费全文 / 计算实践。把向量与矩阵知识用于拟合、建模和计算，适合从理论进入实验时查阅。</li><li><a href="isl.html">统计学习：让推导接受数据检验</a>：英文 / 免费全文 / Python。围绕回归、分类与模型评估，把数学分析连接到可重复的实验。</li><li><a href="deep.html">深度学习：串联数学工具</a>：英文 / 免费网页版 / 基础参考。把线代、概率、数值计算和优化放回神经网络的研究语境。</li></ul>
+<h2>03 沿研究问题深入</h2>
+<ul><li><a href="hdp.html">高维概率与学习理论</a>：英文 / 研究专题 / 习题。从集中不等式、随机矩阵到泛化分析，进入理论研究常用的证明工具。</li><li><a href="diffusion.html">扩散与 Flow Matching</a>：英文 / 讲义与实验 / 生成模型。把微分方程、概率和采样联系起来，理解连续时间生成模型。</li><li><a href="rl.html">强化学习：决策与反馈</a>：英文 / 视频与课件 / 考试答案。围绕 MDP、动态规划、价值函数与策略梯度建立强化学习的数学框架。</li><li><a href="geometry.html">几何学习：对称性与等变性</a>：英文 / 开放章节 / 几何与群。把群作用、不变性与等变性连接到图、网格和几何上的神经网络。</li><li><a href="information.html">信息论与统计的连接</a>：英文 / 专题框架 / 教程入口。围绕熵、KL 散度、互信息和统计推断，建立信息论的研究入口。</li></ul>
+<h2>每周怎样用</h2>
+<ol><li>选一个主题，先独立尝试定义题、证明题和反例。</li><li>卡住时定位最小缺口，再查资料或提示。</li><li>记录独立完成、提示后完成、只读懂解答三种状态。</li><li>隔几天闭卷重做，并寻找一个论文或计算应用。</li></ol>
+<h2>读论文的检查问题</h2>
+<ul><li>作者研究什么对象，优化什么目标？</li><li>结论用到了哪些假设？</li><li>我无法解释的最小步骤是什么？</li><li>能否在低维或线性情形重建？</li><li>证明与实验分别支持多大的主张？</li></ul>
+<h2>回到课程与知识框架</h2>
+<p><a href="../../calculus.html">高数</a> · <a href="../../linear-algebra.html">线代</a> · <a href="../../probability.html">概率</a> · <a href="../../references.html">书目</a> · <a href="../../roadmap.html">长期路线</a></p>
+<h2>来源与维护</h2>
+<p>本站提供中文导读和自编训练，不转存教材全文。各资料页列出作者、大学或官方项目入口。阅读顺序是本站建议，不是作者指定课程要求。</p></section><section class="page-section"><h2>本目录文章</h2><div class="note-grid"><div class="note-item"><h3><a href="algebra.html">高等代数：理解线性结构</a></h3><p>从向量空间、基与维数，到线性映射、谱定理和奇异值分解。</p></div><div class="note-item"><h3><a href="analysis.html">数学分析：从定义到证明</a></h3><p>沿实数、极限、连续与微积分重建分析框架，逐步进入多元分析。</p></div><div class="note-item"><h3><a href="convex-study.html">Boyd《凸优化》：阅读顺序、训练与强化学习连接</a></h3><p>围绕“怎样建模、怎样证明最优、怎样计算”组织学习。先形成可独立使用的工具，再按研究问题深入；本页为中文导读与自编训练，不是全书译文。</p></div><div class="note-item"><h3><a href="deep.html">深度学习：串联数学工具</a></h3><p>把线代、概率、数值计算和优化放回神经网络的研究语境。</p></div><div class="note-item"><h3><a href="diffusion.html">扩散与 Flow Matching</a></h3><p>把微分方程、概率和采样联系起来，理解连续时间生成模型。</p></div><div class="note-item"><h3><a href="geometry.html">几何学习：对称性与等变性</a></h3><p>把群作用、不变性与等变性连接到图、网格和几何上的神经网络。</p></div><div class="note-item"><h3><a href="hdp.html">高维概率与学习理论</a></h3><p>从集中不等式、随机矩阵到泛化分析，进入理论研究常用的证明工具。</p></div><div class="note-item"><h3><a href="information.html">信息论与统计的连接</a></h3><p>围绕熵、KL 散度、互信息和统计推断，建立信息论的研究入口。</p></div><div class="note-item"><h3><a href="isl.html">统计学习：让推导接受数据检验</a></h3><p>围绕回归、分类与模型评估，把数学分析连接到可重复的实验。</p></div><div class="note-item"><h3><a href="judson.html">代数补充：群、环与多项式</a></h3><p>补充线代教材之外的代数内容；从环与多项式连接已有的群、环、域知识。</p></div><div class="note-item"><h3><a href="numerical.html">数值方法：误差与稳定性</a></h3><p>理解为什么正确的数学表达式，在计算机上仍可能产生不可靠的结果。</p></div><div class="note-item"><h3><a href="optimization.html">优化：从目标到算法</a></h3><p>建立凸集、凸函数、对偶和最优性条件的框架，把模型转化为可分析的问题。</p></div><div class="note-item"><h3><a href="probability.html">概率论：练习选择工具</a></h3><p>从条件概率到条件期望；先做专题题，再在综合作业中自己判断方法。</p></div><div class="note-item"><h3><a href="rl-study.html">强化学习：从 MDP 到策略梯度的学习路线</a></h3><p>先在有限状态问题中把对象、方程和算法讲清楚，再进入函数逼近与深度强化学习。本页提供学习路线、一个完整 Bellman 例子和论文分析模板，不宣称覆盖全部强化学习。</p></div><div class="note-item"><h3><a href="rl.html">强化学习：决策与反馈</a></h3><p>围绕 MDP、动态规划、价值函数与策略梯度建立强化学习的数学框架。</p></div><div class="note-item"><h3><a href="statistics.html">统计推断：从样本到结论</a></h3><p>理解估计、推断与统计方法背后的理论，连接概率知识与数据分析。</p></div><div class="note-item"><h3><a href="strang.html">线性代数：计算与几何直觉</a></h3><p>为线性方程组、正交投影、最小二乘与特征值补充计算训练。</p></div><div class="note-item"><h3><a href="vmls.html">应用桥梁：最小二乘与建模</a></h3><p>把向量与矩阵知识用于拟合、建模和计算，适合从理论进入实验时查阅。</p></div></div></section></div><aside class="rail"><section class="page-section"><h2>自动发布说明</h2><ul><li>源目录：<code>content/11_reading_guide</code></li><li>当前文章数：19</li><li>子目录数：0</li><li>这个页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></aside></div>
+  </div>
+</body>
+</html>
