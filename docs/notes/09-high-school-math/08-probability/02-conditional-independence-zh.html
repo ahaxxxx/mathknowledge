@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>条件概率与独立性：信息改变了什么 | math.bozhanli.com</title>
+  <meta name="description" content="已经知道事件 $B$ 发生，求事件 $A$ 发生的概率，记为 $P(A\mid B)$。当 $P(B)&gt;0$ 时，定义">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">高中概率</a><span>/</span><span>条件概率与独立性：信息改变了什么</span></div>
+      <h1>条件概率与独立性：信息改变了什么</h1>
+      <p>已经知道事件 $B$ 发生，求事件 $A$ 发生的概率，记为 $P(A\mid B)$。当 $P(B)&gt;0$ 时，定义</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>条件概率的定义</h2>
+<p>已经知道事件 $B$ 发生，求事件 $A$ 发生的概率，记为 $P(A\mid B)$。当 $P(B)&gt;0$ 时，定义</p>
+<div class="math-display">$$P(A\mid B)=\frac{P(A\cap B)}{P(B)}.$$</div>
+<p>分母表示新的信息范围，分子表示其中也属于 $A$ 的部分。古典概型下可改为在 $B$ 内计数，但不是所有条件概率问题都等可能。</p>
+<p>由定义移项得到乘法公式：</p>
+<div class="math-display">$$P(A\cap B)=P(B)P(A\mid B).$$</div>
+<p>它不要求独立。若改写成 $P(A)P(B\mid A)$，则需 $P(A)&gt;0$ 才能使用该条件概率。</p>
+<h2>例题：不放回抽球</h2>
+<p>袋中有 3 红 2 白共 5 个除颜色外相同的球，充分混合，每次等可能抽出一个，连续抽两次且不放回。$R_1,R_2$ 分别表示第一、二次为红球。</p>
+<details class="solution-toggle"><summary>从树状分支计算</summary><div class="solution-body"><p>已知第一球为红，剩下 2 红 2 白，所以 $P(R_2\mid R_1)=2/4=1/2$。</p>
+<div class="math-display">$$P(R_1\cap R_2)=\frac35\times\frac24=\frac3{10}.$$</div>
+<p>第二球为红可分成“先红后红”或“先白后红”，两条路径互斥且穷尽：</p>
+<div class="math-display">$$P(R_2)=\frac35\times\frac24+\frac25\times\frac34=\frac35.$$</div>
+<p>因此 $P(R_2\mid R_1)\ne P(R_2)$，两次红球事件不独立。若每次放回并重新充分混合，第二次红球概率才保持 $3/5$，两次全红为 $9/25$。</p></div></details>
+<h2>独立与互斥必须分开</h2>
+<p>定义：若 $P(A\cap B)=P(A)P(B)$，则 $A,B$ 独立。当 $P(B)&gt;0$ 时，这等价于 $P(A\mid B)=P(A)$，即知道 $B$ 没改变 $A$ 的概率。</p>
+<p>互斥表示不能同时发生；独立表示概率信息不改变。若两个互斥事件的概率都大于 0，则交集概率为 0、概率乘积大于 0，所以它们不独立。涉及概率为 0 的事件时，不能把这句话不加条件地使用。</p>
+<p>若 $A,B$ 独立，则 $A,\overline B$ 也独立，因为</p>
+<div class="math-display">$$P(A\cap\overline B)=P(A)-P(A\cap B)=P(A)(1-P(B)).$$</div>
+<p>多个试验使用连续概率相乘时，需要相应的相互独立条件；“两两独立”一般不能替代“相互独立”。</p>
+<h2>全概率：先分来源，再合并</h2>
+<p>若 $B_1,\ldots,B_n$ 两两互斥、合起来覆盖样本空间，且各自概率大于 0，则 $A$ 被分成互斥的 $A\cap B_i$，于是</p>
+<div class="math-display">$$P(A)=\sum_{i=1}^nP(B_i)P(A\mid B_i).$$</div>
+<p>例：甲生产线供货占 60%，次品率 2%；乙占 40%，次品率 5%。随机抽一件，次品概率为 $0.6\times0.02+0.4\times0.05=0.032$。不能直接平均两个次品率，因为来源权重不同。</p>
+<h2>逆向追问（拓展）：已知次品，来自哪里</h2>
+<p>记次品事件为 $D$。上例中甲且次品的概率为 $0.012$，所有次品的概率为 $0.032&gt;0$，所以</p>
+<div class="math-display">$$P(\text{甲}\mid D)=\frac{0.012}{0.032}=\frac38.$$</div>
+<p>这是条件概率的直接应用，也称贝叶斯公式的一个实例。$P(D\mid\text{甲})$ 和 $P(\text{甲}\mid D)$ 的分母不同，不能交换。</p>
+<h2>讲题与自检</h2>
+<p>请用“先沿路径相乘，再把互斥路径相加”解释抽球例题，并指出每个分母来自什么信息。</p>
+<p>练习：$P(A)=0.4,P(B)=0.5,P(A\cap B)=0.2$。是否独立？是否互斥？$P(A\mid B)$ 是多少？</p>
+<details class="solution-toggle"><summary>自检解析</summary><div class="solution-body"><p>$0.2=0.4\times0.5$，故独立；交集概率大于 0，故不互斥。$P(B)&gt;0$，所以条件概率为 $0.2/0.5=0.4$，与 $P(A)$ 相同，验证了独立性。</p></div></details></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高中概率</a></li><li>源文件：<code>content/09_high_school_math/08_probability/02_conditional_independence_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-events-classical-zh.html">事件与古典概型：先确定一次试验的结果</a></h3><p>一次随机试验的所有可能基本结果组成样本空间 $\Omega$；一个基本结果称为样本点，事件是样本空间的子集。掷一枚骰子时，$\Omega=\{1,2,3,4,5,6\}$，“出现偶数”是事件 $A=\{2,4,6\}$。骰子是否均匀影响概率，不改变这个样本空间。</p></div><div class="note-item"><h3><a href="03-random-variables-zh.html">离散随机变量：分布列、期望与方差</a></h3><p>随机变量是给每个试验结果指定一个实数的函数。例如两次抛币的结果为正正、正反、反正、反反，定义 $X$ 为正面次数，则对应数值为 2、1、1、0。$X=1$ 是一个事件，包含两种基本结果。</p></div><div class="note-item"><h3><a href="04-distributions-zh.html">常见分布：先检查机制，再选择公式</a></h3><p>一次试验只有成功、失败两种结果，定义 $I$ 成功时为 1、失败时为 0，成功概率为 $p$，其中 $0\le p\le1$。这是两点分布：$E(I)=p$，$D(I)=p-p^2=p(1-p)$。</p></div><div class="note-item"><h3><a href="05-exercises-zh.html">概率分层训练：建模、计算与解释</a></h3><p>每题先写清样本空间或随机变量、已知条件与所选模型，再计算。答案展开前先独立做题；讲题时补一句“如果改变什么条件，这种方法就不能用”。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

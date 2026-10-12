@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>事件与古典概型：先确定一次试验的结果 | math.bozhanli.com</title>
+  <meta name="description" content="一次随机试验的所有可能基本结果组成样本空间 $\Omega$；一个基本结果称为样本点，事件是样本空间的子集。掷一枚骰子时，$\Omega=\{1,2,3,4,5,6\}$，“出现偶数”是事件 $A=\{2,4,6\}$。骰子是否均匀影响概率，不改变这个样本空间。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">高中概率</a><span>/</span><span>事件与古典概型：先确定一次试验的结果</span></div>
+      <h1>事件与古典概型：先确定一次试验的结果</h1>
+      <p>一次随机试验的所有可能基本结果组成样本空间 $\Omega$；一个基本结果称为样本点，事件是样本空间的子集。掷一枚骰子时，$\Omega=\{1,2,3,4,5,6\}$，“出现偶数”是事件 $A=\{2,4,6\}$。骰子是否均匀影响概率，不改变这个样本空间。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>研究对象与必要概念</h2>
+<p>一次随机试验的所有可能基本结果组成样本空间 $\Omega$；一个基本结果称为样本点，事件是样本空间的子集。掷一枚骰子时，$\Omega=\{1,2,3,4,5,6\}$，“出现偶数”是事件 $A=\{2,4,6\}$。骰子是否均匀影响概率，不改变这个样本空间。</p>
+<p>必然事件是 $\Omega$，不可能事件是 $\varnothing$。$A\cup B$ 表示至少一个发生，$A\cap B$ 表示同时发生，$\overline A$ 表示 $A$ 不发生。若 $A\cap B=\varnothing$，则两事件互斥；若还满足 $A\cup B=\Omega$，才互为对立事件。</p>
+<h2>概率的性质与来源</h2>
+<p>概率满足非负性、$P(\Omega)=1$，以及互斥事件的可加性。因此 $0\le P(A)\le1$。由于 $A$ 与 $\overline A$ 互斥且合起来是全部结果，</p>
+<div class="math-display">$$P(\overline A)=1-P(A).$$</div>
+<p>一般事件相加时，交集被算了两遍，应减去一遍：</p>
+<div class="math-display">$$P(A\cup B)=P(A)+P(B)-P(A\cap B).$$</div>
+<p>只有互斥时才可以省去交集项。“或”通常包含“同时发生”，不能默认互斥。</p>
+<h2>古典概型：有限且等可能</h2>
+<p>若 $\Omega$ 有 $N$ 个等可能样本点，各点概率相同，且总概率为 1，所以各点概率为 $1/N$。事件 $A$ 含 $m$ 个点，由可加性得到</p>
+<div class="math-display">$$P(A)=\frac{m}{N}.$$</div>
+<p>这里的等可能必须来自试验机制，不能来自“分成了几个类别”。两枚均匀骰子的点数和有 11 种，但并不等可能；36 个有序点数对才是等可能样本点。</p>
+<h2>例题：至少一次出现 6</h2>
+<p>独立掷一枚均匀骰子两次，求至少一次出现 6 的概率。</p>
+<details class="solution-toggle"><summary>查看完整推理</summary><div class="solution-body"><p>对象是两次的有序点数对。独立与均匀保证 36 个点各有概率 $1/36$。正面分情况容易重复计入 $(6,6)$，因此改数对立事件“两次都不是 6”：有 $5\times5=25$ 个点。</p>
+<div class="math-display">$$P(A)=1-\frac{25}{36}=\frac{11}{36}.$$</div>
+<p>验证：恰一次为 6 有 $2\times5=10$ 种，两次都为 6 有 1 种，共 11 种。若骰子不均匀，样本点不再等可能，不能继续用这个计数比例。</p></div></details>
+<h2>频率不是概率</h2>
+<p>$n$ 次试验中事件出现 $m$ 次，频率是 $m/n$，随这批数据变化。在相同条件下反复进行独立试验，频率可用来估计概率；有限次频率不必等于概率，也不保证每增加一次试验就更接近概率。前面连续出现反面，不会让独立的下一次公平抛币更容易出现正面。</p>
+<h2>讲题与自检</h2>
+<p>请解释：为什么“两枚骰子的和为 2”与“和为 7”不能各按 $1/11$ 计算？为什么互斥不一定对立？</p>
+<p>练习：掷均匀骰子，$A=\{2,4,6\}$，$B=\{4,5,6\}$，求 $P(A\cup B)$。</p>
+<details class="solution-toggle"><summary>自检解析</summary><div class="solution-body"><p>交集为 $\{4,6\}$，故概率为 $3/6+3/6-2/6=2/3$。直接列出并集 $\{2,4,5,6\}$ 也得到 $4/6$。错误的 $3/6+3/6$ 重复计算了两个样本点。</p></div></details></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高中概率</a></li><li>源文件：<code>content/09_high_school_math/08_probability/01_events_classical_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="02-conditional-independence-zh.html">条件概率与独立性：信息改变了什么</a></h3><p>已经知道事件 $B$ 发生，求事件 $A$ 发生的概率，记为 $P(A\mid B)$。当 $P(B)&gt;0$ 时，定义</p></div><div class="note-item"><h3><a href="03-random-variables-zh.html">离散随机变量：分布列、期望与方差</a></h3><p>随机变量是给每个试验结果指定一个实数的函数。例如两次抛币的结果为正正、正反、反正、反反，定义 $X$ 为正面次数，则对应数值为 2、1、1、0。$X=1$ 是一个事件，包含两种基本结果。</p></div><div class="note-item"><h3><a href="04-distributions-zh.html">常见分布：先检查机制，再选择公式</a></h3><p>一次试验只有成功、失败两种结果，定义 $I$ 成功时为 1、失败时为 0，成功概率为 $p$，其中 $0\le p\le1$。这是两点分布：$E(I)=p$，$D(I)=p-p^2=p(1-p)$。</p></div><div class="note-item"><h3><a href="05-exercises-zh.html">概率分层训练：建模、计算与解释</a></h3><p>每题先写清样本空间或随机变量、已知条件与所选模型，再计算。答案展开前先独立做题；讲题时补一句“如果改变什么条件，这种方法就不能用”。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>常见分布：先检查机制，再选择公式 | math.bozhanli.com</title>
+  <meta name="description" content="一次试验只有成功、失败两种结果，定义 $I$ 成功时为 1、失败时为 0，成功概率为 $p$，其中 $0\le p\le1$。这是两点分布：$E(I)=p$，$D(I)=p-p^2=p(1-p)$。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">高中概率</a><span>/</span><span>常见分布：先检查机制，再选择公式</span></div>
+      <h1>常见分布：先检查机制，再选择公式</h1>
+      <p>一次试验只有成功、失败两种结果，定义 $I$ 成功时为 1、失败时为 0，成功概率为 $p$，其中 $0\le p\le1$。这是两点分布：$E(I)=p$，$D(I)=p-p^2=p(1-p)$。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>两点分布与二项分布</h2>
+<p>一次试验只有成功、失败两种结果，定义 $I$ 成功时为 1、失败时为 0，成功概率为 $p$，其中 $0\le p\le1$。这是两点分布：$E(I)=p$，$D(I)=p-p^2=p(1-p)$。</p>
+<p>固定做 $n$ 次试验，每次只有成功与失败，试验相互独立且成功概率都为 $p$。成功总次数 $X$ 服从二项分布，记为 $X\sim B(n,p)$。当 $0&lt;p&lt;1$ 时，</p>
+<div class="math-display">$$P(X=k)=C_n^kp^k(1-p)^{n-k},\quad k=0,1,\ldots,n.$$</div>
+<p>来源：指定哪 $k$ 次成功有 $C_n^k$ 种；每种指定次序因独立而具有概率 $p^k(1-p)^{n-k}$；各次序互斥，所以相加。$p=0$ 时 $X=0$，$p=1$ 时 $X=n$，直接处理即可。</p>
+<p>把 $X$ 写成 $n$ 个成功指示变量之和，由期望可加与独立时方差可加得到</p>
+<div class="math-display">$$E(X)=np,\qquad D(X)=np(1-p).$$</div>
+<h2>例题：恰好与至少</h2>
+<p>某人独立投篮 4 次，每次命中概率均为 $0.7$，求恰中 3 次、至少中 1 次的概率，以及命中数的期望方差。</p>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>次数固定、结果二分、相互独立、成功率不变，四个条件均满足。$X\sim B(4,0.7)$。</p>
+<div class="math-display">$$P(X=3)=C_4^3(0.7)^3(0.3)=0.4116.$$</div>
+<p>“至少一次”的反面是“零次”，因此 $P(X\ge1)=1-(0.3)^4=0.9919$。$E(X)=2.8$，$D(X)=0.84$。概率在 0 与 1 之间，期望在 0 与 4 之间。若疲劳改变命中率，或前次结果影响后次，不能继续假设这个二项模型。</p></div></details>
+<h2>超几何分布：不放回的有限总体抽样</h2>
+<p>总体 $N$ 个对象，其中 $M$ 个为目标类；等可能不放回抽取 $n$ 个，令 $X$ 为目标类个数。$N,M,n$ 为整数，$0\le M,n\le N$，$N\ge1$。则</p>
+<div class="math-display">$$P(X=k)=\frac{C_M^kC_{N-M}^{n-k}}{C_N^n},\quad \max(0,n-(N-M))\le k\le\min(n,M).$$</div>
+<p>分母是所有无序抽样组合，分子先选 $k$ 个目标类，再选 $n-k$ 个非目标类。取值下限不能总写成 0：若非目标类不够多，就必须抽到目标类。</p>
+<p>例如 5 件物品中 3 件合格，随机抽 4 件，合格数只能是 2 或 3。对应概率为 $C_3^2C_2^2/C_5^4=3/5$ 和 $C_3^3C_2^1/C_5^4=2/5$。</p>
+<p>期望仍为 $E(X)=nM/N$：把依次抽样各位置是否为目标类写成指示变量，每个位置的目标概率都是 $M/N$，期望相加无需独立。不要据此套用二项方差；较小题目可直接由分布列计算方差。</p>
+<h2>正态分布：连续测量值的模型</h2>
+<p>若连续随机变量 $X$ 服从均值为 $\mu$、方差为 $\sigma^2$ 的正态分布，记为 $X\sim N(\mu,\sigma^2)$，其中 $\sigma&gt;0$。其密度曲线为</p>
+<div class="math-display">$$f(x)=\frac1{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}},\quad x\in\mathbb R.$$</div>
+<p>区间概率是曲线下对应区间的面积，不是某点的曲线高度；整条曲线下面积为 1。曲线关于 $x=\mu$ 对称，$\sigma$ 越大越分散。连续型模型中 $P(X=a)=0$，因此区间是否含端点不影响概率。这里不要求用微积分计算面积，可利用题目给出的概率、对称性或概率表。</p>
+<p>常用近似为 $P(|X-\mu|&lt;\sigma)\approx0.6827$，$P(|X-\mu|&lt;2\sigma)\approx0.9545$，$P(|X-\mu|&lt;3\sigma)\approx0.9973$；这是近似值，不是所有分布都满足的规则。</p>
+<p>例：$X\sim N(100,15^2)$，已知 $P(85&lt;X&lt;115)\approx0.6827$。两侧尾部相等，所以 $P(X&gt;115)\approx(1-0.6827)/2=0.15865$。记号中的 $15^2$ 是方差，15 才是标准差。</p>
+<h2>如何选模型与自检</h2>
+<p>先问：记录的是次数还是测量值？次数是否固定？是否独立？概率是否相同？是否不放回？模型由这些条件确定，不由“题目出现随机”确定。</p>
+<p>练习：两次独立试验成功率分别为 0.2、0.8，成功次数是否服从 $B(2,0.5)$？</p>
+<details class="solution-toggle"><summary>自检解析</summary><div class="solution-body"><p>不是。虽然平均成功率为 0.5，但各次概率不相同。实际两次成功概率为 $0.2\times0.8=0.16$，而 $B(2,0.5)$ 给出 $0.25$，两者冲突。实际分布为 $P(X=0)=0.16$、$P(X=1)=0.68$、$P(X=2)=0.16$，和为 1。</p></div></details></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高中概率</a></li><li>源文件：<code>content/09_high_school_math/08_probability/04_distributions_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-events-classical-zh.html">事件与古典概型：先确定一次试验的结果</a></h3><p>一次随机试验的所有可能基本结果组成样本空间 $\Omega$；一个基本结果称为样本点，事件是样本空间的子集。掷一枚骰子时，$\Omega=\{1,2,3,4,5,6\}$，“出现偶数”是事件 $A=\{2,4,6\}$。骰子是否均匀影响概率，不改变这个样本空间。</p></div><div class="note-item"><h3><a href="02-conditional-independence-zh.html">条件概率与独立性：信息改变了什么</a></h3><p>已经知道事件 $B$ 发生，求事件 $A$ 发生的概率，记为 $P(A\mid B)$。当 $P(B)&gt;0$ 时，定义</p></div><div class="note-item"><h3><a href="03-random-variables-zh.html">离散随机变量：分布列、期望与方差</a></h3><p>随机变量是给每个试验结果指定一个实数的函数。例如两次抛币的结果为正正、正反、反正、反反，定义 $X$ 为正面次数，则对应数值为 2、1、1、0。$X=1$ 是一个事件，包含两种基本结果。</p></div><div class="note-item"><h3><a href="05-exercises-zh.html">概率分层训练：建模、计算与解释</a></h3><p>每题先写清样本空间或随机变量、已知条件与所选模型，再计算。答案展开前先独立做题；讲题时补一句“如果改变什么条件，这种方法就不能用”。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>高中概率 | math.bozhanli.com</title>
+  <meta name="description" content="概率研究不确定结果的规律。先说清一次试验是什么，再定义事件或随机变量，最后选择计算方法。本专题承接排列组合，覆盖事件、古典概型、条件概率、独立性、全概率、离散随机变量、期望方差、二项分布、超几何分布与正态分布；逆向条件概率作为拓展。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><span>高中概率</span></div>
+      <h1>高中概率</h1>
+      <p>概率研究不确定结果的规律。先说清一次试验是什么，再定义事件或随机变量，最后选择计算方法。本专题承接排列组合，覆盖事件、古典概型、条件概率、独立性、全概率、离散随机变量、期望方差、二项分布、超几何分布与正态分布；逆向条件概率作为拓展。</p>
+    </div>
+    <div class="subject-grid"><div class="rail"><section class="page-section article"><h2>按顺序学习</h2>
+<ol><li><a href="01-events-classical-zh.html">事件与古典概型</a>：样本空间、事件关系、概率与频率、等可能计数。</li><li><a href="02-conditional-independence-zh.html">条件概率与独立性</a>：乘法公式、放回与不放回、全概率与逆向条件。</li><li><a href="03-random-variables-zh.html">离散随机变量</a>：分布列、期望、方差与收益比较。</li><li><a href="04-distributions-zh.html">常见分布</a>：两点分布、二项分布、超几何分布、正态分布及模型边界。</li><li><a href="05-exercises-zh.html">分层训练与完整解析</a>：10 道基础、进阶与综合题。</li></ol>
+<h2>每次解题的五步</h2>
+<ol><li>定义事件或随机变量，写清取值。</li><li>确认等可能、独立、放回等条件。</li><li>选择计数、分支相乘、分类相加或分布模型。</li><li>写出推导，而不只列公式。</li><li>检查概率范围、分布列总和、期望范围和方差非负。</li></ol>
+<h2>学习衔接</h2>
+<ul><li>前置：<a href="../06-counting-combinatorics/05-counting-probability-bridge-zh.html">计数与概率接口</a>。</li><li>返回：<a href="../index.html">高中数学总览</a>。</li><li>抽样方法、统计图表、回归与独立性检验属于统计模块，后续单独建设；本页不把它们算作已完成内容。</li></ul>
+<h2>讲题任务</h2>
+<p>任选一道抽球题，说清楚“样本点为什么等可能”“分母为什么这样取”“改成放回后哪一步改变”。再用一个反例解释为什么互斥不等于独立。</p></section><section class="page-section"><h2>本目录文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-events-classical-zh.html">事件与古典概型：先确定一次试验的结果</a></h3><p>一次随机试验的所有可能基本结果组成样本空间 $\Omega$；一个基本结果称为样本点，事件是样本空间的子集。掷一枚骰子时，$\Omega=\{1,2,3,4,5,6\}$，“出现偶数”是事件 $A=\{2,4,6\}$。骰子是否均匀影响概率，不改变这个样本空间。</p></div><div class="note-item"><h3><a href="02-conditional-independence-zh.html">条件概率与独立性：信息改变了什么</a></h3><p>已经知道事件 $B$ 发生，求事件 $A$ 发生的概率，记为 $P(A\mid B)$。当 $P(B)&gt;0$ 时，定义</p></div><div class="note-item"><h3><a href="03-random-variables-zh.html">离散随机变量：分布列、期望与方差</a></h3><p>随机变量是给每个试验结果指定一个实数的函数。例如两次抛币的结果为正正、正反、反正、反反，定义 $X$ 为正面次数，则对应数值为 2、1、1、0。$X=1$ 是一个事件，包含两种基本结果。</p></div><div class="note-item"><h3><a href="04-distributions-zh.html">常见分布：先检查机制，再选择公式</a></h3><p>一次试验只有成功、失败两种结果，定义 $I$ 成功时为 1、失败时为 0，成功概率为 $p$，其中 $0\le p\le1$。这是两点分布：$E(I)=p$，$D(I)=p-p^2=p(1-p)$。</p></div><div class="note-item"><h3><a href="05-exercises-zh.html">概率分层训练：建模、计算与解释</a></h3><p>每题先写清样本空间或随机变量、已知条件与所选模型，再计算。答案展开前先独立做题；讲题时补一句“如果改变什么条件，这种方法就不能用”。</p></div></div></section></div><aside class="rail"><section class="page-section"><h2>自动发布说明</h2><ul><li>源目录：<code>content/09_high_school_math/08_probability</code></li><li>当前文章数：6</li><li>子目录数：0</li><li>这个页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section></aside></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>离散随机变量：分布列、期望与方差 | math.bozhanli.com</title>
+  <meta name="description" content="随机变量是给每个试验结果指定一个实数的函数。例如两次抛币的结果为正正、正反、反正、反反，定义 $X$ 为正面次数，则对应数值为 2、1、1、0。$X=1$ 是一个事件，包含两种基本结果。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">高中概率</a><span>/</span><span>离散随机变量：分布列、期望与方差</span></div>
+      <h1>离散随机变量：分布列、期望与方差</h1>
+      <p>随机变量是给每个试验结果指定一个实数的函数。例如两次抛币的结果为正正、正反、反正、反反，定义 $X$ 为正面次数，则对应数值为 2、1、1、0。$X=1$ 是一个事件，包含两种基本结果。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>从结果到数值</h2>
+<p>随机变量是给每个试验结果指定一个实数的函数。例如两次抛币的结果为正正、正反、反正、反反，定义 $X$ 为正面次数，则对应数值为 2、1、1、0。$X=1$ 是一个事件，包含两种基本结果。</p>
+<p>本节先研究只取有限个值的离散随机变量。分布列列出所有可能值 $x_i$ 及其概率 $p_i=P(X=x_i)$，必须满足 $p_i\ge0$ 且 $\sum p_i=1$。先确定所有可能值，再算概率，否则容易漏掉端点。</p>
+<h2>期望：按概率加权的平均</h2>
+<p>定义</p>
+<div class="math-display">$$E(X)=\sum_i x_ip_i.$$</div>
+<p>独立重复同一试验时，长期平均值可用期望描述，但期望不保证一次就取到。例如公平骰子点数期望为 $3.5$，骰子永远不出现 3.5 点。有限分布的期望应落在最小值与最大值之间，可用作自检。</p>
+<p>由加权求和展开可得 $E(aX+b)=aE(X)+b$。一般地 $E(X+Y)=E(X)+E(Y)$，不要求独立；但 $E(XY)=E(X)E(Y)$ 不能无条件使用。</p>
+<h2>方差：围绕期望的波动</h2>
+<p>记 $\mu=E(X)$，定义</p>
+<div class="math-display">$$D(X)=E[(X-\mu)^2]=\sum_i(x_i-\mu)^2p_i.$$</div>
+<p>展开平方，再用 $\sum p_i=1$ 与 $\sum x_ip_i=\mu$：</p>
+<div class="math-display">$$D(X)=E(X^2)-[E(X)]^2.$$</div>
+<p>方差非负，标准差是 $\sqrt{D(X)}$。平移不改变离均值的距离，伸缩会让距离乘以 $a$，所以 $D(aX+b)=a^2D(X)$。独立随机变量可用 $D(X+Y)=D(X)+D(Y)$；相关时不能直接相加。</p>
+<h2>例题：抽球的分布列与净收益</h2>
+<p>袋中 3 红 2 白，等可能不放回抽取 2 球。令 $X$ 为红球数。每抽到一个红球得 4 分，参与扣 3 分，净得分 $Y=4X-3$。</p>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>$X$ 取 0、1、2。无序选球共有 $C_5^2=10$ 种等可能组合，故</p>
+<p>| $x$ | 0 | 1 | 2 | | --- | --- | --- | --- | | $P(X=x)$ | $1/10$ | $6/10$ | $3/10$ |</p>
+<p>分子分别为 $C_2^2$、$C_3^1C_2^1$、$C_3^2$；概率非负且和为 1。</p>
+<div class="math-display">$$E(X)=0\times\frac1{10}+1\times\frac6{10}+2\times\frac3{10}=\frac65.$$</div>
+<div class="math-display">$$E(X^2)=\frac6{10}+4\times\frac3{10}=\frac95,\qquad D(X)=\frac95-\frac{36}{25}=\frac9{25}.$$</div>
+<div class="math-display">$$E(Y)=4\times\frac65-3=\frac95,\qquad D(Y)=16\times\frac9{25}=\frac{144}{25}.$$</div>
+<p>验证：净得分的取值为 $-3,1,5$，期望 $9/5$ 在此范围内。扣分不影响方差，4 倍奖励使方差乘以 16。若改成放回抽取，分布列须重新建模。</p></div></details>
+<h2>易错与讲题</h2>
+<p>不要把 $E(X^2)$ 写成 $[E(X)]^2$；前者先平方再平均，后者先平均再平方。不要把奖金当净收益，也不要仅凭期望高就说“每次都更好”：平均收益与波动是不同问题。</p>
+<p>练习：$X$ 取 0、2，概率各 $1/2$，求 $E(X),D(X),D(3-X)$，解释期望为何可以不是可能取值。</p>
+<details class="solution-toggle"><summary>自检解析</summary><div class="solution-body"><p>$E(X)=1$，$E(X^2)=2$，$D(X)=2-1=1$。$D(3-X)=(-1)^2D(X)=1$。期望是加权平均，并非试验结果清单中的一个必选值。</p></div></details></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高中概率</a></li><li>源文件：<code>content/09_high_school_math/08_probability/03_random_variables_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-events-classical-zh.html">事件与古典概型：先确定一次试验的结果</a></h3><p>一次随机试验的所有可能基本结果组成样本空间 $\Omega$；一个基本结果称为样本点，事件是样本空间的子集。掷一枚骰子时，$\Omega=\{1,2,3,4,5,6\}$，“出现偶数”是事件 $A=\{2,4,6\}$。骰子是否均匀影响概率，不改变这个样本空间。</p></div><div class="note-item"><h3><a href="02-conditional-independence-zh.html">条件概率与独立性：信息改变了什么</a></h3><p>已经知道事件 $B$ 发生，求事件 $A$ 发生的概率，记为 $P(A\mid B)$。当 $P(B)&gt;0$ 时，定义</p></div><div class="note-item"><h3><a href="04-distributions-zh.html">常见分布：先检查机制，再选择公式</a></h3><p>一次试验只有成功、失败两种结果，定义 $I$ 成功时为 1、失败时为 0，成功概率为 $p$，其中 $0\le p\le1$。这是两点分布：$E(I)=p$，$D(I)=p-p^2=p(1-p)$。</p></div><div class="note-item"><h3><a href="05-exercises-zh.html">概率分层训练：建模、计算与解释</a></h3><p>每题先写清样本空间或随机变量、已知条件与所选模型，再计算。答案展开前先独立做题；讲题时补一句“如果改变什么条件，这种方法就不能用”。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>
