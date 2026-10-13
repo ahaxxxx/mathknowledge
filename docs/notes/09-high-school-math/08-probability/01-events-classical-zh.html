@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>事件与古典概型：先建立样本空间 | math.bozhanli.com</title>
+  <meta name="description" content="随机试验是在明确规则下进行、事前不能确定具体结果的试验。样本点是按所选粒度描述的一个结果，样本空间 $\Omega$ 是所有可能样本点组成的集合；事件 $A$ 是 $\Omega$ 的子集。$\Omega$ 是必然事件，$\varnothing$ 是不可能事件。频率是观察所得的比例，概率是模型给出的数量，两者不能直接画等号。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">高中概率</a><span>/</span><span>事件与古典概型：先建立样本空间</span></div>
+      <h1>事件与古典概型：先建立样本空间</h1>
+      <p>随机试验是在明确规则下进行、事前不能确定具体结果的试验。样本点是按所选粒度描述的一个结果，样本空间 $\Omega$ 是所有可能样本点组成的集合；事件 $A$ 是 $\Omega$ 的子集。$\Omega$ 是必然事件，$\varnothing$ 是不可能事件。频率是观察所得的比例，概率是模型给出的数量，两者不能直接画等号。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>对象与定义</h2>
+<p>随机试验是在明确规则下进行、事前不能确定具体结果的试验。样本点是按所选粒度描述的一个结果，样本空间 $\Omega$ 是所有可能样本点组成的集合；事件 $A$ 是 $\Omega$ 的子集。$\Omega$ 是必然事件，$\varnothing$ 是不可能事件。频率是观察所得的比例，概率是模型给出的数量，两者不能直接画等号。</p>
+<p>$A\cup B$ 表示至少一个发生，$A\cap B$ 表示同时发生，$\overline A=\Omega\setminus A$ 表示 $A$ 不发生。互斥指 $A\cap B=\varnothing$；对立还要求 $A\cup B=\Omega$。因此对立事件一定互斥，互斥事件未必对立。</p>
+<h2>概率运算从哪里来</h2>
+<p>有限样本空间中，每个样本点赋非负权重，全部权重之和为 1；事件概率为其包含的样本点权重之和。这给出 $P(\Omega)=1$、$P(\varnothing)=0$。$A$ 与 $\overline A$ 把全集分成两块，因此</p>
+<div class="math-display">$$
+P(\overline A)=1-P(A).
+$$</div>
+<p>对 $A$、$B$ 分别求和时，交集被算两次，扣除一次得到</p>
+<div class="math-display">$$
+P(A\cup B)=P(A)+P(B)-P(A\cap B).
+$$</div>
+<p>只有互斥时交集项才为零。“至少一个”常取对立，因为“一个也没有”只有一类；这是简化分类的策略，并非独立性的结论。</p>
+<h2>古典概型的两个条件</h2>
+<p>若样本点有限且等可能，设 $|\Omega|=N$，每点权重相同为 $p$，由 $Np=1$ 得 $p=1/N$，于是</p>
+<div class="math-display">$$
+P(A)=\frac{|A|}{|\Omega|}.
+$$</div>
+<p>必须说明等可能来自怎样的随机机制。两枚均匀骰子的 36 个有序点数对等可能，但点数和 2 到 12 并不等可能。抽样若偏向某些人，也不能直接用组合数比值。</p>
+<h2>同一问题的两种口径</h2>
+<p>袋中 3 红 2 白，球除颜色外相同，充分混匀后不放回取 2 球，求一红一白的概率。</p>
+<details class="solution-toggle"><summary>查看完整推导</summary><div class="solution-body"><p>给球编号以区分实物。无序口径的样本点是两球集合，共 $\binom52=10$ 个等可能结果；有利集合由一个红球和一个白球唯一确定，共 $3\times2=6$ 个，所以概率为 $3/5$。</p>
+<p>有序口径的样本点是先后球号，共 $5\times4=20$ 个；红白和白红互斥，每类各 $3\times2=6$ 个，共 12 个，概率仍为 $3/5$。分子与分母都改为有序，才保持一致；不能用 $6/20$。</p>
+<p>检查：红红概率 $3/10$、白白概率 $1/10$，三类之和为 1。</p></div></details>
+<h2>边界与讲题</h2>
+<p>“随机选颜色，再从该颜色抽球”与“从全部球随机抽一个”是不同机制。前者颜色可能各占 $1/2$，后者红色占 $3/5$。</p>
+<p>请学生解释：我把什么作为样本点？为什么等可能？分子是否沿用相同口径？“至少”取对立后，哪些条件使计算变简单？</p>
+<p>对应训练：<a href="06-exercises-zh.html">A、B 组</a>。本地对应：考点 31。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高中概率</a></li><li>源文件：<code>content/09_high_school_math/08_probability/01_events_classical_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="02-conditional-independence-zh.html">条件概率与独立性：信息改变了什么</a></h3><p>已知事件 $B$ 发生后，只在 $B$ 内比较各结果。原来这部分总权重为 $P(B)$；要重新归一为 1，就把其中每个权重除以 $P(B)$。因此当 $P(B)&gt;0$ 时定义</p></div><div class="note-item"><h3><a href="03-random-variables-zh.html">随机变量、期望与方差：把结果映射为数</a></h3><p>随机变量 $X$ 是给每个样本点赋一个实数的函数。例如三次抛币的样本点是长度为 3 的正反序列，$X$ 可定义为正面次数；不同序列可能映射到相同的 $X$ 值。$\{X=k\}$ 是一个事件，而 $X$ 本身是函数。</p></div><div class="note-item"><h3><a href="04-distributions-zh.html">常见分布：公式由随机机制产生</a></h3><p>固定做 $n$ 次试验，各次相互独立，每次按成功或失败分类，成功概率恒为 $p$。令 $X$ 为成功次数。指定恰好 $k$ 个位置成功的一条类型路径概率为 $p^k(1-p)^{n-k}$；这样的成功位置集合共 $\binom nk$ 个且互斥，因此</p></div><div class="note-item"><h3><a href="05-modeling-zh.html">综合建模：停止、状态、决策与统计接口</a></h3><p>独立试验成功概率 $p\in(0,1)$，遇到第一次成功就停止，最多做 $m$ 次。令 $T$ 为实际试验次数。若 $1\le k&lt;m$，必须先失败 $k-1$ 次再成功，因此 $P(T=k)=(1-p)^{k-1}p$；若 $T=m$，只需前 $m-1$ 次失败，最后一次无论成败都会停，因此</p></div><div class="note-item"><h3><a href="06-exercises-zh.html">高中概率专项训练：12 类 72 题</a></h3><p>本页为根据本地考点结构重新编写的训练题，不冒充原卷逐字转录。每组前两题建立模型，后四题改变参数巩固计算与表达；综合迁移请继续使用原资料中的情境大题。所有答案默认折叠。</p></div><div class="note-item"><h3><a href="07-local-sources-zh.html">本地概率资料：原卷、解析与教学对应</a></h3><p>网页讲义根据以下材料组织知识和改编例题。原文件中的嵌入公式、表格和图形保留在下载文件中；下载原卷做综合训练，完成后再打开对应解析。部分旧题采用旧教材术语，应结合当前课堂要求选用。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

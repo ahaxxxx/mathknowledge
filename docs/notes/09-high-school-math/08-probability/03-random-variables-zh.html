@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>随机变量、期望与方差：把结果映射为数 | math.bozhanli.com</title>
+  <meta name="description" content="随机变量 $X$ 是给每个样本点赋一个实数的函数。例如三次抛币的样本点是长度为 3 的正反序列，$X$ 可定义为正面次数；不同序列可能映射到相同的 $X$ 值。$\{X=k\}$ 是一个事件，而 $X$ 本身是函数。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">高中概率</a><span>/</span><span>随机变量、期望与方差：把结果映射为数</span></div>
+      <h1>随机变量、期望与方差：把结果映射为数</h1>
+      <p>随机变量 $X$ 是给每个样本点赋一个实数的函数。例如三次抛币的样本点是长度为 3 的正反序列，$X$ 可定义为正面次数；不同序列可能映射到相同的 $X$ 值。$\{X=k\}$ 是一个事件，而 $X$ 本身是函数。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>从样本点到数值</h2>
+<p>随机变量 $X$ 是给每个样本点赋一个实数的函数。例如三次抛币的样本点是长度为 3 的正反序列，$X$ 可定义为正面次数；不同序列可能映射到相同的 $X$ 值。$\{X=k\}$ 是一个事件，而 $X$ 本身是函数。</p>
+<p>有限离散分布列要列出所有不同取值 $x_i$ 及其概率 $p_i=P(X=x_i)$。必须满足 $p_i\ge0$、$\sum p_i=1$。先找取值范围，再逐项计算，最后归一检查。概率为零的候选值可以保留为零项，也可以删去，但不能漏掉正概率取值。</p>
+<h2>期望是什么</h2>
+<p>有限离散随机变量的期望定义为</p>
+<div class="math-display">$$
+E(X)=\sum_i x_ip_i.
+$$</div>
+<p>它是按模型概率加权的中心，不必是可能取值，也不保证某次获得该值。大量重复试验中平均值趋近它，需要相应的重复与稳定性条件；不能把它解释成单次承诺。</p>
+<p>若 $Y=g(X)$，把产生同一 $Y$ 值的 $X$ 项合并后有</p>
+<div class="math-display">$$
+E(g(X))=\sum_i g(x_i)p_i.
+$$</div>
+<p>取 $g(x)=ax+b$ 并展开求和，得 $E(aX+b)=aE(X)+b$。对两个变量，用联合事件 $\{X=x_i,Y=y_j\}$ 分块可证 $E(X+Y)=E(X)+E(Y)$，不要求独立。</p>
+<h2>方差为何平方</h2>
+<p>直接平均偏差得到 $E(X-E(X))=0$，正负会抵消。定义平方偏差的平均为方差：</p>
+<div class="math-display">$$
+D(X)=E[(X-E(X))^2]=E(X^2)-[E(X)]^2.
+$$</div>
+<p>第二个式子由展开平方和期望线性性得到。$D(X)\ge0$，标准差为 $\sqrt{D(X)}$，其单位与 $X$ 相同，方差单位是原单位的平方。</p>
+<p>由 $aX+b-E(aX+b)=a(X-E(X))$，得到 $D(aX+b)=a^2D(X)$。平移不改变离散程度，伸缩使距离乘 $|a|$，平方距离乘 $a^2$。</p>
+<p>一般地</p>
+<div class="math-display">$$
+D(X+Y)=D(X)+D(Y)+2E[(X-E(X))(Y-E(Y))].
+$$</div>
+<p>独立时最后一项为 0，因为联合概率可分解，从而 $E(XY)=E(X)E(Y)$。不能仅凭期望能相加就断定方差也能相加。</p>
+<h2>例：同一期望，不同风险</h2>
+<p>方案甲固定得 10 分；方案乙以各 $1/2$ 的概率得 0 分或 20 分。比较期望和方差。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>甲 $E=10,D=0$；乙 $E=0/2+20/2=10$，$D=(0-10)^2/2+(20-10)^2/2=100$。若目标是同一期望下更稳定，选甲；若目标是达到 20 分，只有乙有机会。选择依赖决策目标，方差小不是所有情境下的绝对最优。</p></div></details>
+<h2>讲题与边界</h2>
+<p>完整解答顺序：定义 $X$ 及单位 → 列取值 → 解释每个取值对应事件 → 求概率并验和 → 算数字特征 → 按题设目标解释。</p>
+<p>追问：期望为什么不必可取？两条路径产生相同奖金时是否合并？$E(X^2)$ 为什么不是 $[E(X)]^2$？</p>
+<p>对应训练：<a href="06-exercises-zh.html">E、H 组</a>。本地对应：考点 39。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高中概率</a></li><li>源文件：<code>content/09_high_school_math/08_probability/03_random_variables_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-events-classical-zh.html">事件与古典概型：先建立样本空间</a></h3><p>随机试验是在明确规则下进行、事前不能确定具体结果的试验。样本点是按所选粒度描述的一个结果，样本空间 $\Omega$ 是所有可能样本点组成的集合；事件 $A$ 是 $\Omega$ 的子集。$\Omega$ 是必然事件，$\varnothing$ 是不可能事件。频率是观察所得的比例，概率是模型给出的数量，两者不能直接画等号。</p></div><div class="note-item"><h3><a href="02-conditional-independence-zh.html">条件概率与独立性：信息改变了什么</a></h3><p>已知事件 $B$ 发生后，只在 $B$ 内比较各结果。原来这部分总权重为 $P(B)$；要重新归一为 1，就把其中每个权重除以 $P(B)$。因此当 $P(B)&gt;0$ 时定义</p></div><div class="note-item"><h3><a href="04-distributions-zh.html">常见分布：公式由随机机制产生</a></h3><p>固定做 $n$ 次试验，各次相互独立，每次按成功或失败分类，成功概率恒为 $p$。令 $X$ 为成功次数。指定恰好 $k$ 个位置成功的一条类型路径概率为 $p^k(1-p)^{n-k}$；这样的成功位置集合共 $\binom nk$ 个且互斥，因此</p></div><div class="note-item"><h3><a href="05-modeling-zh.html">综合建模：停止、状态、决策与统计接口</a></h3><p>独立试验成功概率 $p\in(0,1)$，遇到第一次成功就停止，最多做 $m$ 次。令 $T$ 为实际试验次数。若 $1\le k&lt;m$，必须先失败 $k-1$ 次再成功，因此 $P(T=k)=(1-p)^{k-1}p$；若 $T=m$，只需前 $m-1$ 次失败，最后一次无论成败都会停，因此</p></div><div class="note-item"><h3><a href="06-exercises-zh.html">高中概率专项训练：12 类 72 题</a></h3><p>本页为根据本地考点结构重新编写的训练题，不冒充原卷逐字转录。每组前两题建立模型，后四题改变参数巩固计算与表达；综合迁移请继续使用原资料中的情境大题。所有答案默认折叠。</p></div><div class="note-item"><h3><a href="07-local-sources-zh.html">本地概率资料：原卷、解析与教学对应</a></h3><p>网页讲义根据以下材料组织知识和改编例题。原文件中的嵌入公式、表格和图形保留在下载文件中；下载原卷做综合训练，完成后再打开对应解析。部分旧题采用旧教材术语，应结合当前课堂要求选用。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

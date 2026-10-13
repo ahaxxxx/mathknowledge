@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>综合建模：停止、状态、决策与统计接口 | math.bozhanli.com</title>
+  <meta name="description" content="独立试验成功概率 $p\in(0,1)$，遇到第一次成功就停止，最多做 $m$ 次。令 $T$ 为实际试验次数。若 $1\le k&lt;m$，必须先失败 $k-1$ 次再成功，因此 $P(T=k)=(1-p)^{k-1}p$；若 $T=m$，只需前 $m-1$ 次失败，最后一次无论成败都会停，因此">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">高中概率</a><span>/</span><span>综合建模：停止、状态、决策与统计接口</span></div>
+      <h1>综合建模：停止、状态、决策与统计接口</h1>
+      <p>独立试验成功概率 $p\in(0,1)$，遇到第一次成功就停止，最多做 $m$ 次。令 $T$ 为实际试验次数。若 $1\le k&lt;m$，必须先失败 $k-1$ 次再成功，因此 $P(T=k)=(1-p)^{k-1}p$；若 $T=m$，只需前 $m-1$ 次失败，最后一次无论成败都会停，因此</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>停止试验的最后一项</h2>
+<p>独立试验成功概率 $p\in(0,1)$，遇到第一次成功就停止，最多做 $m$ 次。令 $T$ 为实际试验次数。若 $1\le k&lt;m$，必须先失败 $k-1$ 次再成功，因此 $P(T=k)=(1-p)^{k-1}p$；若 $T=m$，只需前 $m-1$ 次失败，最后一次无论成败都会停，因此</p>
+<div class="math-display">$$
+P(T=m)=(1-p)^{m-1}.
+$$</div>
+<p>不能把这一项再乘 $p$。若随机变量改成“成功次数”或“失败次数”，取值和末项都要重新分析。</p>
+<p>对于取值为 $1,\ldots,m$ 的 $T$，每个样本点上有 $T=\sum_{k=1}^m\mathbf1_{\{T\ge k\}}$，取期望得</p>
+<div class="math-display">$$
+E(T)=\sum_{k=1}^mP(T\ge k)=\sum_{k=1}^m(1-p)^{k-1}=\frac{1-(1-p)^m}{p}.
+$$</div>
+<p>这说明尾和公式来自“每一段是否被用到”的计数。$p=0$ 时 $T=m$，$p=1$ 时 $T=1$，直接处理。</p>
+<h2>本地热点题：正四面体上的随机游走</h2>
+<p>改编自《2020高考统计概率大题必刷热点题型》第 2 题。粒子从正四面体顶点 $A$ 出发，每一步在当前顶点相邻的三个顶点中等可能选一个，且下一步选择仅取决于当前顶点。令 $p_n$ 为第 $n$ 步后在 $A$ 的概率，$p_0=1$，求 $p_n$。</p>
+<details class="solution-toggle"><summary>查看完整推导</summary><div class="solution-body"><p>当前在 $A$ 时下一步必离开，当前不在 $A$ 时恰有一个相邻顶点是 $A$，转入概率为 $1/3$。两种状态互斥完备，所以</p>
+<div class="math-display">$$
+p_{n+1}=0p_n+\frac13(1-p_n)=\frac13-\frac13p_n.
+$$</div>
+<p>为消去常数，找满足 $L=1/3-L/3$ 的 $L=1/4$，于是 $p_{n+1}-1/4=-(p_n-1/4)/3$。以 $p_0-1/4=3/4$ 为首项得</p>
+<div class="math-display">$$
+p_n=\frac14+\frac34\left(-\frac13\right)^n.
+$$</div>
+<p>其余三个顶点由置换对称性各占 $(1-p_n)/3$。检验 $p_0=1,p_1=0,p_2=1/3$，并且偏离 $1/4$ 的量按 $1/3$ 倍衰减。这才是“长期接近均匀”的计算依据。</p></div></details>
+<h2>参数概率最大化</h2>
+<p>固定 $n$ 次独立同概率试验，求恰有 $k$ 次成功的概率关于 $p$ 的最大值，$0&lt;k&lt;n$。</p>
+<details class="solution-toggle"><summary>查看推导</summary><div class="solution-body"><p>设 $h(p)=\binom nkp^k(1-p)^{n-k}$。端点概率为 0；在 $(0,1)$ 内 $h&gt;0$，故可对 $\ln h$ 求导：</p>
+<div class="math-display">$$
+(\ln h)&#x27;=\frac{k}{p}-\frac{n-k}{1-p}=\frac{k-np}{p(1-p)}.
+$$</div>
+<p>分母为正，导数在 $p=k/n$ 左正右负，所以唯一最大点是 $k/n$。$k=0$ 或 $k=n$ 的最大值在端点，应另论。</p></div></details>
+<h2>期望决策与库存</h2>
+<p>需求 $D$、订货量 $q$、售价 $s$、成本 $c$、残值 $v$ 满足 $s&gt;c&gt;v\ge0$。已售数量 $\min(D,q)$，剩余数量 $(q-D)^+$，利润</p>
+<div class="math-display">$$
+L(q,D)=s\min(D,q)+v(q-D)^+-cq.
+$$</div>
+<p>逐个需求取值加权，得到 $E(L)$。多订一件的期望收益为</p>
+<div class="math-display">$$
+E[L(q+1,D)-L(q,D)]=(s-c)P(D\ge q+1)+(v-c)P(D\le q).
+$$</div>
+<p>这把最优化转成“多一件是否划算”。只有题目采用期望为目标时才按期望选择；约束还可能包括资金、损失概率和稳定性。</p>
+<h2>统计综合题接口</h2>
+<p>直方图的频率是矩形面积，纵轴通常为频率/组距；分组均值用组中值加权只是近似。先完成读图，再把频率作为概率估计，最后建立抽样模型。</p>
+<p>回归拟合 $\hat y=a+bx$ 时，最小化 $\sum_i(y_i-a-bx_i)^2$。对 $a$ 求导得到 $a=\bar y-b\bar x$，代回后对 $b$ 求导得到</p>
+<div class="math-display">$$
+b=\frac{\sum_i(x_i-\bar x)(y_i-\bar y)}{\sum_i(x_i-\bar x)^2},
+$$</div>
+<p>前提是 $x_i$ 不全相同。回归预测是估计，不能宣称因果；外推尤其需要模型依据。列联表独立性检验检验的是总体关联假设，显著不等于因果，也不能说“有某置信度两个事件独立”。完整统计专题可进一步沿本地考点 29、30、32 展开。</p>
+<h2>书面表达与复述</h2>
+<p>每道综合题按六步写：定义变量与单位；写全部取值；指出随机机制；说明互斥分类与独立条件；算分布并检验概率和；按目标解释结果。</p>
+<p>学生讲题必须回答：为何不套二项？停止边界是哪一项？递推是否只靠当前状态闭合？频率替代概率在哪一步引入估计？</p>
+<p>对应训练：<a href="06-exercises-zh.html">J、K、L 组</a>。本地对应：考点 39 与热点题集。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高中概率</a></li><li>源文件：<code>content/09_high_school_math/08_probability/05_modeling_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-events-classical-zh.html">事件与古典概型：先建立样本空间</a></h3><p>随机试验是在明确规则下进行、事前不能确定具体结果的试验。样本点是按所选粒度描述的一个结果，样本空间 $\Omega$ 是所有可能样本点组成的集合；事件 $A$ 是 $\Omega$ 的子集。$\Omega$ 是必然事件，$\varnothing$ 是不可能事件。频率是观察所得的比例，概率是模型给出的数量，两者不能直接画等号。</p></div><div class="note-item"><h3><a href="02-conditional-independence-zh.html">条件概率与独立性：信息改变了什么</a></h3><p>已知事件 $B$ 发生后，只在 $B$ 内比较各结果。原来这部分总权重为 $P(B)$；要重新归一为 1，就把其中每个权重除以 $P(B)$。因此当 $P(B)&gt;0$ 时定义</p></div><div class="note-item"><h3><a href="03-random-variables-zh.html">随机变量、期望与方差：把结果映射为数</a></h3><p>随机变量 $X$ 是给每个样本点赋一个实数的函数。例如三次抛币的样本点是长度为 3 的正反序列，$X$ 可定义为正面次数；不同序列可能映射到相同的 $X$ 值。$\{X=k\}$ 是一个事件，而 $X$ 本身是函数。</p></div><div class="note-item"><h3><a href="04-distributions-zh.html">常见分布：公式由随机机制产生</a></h3><p>固定做 $n$ 次试验，各次相互独立，每次按成功或失败分类，成功概率恒为 $p$。令 $X$ 为成功次数。指定恰好 $k$ 个位置成功的一条类型路径概率为 $p^k(1-p)^{n-k}$；这样的成功位置集合共 $\binom nk$ 个且互斥，因此</p></div><div class="note-item"><h3><a href="06-exercises-zh.html">高中概率专项训练：12 类 72 题</a></h3><p>本页为根据本地考点结构重新编写的训练题，不冒充原卷逐字转录。每组前两题建立模型，后四题改变参数巩固计算与表达；综合迁移请继续使用原资料中的情境大题。所有答案默认折叠。</p></div><div class="note-item"><h3><a href="07-local-sources-zh.html">本地概率资料：原卷、解析与教学对应</a></h3><p>网页讲义根据以下材料组织知识和改编例题。原文件中的嵌入公式、表格和图形保留在下载文件中；下载原卷做综合训练，完成后再打开对应解析。部分旧题采用旧教材术语，应结合当前课堂要求选用。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

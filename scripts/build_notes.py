@@ -54,6 +54,7 @@ SECTION_LABELS = {
     "05_analytic_geometry": "解析几何/圆锥曲线",
     "06_counting_combinatorics": "计数原理/排列组合",
     "07_derivatives": "导数",
+    "08_probability": "高中概率",
 }
 
 BLOCK_STARTERS = (

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>条件概率与独立性：信息改变了什么 | math.bozhanli.com</title>
+  <meta name="description" content="已知事件 $B$ 发生后，只在 $B$ 内比较各结果。原来这部分总权重为 $P(B)$；要重新归一为 1，就把其中每个权重除以 $P(B)$。因此当 $P(B)&gt;0$ 时定义">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">高中概率</a><span>/</span><span>条件概率与独立性：信息改变了什么</span></div>
+      <h1>条件概率与独立性：信息改变了什么</h1>
+      <p>已知事件 $B$ 发生后，只在 $B$ 内比较各结果。原来这部分总权重为 $P(B)$；要重新归一为 1，就把其中每个权重除以 $P(B)$。因此当 $P(B)&gt;0$ 时定义</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>条件概率的定义与来源</h2>
+<p>已知事件 $B$ 发生后，只在 $B$ 内比较各结果。原来这部分总权重为 $P(B)$；要重新归一为 1，就把其中每个权重除以 $P(B)$。因此当 $P(B)&gt;0$ 时定义</p>
+<div class="math-display">$$
+P(A\mid B)=\frac{P(A\cap B)}{P(B)}.
+$$</div>
+<p>分母为零时此定义不可用。古典概型中可化为 $|A\cap B|/|B|$，但只适用于原样本点等可能的情形。$P(A\mid B)$ 与 $P(B\mid A)$ 的已知信息不同，通常不相等。</p>
+<p>重排定义得到乘法公式</p>
+<div class="math-display">$$
+P(A\cap B)=P(B)P(A\mid B).
+$$</div>
+<p>沿一条路径相乘是逐步使用条件概率，不要求独立；把不同互斥路径相加则来自可加性。</p>
+<h2>全概率与贝叶斯公式</h2>
+<p>若 $B_1,\ldots,B_m$ 两两互斥、并集为 $\Omega$，且各 $P(B_i)&gt;0$，则 $A\cap B_i$ 把 $A$ 分块，故</p>
+<div class="math-display">$$
+P(A)=\sum_{i=1}^{m}P(B_i)P(A\mid B_i).
+$$</div>
+<p>当 $P(A)&gt;0$，把交集的乘法公式代入条件概率，得到</p>
+<div class="math-display">$$
+P(B_j\mid A)=\frac{P(B_j)P(A\mid B_j)}{\sum_iP(B_i)P(A\mid B_i)}.
+$$</div>
+<p>这是一条反向追溯来源的推论。分母要包括所有能产生观察结果的来源。</p>
+<h2>例：抽到次品后判断来源</h2>
+<p>随机抽出的产品有 $60\%$ 来自甲厂、$40\%$ 来自乙厂；两厂次品率分别为 $1/10$、$1/5$。求次品率与已知次品来自甲厂的概率。</p>
+<details class="solution-toggle"><summary>查看解析</summary><div class="solution-body"><p>记 $D$ 为次品，$M$ 为甲厂。来源是互斥完备分类：</p>
+<div class="math-display">$$
+P(D)=\frac35\frac1{10}+\frac25\frac15=\frac7{50}.
+$$</div>
+<p>甲厂次品路径占 $3/50$，归一到全部次品路径 $7/50$ 后，$P(M\mid D)=3/7$。观察前来自甲厂的概率为 $3/5$，观察到次品后下降，符合甲厂次品率较低这一信息。</p></div></details>
+<h2>独立的严格判据</h2>
+<p>定义 $A,B$ 独立为 $P(A\cap B)=P(A)P(B)$。若 $P(B)&gt;0$，这等价于 $P(A\mid B)=P(A)$：知道 $B$ 不改变对 $A$ 的概率判断。独立与时间先后、是否有放回没有逻辑上的自动等价关系，必须检查机制。</p>
+<p>若独立，则</p>
+<div class="math-display">$$
+P(A\cap\overline B)=P(A)-P(A\cap B)=P(A)(1-P(B)),
+$$</div>
+<p>因此 $A,\overline B$ 也独立，其他取反情形同理。若 $A,B$ 互斥且概率都正，则交集概率为 0，而乘积为正，它们不独立。</p>
+<p>三个事件两两独立不保证相互独立。两次独立公平抛币，取 $A$ 为第一次正面，$B$ 为第二次正面，$C$ 为两次相同：两两交集概率均为 $1/4$，但三者交集概率为 $1/4\ne1/8$。</p>
+<h2>复述检查</h2>
+<p>学生先说“在什么信息下”，再写概率。追问：为什么分母缩小？每条路径乘的是无条件概率还是条件概率？哪里用了相互独立？</p>
+<p>对应训练：<a href="06-exercises-zh.html">C、D 组</a>。本地对应：考点 37、38。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高中概率</a></li><li>源文件：<code>content/09_high_school_math/08_probability/02_conditional_independence_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-events-classical-zh.html">事件与古典概型：先建立样本空间</a></h3><p>随机试验是在明确规则下进行、事前不能确定具体结果的试验。样本点是按所选粒度描述的一个结果，样本空间 $\Omega$ 是所有可能样本点组成的集合；事件 $A$ 是 $\Omega$ 的子集。$\Omega$ 是必然事件，$\varnothing$ 是不可能事件。频率是观察所得的比例，概率是模型给出的数量，两者不能直接画等号。</p></div><div class="note-item"><h3><a href="03-random-variables-zh.html">随机变量、期望与方差：把结果映射为数</a></h3><p>随机变量 $X$ 是给每个样本点赋一个实数的函数。例如三次抛币的样本点是长度为 3 的正反序列，$X$ 可定义为正面次数；不同序列可能映射到相同的 $X$ 值。$\{X=k\}$ 是一个事件，而 $X$ 本身是函数。</p></div><div class="note-item"><h3><a href="04-distributions-zh.html">常见分布：公式由随机机制产生</a></h3><p>固定做 $n$ 次试验，各次相互独立，每次按成功或失败分类，成功概率恒为 $p$。令 $X$ 为成功次数。指定恰好 $k$ 个位置成功的一条类型路径概率为 $p^k(1-p)^{n-k}$；这样的成功位置集合共 $\binom nk$ 个且互斥，因此</p></div><div class="note-item"><h3><a href="05-modeling-zh.html">综合建模：停止、状态、决策与统计接口</a></h3><p>独立试验成功概率 $p\in(0,1)$，遇到第一次成功就停止，最多做 $m$ 次。令 $T$ 为实际试验次数。若 $1\le k&lt;m$，必须先失败 $k-1$ 次再成功，因此 $P(T=k)=(1-p)^{k-1}p$；若 $T=m$，只需前 $m-1$ 次失败，最后一次无论成败都会停，因此</p></div><div class="note-item"><h3><a href="06-exercises-zh.html">高中概率专项训练：12 类 72 题</a></h3><p>本页为根据本地考点结构重新编写的训练题，不冒充原卷逐字转录。每组前两题建立模型，后四题改变参数巩固计算与表达；综合迁移请继续使用原资料中的情境大题。所有答案默认折叠。</p></div><div class="note-item"><h3><a href="07-local-sources-zh.html">本地概率资料：原卷、解析与教学对应</a></h3><p>网页讲义根据以下材料组织知识和改编例题。原文件中的嵌入公式、表格和图形保留在下载文件中；下载原卷做综合训练，完成后再打开对应解析。部分旧题采用旧教材术语，应结合当前课堂要求选用。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>
