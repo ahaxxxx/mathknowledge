@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>强化学习训练册：从手算到条件分析 | math.bozhanli.com</title>
+  <meta name="description" content="六组本站原创任务，配推导、核对与迁移问题。它们对应主教材的学习阶段，不是 Sutton 与 Barto 的原题或官方解答。先独立写，再阅读解析；数值实验只能核对实例，不能替代一般证明。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../index.html">首页</a><a href="../../about.html">关于</a><a href="../../method.html">方法</a><a href="../../high-school-math.html">高中数学</a><a href="../../english.html">英语</a><a href="../../calculus.html">高数</a><a href="../../linear-algebra.html">线代</a><a href="../../probability.html">概率</a><a href="../../references.html">书目</a><a href="../../roadmap.html">路线</a><a href="../../live.html">答疑</a><a href="../../faq.html">FAQ</a><a class="is-active" href="../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../index.html">首页</a><span>/</span><a href="../index.html">笔记</a><span>/</span><a href="index.html">免费阅读与训练</a><span>/</span><span>强化学习训练册：从手算到条件分析</span></div>
+      <h1>强化学习训练册：从手算到条件分析</h1>
+      <p>六组本站原创任务，配推导、核对与迁移问题。它们对应主教材的学习阶段，不是 Sutton 与 Barto 的原题或官方解答。先独立写，再阅读解析；数值实验只能核对实例，不能替代一般证明。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>任务一：增量均值与遗忘</h2>
+<p>对象：同一动作的实数奖励样本 R₁,…,Rₙ。定义 Qₙ 为前 n 个样本的算术平均。求不保存全部样本的更新式，并分析把步长替换为固定 α 的结果。</p>
+<h3>推导与核对</h3>
+<p>由定义 nQₙ=R₁+…+Rₙ，把前 n−1 项合并为 (n−1)Qₙ₋₁。因为 n≥1，可以除以 n，得到：</p>
+<div class="math-display">$$
+Q_n=Q_{n-1}+\frac1n(R_n-Q_{n-1}).
+$$</div>
+<p>n=1 时直接取 Q₁=R₁。计算这个代数恒等式不需要独立同分布假设；若要证明它估计某个环境均值的一致性，则需要另行声明随机过程条件。</p>
+<p>改用常数 0&lt;α≤1，并指定 Q₀，反复展开递推可得：</p>
+<div class="math-display">$$
+Q_n=(1-\alpha)^nQ_0+\sum_{i=1}^{n}\alpha(1-\alpha)^{n-i}R_i.
+$$</div>
+<p>每展开一次，较早项再乘一个 1−α。初始值系数加样本系数的总和为 1；较新样本权重更大。取 Q₀=0、α=1/2、奖励 2、0、4，更新结果依次为 1、1/2、9/4；第三次样本均值则为 2。</p>
+<p>迁移：α=1 时保留什么信息？答：Qₙ=Rₙ，只保留最后样本。固定步长适应变化的能力，不构成一般收敛到固定真值的证明。</p>
+<h2>任务二：同一轨迹的 MC 与 TD</h2>
+<p>对象：一次完整回合 A→B→T，依次奖励 0、2，T 为零价值终止态。取 γ=0.9、步长 α=0.5，更新前 V(A)=1、V(B)=1。本题每个状态只出现一次。</p>
+<p>问题：用完整回报做 MC 更新；再按时间顺序用一步 TD 更新。比较两者为何不同。</p>
+<h3>推导与核对</h3>
+<p>从 B 开始回报为 2；从 A 开始为 0+0.9×2=1.8。MC 更新是旧值加 α 乘“采样回报减旧值”，所以 A 更新到 1+0.5×0.8=1.4，B 更新到 1+0.5×1=1.5。</p>
+<p>TD 在 A→B 时还没有用最终奖励更新 B，因此此时目标为 0+0.9×1=0.9，A 更新到 1+0.5×(−0.1)=0.95。在 B→T 时目标为 2+0.9×0=2，B 更新到 1.5。</p>
+<p>差别来自目标：MC 在这个回合使用后续实际奖励，TD 在第一步使用 B 的旧估计。不能由一个回合断言谁总体更准确。</p>
+<p>迁移：若明确规定先更新 B、再离线更新 A，TD 对 A 的目标变为 1.35，结果为 1.175。这是另一种更新顺序，报告实验时必须说明。</p>
+<h2>任务三：SARSA 与 Q-learning</h2>
+<p>对象：观测到 (s,a,r,s′,a′)，其中 s′ 非终止，r=1，γ=0.9，当前 Q(s,a)=0，α=0.5。s′ 有两动作，其 Q 值为 4 和 2；实际采到 a′ 是值为 2 的动作。</p>
+<h3>推导与核对</h3>
+<p>SARSA 使用实际下一动作，目标为 1+0.9×2=2.8，更新后 Q(s,a)=1.4。</p>
+<p>Q-learning 使用当前动作价值的最大值，目标为 1+0.9×4=4.6，更新后 Q(s,a)=2.3。</p>
+<p>最大化目标不代表行为过程这次真的执行了值为 4 的动作。Q-learning 可以从探索行为产生的数据学习贪心目标，但收敛还需要具体条件。</p>
+<p>迁移：若 s′ 真正终止，两个目标均为 r=1，更新后均为 0.5。人为截断一个持续任务不一定等于环境终止，是否继续自举取决于任务定义。</p>
+<h2>任务四：重要性权重与支持条件</h2>
+<p>对象：单步两动作任务，动作 1 的奖励为 2，动作 0 为 0。目标策略 π(1)=0.8，行为策略 b(1)=0.5。希望用行为样本估计目标策略的期望奖励。</p>
+<h3>推导与核对</h3>
+<p>直接按目标策略算得期望 0.8×2+0.2×0=1.6。行为样本的权重为 ρ(a)=π(a)/b(a)，两个动作的权重分别为 1.6 和 0.4。加权期望为 0.5×1.6×2+0.5×0.4×0=1.6。</p>
+<p>一般有限动作下，若 π(a)&gt;0 时必有 b(a)&gt;0，则求和中分母可以约掉：</p>
+<div class="math-display">$$
+\mathbb E_b[\rho(A)r(A)]=\sum_{a:b(a)&gt;0}b(a)\frac{\pi(a)}{b(a)}r(a)=\sum_a\pi(a)r(a).
+$$</div>
+<p>迁移：若 b(1)=0，奖励为 2 的动作永远无法观察，支持条件失败，不能通过除以零构造估计。支持条件成立也不保证方差小；当行为概率非常小时，权重可能很大。</p>
+<h2>任务五：全梯度与半梯度</h2>
+<p>对象：单次非终止转移奖励 r=1，γ=0.9；实参数 w 表示价值 Vw(s)=wφ(s)，其中 φ(s)=1、φ(s′)=2。定义残差 δ(w)=r+γVw(s′)−Vw(s)，平方残差 L(w)=δ(w)²/2。仅讨论这条固定样本，不声称它等于总体 Bellman 误差。</p>
+<h3>推导与核对</h3>
+<p>代入特征得 δ(w)=1+0.8w，故由链式法则 L′(w)=0.8δ(w)。对这个明确目标做梯度下降应取 w←w−α·0.8δ(w)。</p>
+<p>半梯度 TD 把目标 r+γVw(s′) 当作求导时的常量，只对当前预测 Vw(s) 求导，得到 w←w+αδ(w)φ(s)。当 w=0、α=0.1 时，全梯度更新到 −0.08，半梯度更新到 0.1，方向相反。</p>
+<p>这说明两种操作没有对同一个表达式做完整求导，不证明半梯度必然错误，也不证明样本残差梯度一定有更好的学习表现。要判断算法，仍须分析目标、采样分布及长期动态。</p>
+<p>迁移：若 φ(s′)=0，下一状态估计不随参数变化，两种更新在本例中相同。请明确指出消失的是哪一个导数项。</p>
+<h2>任务六：策略梯度与 baseline</h2>
+<p>对象：单步两动作任务，奖励分别为 r(1)=2、r(0)=0；θ 为任意实数，p=πθ(1)=1/(1+exp(−θ))，πθ(0)=1−p。目标为 J(θ)=Eπθ[r(A)]。</p>
+<h3>从直接求导开始</h3>
+<p>J=2p；对 sigmoid 求导得 p′=p(1−p)，因此 J′=2p(1−p)。由于任意有限 θ 对应 0&lt;p&lt;1，下面的对数求导合法。</p>
+<p>动作 1 的对数概率导数为 p′/p=1−p；动作 0 的对数概率导数为 −p′/(1−p)=−p。于是：</p>
+<div class="math-display">$$
+\mathbb E_{\pi_\theta}[r(A)\,\partial_\theta\log\pi_\theta(A)]
+=p\cdot2(1-p)+(1-p)\cdot0(-p)=2p(1-p).
+$$</div>
+<h3>baseline 为什么不改变这个期望</h3>
+<p>令 c 为与动作无关的固定实数。score 的期望为 p(1−p)+(1−p)(−p)=0，所以把 r(A) 替换为 r(A)−c 后，期望只减去 c×0，不变。</p>
+<p>若 c 随动作变化，这个论证失效。例如 c(A)=r(A)，估计恒为零，但真实梯度一般非零。实践中 baseline 可依赖状态；需按给定状态下的动作分布检查条件，构造策略梯度估计时也要明确是否对 baseline 求导。</p>
+<p>迁移：θ=0 时 p=1/2，真实梯度为 1/2。枚举两个动作核对 c=0、1、3 均不改变期望，再比较方差；相同期望不意味着相同方差。</p>
+<h2>实验与验收记录</h2>
+<p>先用上述精确数值检查程序，再使用随机环境。每份结果记录：任务定义、终止处理、更新顺序、步长、探索方法、训练交互数、评估方法和随机种子。画多个独立种子的结果；训练时含探索的奖励与评估策略奖励要区分。</p>
+<p>通过标准：能解释更新目标、独立重做计算、改变条件后重新判断。若只看懂答案，记录为“解析后理解”，隔几天再做。</p>
+<p><a href="rl-book.html">教材章节地图</a> · <a href="rl-study.html">Bellman 完整例子</a> · <a href="rl-research.html">研究卡片</a></p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">免费阅读与训练</a></li><li>源文件：<code>content/11_reading_guide/rl-practice.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="algebra.html">高等代数：理解线性结构</a></h3><p>从向量空间、基与维数，到线性映射、谱定理和奇异值分解。</p></div><div class="note-item"><h3><a href="analysis.html">数学分析：从定义到证明</a></h3><p>沿实数、极限、连续与微积分重建分析框架，逐步进入多元分析。</p></div><div class="note-item"><h3><a href="convex-study.html">Boyd《凸优化》：阅读顺序、训练与强化学习连接</a></h3><p>围绕“怎样建模、怎样证明最优、怎样计算”组织学习。先形成可独立使用的工具，再按研究问题深入；本页为中文导读与自编训练，不是全书译文。</p></div><div class="note-item"><h3><a href="deep.html">深度学习：串联数学工具</a></h3><p>把线代、概率、数值计算和优化放回神经网络的研究语境。</p></div><div class="note-item"><h3><a href="diffusion.html">扩散与 Flow Matching</a></h3><p>把微分方程、概率和采样联系起来，理解连续时间生成模型。</p></div><div class="note-item"><h3><a href="geometry.html">几何学习：对称性与等变性</a></h3><p>把群作用、不变性与等变性连接到图、网格和几何上的神经网络。</p></div><div class="note-item"><h3><a href="hdp.html">高维概率与学习理论</a></h3><p>从集中不等式、随机矩阵到泛化分析，进入理论研究常用的证明工具。</p></div><div class="note-item"><h3><a href="information.html">信息论与统计的连接</a></h3><p>围绕熵、KL 散度、互信息和统计推断，建立信息论的研究入口。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

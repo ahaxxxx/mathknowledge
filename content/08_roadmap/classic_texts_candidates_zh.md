@@ -1,5 +1,16 @@
 # 数学经典书目候选总表（第一版）
 
+## 免费开放资料优先入口
+
+[阅读与训练总览](../11_reading_guide/README.md)汇总 16 份资料指南与凸优化、强化学习两篇深入专题。
+
+- 数分：[Basic Analysis](../11_reading_guide/analysis.md)。
+- 高代：[Axler 中文版](../11_reading_guide/algebra.md)，多项式按需用 Judson 补充。
+- 概率：[Stat 110 练习与解答](../11_reading_guide/probability.md)。
+- 应用：[Boyd《凸优化》](../11_reading_guide/convex-study.md)、[强化学习路线](../11_reading_guide/rl-study.md)。
+
+以下经典书目继续保留为候选，列入不代表具有免费全文。
+
 ## 当前三门基础课
 
 ### 高数

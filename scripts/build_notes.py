@@ -33,6 +33,7 @@ NAV_ITEMS = [
 ]
 
 SECTION_LABELS = {
+    "11_reading_guide": "免费阅读与训练",
     "00_about": "关于",
     "01_method": "方法",
     "02_calculus": "高数",

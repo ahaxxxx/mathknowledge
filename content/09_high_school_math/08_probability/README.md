@@ -11,6 +11,8 @@
 5. [停止试验、递推与综合决策](./05_modeling_zh.md)
 6. [12 类专项训练：72 题与完整解析](./06_exercises_zh.md)
 7. [本地资料索引与原卷、解析](./07_local_sources_zh.md)
+8. [基础例题与自检补充](./08_foundation_examples_zh.md)
+9. [基础到综合：原有 10 道分层训练](./05_exercises_zh.md)
 
 ## 课堂推进
 

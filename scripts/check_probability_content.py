@@ -26,7 +26,7 @@ class Page(HTMLParser):
 
 def main():
     pages = list(NOTES.glob('*.html'))
-    assert len(pages) == 8
+    assert len(pages) == 10
     for path in pages + [ROOT/'docs/high-school-math.html', ROOT/'docs/probability.html']:
         data = path.read_text(encoding='utf-8')
         assert '\ufffd' not in data
@@ -61,7 +61,7 @@ def main():
             total += weight
         assert total == 1
         assert mean == (1-(1-p)**m)/p
-    print('PASS: 8 pages, 12 groups, 72 folded solutions, all local links, exact finite-model checks.')
+    print('PASS: 10 pages, 12 groups, 72 folded solutions, all local links, exact finite-model checks.')
 
 
 if __name__ == '__main__':
