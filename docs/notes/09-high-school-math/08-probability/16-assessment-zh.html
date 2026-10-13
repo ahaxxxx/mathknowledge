@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>概率诊断与延迟复测 | math.bozhanli.com</title>
+  <meta name="description" content="[返回两周路线](./09_two_week_plan_zh.md)。诊断先独立作答，再看解析。每题分别记录答案、理由与是否需提示；分数用于选补缺路径，不作为高考分数预测。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">高中概率</a><span>/</span><span>概率诊断与延迟复测</span></div>
+      <h1>概率诊断与延迟复测</h1>
+      <p>[返回两周路线](./09_two_week_plan_zh.md)。诊断先独立作答，再看解析。每题分别记录答案、理由与是否需提示；分数用于选补缺路径，不作为高考分数预测。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>先修诊断：8 道短题</h2>
+<h3>先修 1：有序还是无序？</h3>
+<p>5 人选 2 人组成小组与选正副组长，分别多少种？</p>
+<details class="solution-toggle"><summary>解析与观察点</summary><div class="solution-body"><p>小组 $\binom52=10$ 种；正副组长 $5\times4=20$ 种。关键是交换两人的位置是否产生新对象。两种均答对且能解释记为独立掌握，写对公式但无法解释记需提示。</p></div></details>
+<h3>先修 2：至少一个</h3>
+<p>3 男 2 女中等可能选两人，至少一女概率多少？</p>
+<details class="solution-toggle"><summary>解析与观察点</summary><div class="solution-body"><p>总数 10，全男 3，所以概率 7/10。观察能否主动把“至少”转为对立，同时说明分子分母都是无序二人组。</p></div></details>
+<h3>先修 3：分数运算</h3>
+<p>计算 $(3/5)(1/2)+(2/5)(3/4)$。</p>
+<details class="solution-toggle"><summary>解析与观察点</summary><div class="solution-body"><p>两项分别 3/10 和 3/10，和为 3/5。若概念理解但算错，标为运算问题，不重复重讲概率定义。</p></div></details>
+<h3>先修 4：等可能吗？</h3>
+<p>均匀骰子的点数和“出奇数、出偶数”两类，哪个层次可作等可能样本空间？</p>
+<details class="solution-toggle"><summary>解析与观察点</summary><div class="solution-body"><p>六个点数各 1/6，可作等可能样本点；奇偶两类也各 1/2，可在只研究奇偶的粗化模型中等可能。粗化后不能区分具体点数事件，如出 1。观察是否误认为样本空间只能选一种粒度。</p></div></details>
+<h3>先修 5：互斥与对立</h3>
+<p>一次骰子投掷“出 1”和“出 2”互斥吗、对立吗？</p>
+<details class="solution-toggle"><summary>解析与观察点</summary><div class="solution-body"><p>互斥但不对立：不能同时发生，但并集没有覆盖 3、4、5、6。只说“不同所以对立”是概念错误。</p></div></details>
+<h3>先修 6：组合边界</h3>
+<p>5 个对象仅 2 个目标类，取 4 个，目标数最少和最多是多少？</p>
+<details class="solution-toggle"><summary>解析与观察点</summary><div class="solution-body"><p>非目标有 3 个，所以最少 1；目标只有 2，所以最多 2。观察是否能从实物数量推边界，暂不要求分布公式。</p></div></details>
+<h3>先修 7：等比和</h3>
+<p>求 $1+1/2+1/4+1/8$。</p>
+<details class="solution-toggle"><summary>解析与观察点</summary><div class="solution-body"><p>通分或等比和均得 15/8。进一步询问如何推广到 m 项；若只需少量提示，后续停止试验时回访即可。</p></div></details>
+<h3>先修 8：导数符号</h3>
+<p>$f(x)=x(1-x)$，x 在 [0,1]，最大值是多少？</p>
+<details class="solution-toggle"><summary>解析与观察点</summary><div class="solution-body"><p>$f&#x27;=1-2x$，在 1/2 左正右负，端点为 0，最大值 1/4。配方也可。此项用于决定进阶优化是否适合，不因本项薄弱阻止基础概率学习。</p></div></details>
+<h2>延迟复测：四道短题</h2>
+<p>第 3、4、5、6 课开场各选一道。题目不按刚讲完即刻重做，观察跨课保持。</p>
+<h3>复测 1：条件分母</h3>
+<p>100 人中参加 A 活动的 40 人，参加 B 的 50 人，同时参加的 20 人。已知参加 B，参加 A 概率多少？两事件独立吗？</p>
+<details class="solution-toggle"><summary>解析与观察点</summary><div class="solution-body"><p>条件概率 20/50=2/5，等于无条件 40/100；交集概率 1/5 等于 (2/5)(1/2)，独立。分母写 100 是条件信息错误。</p></div></details>
+<h3>复测 2：期望与方差</h3>
+<p>X 以各 1/2 概率取 -1、3，求 E(X)、D(X)。</p>
+<details class="solution-toggle"><summary>解析与观察点</summary><div class="solution-body"><p>均值 1，两侧偏差 -2、2，所以方差 4。观察是否把 E(X²)=5 错当方差，或只算偏差平均得到零。</p></div></details>
+<h3>复测 3：能否套二项？</h3>
+<p>两次独立试验成功率 1/4、3/4。成功次数是否服从 B(2,1/2)？用一个概率反驳。</p>
+<details class="solution-toggle"><summary>解析与观察点</summary><div class="solution-body"><p>不是，各次概率不同。恰两次成功概率 3/16，而 B(2,1/2) 给 1/4。反驳应给机制条件或可核查概率，不只回答“不能”。</p></div></details>
+<h3>复测 4：正态尾部</h3>
+<p>X 服从 N(20,9)，中心一个标准差概率 0.6827，求 P(X&lt;17)。</p>
+<details class="solution-toggle"><summary>解析与观察点</summary><div class="solution-body"><p>标准差 3，17=20-3，左尾 (1-0.6827)/2=0.15865。若只错小数运算则与概念错误分开记。</p></div></details>
+<h2>第二周阶段诊断：四题，共 20 分</h2>
+<p>建议约 25 分钟。先完成全部题再查答案；记录实际耗时。每题 5 分，评分要点用于定位错误，允许等价正确方法。</p>
+<h3>阶段 1：有条件的等可能抽取</h3>
+<p>4 红 2 白不放回随机抽两球。已知至少一红，求恰一红概率。写清样本点和条件空间。</p>
+<details class="solution-toggle"><summary>完整解析与评分</summary><div class="solution-body"><p>样本点为无序二球集合，共 $\binom62=15$。至少一红剔除唯一白白集合，剩 14 个等可能结果；恰一红 $4\times2=8$ 个。概率 8/14=4/7。</p>
+<p>评分：样本点与等可能依据 1 分，条件分母 2 分，分子 1 分，结果与说明 1 分。分母仍为 15 表明未真正使用条件。</p></div></details>
+<h3>阶段 2：分布与变量变换</h3>
+<p>5 件中 2 件次品，等可能抽 2 件，X 为次品数；Y=10+5X。求 X 分布及 Y 期望。</p>
+<details class="solution-toggle"><summary>完整解析与评分</summary><div class="solution-body"><p>X=0、1、2，分母 10，分子分别 $\binom32=3$、$\binom21\binom31=6$、$\binom22=1$，概率 3/10、3/5、1/10。E(X)=4/5，故 E(Y)=14。概率和为 1。</p>
+<p>评分：取值 1 分，计数与三项概率 2 分，归一检查 1 分，期望 1 分。若错用二项分布，优先补机制比较。</p></div></details>
+<h3>阶段 3：同概率独立重复</h3>
+<p>3 次独立试验成功率 2/3，求恰两次成功概率、成功次数期望方差，并说明二项条件。</p>
+<details class="solution-toggle"><summary>完整解析与评分</summary><div class="solution-body"><p>固定三次、二分类、相互独立、概率恒定，$X\sim B(3,2/3)$。$P(X=2)=3(2/3)^2(1/3)=4/9$，E(X)=2，D(X)=2/3。</p>
+<p>评分：模型条件 1 分，位置选择系数与路径概率 2 分，期望 1 分，方差 1 分。只写公式无条件依据，模型条件项不得分。</p></div></details>
+<h3>阶段 4：停止时的末项</h3>
+<p>独立试验成功率 1/3，首次成功停止，最多三次。求次数 T 的分布和期望。</p>
+<details class="solution-toggle"><summary>完整解析与评分</summary><div class="solution-body"><p>T=1、2、3，概率 1/3、2/9、4/9。末项只要求前两次失败，不要求末次成功。E(T)=1/3+4/9+12/9=19/9；尾和 1+2/3+4/9 也为 19/9。</p>
+<p>评分：取值 1 分，前三项概率共 2 分，末项原因 1 分，期望或独立验算 1 分。末项多乘 1/3 是停止边界问题。</p></div></details>
+<h2>结果怎样使用</h2>
+<p>不要只看总分。阶段 1、2、3 分别检查条件、取值与模型；这些方面若重复出现结构错误，第三周先补。阶段 4 是综合边界，单独薄弱不必重教所有基础。口头与书面解释另记录，不用流利程度替代数学正确性。</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高中概率</a></li><li>源文件：<code>content/09_high_school_math/08_probability/16_assessment_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-events-classical-zh.html">事件与古典概型：先建立样本空间</a></h3><p>随机试验是在明确规则下进行、事前不能确定具体结果的试验。样本点是按所选粒度描述的一个结果，样本空间 $\Omega$ 是所有可能样本点组成的集合；事件 $A$ 是 $\Omega$ 的子集。$\Omega$ 是必然事件，$\varnothing$ 是不可能事件。频率是观察所得的比例，概率是模型给出的数量，两者不能直接画等号。</p></div><div class="note-item"><h3><a href="02-conditional-independence-zh.html">条件概率与独立性：信息改变了什么</a></h3><p>已知事件 $B$ 发生后，只在 $B$ 内比较各结果。原来这部分总权重为 $P(B)$；要重新归一为 1，就把其中每个权重除以 $P(B)$。因此当 $P(B)&gt;0$ 时定义</p></div><div class="note-item"><h3><a href="03-random-variables-zh.html">随机变量、期望与方差：把结果映射为数</a></h3><p>随机变量 $X$ 是给每个样本点赋一个实数的函数。例如三次抛币的样本点是长度为 3 的正反序列，$X$ 可定义为正面次数；不同序列可能映射到相同的 $X$ 值。$\{X=k\}$ 是一个事件，而 $X$ 本身是函数。</p></div><div class="note-item"><h3><a href="04-distributions-zh.html">常见分布：公式由随机机制产生</a></h3><p>固定做 $n$ 次试验，各次相互独立，每次按成功或失败分类，成功概率恒为 $p$。令 $X$ 为成功次数。指定恰好 $k$ 个位置成功的一条类型路径概率为 $p^k(1-p)^{n-k}$；这样的成功位置集合共 $\binom nk$ 个且互斥，因此</p></div><div class="note-item"><h3><a href="05-exercises-zh.html">概率分层训练：建模、计算与解释</a></h3><p>每题先写清样本空间或随机变量、已知条件与所选模型，再计算。答案展开前先独立做题；讲题时补一句“如果改变什么条件，这种方法就不能用”。</p></div><div class="note-item"><h3><a href="05-modeling-zh.html">综合建模：停止、状态、决策与统计接口</a></h3><p>独立试验成功概率 $p\in(0,1)$，遇到第一次成功就停止，最多做 $m$ 次。令 $T$ 为实际试验次数。若 $1\le k&lt;m$，必须先失败 $k-1$ 次再成功，因此 $P(T=k)=(1-p)^{k-1}p$；若 $T=m$，只需前 $m-1$ 次失败，最后一次无论成败都会停，因此</p></div><div class="note-item"><h3><a href="06-exercises-zh.html">高中概率专项训练：12 类 72 题</a></h3><p>本页为根据本地考点结构重新编写的训练题，不冒充原卷逐字转录。每组前两题建立模型，后四题改变参数巩固计算与表达；综合迁移请继续使用原资料中的情境大题。所有答案默认折叠。</p></div><div class="note-item"><h3><a href="07-local-sources-zh.html">本地概率资料：原卷、解析与教学对应</a></h3><p>网页讲义根据以下材料组织知识和改编例题。原文件中的嵌入公式、表格和图形保留在下载文件中；下载原卷做综合训练，完成后再打开对应解析。部分旧题采用旧教材术语，应结合当前课堂要求选用。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

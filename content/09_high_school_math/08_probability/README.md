@@ -4,6 +4,8 @@
 
 ## 学习入口
 
+先看[两周六次课授课路线](./09_two_week_plan_zh.md)：六份中文教学包、24 道核心作业、先修诊断与延迟复测；第三周按需补缺或进阶。
+
 1. [事件、古典概型与概率运算](./01_events_classical_zh.md)
 2. [条件概率、独立性与信息更新](./02_conditional_independence_zh.md)
 3. [随机变量、分布列、期望与方差](./03_random_variables_zh.md)

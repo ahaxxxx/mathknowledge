@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>第六课：停止边界、期望决策与阶段诊断 | math.bozhanli.com</title>
+  <meta name="description" content="[返回路线](./09_two_week_plan_zh.md)。周日两小时，本地对应考点 39 与热点题集。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">高中概率</a><span>/</span><span>第六课：停止边界、期望决策与阶段诊断</span></div>
+      <h1>第六课：停止边界、期望决策与阶段诊断</h1>
+      <p>[返回路线](./09_two_week_plan_zh.md)。周日两小时，本地对应考点 39 与热点题集。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>停止机制先于公式</h2>
+<p>独立试验每次成功概率 p，遇成功即停，最多 m 次，T 为实际次数。k&lt;m 时要求前 k-1 次失败、第 k 次成功；T=m 只要求前 m-1 次失败，末次成功或失败都停。于是 $P(T=k)=(1-p)^{k-1}p$（k&lt;m），$P(T=m)=(1-p)^{m-1}$。</p>
+<p>逐样本有 $T=\sum_{k=1}^m\mathbf1_{\{T\ge k\}}$，取期望得 $E(T)=\sum_{k=1}^mP(T\ge k)$；再用等比和。完整推导见<a href="05-modeling-zh.html">综合讲义</a>。</p>
+<p>决策必须先写收益函数，再取期望。若题目要求稳定性，比较方差；若题目只要求期望最大，不擅自改目标。</p>
+<details class="solution-toggle"><summary>教师备课与诊断安排</summary><div class="solution-body"><p>10 分钟复盘，40 分钟新知中用“最多三次、首次成功停止”讲透末项，再用自编检验模型示范收益表。休息后，35 分钟应用中安排阶段诊断四题约 25 分钟，其余时间核对取值与事件。20 分钟选择一处结构错误重写，末 10 分钟决定第三周补缺或进阶。诊断若计算较慢，按真实作答记录，不用讲完答案冒充独立完成。</p></div></details>
+<h2>四道核心作业</h2>
+<h3>作业 1：最后一项为什么不同？【考点 39 模型改编】</h3>
+<p>每次独立成功率 1/2，首次成功即停，最多三次。求次数 T 的完整分布与期望；说明 P(T=3) 为何不是 1/8。</p>
+<details class="solution-toggle"><summary>一级提示</summary><div class="solution-body"><p>把末次成功、末次失败两条终止路径都写出。</p></div></details>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>T 取 1、2、3，概率 1/2、1/4、1/4，和为 1。末项含失败失败成功和失败失败失败，各 1/8，合计 1/4。期望 $1/2+2/4+3/4=7/4$。尾和也为 $1+1/2+1/4=7/4$。</p></div></details>
+<h3>作业 2：奖金不是试验次数【自编·迁移】</h3>
+<p>沿用上题，每次失败扣 2 分，首次成功得 5 分，三次均失败则没有成功奖励。令净得分 Y，求分布、期望与出现负分的概率。</p>
+<details class="solution-toggle"><summary>一级提示</summary><div class="solution-body"><p>第 3 次成功与三次全败有相同次数，却有不同得分。</p></div></details>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>首成得 5 分概率 1/2；败成得 3 分概率 1/4；败败成得 1 分概率 1/8；全败得 -6 分概率 1/8。期望 $5/2+3/4+1/8-6/8=21/8$，负分概率 1/8。不能从 T=3 的一项直接映射到一个奖金值，因为次数没有保留末次结果的信息。</p></div></details>
+<h3>作业 3：检验是否划算？【热点检验决策模型改编】</h3>
+<p>产品次品概率 p。直接销售：合格净利润 10 元，次品净亏损 20 元。先检验：检验准确，每件花 2 元；合格售出净利润为 8 元，次品报废后的净收益为 -2 元。以单件期望最大为目标，求何时应检验。</p>
+<details class="solution-toggle"><summary>一级提示</summary><div class="solution-body"><p>分别按合格、次品分类写期望，注意题干已给净收益。</p></div></details>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>直接销售期望 $10(1-p)-20p=10-30p$；检验期望 $8(1-p)-2p=8-10p$。检验减直接为 $20p-2$。p&gt;1/10 选检验，p&lt;1/10 直接，p=1/10 期望相同。p 在 [0,1] 内；结论依赖准确检验与题定净收益，不能重复扣成本。</p></div></details>
+<h3>作业 4：导数回访与概率优化【自编】</h3>
+<p>三次独立试验成功率 p，求恰一次成功概率的最大值与对应 p；解释为何 p=1 反而不能实现目标。</p>
+<details class="solution-toggle"><summary>一级提示</summary><div class="solution-body"><p>目标函数为 $3p(1-p)^2$，同时检查端点。</p></div></details>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>$h(p)=3p(1-p)^2$，p 在 [0,1]。导数 $h&#x27;(p)=3(1-p)(1-3p)$，在 (0,1/3) 为正、(1/3,1) 为负；端点函数值为零。因此最大点 p=1/3，最大值 4/9。p=1 时恰三次成功，恰一次成功的概率为零。这里复习导数符号与端点比较。</p></div></details>
+<p>讲题指定作业 2：为什么记录次数与记录净得分不能用同一分布？</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高中概率</a></li><li>源文件：<code>content/09_high_school_math/08_probability/15_lesson_six_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-events-classical-zh.html">事件与古典概型：先建立样本空间</a></h3><p>随机试验是在明确规则下进行、事前不能确定具体结果的试验。样本点是按所选粒度描述的一个结果，样本空间 $\Omega$ 是所有可能样本点组成的集合；事件 $A$ 是 $\Omega$ 的子集。$\Omega$ 是必然事件，$\varnothing$ 是不可能事件。频率是观察所得的比例，概率是模型给出的数量，两者不能直接画等号。</p></div><div class="note-item"><h3><a href="02-conditional-independence-zh.html">条件概率与独立性：信息改变了什么</a></h3><p>已知事件 $B$ 发生后，只在 $B$ 内比较各结果。原来这部分总权重为 $P(B)$；要重新归一为 1，就把其中每个权重除以 $P(B)$。因此当 $P(B)&gt;0$ 时定义</p></div><div class="note-item"><h3><a href="03-random-variables-zh.html">随机变量、期望与方差：把结果映射为数</a></h3><p>随机变量 $X$ 是给每个样本点赋一个实数的函数。例如三次抛币的样本点是长度为 3 的正反序列，$X$ 可定义为正面次数；不同序列可能映射到相同的 $X$ 值。$\{X=k\}$ 是一个事件，而 $X$ 本身是函数。</p></div><div class="note-item"><h3><a href="04-distributions-zh.html">常见分布：公式由随机机制产生</a></h3><p>固定做 $n$ 次试验，各次相互独立，每次按成功或失败分类，成功概率恒为 $p$。令 $X$ 为成功次数。指定恰好 $k$ 个位置成功的一条类型路径概率为 $p^k(1-p)^{n-k}$；这样的成功位置集合共 $\binom nk$ 个且互斥，因此</p></div><div class="note-item"><h3><a href="05-exercises-zh.html">概率分层训练：建模、计算与解释</a></h3><p>每题先写清样本空间或随机变量、已知条件与所选模型，再计算。答案展开前先独立做题；讲题时补一句“如果改变什么条件，这种方法就不能用”。</p></div><div class="note-item"><h3><a href="05-modeling-zh.html">综合建模：停止、状态、决策与统计接口</a></h3><p>独立试验成功概率 $p\in(0,1)$，遇到第一次成功就停止，最多做 $m$ 次。令 $T$ 为实际试验次数。若 $1\le k&lt;m$，必须先失败 $k-1$ 次再成功，因此 $P(T=k)=(1-p)^{k-1}p$；若 $T=m$，只需前 $m-1$ 次失败，最后一次无论成败都会停，因此</p></div><div class="note-item"><h3><a href="06-exercises-zh.html">高中概率专项训练：12 类 72 题</a></h3><p>本页为根据本地考点结构重新编写的训练题，不冒充原卷逐字转录。每组前两题建立模型，后四题改变参数巩固计算与表达；综合迁移请继续使用原资料中的情境大题。所有答案默认折叠。</p></div><div class="note-item"><h3><a href="07-local-sources-zh.html">本地概率资料：原卷、解析与教学对应</a></h3><p>网页讲义根据以下材料组织知识和改编例题。原文件中的嵌入公式、表格和图形保留在下载文件中；下载原卷做综合训练，完成后再打开对应解析。部分旧题采用旧教材术语，应结合当前课堂要求选用。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

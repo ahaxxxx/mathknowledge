@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 310" role="img" aria-labelledby="title desc">
+<title id="title">来源与次品人数树</title><desc id="desc">100件产品，甲厂60件含6次品54正品，乙厂40件含8次品32正品。</desc>
+<rect width="760" height="310" fill="white"/>
+<g stroke="#64748b" stroke-width="2" fill="none"><path d="M140 155L325 80M140 155L325 235M405 80L570 38M405 80L570 120M405 235L570 195M405 235L570 277"/></g>
+<g fill="#17212b" font-family="Arial,Microsoft YaHei,sans-serif" font-size="21" text-anchor="middle">
+<text x="90" y="162">100 件</text><text x="365" y="87">甲厂 60</text><text x="365" y="242">乙厂 40</text>
+<text x="650" y="45" fill="#b42318">次品 6</text><text x="650" y="127">正品 54</text><text x="650" y="202" fill="#b42318">次品 8</text><text x="650" y="284">正品 32</text>
+</g></svg>

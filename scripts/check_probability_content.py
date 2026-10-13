@@ -19,6 +19,8 @@ class Page(HTMLParser):
         attrs = dict(attrs)
         if tag == 'a' and 'href' in attrs:
             self.links.append(attrs['href'])
+        if tag == 'img' and 'src' in attrs:
+            self.links.append(attrs['src'])
         if tag == 'details':
             assert 'open' not in attrs, 'Solution exposed by default'
             self.answers += 1
@@ -26,7 +28,7 @@ class Page(HTMLParser):
 
 def main():
     pages = list(NOTES.glob('*.html'))
-    assert len(pages) == 10
+    assert len(pages) == 19
     for path in pages + [ROOT/'docs/high-school-math.html', ROOT/'docs/probability.html']:
         data = path.read_text(encoding='utf-8')
         assert '\ufffd' not in data
@@ -44,6 +46,17 @@ def main():
     source = (ROOT/'content/09_high_school_math/08_probability/06_exercises_zh.md').read_text(encoding='utf-8')
     assert len(re.findall(r'^## [A-L]\.',source,re.M)) == 12
     assert len(re.findall(r'^### 题 \d+',source,re.M)) == 72
+    lessons = list((ROOT/'content/09_high_school_math/08_probability').glob('1[0-5]_lesson_*.md'))
+    assert len(lessons) == 6
+    for lesson in lessons:
+        content = lesson.read_text(encoding='utf-8')
+        assert len(re.findall(r'^### 作业 [1-4]', content, re.M)) == 4
+        assert content.count(':::solution 一级提示') == 4
+        assert content.count(':::solution 完整解析') == 4
+    assessment = (ROOT/'content/09_high_school_math/08_probability/16_assessment_zh.md').read_text(encoding='utf-8')
+    assert len(re.findall(r'^### 先修 ',assessment,re.M)) == 8
+    assert len(re.findall(r'^### 复测 ',assessment,re.M)) == 4
+    assert len(re.findall(r'^### 阶段 ',assessment,re.M)) == 4
     # Independently enumerate finite models used in the exercise bank.
     for n,m,r in [(6,2,3),(7,3,3),(8,3,4),(9,4,3),(10,4,4),(11,5,4)]:
         counts = [sum(i<m for i in chosen) for chosen in combinations(range(n),r)]
@@ -61,7 +74,7 @@ def main():
             total += weight
         assert total == 1
         assert mean == (1-(1-p)**m)/p
-    print('PASS: 10 pages, 12 groups, 72 folded solutions, all local links, exact finite-model checks.')
+    print('PASS: 19 pages, 6 lessons, 24 core exercises, 8+4+4 assessments, 72 practice solutions, links and model checks.')
 
 
 if __name__ == '__main__':

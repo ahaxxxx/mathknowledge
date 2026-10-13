@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="title desc">
+<title id="title">正态区间面积示意</title><desc id="desc">曲线关于均值对称，阴影覆盖均值到均值加一个标准差，纵轴为密度。</desc>
+<rect width="680" height="300" fill="white"/>
+<path d="M340 230L340 50C370 50 401 74 430 117L430 230Z" fill="#d4eee8"/>
+<g fill="none" stroke="#1c645d" stroke-width="3"><path d="M70 228C150 227 200 190 250 117S310 50 340 50S401 74 430 117S530 227 610 228"/></g>
+<g stroke="#475569" stroke-width="1.5"><path d="M50 230H630M60 230V25"/><path d="M340 230V50M430 230V117" stroke-dasharray="5 5"/></g>
+<g font-family="Arial,Microsoft YaHei,sans-serif" font-size="18" fill="#17212b"><text x="75" y="30">密度</text><text x="323" y="260">均值</text><text x="400" y="285">均值 + 标准差</text><text x="470" y="80">阴影面积表示概率</text></g>
+</svg>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>第一课：先说清一次随机结果是什么 | math.bozhanli.com</title>
+  <meta name="description" content="[返回两周路线](./09_two_week_plan_zh.md)。周三一小时，先修诊断用[诊断页第 1—8 题](./16_assessment_zh.md)。本地对应考点 31。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">高中概率</a><span>/</span><span>第一课：先说清一次随机结果是什么</span></div>
+      <h1>第一课：先说清一次随机结果是什么</h1>
+      <p>[返回两周路线](./09_two_week_plan_zh.md)。周三一小时，先修诊断用[诊断页第 1—8 题](./16_assessment_zh.md)。本地对应考点 31。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>本课目标与推导</h2>
+<p>样本空间（sample space）是全部可能结果的集合，事件（event）是其中的子集。事件互斥表示不能同时发生；对立还要求两者覆盖所有结果。有限等可能样本空间中，N 个点的概率相等且总和为 1，每点概率才是 1/N，事件概率才是点数比。</p>
+<p>用两枚均匀骰子说明：等可能的是 36 个有序点数对，不是 11 种点数和。独立投掷保证每对概率为 1/36。</p>
+<p>加法公式来自交集被重复计算：</p>
+<div class="math-display">$$
+P(A\cup B)=P(A)+P(B)-P(A\cap B).
+$$</div>
+<p>完整知识见<a href="01-events-classical-zh.html">事件讲义</a>。课堂例：从 3 女 2 男中等可能选两人，至少一女的概率为 $1-\binom22/\binom52=9/10$，让学生用正面分类复算。</p>
+<details class="solution-toggle"><summary>教师备课与退出检查</summary><div class="solution-body"><p>10 分钟诊断后，用骰子反例校准样本点；25 分钟新知中先画结果表，再写计数比。20 分钟应用安排学生独立完成“3 女 2 男选两人”的两种算法，再完成作业 2 的口径辨析。最后问：互斥事件一定对立吗？要求给反例，如骰子出 1 与出 2。</p>
+<p>观察她能否自行指定“有序对／无序集合”。若只能说“随机所以等可能”，追问具体抽取机制。原有排列组合可通过这道题回访，不另讲整节计数课。</p></div></details>
+<h2>四道核心作业</h2>
+<h3>作业 1：点数和等可能吗？【自编·辨析】</h3>
+<p>两枚均匀骰子独立投掷。有人说和为 2 到 12 共 11 种，所以和为 7 的概率为 1/11。指出错误，求正确概率。</p>
+<details class="solution-toggle"><summary>一级提示</summary><div class="solution-body"><p>把一次结果写成有序点数对，列出和为 7 的那些对。</p></div></details>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>36 对等可能，和为 7 的为 (1,6)、(2,5)、(3,4)、(4,3)、(5,2)、(6,1)，共 6 对，概率为 1/6。和为 2 只有一对，说明各点数和权重不同，不能给它们平均分配概率。</p></div></details>
+<h3>作业 2：有序与无序【本地考点 31 模型改编】</h3>
+<p>6 人中 2 名女生，每个三人小组等可能被选中，求至少一名女生的概率。再解释：若按依次不放回选三人计数，为何答案不变？</p>
+<details class="solution-toggle"><summary>一级提示</summary><div class="solution-body"><p>先算全男；有序口径下每个三人集合有多少种次序？</p></div></details>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>无序分母 $\binom63=20$，全男 $\binom43=4$，所求 $1-4/20=4/5$。有序分母 $6\times5\times4=120$，全男 $4\times3\times2=24$，仍为 4/5。每个集合对应 3! 种次序，分子分母同乘 3! 后比值不变。分子无序、分母有序则不成立。</p></div></details>
+<h3>作业 3：只改变抽取机制【自编·迁移】</h3>
+<p>袋中 3 个红球、1 个白球。机制甲是每个球等可能被抽中；机制乙是先等可能选红或白，再从该颜色的球中等可能取一个。分别求红球概率，并判断四个球在机制乙下是否等可能。</p>
+<details class="solution-toggle"><summary>一级提示</summary><div class="solution-body"><p>先求颜色路径的概率，再求每个具体球的概率。</p></div></details>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>甲红球概率 3/4。乙先选红概率 1/2，所以红球概率 1/2；每个红球概率 $(1/2)(1/3)=1/6$，白球概率 1/2。四球权重不相同，不能在机制乙套用红球数/总球数。三个 1/6 加 1/2 为 1，归一检查通过。</p></div></details>
+<h3>作业 4：排列组合回访【自编】</h3>
+<p>5 人随机排成一列，所有排列等可能，甲乙相邻的概率是多少？解释捆绑法为何没有重复遗漏。</p>
+<details class="solution-toggle"><summary>一级提示</summary><div class="solution-body"><p>把甲乙看作一块，同时保留块内次序。</p></div></details>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>总排列 5!。甲乙块与另外三人共四个对象，排列 4!，块内有甲乙、乙甲两种次序，所以概率 $2\times4!/5!=2/5$。每个相邻排列都能唯一压缩成块排列与块内次序，故一一对应，没有重漏。</p></div></details>
+<p>讲题指定作业 3：随机机制改变了哪一层权重？</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高中概率</a></li><li>源文件：<code>content/09_high_school_math/08_probability/10_lesson_one_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-events-classical-zh.html">事件与古典概型：先建立样本空间</a></h3><p>随机试验是在明确规则下进行、事前不能确定具体结果的试验。样本点是按所选粒度描述的一个结果，样本空间 $\Omega$ 是所有可能样本点组成的集合；事件 $A$ 是 $\Omega$ 的子集。$\Omega$ 是必然事件，$\varnothing$ 是不可能事件。频率是观察所得的比例，概率是模型给出的数量，两者不能直接画等号。</p></div><div class="note-item"><h3><a href="02-conditional-independence-zh.html">条件概率与独立性：信息改变了什么</a></h3><p>已知事件 $B$ 发生后，只在 $B$ 内比较各结果。原来这部分总权重为 $P(B)$；要重新归一为 1，就把其中每个权重除以 $P(B)$。因此当 $P(B)&gt;0$ 时定义</p></div><div class="note-item"><h3><a href="03-random-variables-zh.html">随机变量、期望与方差：把结果映射为数</a></h3><p>随机变量 $X$ 是给每个样本点赋一个实数的函数。例如三次抛币的样本点是长度为 3 的正反序列，$X$ 可定义为正面次数；不同序列可能映射到相同的 $X$ 值。$\{X=k\}$ 是一个事件，而 $X$ 本身是函数。</p></div><div class="note-item"><h3><a href="04-distributions-zh.html">常见分布：公式由随机机制产生</a></h3><p>固定做 $n$ 次试验，各次相互独立，每次按成功或失败分类，成功概率恒为 $p$。令 $X$ 为成功次数。指定恰好 $k$ 个位置成功的一条类型路径概率为 $p^k(1-p)^{n-k}$；这样的成功位置集合共 $\binom nk$ 个且互斥，因此</p></div><div class="note-item"><h3><a href="05-exercises-zh.html">概率分层训练：建模、计算与解释</a></h3><p>每题先写清样本空间或随机变量、已知条件与所选模型，再计算。答案展开前先独立做题；讲题时补一句“如果改变什么条件，这种方法就不能用”。</p></div><div class="note-item"><h3><a href="05-modeling-zh.html">综合建模：停止、状态、决策与统计接口</a></h3><p>独立试验成功概率 $p\in(0,1)$，遇到第一次成功就停止，最多做 $m$ 次。令 $T$ 为实际试验次数。若 $1\le k&lt;m$，必须先失败 $k-1$ 次再成功，因此 $P(T=k)=(1-p)^{k-1}p$；若 $T=m$，只需前 $m-1$ 次失败，最后一次无论成败都会停，因此</p></div><div class="note-item"><h3><a href="06-exercises-zh.html">高中概率专项训练：12 类 72 题</a></h3><p>本页为根据本地考点结构重新编写的训练题，不冒充原卷逐字转录。每组前两题建立模型，后四题改变参数巩固计算与表达；综合迁移请继续使用原资料中的情境大题。所有答案默认折叠。</p></div><div class="note-item"><h3><a href="07-local-sources-zh.html">本地概率资料：原卷、解析与教学对应</a></h3><p>网页讲义根据以下材料组织知识和改编例题。原文件中的嵌入公式、表格和图形保留在下载文件中；下载原卷做综合训练，完成后再打开对应解析。部分旧题采用旧教材术语，应结合当前课堂要求选用。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>

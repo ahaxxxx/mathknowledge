@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>第三课：从事件走到分布与数字特征 | math.bozhanli.com</title>
+  <meta name="description" content="[返回路线](./09_two_week_plan_zh.md)。周日两小时，本地对应考点 36、39。">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <div class="shell page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="../../../index.html"><strong>math.bozhanli.com</strong><span>数学重建与共学</span></a>
+        <nav class="nav">
+          <a href="../../../index.html">首页</a><a href="../../../about.html">关于</a><a href="../../../method.html">方法</a><a href="../../../high-school-math.html">高中数学</a><a href="../../../english.html">英语</a><a href="../../../calculus.html">高数</a><a href="../../../linear-algebra.html">线代</a><a href="../../../probability.html">概率</a><a href="../../../references.html">书目</a><a href="../../../roadmap.html">路线</a><a href="../../../live.html">答疑</a><a href="../../../faq.html">FAQ</a><a class="is-active" href="../../../notes/index.html">笔记</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-head">
+      <div class="crumbs"><a href="../../../index.html">首页</a><span>/</span><a href="../../index.html">笔记</a><span>/</span><a href="../index.html">高中数学</a><span>/</span><a href="index.html">高中概率</a><span>/</span><span>第三课：从事件走到分布与数字特征</span></div>
+      <h1>第三课：从事件走到分布与数字特征</h1>
+      <p>[返回路线](./09_two_week_plan_zh.md)。周日两小时，本地对应考点 36、39。</p>
+    </div>
+    <div class="subject-grid"><section class="page-section article"><h2>对象、定义与推导顺序</h2>
+<p>随机变量（random variable）是从试验结果到实数的映射。分布列列出不同取值与对应概率；多个路径可产生同一取值，必须合并。概率非负且和为 1。</p>
+<p>期望（expected value）定义为 $E(X)=\sum x_ip_i$；它是加权中心，不保证单次取得。直接平均偏差等于零，所以用平方偏差定义方差（variance）：$D(X)=\sum(x_i-E(X))^2p_i$。展开得 $D(X)=E(X^2)-[E(X)]^2$。</p>
+<p>由求和展开证明 $E(aX+b)=aE(X)+b$；由偏差平方证明 $D(aX+b)=a^2D(X)$。完整解释见<a href="03-random-variables-zh.html">随机变量讲义</a>。</p>
+<p>固定 n 次相互独立的二分类试验，每次成功率 p 不变，成功次数 X 为二项分布（binomial distribution）。指定 k 个成功位置概率 $p^k(1-p)^{n-k}$，成功位置集合共 $\binom nk$ 个，互斥相加得到分布公式。用成功指示变量解释 $E(X)=np,D(X)=np(1-p)$；期望相加不要求独立，方差直接相加这里用了独立。</p>
+<details class="solution-toggle"><summary>教师备课与退出检查</summary><div class="solution-body"><p>前 10 分钟让学生讲第二课作业 4。40 分钟新知先算一次抛币得分的分布、期望方差，再用三次独立抛币进入二项模型；休息后用奖金题和命中次数题应用。最后 20 分钟学生重写一份漏取值的解答。退出题：独立但成功率分别为 1/5、4/5，两次成功总数能否用 B(2,1/2)？不能，恰两次成功概率 4/25 不等于 1/4。</p></div></details>
+<h2>四道核心作业</h2>
+<h3>作业 1：平均数能取到吗？【自编·辨析】</h3>
+<p>X 等可能取 0、2。求期望方差，评价“期望是 1，所以一次试验通常得到 1”。</p>
+<details class="solution-toggle"><summary>一级提示</summary><div class="solution-body"><p>检查可能取值中有没有 1。</p></div></details>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>$E(X)=1$，$D(X)=(0-1)^2/2+(2-1)^2/2=1$。一次只可能得 0 或 2，得 1 的概率为零。期望是加权中心；独立同分布重复的平均值可围绕这个中心稳定，不能变成单次承诺。</p></div></details>
+<h3>作业 2：分布与奖金变换【考点 39 模型改编】</h3>
+<p>X 的取值 0、1、2，对应概率 1/4、1/2、1/4。奖金 Y=10+20X 元，求完整分布列、期望方差。</p>
+<details class="solution-toggle"><summary>一级提示</summary><div class="solution-body"><p>把三个取值分别映射到奖金，不改变各自概率。</p></div></details>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>Y 取 10、30、50 元，对应 1/4、1/2、1/4。$E(X)=1$，$E(X^2)=3/2$，$D(X)=1/2$。故 $E(Y)=30$ 元，$D(Y)=20^2/2=200$ 平方元。概率和为 1；也可围绕 30 元直接算平方偏差验证。</p></div></details>
+<h3>作业 3：固定次数与位置选择【考点 36 模型改编】</h3>
+<p>独立投篮 4 次，每次命中率 3/4。X 为命中数，求恰中 3 次、至少中一次的概率及期望方差。解释组合系数。</p>
+<details class="solution-toggle"><summary>一级提示</summary><div class="solution-body"><p>恰中三次需选出唯一失误的位置；至少一次可取对立。</p></div></details>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>固定次数、独立、二分类、概率恒定，故 $X\sim B(4,3/4)$。恰三次概率 $\binom43(3/4)^3(1/4)=27/64$；四个位置选择对应四条互斥类型路径。至少一次概率 $1-(1/4)^4=255/256$。期望 3，方差 $4(3/4)(1/4)=3/4$。</p></div></details>
+<h3>作业 4：数列求和回访【自编】</h3>
+<p>等比数列首项 1、公比 q，且 0&lt;q&lt;1。推导前 m 项和，并计算 q=1/2、m=4 的值；解释为何 q=1 不能直接代入该分式。</p>
+<details class="solution-toggle"><summary>一级提示</summary><div class="solution-body"><p>把和乘以 q，错位相减。</p></div></details>
+<details class="solution-toggle"><summary>完整解析</summary><div class="solution-body"><p>设 $S=1+q+\cdots+q^{m-1}$，则 $qS=q+\cdots+q^m$，相减得 $(1-q)S=1-q^m$。因 q 不为 1，可除得 $S=(1-q^m)/(1-q)$。指定值为 15/8。q=1 时每项为 1，和为 m；不能除以零。这个结构将用于停止试验期望的尾和。</p></div></details>
+<p>讲题指定作业 3：四个模型条件分别来自题干哪里？</p></section><aside class="rail"><section class="page-section"><h2>页面信息</h2><ul><li>所属目录：<a href="index.html">高中概率</a></li><li>源文件：<code>content/09_high_school_math/08_probability/12_lesson_three_zh.md</code></li><li>这篇页面由 <code>scripts/build_notes.py</code> 自动生成。</li></ul></section><section class="page-section"><h2>同目录其他文章</h2><div class="note-grid"><div class="note-item"><h3><a href="01-events-classical-zh.html">事件与古典概型：先建立样本空间</a></h3><p>随机试验是在明确规则下进行、事前不能确定具体结果的试验。样本点是按所选粒度描述的一个结果，样本空间 $\Omega$ 是所有可能样本点组成的集合；事件 $A$ 是 $\Omega$ 的子集。$\Omega$ 是必然事件，$\varnothing$ 是不可能事件。频率是观察所得的比例，概率是模型给出的数量，两者不能直接画等号。</p></div><div class="note-item"><h3><a href="02-conditional-independence-zh.html">条件概率与独立性：信息改变了什么</a></h3><p>已知事件 $B$ 发生后，只在 $B$ 内比较各结果。原来这部分总权重为 $P(B)$；要重新归一为 1，就把其中每个权重除以 $P(B)$。因此当 $P(B)&gt;0$ 时定义</p></div><div class="note-item"><h3><a href="03-random-variables-zh.html">随机变量、期望与方差：把结果映射为数</a></h3><p>随机变量 $X$ 是给每个样本点赋一个实数的函数。例如三次抛币的样本点是长度为 3 的正反序列，$X$ 可定义为正面次数；不同序列可能映射到相同的 $X$ 值。$\{X=k\}$ 是一个事件，而 $X$ 本身是函数。</p></div><div class="note-item"><h3><a href="04-distributions-zh.html">常见分布：公式由随机机制产生</a></h3><p>固定做 $n$ 次试验，各次相互独立，每次按成功或失败分类，成功概率恒为 $p$。令 $X$ 为成功次数。指定恰好 $k$ 个位置成功的一条类型路径概率为 $p^k(1-p)^{n-k}$；这样的成功位置集合共 $\binom nk$ 个且互斥，因此</p></div><div class="note-item"><h3><a href="05-exercises-zh.html">概率分层训练：建模、计算与解释</a></h3><p>每题先写清样本空间或随机变量、已知条件与所选模型，再计算。答案展开前先独立做题；讲题时补一句“如果改变什么条件，这种方法就不能用”。</p></div><div class="note-item"><h3><a href="05-modeling-zh.html">综合建模：停止、状态、决策与统计接口</a></h3><p>独立试验成功概率 $p\in(0,1)$，遇到第一次成功就停止，最多做 $m$ 次。令 $T$ 为实际试验次数。若 $1\le k&lt;m$，必须先失败 $k-1$ 次再成功，因此 $P(T=k)=(1-p)^{k-1}p$；若 $T=m$，只需前 $m-1$ 次失败，最后一次无论成败都会停，因此</p></div><div class="note-item"><h3><a href="06-exercises-zh.html">高中概率专项训练：12 类 72 题</a></h3><p>本页为根据本地考点结构重新编写的训练题，不冒充原卷逐字转录。每组前两题建立模型，后四题改变参数巩固计算与表达；综合迁移请继续使用原资料中的情境大题。所有答案默认折叠。</p></div><div class="note-item"><h3><a href="07-local-sources-zh.html">本地概率资料：原卷、解析与教学对应</a></h3><p>网页讲义根据以下材料组织知识和改编例题。原文件中的嵌入公式、表格和图形保留在下载文件中；下载原卷做综合训练，完成后再打开对应解析。部分旧题采用旧教材术语，应结合当前课堂要求选用。</p></div></div></section></aside></div>
+  </div>
+</body>
+</html>
