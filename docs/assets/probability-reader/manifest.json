@@ -1,0 +1,167 @@
+[
+  {
+    "id": "point-29-lesson-questions",
+    "pages": 6,
+    "source_sha256": "07063cf28d78cfe188d7c0cdc5ecb885f486e6c61231c17b40fb77bc1f8a9f94"
+  },
+  {
+    "id": "point-29-lesson-solution",
+    "pages": 8,
+    "source_sha256": "1e9f7cfe0191c56e23267ffb9b21b7654265a923fd8af873852a1f2c449a5109"
+  },
+  {
+    "id": "point-29-practice-questions",
+    "pages": 5,
+    "source_sha256": "2044fbf700cafa6ba26650eb2d4a6b9a43c23d18ebb43da204ee622e90ad8dcf"
+  },
+  {
+    "id": "point-29-practice-solution",
+    "pages": 7,
+    "source_sha256": "34dfeb39cb804442a0142948f226dea1f780deed9d7cfd25c52b16c233dfc267"
+  },
+  {
+    "id": "point-30-lesson-questions",
+    "pages": 10,
+    "source_sha256": "99f0897a123dfbca4826990b91d73669443b2801ca7df78045a4d3f64b2fd018"
+  },
+  {
+    "id": "point-30-lesson-solution",
+    "pages": 15,
+    "source_sha256": "a18b8b5442e92be39877318e8846fbf4c9bcb16536afb2b9bc4772c3735608c9"
+  },
+  {
+    "id": "point-30-practice-questions",
+    "pages": 12,
+    "source_sha256": "d7093923ab6cfacc8ab97d03bff2c9bffd23a80daa1abb595fd3c65ac80ca8db"
+  },
+  {
+    "id": "point-30-practice-solution",
+    "pages": 19,
+    "source_sha256": "50f3a545a2abbf2df194eaab5b8a8387cda16b49c50851e4892353ee16123292"
+  },
+  {
+    "id": "point-31-lesson-questions",
+    "pages": 7,
+    "source_sha256": "3070338ab8fe19d7d6f5d7f6e9f5be43ad19d961a66cf22db89b34fd690a1001"
+  },
+  {
+    "id": "point-31-lesson-solution",
+    "pages": 11,
+    "source_sha256": "593c15de4bad4f905a536a42cf1b8b1a630f7d3dee30be220513e67b7653e9b8"
+  },
+  {
+    "id": "point-31-practice-questions",
+    "pages": 10,
+    "source_sha256": "9e985421936f39c30239f0922e21cbbf07a719f40ae30ecc9da02a1431a97ce2"
+  },
+  {
+    "id": "point-31-practice-solution",
+    "pages": 18,
+    "source_sha256": "260d4db486b40e281e451004d1b8295ac34ffc567b17a9cb53863f8ede6f39cb"
+  },
+  {
+    "id": "point-32-lesson-questions",
+    "pages": 16,
+    "source_sha256": "ba1a71c0b39e7db6d47c80c9f0c7c928346625ce4759e4cf038daf91a0d5d529"
+  },
+  {
+    "id": "point-32-lesson-solution",
+    "pages": 22,
+    "source_sha256": "16445dd7534edffad350695d996011531362170691031d1a4da87d515eaa7cea"
+  },
+  {
+    "id": "point-32-practice-questions",
+    "pages": 18,
+    "source_sha256": "ee94494cb206e1ec1417c485d12d071f1ce37cea21b09f6d264fe4d0371ea903"
+  },
+  {
+    "id": "point-32-practice-solution",
+    "pages": 25,
+    "source_sha256": "245df0139cf1b687652c73edad5c9d854a6593fd015f760981d345add85c2a42"
+  },
+  {
+    "id": "point-36-lesson-questions",
+    "pages": 15,
+    "source_sha256": "7ad98220857b352d002a67e4198c015e3f5c90bc02693c291b0f464ee1243efb"
+  },
+  {
+    "id": "point-36-lesson-solution",
+    "pages": 19,
+    "source_sha256": "024c276d7f404fe41f7613f40a573a9e01997b2647c0fbd56fe0581dff9f274c"
+  },
+  {
+    "id": "point-36-practice-questions",
+    "pages": 14,
+    "source_sha256": "8463085f36df7fdaa3f20d57ecf9d13f757ded601043953bd95c5fa0bed93dcc"
+  },
+  {
+    "id": "point-36-practice-solution",
+    "pages": 18,
+    "source_sha256": "3f3bb3f64042531d746127a69fe38ba33aeef34ddf614cb19917feea9fec811f"
+  },
+  {
+    "id": "point-37-lesson-questions",
+    "pages": 8,
+    "source_sha256": "e33c671c80d207cc86d49ffba1ab8b0fed3b529fa98fa667620e1fc18e53ba4d"
+  },
+  {
+    "id": "point-37-lesson-solution",
+    "pages": 12,
+    "source_sha256": "b088020f3d2d343f3e37a0af2d475104061c2154efe77eab4c247fa67515fb66"
+  },
+  {
+    "id": "point-37-practice-questions",
+    "pages": 11,
+    "source_sha256": "08839e6618c23807aa183427dd4723a66daf02d4429f69358c1e684e87f6034b"
+  },
+  {
+    "id": "point-37-practice-solution",
+    "pages": 20,
+    "source_sha256": "65a15e6d0bb459ddadf3765cf39951c543a782f27d37b443c38ab18525e4cc1b"
+  },
+  {
+    "id": "point-38-lesson-questions",
+    "pages": 10,
+    "source_sha256": "86f02ea227e51923e5dbb9a3e45928b275382515ecacec7f49302458eaafa957"
+  },
+  {
+    "id": "point-38-lesson-solution",
+    "pages": 17,
+    "source_sha256": "1db0ebdee6e315a07e9a9c8c22d4d36d085222ba31d2ccdd67e7f76f1c37e6ef"
+  },
+  {
+    "id": "point-38-practice-questions",
+    "pages": 12,
+    "source_sha256": "254fc8f9b870fac2989beaa59da9a6b573ccb329e109ef61d9bf924cc760fd71"
+  },
+  {
+    "id": "point-38-practice-solution",
+    "pages": 20,
+    "source_sha256": "c8c4977c14d208d0774d54d85fff69dd0e6c29bbd17192723c2385aae568fd2c"
+  },
+  {
+    "id": "point-39-lesson-questions",
+    "pages": 13,
+    "source_sha256": "ebd53c39d223e2dbe54d4a0322977f7182f449cf73253d3cd8980d3f34f0dc96"
+  },
+  {
+    "id": "point-39-lesson-solution",
+    "pages": 26,
+    "source_sha256": "1f9ae253389da5a926629fb39215236d6ff4ae2c2f968dcf8554301297e81e10"
+  },
+  {
+    "id": "point-39-practice-questions",
+    "pages": 15,
+    "source_sha256": "8c1474f4046b379f008aa6a6212d0f0eba0c2361923157d10823014a92a668fc"
+  },
+  {
+    "id": "point-39-practice-solution",
+    "pages": 29,
+    "source_sha256": "855c49f06c8868988be044654efbd7939ce1f643d387e456afba9162907e986e"
+  },
+  {
+    "id": "probability-hotspots-2020",
+    "pages": 81,
+    "source_sha256": "4f7da7f5c397b0d2d4bff9088608f4aedb1fd52bc90274809caafb41aa6ce517"
+  }
+]

@@ -125,28 +125,9 @@ def main():
     OUT.mkdir(parents=True,exist_ok=True)
     (OUT/'06_exercises_zh.md').write_text('\n'.join(lines),encoding='utf-8')
 
-    ASSETS.mkdir(parents=True,exist_ok=True)
-    lines=['# 本地概率资料：原卷、解析与教学对应', '', '网页讲义根据以下材料组织知识和改编例题。原文件中的嵌入公式、表格和图形保留在下载文件中；下载原卷做综合训练，完成后再打开对应解析。部分旧题采用旧教材术语，应结合当前课堂要求选用。', '', '## 一轮复习考点', '']
-    base=LOCAL/'考点讲解2021年高考数学复习一轮复习笔记（65个考点讲解全）'
-    mapping={31:'古典概型',36:'超几何分布与二项分布',37:'独立事件与独立重复试验',38:'正态分布和条件概率',39:'均值与方差在生活中运用',29:'抽样：统计接口',30:'用样本估计总体：统计接口',32:'线性回归与列联表：统计接口'}
-    count=0
-    for point,title in mapping.items():
-        lines += [f'### 考点 {point}：{title}', '']
-        matches=sorted(p for p in base.rglob('*.docx') if p.name.startswith(f'考点{point} '))
-        for p in matches:
-            lesson='lesson' if '讲解' in p.name else 'practice'
-            solved='solution' if '解析版' in p.name else 'questions'
-            target=f'point-{point}-{lesson}-{solved}.docx'
-            shutil.copy2(p,ASSETS/target)
-            label=('讲解' if lesson=='lesson' else '练习')+('解析版' if solved=='solution' else '原卷版')
-            lines += [f'- [{label}](../../../assets/probability-sources/{target})']
-            count+=1
-        lines += ['']
-    pdf=next((LOCAL/'导数、圆锥曲线、数列和概率与统计').glob('*统计概率*.pdf'))
-    shutil.copy2(pdf,ASSETS/'probability-hotspots-2020.pdf')
-    lines += ['## 综合热点题集', '', '[2020 高考统计概率大题必刷热点题型：81 页 PDF](../../../assets/probability-sources/probability-hotspots-2020.pdf)', '', '已查阅开篇情境，包括回归与多阶段检测、正四面体随机游走、直方图与正态估计、轮流摸球及检验决策。建议先完成对应讲义，再选这些题训练跨模块表达；正文的随机游走例题给出重写的完整推导。', '', '## 选题与讲题安排', '', '古典概型讲完后选考点 31 练习；分布讲完后选 36；独立性选 37；条件与正态选 38；停止、期望和方案比较选 39。综合课使用热点 PDF，按样本与概率、分布、期望、决策四层组织解答。', '', '同一道题建议先由学生口头说明随机机制，再写分布列与计算。若只会套公式，就回到具体事件路径和取值对应关系。', '']
-    (OUT/'07_local_sources_zh.md').write_text('\n'.join(lines),encoding='utf-8')
-    print(f'Generated {number} exercises in {len(groups)} groups; copied {count} DOCX files and one PDF.')
+    # Online source navigation is maintained by build_probability_reader.py.
+    # Do not overwrite it with DOCX/PDF download links when rebuilding exercises.
+    print(f'Generated {number} exercises in {len(groups)} groups.')
 
 
 if __name__ == '__main__':
