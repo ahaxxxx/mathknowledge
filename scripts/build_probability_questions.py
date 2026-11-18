@@ -77,7 +77,8 @@ with pdfplumber.open(root/f'assets/probability-sources/{key}.pdf') as doc:
      part.paste('white',(start,0,right,bottom))
      part.paste(opening,(start,0))
     name=f'hotspot-{i+1}-{pg+1}.webp';part.save(assets/name,quality=91)
-   result.append(f'<img class="sheet" loading="lazy" src="../assets/probability-questions/{name}" alt="原资料第 {pg+1} 页节选">')
+   version=hashlib.sha256((assets/name).read_bytes()).hexdigest()[:12]
+   result.append(f'<img class="sheet" loading="lazy" src="../assets/probability-questions/{name}?v={version}" alt="原资料第 {pg+1} 页节选">')
   return ''.join(result)
  write(key,'2026年高考统计概率大题必刷热点题型',[(fragment(i),fragment(i+30)) for i in range(30)],'历年模拟题精选')
 

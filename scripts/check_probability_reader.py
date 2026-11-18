@@ -1,5 +1,6 @@
 """Validate direct links, original question counts and closed answer panels."""
 from pathlib import Path
+from urllib.parse import urlsplit
 from lxml import html
 
 ROOT = Path(__file__).resolve().parents[1] / 'docs'
@@ -20,5 +21,5 @@ for name, count in expected.items():
         assert len(answers[0]) > 1
     for url in page.xpath('//@src | //@href'):
         if not url.startswith('#'):
-            assert (path.parent/url).is_file(), (name,url)
+            assert (path.parent/urlsplit(url).path).is_file(), (name,url)
 print('Validated all 33 original reader addresses and their inline answers.')
