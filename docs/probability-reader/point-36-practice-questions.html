@@ -1,4 +1,930 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>考点 36 · 超几何分布与二项分布 · 练习试题 | 在线阅读</title><link rel="stylesheet" href="../assets/probability-reader.css"><script src="../assets/probability-reader.js" defer></script></head><body>
-<header><a href="../notes/09-high-school-math/08-probability/07-local-sources-zh.html">← 概率资料目录</a><h1>考点 36 · 超几何分布与二项分布 · 练习试题</h1><p>直接在线阅读，共 14 页。保留原资料公式与配图；试题与解析分别阅读。手机上可点击放大，再横向滑动。</p><a href="point-36-practice-solution.html">查看对应解析</a></header>
-<nav aria-label="阅读控制"><button id="prev" type="button">上一页</button><label>跳转到 <select id="page-select"><option value="1">第 1 页</option><option value="2">第 2 页</option><option value="3">第 3 页</option><option value="4">第 4 页</option><option value="5">第 5 页</option><option value="6">第 6 页</option><option value="7">第 7 页</option><option value="8">第 8 页</option><option value="9">第 9 页</option><option value="10">第 10 页</option><option value="11">第 11 页</option><option value="12">第 12 页</option><option value="13">第 13 页</option><option value="14">第 14 页</option></select></label><button id="next" type="button">下一页</button><button id="zoom" type="button" aria-pressed="false">放大阅读</button><span id="status" aria-live="polite">第 1 / 14 页</span></nav>
-<main><figure id="page-1"><figcaption>第 1 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/1.webp" width="1839" height="2600" loading="eager" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 1 页"></figure><figure id="page-2"><figcaption>第 2 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/2.webp" width="1839" height="2600" loading="lazy" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 2 页"></figure><figure id="page-3"><figcaption>第 3 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/3.webp" width="1839" height="2600" loading="lazy" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 3 页"></figure><figure id="page-4"><figcaption>第 4 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/4.webp" width="1839" height="2600" loading="lazy" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 4 页"></figure><figure id="page-5"><figcaption>第 5 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/5.webp" width="1839" height="2600" loading="lazy" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 5 页"></figure><figure id="page-6"><figcaption>第 6 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/6.webp" width="1839" height="2600" loading="lazy" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 6 页"></figure><figure id="page-7"><figcaption>第 7 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/7.webp" width="1839" height="2600" loading="lazy" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 7 页"></figure><figure id="page-8"><figcaption>第 8 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/8.webp" width="1839" height="2600" loading="lazy" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 8 页"></figure><figure id="page-9"><figcaption>第 9 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/9.webp" width="1839" height="2600" loading="lazy" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 9 页"></figure><figure id="page-10"><figcaption>第 10 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/10.webp" width="1839" height="2600" loading="lazy" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 10 页"></figure><figure id="page-11"><figcaption>第 11 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/11.webp" width="1839" height="2600" loading="lazy" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 11 页"></figure><figure id="page-12"><figcaption>第 12 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/12.webp" width="1839" height="2600" loading="lazy" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 12 页"></figure><figure id="page-13"><figcaption>第 13 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/13.webp" width="1839" height="2600" loading="lazy" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 13 页"></figure><figure id="page-14"><figcaption>第 14 / 14 页</figcaption><img src="../assets/probability-reader/point-36-practice-questions/14.webp" width="1839" height="2600" loading="lazy" alt="考点 36 · 超几何分布与二项分布 · 练习试题，第 14 页"></figure></main><footer><a href="../notes/09-high-school-math/08-probability/07-local-sources-zh.html">返回概率资料目录</a></footer></body></html>
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>考点 36 · 超几何分布与二项分布 · 练习</title><link rel="stylesheet" href="../assets/probability-questions.css"><main><a href="../notes/09-high-school-math/08-probability/07-local-sources-zh.html">← 概率资料目录</a><h1>考点 36 · 超几何分布与二项分布 · 练习</h1><p>资料来源：学科网一轮复习笔记 · 共 8 题</p><nav aria-label="题号"><a href="#q1">1</a> <a href="#q2">2</a> <a href="#q3">3</a> <a href="#q4">4</a> <a href="#q5">5</a> <a href="#q6">6</a> <a href="#q7">7</a> <a href="#q8">8</a></nav><article id="q1"><h2>第 1 题</h2><p>
+1．某市调硏机构对该市工薪阶层对“楼市限购令”态度进行调查，抽调了50名市民，他们月收入频数分布表和对“楼市限购令”赞成人数如下表：</p>
+<table width="563">
+	<col width="145">
+	<col width="57">
+	<col width="58">
+	<col width="58">
+	<col width="58">
+	<col width="58">
+	<col width="57">
+	<tr>
+		<td width="145" height="11"><p>
+			月收入（单位：百元）</p>
+		</td>
+		<td width="57"><p>
+			<img src="../assets/probability-questions/40ae1d99858c5c5da231.png">
+</p>
+		</td>
+		<td width="58"><p>
+			<img src="../assets/probability-questions/4624baac0598936317d3.png">
+</p>
+		</td>
+		<td width="58"><p>
+			<img src="../assets/probability-questions/6103c6f147ce853ba024.png">
+</p>
+		</td>
+		<td width="58"><p>
+			<img src="../assets/probability-questions/b60efed43d716d66637e.png">
+</p>
+		</td>
+		<td width="58"><p>
+			<img src="../assets/probability-questions/a292cdeab188910321da.png">
+</p>
+		</td>
+		<td width="57"><p>
+			<img src="../assets/probability-questions/bd40c92bf536a5dd362b.png">
+</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="145" height="12"><p>
+			频数</p>
+		</td>
+		<td width="57"><p>
+			5</p>
+		</td>
+		<td width="58"><p>
+			<img src="../assets/probability-questions/b43486695520258c06de.png">
+</p>
+		</td>
+		<td width="58"><p>
+			<br>
+
+			</p>
+		</td>
+		<td width="58"><p>
+			10</p>
+		</td>
+		<td width="58"><p>
+			5</p>
+		</td>
+		<td width="57"><p>
+			5</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="145" height="12"><p>
+			频率</p>
+		</td>
+		<td width="57"><p>
+			0.1</p>
+		</td>
+		<td width="58"><p>
+			<img src="../assets/probability-questions/4ab33641065b6a23b0d6.png">
+</p>
+		</td>
+		<td width="58"><p>
+			<img src="../assets/probability-questions/aadd8cb99c6351538060.png">
+</p>
+		</td>
+		<td width="58"><p>
+			0.2</p>
+		</td>
+		<td width="58"><p>
+			0.1</p>
+		</td>
+		<td width="57"><p>
+			0.1</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="145" height="11"><p>
+			赞成人数</p>
+		</td>
+		<td width="57"><p>
+			4</p>
+		</td>
+		<td width="58"><p>
+			8</p>
+		</td>
+		<td width="58"><p>
+			12</p>
+		</td>
+		<td width="58"><p>
+			5</p>
+		</td>
+		<td width="58"><p>
+			2</p>
+		</td>
+		<td width="57"><p>
+			1</p>
+		</td>
+	</tr>
+</table>
+<p>
+（1）若所抽调的50名市民中，收入在<img src="../assets/probability-questions/6103c6f147ce853ba024.png">
+的有15名，求<img src="../assets/probability-questions/4ab33641065b6a23b0d6.png">
+，<img src="../assets/probability-questions/aadd8cb99c6351538060.png">
+，<img src="../assets/probability-questions/b43486695520258c06de.png">
+的值，并完成频率分布直方图．</p>
+<p>
+<img src="../assets/probability-questions/e2ea4f8e95640f19ebc3.png" width="233" height="119">
+</p>
+<p>
+（2）若从收入（单位：百元）在<img src="../assets/probability-questions/a292cdeab188910321da.png">
+的被调查者中随机选取2人进行追踪调查，选中的2人中恰有<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+人赞成“楼市限购令”，求<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+的分布列与数学期望．</p>
+<p>
+（3）从月收入频率分布表的6组市民中分别随机抽取3名市民，恰有一组的3名市民都不赞成“楼市限购令”，根据表格数据，判断这3名市民来自哪组的可能性最大？请直接写出你的判断结果．</p>
+<details><summary>查看答案与解析</summary><p>
+【答案】（1）<img src="../assets/probability-questions/af29817bb3a86b27dd2e.png">
+，频率分布直方图见解析；（2）分布列见解析，<img src="../assets/probability-questions/ab4f13d53255706c46b9.png">
+；（3）来自<img src="../assets/probability-questions/4c34c25b035b0323b1db.png">
+的可能性最大．</p>
+<p>
+【解析】（1）由频率分布表得：<img src="../assets/probability-questions/bbbabea6381f8fdfc731.png">
+，即<img src="../assets/probability-questions/9682abf058fd0dd9689f.png">
+．</p>
+<p>
+<img src="../assets/probability-questions/bf4cd559df4abcd1d305.png">
+收入在<img src="../assets/probability-questions/c12e78b17c1bc3dc6521.png">
+的有<img src="../assets/probability-questions/dd17dd6a9061927b3fe1.png">
+名，<img src="../assets/probability-questions/34700eed7f70bf99899f.png">
+，<img src="../assets/probability-questions/537c32fae49b6a71120f.png">
+，<img src="../assets/probability-questions/2934aaae3b08040828a7.png">
+，</p>
+<p>
+则频率分布直方图如下：</p>
+<p>
+<img src="../assets/probability-questions/d876c760580fe30d99b0.png" width="275" height="141">
+</p>
+<p>
+（2）<img src="../assets/probability-questions/bf4cd559df4abcd1d305.png">
+收入在<img src="../assets/probability-questions/da605a77638c9002c675.png">
+中赞成人数为<img src="../assets/probability-questions/1da78d41843e8cf3a9ff.png">
+，不赞成人数为<img src="../assets/probability-questions/39f2c5ac3f18dd61ce5e.png">
+，</p>
+<p>
+<img src="../assets/probability-questions/aaa809da942145abb90b.png">
+可能取值为<img src="../assets/probability-questions/2114b7f32848821cdf86.png">
+，</p>
+<p>
+则<img src="../assets/probability-questions/fa4b16664aabde105f9b.png">
+；<img src="../assets/probability-questions/fbf3fbd5df98484d9684.png">
+；<img src="../assets/probability-questions/b08df9b31ad0b758e8db.png">
+，</p>
+<p>
+<img src="../assets/probability-questions/aaa809da942145abb90b.png">
+的分布列为：</p>
+<table width="209">
+	<col width="41">
+	<col width="45">
+	<col width="36">
+	<col width="44">
+	<tr>
+		<td width="41" height="13"><p>
+			<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+</p>
+		</td>
+		<td width="45"><p>
+			<img src="../assets/probability-questions/5a9162ba5d43abd4b448.png">
+</p>
+		</td>
+		<td width="36"><p>
+			<img src="../assets/probability-questions/7b30fc994ca6aadc9ca7.png">
+</p>
+		</td>
+		<td width="44"><p>
+			<img src="../assets/probability-questions/1da78d41843e8cf3a9ff.png">
+</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="41" height="13"><p>
+			<img src="../assets/probability-questions/1698fe491503b2dc5209.png">
+</p>
+		</td>
+		<td width="45"><p>
+			<img src="../assets/probability-questions/edc76afb6eca826016f9.png">
+</p>
+		</td>
+		<td width="36"><p>
+			<img src="../assets/probability-questions/3c34476dfafc30644827.png">
+</p>
+		</td>
+		<td width="44"><p>
+			<img src="../assets/probability-questions/08f08b9fa1b7e4e123e0.png">
+</p>
+		</td>
+	</tr>
+</table>
+<p>
+<img src="../assets/probability-questions/8831daf5dc6c93ee4858.png">
+．</p>
+<p>
+（3）来自<img src="../assets/probability-questions/4c34c25b035b0323b1db.png">
+的可能性更大．</p>
+</details></article><article id="q2"><h2>第 2 题</h2><p>
+2．某大学数学学院拟从往年的智慧队和理想队中选拔4名大学生组成志愿者招募宣传队.往年的智慧对和理想队的构成数据如下表所示，现要求选出的4名大学生中两队中的大学生都要有.</p>
+<p>
+<img src="../assets/probability-questions/97030a8c79fb7624c94e.png" width="312" height="94">
+</p>
+<p>
+（1）求选出的4名大学生仅有1名女生的概率；</p>
+<p>
+（2）记选出的4名大学生中女生的人数为<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+，求随机变量<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+的分布列和数学期望.</p>
+<details><summary>查看答案与解析</summary><p>
+【答案】(1)<img src="../assets/probability-questions/59a2d7695a9b992af75d.png">
+;(2)见解析.</p>
+<p>
+【解析】（1）选出的4人中智慧队和理想队的都要有，所以选法种数是：</p>
+<p>
+<img src="../assets/probability-questions/32b6417dbfcba4001c04.png">
+（种）</p>
+<p>
+选出的4名大学生仅有1名女生的选法有：</p>
+<p>
+从智慧队中选取1女生的选法共有<img src="../assets/probability-questions/62f92e8c64160d1750eb.png">
+（种）</p>
+<p>
+从理想队中选取1女生的选法共有<img src="../assets/probability-questions/447e93a3fa52e5a3303a.png">
+（种）</p>
+<p>
+或者用排除法：<img src="../assets/probability-questions/52735c69736039317f48.png">
+（种）</p>
+<p>
+所以，选出的4名大学生仅有1名女生的概率为<img src="../assets/probability-questions/3c86ecf60e945b63b0eb.png">
+</p>
+<p>
+（2）随机变量<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+的可能取值为0，1，2，3</p>
+<p>
+则<img src="../assets/probability-questions/8e94e92c283cce49f924.png">
+，</p>
+<p>
+<img src="../assets/probability-questions/9fcc72db891aa24b9157.png">
+，</p>
+<p>
+<img src="../assets/probability-questions/fd14100a5509c7a4fc90.png">
+，</p>
+<p>
+<img src="../assets/probability-questions/e155a5f08fbc922300c0.png">
+，</p>
+<p>
+所以随机变量<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+的分布列为</p>
+<p>
+<img src="../assets/probability-questions/6e5d67231c3eda2f5a57.png" width="396" height="80">
+</p>
+<p>
+<img src="../assets/probability-questions/d55cce2b0741810eb025.png">
+.</p>
+</details></article><article id="q3"><h2>第 3 题</h2><p>
+3．某电视台举行一个比赛类型的娱乐节目，<img src="../assets/probability-questions/7e6775448fa03ee10312.png">
+两队各有六名选手参赛，将他们首轮的比赛成绩作为样本数据，绘制成茎叶图如图所示，为了增加节目的趣味性，主持人故意将<img src="../assets/probability-questions/458babafaa45d32fce7e.png">
+队第六位选手的成绩没有给出，并且告知大家<img src="../assets/probability-questions/37b26dde3d59ac8623f5.png">
+队的平均分比<img src="../assets/probability-questions/458babafaa45d32fce7e.png">
+队的平均分多4分，同时规定如果某位选手的成绩不少于21分，则获得“晋级”．</p>
+<p>
+<img src="../assets/probability-questions/b94a1285331312e495b5.png" width="159" height="103">
+</p>
+<p>
+（1）根据茎叶图中的数据，求出<img src="../assets/probability-questions/458babafaa45d32fce7e.png">
+队第六位选手的成绩；</p>
+<p>
+（2）主持人从<img src="../assets/probability-questions/458babafaa45d32fce7e.png">
+队所有选手成绩中随机抽2个，求至少有一个为“晋级”的概率；</p>
+<p>
+（3）主持人从<img src="../assets/probability-questions/7e6775448fa03ee10312.png">
+两队所有选手成绩分别随机抽取2个，记抽取到“晋级”选手的总人数为<img src="../assets/probability-questions/5da0d3e836d61eac0db1.png">
+，求<img src="../assets/probability-questions/5da0d3e836d61eac0db1.png">
+的分布列．</p>
+<details><summary>查看答案与解析</summary><p>
+【答案】（1）20；（2）<img src="../assets/probability-questions/3c34476dfafc30644827.png">
+；（3）答案见解析.</p>
+<p>
+【解析】（1）<img src="../assets/probability-questions/37b26dde3d59ac8623f5.png">
+队选手的平均分为<img src="../assets/probability-questions/1bf269a66bcc2cefe98f.png">
+，</p>
+<p>
+设<img src="../assets/probability-questions/458babafaa45d32fce7e.png">
+队第6位选手的成绩为<img src="../assets/probability-questions/9ca32473e217a508cf41.png">
+，</p>
+<p>
+则<img src="../assets/probability-questions/4d2083c69483ad4b7b08.png">
+，得<img src="../assets/probability-questions/e009ce2834334a97b941.png">
+</p>
+<p>
+（2）<img src="../assets/probability-questions/458babafaa45d32fce7e.png">
+队中成绩不少于21分的有2个，从中抽取2个至少有一个为“晋级”的对立事件为两人都没有“晋级”，则概率<img src="../assets/probability-questions/818260e4a8194e2396dd.png">
+</p>
+<p>
+（3）<img src="../assets/probability-questions/5da0d3e836d61eac0db1.png">
+的可能取值有0，1，2，3，4，</p>
+<p>
+<img src="../assets/probability-questions/4e6976a3c05a8d377c70.png">
+</p>
+<p>
+<img src="../assets/probability-questions/ace5b0d5f13334d6a2fd.png">
+</p>
+<p>
+<img src="../assets/probability-questions/1b1f2feab52f646dd264.png">
+</p>
+<p>
+<img src="../assets/probability-questions/6ef09fc8e0bf278261b5.png">
+</p>
+<p>
+<img src="../assets/probability-questions/3c32dfa12345650b8f89.png">
+</p>
+<p>
+∴<img src="../assets/probability-questions/5da0d3e836d61eac0db1.png">
+的分布列为</p>
+<table width="100%">
+	<col width="30*">
+	<col width="45*">
+	<col width="45*">
+	<col width="45*">
+	<col width="45*">
+	<col width="45*">
+	<tr>
+		<td width="12%" height="11"><p>
+			<img src="../assets/probability-questions/5da0d3e836d61eac0db1.png">
+</p>
+			<p><br>
+
+			</p>
+		</td>
+		<td width="18%"><p>
+			0</p>
+			<p><br>
+
+			</p>
+		</td>
+		<td width="18%"><p>
+			1</p>
+			<p><br>
+
+			</p>
+		</td>
+		<td width="18%"><p>
+			2</p>
+			<p><br>
+
+			</p>
+		</td>
+		<td width="18%"><p>
+			3</p>
+			<p><br>
+
+			</p>
+		</td>
+		<td width="18%"><p>
+			4</p>
+			<p><br>
+
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="12%" height="11"><p>
+			<img src="../assets/probability-questions/1698fe491503b2dc5209.png">
+</p>
+			<p><br>
+
+			</p>
+		</td>
+		<td width="18%"><p>
+			<img src="../assets/probability-questions/595a111c5f2283f617d4.png">
+</p>
+			<p><br>
+
+			</p>
+		</td>
+		<td width="18%"><p>
+			<img src="../assets/probability-questions/cecd2207b7bef13c0544.png">
+</p>
+			<p><br>
+
+			</p>
+		</td>
+		<td width="18%"><p>
+			<img src="../assets/probability-questions/377488c68a856476bed2.png">
+</p>
+			<p><br>
+
+			</p>
+		</td>
+		<td width="18%"><p>
+			<img src="../assets/probability-questions/cecd2207b7bef13c0544.png">
+</p>
+			<p><br>
+
+			</p>
+		</td>
+		<td width="18%"><p>
+			<img src="../assets/probability-questions/595a111c5f2283f617d4.png">
+</p>
+			<p><br>
+
+			</p>
+		</td>
+	</tr>
+</table>
+</details></article><article id="q4"><h2>第 4 题</h2><p>
+1．某学校实行自主招生，参加自主招生的学生从8个试题中随机挑选出4个进行作答，至少答对3个才能通过初试已知甲、乙两人参加初试，在这8个试题中甲能答对6个，乙能答对每个试题的概率为<img src="../assets/probability-questions/3d93aa95cc74b02213f3.png">
+，且甲、乙两人是否答对每个试题互不影响.</p>
+<p>
+（1）试通过概率计算，分析甲、乙两人谁通过自主招生初试的可能性更大；</p>
+<p>
+（2）若答对一题得5分，答错或不答得0分，记乙答题的得分为<img src="../assets/probability-questions/bcc88a10705d80db489b.png">
+，求<img src="../assets/probability-questions/bcc88a10705d80db489b.png">
+的分布列及数学期望和方差.</p>
+<details><summary>查看答案与解析</summary><p>
+【答案】（1）甲通过自主招生初试的可能性更大.（2）见解析，<img src="../assets/probability-questions/b93f8f4439932a1d3ec6.png">
+，<img src="../assets/probability-questions/bfe4b6276ed32d6e6b38.png">
+.</p>
+<p>
+【解析】（1）参加自主招生的学生从8个试题中随机挑选出4个进行作答，至少答对3个才能通过初试，在这8个试题中甲能答对6个，</p>
+<p>
+<img src="../assets/probability-questions/018d1be77ab4aedbde25.png">
+甲通过自主招生初试的概率<img src="../assets/probability-questions/0bbfdf8d8ce2951950a1.png">
+</p>
+<p>
+参加自主招生的学生从8个试题中随机挑选出4个进行作答，至少答对3个才能通过初试.</p>
+<p>
+在这8个试题中乙能答对每个试题的概率为<img src="../assets/probability-questions/3d93aa95cc74b02213f3.png">
+，</p>
+<p>
+<img src="../assets/probability-questions/018d1be77ab4aedbde25.png">
+乙通过自主招生初试的概率<img src="../assets/probability-questions/01a4e26762df22401481.png">
+</p>
+<p>
+<img src="../assets/probability-questions/f9eee66539290825e95b.png">
+，<img src="../assets/probability-questions/018d1be77ab4aedbde25.png">
+甲通过自主招生初试的可能性更大.
+
+</p>
+<p>
+（2）根据题意，乙答对题的个数<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+的可能取值为0，1，2，3，4.<img src="../assets/probability-questions/338c5f357e8e2f9594ee.png">
+<img src="../assets/probability-questions/0eb0e868a6bb15643f0e.png">
+
+
+</p>
+<p>
+<img src="../assets/probability-questions/62c530b89acda06c16cc.png">
+且<img src="../assets/probability-questions/52c6d66c30c962294b78.png">
+</p>
+<p>
+<img src="../assets/probability-questions/018d1be77ab4aedbde25.png">
+<img src="../assets/probability-questions/bcc88a10705d80db489b.png">
+的概率分布列为：</p>
+<table width="568">
+	<col width="83">
+	<col width="85">
+	<col width="85">
+	<col width="85">
+	<col width="85">
+	<col width="84">
+	<tr>
+		<td width="83" height="11"><p>
+			<img src="../assets/probability-questions/bcc88a10705d80db489b.png">
+</p>
+		</td>
+		<td width="85"><p>
+			0</p>
+		</td>
+		<td width="85"><p>
+			5</p>
+		</td>
+		<td width="85"><p>
+			10</p>
+		</td>
+		<td width="85"><p>
+			15</p>
+		</td>
+		<td width="84"><p>
+			20</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="83" height="11"><p>
+			<img src="../assets/probability-questions/1698fe491503b2dc5209.png">
+</p>
+		</td>
+		<td width="85"><p>
+			<img src="../assets/probability-questions/52d0e78e8f779f7d2169.png">
+</p>
+		</td>
+		<td width="85"><p>
+			<img src="../assets/probability-questions/0fc2202cbdcc859c348c.png">
+</p>
+		</td>
+		<td width="85"><p>
+			<img src="../assets/probability-questions/dfab9d3cd4ad98d459b2.png">
+</p>
+		</td>
+		<td width="85"><p>
+			<img src="../assets/probability-questions/a67ed3e88958ebded96b.png">
+</p>
+		</td>
+		<td width="84"><p>
+			<img src="../assets/probability-questions/cf066cb84f56760d05f1.png">
+</p>
+		</td>
+	</tr>
+</table>
+<p>
+<img src="../assets/probability-questions/fafaf316f07c45fc28b9.png">
+
+   
+<img src="../assets/probability-questions/5df4e241712ad10276c5.png">
+.</p>
+</details></article><article id="q5"><h2>第 5 题</h2><p>
+2．2020年1月10日，引发新冠肺炎疫情的<img src="../assets/probability-questions/b224d74d68b17b6ce3e1.png">
+病毒基因序列公布后，科学家们便开始了病毒疫苗的研究过程.但是类似这种病毒疫苗的研制需要科学的流程，不是一朝一夕能完成的，其中有一步就是做动物试验.已知一个科研团队用小白鼠做接种试验，检测接种疫苗后是否出现抗体.试验设计是：每天接种一次，3天为一个接种周期.已知小白鼠接种后当天出现抗体的概率为<img src="../assets/probability-questions/c05005be2d809725721f.png">
+，假设每次接种后当天是否出现抗体与上次接种无关.</p>
+<p>
+（1）求一个接种周期内出现抗体次数<img src="../assets/probability-questions/12772da41c3d8456e52c.png">
+的分布列；</p>
+<p>
+（2）已知每天接种一次花费100元，现有以下两种试验方案：</p>
+<p>
+①若在一个接种周期内连续2次出现抗体即终止本周期试验，进行下一接种周期，试验持续三个接种周期，设此种试验方式的花费为<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+元；</p>
+<p>
+②若在一个接种周期内出现2次或3次抗体，该周期结束后终止试验，已知试验至多持续三个接种周期，设此种试验方式的花费为<img src="../assets/probability-questions/bcc88a10705d80db489b.png">
+元.本着节约成本的原则，选择哪种实验方案.</p>
+<details><summary>查看答案与解析</summary><p>
+【答案】（1）分布列见解析；（2）①<img src="../assets/probability-questions/b04c26b041bc7782ea14.png">
+元；②选择方案二.</p>
+<p>
+【解析】（1）由题意可知，随机变量<img src="../assets/probability-questions/12772da41c3d8456e52c.png">
+服从二项分布<img src="../assets/probability-questions/0215b6b5d7a9c6e5bd35.png">
+，</p>
+<p>
+故<img src="../assets/probability-questions/b7bf6e56958f3301540a.png">
+（<img src="../assets/probability-questions/dfe304ea2a40786f508e.png">
+）</p>
+<p>
+则<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+的分布列为</p>
+<table width="206">
+	<col width="31">
+	<col width="31">
+	<col width="31">
+	<col width="31">
+	<col width="30">
+	<tr>
+		<td width="31" height="11"><p>
+			<img src="../assets/probability-questions/12772da41c3d8456e52c.png">
+</p>
+		</td>
+		<td width="31"><p>
+			0</p>
+		</td>
+		<td width="31"><p>
+			1</p>
+		</td>
+		<td width="31"><p>
+			2</p>
+		</td>
+		<td width="30"><p>
+			3</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="31" height="11"><p>
+			<img src="../assets/probability-questions/1698fe491503b2dc5209.png">
+</p>
+		</td>
+		<td width="31"><p>
+			<img src="../assets/probability-questions/6b18a45be75cf592fd91.png">
+</p>
+		</td>
+		<td width="31"><p>
+			<img src="../assets/probability-questions/69f1b2e152e6bd7846bc.png">
+</p>
+		</td>
+		<td width="31"><p>
+			<img src="../assets/probability-questions/69f1b2e152e6bd7846bc.png">
+</p>
+		</td>
+		<td width="30"><p>
+			<img src="../assets/probability-questions/6b18a45be75cf592fd91.png">
+</p>
+		</td>
+	</tr>
+</table>
+<p>
+（2）①设一个接种周期的接种费用为<img src="../assets/probability-questions/5da0d3e836d61eac0db1.png">
+元，则<img src="../assets/probability-questions/5da0d3e836d61eac0db1.png">
+可能的取值为200，300，</p>
+<p>
+因为<img src="../assets/probability-questions/18d4f26b15ef522146d7.png">
+，<img src="../assets/probability-questions/795ffb211143579e772e.png">
+，</p>
+<p>
+所以<img src="../assets/probability-questions/a92ea36550ddfe01bc1f.png">
+.</p>
+<p>
+所以三个接种周期的平均花费为<img src="../assets/probability-questions/5211682f829fa4206aff.png">
+.</p>
+<p>
+②随机变量<img src="../assets/probability-questions/bcc88a10705d80db489b.png">
+可能的取值为300，600，900，</p>
+<p>
+设事件<img src="../assets/probability-questions/458babafaa45d32fce7e.png">
+为“在一个接种周期内出现2次或3次抗体”，由（1）知，<img src="../assets/probability-questions/b7a14eb664ac4a65702e.png">
+.</p>
+<p>
+所以<img src="../assets/probability-questions/757a84e3bfe9f0ce857d.png">
+，</p>
+<p>
+<img src="../assets/probability-questions/1275b0b41048bf2a189b.png">
+，</p>
+<p>
+<img src="../assets/probability-questions/7db91b62194bc8a74b44.png">
+，</p>
+<p>
+所以<img src="../assets/probability-questions/a88ca41042b9aebe5e0d.png">
+</p>
+<p>
+因为<img src="../assets/probability-questions/c3210795052b4d3f6179.png">
+.</p>
+<p>
+所以选择方案二.</p>
+</details></article><article id="q6"><h2>第 6 题</h2><p>
+3．某校高三男生体育课上做投篮球游戏，两人一组，每轮游戏中，每小组两人每人投篮两次，投篮投进的次数之和不少于<img src="../assets/probability-questions/39f2c5ac3f18dd61ce5e.png">
+次称为“优秀小组”.小明与小亮同一小组，小明、小亮投篮投进的概率分别为<img src="../assets/probability-questions/4544430c308e21e8572b.png">
+.</p>
+<p>
+（1）若<img src="../assets/probability-questions/eb2fec9a92ae9eaf6389.png">
+，<img src="../assets/probability-questions/c20a36c3b565438fa7e8.png">
+，则在第一轮游戏他们获“优秀小组”的概率；</p>
+<p>
+（2）若<img src="../assets/probability-questions/9082f6708c6239a95f7e.png">
+则游戏中小明小亮小组要想获得“优秀小组”次数为<img src="../assets/probability-questions/2d2579dfc29c08053281.png">
+次，则理论上至少要进行多少轮游戏才行？并求此时<img src="../assets/probability-questions/4544430c308e21e8572b.png">
+的值.</p>
+<details><summary>查看答案与解析</summary><p>
+【答案】（1）<img src="../assets/probability-questions/dec7ca8fd16f21bc6564.png">
+（2）理论上至少要进行<img src="../assets/probability-questions/80ea428d01070b746ed6.png">
+轮游戏.<img src="../assets/probability-questions/ebb3638dd8b4786bfe10.png">
+</p>
+<p>
+【解析】（1）由题可知,所以可能的情况有①小明投中1次,小亮投中2次；②小明投中2次,小亮投中1次；③小明投中2次,小亮投中2次.</p>
+<p>
+故所求概率<img src="../assets/probability-questions/e1f90feb8a4115f9623d.png">
+</p>
+<p>
+（2）他们在一轮游戏中获“优秀小组”的概率为</p>
+<p>
+<img src="../assets/probability-questions/64f7744d028eba4508e4.png">
+因为<img src="../assets/probability-questions/9082f6708c6239a95f7e.png">
+,所以<img src="../assets/probability-questions/f8dc9ba3bfca8f0c61a4.png">
+</p>
+<p>
+因为<img src="../assets/probability-questions/79db924fbf571daa7a1d.png">
+,<img src="../assets/probability-questions/4e2c00009fa8021cfff9.png">
+,<img src="../assets/probability-questions/9082f6708c6239a95f7e.png">
+,所以<img src="../assets/probability-questions/65653c7eaf0d1f85d4f9.png">
+,<img src="../assets/probability-questions/92e76da8d72a3c6a6061.png">
+,又<img src="../assets/probability-questions/aeb7f96c86ecb6f45a69.png">
+</p>
+<p>
+所以<img src="../assets/probability-questions/f877d07b8f475b95f0f0.png">
+,令<img src="../assets/probability-questions/23cc49aa2377f99850e9.png">
+,以<img src="../assets/probability-questions/b34e942460e5480a0561.png">
+,则<img src="../assets/probability-questions/d86bc05621633b406a9b.png">
+</p>
+<p>
+当<img src="../assets/probability-questions/07d162d69ffe3cb215ce.png">
+时,<img src="../assets/probability-questions/06a3a1bff33256f3ab40.png">
+,他们小组在<img src="../assets/probability-questions/8731c71ba873ce3832c8.png">
+轮游戏中获“优秀小组”次数<img src="../assets/probability-questions/5da0d3e836d61eac0db1.png">
+满足<img src="../assets/probability-questions/b8e6319ac2ff9effd103.png">
+</p>
+<p>
+由<img src="../assets/probability-questions/4952433cef4c5f9db52f.png">
+,则<img src="../assets/probability-questions/a8d651fa6c671274d0b4.png">
+,所以理论上至少要进行<img src="../assets/probability-questions/80ea428d01070b746ed6.png">
+轮游戏.此时<img src="../assets/probability-questions/9082f6708c6239a95f7e.png">
+,<img src="../assets/probability-questions/f193796ba34261b06708.png">
+,<img src="../assets/probability-questions/ebb3638dd8b4786bfe10.png">
+</p>
+</details></article><article id="q7"><h2>第 7 题</h2><p>
+4．2020年1月10日，引发新冠肺炎疫情的<i>COVID</i>-9病毒基因序列公布后，科学家们便开始了病毒疫苗的研究过程.但是类似这种病毒疫苗的研制需要科学的流程，不是一朝一夕能完成的，其中有一步就是做动物试验.已知一个科研团队用小白鼠做接种试验，检测接种疫苗后是否出现抗体.试验设计是：每天接种一次，3天为一个接种周期.已知小白鼠接种后当天出现抗体的概率为<img src="../assets/probability-questions/c05005be2d809725721f.png">
+，假设每次接种后当天是否出现抗体与上次接种无关.</p>
+<p>
+（1）求一个接种周期内出现抗体次数<img src="../assets/probability-questions/6add75b13172245a4bce.png">
+的分布列；</p>
+<p>
+（2）已知每天接种一次花费100元，现有以下两种试验方案：</p>
+<p>
+①若在一个接种周期内连续2次出现抗体即终止本周期试验，进行下一接种周期，试验持续三个接种周期，设此种试验方式的花费为<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+元；</p>
+<p>
+②若在一个接种周期内出现2次或3次抗体，该周期结束后终止试验，已知试验至多持续三个接种周期，设此种试验方式的花费为<img src="../assets/probability-questions/bcc88a10705d80db489b.png">
+元.</p>
+<p>
+比较随机变量<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+和<img src="../assets/probability-questions/bcc88a10705d80db489b.png">
+的数学期望的大小.</p>
+<details><summary>查看答案与解析</summary><p>
+【答案】（1）分布列答案见解析.（2）<img src="../assets/probability-questions/a6ecd4476e38aa7ad3cd.png">
+</p>
+<p>
+【解析】（1）由题意可知，随机变量<img src="../assets/probability-questions/6add75b13172245a4bce.png">
+服从二项分布<img src="../assets/probability-questions/ff9c0ab1fd4653e8fc1d.png">
+，</p>
+<p>
+故<img src="../assets/probability-questions/138ef67a39909ca83f1d.png">
+.</p>
+<p>
+则<img src="../assets/probability-questions/6add75b13172245a4bce.png">
+的分布列为</p>
+<table width="340">
+	<col width="57">
+	<col width="58">
+	<col width="58">
+	<col width="58">
+	<col width="57">
+	<tr>
+		<td width="57" height="11"><p>
+			<img src="../assets/probability-questions/6add75b13172245a4bce.png">
+</p>
+		</td>
+		<td width="58"><p>
+			0</p>
+		</td>
+		<td width="58"><p>
+			1</p>
+		</td>
+		<td width="58"><p>
+			2</p>
+		</td>
+		<td width="57"><p>
+			3</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="57" height="11"><p>
+			<img src="../assets/probability-questions/1698fe491503b2dc5209.png">
+</p>
+		</td>
+		<td width="58"><p>
+			<img src="../assets/probability-questions/6b18a45be75cf592fd91.png">
+</p>
+		</td>
+		<td width="58"><p>
+			<img src="../assets/probability-questions/69f1b2e152e6bd7846bc.png">
+</p>
+		</td>
+		<td width="58"><p>
+			<img src="../assets/probability-questions/69f1b2e152e6bd7846bc.png">
+</p>
+		</td>
+		<td width="57"><p>
+			<img src="../assets/probability-questions/6b18a45be75cf592fd91.png">
+</p>
+		</td>
+	</tr>
+</table>
+<p>
+（2）①设一个接种周期的接种费用为<img src="../assets/probability-questions/5da0d3e836d61eac0db1.png">
+元，则<img src="../assets/probability-questions/5da0d3e836d61eac0db1.png">
+可能的取值为200，300，</p>
+<p>
+因为<img src="../assets/probability-questions/d200561f82e98d65cf29.png">
+，<img src="../assets/probability-questions/3b87d1eb84be8f054b68.png">
+，</p>
+<p>
+所以<img src="../assets/probability-questions/28f3dde7aa32166b1124.png">
+.</p>
+<p>
+所以三个接种周期的平均花费为<img src="../assets/probability-questions/5f3286a1ba504f8cc35a.png">
+.</p>
+<p>
+②随机变量<img src="../assets/probability-questions/bcc88a10705d80db489b.png">
+可能的取值为300，600，900，</p>
+<p>
+设事件<img src="../assets/probability-questions/458babafaa45d32fce7e.png">
+为“在一个接种周期内出现2次或3次抗体”，由（1）知，<img src="../assets/probability-questions/b144545a90e76871cd54.png">
+.</p>
+<p>
+所以<img src="../assets/probability-questions/ee1cb03732a125137b39.png">
+，</p>
+<p>
+<img src="../assets/probability-questions/dce39ea5f1d936da13e3.png">
+，</p>
+<p>
+<img src="../assets/probability-questions/5a795d20bf30fd29a37d.png">
+，</p>
+<p>
+所以<img src="../assets/probability-questions/439d5a07130456316291.png">
+.</p>
+<p>
+所以<img src="../assets/probability-questions/a6ecd4476e38aa7ad3cd.png">
+.</p>
+</details></article><article id="q8"><h2>第 8 题</h2><p>
+1．全国中小学生的体质健康调研最新数据表明我国小学生近视眼发病率为22.78%，初中生为55.22%，高中生为70.34%．影响青少年近视形成的因素有遗传因素和环境因素，主要原因是环境因素．学生长时期近距离的用眼状态，加上不注意用眼卫生、不合理的作息时间很容易引起近视．除了学习，学生平时爱看电视、上网玩电子游戏、不喜欢参加户外体育活动，都是造成近视情况日益严重的原因．为了解情况，现从某地区随机抽取16名学生，调查人员用对数视力表检查得到这16名学生的视力状况的茎叶图（以小数点前的一位数字为茎，小数点后的一位数字为叶），如图：</p>
+<p>
+<img src="../assets/probability-questions/fad8d84d17e450b05d7f.png" width="356" height="65">
+</p>
+<p>
+（1）写出这组数据的众数和中位数；</p>
+<p>
+（2）若视力测试结果不低于5.0，则称为“好视力”．</p>
+<p>
+①从这16名学生中随机选取3名，求至少有2名学生是“好视力”的概率；</p>
+<p>
+②以这16名学生中是“好视力”的频率代替该地区学生中是“好视力”的概率．若从该地区学生（人数较多）中任选3名，记<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+表示抽到“好视力”学生的人数，求<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+的分布列及数学期望．</p>
+<details><summary>查看答案与解析</summary><p>
+【答案】（1）众数为4.6和4.7，中位数为4.75（2）①<img src="../assets/probability-questions/b26fcda1a0ab9b659c49.png">
+②见解析，<img src="../assets/probability-questions/f4ecb4c9918e9347ac05.png">
+</p>
+<p>
+【解析】（1）由题意知众数为4.6和4.7，中位数为<img src="../assets/probability-questions/61304ccacd5742a27b78.png">
+．</p>
+<p>
+（2）①设事件<img src="../assets/probability-questions/a03660de2c675c4dc7ac.png">
+，表示“所选3名学生中有<img src="../assets/probability-questions/99bd1172770f765a4859.png">
+名是‘好视力’”<img src="../assets/probability-questions/cd1c56d2c3d70a0fdd39.png">
+，设事件<img src="../assets/probability-questions/458babafaa45d32fce7e.png">
+表示“至少有2名学生是好视力”．</p>
+<p>
+则<img src="../assets/probability-questions/911888d9992c0e7997c4.png">
+<img src="../assets/probability-questions/dabbeaed5125fb9649bf.png">
+</p>
+<p>
+②因为这16名学生中是“好视力”的频率为<img src="../assets/probability-questions/1793f01c3f7904188751.png">
+，所以该地区学生中是“好视力”的概率为<img src="../assets/probability-questions/1793f01c3f7904188751.png">
+．</p>
+<p>
+由于该地区学生人数较多，故<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+近似服从二项分布<img src="../assets/probability-questions/e6ec81089710636d6b98.png">
+．</p>
+<p>
+<img src="../assets/probability-questions/3e5fc5f9d74b38eab54b.png">
+，</p>
+<p>
+<img src="../assets/probability-questions/b471c94c37affea82b7d.png">
+，</p>
+<p>
+<img src="../assets/probability-questions/9cc547b4ef5ba2035cf3.png">
+，</p>
+<p>
+<img src="../assets/probability-questions/99e63dba88e211b1971f.png">
+，</p>
+<p>
+所以<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+的分布列为</p>
+<table width="243">
+	<col width="34">
+	<col width="40">
+	<col width="40">
+	<col width="39">
+	<col width="38">
+	<tr>
+		<td width="34" height="11"><p>
+			<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+</p>
+		</td>
+		<td width="40"><p>
+			0</p>
+		</td>
+		<td width="40"><p>
+			1</p>
+		</td>
+		<td width="39"><p>
+			2</p>
+		</td>
+		<td width="38"><p>
+			3</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="34" height="11"><p>
+			<img src="../assets/probability-questions/1698fe491503b2dc5209.png">
+</p>
+		</td>
+		<td width="40"><p>
+			<img src="../assets/probability-questions/a67ed3e88958ebded96b.png">
+</p>
+		</td>
+		<td width="40"><p>
+			<img src="../assets/probability-questions/a67ed3e88958ebded96b.png">
+</p>
+		</td>
+		<td width="39"><p>
+			<img src="../assets/probability-questions/8c0d08826655f088f07d.png">
+</p>
+		</td>
+		<td width="38"><p>
+			<img src="../assets/probability-questions/f24c7860dfd4e8e62175.png">
+</p>
+		</td>
+	</tr>
+</table>
+<p>
+<img src="../assets/probability-questions/5e24901ed8bd062d83ce.png">
+的数学期望为<img src="../assets/probability-questions/933118885fe3f63229bc.png">
+．</p>
+</details></article></main></html>
