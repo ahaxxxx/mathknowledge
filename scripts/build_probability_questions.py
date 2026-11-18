@@ -67,3 +67,6 @@ with pdfplumber.open(root/f'assets/probability-sources/{key}.pdf') as doc:
    result.append(f'<img class="sheet" loading="lazy" src="../assets/probability-questions/{name}" alt="原资料第 {pg+1} 页节选">')
   return ''.join(result)
  write(key,'统计概率综合热点题',[(fragment(i),fragment(i+30)) for i in range(30)],'资料来源：《2020 高考统计概率大题必刷热点题型》')
+
+from probability_mind_maps import restore_maps
+restore_maps()

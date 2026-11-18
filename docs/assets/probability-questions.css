@@ -18,3 +18,9 @@ article img.formula {
 .choices > div { min-width: 0; }
 article table { max-width: 100%; }
 article td p { margin: .15em 0; }
+
+.mind-map { margin: 1em 0; padding: 1em; background: white; border-radius: 12px; }
+.mind-map figcaption { font-weight: 650; margin-bottom: .5em; }
+.mind-map img { display: block; margin: auto; max-width: 100%; height: auto; }
+.mind-map a { display: block; cursor: zoom-in; }
+.mind-map small { display: block; text-align: center; margin-top: .5em; }
