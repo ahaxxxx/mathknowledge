@@ -18,7 +18,7 @@ def build(source,pdf,poppler):
         other=key.rsplit('-',1)[0]+('-questions' if version=='solution' else '-solution')
         companion=f'<a href="{other}.html">'+('返回试题' if version=='solution' else '查看对应解析')+'</a>'
     else:
-        title='2020 高考统计概率大题必刷热点题型';companion=''
+        title='2026年高考统计概率大题必刷热点题型';companion=''
     reader=PdfReader(pdf);count=len(reader.pages)
     assert count>0
     dest=ROOT/'docs/assets/probability-reader'/key;dest.mkdir(parents=True,exist_ok=True)

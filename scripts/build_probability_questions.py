@@ -52,10 +52,10 @@ key='probability-hotspots-2020'
 with pdfplumber.open(root/f'assets/probability-sources/{key}.pdf') as doc:
  starts=[]
  for j,p in enumerate(doc.pages):
-  for m in p.search(r'(\d{1,2})\s*[．.]\s*[（(]\s*2020'):starts.append((int(m['groups'][0]),j,m['top']-3))
- assert [n for n,j,t in starts]==list(range(1,31))*2
+  for m in p.search(r'(\d{1,2})\s*[．.]\s*[（(]\s*2020[^）)\n]*[）)]'):starts.append((int(m['groups'][0]),j,m['top']-3,m))
+ assert [n for n,j,t,m in starts]==list(range(1,31))*2
  def fragment(i):
-  _,j,top=starts[i];_,k,end=starts[i+1] if i+1<len(starts) else (0,81,0)
+  _,j,top,label=starts[i];_,k,end,_=starts[i+1] if i+1<len(starts) else (0,81,0,None)
   if i==29:k,end=31,0
   result=[]
   for pg in range(j,min(k+1,81)):
@@ -63,10 +63,23 @@ with pdfplumber.open(root/f'assets/probability-sources/{key}.pdf') as doc:
    if b-t<15:continue
    with Image.open(root/f'assets/probability-reader/{key}/{pg+1}.webp') as im:
     scale=im.height/page.height;part=im.crop((int(48*scale),round(t*scale),im.width-int(48*scale),round(b*scale)))
+    if pg==j:
+     # The card already supplies the question number. Move the opening text
+     # into the space occupied by the printed number and source citation.
+     left=int(48*scale)
+     start=round(label['x0']*scale)-left
+     stop=round(label['x1']*scale)-left
+     bottom=round((label['bottom']+1)*scale)-round(t*scale)
+     line_end=max(c['x1'] for c in page.chars if
+                  abs(c['top']-label['top'])<3 and c['x0']>=label['x1']-1)
+     right=min(part.width,round((line_end+1)*scale)-left)
+     opening=part.crop((stop,0,right,bottom))
+     part.paste('white',(start,0,right,bottom))
+     part.paste(opening,(start,0))
     name=f'hotspot-{i+1}-{pg+1}.webp';part.save(assets/name,quality=91)
    result.append(f'<img class="sheet" loading="lazy" src="../assets/probability-questions/{name}" alt="原资料第 {pg+1} 页节选">')
   return ''.join(result)
- write(key,'统计概率综合热点题',[(fragment(i),fragment(i+30)) for i in range(30)],'资料来源：《2020 高考统计概率大题必刷热点题型》')
+ write(key,'2026年高考统计概率大题必刷热点题型',[(fragment(i),fragment(i+30)) for i in range(30)],'历年模拟题精选')
 
 from probability_mind_maps import restore_maps
 restore_maps()
